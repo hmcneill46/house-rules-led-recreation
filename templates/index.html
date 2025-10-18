@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>House Rules — LED Dot Matrix</title>
+<style>
+  :root{
+    --bg: #141414;
+    --letterbox: #000000;
+    --panel-bg: #111;
+    --panel-fg: #ddd;
+  }
+  html,body{height:100%;margin:0;font-family: Inter,system-ui,Segoe UI,Arial;}
+  body{background:var(--bg);color:var(--panel-fg);display:flex;flex-direction:column;gap:8px;padding:12px;}
+  header{display:flex;align-items:center;gap:12px;}
+  h1{margin:0;font-size:18px}
+  #main{display:flex;gap:12px;flex:1;min-height:320px;}
+  #preview{flex:1;background:var(--letterbox);display:flex;align-items:center;justify-content:center;padding:12px;border-radius:8px}
+  #controls{width:360px;max-width:40vw;background:var(--panel-bg);padding:12px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.5);overflow:auto}
+  .control{margin-bottom:10px}
+  label{display:block;font-size:12px;color:#bbb;margin-bottom:4px}
+  input[type="range"]{width:100%}
+  input[type="number"]{width:80px}
+  .row{display:flex;gap:8px;align-items:center}
+  button{padding:8px 10px;border-radius:6px;border:1px solid #333;background:#222;color:#fff;cursor:pointer}
+  .small{font-size:12px;padding:6px 8px}
+  .muted{color:#999;font-size:12px}
+  .footer{font-size:12px;color:#999;margin-top:6px}
+  #commands-area{width:100%;height:120px;resize:vertical;background:#0e0e0e;color:#ddd;padding:8px;border-radius:6px;border:1px solid #222}
+</style>
+</head>
+<body>
+<header>
+  <h1>House Rules — LED Dot Matrix (web)</h1>
+  <div class="muted">Host on local server: open <code>http://&lt;your-pc-ip&gt;:5000</code> from other devices</div>
+</header>
+
+<div id="main">
+  <div id="preview">
+    <canvas id="led-canvas"></canvas>
+  </div>
+
+  <div id="controls">
+    <div class="control">
+      <label>Matrix size</label>
+      <div class="row">
+        <div>
+          <div class="muted">Height (rows)</div>
+          <input id="matrix-height" type="number" min="3" max="16" value="7">
+        </div>
+        <div>
+          <div class="muted">Width (cols)</div>
+          <input id="matrix-width" type="number" min="7" max="200" value="35">
+        </div>
+      </div>
+    </div>
+
+    <div class="control">
+      <label>Scroll speed (columns/sec)</label>
+      <input id="speed" type="range" min="1" max="200" value="20">
+      <div class="row"><span id="speed-val">20</span> cols/sec</div>
+    </div>
+
+    <div class="control">
+      <label>Phrase gap (blank columns between phrases)</label>
+      <input id="phrase-gap" type="range" min="0" max="40" value="6">
+      <div class="row"><span id="phrase-gap-val">6</span> cols</div>
+    </div>
+
+    <div class="control">
+      <label>LED circle scale (fraction of cell)</label>
+      <input id="circle-ratio" type="range" min="0.4" max="1.0" step="0.01" value="0.95">
+      <div class="row"><span id="circle-ratio-val">0.95</span></div>
+    </div>
+
+    <div class="control">
+      <label>FPS (render)</label>
+      <input id="fps" type="number" min="10" max="120" value="60">
+    </div>
+
+    <div class="control">
+      <label>LED colours</label>
+      <div class="row">
+        <div>
+          <div class="muted">LED on</div>
+          <input id="led-on" type="color" value="#ef452c">
+        </div>
+        <div>
+          <div class="muted">LED off</div>
+          <input id="led-off" type="color" value="#343434">
+        </div>
+        <div>
+          <div class="muted">Background</div>
+          <input id="bg-col" type="color" value="#141414">
+        </div>
+      </div>
+    </div>
+
+    <div class="control">
+      <label>Flash words (comma separated)</label>
+      <input id="flash-words" type="text" value="fuck!,bored!,whatever!,what?,wow!">
+      <div class="muted" style="margin-top:6px">Flash pauses scrolling, clears matrix, flashes word for a short time, then resumes (matches original behaviour).</div>
+    </div>
+
+    <div class="control">
+      <label>Commands (each phrase on its own line)</label>
+      <textarea id="commands-area"></textarea>
+      <div class="row" style="margin-top:6px">
+        <button id="randomise-commands" class="small">Randomise order</button>
+        <button id="reset-commands" class="small">Reset to defaults</button>
+      </div>
+    </div>
+
+    <div class="control">
+      <div class="row">
+        <button id="play" class="small">Play</button>
+        <button id="pause" class="small">Pause</button>
+        <button id="step" class="small">Step 1 col</button>
+        <button id="recenter" class="small">Rebuild buffer</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      Ported from your Python Pygame code — font and behaviour preserved. If anything looks off for the letter <code>q</code> we include two reasonable options (like your script).
+    </div>
+  </div>
+</div>
+
+<script>
+/* --------------- Configuration pulled from your Python code ---------------- */
+const DEFAULTS = {
+  MATRIX_HEIGHT: 7,
+  MATRIX_WIDTH: 7 * 5,
+  LED_ON_COLOR: "#ef452c",
+  LED_OFF_COLOR: "#343434",
+  DISPLAY_BG_COLOR: "#141414",
+  LETTERBOX_COLOR: "#000000",
+  FPS: 60,
+  SCROLL_SPEED_COLS_PER_SEC: 20.0,
+  FLASH_MIN_INTERVAL: 6.0,
+  FLASH_MAX_INTERVAL: 18.0,
+  FLASH_DURATION: 0.9,
+  PHRASE_GAP: 6,
+  INTER_CHAR_BLANKS: 1,
+  LED_CIRCLE_RATIO: 0.95,
+};
+
+/* Font: copied from your script exactly (rows as strings) */
+const FONT = {
+  'a': ["0000","0000","0110","0001","0111","1001","0111"],
+  'b': ["1000","1000","1110","1001","1001","1001","0110"],
+  'c': ["000","000","011","100","100","100","011"],
+  'd': ["0001","0001","0111","1001","1001","1001","0110"],
+  'e': ["0000","0000","0110","1001","1111","1000","0111"],
+  'f': ["011","100","111","100","100","100","100"],
+  'g': ["0000","0000","0110","1001","1111","0001","1110"],
+  'h': ["1000","1000","1110","1001","1001","1001","1001"],
+  'i': ["1","0","1","1","1","1","1"],
+  'j': ["01","00","01","01","01","01","11"],
+  'k': ["1000","1000","1001","1010","1100","1010","1001"],
+  'l': ["1","1","1","1","1","1","1"],
+  'm': ["00000","00000","01010","10101","10101","10101","10101"],
+  'n': ["0000","0000","0110","1001","1001","1001","1001"],
+  'o': ["0000","0000","0110","1001","1001","1001","0110"],
+  'p': ["0000","0000","0110","1001","1001","1110","1000"],
+  'r': ["000","000","011","100","100","100","100"],
+  's': ["0000","0000","0111","1000","0110","0001","1110"],
+  't': ["100","100","111","100","100","100","011"],
+  'u': ["0000","0000","1001","1001","1001","1001","0110"],
+  'v': ["00000","00000","10001","10001","10001","01010","00100"],
+  'w': ["00000","00000","10101","10101","10101","10101","01010"],
+  'x': ["00000","00000","10001","01010","00100","01010","10001"],
+  'y': ["0000","0000","1001","1001","0111","0001","1110"],
+  'z': ["0000","0000","1111","0001","0110","1000","1111"],
+  '!': ["001","001","001","001","000","001","001"],
+  '?': ["01110","10001","00001","00010","00100","00000","00100"],
+  ' ': ["00","00","00","00","00","00","00"]
+};
+
+/* q options like your script */
+const Q_OPTIONS = {
+  1: ["0000","0000","0110","1001","1001","0111","0001"],
+  2: ["0000","0000","0110","1001","1001","0110","0001"]
+};
+const chosenQ = (Math.random() < 0.5) ? Q_OPTIONS[1] : Q_OPTIONS[2];
+FONT['q'] = chosenQ;
+
+/* Default commands from your file */
+const DEFAULT_COMMANDS = [
+  "no dying","no flirting","no moaning","no joking","no flipping","no biting","no punching",
+  "no trashing","no bellowing","no smoking","no kicking","no meddling","no stamping","no folding",
+  "no shoving","no leaking","no bruising","no teasing","no licking","no flossing","no baiting",
+  "no chasing","no plastering","no gyrating","no saucing","no sloshing","no cooling","no battering",
+  "no taming","no dissecting","no beating","no fondling","no hating","no loitering","no watering",
+  "no lying","no snorting","no relaxing","no undressing","no clamping"
+];
+
+/* ---------------- Utility: char -> columns (rows oriented top->bottom) ---------------- */
+function charToColumns(ch, matrixHeight) {
+  ch = ch.toLowerCase();
+  if (!FONT[ch]) return charToColumns(' ', matrixHeight);
+  let rows = FONT[ch].slice(); // copy
+  // pad on top if shorter than matrixHeight
+  if (rows.length < matrixHeight) {
+    const padTop = matrixHeight - rows.length;
+    const blank = "0".repeat(rows[0].length);
+    for (let i = 0; i < padTop; i++) rows.unshift(blank);
+  }
+  const charWidth = rows[0].length;
+  const cols = [];
+  for (let c = 0; c < charWidth; c++) {
+    const col = [];
+    for (let r = 0; r < matrixHeight; r++) {
+      const rowStr = rows[r];
+      const bit = (c < rowStr.length && rowStr[c] === '1') ? 1 : 0;
+      col.push(bit);
+    }
+    cols.push(col);
+  }
+  return cols;
+}
+
+function textToColumns(text, matrixHeight, interCharBlanks=1) {
+  let all = [];
+  for (let i=0;i<text.length;i++){
+    const ch = text[i];
+    all = all.concat(charToColumns(ch, matrixHeight));
+    for (let j=0;j<interCharBlanks;j++) all.push(new Array(matrixHeight).fill(0));
+  }
+  return all;
+}
+
+function buildPhraseColumns(phrase, matrixHeight) {
+  return textToColumns(phrase, matrixHeight);
+}
+
+/* Build a long scrolling buffer (random order) */
+function buildFullScrollBuffer(commands, matrixHeight, phraseGap) {
+  const gap = [];
+  for (let i=0;i<phraseGap;i++) gap.push(new Array(matrixHeight).fill(0));
+  const pool = commands.slice();
+  // random shuffle
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i+1));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }
+  let allCols = [];
+  pool.forEach(p => {
+    allCols = allCols.concat(buildPhraseColumns(p, matrixHeight));
+    allCols = allCols.concat(gap);
+  });
+  // Repeat a prefix to allow wrap continuity (like your script)
+  allCols = allCols.concat(allCols.slice(0, matrixHeight));
+  return allCols;
+}
+
+function clipColumnsToMatrix(cols, matrixWidth, matrixHeight) {
+  if (cols.length >= matrixWidth) return cols.slice(0, matrixWidth);
+  const pad = [];
+  for (let i = 0; i < matrixWidth - cols.length; i++) pad.push(new Array(matrixHeight).fill(0));
+  return cols.concat(pad);
+}
+
+/* Build flash columns */
+function buildFlashColumns(word, matrixWidth, matrixHeight) {
+  let cols = textToColumns(word, matrixHeight);
+  cols = cols.slice(0, matrixWidth);
+  const leftPad = Math.max(0, Math.floor((matrixWidth - cols.length) / 2));
+  const full = [];
+  for (let i=0;i<leftPad;i++) full.push(new Array(matrixHeight).fill(0));
+  full.push(...cols);
+  while (full.length < matrixWidth) full.push(new Array(matrixHeight).fill(0));
+  return full.slice(0, matrixWidth);
+}
+
+/* ---------------- Rendering + Animation ---------------- */
+const canvas = document.getElementById("led-canvas");
+const ctx = canvas.getContext("2d");
+let state = {
+  matrixHeight: DEFAULTS.MATRIX_HEIGHT,
+  matrixWidth: DEFAULTS.MATRIX_WIDTH,
+  ledOnColor: DEFAULTS.LED_ON_COLOR,
+  ledOffColor: DEFAULTS.LED_OFF_COLOR,
+  bgColor: DEFAULTS.DISPLAY_BG_COLOR,
+  fps: DEFAULTS.FPS,
+  speed: DEFAULTS.SCROLL_SPEED_COLS_PER_SEC,
+  phraseGap: DEFAULTS.PHRASE_GAP,
+  circleRatio: DEFAULTS.LED_CIRCLE_RATIO,
+  flashMin: DEFAULTS.FLASH_MIN_INTERVAL,
+  flashMax: DEFAULTS.FLASH_MAX_INTERVAL,
+  flashDuration: DEFAULTS.FLASH_DURATION
+};
+
+let fullBuffer = buildFullScrollBuffer(DEFAULT_COMMANDS, state.matrixHeight, state.phraseGap);
+let scrollOffset = 0.0;
+let lastTime = performance.now();
+let nextFlashTime = performance.now() + randomInRange(state.flashMin, state.flashMax) * 1000;
+let isFlashing = false;
+let flashStart = 0;
+let flashWord = "";
+let savedScrollOffset = 0;
+
+/* Copy initial commands into the textarea */
+const commandsArea = document.getElementById("commands-area");
+function setCommandsText(list) {
+  commandsArea.value = list.join("\n");
+}
+setCommandsText(DEFAULT_COMMANDS);
+
+/* Helpers */
+function randomInRange(min, max){ return Math.random()*(max-min)+min; }
+
+function resizeCanvas() {
+  // fill preview panel but keep pixel-perfect ratio
+  const preview = document.getElementById("preview");
+  const rect = preview.getBoundingClientRect();
+  canvas.width = Math.max(300, rect.width - 24);
+  canvas.height = Math.max(120, rect.height - 24);
+}
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
+
+/* compute display rectangle to keep matrix aspect ratio centered */
+function computeDisplayArea(canvasW, canvasH, matrixW, matrixH) {
+  const targetRatio = matrixW / matrixH;
+  const winRatio = canvasW / canvasH;
+  let w,h;
+  if (winRatio > targetRatio) {
+    h = canvasH;
+    w = Math.round(h * targetRatio);
+  } else {
+    w = canvasW;
+    h = Math.round(w / targetRatio);
+  }
+  const x = Math.floor((canvasW - w)/2);
+  const y = Math.floor((canvasH - h)/2);
+  return {x,y,w,h};
+}
+
+function renderMatrix(ctx, dispRect, visibleColumns, flashColumns=null, onlyFlash=false) {
+  // background
+  ctx.fillStyle = state.bgColor;
+  ctx.fillRect(dispRect.x, dispRect.y, dispRect.w, dispRect.h);
+
+  const cellW = dispRect.w / state.matrixWidth;
+  const cellH = dispRect.h / state.matrixHeight;
+  const cellSize = Math.min(cellW, cellH);
+  const circleDiam = Math.min(cellSize * state.circleRatio, cellSize * 0.98);
+  const radius = circleDiam / 2;
+  const totalGridW = cellSize * state.matrixWidth;
+  const totalGridH = cellSize * state.matrixHeight;
+  const startX = dispRect.x + (dispRect.w - totalGridW)/2;
+  const startY = dispRect.y + (dispRect.h - totalGridH)/2;
+
+  for (let colIdx=0; colIdx<state.matrixWidth; colIdx++){
+    const col = visibleColumns[colIdx] || new Array(state.matrixHeight).fill(0);
+    for (let rowIdx=0; rowIdx<state.matrixHeight; rowIdx++){
+      let color;
+      let flashBit = flashColumns ? (flashColumns[colIdx] ? flashColumns[colIdx][rowIdx] : 0) : 0;
+      if (onlyFlash) {
+        color = flashBit ? state.ledOnColor : state.ledOffColor;
+      } else {
+        if (flashBit) color = state.ledOnColor;
+        else color = (col[rowIdx] ? state.ledOnColor : state.ledOffColor);
+      }
+      const cx = startX + colIdx * cellSize + cellSize/2;
+      const cy = startY + rowIdx * cellSize + cellSize/2;
+      // draw circle
+      ctx.beginPath();
+      ctx.arc(Math.round(cx), Math.round(cy), Math.max(1, Math.floor(radius)), 0, Math.PI*2);
+      ctx.fillStyle = color;
+      ctx.fill();
+    }
+  }
+}
+
+/* Return visible columns for current offset (wrap allowed) */
+function getVisibleColumns(bufferCols, offset) {
+  const startIdx = Math.floor(offset) % bufferCols.length;
+  const out = [];
+  for (let i=0;i<state.matrixWidth;i++){
+    out.push(bufferCols[(startIdx + i) % bufferCols.length]);
+  }
+  return out;
+}
+
+/* Animation loop */
+function updateAndRender(now) {
+  const dt = (now - lastTime) / 1000.0;
+  lastTime = now;
+
+  // Flash control
+  if (!isFlashing && now >= nextFlashTime) {
+    isFlashing = true;
+    flashStart = now;
+    // pick a random flash word from flash words input
+    const flashText = document.getElementById("flash-words").value.split(",").map(s=>s.trim()).filter(s=>s.length);
+    flashWord = flashText.length ? flashText[Math.floor(Math.random()*flashText.length)] : "";
+    savedScrollOffset = scrollOffset;
+  } else if (isFlashing && (now - flashStart) >= state.flashDuration * 1000) {
+    // end flash
+    isFlashing = false;
+    flashWord = "";
+    nextFlashTime = now + randomInRange(state.flashMin, state.flashMax) * 1000;
+  }
+
+  // Scroll logic
+  if (!isFlashing) {
+    scrollOffset += state.speed * dt;
+    // wrap safely to prevent huge numbers
+    if (scrollOffset > fullBuffer.length) scrollOffset = scrollOffset % fullBuffer.length;
+  } else {
+    scrollOffset = savedScrollOffset;
+  }
+
+  // Draw
+  resizeCanvas();
+  ctx.fillStyle = state.bgColor;
+  ctx.fillRect(0,0,canvas.width, canvas.height);
+  const disp = computeDisplayArea(canvas.width, canvas.height, state.matrixWidth, state.matrixHeight);
+
+  if (isFlashing && flashWord) {
+    const flashCols = buildFlashColumns(flashWord, state.matrixWidth, state.matrixHeight);
+    const empty = [];
+    for (let i=0;i<state.matrixWidth;i++) empty.push(new Array(state.matrixHeight).fill(0));
+    renderMatrix(ctx, disp, empty, flashCols, true);
+  } else {
+    const visible = getVisibleColumns(fullBuffer, scrollOffset);
+    renderMatrix(ctx, disp, visible);
+  }
+
+  // schedule next frame
+  const target = 1000 / state.fps;
+  setTimeout(()=> requestAnimationFrame(updateAndRender), Math.max(0, target - (performance.now()-now)));
+}
+
+/* Start animation */
+lastTime = performance.now();
+requestAnimationFrame(updateAndRender);
+
+/* ---------------- Controls wiring ---------------- */
+const el = id => document.getElementById(id);
+
+function rebuildBufferFromUI() {
+  const matrixH = parseInt(el("matrix-height").value);
+  const matrixW = parseInt(el("matrix-width").value);
+  state.matrixHeight = matrixH;
+  state.matrixWidth = matrixW;
+  // read commands
+  const commands = commandsArea.value.split("\n").map(s => s.trim()).filter(s => s.length);
+  fullBuffer = buildFullScrollBuffer(commands.length ? commands : DEFAULT_COMMANDS, matrixH, parseInt(el("phrase-gap").value));
+  scrollOffset = 0;
+  nextFlashTime = performance.now() + randomInRange(state.flashMin, state.flashMax)*1000;
+}
+
+/* initial UI values */
+el("speed-val").innerText = state.speed;
+el("phrase-gap-val").innerText = DEFAULTS.PHRASE_GAP;
+el("circle-ratio-val").innerText = DEFAULTS.LED_CIRCLE_RATIO.toFixed(2);
+el("commands-area").value = DEFAULT_COMMANDS.join("\n");
+
+/* events */
+el("speed").addEventListener("input", (e) => {
+  state.speed = parseFloat(e.target.value);
+  el("speed-val").innerText = state.speed;
+});
+el("phrase-gap").addEventListener("input", (e) => {
+  el("phrase-gap-val").innerText = e.target.value;
+  // update buffer live
+  state.phraseGap = parseInt(e.target.value);
+  fullBuffer = buildFullScrollBuffer(commandsArea.value.split("\n").map(s=>s.trim()).filter(s=>s.length) || DEFAULT_COMMANDS, state.matrixHeight, state.phraseGap);
+});
+el("circle-ratio").addEventListener("input", (e) => {
+  state.circleRatio = parseFloat(e.target.value);
+  el("circle-ratio-val").innerText = state.circleRatio.toFixed(2);
+});
+el("fps").addEventListener("change", (e) => {
+  state.fps = parseInt(e.target.value) || 60;
+});
+el("matrix-height").addEventListener("change", (e) => {
+  const v = Math.max(3, Math.min(16, parseInt(e.target.value)));
+  e.target.value = v;
+  state.matrixHeight = v;
+  rebuildBufferFromUI();
+});
+el("matrix-width").addEventListener("change", (e) => {
+  const v = Math.max(7, Math.min(200, parseInt(e.target.value)));
+  e.target.value = v;
+  state.matrixWidth = v;
+  rebuildBufferFromUI();
+});
+el("led-on").addEventListener("input", (e) => { state.ledOnColor = e.target.value; });
+el("led-off").addEventListener("input", (e) => { state.ledOffColor = e.target.value; });
+el("bg-col").addEventListener("input", (e) => { state.bgColor = e.target.value; });
+
+el("randomise-commands").addEventListener("click", () => {
+  const arr = commandsArea.value.split("\n").map(s=>s.trim()).filter(s=>s.length);
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i+1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  commandsArea.value = arr.join("\n");
+  fullBuffer = buildFullScrollBuffer(arr.length ? arr : DEFAULT_COMMANDS, state.matrixHeight, state.phraseGap);
+});
+el("reset-commands").addEventListener("click", () => {
+  setCommandsText(DEFAULT_COMMANDS);
+  fullBuffer = buildFullScrollBuffer(DEFAULT_COMMANDS, state.matrixHeight, state.phraseGap);
+});
+el("play").addEventListener("click", () => {
+  lastTime = performance.now();
+  requestAnimationFrame(updateAndRender);
+});
+el("pause").addEventListener("click", () => {
+  // pause by setting FPS to very low (or we could use a running flag)
+  state.fps = 0.0001;
+});
+el("step").addEventListener("click", () => {
+  // advance by one column and redraw
+  scrollOffset += 1;
+  lastTime = performance.now();
+  requestAnimationFrame(updateAndRender);
+});
+el("recenter").addEventListener("click", () => {
+  rebuildBufferFromUI();
+});
+
+commandsArea.addEventListener("change", () => {
+  const cmds = commandsArea.value.split("\n").map(s=>s.trim()).filter(s=>s.length);
+  fullBuffer = buildFullScrollBuffer(cmds.length ? cmds : DEFAULT_COMMANDS, state.matrixHeight, state.phraseGap);
+});
+
+/* ensure initial buffer matches controls */
+fullBuffer = buildFullScrollBuffer(DEFAULT_COMMANDS, state.matrixHeight, state.phraseGap);
+</script>
+</body>
+</html>
