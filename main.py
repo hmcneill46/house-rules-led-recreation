@@ -17,7 +17,7 @@ LED_OFF_COLOR = (52, 52, 52)
 DISPLAY_BG_COLOR = (20, 20, 20)
 LETTERBOX_COLOR = (0, 0, 0)
 
-WINDOW_DEFAULT_SIZE = (800, 300)
+WINDOW_DEFAULT_SIZE = (800, 160)
 FPS = 60
 SCROLL_SPEED_COLS_PER_SEC = 45.0  # columns scrolled per second when not flashing
 
@@ -29,11 +29,26 @@ TICKS_PER_SEC = 10  # how many ticks in one real second
 # Each entry: {'word': <str>, 'delay': <int ticks after previous flash>, 'duration': <int ticks to display>}
 # Example: first flash will occur at tick = schedule[0]['delay'] (since tick starts at 0)
 FLASH_SCHEDULE = [
-    {'word': 'fuck!', 'delay': 5000000, 'duration': 6},
-    {'word': 'bored!', 'delay': 4, 'duration': 5},
-    {'word': 'whatever!', 'delay': 6, 'duration': 6},
-    {'word': 'what?', 'delay': 8, 'duration': 4},
-    {'word': 'wow!', 'delay': 10, 'duration': 5},
+    {'word': 'fuck off', 'delay': 60, 'duration': 6},
+    {'word': 'sod it', 'delay': 4, 'duration': 5},
+    {'word': 'what?', 'delay': 6, 'duration': 6},
+    {'word': 'eh?', 'delay': 8, 'duration': 4},
+    {'word': 'eh?', 'delay': 10, 'duration': 5},
+    {'word': 'jeezus!?', 'delay': 10, 'duration': 5},
+    {'word': 'whoa!', 'delay': 10, 'duration': 5},
+    {'word': 'fuck it', 'delay': 10, 'duration': 5},
+    {'word': 'huh?', 'delay': 10, 'duration': 5},
+    {'word': 'wait!', 'delay': 10, 'duration': 5},
+    {'word': 'hnnh?', 'delay': 10, 'duration': 5},
+    {'word': 'stuff it', 'delay': 10, 'duration': 5},
+    {'word': 'yeah?', 'delay': 10, 'duration': 5},
+    {'word': 'pleeze!', 'delay': 10, 'duration': 5},
+    {'word': 'aaaaah!', 'delay': 10, 'duration': 5},
+    {'word': 'sod off', 'delay': 10, 'duration': 5},
+    {'word': 'stop!', 'delay': 10, 'duration': 5},
+    {'word': 'stop!', 'delay': 10, 'duration': 5},
+    {'word': 'stop!', 'delay': 10, 'duration': 5}
+    
 ]
 
 COMMANDS = ["no lingering", "no snacking", "no cycling",
