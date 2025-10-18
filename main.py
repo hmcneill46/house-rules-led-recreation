@@ -1,14 +1,29 @@
-import pygame
-import random
-import sys
+"""
+house_rules.py
 
-# --- CONFIG ---------------------------------------------------
-LED_ON_COLOR =  (239,69,44)     # bright red
-LED_OFF_COLOR = (52, 52, 52)        # dim/off 
+Pygame recreation of Rose Finn-Kelcey "House Rules" LED sign (dot-matrix).
+Updated: flashing now pauses scrolling, clears screen, flashes word, then resumes.
+"""
+
+import pygame, sys, random, time
+
+# ---------------- CONFIG ----------------
 MATRIX_HEIGHT = 7
 MATRIX_WIDTH = 7 * 5
-SCROLL_SPEED = 1  # frames per column shift (1 = fastest)
-GAP = 1
+LED_ON_COLOR = (239, 69, 44)
+LED_OFF_COLOR = (52, 52, 52)
+DISPLAY_BG_COLOR = (20, 20, 20)
+LETTERBOX_COLOR = (0, 0, 0)
+
+WINDOW_DEFAULT_SIZE = (800, 300)
+FPS = 60
+SCROLL_SPEED_COLS_PER_SEC = 20.0
+
+FLASH_WORDS = ["fuck!", "bored!", "whatever!", "what?", "wow!"]
+FLASH_MIN_INTERVAL = 6.0
+FLASH_MAX_INTERVAL = 18.0
+FLASH_DURATION = 0.9
+
 COMMANDS = ["no dying", "no flirting", "no moaning",
             "no joking", "no flipping", "no biting",
             "no punching", "no trashing", "no bellowing",
@@ -23,16 +38,9 @@ COMMANDS = ["no dying", "no flirting", "no moaning",
             "no loitering", "no watering", "no lying",
             "no snorting", "no relaxing", "no undressing",
             "no clamping"]
-random.shuffle(COMMANDS)
-SCROLL_TEXT = " ".join(COMMANDS)
-#SCROLL_TEXT = " the quick brown fox jumps over the lazy dog! or does it? "
 
-FLASH_WORDS = ["zap?", "bored!", "whatever!", "wow!", "ouch!", "what?"]
-MIN_FLASH_DELAY = 200  # min number of scroll steps before next flash
-MAX_FLASH_DELAY = 200  # max number of scroll steps before next flash
-FLASH_DURATION = 40     # frames the flash stays visible
-
-# --- FONT DEFINITION -----------------------------------------
+# NEW variable: how many blank columns between phrases
+PHRASE_GAP = 6  # increase this to separate phrases further apart visually
 
 FONT = {
     'a': ["0000","0000","0110","0001","0111","1001","0111"], # Confirmed correct
@@ -69,116 +77,241 @@ q_options = {1:["0000","0000","0110","1001","1001","0111","0001"], # Decent, fli
              2:["0000","0000","0110","1001","1001","0110","0001"], # Decent, like 'o' with tail
              }
 
-# Randomly select one of the 'q' patterns and print which one was chosen
-
 chosen_q = random.randint(1, len(q_options))
 FONT['q'] = q_options[chosen_q]
-print(f"Chosen 'q' {chosen_q}")
+print(f"Chosen 'q' pattern: {chosen_q}")
 
-Letter_lengths = {char: len(pattern[0]) for char, pattern in FONT.items()}
+# Between each character there should be one blank column
+INTER_CHAR_BLANKS = 1
 
-# --- TEXT CONVERSION ------------------------------------------
+# Visual tuning: what fraction of the cell is the LED circle
+LED_CIRCLE_RATIO = 0.95
+
+# ------------------------------------------------------------------------------
+
+def char_to_columns(ch):
+    ch = ch.lower()
+    if ch not in FONT:
+        rows = FONT[' ']
+    else:
+        rows = FONT[ch]
+
+    if len(rows) < MATRIX_HEIGHT:
+        pad_top = MATRIX_HEIGHT - len(rows)
+        rows = (["0" * len(rows[0])] * pad_top) + rows
+
+    char_width = len(rows[0])
+    cols = []
+    for c in range(char_width):
+        col = []
+        for r in range(MATRIX_HEIGHT):
+            bit = rows[r][c] if c < len(rows[r]) else "0"
+            col.append(1 if bit == "1" else 0)
+        cols.append(col)
+    return cols
+
 def text_to_columns(text):
-    """Convert text to a list of columns for the LED matrix."""
-    columns = []
-    for char in text:
-        pattern = FONT.get(char.lower(), FONT[' '])
-        char_width = Letter_lengths.get(char.lower(), 5)
-        for x in range(char_width):
-            col = []
-            for y in range(MATRIX_HEIGHT):
-                on = pattern[y][x] == '1'
-                col.append(on)
-            columns.append(col)
-        # Add gap column
-        gap_col = [False] * MATRIX_HEIGHT
-        columns.append(gap_col)
-    return columns
+    all_cols = []
+    for i, ch in enumerate(text):
+        ch_cols = char_to_columns(ch)
+        all_cols.extend(ch_cols)
+        for _ in range(INTER_CHAR_BLANKS):
+            all_cols.append([0] * MATRIX_HEIGHT)
+    return all_cols
 
-# --- DRAWING --------------------------------------------------
-def draw_led(surface, x, y, diameter, on):
-    """Draw a single circular LED."""
-    colour = LED_ON_COLOR if on else LED_OFF_COLOR
-    pygame.draw.circle(surface, colour, (x, y), diameter//2)
+def clip_columns_to_matrix(cols):
+    if len(cols) >= MATRIX_WIDTH:
+        return cols[:MATRIX_WIDTH]
+    pad = [[0] * MATRIX_HEIGHT for _ in range(MATRIX_WIDTH - len(cols))]
+    return cols + pad
 
-def draw_matrix(surface, columns, offset, visible_cols, led_size, x_offset, y_offset):
-    """Draw visible section of the text with LEDs."""
-    surface.fill((0, 0, 0))
-    for x in range(visible_cols):
-        col_index = (offset + x) % len(columns)
-        for y in range(MATRIX_HEIGHT):
-            on = columns[col_index][y]
-            cx = x_offset + x * led_size + led_size // 2
-            cy = y_offset + y * led_size + led_size // 2
-            draw_led(surface, cx, cy, led_size - 2, on)
+def build_phrase_columns(phrase):
+    """Convert one full phrase (e.g. 'no dying') into column data."""
+    return text_to_columns(phrase)
 
-def draw_flash(surface, word, led_size, x_offset, y_offset):
-    """Render a flash word using the LED effect."""
-    columns = text_to_columns(word)
-    visible_cols = len(columns)
-    surface.fill((0, 0, 0))
-    for x in range(visible_cols):
-        for y in range(MATRIX_HEIGHT):
-            on = columns[x][y]
-            cx = x_offset + x * led_size + led_size // 2
-            cy = y_offset + y * led_size + led_size // 2
-            draw_led(surface, cx, cy, led_size - 2, on)
+def build_full_scroll_buffer(commands, phrase_gap):
+    """Builds one continuous column buffer of all commands, each separated by blanks."""
+    all_cols = []
+    gap = [[0]*MATRIX_HEIGHT for _ in range(phrase_gap)]
+    randomised = commands[:]  # shuffle so order changes each time
+    random.shuffle(randomised)
+    for phrase in randomised:
+        all_cols.extend(build_phrase_columns(phrase))
+        all_cols.extend(gap)
+    # Repeat once to ensure wrap continuity
+    all_cols.extend(all_cols[:MATRIX_WIDTH])
+    return all_cols
 
-# --- MAIN LOOP ------------------------------------------------
+pygame.init()
+clock = pygame.time.Clock()
+screen = pygame.display.set_mode(WINDOW_DEFAULT_SIZE, pygame.RESIZABLE)
+pygame.display.set_caption("House Rules — LED Dot Matrix Recreation")
+
+def build_scrolling_columns_for_command(cmd_text):
+    cols = text_to_columns(cmd_text)
+    gap = [[0] * MATRIX_HEIGHT for _ in range(MATRIX_WIDTH // 2)]
+    return cols + gap
+
+def command_generator():
+    pool = COMMANDS[:]
+    random.shuffle(pool)
+    while True:
+        if not pool:
+            pool = COMMANDS[:]
+            random.shuffle(pool)
+        yield pool.pop()
+
+cmd_gen = command_generator()
+current_cmd = next(cmd_gen)
+scrolling_columns = build_scrolling_columns_for_command(current_cmd)
+scroll_offset = 0.0
+looping_buffer = scrolling_columns + scrolling_columns
+
+next_flash_time = time.time() + random.uniform(FLASH_MIN_INTERVAL, FLASH_MAX_INTERVAL)
+is_flashing = False
+flash_start_time = 0.0
+current_flash_word = ""
+saved_scroll_offset = 0.0  # where we paused for the flash
+
+def schedule_next_flash():
+    global next_flash_time
+    next_flash_time = time.time() + random.uniform(FLASH_MIN_INTERVAL, FLASH_MAX_INTERVAL)
+
+schedule_next_flash()
+
+def get_visible_columns(buffer_cols, offset):
+    start_idx = int(offset) % len(buffer_cols)
+    out = []
+    for i in range(MATRIX_WIDTH):
+        out.append(buffer_cols[(start_idx + i) % len(buffer_cols)])
+    return out
+
+def compute_display_area(window_w, window_h):
+    target_ratio = MATRIX_WIDTH / MATRIX_HEIGHT
+    win_ratio = window_w / window_h
+    if win_ratio > target_ratio:
+        h = window_h
+        w = int(h * target_ratio)
+    else:
+        w = window_w
+        h = int(w / target_ratio)
+    x = (window_w - w) // 2
+    y = (window_h - h) // 2
+    return pygame.Rect(x, y, w, h)
+
+def render_matrix(surface, disp_rect, visible_columns, flash_columns=None, only_flash=False):
+    surface.fill(DISPLAY_BG_COLOR, disp_rect)
+
+    cell_w = disp_rect.width / MATRIX_WIDTH
+    cell_h = disp_rect.height / MATRIX_HEIGHT
+    cell_size = min(cell_w, cell_h)
+    circle_diam = cell_size * LED_CIRCLE_RATIO
+    circle_diam = min(circle_diam, cell_size * 0.98)
+    radius = circle_diam / 2.0
+
+    total_grid_w = cell_size * MATRIX_WIDTH
+    total_grid_h = cell_size * MATRIX_HEIGHT
+    start_x = disp_rect.x + (disp_rect.width - total_grid_w) / 2.0
+    start_y = disp_rect.y + (disp_rect.height - total_grid_h) / 2.0
+
+    for col_idx in range(MATRIX_WIDTH):
+        col = visible_columns[col_idx]
+        for row_idx in range(MATRIX_HEIGHT):
+            bit = col[row_idx]
+            if flash_columns:
+                flash_bit = flash_columns[col_idx][row_idx]
+            else:
+                flash_bit = 0
+
+            # If only_flash True, we show only the flash_word pixels as ON; everything else is OFF
+            if only_flash:
+                color = LED_ON_COLOR if flash_bit else LED_OFF_COLOR
+            else:
+                # Normal behaviour: flashing could overlay, but we don't use overlay now (kept for completeness)
+                if flash_bit:
+                    color = LED_ON_COLOR
+                else:
+                    color = LED_ON_COLOR if bit else LED_OFF_COLOR
+
+            cx = start_x + col_idx * cell_size + cell_size / 2.0
+            cy = start_y + row_idx * cell_size + cell_size / 2.0
+            pygame.draw.circle(surface, color, (int(cx), int(cy)), int(radius))
+
+def build_flash_columns(word):
+    cols = text_to_columns(word)
+    cols = cols[:MATRIX_WIDTH]
+    left_pad = max(0, (MATRIX_WIDTH - len(cols)) // 2)
+    full = [[0] * MATRIX_HEIGHT for _ in range(left_pad)] + cols
+    if len(full) < MATRIX_WIDTH:
+        full += [[0] * MATRIX_HEIGHT for _ in range(MATRIX_WIDTH - len(full))]
+    return full[:MATRIX_WIDTH]
+
 def main():
+    global screen
     pygame.init()
-    screen = pygame.display.set_mode((800, 200), pygame.RESIZABLE)
-    pygame.display.set_caption("LED Matrix Emulator")
-
-    columns = text_to_columns(SCROLL_TEXT)
-    offset = 0
-    frame_count = 0
-    next_flash_in = random.randint(MIN_FLASH_DELAY, MAX_FLASH_DELAY)
-    flashing = False
-    flash_timer = 0
-    flash_word = ""
-
+    screen = pygame.display.set_mode(WINDOW_DEFAULT_SIZE, pygame.RESIZABLE)
+    pygame.display.set_caption('Recreation of "House Rules" — Rose Finn-Kelcey')
     clock = pygame.time.Clock()
 
-    while True:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit(); sys.exit()
+    # Build long scrolling buffer
+    full_buffer = build_full_scroll_buffer(COMMANDS, PHRASE_GAP)
+    scroll_offset = 0.0
 
-        # --- compute scaling and aspect ratio ---
-        w, h = screen.get_size()
-        aspect_ratio = MATRIX_WIDTH / MATRIX_HEIGHT
-        target_width = w
-        target_height = int(w / aspect_ratio)
-        if target_height > h:
-            target_height = h
-            target_width = int(h * aspect_ratio)
-        x_offset = (w - target_width) // 2
-        y_offset = (h - target_height) // 2
-        led_size = target_width // MATRIX_WIDTH
+    next_flash_time = time.time() + random.uniform(FLASH_MIN_INTERVAL, FLASH_MAX_INTERVAL)
+    is_flashing = False
+    flash_start = 0.0
+    flash_word = ""
+    saved_scroll_offset = 0.0
 
-        visible_cols = MATRIX_WIDTH
+    last_time = time.time()
+    running = True
 
-        # --- drawing logic ---
-        if flashing:
-            draw_flash(screen, flash_word, led_size, x_offset, y_offset)
-            flash_timer += 1
-            if flash_timer > FLASH_DURATION:
-                flashing = False
-                next_flash_in = random.randint(MIN_FLASH_DELAY, MAX_FLASH_DELAY)
+    while running:
+        now = time.time()
+        dt = now - last_time
+        last_time = now
+
+        for e in pygame.event.get():
+            if e.type == pygame.QUIT:
+                running = False
+            elif e.type == pygame.VIDEORESIZE:
+                screen = pygame.display.set_mode((e.w, e.h), pygame.RESIZABLE)
+
+        # --- Flash control (unchanged) ---
+        if not is_flashing and now >= next_flash_time:
+            is_flashing = True
+            flash_start = now
+            flash_word = random.choice(FLASH_WORDS)
+            saved_scroll_offset = scroll_offset
+        elif is_flashing and (now - flash_start) >= FLASH_DURATION:
+            is_flashing = False
+            flash_word = ""
+            next_flash_time = time.time() + random.uniform(FLASH_MIN_INTERVAL, FLASH_MAX_INTERVAL)
+
+        # --- Scroll logic ---
+        if not is_flashing:
+            scroll_offset += SCROLL_SPEED_COLS_PER_SEC * dt
         else:
-            draw_matrix(screen, columns, offset, visible_cols, led_size, x_offset, y_offset)
-            frame_count += 1
-            if frame_count % SCROLL_SPEED == 0:
-                offset = (offset + 1) % len(columns)
-                next_flash_in -= 1
-                if next_flash_in <= 0:
-                    flashing = True
-                    flash_timer = 0
-                    flash_word = random.choice(FLASH_WORDS)
+            scroll_offset = saved_scroll_offset
+
+        # --- Drawing ---
+        window_w, window_h = screen.get_size()
+        screen.fill(LETTERBOX_COLOR)
+        disp_rect = compute_display_area(window_w, window_h)
+
+        if is_flashing:
+            flash_cols = build_flash_columns(flash_word)
+            empty_visible = [[0]*MATRIX_HEIGHT for _ in range(MATRIX_WIDTH)]
+            render_matrix(screen, disp_rect, empty_visible, flash_columns=flash_cols, only_flash=True)
+        else:
+            visible = get_visible_columns(full_buffer, scroll_offset)
+            render_matrix(screen, disp_rect, clip_columns_to_matrix(visible))
 
         pygame.display.flip()
-        clock.tick(40)
+        clock.tick(FPS)
+
+    pygame.quit()
+    sys.exit()
 
 if __name__ == "__main__":
     main()
