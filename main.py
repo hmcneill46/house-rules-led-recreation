@@ -11,12 +11,35 @@ import sys
 # ---------------- CONFIG ----------------
 MATRIX_HEIGHT = 7
 MATRIX_WIDTH = 7 * 5  # 35 by default; matches your descriptions
-LED_ON_COLOR = (239, 69, 44)
+LED_ON_COLOR = (255, 0, 0)
 LED_OFF_COLOR = (52, 52, 52)
 DISPLAY_BG_COLOR = (20, 20, 20)
 LETTERBOX_COLOR = (0, 0, 0)
+WINDOW_WIDTH_MM = 100 # Real width of the sign in mm is 88.9mm (3.5 inches)
 
-WINDOW_DEFAULT_SIZE = (800, 160)
+# Variables to change per your screen
+real_screen_res = (2560, 1600)
+real_screen_diagonal_inch = 13.3
+scaling_factor = 1.3125
+is_HiDPI = True
+#####################################
+
+# ---------- Calculate effective PPI and window size ----------
+effective_screen_size = (real_screen_res[0] * scaling_factor/2, real_screen_res[1] * scaling_factor/2) if is_HiDPI else (real_screen_res[0] * scaling_factor, real_screen_res[1] * scaling_factor)
+
+aspect_ratio = real_screen_res[0] / real_screen_res[1]
+
+real_screen_horizontal_inch = (real_screen_diagonal_inch ** 2 / (1 + (1 / aspect_ratio) ** 2)) ** 0.5
+real_screen_vertical_inch = real_screen_horizontal_inch / aspect_ratio
+
+effective_ppi = (effective_screen_size[0]) / real_screen_horizontal_inch
+
+effective_pixels_per_mm = effective_ppi / 25.4
+
+WINDOW_WIDTH = WINDOW_WIDTH_MM * effective_pixels_per_mm
+# -------------------------------------------------------------
+
+WINDOW_DEFAULT_SIZE = (int(WINDOW_WIDTH), (WINDOW_WIDTH*(MATRIX_HEIGHT/MATRIX_WIDTH)))
 FPS = 60
 SCROLL_SPEED_COLS_PER_SEC = 47.5  # columns scrolled per second when not flashing
 #SCROLL_SPEED_COLS_PER_SEC = 1
