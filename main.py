@@ -7,6 +7,7 @@ Follows the schedule structure you supplied: sequential commands, no shared stat
 
 import pygame
 import sys
+from ppi_calc import get_display_ppi, mm_to_pixels
 
 # ---------------- CONFIG ----------------
 MATRIX_HEIGHT = 7
@@ -15,7 +16,7 @@ LED_ON_COLOR = (255, 0, 0)
 LED_OFF_COLOR = (52, 52, 52)
 DISPLAY_BG_COLOR = (20, 20, 20)
 LETTERBOX_COLOR = (0, 0, 0)
-WINDOW_WIDTH_MM = 100 # Real width of the sign in mm is 88.9mm (3.5 inches)
+WINDOW_WIDTH_MM = 88.9 # Real width of the sign in mm is 88.9mm (3.5 inches)
 
 """
 # Variables to change per your screen
@@ -50,6 +51,19 @@ WINDOW_WIDTH = WINDOW_WIDTH_MM * effective_pixels_per_mm
 # -------------------------------------------------------------
 
 WINDOW_DEFAULT_SIZE = (int(WINDOW_WIDTH), (WINDOW_WIDTH*(MATRIX_HEIGHT/MATRIX_WIDTH)))
+
+
+ppi = get_display_ppi()
+if not ppi:
+    ppi = 110  # fallback
+    print(f"[Info] Using fallback PPI: {ppi}")
+
+WINDOW_WIDTH_PX = mm_to_pixels(WINDOW_WIDTH_MM, ppi)
+WINDOW_HEIGHT_PX = WINDOW_WIDTH_PX * (MATRIX_HEIGHT / MATRIX_WIDTH)
+WINDOW_DEFAULT_SIZE = (int(WINDOW_WIDTH_PX), int(WINDOW_HEIGHT_PX))
+
+print(f"[Display] {ppi:.2f} PPI detected → window {WINDOW_DEFAULT_SIZE[0]}×{WINDOW_DEFAULT_SIZE[1]} px for {WINDOW_WIDTH_MM} mm wide.")
+
 FPS = 60
 SCROLL_SPEED_COLS_PER_SEC = 47.5  # columns scrolled per second when not flashing
 #SCROLL_SPEED_COLS_PER_SEC = 1
