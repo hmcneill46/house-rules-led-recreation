@@ -17,15 +17,25 @@ DISPLAY_BG_COLOR = (20, 20, 20)
 LETTERBOX_COLOR = (0, 0, 0)
 WINDOW_WIDTH_MM = 100 # Real width of the sign in mm is 88.9mm (3.5 inches)
 
+"""
 # Variables to change per your screen
+# M1 MacBook Air 2020 Retina display example
 real_screen_res = (2560, 1600)
 real_screen_diagonal_inch = 13.3
-scaling_factor = 1.3125
+scaling_factor = 0.761904761904761904761904 # 2560/3360
 is_HiDPI = True
+#####################################
+# """
+
+# Variables to change per your screen
+real_screen_res = (3840, 2160)
+real_screen_diagonal_inch = 27
+scaling_factor = 1.25
+is_HiDPI = False
 #####################################
 
 # ---------- Calculate effective PPI and window size ----------
-effective_screen_size = (real_screen_res[0] * scaling_factor/2, real_screen_res[1] * scaling_factor/2) if is_HiDPI else (real_screen_res[0] * scaling_factor, real_screen_res[1] * scaling_factor)
+effective_screen_size = (real_screen_res[0] / (scaling_factor/2), real_screen_res[1] / (scaling_factor/2)) if is_HiDPI else (real_screen_res[0] / scaling_factor, real_screen_res[1] / scaling_factor)
 
 aspect_ratio = real_screen_res[0] / real_screen_res[1]
 
