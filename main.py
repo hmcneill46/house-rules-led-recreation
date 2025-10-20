@@ -7,7 +7,7 @@ Follows the schedule structure you supplied: sequential commands, no shared stat
 
 import pygame
 import sys
-from ppi_calc import get_display_ppi, mm_to_pixels
+from ppi_calc import get_display_ppi_and_scale, mm_to_pixels
 
 # ---------------- CONFIG ----------------
 MATRIX_HEIGHT = 7
@@ -52,14 +52,15 @@ WINDOW_WIDTH = WINDOW_WIDTH_MM * effective_pixels_per_mm
 
 WINDOW_DEFAULT_SIZE = (int(WINDOW_WIDTH), (WINDOW_WIDTH*(MATRIX_HEIGHT/MATRIX_WIDTH)))
 
+ppi, scale = get_display_ppi_and_scale()
+if ppi is None:
+    ppi = 110
+print(f"[Display] {ppi:.2f} PPI, scale={scale:.2f}")
 
-ppi = get_display_ppi()
-if not ppi:
-    ppi = 110  # fallback
-    print(f"[Info] Using fallback PPI: {ppi}")
-
-WINDOW_WIDTH_PX = mm_to_pixels(WINDOW_WIDTH_MM, ppi)
+WINDOW_WIDTH_MM = 88.9
+WINDOW_WIDTH_PX = mm_to_pixels(WINDOW_WIDTH_MM, ppi, scale)
 WINDOW_HEIGHT_PX = WINDOW_WIDTH_PX * (MATRIX_HEIGHT / MATRIX_WIDTH)
+
 WINDOW_DEFAULT_SIZE = (int(WINDOW_WIDTH_PX), int(WINDOW_HEIGHT_PX))
 
 print(f"[Display] {ppi:.2f} PPI detected → window {WINDOW_DEFAULT_SIZE[0]}×{WINDOW_DEFAULT_SIZE[1]} px for {WINDOW_WIDTH_MM} mm wide.")
