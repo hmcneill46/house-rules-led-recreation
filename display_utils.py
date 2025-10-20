@@ -5,6 +5,7 @@ from ctypes import wintypes
 def get_display_ppi_and_scale():
     system = platform.system()
 
+    # --- macOS ---
     if system == "Darwin":
         try:
             from AppKit import NSScreen
@@ -24,14 +25,17 @@ def get_display_ppi_and_scale():
             ppi_y = height_px / (height_mm / 25.4)
             ppi = (ppi_x + ppi_y) / 2
 
+            print(f"[macOS] {ppi:.2f} PPI, scale={scale:.2f}")
             return ppi, scale
 
         except Exception as e:
             print(f"[Warning] macOS PPI detection failed: {e}")
             return None, 1.0
 
+    # --- Windows ---
     elif system == "Windows":
         try:
+            # Enable DPI awareness
             try:
                 ctypes.windll.shcore.SetProcessDpiAwareness(2)
             except Exception:
@@ -43,12 +47,14 @@ def get_display_ppi_and_scale():
             user32 = ctypes.windll.user32
             user32.SetProcessDPIAware()
 
+            # Get monitor handle
             MONITOR_DEFAULTTOPRIMARY = 1
             MonitorFromPoint = user32.MonitorFromPoint
             MonitorFromPoint.restype = wintypes.HMONITOR
             MonitorFromPoint.argtypes = [wintypes.POINT, wintypes.DWORD]
             hMonitor = MonitorFromPoint(wintypes.POINT(0, 0), MONITOR_DEFAULTTOPRIMARY)
 
+            # Get DPI for that monitor
             shcore = ctypes.windll.shcore
             GetDpiForMonitor = shcore.GetDpiForMonitor
             GetDpiForMonitor.argtypes = [
@@ -63,10 +69,13 @@ def get_display_ppi_and_scale():
             dpiY = ctypes.c_uint()
             MONITOR_DPI_TYPE = 0  # effective DPI
             res = GetDpiForMonitor(hMonitor, MONITOR_DPI_TYPE, ctypes.byref(dpiX), ctypes.byref(dpiY))
-
             if res != 0:
                 raise ctypes.WinError(res)
 
+            # Windows “scale factor” (e.g. 1.25 for 125%)
+            scale = dpiX.value / 96.0
+
+            # Get physical size from GDI
             hdc = user32.GetDC(0)
             HORZSIZE = 4
             VERTSIZE = 6
@@ -86,8 +95,7 @@ def get_display_ppi_and_scale():
             else:
                 ppi = (dpiX.value + dpiY.value) / 2
 
-            # Windows “scaling” is the logical DPI / 96 (e.g. 150% = 1.5)
-            scale = dpiX.value / 96.0
+            print(f"[Windows] {ppi:.2f} PPI, scale={scale:.2f}")
             return ppi, scale
 
         except Exception as e:
@@ -100,5 +108,12 @@ def get_display_ppi_and_scale():
 
 
 def mm_to_pixels(mm, ppi, scale=1.0):
-    """Convert millimetres to *logical* pixels (for pygame window creation)."""
-    return (mm / 25.4) * ppi / scale
+    """
+    Convert millimetres to *logical* pixels for window creation.
+    macOS → divide by scale (because Pygame expects logical coords)
+    Windows → don't divide (scale is already baked into PPI)
+    """
+    if platform.system() == "Darwin":
+        return (mm / 25.4) * ppi / scale
+    else:
+        return (mm / 25.4) * ppi
