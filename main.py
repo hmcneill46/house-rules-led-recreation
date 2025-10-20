@@ -271,32 +271,10 @@ def main(seq):
             if ev.type == pygame.QUIT:
                 running = False
             elif ev.type == pygame.VIDEORESIZE:
-                if not pygame.display.get_surface().get_flags() & pygame.FULLSCREEN:
-                    # Maintain fixed aspect ratio
-                    target_ratio = MATRIX_WIDTH / MATRIX_HEIGHT
-                    new_w, new_h = ev.w, ev.h
-                    new_ratio = new_w / new_h
-
-                    if new_ratio > target_ratio:
-                        # Window too wide — adjust width
-                        new_w = int(new_h * target_ratio)
-                    else:
-                        # Window too tall — adjust height
-                        new_h = int(new_w / target_ratio)
-
-                    screen = pygame.display.set_mode((new_w, new_h), pygame.RESIZABLE)
-                else:
-                    # In fullscreen, allow any size (letterbox handled by compute_display_area)
-                    screen = pygame.display.set_mode((ev.w, ev.h), pygame.FULLSCREEN)
+                screen = pygame.display.set_mode((ev.w, ev.h), pygame.RESIZABLE)
             elif ev.type == pygame.KEYDOWN:
                 if ev.key == pygame.K_ESCAPE:
                     running = False
-                elif ev.key == pygame.K_f:
-                    fullscreen = screen.get_flags() & pygame.FULLSCREEN
-                    if fullscreen:
-                        screen = pygame.display.set_mode(WINDOW_DEFAULT_SIZE, pygame.RESIZABLE)
-                    else:
-                        screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 
         if not seq:
             # nothing to do
