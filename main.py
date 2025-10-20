@@ -22,19 +22,20 @@ FPS = 60
 SCROLL_SPEED_COLS_PER_SEC = 45.0  # columns scrolled per second when not flashing
 
 # Ticks: discrete time unit controlling scheduling. Set to what you prefer.
-TICKS_PER_SEC = 10  # how many ticks in one real second
+TICKS_PER_SEC = 60  # how many ticks in one real second
 
 # Ordered schedule for flashes. This is the single source of truth for flash
 # timing. No randomness.
 # Each entry: {'word': <str>, 'delay': <int ticks after previous flash>, 'duration': <int ticks to display>}
 # Example: first flash will occur at tick = schedule[0]['delay'] (since tick starts at 0)
 FLASH_SCHEDULE = [
-    {'word': 'fuck off', 'delay': 60, 'duration': 6},
-    {'word': 'sod it', 'delay': 4, 'duration': 5},
-    {'word': 'what?', 'delay': 6, 'duration': 6},
+    {'word': 'whoa!', 'delay': 10, 'duration': 6000},
+    {'word': 'fuck off', 'delay': 1910, 'duration': 12},
+    {'word': 'sod it', 'delay': 1321, 'duration': 12},
+    {'word': 'what?', 'delay': 709, 'duration': 24},
     {'word': 'eh?', 'delay': 8, 'duration': 4},
     {'word': 'eh?', 'delay': 10, 'duration': 5},
-    {'word': 'jeezus!?', 'delay': 10, 'duration': 5},
+    {'word': 'jeezus!', 'delay': 10, 'duration': 5},
     {'word': 'whoa!', 'delay': 10, 'duration': 5},
     {'word': 'fuck it', 'delay': 10, 'duration': 5},
     {'word': 'huh?', 'delay': 10, 'duration': 5},
@@ -191,6 +192,7 @@ COMMANDS = ["no lingering", "no snacking", "no cycling",
             "no sedating", "no itching", # # [7]stop![8]
             "no quoting", "no ending"] 
 
+
 # How many blank columns between phrases
 PHRASE_GAP = 6
 
@@ -226,7 +228,7 @@ FONT = {
     'x': ["00000","00000","10001","01010","00100","01010","10001"], # Confirmed correct
     'y': ["0000","0000","1001","1001","0111","0001","1110"], # Confirmed correct
     'z': ["0000","0000","1111","0001","0110","1000","1111"], # Confirmed correct
-    '!': ["001","001","001","001","000","001","001"], # Confirmed correct
+    '!': ["1","1","1","1","0","1","1"], # Confirmed correct
     '?': ["01110","10001","00001","00010","00100","00000","00100"], # Confirmed correct
     ' ': ["00"] * 7,
 } 
