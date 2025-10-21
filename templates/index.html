@@ -1,152 +1,128 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>House Rules — LED Dot Matrix</title>
-<style>
-  :root{
-    --bg: #141414;
-    --letterbox: #000000;
-    --panel-bg: #111;
-    --panel-fg: #ddd;
-  }
-  html,body{height:100%;margin:0;font-family: Inter,system-ui,Segoe UI,Arial;}
-  body{background:var(--bg);color:var(--panel-fg);display:flex;flex-direction:column;gap:8px;padding:12px;}
-  header{display:flex;align-items:center;gap:12px;}
-  h1{margin:0;font-size:18px}
-  #main{display:flex;gap:12px;flex:1;min-height:320px;}
-  #preview{flex:1;background:var(--letterbox);display:flex;align-items:center;justify-content:center;padding:12px;border-radius:8px}
-  #controls{width:360px;max-width:40vw;background:var(--panel-bg);padding:12px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.5);overflow:auto}
-  .control{margin-bottom:10px}
-  label{display:block;font-size:12px;color:#bbb;margin-bottom:4px}
-  input[type="range"]{width:100%}
-  input[type="number"]{width:80px}
-  .row{display:flex;gap:8px;align-items:center}
-  button{padding:8px 10px;border-radius:6px;border:1px solid #333;background:#222;color:#fff;cursor:pointer}
-  .small{font-size:12px;padding:6px 8px}
-  .muted{color:#999;font-size:12px}
-  .footer{font-size:12px;color:#999;margin-top:6px}
-  #commands-area{width:100%;height:120px;resize:vertical;background:#0e0e0e;color:#ddd;padding:8px;border-radius:6px;border:1px solid #222}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>House Rules — LED Matrix</title>
+  <style>
+    :root{
+      --gap:12px;
+      --controls-height:240px;
+    }
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#111;color:#eee}
+    .app{display:flex;flex-direction:column;height:100%}
+    header{padding:12px 16px;border-bottom:1px solid rgba(255,255,255,0.04);display:flex;align-items:center;gap:12px}
+    header h1{margin:0;font-size:18px;font-weight:600}
+
+    /* display area on top taking full width */
+    .display-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:12px}
+    canvas#matrix{width:100%;height:100%;max-height:60vh;border-radius:6px;background:#000;display:block}
+
+    /* controls below */
+    .controls{padding:12px 16px;border-top:1px solid rgba(255,255,255,0.04);display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;align-items:start}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04)}
+    .row{display:flex;gap:8px;align-items:center}
+    label{font-size:13px;color:#ddd}
+    input[type=range]{width:100%}
+    button{padding:8px 10px;border-radius:6px;border:0;background:#2b2b2b;color:#fff;cursor:pointer}
+    input[type=color]{width:36px;height:36px;border:0;padding:0;background:transparent}
+    textarea{width:100%;height:120px;font-family:monospace;background:#0f0f0f;color:#eee;border-radius:6px;padding:8px;border:1px solid rgba(255,255,255,0.04)}
+    small{color:#bbb}
+    .muted{color:#999;font-size:13px}
+
+    footer{padding:8px 12px;text-align:right;color:#888;font-size:12px}
+    @media (max-width:600px){canvas#matrix{max-height:45vh}}
+  </style>
 </head>
 <body>
-<header>
-  <h1>House Rules — LED Dot Matrix (web)</h1>
-  <div class="muted">Host on local server: open <code>http://&lt;your-pc-ip&gt;:5000</code> from other devices</div>
-</header>
+  <div class="app">
+    <header>
+      <h1>House Rules — LED Matrix (client-side)</h1>
+      <div class="muted">Responsive canvas, real-time controls, load your JSON</div>
+    </header>
 
-<div id="main">
-  <div id="preview">
-    <canvas id="led-canvas"></canvas>
+    <div class="display-wrap">
+      <canvas id="matrix"></canvas>
+    </div>
+
+    <div class="controls">
+      <div class="card">
+        <div class="row" style="justify-content:space-between"><div><label>Play / Pause</label></div>
+          <div><button id="playPause">Pause</button></div>
+        </div>
+        <hr />
+        <div style="display:grid;gap:8px">
+          <div><label>Scroll speed (cols / sec): <span id="speedVal">47.5</span></label>
+            <input id="speed" type="range" min="1" max="200" step="0.1" value="47.5"></div>
+
+          <div><label>Display width (columns): <span id="widthVal">35</span></label>
+            <input id="matrixWidth" type="range" min="7" max="100" step="1" value="35"></div>
+
+          <div><label>LED circle ratio: <span id="circleVal">0.95</span></label>
+            <input id="circleSize" type="range" min="0.4" max="1.0" step="0.01" value="0.95"></div>
+
+          <div><label>Frame rate (for "flash" durations interpretation): <span id="fpsVal">60</span> fps</label>
+            <input id="fps" type="range" min="10" max="120" step="1" value="60"></div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div><label>Colors</label></div>
+        <div class="row" style="margin-top:8px">
+          <div style="display:flex;gap:8px;align-items:center"><small>LED on</small><input id="ledOn" type="color" value="#ff0000"></div>
+          <div style="display:flex;gap:8px;align-items:center"><small>LED off</small><input id="ledOff" type="color" value="#343434"></div>
+          <div style="display:flex;gap:8px;align-items:center"><small>BG</small><input id="bg" type="color" value="#141414"></div>
+        </div>
+
+        <hr />
+        <div style="display:flex;gap:8px;align-items:center"><label>Letterbox color</label><input id="letterbox" type="color" value="#000000"></div>
+
+      </div>
+
+      <div class="card">
+        <div><label>Sequence (JSON)</label></div>
+        <div style="margin-top:8px;">
+          <input id="fileInput" type="file" accept="application/json" style="width:100%;">
+          <div style="margin-top:8px;display:flex;gap:8px;">
+            <button id="loadDefaults">Load default sequence</button>
+            <button id="pasteJson">Paste JSON</button>
+          </div>
+        </div>        
+        <small>Or edit pasted JSON below then click "Apply JSON"</small>
+        <textarea id="jsonArea" placeholder='Paste sequence JSON here'></textarea>
+        <div style="display:flex;gap:8px;margin-top:8px"><button id="applyJson">Apply JSON</button><button id="downloadJson">Download current JSON</button></div>
+      </div>
+
+      <div class="card">
+        <div><label>Diagnostics & Controls</label></div>
+        <div style="margin-top:8px">
+          <div class="row"><small>Command index:</small><div id="cmdIdx">0</div></div>
+          <div class="row"><small>Offset (cols):</small><div id="offset">0</div></div>
+          <div style="margin-top:8px" class="row"><button id="stepCmd">Step command</button><button id="reset">Reset</button></div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>Open the file in a browser. The canvas resizes with the window. Use file input to load your own sequence.json.</footer>
   </div>
-
-  <div id="controls">
-    <div class="control">
-      <label>Matrix size</label>
-      <div class="row">
-        <div>
-          <div class="muted">Height (rows)</div>
-          <input id="matrix-height" type="number" min="3" max="16" value="7">
-        </div>
-        <div>
-          <div class="muted">Width (cols)</div>
-          <input id="matrix-width" type="number" min="7" max="200" value="35">
-        </div>
-      </div>
-    </div>
-
-    <div class="control">
-      <label>Scroll speed (columns/sec)</label>
-      <input id="speed" type="range" min="1" max="200" value="20">
-      <div class="row"><span id="speed-val">20</span> cols/sec</div>
-    </div>
-
-    <div class="control">
-      <label>Phrase gap (blank columns between phrases)</label>
-      <input id="phrase-gap" type="range" min="0" max="40" value="6">
-      <div class="row"><span id="phrase-gap-val">6</span> cols</div>
-    </div>
-
-    <div class="control">
-      <label>LED circle scale (fraction of cell)</label>
-      <input id="circle-ratio" type="range" min="0.4" max="1.0" step="0.01" value="0.95">
-      <div class="row"><span id="circle-ratio-val">0.95</span></div>
-    </div>
-
-    <div class="control">
-      <label>FPS (render)</label>
-      <input id="fps" type="number" min="10" max="120" value="60">
-    </div>
-
-    <div class="control">
-      <label>LED colours</label>
-      <div class="row">
-        <div>
-          <div class="muted">LED on</div>
-          <input id="led-on" type="color" value="#ef452c">
-        </div>
-        <div>
-          <div class="muted">LED off</div>
-          <input id="led-off" type="color" value="#343434">
-        </div>
-        <div>
-          <div class="muted">Background</div>
-          <input id="bg-col" type="color" value="#141414">
-        </div>
-      </div>
-    </div>
-
-    <div class="control">
-      <label>Flash words (comma separated)</label>
-      <input id="flash-words" type="text" value="fuck!,bored!,whatever!,what?,wow!">
-      <div class="muted" style="margin-top:6px">Flash pauses scrolling, clears matrix, flashes word for a short time, then resumes (matches original behaviour).</div>
-    </div>
-
-    <div class="control">
-      <label>Commands (each phrase on its own line)</label>
-      <textarea id="commands-area"></textarea>
-      <div class="row" style="margin-top:6px">
-        <button id="randomise-commands" class="small">Randomise order</button>
-        <button id="reset-commands" class="small">Reset to defaults</button>
-      </div>
-    </div>
-
-    <div class="control">
-      <div class="row">
-        <button id="play" class="small">Play</button>
-        <button id="pause" class="small">Pause</button>
-        <button id="step" class="small">Step 1 col</button>
-        <button id="recenter" class="small">Rebuild buffer</button>
-      </div>
-    </div>
-
-    <div class="footer">
-      Ported from your Python Pygame code — font and behaviour preserved. If anything looks off for the letter <code>q</code> we include two reasonable options (like your script).
-    </div>
-  </div>
-</div>
 
 <script>
-/* --------------- Configuration pulled from your Python code ---------------- */
-const DEFAULTS = {
-  MATRIX_HEIGHT: 7,
-  MATRIX_WIDTH: 7 * 5,
-  LED_ON_COLOR: "#ef452c",
-  LED_OFF_COLOR: "#343434",
-  DISPLAY_BG_COLOR: "#141414",
-  LETTERBOX_COLOR: "#000000",
-  FPS: 60,
-  SCROLL_SPEED_COLS_PER_SEC: 20.0,
-  FLASH_MIN_INTERVAL: 6.0,
-  FLASH_MAX_INTERVAL: 18.0,
-  FLASH_DURATION: 0.9,
-  PHRASE_GAP: 6,
-  INTER_CHAR_BLANKS: 1,
-  LED_CIRCLE_RATIO: 0.95,
-};
+/*
+  Single-file client-side recreation of the provided Pygame logic.
+  - Responsive canvas at top
+  - Controls below to play/pause, change speed, width, colors, circle size, fps
+  - Load JSON via file input or paste
+  - Real-time updates
 
-/* Font: copied from your script exactly (rows as strings) */
+  Notes on replacing data:
+  - Use the "Load default sequence" button to populate with the example.
+  - Use the file input to load your sequence.json (same format as your Python).
+  - Or paste JSON into the textarea and click "Apply JSON".
+*/
+
+// ---------- FONT (converted from your Python FONT) ----------
 const FONT = {
   'a': ["0000","0000","0110","0001","0111","1001","0111"],
   'b': ["1000","1000","1110","1001","1001","1001","0110"],
@@ -164,6 +140,7 @@ const FONT = {
   'n': ["0000","0000","0110","1001","1001","1001","1001"],
   'o': ["0000","0000","0110","1001","1001","1001","0110"],
   'p': ["0000","0000","0110","1001","1001","1110","1000"],
+  'q': ["0000","0000","0110","1001","1001","0111","0001"],
   'r': ["000","000","011","100","100","100","100"],
   's': ["0000","0000","0111","1000","0110","0001","1110"],
   't': ["100","100","111","100","100","100","011"],
@@ -173,492 +150,1080 @@ const FONT = {
   'x': ["00000","00000","10001","01010","00100","01010","10001"],
   'y': ["0000","0000","1001","1001","0111","0001","1110"],
   'z': ["0000","0000","1111","0001","0110","1000","1111"],
-  '!': ["001","001","001","001","000","001","001"],
+  '!': ["1","1","1","1","0","1","1"],
   '?': ["01110","10001","00001","00010","00100","00000","00100"],
-  ' ': ["00","00","00","00","00","00","00"]
+  ' ': ["0","0","0","0","0","0","0"]
 };
 
-/* q options like your script */
-const Q_OPTIONS = {
-  1: ["0000","0000","0110","1001","1001","0111","0001"],
-  2: ["0000","0000","0110","1001","1001","0110","0001"]
-};
-const chosenQ = (Math.random() < 0.5) ? Q_OPTIONS[1] : Q_OPTIONS[2];
-FONT['q'] = chosenQ;
+// Default configuration (mirrors your Python)
+let MATRIX_HEIGHT = 7;
+let MATRIX_WIDTH = 35; // changeable by user
+let LED_CIRCLE_RATIO = 0.95;
+let SCROLL_SPEED_COLS_PER_SEC = 47.5;
+let FPS = 60; // used to interpret flash-duration which was stored in frames
 
-/* Default commands from your file */
-const DEFAULT_COMMANDS = ["no lingering", "no snacking", "no cycling",
-            "no molesting", "no phoning", "no tampering",
-            "no humping", "no waiting", "no serving",
-            "no shaming", "no busting", "no crying",
-            "no stealing", "no knocking", "no shouting",
-            "no littering", "no trucking", "no spitting",
-            "no fixing", "no oiling", "no throwing",
-            "no canvassing", "no conoodling", "no worshipping",
-            "no stopping", "no pleasing", "no groveling",
-            "no weeping", "no bribing", "no dumping",
-            "no stewing", "no pushing", "no stirring",
-            "no baking", "no farting", "no drinking",
-            "no playing", "no fighting", "no gutting",
-            "no demanding", "no hitting", "no dying",
-            "no flirting", "no moaning", "no joking",
-            "no tensing", "no flipping", "no biting", 
-            "no punching", "no trashing", "no bellowing",
-            "no smoking", "no kicking", "no meddling",
-            "no stamping", "no folding", "no stabbing",
-            "no bellowing", "no shoving", 
-            "no leaking", "no bruising", "no teasing",
-            "no licking", "no flossing", "no baiting",
-            "no chasing", "no plastering", "no gyrating",
-            "no saucing", "no sloshing", "no cooling",
-            "no battering", "no taming", "no dissecting",
-            "no arguing", "no driving", "no killing",
-            "no soliciting", "no drawing", "no joining",
-            "no blasting", "no voting", "no protesting",
-            "no beating", "no eating", 
-            "no eating", "no fondling", 
-            "no eating", "no fondling", "no yawning",
-            "no hating", "no loitering", "no sneering",
-            "no touting", "no watering", "no lying",
-            "no dragging", "no pointing", "no lifting",
-            "no picking", "no grassing", "no parking",
-            "no standing", "no snorting", "no queuing",
-            "no elbowing", "no sniffing", "no relaxing",
-            "no fluffing", 
-            "no jamming", "no undressing", "no clamping",
-            "no snogging", "no tripping", "no cuddling",
-            "no drooling", "no staring", "no mugging",
-            "no fixating", "no tailing", "no blaming",
-            "no crushing", "no dancing", "no mounting",
-            "no creeping", "no brewing", "no festering",
-            "no breeding", "no pumping", "no peeling",
-            "no lusting", "no dissing", "no dropping",
-            "no jerking", "no crumpling", "no looking", 
-            "no carting", "no necking", "no abducting",
-            "no blowing", "no fagging", "no deserting",
-            "no invading", "no retouching", "no fumbling",
-            "no chewing", "no defacing", "no slipping",
-            "no whitewashing", "no relapsing", "no nodding",
-            "no dodging", "no gossiping", "no blanking",
-            "no needling", "no floating", "no spanking",
-            "no gaming", "no kneeing", "no stretching",
-            "no trusting", "no harassing", "no toasting",
-            "no sampling", "no washing", "no exposing",
-            "no listening", "no fibbing", "no bossing",
-            "no accelerating", "no dawdling",
-            "no fathering", "no hanging", "no filming",
-            "no rushing", "no watching", "no kidding",
-            "no perverting", "no nipping", "no cruising",
-            "no pinching", "no fidgeting", "no kissing",
-            "no cheating", "no speeding", "no blocking",
-            "no shirking", "no brushing", "no hurting",
-            "no dirtying", "no whispering", "no snoring",
-            "no running", "no fingering", "no blackmailing",
-            "no snorting", "no frowning", "no laughing",
-            "no stalking", "no yawning", "no flannelling",
-            "no trading", "no jabbing", "no chasing",
-            "no hoarding", "no trafficking", "no bullying",
-            "no tiptoeing", "no smarting", "no groaning",
-            "no feuding", "no circling", "no groping",
-            "no bawling", "no jumping", 
-            "no laundering", "no gawping", "no spiking",
-            "no weeding", "no touching", "no aiding",
-            "no charging", "no limping", "no abetting",
-            "no smuggling", "no drooping", "no mouthing",
-            "no jawing", "no climbing", "no faking",
-            "no leaving", "no rioting", "no breathing",
-            "no stealing", "no boring", "no sweating",
-            "no crawling", "no creeping", 
-            "no pouting", "no wrestling", "no knifing",
-            "no pummelling", "no shouting", "no fainting",
-            "no loafing", "no squeezing", "no vamping",
-            "no straying", "no hitching", "no picketing",
-            "no streaking", "no joyriding", "no rabbiting",
-            "no pleading", "no smiling", "no battling",
-            "no slimming", "no jeering", "no peeping",
-            "no blaming", "no stuffing", "no curating",
-            "no dating", "no pickling", "no crossing",
-            "no punching", 
-            "no screwing", "no bleeding", "no smearing",
-            "no stroking", "no hoping", "no voting",
-            "no signing", "no crediting", "no accounting",
-            "no rolling", "no sacking", "no drafting",
-            "no ticketing", "no troubling", "no bargaining",
-            "no fingering", "no helping", "no plotting", 
-            "no clapping", "no following", "no scribbling",
-            "no rioting", "no shipping", "no ravaging",
-            "no aiming", "no painting", "no carving",
-            "no scalping", "no flying", "no landing",
-            "no sterilising", "no robbing", "no trawling",
-            "no looting", "no leaping", "no terrorising",
-            "no spewing", "no kicking", "no kidnapping",
-            "no preaching", "no moonlighting", "no cycling",
-            "no networking", "no speeding", 
-            "no colouring", "no perming", "no rapping",
-            "no crowding", "no aging", "no dribbling",
-            "no pausing", "no controlling", "no panicking",
-            "no freewheeling", "no carpeting", "no fuming",
-            "no blazing", "no steaming", "no craving",
-            "no tricking", "no daring", "no moping",
-            "no operating", "no training", "no pilfering",
-            "no tresspassing", "no dillydallying", 
-            "no straining", "no commenting", "no fundraising",
-            "no developing", "no heating", "no sluicing",
-            "no judging", "no limiting", "no sweeping",
-            "no drawing", "no smacking", "no scrubbing",
-            "no roping", "no worming", "no splashing",
-            "no prowling", "no feeling", "no scoring",
-            "no embezzling", "no chasing", "no tossing",
-            "no undertaking", "no holding", "no crisscrossing",
-            "no unravelling", "no crawling", 
-            "no swiping", "no smudging", "no whistling",
-            "no camping", "no delaying", "no dumping",
-            "no praying", "no grilling", "no nailing",
-            "no sliding", "no spoiling", "no breaking",
-            "no warning", "no bombing", "no driving",
-            "no backing", "no trailing", "no whoring",
-            "no railing", "no loading", "no skipping",
-            "no boating", "no milking", "no nursing",
-            "no posing", "no malarking", "no entering",
-            "no promising", "no parking", "no talking",
-            "no singing", "no policing", "no busking",
-            "no nothing", 
-            "no nothing", "no sponging", 
-            "no sedating", "no itching",
-            "no quoting", "no ending"] ;
+// colors
+let LED_ON_COLOR = '#ff0000';
+let LED_OFF_COLOR = '#343434';
+let DISPLAY_BG_COLOR = '#141414';
+let LETTERBOX_COLOR = '#000000';
 
-/* ---------------- Utility: char -> columns (rows oriented top->bottom) ---------------- */
-function charToColumns(ch, matrixHeight) {
+// state
+let sequence = []; // loaded json
+let cmdIdx = 0;
+let scrollOffset = 0.0; // in columns
+let isFlashing = false;
+let flashFrameCounter = 0;
+let currentFlashCols = null;
+let currentScrollBuffer = null;
+let playing = true;
+
+// DOM
+const canvas = document.getElementById('matrix');
+const ctx = canvas.getContext('2d');
+const playPauseBtn = document.getElementById('playPause');
+const speedInput = document.getElementById('speed');
+const speedVal = document.getElementById('speedVal');
+const widthInput = document.getElementById('matrixWidth');
+const widthVal = document.getElementById('widthVal');
+const circleInput = document.getElementById('circleSize');
+const circleVal = document.getElementById('circleVal');
+const ledOnInput = document.getElementById('ledOn');
+const ledOffInput = document.getElementById('ledOff');
+const bgInput = document.getElementById('bg');
+const letterboxInput = document.getElementById('letterbox');
+const fpsInput = document.getElementById('fps');
+const fpsVal = document.getElementById('fpsVal');
+const cmdIdxEl = document.getElementById('cmdIdx');
+const offsetEl = document.getElementById('offset');
+const fileInput = document.getElementById('fileInput');
+const jsonArea = document.getElementById('jsonArea');
+const applyJsonBtn = document.getElementById('applyJson');
+const loadDefaultsBtn = document.getElementById('loadDefaults');
+const pasteJsonBtn = document.getElementById('pasteJson');
+const downloadJsonBtn = document.getElementById('downloadJson');
+const stepCmdBtn = document.getElementById('stepCmd');
+const resetBtn = document.getElementById('reset');
+
+function resizeCanvas(){
+  // make canvas fill display-wrap but maintain aspect ratio by drawing area inside (we will compute grid inside)
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = Math.max(300, Math.floor(rect.width * devicePixelRatio));
+  canvas.height = Math.max(100, Math.floor(rect.height * devicePixelRatio));
+}
+window.addEventListener('resize', ()=>{resizeCanvas();});
+resizeCanvas();
+
+// ---------- Helpers ported from Python ----------
+function charToColumns(ch){
   ch = ch.toLowerCase();
-  if (!FONT[ch]) return charToColumns(' ', matrixHeight);
-  let rows = FONT[ch].slice(); // copy
-  // pad on top if shorter than matrixHeight
-  if (rows.length < matrixHeight) {
-    const padTop = matrixHeight - rows.length;
-    const blank = "0".repeat(rows[0].length);
-    for (let i = 0; i < padTop; i++) rows.unshift(blank);
+  let rows = FONT[ch] || FONT[' '];
+  if(rows.length < MATRIX_HEIGHT){
+    const padTop = MATRIX_HEIGHT - rows.length;
+    const blank = '0'.repeat(rows[0].length);
+    rows = Array(padTop).fill(blank).concat(rows);
   }
   const charWidth = rows[0].length;
   const cols = [];
-  for (let c = 0; c < charWidth; c++) {
+  for(let c=0;c<charWidth;c++){
     const col = [];
-    for (let r = 0; r < matrixHeight; r++) {
-      const rowStr = rows[r];
-      const bit = (c < rowStr.length && rowStr[c] === '1') ? 1 : 0;
-      col.push(bit);
+    for(let r=0;r<MATRIX_HEIGHT;r++){
+      const bit = (c < rows[r].length) ? rows[r][c] : '0';
+      col.push(bit === '1' ? 1 : 0);
     }
     cols.push(col);
   }
   return cols;
 }
 
-function textToColumns(text, matrixHeight, interCharBlanks=1) {
-  let all = [];
-  for (let i=0;i<text.length;i++){
-    const ch = text[i];
-    all = all.concat(charToColumns(ch, matrixHeight));
-    for (let j=0;j<interCharBlanks;j++) all.push(new Array(matrixHeight).fill(0));
+function textToColumns(text){
+  const all = [];
+  for(let i=0;i<text.length;i++){
+    const chCols = charToColumns(text[i]);
+    all.push(...chCols);
+    // INTER_CHAR_BLANKS = 1
+    all.push(Array(MATRIX_HEIGHT).fill(0));
   }
   return all;
 }
 
-function buildPhraseColumns(phrase, matrixHeight) {
-  return textToColumns(phrase, matrixHeight);
-}
-
-/* Build a long scrolling buffer (random order) */
-function buildFullScrollBuffer(commands, matrixHeight, phraseGap) {
-  const gap = [];
-  for (let i=0;i<phraseGap;i++) gap.push(new Array(matrixHeight).fill(0));
-  const pool = commands.slice();
-
-  let allCols = [];
-  pool.forEach(p => {
-    allCols = allCols.concat(buildPhraseColumns(p, matrixHeight));
-    allCols = allCols.concat(gap);
-  });
-  // Repeat a prefix to allow wrap continuity (like your script)
-  allCols = allCols.concat(allCols.slice(0, matrixHeight));
-  return allCols;
-}
-
-function clipColumnsToMatrix(cols, matrixWidth, matrixHeight) {
-  if (cols.length >= matrixWidth) return cols.slice(0, matrixWidth);
-  const pad = [];
-  for (let i = 0; i < matrixWidth - cols.length; i++) pad.push(new Array(matrixHeight).fill(0));
+function clipColumnsToMatrix(cols){
+  if(cols.length >= MATRIX_WIDTH) return cols.slice(0,MATRIX_WIDTH);
+  const pad = Array.from({length: MATRIX_WIDTH - cols.length}, ()=>Array(MATRIX_HEIGHT).fill(0));
   return cols.concat(pad);
 }
 
-/* Build flash columns */
-function buildFlashColumns(word, matrixWidth, matrixHeight) {
-  let cols = textToColumns(word, matrixHeight);
-  cols = cols.slice(0, matrixWidth);
-  const leftPad = Math.max(0, Math.floor((matrixWidth - cols.length) / 2));
-  const full = [];
-  for (let i=0;i<leftPad;i++) full.push(new Array(matrixHeight).fill(0));
-  full.push(...cols);
-  while (full.length < matrixWidth) full.push(new Array(matrixHeight).fill(0));
-  return full.slice(0, matrixWidth);
-}
-
-/* ---------------- Rendering + Animation ---------------- */
-const canvas = document.getElementById("led-canvas");
-const ctx = canvas.getContext("2d");
-let state = {
-  matrixHeight: DEFAULTS.MATRIX_HEIGHT,
-  matrixWidth: DEFAULTS.MATRIX_WIDTH,
-  ledOnColor: DEFAULTS.LED_ON_COLOR,
-  ledOffColor: DEFAULTS.LED_OFF_COLOR,
-  bgColor: DEFAULTS.DISPLAY_BG_COLOR,
-  fps: DEFAULTS.FPS,
-  speed: DEFAULTS.SCROLL_SPEED_COLS_PER_SEC,
-  phraseGap: DEFAULTS.PHRASE_GAP,
-  circleRatio: DEFAULTS.LED_CIRCLE_RATIO,
-  flashMin: DEFAULTS.FLASH_MIN_INTERVAL,
-  flashMax: DEFAULTS.FLASH_MAX_INTERVAL,
-  flashDuration: DEFAULTS.FLASH_DURATION
-};
-
-let fullBuffer = buildFullScrollBuffer(DEFAULT_COMMANDS, state.matrixHeight, state.phraseGap);
-let scrollOffset = 0.0;
-let lastTime = performance.now();
-let nextFlashTime = performance.now() + randomInRange(state.flashMin, state.flashMax) * 1000;
-let isFlashing = false;
-let flashStart = 0;
-let flashWord = "";
-let savedScrollOffset = 0;
-
-/* Copy initial commands into the textarea */
-const commandsArea = document.getElementById("commands-area");
-function setCommandsText(list) {
-  commandsArea.value = list.join("\n");
-}
-setCommandsText(DEFAULT_COMMANDS);
-
-/* Helpers */
-function randomInRange(min, max){ return Math.random()*(max-min)+min; }
-
-function resizeCanvas() {
-  // fill preview panel but keep pixel-perfect ratio
-  const preview = document.getElementById("preview");
-  const rect = preview.getBoundingClientRect();
-  canvas.width = Math.max(300, rect.width - 24);
-  canvas.height = Math.max(120, rect.height - 24);
-}
-window.addEventListener("resize", resizeCanvas);
-resizeCanvas();
-
-/* compute display rectangle to keep matrix aspect ratio centered */
-function computeDisplayArea(canvasW, canvasH, matrixW, matrixH) {
-  const targetRatio = matrixW / matrixH;
-  const winRatio = canvasW / canvasH;
-  let w,h;
-  if (winRatio > targetRatio) {
-    h = canvasH;
-    w = Math.round(h * targetRatio);
-  } else {
-    w = canvasW;
-    h = Math.round(w / targetRatio);
-  }
-  const x = Math.floor((canvasW - w)/2);
-  const y = Math.floor((canvasH - h)/2);
-  return {x,y,w,h};
-}
-
-function renderMatrix(ctx, dispRect, visibleColumns, flashColumns=null, onlyFlash=false) {
-  // background
-  ctx.fillStyle = state.bgColor;
-  ctx.fillRect(dispRect.x, dispRect.y, dispRect.w, dispRect.h);
-
-  const cellW = dispRect.w / state.matrixWidth;
-  const cellH = dispRect.h / state.matrixHeight;
-  const cellSize = Math.min(cellW, cellH);
-  const circleDiam = Math.min(cellSize * state.circleRatio, cellSize * 0.98);
-  const radius = circleDiam / 2;
-  const totalGridW = cellSize * state.matrixWidth;
-  const totalGridH = cellSize * state.matrixHeight;
-  const startX = dispRect.x + (dispRect.w - totalGridW)/2;
-  const startY = dispRect.y + (dispRect.h - totalGridH)/2;
-
-  for (let colIdx=0; colIdx<state.matrixWidth; colIdx++){
-    const col = visibleColumns[colIdx] || new Array(state.matrixHeight).fill(0);
-    for (let rowIdx=0; rowIdx<state.matrixHeight; rowIdx++){
-      let color;
-      let flashBit = flashColumns ? (flashColumns[colIdx] ? flashColumns[colIdx][rowIdx] : 0) : 0;
-      if (onlyFlash) {
-        color = flashBit ? state.ledOnColor : state.ledOffColor;
-      } else {
-        if (flashBit) color = state.ledOnColor;
-        else color = (col[rowIdx] ? state.ledOnColor : state.ledOffColor);
-      }
-      const cx = startX + colIdx * cellSize + cellSize/2;
-      const cy = startY + rowIdx * cellSize + cellSize/2;
-      // draw circle
-      ctx.beginPath();
-      ctx.arc(Math.round(cx), Math.round(cy), Math.max(1, Math.floor(radius)), 0, Math.PI*2);
-      ctx.fillStyle = color;
-      ctx.fill();
+function buildScrollingBufferForCmd(cmd){
+  const startPos = parseInt(cmd['start-pos'] || 0,10);
+  const endGap = parseInt(cmd['end-gap'] || 0,10);
+  const buf = [];
+  for(let i=0;i<startPos;i++) buf.push(Array(MATRIX_HEIGHT).fill(0));
+  const content = cmd['content'] || [];
+  const PHRASE_GAP = 8;
+  for(let i=0;i<content.length;i++){
+    const tcols = textToColumns(content[i]);
+    buf.push(...tcols);
+    if(i < content.length-1){
+      for(let g=0;g<PHRASE_GAP;g++) buf.push(Array(MATRIX_HEIGHT).fill(0));
     }
   }
+  for(let i=0;i<endGap;i++) buf.push(Array(MATRIX_HEIGHT).fill(0));
+  return buf;
 }
 
-/* Return visible columns for current offset (wrap allowed) */
-function getVisibleColumns(bufferCols, offset) {
-  const startIdx = Math.floor(offset) % bufferCols.length;
+function buildFlashColumns(word, wordPos=0, punctuation="", punctuationPos=-1){
+  let cols = textToColumns(word);
+  if(cols.length > MATRIX_WIDTH) cols = cols.slice(0, MATRIX_WIDTH);
+  const leftPad = Math.max(0, wordPos);
+  let full = Array.from({length:leftPad}, ()=>Array(MATRIX_HEIGHT).fill(0)).concat(cols);
+  if(full.length < MATRIX_WIDTH) full = full.concat(Array.from({length: MATRIX_WIDTH - full.length}, ()=>Array(MATRIX_HEIGHT).fill(0)));
+  else full = full.slice(0, MATRIX_WIDTH);
+
+  if(punctuation && punctuationPos >=0 && punctuationPos < MATRIX_WIDTH){
+    const pcols = textToColumns(punctuation);
+    for(let i=0;i<pcols.length;i++){
+      const idx = punctuationPos + i;
+      if(idx >=0 && idx < MATRIX_WIDTH) full[idx] = pcols[i];
+    }
+  }
+  return full;
+}
+
+function getVisibleColumnsFromBuffer(bufferCols, offset){
+  const startIdx = Math.floor(offset);
   const out = [];
-  for (let i=0;i<state.matrixWidth;i++){
-    out.push(bufferCols[(startIdx + i) % bufferCols.length]);
+  for(let i=0;i<MATRIX_WIDTH;i++){
+    const idx = startIdx + i;
+    if(idx >=0 && idx < bufferCols.length) out.push(bufferCols[idx]);
+    else out.push(Array(MATRIX_HEIGHT).fill(0));
   }
   return out;
 }
 
-/* Animation loop */
-function updateAndRender(now) {
-  const dt = (now - lastTime) / 1000.0;
+// ---------- Rendering ----------
+function renderMatrix(visibleColumns, flashColumns=null, onlyFlash=false){
+  // clear letterbox
+  ctx.save();
+  ctx.setTransform(1,0,0,1,0,0);
+  ctx.fillStyle = LETTERBOX_COLOR;
+  ctx.fillRect(0,0,canvas.width,canvas.height);
+
+  // compute display area with same aspect ratio as matrix
+  const targetRatio = MATRIX_WIDTH / MATRIX_HEIGHT;
+  const winW = canvas.width; const winH = canvas.height;
+  let drawW, drawH;
+  if((winW/winH) > targetRatio){
+    drawH = winH; drawW = Math.floor(drawH * targetRatio);
+  } else { drawW = winW; drawH = Math.floor(drawW / targetRatio); }
+  const startX = Math.floor((winW - drawW)/2);
+  const startY = Math.floor((winH - drawH)/2);
+
+  // background
+  ctx.fillStyle = DISPLAY_BG_COLOR;
+  ctx.fillRect(startX, startY, drawW, drawH);
+
+  const cellW = drawW / MATRIX_WIDTH;
+  const cellH = drawH / MATRIX_HEIGHT;
+  const cellSize = Math.min(cellW, cellH);
+  const circleDiam = Math.min(cellSize * LED_CIRCLE_RATIO, cellSize * 0.98);
+  const radius = circleDiam/2;
+
+  for(let col=0; col<MATRIX_WIDTH; col++){
+    const column = visibleColumns[col];
+    for(let row=0; row<MATRIX_HEIGHT; row++){
+      const bit = column[row];
+      const flashBit = flashColumns ? (flashColumns[col] ? flashColumns[col][row] : 0) : 0;
+      let color;
+      if(onlyFlash){
+        color = flashBit ? LED_ON_COLOR : LED_OFF_COLOR;
+      } else {
+        if(flashBit) color = LED_ON_COLOR;
+        else color = bit ? LED_ON_COLOR : LED_OFF_COLOR;
+      }
+      const cx = startX + col * cellSize + cellSize/2;
+      const cy = startY + row * cellSize + cellSize/2;
+      // draw circle
+      ctx.beginPath();
+      ctx.arc(cx, cy, radius, 0, Math.PI*2);
+      ctx.fillStyle = color;
+      ctx.fill();
+    }
+  }
+  ctx.restore();
+}
+
+// ---------- Main loop ----------
+let lastTime = performance.now();
+function tick(now){
+  const dt = (now - lastTime)/1000.0; // seconds
   lastTime = now;
+  if(playing && sequence.length>0){
+    const cmd = sequence[cmdIdx];
+    if(cmd.type === 'scrolling'){
+      if(currentScrollBuffer === null){
+        currentScrollBuffer = buildScrollingBufferForCmd(cmd);
+        scrollOffset = 0.0;
+      }
+      scrollOffset += SCROLL_SPEED_COLS_PER_SEC * dt;
+      const visible = getVisibleColumnsFromBuffer(currentScrollBuffer, scrollOffset);
+      renderMatrix(clipColumnsToMatrix(visible));
 
-  // Flash control
-  if (!isFlashing && now >= nextFlashTime) {
-    isFlashing = true;
-    flashStart = now;
-    // pick a random flash word from flash words input
-    const flashText = document.getElementById("flash-words").value.split(",").map(s=>s.trim()).filter(s=>s.length);
-    flashWord = flashText.length ? flashText[Math.floor(Math.random()*flashText.length)] : "";
-    savedScrollOffset = scrollOffset;
-  } else if (isFlashing && (now - flashStart) >= state.flashDuration * 1000) {
-    // end flash
-    isFlashing = false;
-    flashWord = "";
-    nextFlashTime = now + randomInRange(state.flashMin, state.flashMax) * 1000;
-  }
-
-  // Scroll logic
-  if (!isFlashing) {
-    scrollOffset += state.speed * dt;
-    // wrap safely to prevent huge numbers
-    if (scrollOffset > fullBuffer.length) scrollOffset = scrollOffset % fullBuffer.length;
+      // check end
+      const endIdx = currentScrollBuffer.length - MATRIX_WIDTH;
+      if(Math.floor(scrollOffset) >= endIdx){
+        cmdIdx = cmdIdx + 1;
+        if(cmdIdx >= sequence.length) cmdIdx = 1;
+        currentScrollBuffer = null;
+        scrollOffset = 0.0;
+        isFlashing = false;
+        currentFlashCols = null;
+        flashFrameCounter = 0;
+      }
+    } else if(cmd.type === 'flash'){
+      if(!isFlashing){
+        const word = cmd.word || '';
+        const wordPos = parseInt(cmd['word-pos']||0,10);
+        const punctuation = cmd.punctuation || '';
+        const punctuation_pos = (cmd.hasOwnProperty('punctuation_pos')) ? parseInt(cmd['punctuation_pos']||-1,10) : (cmd.punctuation_pos || -1);
+        const flash_duration_frames = parseInt(cmd['flash-duration']||1,10);
+        currentFlashCols = buildFlashColumns(word, wordPos, punctuation, punctuation_pos);
+        isFlashing = true; flashFrameCounter = 0; currentScrollBuffer = null; scrollOffset = 0.0;
+      }
+      // render flash only
+      const emptyVisible = Array.from({length:MATRIX_WIDTH}, ()=>Array(MATRIX_HEIGHT).fill(0));
+      renderMatrix(emptyVisible, currentFlashCols, true);
+      flashFrameCounter += 1;
+      if(flashFrameCounter >= (cmd['flash-duration']||1)){
+        cmdIdx = (cmdIdx + 1) % sequence.length;
+        isFlashing = false; currentFlashCols = null; flashFrameCounter = 0; currentScrollBuffer = null; scrollOffset = 0.0;
+      }
+    } else {
+      cmdIdx = (cmdIdx + 1) % sequence.length;
+      currentScrollBuffer = null; isFlashing = false; currentFlashCols = null; flashFrameCounter = 0; scrollOffset = 0.0;
+    }
   } else {
-    scrollOffset = savedScrollOffset;
+    // if paused, still draw current state so it looks alive
+    if(sequence.length>0){
+      const cmd = sequence[cmdIdx];
+      if(cmd.type === 'scrolling'){
+        if(currentScrollBuffer === null) currentScrollBuffer = buildScrollingBufferForCmd(cmd);
+        const visible = getVisibleColumnsFromBuffer(currentScrollBuffer, scrollOffset);
+        renderMatrix(clipColumnsToMatrix(visible));
+      } else if(cmd.type === 'flash'){
+        if(currentFlashCols === null) currentFlashCols = buildFlashColumns(cmd.word||'', parseInt(cmd['word-pos']||0,10), cmd.punctuation||'', (cmd.punctuation_pos||-1));
+        const emptyVisible = Array.from({length:MATRIX_WIDTH}, ()=>Array(MATRIX_HEIGHT).fill(0));
+        renderMatrix(emptyVisible, currentFlashCols, true);
+      }
+    } else {
+      // nothing
+      ctx.fillStyle = LETTERBOX_COLOR; ctx.fillRect(0,0,canvas.width,canvas.height);
+    }
   }
 
-  // Draw
-  resizeCanvas();
-  ctx.fillStyle = state.bgColor;
-  ctx.fillRect(0,0,canvas.width, canvas.height);
-  const disp = computeDisplayArea(canvas.width, canvas.height, state.matrixWidth, state.matrixHeight);
+  // UI updates
+  cmdIdxEl.textContent = cmdIdx;
+  offsetEl.textContent = scrollOffset.toFixed(2);
 
-  if (isFlashing && flashWord) {
-    const flashCols = buildFlashColumns(flashWord, state.matrixWidth, state.matrixHeight);
-    const empty = [];
-    for (let i=0;i<state.matrixWidth;i++) empty.push(new Array(state.matrixHeight).fill(0));
-    renderMatrix(ctx, disp, empty, flashCols, true);
-  } else {
-    const visible = getVisibleColumns(fullBuffer, scrollOffset);
-    renderMatrix(ctx, disp, visible);
-  }
-
-  // schedule next frame
-  const target = 1000 / state.fps;
-  setTimeout(()=> requestAnimationFrame(updateAndRender), Math.max(0, target - (performance.now()-now)));
+  requestAnimationFrame(tick);
 }
+requestAnimationFrame(tick);
 
-/* Start animation */
-lastTime = performance.now();
-requestAnimationFrame(updateAndRender);
-
-/* ---------------- Controls wiring ---------------- */
-const el = id => document.getElementById(id);
-
-function rebuildBufferFromUI() {
-  const matrixH = parseInt(el("matrix-height").value);
-  const matrixW = parseInt(el("matrix-width").value);
-  state.matrixHeight = matrixH;
-  state.matrixWidth = matrixW;
-  // read commands
-  const commands = commandsArea.value.split("\n").map(s => s.trim()).filter(s => s.length);
-  fullBuffer = buildFullScrollBuffer(commands.length ? commands : DEFAULT_COMMANDS, matrixH, parseInt(el("phrase-gap").value));
-  scrollOffset = 0;
-  nextFlashTime = performance.now() + randomInRange(state.flashMin, state.flashMax)*1000;
-}
-
-/* initial UI values */
-el("speed-val").innerText = state.speed;
-el("phrase-gap-val").innerText = DEFAULTS.PHRASE_GAP;
-el("circle-ratio-val").innerText = DEFAULTS.LED_CIRCLE_RATIO.toFixed(2);
-el("commands-area").value = DEFAULT_COMMANDS.join("\n");
-
-/* events */
-el("speed").addEventListener("input", (e) => {
-  state.speed = parseFloat(e.target.value);
-  el("speed-val").innerText = state.speed;
-});
-el("phrase-gap").addEventListener("input", (e) => {
-  el("phrase-gap-val").innerText = e.target.value;
-  // update buffer live
-  state.phraseGap = parseInt(e.target.value);
-  fullBuffer = buildFullScrollBuffer(commandsArea.value.split("\n").map(s=>s.trim()).filter(s=>s.length) || DEFAULT_COMMANDS, state.matrixHeight, state.phraseGap);
-});
-el("circle-ratio").addEventListener("input", (e) => {
-  state.circleRatio = parseFloat(e.target.value);
-  el("circle-ratio-val").innerText = state.circleRatio.toFixed(2);
-});
-el("fps").addEventListener("change", (e) => {
-  state.fps = parseInt(e.target.value) || 60;
-});
-el("matrix-height").addEventListener("change", (e) => {
-  const v = Math.max(3, Math.min(16, parseInt(e.target.value)));
-  e.target.value = v;
-  state.matrixHeight = v;
-  rebuildBufferFromUI();
-});
-el("matrix-width").addEventListener("change", (e) => {
-  const v = Math.max(7, Math.min(200, parseInt(e.target.value)));
-  e.target.value = v;
-  state.matrixWidth = v;
-  rebuildBufferFromUI();
-});
-el("led-on").addEventListener("input", (e) => { state.ledOnColor = e.target.value; });
-el("led-off").addEventListener("input", (e) => { state.ledOffColor = e.target.value; });
-el("bg-col").addEventListener("input", (e) => { state.bgColor = e.target.value; });
-
-el("randomise-commands").addEventListener("click", () => {
-  const arr = commandsArea.value.split("\n").map(s=>s.trim()).filter(s=>s.length);
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i+1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  commandsArea.value = arr.join("\n");
-  fullBuffer = buildFullScrollBuffer(arr.length ? arr : DEFAULT_COMMANDS, state.matrixHeight, state.phraseGap);
-});
-el("reset-commands").addEventListener("click", () => {
-  setCommandsText(DEFAULT_COMMANDS);
-  fullBuffer = buildFullScrollBuffer(DEFAULT_COMMANDS, state.matrixHeight, state.phraseGap);
-});
-el("play").addEventListener("click", () => {
-  lastTime = performance.now();
-  requestAnimationFrame(updateAndRender);
-});
-el("pause").addEventListener("click", () => {
-  // pause by setting FPS to very low (or we could use a running flag)
-  state.fps = 0.0001;
-});
-el("step").addEventListener("click", () => {
-  // advance by one column and redraw
-  scrollOffset += 1;
-  lastTime = performance.now();
-  requestAnimationFrame(updateAndRender);
-});
-el("recenter").addEventListener("click", () => {
-  rebuildBufferFromUI();
+// ---------- Controls wiring ----------
+playPauseBtn.addEventListener('click', ()=>{
+  playing = !playing;
+  playPauseBtn.textContent = playing ? 'Pause' : 'Play';
 });
 
-commandsArea.addEventListener("change", () => {
-  const cmds = commandsArea.value.split("\n").map(s=>s.trim()).filter(s=>s.length);
-  fullBuffer = buildFullScrollBuffer(cmds.length ? cmds : DEFAULT_COMMANDS, state.matrixHeight, state.phraseGap);
+speedInput.addEventListener('input', (e)=>{
+  SCROLL_SPEED_COLS_PER_SEC = parseFloat(e.target.value);
+  speedVal.textContent = SCROLL_SPEED_COLS_PER_SEC;
 });
 
-/* ensure initial buffer matches controls */
-fullBuffer = buildFullScrollBuffer(DEFAULT_COMMANDS, state.matrixHeight, state.phraseGap);
+widthInput.addEventListener('input', (e)=>{
+  MATRIX_WIDTH = parseInt(e.target.value,10);
+  widthVal.textContent = MATRIX_WIDTH;
+});
+
+circleInput.addEventListener('input', (e)=>{ LED_CIRCLE_RATIO = parseFloat(e.target.value); circleVal.textContent = LED_CIRCLE_RATIO; });
+
+ledOnInput.addEventListener('input', (e)=>{ LED_ON_COLOR = e.target.value; });
+ledOffInput.addEventListener('input', (e)=>{ LED_OFF_COLOR = e.target.value; });
+bgInput.addEventListener('input', (e)=>{ DISPLAY_BG_COLOR = e.target.value; });
+letterboxInput.addEventListener('input', (e)=>{ LETTERBOX_COLOR = e.target.value; });
+
+fpsInput.addEventListener('input',(e)=>{ FPS = parseInt(e.target.value,10); fpsVal.textContent = FPS; });
+
+stepCmdBtn.addEventListener('click', ()=>{
+  cmdIdx = (cmdIdx+1) % Math.max(1, sequence.length);
+  currentScrollBuffer = null; currentFlashCols = null; isFlashing=false; scrollOffset=0; flashFrameCounter=0;
+});
+
+resetBtn.addEventListener('click', ()=>{
+  cmdIdx = 0; scrollOffset = 0; currentScrollBuffer = null; currentFlashCols = null; isFlashing=false; flashFrameCounter=0;
+});
+
+fileInput.addEventListener('change', (ev)=>{
+  const f = ev.target.files[0];
+  if(!f) return;
+  const reader = new FileReader();
+  reader.onload = function(e){
+    try{ const parsed = JSON.parse(e.target.result); sequence = parsed; jsonArea.value = JSON.stringify(sequence,null,2); cmdIdx = 0; currentScrollBuffer=null; }
+    catch(err){ alert('Invalid JSON: '+err.message); }
+  };
+  reader.readAsText(f);
+});
+
+applyJsonBtn.addEventListener('click', ()=>{
+  try{ const parsed = JSON.parse(jsonArea.value); sequence = parsed; cmdIdx=0; currentScrollBuffer=null; }
+  catch(err){ alert('Invalid JSON: '+err.message); }
+});
+
+pasteJsonBtn.addEventListener('click', ()=>{
+  const txt = prompt('Paste JSON here'); if(txt){ jsonArea.value = txt; }
+});
+
+downloadJsonBtn.addEventListener('click', ()=>{
+  const blob = new Blob([JSON.stringify(sequence,null,2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a'); a.href = url; a.download = 'sequence.json'; a.click(); URL.revokeObjectURL(url);
+});
+
+loadDefaultsBtn.addEventListener('click', ()=>{
+  sequence = DEFAULT_SEQUENCE.slice(); jsonArea.value = JSON.stringify(sequence,null,2); cmdIdx=0; currentScrollBuffer=null; alert('Default sequence loaded (you can edit it in the textarea).');
+});
+
+// ---------- sample/default sequence ----------
+const DEFAULT_SEQUENCE = [
+    {
+        "type": "scrolling",
+        "content": [
+            "no lingering",
+            "no snacking",
+            "no cycling",
+            "no molesting",
+            "no phoning",
+            "no tampering",
+            "no humping",
+            "no waiting",
+            "no serving",
+            "no shaming",
+            "no busting",
+            "no crying",
+            "no stealing",
+            "no knocking",
+            "no shouting",
+            "no littering",
+            "no trucking",
+            "no spitting",
+            "no fixing",
+            "no oiling",
+            "no throwing",
+            "no canvassing",
+            "no conoodling",
+            "no worshipping",
+            "no stopping",
+            "no pleasing",
+            "no groveling"
+        ],
+        "start-pos": 35,
+        "end-gap": 5
+    },
+    {
+        "type": "flash",
+        "word": "fuck off",
+        "word-pos": 3,
+        "punctuation": "",
+        "punctuation_pos": -1,
+        "flash-duration": 12
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no weeping",
+            "no bribing",
+            "no dumping",
+            "no stewing",
+            "no pushing",
+            "no stirring",
+            "no baking",
+            "no farting",
+            "no drinking",
+            "no playing",
+            "no fighting",
+            "no gutting",
+            "no demanding",
+            "no hitting",
+            "no dying",
+            "no flirting",
+            "no moaning",
+            "no joking",
+            "no tensing",
+            "no flipping",
+            "no biting"
+        ],
+        "start-pos": 8,
+        "end-gap": 1
+    },
+    {
+        "type": "flash",
+        "word": "sod it",
+        "word-pos": 6,
+        "punctuation": "",
+        "punctuation_pos": -1,
+        "flash-duration": 12
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no punching",
+            "no trashing",
+            "no bellowing",
+            "no smoking",
+            "no kicking",
+            "no meddling",
+            "no stamping",
+            "no folding",
+            "no stabbing",
+            "no bellowing",
+            "no shoving"
+        ],
+        "start-pos": 0,
+        "end-gap": 1
+    },
+    {
+        "type": "flash",
+        "word": "what",
+        "word-pos": 6,
+        "punctuation": "?",
+        "punctuation_pos": 26,
+        "flash-duration": 25
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no leaking",
+            "no bruising",
+            "no teasing",
+            "no licking",
+            "no flossing",
+            "no baiting",
+            "no chasing",
+            "no plastering",
+            "no gyrating",
+            "no saucing",
+            "no sloshing",
+            "no cooling",
+            "no battering",
+            "no taming",
+            "no dissecting",
+            "no arguing",
+            "no driving",
+            "no killing",
+            "no soliciting",
+            "no drawing",
+            "no joining",
+            "no blasting",
+            "no voting",
+            "no protesting",
+            "no beating",
+            "no eating"
+        ],
+        "start-pos": 1,
+        "end-gap": 1
+    },
+    {
+        "type": "flash",
+        "word": "eh",
+        "word-pos": 11,
+        "punctuation": "?",
+        "punctuation_pos": 22,
+        "flash-duration": 26
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no eating",
+            "no fondling"
+        ],
+        "start-pos": 25,
+        "end-gap": 19
+    },
+    {
+        "type": "flash",
+        "word": "eh",
+        "word-pos": 12,
+        "punctuation": "?",
+        "punctuation_pos": 23,
+        "flash-duration": 25
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no eating",
+            "no fondling",
+            "no yawning",
+            "no hating",
+            "no loitering",
+            "no sneering",
+            "no touting",
+            "no watering",
+            "no lying",
+            "no dragging",
+            "no pointing",
+            "no lifting",
+            "no picking",
+            "no grassing",
+            "no parking",
+            "no standing",
+            "no snorting",
+            "no queuing",
+            "no elbowing",
+            "no sniffing",
+            "no relaxing",
+            "no fluffing"
+        ],
+        "start-pos": 21,
+        "end-gap": 15
+    },
+    {
+        "type": "flash",
+        "word": "jeezus",
+        "word-pos": 4,
+        "punctuation": "!",
+        "punctuation_pos": 32,
+        "flash-duration": 49
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no jamming",
+            "no undressing",
+            "no clamping",
+            "no snogging",
+            "no tripping",
+            "no cuddling",
+            "no drooling",
+            "no staring",
+            "no mugging",
+            "no fixating",
+            "no tailing",
+            "no blaming",
+            "no crushing",
+            "no dancing",
+            "no mounting",
+            "no creeping",
+            "no brewing",
+            "no festering",
+            "no breeding",
+            "no pumping",
+            "no peeling",
+            "no lusting",
+            "no dissing",
+            "no dropping",
+            "no jerking",
+            "no crumpling",
+            "no looking"
+        ],
+        "start-pos": 41,
+        "end-gap": 2
+    },
+    {
+        "type": "flash",
+        "word": "whoa",
+        "word-pos": 6,
+        "punctuation": "!",
+        "punctuation_pos": 28,
+        "flash-duration": 49
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no carting",
+            "no necking",
+            "no abducting",
+            "no blowing",
+            "no fagging",
+            "no deserting",
+            "no invading",
+            "no retouching",
+            "no fumbling",
+            "no chewing",
+            "no defacing",
+            "no slipping",
+            "no whitewashing",
+            "no relapsing",
+            "no nodding",
+            "no dodging",
+            "no gossiping",
+            "no blanking",
+            "no needling",
+            "no floating",
+            "no spanking",
+            "no gaming",
+            "no kneeing",
+            "no stretching",
+            "no trusting",
+            "no harassing",
+            "no toasting",
+            "no sampling",
+            "no washing",
+            "no exposing",
+            "no listening",
+            "no fibbing",
+            "no bossing",
+            "no accelerating",
+            "no dawdling"
+        ],
+        "start-pos": 2,
+        "end-gap": 1
+    },
+    {
+        "type": "flash",
+        "word": "fuck it",
+        "word-pos": 5,
+        "punctuation": "",
+        "punctuation_pos": -1,
+        "flash-duration": 12
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no fathering",
+            "no hanging",
+            "no filming",
+            "no rushing",
+            "no watching",
+            "no kidding",
+            "no perverting",
+            "no nipping",
+            "no cruising",
+            "no pinching",
+            "no fidgeting",
+            "no kissing",
+            "no cheating",
+            "no speeding",
+            "no blocking"
+        ],
+        "start-pos": 1,
+        "end-gap": 1
+    },
+    {
+        "type": "flash",
+        "word": "huh",
+        "word-pos": 9,
+        "punctuation": "?",
+        "punctuation_pos": 25,
+        "flash-duration": 26
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no shirking",
+            "no brushing",
+            "no hurting",
+            "no dirtying",
+            "no whispering",
+            "no snoring",
+            "no running",
+            "no fingering",
+            "no blackmailing",
+            "no snorting",
+            "no frowning",
+            "no laughing",
+            "no stalking",
+            "no yawning",
+            "no flannelling",
+            "no trading",
+            "no jabbing",
+            "no chasing",
+            "no hoarding",
+            "no trafficking",
+            "no bullying",
+            "no tiptoeing",
+            "no smarting",
+            "no groaning",
+            "no feuding",
+            "no circling",
+            "no groping",
+            "no bawling",
+            "no jumping"
+        ],
+        "start-pos": 15,
+        "end-gap": 1
+    },
+    {
+        "type": "flash",
+        "word": "wait",
+        "word-pos": 8,
+        "punctuation": "!",
+        "punctuation_pos": 26,
+        "flash-duration": 49
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no laundering",
+            "no gawping",
+            "no spiking",
+            "no weeding",
+            "no touching",
+            "no aiding",
+            "no charging",
+            "no limping",
+            "no abetting",
+            "no smuggling",
+            "no drooping",
+            "no mouthing",
+            "no jawing",
+            "no climbing",
+            "no faking",
+            "no leaving",
+            "no rioting",
+            "no breathing",
+            "no stealing",
+            "no boring",
+            "no sweating",
+            "no crawling",
+            "no creeping"
+        ],
+        "start-pos": 3,
+        "end-gap": 0
+    },
+    {
+        "type": "flash",
+        "word": "hnnh",
+        "word-pos": 5,
+        "punctuation": "?",
+        "punctuation_pos": 27,
+        "flash-duration": 50
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no pouting",
+            "no wrestling",
+            "no knifing",
+            "no pummelling",
+            "no shouting",
+            "no fainting",
+            "no loafing",
+            "no squeezing",
+            "no vamping",
+            "no straying",
+            "no hitching",
+            "no picketing",
+            "no streaking",
+            "no joyriding",
+            "no rabbiting",
+            "no pleading",
+            "no smiling",
+            "no battling",
+            "no slimming",
+            "no jeering",
+            "no peeping",
+            "no blaming",
+            "no stuffing",
+            "no curating",
+            "no dating",
+            "no pickling",
+            "no crossing",
+            "no punching"
+        ],
+        "start-pos": 1,
+        "end-gap": 1
+    },
+    {
+        "type": "flash",
+        "word": "stuff it",
+        "word-pos": 4,
+        "punctuation": "",
+        "punctuation_pos": -1,
+        "flash-duration": 13
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no screwing",
+            "no bleeding",
+            "no smearing",
+            "no stroking",
+            "no hoping",
+            "no voting",
+            "no signing",
+            "no crediting",
+            "no accounting",
+            "no rolling",
+            "no sacking",
+            "no drafting",
+            "no ticketing",
+            "no troubling",
+            "no bargaining",
+            "no fingering",
+            "no helping",
+            "no plotting"
+        ],
+        "start-pos": 5,
+        "end-gap": 1
+    },
+    {
+        "type": "flash",
+        "word": "yeah",
+        "word-pos": 6,
+        "punctuation": "?",
+        "punctuation_pos": 27,
+        "flash-duration": 26
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no clapping",
+            "no following",
+            "no scribbling",
+            "no rioting",
+            "no shipping",
+            "no ravaging",
+            "no aiming",
+            "no painting",
+            "no carving",
+            "no scalping",
+            "no flying",
+            "no landing",
+            "no sterilising",
+            "no robbing",
+            "no trawling",
+            "no looting",
+            "no leaping",
+            "no terrorising",
+            "no spewing",
+            "no kicking",
+            "no kidnapping",
+            "no preaching",
+            "no moonlighting",
+            "no cycling",
+            "no networking",
+            "no speeding"
+        ],
+        "start-pos": 3,
+        "end-gap": 1
+    },
+    {
+        "type": "flash",
+        "word": "pleeze",
+        "word-pos": 4,
+        "punctuation": "!",
+        "punctuation_pos": 32,
+        "flash-duration": 51
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no colouring",
+            "no perming",
+            "no rapping",
+            "no crowding",
+            "no aging",
+            "no dribbling",
+            "no pausing",
+            "no controlling",
+            "no panicking",
+            "no freewheeling",
+            "no carpeting",
+            "no fuming",
+            "no blazing",
+            "no steaming",
+            "no craving",
+            "no tricking",
+            "no daring",
+            "no moping",
+            "no operating",
+            "no training",
+            "no pilfering",
+            "no tresspassing",
+            "no dillydallying"
+        ],
+        "start-pos": 19,
+        "end-gap": 1
+    },
+    {
+        "type": "flash",
+        "word": "aaaaah",
+        "word-pos": 2,
+        "punctuation": "!",
+        "punctuation_pos": 32,
+        "flash-duration": 49
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no straining",
+            "no commenting",
+            "no fundraising",
+            "no developing",
+            "no heating",
+            "no sluicing",
+            "no judging",
+            "no limiting",
+            "no sweeping",
+            "no drawing",
+            "no smacking",
+            "no scrubbing",
+            "no roping",
+            "no worming",
+            "no splashing",
+            "no prowling",
+            "no feeling",
+            "no scoring",
+            "no embezzling",
+            "no chasing",
+            "no tossing",
+            "no undertaking",
+            "no holding",
+            "no crisscrossing",
+            "no unravelling",
+            "no crawling"
+        ],
+        "start-pos": 8,
+        "end-gap": 1
+    },
+    {
+        "type": "flash",
+        "word": "sod off",
+        "word-pos": 3,
+        "punctuation": "",
+        "punctuation_pos": -1,
+        "flash-duration": 25
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no swiping",
+            "no smudging",
+            "no whistling",
+            "no camping",
+            "no delaying",
+            "no dumping",
+            "no praying",
+            "no grilling",
+            "no nailing",
+            "no sliding",
+            "no spoiling",
+            "no breaking",
+            "no warning",
+            "no bombing",
+            "no driving",
+            "no backing",
+            "no trailing",
+            "no whoring",
+            "no railing",
+            "no loading",
+            "no skipping",
+            "no boating",
+            "no milking",
+            "no nursing",
+            "no posing",
+            "no malarking",
+            "no entering",
+            "no promising",
+            "no parking",
+            "no talking",
+            "no singing",
+            "no policing",
+            "no busking",
+            "no nothing"
+        ],
+        "start-pos": 2,
+        "end-gap": 1
+    },
+    {
+        "type": "flash",
+        "word": "stop",
+        "word-pos": 7,
+        "punctuation": "!",
+        "punctuation_pos": 26,
+        "flash-duration": 13
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no nothing",
+            "no sponging"
+        ],
+        "start-pos": 5,
+        "end-gap": 1
+    },
+    {
+        "type": "flash",
+        "word": "stop",
+        "word-pos": 6,
+        "punctuation": "!",
+        "punctuation_pos": 25,
+        "flash-duration": 13
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no sedating",
+            "no itching"
+        ],
+        "start-pos": 2,
+        "end-gap": 1
+    },
+    {
+        "type": "flash",
+        "word": "stop",
+        "word-pos": 7,
+        "punctuation": "!",
+        "punctuation_pos": 26,
+        "flash-duration": 13
+    },
+    {
+        "type": "scrolling",
+        "content": [
+            "no quoting",
+            "no ending",
+            "no lingering",
+            "no snacking",
+            "no cycling",
+            "no molesting",
+            "no phoning",
+            "no tampering",
+            "no humping",
+            "no waiting",
+            "no serving",
+            "no shaming",
+            "no busting",
+            "no crying",
+            "no stealing",
+            "no knocking",
+            "no shouting",
+            "no littering",
+            "no trucking",
+            "no spitting",
+            "no fixing",
+            "no oiling",
+            "no throwing",
+            "no canvassing",
+            "no conoodling",
+            "no worshipping",
+            "no stopping",
+            "no pleasing",
+            "no groveling"
+        ],
+        "start-pos": 0,
+        "end-gap": 5
+    }
+];
+
+// On initial load, automatically load the default sequence
+sequence = DEFAULT_SEQUENCE.slice();
+jsonArea.value = JSON.stringify(sequence, null, 2);
+cmdIdx = 0;
+currentScrollBuffer = null;
+playing = true; // start playing right away (optional)
+
+// ensure canvas sizing loop
+setInterval(resizeCanvas, 250);
+
 </script>
 </body>
 </html>
