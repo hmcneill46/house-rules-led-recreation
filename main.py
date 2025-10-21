@@ -21,6 +21,14 @@ DISPLAY_BG_COLOR = (20, 20, 20)
 LETTERBOX_COLOR = (0, 0, 0)
 WINDOW_WIDTH_MM = 88.9 # Real width of the sign in mm is 88.9mm (3.5 inches)
 
+FPS = 60
+SCROLL_SPEED_COLS_PER_SEC = 47.5  # columns scrolled per second when not flashing
+#SCROLL_SPEED_COLS_PER_SEC = 2
+
+PHRASE_GAP = 8
+INTER_CHAR_BLANKS = 1
+LED_CIRCLE_RATIO = 0.95
+
 ppi, scale = get_display_ppi_and_scale()
 if ppi is None:
     ppi = 110
@@ -30,16 +38,6 @@ if ppi is None:
 WINDOW_WIDTH_PX = mm_to_pixels(WINDOW_WIDTH_MM, ppi, scale)
 WINDOW_HEIGHT_PX = WINDOW_WIDTH_PX * (MATRIX_HEIGHT / MATRIX_WIDTH)
 WINDOW_DEFAULT_SIZE = (int(WINDOW_WIDTH_PX), int(WINDOW_HEIGHT_PX))
-
-print(f"[Display] {ppi:.2f} PPI → window {WINDOW_DEFAULT_SIZE[0]}×{WINDOW_DEFAULT_SIZE[1]} px for {WINDOW_WIDTH_MM} mm wide.")
-
-FPS = 60
-SCROLL_SPEED_COLS_PER_SEC = 47.5  # columns scrolled per second when not flashing
-#SCROLL_SPEED_COLS_PER_SEC = 1
-
-PHRASE_GAP = 8
-INTER_CHAR_BLANKS = 1
-LED_CIRCLE_RATIO = 0.95
 
 # ---------- FONT ----------
 FONT = {
@@ -189,9 +187,11 @@ def build_scrolling_buffer_for_cmd(cmd):
     # add each phrase
     for i, phrase in enumerate(cmd.get("content", [])):
         buffer_cols.extend(text_to_columns(phrase))
-        # phrase gap after each phrase
-        for _ in range(PHRASE_GAP):
-            buffer_cols.append([0] * MATRIX_HEIGHT)
+        # add phrase gap only if not the last phrase
+        if i < len(cmd["content"]) - 1:
+            for _ in range(PHRASE_GAP):
+                buffer_cols.append([0] * MATRIX_HEIGHT)
+
 
     # append end-gap blanks
     for _ in range(end_gap):
@@ -246,6 +246,12 @@ def get_visible_columns_from_buffer(buffer_cols, offset):
             out.append([0] * MATRIX_HEIGHT)
     return out
 
+def prettyPrintScrollBuffer(buffer):
+    for r in range(MATRIX_HEIGHT):
+        row_str = ""
+        for c in range(len(buffer)):
+            row_str += "█" if buffer[c][r] == 1 else "_"
+        print(row_str)
 
 # ---------------- Main program ----------------
 def main(seq):
@@ -299,21 +305,13 @@ def main(seq):
             screen.fill(LETTERBOX_COLOR)
             disp_rect = compute_display_area(window_w, window_h)
             render_matrix(screen, disp_rect, clip_columns_to_matrix(visible))
-
-            # check if we've reached the end of the buffer (all columns scrolled past)
-            # Once scroll_offset >= len(buffer) we have shown all columns (including any trailing end-gap)
-            """if scroll_offset >= len(current_scroll_buffer):
-                # move to next command
-                cmd_idx = (cmd_idx + 1) % len(seq)
-                current_scroll_buffer = None
-                scroll_offset = 0.0
-                is_flashing = False
-                current_flash_cols = None
-                flash_frame_counter = 0"""
                 
-            # check if we've reached the end of the buffer (all columns scrolled past)
-            end_gap = int(cmd.get("end-gap", 0))
-            if scroll_offset >= len(current_scroll_buffer) - MATRIX_WIDTH - end_gap:
+            # --- check if we've reached the end of the buffer (after the end-gap has been visible) ---
+            #prettyPrintScrollBuffer(current_scroll_buffer)
+            end_condition_index = len(current_scroll_buffer) - MATRIX_WIDTH
+            # Use integer column index to avoid fractional overshoot; this matches "shifts" as whole columns.
+            if int(scroll_offset) >= end_condition_index:
+                # move to next command
                 cmd_idx = (cmd_idx + 1) % len(seq)
                 current_scroll_buffer = None
                 scroll_offset = 0.0
