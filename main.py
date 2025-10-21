@@ -312,7 +312,9 @@ def main(seq):
             # Use integer column index to avoid fractional overshoot; this matches "shifts" as whole columns.
             if int(scroll_offset) >= end_condition_index:
                 # move to next command
-                cmd_idx = (cmd_idx + 1) % len(seq)
+                cmd_idx = cmd_idx + 1
+                if cmd_idx >= len(seq):
+                    cmd_idx = 1
                 current_scroll_buffer = None
                 scroll_offset = 0.0
                 is_flashing = False
