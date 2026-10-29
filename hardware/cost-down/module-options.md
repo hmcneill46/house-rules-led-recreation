@@ -1,5 +1,7 @@
 # Stock MCU and USB modules for a lower-cost revision
 
+**Implementation update:** these modules are now used by the routed [B2 design](../revisions/B2/README.md). B2 retains six layers with ordinary 0.30 mm vias, adds a BQ24392 BC1.2 detector, and has a completed printed cradle/cover design. Its current wiring, source policy, cost and remaining physical checks supersede the early feasibility sketches below. This page preserves the module research that informed that choice.
+
 Research checked 29 October 2026. This is a recommendation for a new cost-down revision, not a substitution into the frozen A1 manufacturing files. The existing LED mounting outline, seven-module arrangement and LED pin positions can be retained. No existing CAD, BOM or manufacturing output was changed by this research.
 
 **Recommended: Seeed XIAO RP2040 Plus plus Adafruit 4090 USB-C breakout, with the LED drivers on one simpler custom mounting PCB.** The MCU and USB parts cost £7.39 per display at the checked UK retailers, or £22.17 for three, including VAT and excluding delivery. This replaces the custom USB assembly and bare MCU circuitry. It does not eliminate LED drivers or imply that a passive mounting board alone can drive the LEDs.
