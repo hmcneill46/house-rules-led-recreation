@@ -35,16 +35,17 @@ These are native KiCad renders of the actual routed board. The first hides the L
 
 ## Cost evidence
 
-The [selected 55-component JLCONE quotation record](quotes/cost-study-basic-iref-2026-10-29/native-55-quote.json) uses six-layer ENIG fabrication, ordinary 0.30 mm drills, filled/capped vias and bottom-side Economic assembly. It provides **five bare PCBs with two of them populated**:
+The [final routed-board JLCONE quotation](quotes/final-review-2026-10-29/README.md) uses the actual routed Gerbers, exact 55-component BOM and native placement file. All 18 BOM groups matched. It uses six-layer ENIG fabrication, ordinary 0.30 mm drills, filled/capped vias and bottom-side Economic assembly. It provides **five PCBs in total, two populated and three bare**:
 
-- Fabrication and assembly: **£74.85** at JLCPCB's displayed reference conversion.
-- UK Global Standard Direct Line delivery with the observed $1.50 JLCONE shipping promotion, VAT included: **$121.62**, approximately **£91.17**, before coupons.
+- Quotation screen: **$49.94 fabrication + $49.90 assembly = $99.84** before shipping/VAT.
+- Actual checkout: **$97.52 goods + $1.50 UK shipping + $19.81 VAT = $118.83**, before coupons, approximately **£89.08**. [Checkout proof](quotes/final-review-2026-10-29/checkout-summary-before-coupon.png).
+- The cart omitted exactly the quoted **$2.32 depanel fee**, even though the saved job retains depanel **Yes**. Allowing for that fee and its VAT gives a conservative JLC delivered budget of **$121.62**, approximately **£91.17**. This discrepancy is not counted as a confirmed saving.
 - Stock MCU and USB modules, estimated UK delivery included: **£14.78 for one set**, **£22.17 for two sets**.
-- Indicative total: **£105.95 for one display plus a spare populated main**, or **£113.34 for two displays**, using the already-owned LEDs.
+- Conservative complete-display budget: **£105.95 for one display plus a spare populated main**, or **£113.34 for two displays**, using the already-owned LEDs. Minor assembly supplies, cable and power supply are extra.
 
 Those figures count the two populated boards as part of the five-PCB batch, not seven boards. The other three are bare spares; do not assume the factory will populate already-delivered bare boards later without another assembly order. A larger populated batch needs a fresh component-stock check, particularly the TLC drivers. The factory's minimum Economic assembly batch is two, so a one-display prototype still includes a spare populated main.
 
-The [web checkout fallback](quotes/cost-study-basic-iref-2026-10-29/quote-summary.json) uses $5.88 shipping and is $126.88 including VAT (approximately £117.28 for two complete displays with retail modules). Promotions may expire or have account/channel limits.
+The earlier same-parts [native quote](quotes/cost-study-basic-iref-2026-10-29/native-55-quote.json) was $121.62 delivered before coupons. Its [web checkout fallback](quotes/cost-study-basic-iref-2026-10-29/quote-summary.json) uses $5.88 shipping and is $126.88 including VAT (approximately £117.28 for two complete displays with retail modules). Promotions may expire or have account/channel limits.
 
 The earlier [four-layer/49-component study](quotes/cost-study-2026-10-29/4L-two-assembled-quote.json) was cheaper but was not the final routed/thermal/charger-compatible design. It remains as historical price evidence. Selecting six layers avoids treating a dense unfilled-via layout as production-ready merely because its early quote is lower.
 

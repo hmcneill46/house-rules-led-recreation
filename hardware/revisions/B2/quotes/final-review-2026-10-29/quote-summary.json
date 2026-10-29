@@ -1,0 +1,158 @@
+{
+  "date": "2026-10-29",
+  "status": "FINAL ROUTED-BOARD REVIEW QUOTATION; engineering prototype, not manufacturing release",
+  "vendor": "JLCPCB",
+  "channel": "Signed-in official JLCONE desktop app",
+  "scope": {
+    "bare_boards": 5,
+    "assembled_boards": 2,
+    "factory_SMT_per_board": 55,
+    "matched_and_confirmed_BOM_groups": 18,
+    "owner_LED_modules_per_display": 7,
+    "owner_wires_per_display": 20,
+    "service": "Economic",
+    "assembly_side": "Bottom"
+  },
+  "provenance": {
+    "canonical_pcb_sha256": "90018f786599e140bdc7ed6a75be65f574c2691c98f3b2d91a7383906dbe0b04",
+    "electrical_spec_sha256": "8658ae95e37d72c0a062ad9cfd54ef3e18cb201437d9d5956834977edae0cc46",
+    "uploaded_Gerbers": "uploaded-gerbers-review-snapshot.zip",
+    "uploaded_Gerbers_sha256": "f32fed65303f5f89fbd8a4119b27d29aa671c959bc91cc139d5130ef198a00e6",
+    "clean_review_Gerbers_sha256": "c67dd2a448d841f1bb990aad5f2edf3505c2e4672b8ffe0d626e71b40f9e6aab",
+    "archive_equivalence": "archive-equivalence.json; root verified identical manufacturing geometry with only creation-timestamp metadata differences",
+    "uploaded_BOM": "uploaded-bom.csv",
+    "uploaded_BOM_sha256": "df4cf137df0f5b647e6a4e97e7190f5cbae2d6076ffb7a7ededd35b3802e0469",
+    "uploaded_CPL": "uploaded-cpl.csv",
+    "uploaded_CPL_sha256": "6fcd8266507cc07e806cece3b8f425624f2cdc354a7edbd9400aac0b97ac7f2f"
+  },
+  "fabrication": {
+    "size_mm": [
+      88.4,
+      17.3
+    ],
+    "layers": 6,
+    "thickness_mm": 1.6,
+    "soldermask": "Green",
+    "silkscreen": "White",
+    "material": "FR4 TG135",
+    "finish": "ENIG1u",
+    "copper_oz": {
+      "outer": 1,
+      "inner": 0.5
+    },
+    "via_cover": "Epoxy Filled & Capped",
+    "via_hole_mm": 0.3,
+    "via_capture_pad_mm": [
+      0.6,
+      0.45
+    ],
+    "via_quantity": 276,
+    "via_drill_tool": "T1",
+    "LED_PTH_quantity": 84,
+    "LED_PTH_drill_mm": 0.9,
+    "LED_drill_tool": "T2",
+    "LED_PTH_requirement": "All84 must remain OPEN, unfilled and uncapped",
+    "deburring": false,
+    "outline_tolerance_mm": 0.2,
+    "manual_production_file_review": true,
+    "do_not_confirm_production_automatically": true,
+    "tooling_requirement_pending_CAM": "Removable OUTSIDE rails only; no internal tooling holes or final-outline extension"
+  },
+  "assembly": {
+    "manual_placement_review": true,
+    "do_not_confirm_placement_automatically": true,
+    "depanel_requested": true,
+    "saved_job_details_confirm_depanel": "Yes",
+    "rotations": "Imported native KiCad CPL; no rotations changed or feeder/pin1 approval given",
+    "terms": "Existing user-authorized assembly terms remained selected; no order submitted"
+  },
+  "currency": "USD",
+  "quote_screen": {
+    "fabrication": 49.94,
+    "assembly_including_depanel": 49.9,
+    "goods_total": 99.84,
+    "fabrication_breakdown": {
+      "base": 32.0,
+      "ENIG": 16.8,
+      "ENIG_area": 0.09,
+      "production_file_review": 1.05
+    },
+    "assembly_breakdown": {
+      "setup": 8.24,
+      "stencil": 1.55,
+      "panel": 0,
+      "large_size": 0,
+      "components_including_required_spares": 17.05,
+      "extended_component_fees": 18.54,
+      "SMT": 0.89,
+      "placement_review": 0.45,
+      "nitrogen_reflow": 0.86,
+      "depanel": 2.32
+    },
+    "evidence": "fabrication-and-assembly.png"
+  },
+  "saved_cart": {
+    "fabrication": 49.94,
+    "assembly": 47.58,
+    "goods_total": 97.52,
+    "discrepancy": "Cart is2.32USD below quotation screen despite saved depanelYes; equals the quoted depanel charge. Not treated as a confirmed saving."
+  },
+  "actual_checkout_before_coupon": {
+    "goods": 97.52,
+    "shipping_method": "Global Standard Direct Line",
+    "business_days": "8-12",
+    "shipping_original": 5.87,
+    "shipping_payable_promotion": 1.5,
+    "UK_VAT_collected_by_JLC": 19.81,
+    "grand_total": 118.83,
+    "coupon_deducted": false,
+    "coupon_field": "--",
+    "coupon_message": "Apply coupons in the payment section",
+    "evidence": "checkout-summary-before-coupon.png"
+  },
+  "conservative_budget_before_coupon": {
+    "basis": "Allow the omitted quoted2.32USD depanel charge plus approximately20% VAT; exact CAM-reviewed payable total unresolved",
+    "estimated_depanel_plus_VAT": 2.784,
+    "estimated_delivered_with_depanel": 121.614,
+    "rounding_allowance_delivered": 121.62,
+    "GBP_reference_rate": 0.7496244366549825,
+    "GBP_JLC_delivered_budget": 91.17,
+    "one_complete_display_plus_spare_populated_main_GBP": 105.95,
+    "two_complete_displays_GBP": 113.34,
+    "retail_modules_shipping_reference": "../../../../cost-down/module-shipping-quote.json"
+  },
+  "coupon": {
+    "claimed_offer": "JLCONE High-Layer PCB30USD",
+    "amount": 30,
+    "new_draft_cart_preview": "Cart accepted\u221230USD with18USD estimated freight:97.52+18\u221230=85.52USD excludingVAT",
+    "same55_part_promo_stack_evidence": "../cost-study-basic-iref-2026-10-29/native-55-cart-directline-coupon30.png",
+    "final_payment_application_and_VAT": "UNCONFIRMED; not deducted from delivered totals",
+    "conditions": "Six layers; order>5USD excluding freight; freight>5USD; regional/one-coupon-per-batch conditions; expires2026-12-27",
+    "limits": "Cart preview is not a final payment confirmation; shipping-promotion eligibility/reuse is not guaranteed"
+  },
+  "stock": {
+    "BOM_groups_detected": 18,
+    "BOM_groups_confirmed": 18,
+    "notes": [
+      "Every final BOM group matched at quotation time; no parts reserved.",
+      "TLC59282RGER current minimum two-assembly quote requires8 fitted drivers plus the factory spare allowance; a larger batch needs fresh stock/procurement.",
+      "BasicC23212 IREF and BasicC15849 capacitors and ExtendedC128408 detector are in this exact final BOM.",
+      "Earlier live inventory observations are in../cost-study-2026-10-29/live-component-inventory.json; quantities can change."
+    ]
+  },
+  "submitted_remarks": {
+    "PCB": "Fill/cap ONLY276 dia0.30mm vias(T1). All84 dia0.90mm LED PTH(T2) must stay OPEN. Final88.4x17.3mm outline; removable OUTSIDE rails only, no internal tooling holes. Manual CAM approval required.",
+    "assembly": "REVIEW QUOTE ONLY; no manufacturing release. 55 bottom SMT parts; owner LEDs/wire pads excluded. Native KiCad rotations require manual feeder/pin1/polarity review. Do not auto-confirm. All84 LED holes OPEN. Removable OUTSIDE tooling/rails only; no holes inside final88.4x17.3mm outline. Depanel before delivery. Do not substitute TLC59283."
+  },
+  "limits": [
+    "Routed Gerbers were uploaded; manufacturer CAM/tooling/hole-fill and feeder/pin1 reviews remain pending.",
+    "No physical B2 has yet passed USB current, inrush/suspend, ghosting, optical or enclosed thermal tests.",
+    "GBP is a reference conversion. JLCPCB chargesUSD; payment conversion and fees may differ.",
+    "Retail module/postage amounts are separate estimates. Already-owned LEDs assumed; wire, solder, screws, filament, USB cable, supply and tools are extra."
+  ],
+  "preservation": "Fresh separate final-board draft only; earlier A1/B2 saved quote jobs unchanged and unselected",
+  "orders_submitted": 0,
+  "review_before_payment_clicked": false,
+  "payments_made": 0,
+  "privacy": "No address, phone, email, private checkout URL or account identifier stored; checkout PNG contains SUMMARY only."
+}

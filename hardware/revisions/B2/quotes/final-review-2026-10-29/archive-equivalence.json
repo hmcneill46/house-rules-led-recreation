@@ -1,0 +1,121 @@
+{
+  "result": "PASS",
+  "source_pcb_sha256": "90018f786599e140bdc7ed6a75be65f574c2691c98f3b2d91a7383906dbe0b04",
+  "uploaded_archive_sha256": "f32fed65303f5f89fbd8a4119b27d29aa671c959bc91cc139d5130ef198a00e6",
+  "current_review_archive_sha256": "c67dd2a448d841f1bb990aad5f2edf3505c2e4672b8ffe0d626e71b40f9e6aab",
+  "scope": "All16 archive members are identical after normalising only explicit KiCad creation timestamps in Gerber/Excellon/SVG metadata and the Gerber job Header.CreationDate. Copper, masks, silks, outline, drill hits, maps and job geometry are unchanged. ZIP timestamps/compression are not board geometry.",
+  "files": [
+    {
+      "file": "house-rules-main-B2-B_Cu.gbl",
+      "uploaded_sha256": "fc3cb221e99fe8f2fa5ef435817d20246c17f3dbca083976a6614fcb5af2cc26",
+      "current_sha256": "5df7c36b04753b03a2e2f1d51a438549d499cc895b37652c2d1d9fc383008e4f",
+      "equal_except_creation_metadata": true,
+      "normalized_sha256": "19dba4fbbe6c3d0c340bc30ba84e02d95dc846d7606399d935a7f56445e9b412"
+    },
+    {
+      "file": "house-rules-main-B2-B_Mask.gbs",
+      "uploaded_sha256": "74fc3433722a21a01e51f4a8e6dc6d04822df1ccb038378a9a9ac0d2165ff583",
+      "current_sha256": "89ed5d5ae1ca5a1f9bc614bccc3b46d1bc1aaed72e9ceae493e0c75c0aac56fc",
+      "equal_except_creation_metadata": true,
+      "normalized_sha256": "3eb117ede0ad684b5618753a462dd1cfaacf864a511abe6f18ea0b8cf8ceca7e"
+    },
+    {
+      "file": "house-rules-main-B2-B_Silkscreen.gbo",
+      "uploaded_sha256": "ba2f3c98895399568df87df766d7d28b659f3d75ac42ac5b1a04b1a58981c723",
+      "current_sha256": "6ed6b99e8e472f275d94ed1e61f0e132c610aa640d3045fea528d29d6b2d9b47",
+      "equal_except_creation_metadata": true,
+      "normalized_sha256": "8765d8be1bdb5bff8c8b6ed2d144d1465118343e64d7f1103616ceffc4a2e65f"
+    },
+    {
+      "file": "house-rules-main-B2-Edge_Cuts.gm1",
+      "uploaded_sha256": "e3197a864514a81b8d7b81e0cca7d8080bcc0d4ea9d806d611a9802e3d3c7b35",
+      "current_sha256": "d8e24ae601b4a0ad94027011c2c2f5bf78f8f7fb77bce1b2f81529d763dfd71d",
+      "equal_except_creation_metadata": true,
+      "normalized_sha256": "d7ec75d910d8ed7df06cdb96d5f649e1f95bb62db5e6d8a68b9ee311d40c6fae"
+    },
+    {
+      "file": "house-rules-main-B2-F_Cu.gtl",
+      "uploaded_sha256": "9e41a10d795f10ecbd0557fe485df1ad154d1513d19235006648720a1d508dd0",
+      "current_sha256": "462e2f987ff097e7c2e4b7fca913c2486cae2c5aa3b6964bbd5743a554b96a6d",
+      "equal_except_creation_metadata": true,
+      "normalized_sha256": "0d09c2fbf8128e6c3aee32b18ea6252801a26910bfa8a96ec39e401ac9d1cdf7"
+    },
+    {
+      "file": "house-rules-main-B2-F_Mask.gts",
+      "uploaded_sha256": "4888cb68b75a4c2ae674f181a021eaac7f75546f630dc9b630b11d845d558fb1",
+      "current_sha256": "d0e84742224e314439e1a066b2c87d14d4635fe86f3098a8c0bc4182b62b039a",
+      "equal_except_creation_metadata": true,
+      "normalized_sha256": "529299ae5d77b12cae93c16b8f8412e6a1165769a4dffd6404e34e8d41c62a04"
+    },
+    {
+      "file": "house-rules-main-B2-F_Silkscreen.gto",
+      "uploaded_sha256": "6ee36935a90945fb4fcb91edd0a69d3ce01d0f11703feea0e2d3c1b7e0430a66",
+      "current_sha256": "d805d566e32de50c7995cdc14f3835b44bc883055ddb7a334cc41d1a4556685e",
+      "equal_except_creation_metadata": true,
+      "normalized_sha256": "273c5e7ffd64aa0f8b0d877b27d11a7706c1aa8f9d92cc49da0d4449420e6234"
+    },
+    {
+      "file": "house-rules-main-B2-In1_Cu.g1",
+      "uploaded_sha256": "79d177bbef43e946b466b8a27b7894a68b2c27bdbfdd7fed384530dff0ec8f32",
+      "current_sha256": "c313bc71a01cfeb634f0ad205ce1e36cf7baab74ca4b4c4f67620f2e8edb626a",
+      "equal_except_creation_metadata": true,
+      "normalized_sha256": "67586712ec51690edb137089f1a8e517000d7cd44e14ce70fd0e4076894a2568"
+    },
+    {
+      "file": "house-rules-main-B2-In2_Cu.g2",
+      "uploaded_sha256": "82499c52ac8daaaae6456ece00ab36b597b62371f9bea10c54c8946521dc5d9e",
+      "current_sha256": "8a004476f95f7b5bd89e5ca5073ccbdf0c7211e7ce0decbc537c66c1a8504b23",
+      "equal_except_creation_metadata": true,
+      "normalized_sha256": "c4fabe190706407ec52bfa23eb9e4f6213f5ed7c6447380684cb4e0694a94fcd"
+    },
+    {
+      "file": "house-rules-main-B2-In3_Cu.g3",
+      "uploaded_sha256": "7e3faf2bfbc6cb4c3bbfdee7dfae6005f12b263c4af9e8f22dd3b10f88400e7b",
+      "current_sha256": "fbd617c186410fb2fb498f7b50dff9a25e618ad0b4bbbda91818a9140f12937a",
+      "equal_except_creation_metadata": true,
+      "normalized_sha256": "0525eff112b9e4ace899b6d683c76faa324721bda8cc0dd2267aa8e7e5510931"
+    },
+    {
+      "file": "house-rules-main-B2-In4_Cu.g4",
+      "uploaded_sha256": "dcf2508138b0f298c86cefc4afa0a3d779c84ec9d9a73d1e82a560bf587b88a9",
+      "current_sha256": "cdccde5a0679f7582e43579973dacd45537d7a21872511ba304fa3724f7b5c91",
+      "equal_except_creation_metadata": true,
+      "normalized_sha256": "0c84addfa86c459b0907f7e2367de0cc9288577a12c58eba21e81972e9adac12"
+    },
+    {
+      "file": "house-rules-main-B2-NPTH-drl_map.svg",
+      "uploaded_sha256": "0ae846f21005f9d3878fcadbf1c8519702be8875df203761c39953b3ca1269a3",
+      "current_sha256": "aad22224c7d778a3143ca7a6d9dfa9f70fe561c0ff590ee62b4bf4f13dc27805",
+      "equal_except_creation_metadata": true,
+      "normalized_sha256": "7381e2a4f7821cd2a1ce01d3fdc06aaf85fd6170732bdf6fb2a9a9290e576b88"
+    },
+    {
+      "file": "house-rules-main-B2-NPTH.drl",
+      "uploaded_sha256": "b23d3f9c2fb3f6f80195a96de7c1d5291bbc6d508e8a552e18968a51553ea4d3",
+      "current_sha256": "20d29349a653a655e43a0894ef20ed2915a4922866d490ceee32737a0354129c",
+      "equal_except_creation_metadata": true,
+      "normalized_sha256": "a6975564d95aa40630790322e86aec3d2e04c95c3a23078d346c397b77c83378"
+    },
+    {
+      "file": "house-rules-main-B2-PTH-drl_map.svg",
+      "uploaded_sha256": "16946070b5da54e504d8f9921103c2a2e19fa31a197337bcd1489ffd0488ef6b",
+      "current_sha256": "1930f1a9e3db0526711fbb28b11b6feb8c554439e655a8a7a4d31713fba7aab2",
+      "equal_except_creation_metadata": true,
+      "normalized_sha256": "7357bd4abbc7f860fde8490daf0c1cc69eb188c12ce1c72fe626f1497945b24d"
+    },
+    {
+      "file": "house-rules-main-B2-PTH.drl",
+      "uploaded_sha256": "b6f3da31dbb0e36f968a2a5d39c422e15f49c7a410e71739a1d8237f1613f17d",
+      "current_sha256": "aeed4536cec31b7b81bef2e7527c1d63388f5ea6c5c9d2569a357e2514a55001",
+      "equal_except_creation_metadata": true,
+      "normalized_sha256": "0194f4cca63f64099b6033960072196f39e12ba03a4d6282ac749ba7c955ce1a"
+    },
+    {
+      "file": "house-rules-main-B2-job.gbrjob",
+      "uploaded_sha256": "61ed15f9b4e7bcefc96b5dd1e75ee0f9be0025a9a5becb9a550fd820da38cbdd",
+      "current_sha256": "d06691c2c60028aa1b28e560789c86eed86bd0a688820e48bdb76608c1f000ee",
+      "equal_except_creation_metadata": true,
+      "normalized_sha256": "30ee2529c6f863fcbb41a7cece78ecccef0dd7081a84fd468a6885f00236bf8d"
+    }
+  ]
+}
