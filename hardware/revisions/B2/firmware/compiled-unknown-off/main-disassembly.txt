@@ -1,0 +1,128 @@
+1000bec8 <main>:
+1000bec8:	b5f0      	push	{r4, r5, r6, r7, lr}
+1000beca:	b085      	sub	sp, #20
+1000becc:	4841      	ldr	r0, [pc, #260]	@ (1000bfd4 <main+0x10c>)
+1000bece:	ab03      	add	r3, sp, #12
+1000bed0:	aa02      	add	r2, sp, #8
+1000bed2:	a901      	add	r1, sp, #4
+1000bed4:	f001 f93e 	bl	1000d154 <check_sys_clock_khz>
+1000bed8:	1e04      	subs	r4, r0, #0
+1000beda:	d070      	beq.n	1000bfbe <main+0xf6>
+1000bedc:	9a03      	ldr	r2, [sp, #12]
+1000bede:	9902      	ldr	r1, [sp, #8]
+1000bee0:	9801      	ldr	r0, [sp, #4]
+1000bee2:	f001 f907 	bl	1000d0f4 <set_sys_clock_pll>
+1000bee6:	4e3c      	ldr	r6, [pc, #240]	@ (1000bfd8 <main+0x110>)
+1000bee8:	2e00      	cmp	r6, #0
+1000beea:	d102      	bne.n	1000bef2 <main+0x2a>
+1000beec:	4b3b      	ldr	r3, [pc, #236]	@ (1000bfdc <main+0x114>)
+1000beee:	2b00      	cmp	r3, #0
+1000bef0:	d010      	beq.n	1000bf14 <main+0x4c>
+1000bef2:	214c      	movs	r1, #76	@ 0x4c
+1000bef4:	2001      	movs	r0, #1
+1000bef6:	f005 fa67 	bl	100113c8 <calloc>
+1000befa:	0005      	movs	r5, r0
+1000befc:	4b38      	ldr	r3, [pc, #224]	@ (1000bfe0 <main+0x118>)
+1000befe:	224c      	movs	r2, #76	@ 0x4c
+1000bf00:	2100      	movs	r1, #0
+1000bf02:	6018      	str	r0, [r3, #0]
+1000bf04:	f002 faa0 	bl	1000e448 <__wrap_memset>
+1000bf08:	4b36      	ldr	r3, [pc, #216]	@ (1000bfe4 <main+0x11c>)
+1000bf0a:	606b      	str	r3, [r5, #4]
+1000bf0c:	4b36      	ldr	r3, [pc, #216]	@ (1000bfe8 <main+0x120>)
+1000bf0e:	60ab      	str	r3, [r5, #8]
+1000bf10:	4b36      	ldr	r3, [pc, #216]	@ (1000bfec <main+0x124>)
+1000bf12:	60eb      	str	r3, [r5, #12]
+1000bf14:	2200      	movs	r2, #0
+1000bf16:	2300      	movs	r3, #0
+1000bf18:	4d35      	ldr	r5, [pc, #212]	@ (1000bff0 <main+0x128>)
+1000bf1a:	4936      	ldr	r1, [pc, #216]	@ (1000bff4 <main+0x12c>)
+1000bf1c:	200f      	movs	r0, #15
+1000bf1e:	602a      	str	r2, [r5, #0]
+1000bf20:	606b      	str	r3, [r5, #4]
+1000bf22:	f001 fa2f 	bl	1000d384 <exception_set_exclusive_handler>
+1000bf26:	2207      	movs	r2, #7
+1000bf28:	4b33      	ldr	r3, [pc, #204]	@ (1000bff8 <main+0x130>)
+1000bf2a:	601a      	str	r2, [r3, #0]
+1000bf2c:	4a33      	ldr	r2, [pc, #204]	@ (1000bffc <main+0x134>)
+1000bf2e:	605a      	str	r2, [r3, #4]
+1000bf30:	f7f7 fc2e 	bl	10003790 <initVariant>
+1000bf34:	2000      	movs	r0, #0
+1000bf36:	f7f7 fc63 	bl	10003800 <__wrap_TinyUSB_Device_Init>
+1000bf3a:	2e00      	cmp	r6, #0
+1000bf3c:	d102      	bne.n	1000bf44 <main+0x7c>
+1000bf3e:	4b27      	ldr	r3, [pc, #156]	@ (1000bfdc <main+0x114>)
+1000bf40:	42b3      	cmp	r3, r6
+1000bf42:	d040      	beq.n	1000bfc6 <main+0xfe>
+1000bf44:	482e      	ldr	r0, [pc, #184]	@ (1000c000 <main+0x138>)
+1000bf46:	f000 fc65 	bl	1000c814 <mutex_init>
+1000bf4a:	2110      	movs	r1, #16
+1000bf4c:	2002      	movs	r0, #2
+1000bf4e:	f005 fa3b 	bl	100113c8 <calloc>
+1000bf52:	0007      	movs	r7, r0
+1000bf54:	61e8      	str	r0, [r5, #28]
+1000bf56:	f000 fa23 	bl	1000c3a0 <next_striped_spin_lock_num>
+1000bf5a:	2208      	movs	r2, #8
+1000bf5c:	0003      	movs	r3, r0
+1000bf5e:	2104      	movs	r1, #4
+1000bf60:	0038      	movs	r0, r7
+1000bf62:	f000 fffd 	bl	1000cf60 <queue_init_with_spinlock>
+1000bf66:	69ef      	ldr	r7, [r5, #28]
+1000bf68:	f000 fa1a 	bl	1000c3a0 <next_striped_spin_lock_num>
+1000bf6c:	3710      	adds	r7, #16
+1000bf6e:	0003      	movs	r3, r0
+1000bf70:	2208      	movs	r2, #8
+1000bf72:	2104      	movs	r1, #4
+1000bf74:	0038      	movs	r0, r7
+1000bf76:	f000 fff3 	bl	1000cf60 <queue_init_with_spinlock>
+1000bf7a:	742c      	strb	r4, [r5, #16]
+1000bf7c:	f7ff ff48 	bl	1000be10 <_MFIFO::registerCore() [clone .isra.0]>
+1000bf80:	2e00      	cmp	r6, #0
+1000bf82:	d102      	bne.n	1000bf8a <main+0xc2>
+1000bf84:	4b15      	ldr	r3, [pc, #84]	@ (1000bfdc <main+0x114>)
+1000bf86:	42b3      	cmp	r3, r6
+1000bf88:	d012      	beq.n	1000bfb0 <main+0xe8>
+1000bf8a:	2001      	movs	r0, #1
+1000bf8c:	f7ff ff23 	bl	1000bdd6 <delay>
+1000bf90:	4b1c      	ldr	r3, [pc, #112]	@ (1000c004 <main+0x13c>)
+1000bf92:	781b      	ldrb	r3, [r3, #0]
+1000bf94:	2b00      	cmp	r3, #0
+1000bf96:	d018      	beq.n	1000bfca <main+0x102>
+1000bf98:	2080      	movs	r0, #128	@ 0x80
+1000bf9a:	0180      	lsls	r0, r0, #6
+1000bf9c:	f007 f80e 	bl	10012fbc <malloc>
+1000bfa0:	2280      	movs	r2, #128	@ 0x80
+1000bfa2:	4b19      	ldr	r3, [pc, #100]	@ (1000c008 <main+0x140>)
+1000bfa4:	0001      	movs	r1, r0
+1000bfa6:	6018      	str	r0, [r3, #0]
+1000bfa8:	0192      	lsls	r2, r2, #6
+1000bfaa:	4818      	ldr	r0, [pc, #96]	@ (1000c00c <main+0x144>)
+1000bfac:	f002 fab2 	bl	1000e514 <multicore_launch_core1_with_stack>
+1000bfb0:	f7f7 fc5a 	bl	10003868 <setup>
+1000bfb4:	f7f7 fce8 	bl	10003988 <loop>
+1000bfb8:	f7ff ff6c 	bl	1000be94 <__loop()>
+1000bfbc:	e7fa      	b.n	1000bfb4 <main+0xec>
+1000bfbe:	4814      	ldr	r0, [pc, #80]	@ (1000c010 <main+0x148>)
+1000bfc0:	4904      	ldr	r1, [pc, #16]	@ (1000bfd4 <main+0x10c>)
+1000bfc2:	f000 f9d5 	bl	1000c370 <panic>
+1000bfc6:	0034      	movs	r4, r6
+1000bfc8:	e7d7      	b.n	1000bf7a <main+0xb2>
+1000bfca:	4810      	ldr	r0, [pc, #64]	@ (1000c00c <main+0x144>)
+1000bfcc:	f002 fabc 	bl	1000e548 <multicore_launch_core1>
+1000bfd0:	e7ee      	b.n	1000bfb0 <main+0xe8>
+1000bfd2:	46c0      	nop			@ (mov r8, r8)
+1000bfd4:	0000bb80 	.word	0x0000bb80
+	...
+1000bfe0:	20001c88 	.word	0x20001c88
+1000bfe4:	200016d0 	.word	0x200016d0
+1000bfe8:	20001740 	.word	0x20001740
+1000bfec:	200017b0 	.word	0x200017b0
+1000bff0:	20001a50 	.word	0x20001a50
+1000bff4:	20000991 	.word	0x20000991
+1000bff8:	e000e010 	.word	0xe000e010
+1000bffc:	00ffffff 	.word	0x00ffffff
+1000c000:	20001a64 	.word	0x20001a64
+1000c004:	20004320 	.word	0x20004320
+1000c008:	2000392c 	.word	0x2000392c
+1000c00c:	1000be35 	.word	0x1000be35
+1000c010:	100165c7 	.word	0x100165c7

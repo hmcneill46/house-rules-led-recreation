@@ -1,0 +1,1 @@
+UNRELEASED COST STUDY ONLY. DO NOT ORDER OR MANUFACTURE. This quotation input is not a production release. The board may be incompletely routed; native placement rotations have not received factory review. Re-export and re-quote the approved, fully verified board before ordering.

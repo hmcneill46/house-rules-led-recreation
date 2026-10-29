@@ -1,0 +1,14 @@
+ECHO: "B2 outer W/H/depth", 93.6, 22.6, 24
+ECHO: "MCU PCB under/top,maximum upper", 15.3, 16.104, 19.604
+ECHO: "USB PCB under/top,maximum upper", 15, 16.6, 20
+ECHO: "USB face x/y/port-centre-z", 78.16, 17.1, 18.25
+ECHO: "USB recess and closed-roof thickness", 2.35, 1.3
+ECHO: "MainSMD-to-MCU/USB wire clearances", 0.8, 0.5
+ECHO: "Closure bead radius / nominal deflection / pocket residual wall", 0.42, 0.2, 1.3
+Compiling design (CSG Products normalization)...
+Normalized CSG tree has 502 elements
+Geometries in cache: 128
+Geometry cache size in bytes: 282784
+CGAL Polyhedrons in cache: 0
+CGAL cache size in bytes: 0
+Total rendering time: 0:00:00.194

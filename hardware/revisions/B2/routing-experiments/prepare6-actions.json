@@ -1,0 +1,239 @@
+[
+  {
+    "ref": "U2",
+    "pin": "4",
+    "xy": [
+      79.6,
+      58.4
+    ],
+    "via": ".45/.30 filled/capped",
+    "ripped": [
+      {
+        "uuid": "d14fd759-6410-482d-87e9-e9b0bcb00e2c",
+        "net": "D2_ROW4_K"
+      },
+      {
+        "uuid": "53a61175-3989-4d2a-9853-306aa25228f0",
+        "net": "D2_ROW1_K"
+      }
+    ]
+  },
+  {
+    "ref": "U3",
+    "pin": "5",
+    "xy": [
+      105.0,
+      57.9
+    ],
+    "via": ".45/.30 filled/capped",
+    "ripped": [
+      {
+        "uuid": "a5e5825b-8141-44f8-ac0b-75ab47928ade",
+        "net": "COL2_A"
+      },
+      {
+        "uuid": "9698969d-de9f-40bd-b429-a9dc275b34f4",
+        "net": "D3_ROW3_K"
+      },
+      {
+        "uuid": "9f8641aa-74dd-4a7a-b9cd-559ff4366c31",
+        "net": "D3_ROW3_K"
+      }
+    ]
+  },
+  {
+    "ref": "U4",
+    "pin": "8",
+    "xy": [
+      131.55,
+      55.1
+    ],
+    "via": ".45/.30 filled/capped",
+    "ripped": [
+      {
+        "uuid": "dd25abce-42b7-43c7-bcb2-1bcde08d0999",
+        "net": "D4_ROW6_K"
+      },
+      {
+        "uuid": "4f250d6c-5342-4b57-a2c5-bf2276895d73",
+        "net": "COL1_GATE"
+      },
+      {
+        "uuid": "87f19faa-cfb7-4af3-be5c-5acf5d71bdc1",
+        "net": "COL1_GATE"
+      },
+      {
+        "uuid": "95919100-1147-4e65-a73c-c33000d15e57",
+        "net": "COL1_GATE"
+      }
+    ]
+  },
+  {
+    "ref": "U3",
+    "EP_offset": [
+      -0.55,
+      0
+    ],
+    "status": "thermal blocked",
+    "obstacles": [
+      [
+        "PCB_TRACK",
+        "D3_ROW2_K"
+      ]
+    ]
+  },
+  {
+    "ref": "U3",
+    "EP_offset": [
+      0.55,
+      0
+    ],
+    "status": "thermal blocked",
+    "obstacles": [
+      [
+        "PCB_TRACK",
+        "D3_ROW2_K"
+      ],
+      [
+        "PCB_TRACK",
+        "CC2_ADC"
+      ]
+    ]
+  },
+  {
+    "ref": "U3",
+    "EP_offset": [
+      0,
+      0.55
+    ],
+    "status": "thermal blocked",
+    "obstacles": [
+      [
+        "PCB_TRACK",
+        "D3_ROW2_K"
+      ],
+      [
+        "PCB_TRACK",
+        "CC2_ADC"
+      ]
+    ]
+  },
+  {
+    "ref": "U2",
+    "EP_offset": [
+      -0.55,
+      0
+    ],
+    "status": "thermal blocked",
+    "obstacles": [
+      [
+        "PCB_TRACK",
+        "LAT"
+      ],
+      [
+        "PCB_TRACK",
+        "SW_3V3"
+      ],
+      [
+        "PCB_TRACK",
+        "SW_3V3"
+      ]
+    ]
+  },
+  {
+    "ref": "U2",
+    "EP_offset": [
+      0.55,
+      0
+    ],
+    "status": "thermal added"
+  },
+  {
+    "ref": "U2",
+    "EP_offset": [
+      0,
+      0.55
+    ],
+    "status": "thermal blocked",
+    "obstacles": [
+      [
+        "PCB_TRACK",
+        "SW_3V3"
+      ]
+    ]
+  },
+  {
+    "ref": "U4",
+    "EP_offset": [
+      -0.55,
+      0
+    ],
+    "status": "thermal blocked",
+    "obstacles": [
+      [
+        "PCB_TRACK",
+        "D4_ROW6_K"
+      ]
+    ]
+  },
+  {
+    "ref": "U4",
+    "EP_offset": [
+      0.55,
+      0
+    ],
+    "status": "thermal blocked",
+    "obstacles": [
+      [
+        "PCB_TRACK",
+        "D4_ROW4_K"
+      ],
+      [
+        "PCB_TRACK",
+        "D4_ROW4_K"
+      ]
+    ]
+  },
+  {
+    "ref": "U4",
+    "EP_offset": [
+      0,
+      0.55
+    ],
+    "status": "thermal blocked",
+    "obstacles": [
+      [
+        "PCB_TRACK",
+        "D4_ROW6_K"
+      ],
+      [
+        "PCB_TRACK",
+        "SCLK"
+      ]
+    ]
+  },
+  {
+    "ref": "U1",
+    "EP_offset": [
+      -0.55,
+      0
+    ],
+    "status": "thermal added"
+  },
+  {
+    "ref": "U1",
+    "EP_offset": [
+      0.55,
+      0
+    ],
+    "status": "thermal added"
+  },
+  {
+    "ref": "U1",
+    "EP_offset": [
+      0,
+      0.55
+    ],
+    "status": "thermal added"
+  }
+]

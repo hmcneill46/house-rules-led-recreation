@@ -1,0 +1,209 @@
+{
+  "date": "2026-10-29",
+  "method": "Fresh isolated anonymous quote carts; official shipping-rate API only; no checkout/order/payment; postcode used for UK mainland estimate, no name, street address or contact details submitted.",
+  "results": [
+    {
+      "shop": "Unmanned Tech",
+      "quantity": 1,
+      "unit_price_including_vat_pence": 449,
+      "country": "United Kingdom",
+      "rates": [
+        {
+          "name": "Standard",
+          "price_gbp": "3.59",
+          "currency": "GBP",
+          "delivery_days": [
+            2,
+            4
+          ]
+        },
+        {
+          "name": "Express",
+          "price_gbp": "5.79",
+          "currency": "GBP",
+          "delivery_days": [
+            1,
+            3
+          ]
+        },
+        {
+          "name": "Special Delivery",
+          "price_gbp": "9.95",
+          "currency": "GBP",
+          "delivery_days": []
+        },
+        {
+          "name": "DPD UK Next Day",
+          "price_gbp": "10.40",
+          "currency": "GBP",
+          "delivery_days": [
+            1,
+            1
+          ]
+        },
+        {
+          "name": "UPS\u00ae Standard",
+          "price_gbp": "11.20",
+          "currency": "GBP",
+          "delivery_days": []
+        },
+        {
+          "name": "UPS Express\u00ae",
+          "price_gbp": "17.01",
+          "currency": "GBP",
+          "delivery_days": []
+        }
+      ],
+      "destination": "UK mainland (postcode omitted from saved artifact)"
+    },
+    {
+      "shop": "Unmanned Tech",
+      "quantity": 2,
+      "unit_price_including_vat_pence": 449,
+      "country": "United Kingdom",
+      "rates": [
+        {
+          "name": "Standard",
+          "price_gbp": "3.59",
+          "currency": "GBP",
+          "delivery_days": [
+            2,
+            4
+          ]
+        },
+        {
+          "name": "Express",
+          "price_gbp": "5.79",
+          "currency": "GBP",
+          "delivery_days": [
+            1,
+            3
+          ]
+        },
+        {
+          "name": "Special Delivery",
+          "price_gbp": "9.95",
+          "currency": "GBP",
+          "delivery_days": []
+        },
+        {
+          "name": "DPD UK Next Day",
+          "price_gbp": "10.40",
+          "currency": "GBP",
+          "delivery_days": [
+            1,
+            1
+          ]
+        },
+        {
+          "name": "UPS\u00ae Standard",
+          "price_gbp": "11.20",
+          "currency": "GBP",
+          "delivery_days": []
+        },
+        {
+          "name": "UPS Express\u00ae",
+          "price_gbp": "17.01",
+          "currency": "GBP",
+          "delivery_days": []
+        }
+      ],
+      "destination": "UK mainland (postcode omitted from saved artifact)"
+    },
+    {
+      "shop": "The Pi Hut",
+      "quantity": 1,
+      "unit_price_including_vat_pence": 290,
+      "country": "United Kingdom",
+      "rates": [
+        {
+          "name": "Royal Mail 1st Class [Tracked]",
+          "price_gbp": "3.80",
+          "currency": "GBP",
+          "delivery_days": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "DHL Express (Next Day, Excl Weekends)",
+          "price_gbp": "9.99",
+          "currency": "GBP",
+          "delivery_days": []
+        }
+      ],
+      "destination": "UK mainland (postcode omitted from saved artifact)"
+    },
+    {
+      "shop": "The Pi Hut",
+      "quantity": 2,
+      "unit_price_including_vat_pence": 290,
+      "country": "United Kingdom",
+      "rates": [
+        {
+          "name": "Royal Mail 1st Class [Tracked]",
+          "price_gbp": "3.80",
+          "currency": "GBP",
+          "delivery_days": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "DHL Express (Next Day, Excl Weekends)",
+          "price_gbp": "9.99",
+          "currency": "GBP",
+          "delivery_days": []
+        }
+      ],
+      "destination": "UK mainland (postcode omitted from saved artifact)"
+    }
+  ],
+  "vat_status": "UMT populated-cart HTML states Taxes included; PiHut product page explicitly states incl. VAT. Shipping rates are the UK consumer delivery prices returned by each official rate API; PiHut public delivery page independently confirms \u00a33.80. A checkout total/invoice has not been obtained, so final checkout remains authoritative.",
+  "cart_tax_flags": [
+    {
+      "shop": "Unmanned Tech",
+      "currency": "GBP",
+      "taxes_included": null,
+      "url": "https://www.unmannedtechshop.co.uk/cart.js"
+    },
+    {
+      "shop": "The Pi Hut",
+      "currency": "GBP",
+      "taxes_included": null,
+      "url": "https://thepihut.com/cart.js"
+    }
+  ],
+  "totals_gbp": {
+    "one_set_products": "7.39",
+    "one_set_shipping": "7.39",
+    "one_set_total": "14.78",
+    "two_sets_products": "14.78",
+    "two_sets_shipping": "7.39",
+    "two_sets_total": "22.17"
+  },
+  "cart_html_tax_evidence": [
+    {
+      "shop": "Unmanned Tech",
+      "contexts": [
+        "                <small class=\"tax-note caption-large rte\">Taxes included. Discounts and <a href=\"/policies/shipping-policy\">shipping</a> calculated at checkout."
+      ]
+    },
+    {
+      "shop": "The Pi Hut",
+      "contexts": []
+    }
+  ],
+  "sources": [
+    {
+      "shop": "Unmanned Tech",
+      "product": "https://www.unmannedtechshop.co.uk/products/seeed-studio-xiao-rp2040-plus",
+      "shipping_policy": "https://www.unmannedtechshop.co.uk/policies/shipping-policy"
+    },
+    {
+      "shop": "The Pi Hut",
+      "product": "https://thepihut.com/products/adafruit-usb-c-breakout-board-downstream-connection-ada4090",
+      "delivery": "https://thepihut.com/pages/delivery"
+    }
+  ]
+}

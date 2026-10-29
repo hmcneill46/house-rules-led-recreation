@@ -1,0 +1,12 @@
+{
+  "revision": "B2",
+  "spec_sha256": "8658ae95e37d72c0a062ad9cfd54ef3e18cb201437d9d5956834977edae0cc46",
+  "component_count": 82,
+  "connected_pin_count": 327,
+  "netlist_matches_spec": true,
+  "missing": {},
+  "extra": {},
+  "erc_exit_code": 0,
+  "erc_violation_count": 0,
+  "erc_exclusions": false
+}

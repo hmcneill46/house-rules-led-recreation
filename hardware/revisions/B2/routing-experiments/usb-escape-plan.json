@@ -1,0 +1,339 @@
+[
+  {
+    "label": "GND_ESD",
+    "ref": "U7",
+    "pin": "3",
+    "net": "GND",
+    "via_xy": [
+      119.6,
+      63.515
+    ],
+    "stub_length_mm": 0.43,
+    "via_uuid": "c2216452-0b72-4f0e-8f16-bcd7bb40e406",
+    "stub_uuid": "df9151e4-a952-4d27-933f-cf1eead6a59b",
+    "ripped": [
+      [
+        "7bcba2cd-8992-4d01-9d18-8024741cb033",
+        "CC1"
+      ],
+      [
+        "c98a373b-7879-412b-b22f-dae9906fb5ad",
+        "CC1"
+      ]
+    ]
+  },
+  {
+    "label": "DM_WIRE",
+    "ref": "J17",
+    "pin": "1",
+    "net": "USB_DM",
+    "via_xy": [
+      129.76,
+      50.85
+    ],
+    "stub_length_mm": 1e-06,
+    "via_uuid": "ba92ee73-2ee5-4ae0-84a9-77f4e2c9c917",
+    "stub_uuid": "5a0707c5-d1f4-4bc8-9a69-04d01f5442a0",
+    "ripped": [
+      [
+        "41575fe8-8f98-4c65-be41-a69f8cb06668",
+        "COL2_GATE"
+      ]
+    ]
+  },
+  {
+    "label": "DP_WIRE",
+    "ref": "J18",
+    "pin": "1",
+    "net": "USB_DP",
+    "via_xy": [
+      132.3,
+      50.85
+    ],
+    "stub_length_mm": 0.0,
+    "via_uuid": "2bea9b0d-a69d-4859-8a83-c62f87318472",
+    "stub_uuid": null,
+    "ripped": [
+      [
+        "3c1baef9-857c-4026-9997-3c2acbb7e7c6",
+        "COL1_GATE"
+      ]
+    ]
+  },
+  {
+    "label": "DM_ESD_TOP",
+    "ref": "U7",
+    "pin": "10",
+    "net": "USB_DM",
+    "via_xy": [
+      120.6,
+      61.965
+    ],
+    "stub_length_mm": 0.35,
+    "via_uuid": "3d92fd22-695d-4dea-bd1e-3cd8dac4018e",
+    "stub_uuid": "378993c7-882f-416f-a9ae-bb010389e475",
+    "ripped": [
+      [
+        "55ad3434-cc96-491f-9801-198dd321095b",
+        "CC1"
+      ],
+      [
+        "aa7dd3b5-420c-4ec9-934a-0d614bdc350a",
+        "SCLK"
+      ],
+      [
+        "4f6e9524-6dbd-42a3-871d-25b689cc9ab6",
+        "CC2"
+      ],
+      [
+        "812f387b-2d65-484f-892f-495de850dbdb",
+        "CC2"
+      ],
+      [
+        "b1dc00f2-6634-4f32-a905-2417cf735ebb",
+        "CC2"
+      ],
+      [
+        "df163ee0-7349-4b39-8f14-d356b9de663c",
+        "CC2"
+      ]
+    ]
+  },
+  {
+    "label": "DP_ESD_TOP",
+    "ref": "U7",
+    "pin": "9",
+    "net": "USB_DP",
+    "via_xy": [
+      120.1,
+      61.565
+    ],
+    "stub_length_mm": 0.75,
+    "via_uuid": "73507f67-ae0a-4b2a-9003-0c1370d39baa",
+    "stub_uuid": "8337f9a2-fc02-4826-9d34-02561402b5b6",
+    "ripped": [
+      [
+        "3b8c4166-759b-497a-b4f4-8d4c2c93bf75",
+        "SCLK"
+      ],
+      [
+        "69965dac-a0a3-4bbf-9c37-2a6935902d5b",
+        "SCLK"
+      ],
+      [
+        "aa389bcb-5a20-4abc-9ceb-245ff33f03db",
+        "SCLK"
+      ],
+      [
+        "cadd211d-dbfc-4951-844b-f1b9ba697343",
+        "SCLK"
+      ],
+      [
+        "d99a63f7-c21c-424a-ae84-431ef9f38ade",
+        "SCLK"
+      ],
+      [
+        "b831aedb-7722-4646-9bcb-1c2e8ac3bc23",
+        "SCLK"
+      ],
+      [
+        "bb8617f4-063c-4f9e-9850-39bc7aa0b515",
+        "SCLK"
+      ]
+    ]
+  },
+  {
+    "label": "DM_ESD_BOTTOM",
+    "ref": "U7",
+    "pin": "1",
+    "net": "USB_DM",
+    "via_xy": [
+      120.6,
+      63.515
+    ],
+    "stub_length_mm": 0.43,
+    "via_uuid": "ecbbb605-61d0-4e60-a934-710ad6542062",
+    "stub_uuid": "986cf8e9-f4fa-495f-aad2-f958cfe3467e",
+    "ripped": [
+      [
+        "1bb5c801-208b-4adb-9ce8-293bd5df87ff",
+        "BLANK"
+      ],
+      [
+        "4bf62d99-e941-414c-a1b8-995c25cdb85d",
+        "SERIAL_3_4"
+      ],
+      [
+        "597455f5-e08a-42a1-a50a-f77b15184589",
+        "SERIAL_3_4"
+      ],
+      [
+        "9b706914-a4f1-4313-9251-e08051d5ce36",
+        "COL5_GATE"
+      ]
+    ]
+  },
+  {
+    "label": "DP_ESD_BOTTOM",
+    "ref": "U7",
+    "pin": "2",
+    "net": "USB_DP",
+    "via_xy": [
+      120.1,
+      63.915
+    ],
+    "stub_length_mm": 0.83,
+    "via_uuid": "70263b48-fb89-4b6a-8aaa-e25f86b7b626",
+    "stub_uuid": "1b0dd9d8-d889-4339-b982-35199b450776",
+    "ripped": [
+      [
+        "239d6953-9623-4e8f-a8a1-ba661442fd61",
+        "CC1"
+      ],
+      [
+        "e2df794e-4901-4724-8bf2-18b0f3985e7d",
+        "CC1"
+      ],
+      [
+        "aac1351f-31c8-423f-a832-ca4c8f5b6311",
+        "SERIAL_3_4"
+      ],
+      [
+        "d2663dfd-8030-4615-b64c-5b046c54f4c0",
+        "SERIAL_3_4"
+      ],
+      [
+        "e0bd05c9-604f-4a1b-9e5d-9fd5c879b047",
+        "SERIAL_3_4"
+      ]
+    ]
+  },
+  {
+    "label": "DM_BC_CON",
+    "ref": "U9",
+    "pin": "8",
+    "net": "USB_DM",
+    "via_xy": [
+      113.65,
+      61.55
+    ],
+    "stub_length_mm": 0.275,
+    "via_uuid": "a76a2080-44bb-4fb6-a468-138b12fc81b3",
+    "stub_uuid": "3c5fc3af-8799-4f27-b076-0f4e26c903dc",
+    "ripped": [
+      [
+        "fb275be8-0fda-4651-b7aa-d9046e600fbc",
+        "D3_ROW13_K"
+      ],
+      [
+        "8dff82d9-ef9d-444f-a066-969e0ac824a3",
+        "SCLK"
+      ]
+    ]
+  },
+  {
+    "label": "DP_BC_CON",
+    "ref": "U9",
+    "pin": "7",
+    "net": "USB_DP",
+    "via_xy": [
+      114.3,
+      61.05
+    ],
+    "stub_length_mm": 0.375,
+    "via_uuid": "235891c6-7405-4dcf-bbff-607322876c9b",
+    "stub_uuid": "3f6303c6-1eee-4ad6-bcde-d5bfdf9a047c",
+    "ripped": []
+  },
+  {
+    "label": "DM_BC_HOST",
+    "ref": "U9",
+    "pin": "2",
+    "net": "USB_DM_HOST",
+    "via_xy": [
+      112.2,
+      61.55
+    ],
+    "stub_length_mm": 0.375,
+    "via_uuid": "64ee5841-c6ea-4db7-9a3a-51cd340c0260",
+    "stub_uuid": "ded4a4b4-9c86-4e83-8a95-801f55f105c8",
+    "ripped": [
+      [
+        "64f722fd-74fe-485e-8c2d-d8d54522f163",
+        "SERIAL_3_4"
+      ],
+      [
+        "ae06d95b-b90b-4b65-a8c1-801e7e8a199f",
+        "SERIAL_3_4"
+      ]
+    ]
+  },
+  {
+    "label": "DP_BC_HOST",
+    "ref": "U9",
+    "pin": "3",
+    "net": "USB_DP_HOST",
+    "via_xy": [
+      113.0,
+      61.1
+    ],
+    "stub_length_mm": 0.427931,
+    "via_uuid": "1b934fdd-096e-4b76-8c30-d110eaad8e2b",
+    "stub_uuid": "e70f52d7-e1aa-4bb0-aacf-0742f7743f9a",
+    "ripped": []
+  },
+  {
+    "label": "DM_MCU",
+    "ref": "J11",
+    "pin": "1",
+    "net": "USB_DM_HOST",
+    "via_xy": [
+      109.44,
+      50.85
+    ],
+    "stub_length_mm": 0.0,
+    "via_uuid": "039d5043-84a6-41a3-a204-ca96c26a1d77",
+    "stub_uuid": null,
+    "ripped": [
+      [
+        "d66d4fb3-d6df-4c5b-a650-12e5837464e0",
+        "VLED_5V"
+      ],
+      [
+        "e4940d69-6b13-4226-b214-9bd33912e7d4",
+        "SCLK"
+      ],
+      [
+        "8853c2fc-a344-4086-9722-2cc61ccc3c01",
+        "COL4_GATE"
+      ]
+    ]
+  },
+  {
+    "label": "DP_MCU",
+    "ref": "J12",
+    "pin": "1",
+    "net": "USB_DP_HOST",
+    "via_xy": [
+      111.98,
+      50.85
+    ],
+    "stub_length_mm": 0.0,
+    "via_uuid": "82c59855-b7e2-4241-8a33-0ae51b6760af",
+    "stub_uuid": null,
+    "ripped": [
+      [
+        "db1262c7-aba5-4c26-8091-a214e8c3dbb6",
+        "SCLK"
+      ],
+      [
+        "f7fc9497-ae49-4d76-8188-e12a4c1c2eb4",
+        "SCLK"
+      ],
+      [
+        "8c67693b-6000-4a81-89a8-104b3b4b2dd9",
+        "COL4_GATE"
+      ]
+    ]
+  }
+]

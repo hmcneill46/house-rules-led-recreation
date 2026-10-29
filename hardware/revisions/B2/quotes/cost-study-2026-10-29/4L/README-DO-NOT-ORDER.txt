@@ -1,0 +1,1 @@
+UNROUTED COST STUDY ONLY. DO NOT ORDER OR MANUFACTURE. This is an incomplete placement used only to estimate costs. It has not passed connectivity DRC. Board outline/stack/part count are actual candidate values. Final routing/drill count/rotations/process must be re-exported and reviewed before production.

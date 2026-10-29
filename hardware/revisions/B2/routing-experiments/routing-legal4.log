@@ -1,0 +1,172 @@
+2026-10-29 17:16:47.871 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+2026-10-29 17:16:48.181 INFO   Hardware: 32 CPU cores, 299 CPU score, 16384 MB RAM
+2026-10-29 17:16:48.182 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 17:16:48.184 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-29 17:16:49.323 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 17:16:49.594 INFO   [58C35B\B0B3F2] Loading board file 'grounded4.dsn'...
+2026-10-29 17:16:49.843 WARN   DSN file 'grounded4.dsn' was loaded with 1 warning(s).
+2026-10-29 17:16:49.879 INFO   [58C35B\B0B3F2] Job '58C35B\B0B3F2' started at 2026-10-29T17:16:49.879538Z.
+2026-10-29 17:16:50.141 WARN   Design Warning: Board has 43 pre-existing clearance violation(s) in the loaded design (before routing):
+  - 43 unfixable violation(s) (cannot be resolved by Freerouting):
+      * 43 fixed trace/via clearance violations (first 5 shown):
+          - FixedVia#2152 [net D3_ROW5_K] <-> FixedTrace#1047 [net D3_ROW4_K]
+          - FixedVia#2143 [net D4_ROW6_K] <-> FixedVia#2142 [net D4_ROW5_K]
+          - FixedVia#2143 [net D4_ROW6_K] <-> FixedVia#2142 [net D4_ROW5_K]
+          - FixedVia#2143 [net D4_ROW6_K] <-> FixedVia#2142 [net D4_ROW5_K]
+          - FixedVia#2143 [net D4_ROW6_K] <-> FixedVia#2142 [net D4_ROW5_K]
+          ... and 38 more
+  - 0 potentially fixable violations
+Notice: Freerouting does not modify component placement, board outlines, or fixed items.
+Resolving these 43 unfixable violation(s) is the responsibility of the board author in their EDA tool (e.g. KiCad).
+2026-10-29 17:16:50.187 INFO   [58C35B\B0B3F2] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=4.
+2026-10-29 17:16:50.539 INFO   [58C35B\B0B3F2] Fanout stage started on board 'b14842dc2a2f1ebf7faf7d9314e7f2be' with 157 of 233 SMD pins needing fanout (65 already connected, 11 netless).
+2026-10-29 17:17:05.986 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net 'FUSED_VBUS' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 17:17:06.206 INFO   [58C35B\B0B3F2] Fanout pass #1 on board '524ff0612f1604dc6d514bd1e951fc9e' completed in 15.48 seconds with 25 SMD pins fanouted, 7 not routed, 0 insert errors, +4 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-10-29 17:17:12.310 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net 'CC2_ADC' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 17:17:12.547 INFO   [58C35B\B0B3F2] Fanout pass #2 on board 'ec7ffdb898b38e6a9b8dcd6815e8982c' completed in 6.30 seconds with 19 SMD pins fanouted, 4 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-10-29 17:17:13.498 INFO   [58C35B\B0B3F2] Fanout pass #3 on board '98d197008c6891305a42ff2cbae855d3' completed in 0.90 seconds with 18 SMD pins fanouted, 4 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=300).
+2026-10-29 17:17:14.456 INFO   [58C35B\B0B3F2] Fanout pass #4 on board '0484ec8b3c9f24ac76f2243f4d9ed9a2' completed in 0.92 seconds with 18 SMD pins fanouted, 4 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=400).
+2026-10-29 17:17:15.196 INFO   [58C35B\B0B3F2] Fanout pass #5 on board 'f53b33ccc44ca1af2753b1d5a2a2d9f8' completed in 0.71 seconds with 18 SMD pins fanouted, 4 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=500).
+2026-10-29 17:17:15.771 INFO   [58C35B\B0B3F2] Fanout pass #6 on board '64170e8fa330ffca92bd229500ad6d4f' completed in 0.55 seconds with 18 SMD pins fanouted, 4 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=600).
+2026-10-29 17:17:15.771 INFO   Fanout stopped after 6 passes: no progress for 3 consecutive passes.
+2026-10-29 17:17:15.834 INFO   [58C35B\B0B3F2] Fanout stage completed: started with 222 total SMD pins, completed in 25.15 seconds, escaped pins: 212/222 (95.5%), using 25.33 total CPU seconds, 23.02 GB total allocated, and 373.8 MB peak heap usage.
+2026-10-29 17:17:16.118 INFO   [58C35B\B0B3F2] Auto-routing stage started on board '64170e8fa330ffca92bd229500ad6d4f' with baseline score 682.80 for 52 unrouted items.
+2026-10-29 17:17:17.908 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:17:19.759 INFO   Necked retry routed net 'SERIAL_3_4' at 110.0 um trace width.
+2026-10-29 17:17:19.833 INFO   Necked retry routed net 'BLANK' at 110.0 um trace width.
+2026-10-29 17:17:20.761 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:17:23.621 INFO   Necked retry routed net 'D3_ROW7_K' at 110.0 um trace width.
+2026-10-29 17:17:31.629 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net 'D3_ROW11_K' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 17:17:37.542 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:17:46.578 INFO   Necked retry routed net 'D3_ROW7_K' at 110.0 um trace width.
+2026-10-29 17:17:47.290 INFO   [58C35B\B0B3F2] Auto-routing pass #1 on board '64170e8fa330ffca92bd229500ad6d4f' was completed in 31.03 seconds with score 767.65 (38 unrouted and 43 violations), using 56.20 CPU seconds and the job allocated 53.26 GB of memory so far.
+2026-10-29 17:17:54.775 INFO   Necked retry routed net 'D3_ROW6_K' at 110.0 um trace width.
+2026-10-29 17:18:02.332 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:18:23.819 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net 'VLED_5V' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 17:18:37.339 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net '+3V3' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 17:18:40.832 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:18:40.890 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:18:43.117 INFO   [58C35B\B0B3F2] Auto-routing pass #2 on board '20c11797766a0e2741251f32a1b857ed' was completed in 55.65 seconds with score 749.47 (41 unrouted and 43 violations), using 111.56 CPU seconds and the job allocated 94.21 GB of memory so far.
+2026-10-29 17:18:51.559 INFO   Necked retry routed net 'D3_ROW6_K' at 110.0 um trace width.
+2026-10-29 17:18:52.867 INFO   Necked retry routed net 'D3_ROW7_K' at 110.0 um trace width.
+2026-10-29 17:18:57.678 INFO   Necked retry routed net 'CC1_ADC' at 110.0 um trace width.
+2026-10-29 17:19:01.217 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:19:04.598 INFO   Necked retry routed net 'SW_3V3' at 110.0 um trace width.
+2026-10-29 17:19:11.199 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:19:13.204 INFO   [58C35B\B0B3F2] Auto-routing pass #3 on board '87f9b4c8a6a45fc04d45d94808e0d3e8' was completed in 29.93 seconds with score 749.47 (41 unrouted and 43 violations), using 139.62 CPU seconds and the job allocated 115.91 GB of memory so far.
+2026-10-29 17:19:43.703 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net 'BLANK' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 17:19:44.395 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:19:55.223 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:20:01.077 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:20:01.568 INFO   Necked retry routed net 'SCLK' at 110.0 um trace width.
+2026-10-29 17:20:02.194 INFO   Necked retry routed net 'SW_3V3' at 110.0 um trace width.
+2026-10-29 17:20:03.871 INFO   [58C35B\B0B3F2] Auto-routing pass #4 on board '01df6f04e7294cbff4129714b18db836' was completed in 50.49 seconds with score 761.59 (39 unrouted and 43 violations), using 188.34 CPU seconds and the job allocated 148.36 GB of memory so far.
+2026-10-29 17:20:12.231 INFO   Necked retry routed net 'D3_ROW6_K' at 110.0 um trace width.
+2026-10-29 17:20:20.060 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:20:27.948 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:20:28.039 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:20:29.695 INFO   [58C35B\B0B3F2] Auto-routing pass #5 on board 'b24d0c9e7ff63c138d0b3668fc53c483' was completed in 25.65 seconds with score 749.47 (41 unrouted and 43 violations), using 214.53 CPU seconds and the job allocated 168.71 GB of memory so far.
+2026-10-29 17:20:38.313 INFO   Necked retry routed net 'D3_ROW6_K' at 110.0 um trace width.
+2026-10-29 17:20:39.519 INFO   Necked retry routed net 'D3_ROW7_K' at 110.0 um trace width.
+2026-10-29 17:20:44.479 INFO   Necked retry routed net 'CC1_ADC' at 110.0 um trace width.
+2026-10-29 17:20:47.461 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:20:55.709 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:20:57.464 INFO   [58C35B\B0B3F2] Auto-routing pass #6 on board '3de3ddb2d7130e56247113825b7501be' was completed in 27.63 seconds with score 749.47 (41 unrouted and 43 violations), using 240.11 CPU seconds and the job allocated 188.91 GB of memory so far.
+2026-10-29 17:21:08.619 INFO   Necked retry routed net 'SERIAL_3_4' at 110.0 um trace width.
+2026-10-29 17:21:14.661 INFO   Necked retry routed net 'D3_ROW7_K' at 110.0 um trace width.
+2026-10-29 17:21:15.780 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:21:22.384 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:21:22.710 INFO   [58C35B\B0B3F2] Auto-routing pass #7 on board 'd8f40501676d21c29d8071573aaf626c' was completed in 25.13 seconds with score 755.53 (40 unrouted and 43 violations), using 270.18 CPU seconds and the job allocated 212.74 GB of memory so far.
+2026-10-29 17:21:31.166 INFO   Necked retry routed net 'D3_ROW6_K' at 110.0 um trace width.
+2026-10-29 17:21:32.451 INFO   Necked retry routed net 'D3_ROW7_K' at 110.0 um trace width.
+2026-10-29 17:21:40.087 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:21:41.352 INFO   Necked retry routed net 'SERIAL_3_4' at 110.0 um trace width.
+2026-10-29 17:21:48.635 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:21:48.728 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:21:50.845 INFO   [58C35B\B0B3F2] Auto-routing pass #8 on board '20c11797766a0e2741251f32a1b857ed' was completed in 0.00 seconds with score 767.65 (38 unrouted and 43 violations), using 294.86 CPU seconds and the job allocated 231.62 GB of memory so far.
+2026-10-29 17:21:56.064 INFO   Necked retry routed net 'D2_ROW6_K' at 110.0 um trace width.
+2026-10-29 17:21:57.075 INFO   Necked retry routed net 'D4_ROW6_K' at 110.0 um trace width.
+2026-10-29 17:21:58.586 INFO   Necked retry routed net 'D3_ROW6_K' at 110.0 um trace width.
+2026-10-29 17:22:14.857 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net 'DRIVER_EN' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 17:22:17.669 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:22:27.214 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:22:27.292 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:22:29.198 INFO   [58C35B\B0B3F2] Auto-routing pass #9 on board '20c11797766a0e2741251f32a1b857ed' was completed in 38.31 seconds with score 755.53 (40 unrouted and 43 violations), using 330.16 CPU seconds and the job allocated 262.96 GB of memory so far.
+2026-10-29 17:22:34.219 INFO   Necked retry routed net 'D2_ROW6_K' at 110.0 um trace width.
+2026-10-29 17:22:34.703 INFO   Necked retry routed net 'D2_ROW2_K' at 110.0 um trace width.
+2026-10-29 17:22:35.637 INFO   Necked retry routed net 'D4_ROW6_K' at 110.0 um trace width.
+2026-10-29 17:22:38.283 INFO   Necked retry routed net 'D3_ROW7_K' at 110.0 um trace width.
+2026-10-29 17:22:47.628 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:23:09.234 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net 'VLED_5V' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 17:23:16.735 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net 'SERIAL_2_3' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 17:23:19.621 INFO   Necked retry routed net '+3V3' at 110.0 um trace width.
+2026-10-29 17:23:23.304 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:23:25.318 INFO   [58C35B\B0B3F2] Auto-routing pass #10 on board 'd0d2f7afb3519014e9cc4031a3786158' was completed in 55.98 seconds with score 767.65 (38 unrouted and 43 violations), using 391.41 CPU seconds and the job allocated 309.62 GB of memory so far.
+2026-10-29 17:23:31.338 INFO   Necked retry routed net 'D4_ROW6_K' at 110.0 um trace width.
+2026-10-29 17:23:34.173 INFO   Necked retry routed net 'D3_ROW7_K' at 110.0 um trace width.
+2026-10-29 17:23:44.069 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:23:52.104 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:23:52.237 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:23:54.078 INFO   [58C35B\B0B3F2] Auto-routing pass #11 on board '2114f66146f004a6cb8a399026cb54d9' was completed in 28.48 seconds with score 767.65 (38 unrouted and 43 violations), using 420.67 CPU seconds and the job allocated 332.75 GB of memory so far.
+2026-10-29 17:24:00.512 INFO   Necked retry routed net 'D4_ROW6_K' at 110.0 um trace width.
+2026-10-29 17:24:03.675 INFO   Necked retry routed net 'D3_ROW7_K' at 110.0 um trace width.
+2026-10-29 17:24:13.491 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:24:15.142 INFO   Necked retry routed net 'SERIAL_3_4' at 110.0 um trace width.
+2026-10-29 17:24:21.771 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:24:23.768 INFO   [58C35B\B0B3F2] Auto-routing pass #12 on board 'dfd331d40323608c4c0a6e02de16d6d3' was completed in 29.55 seconds with score 767.65 (38 unrouted and 43 violations), using 450.46 CPU seconds and the job allocated 356.39 GB of memory so far.
+2026-10-29 17:24:29.019 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:24:32.791 INFO   Necked retry routed net 'D4_ROW6_K' at 110.0 um trace width.
+2026-10-29 17:24:33.239 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:24:35.997 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:24:36.199 INFO   Necked retry routed net 'D2_ROW6_K' at 110.0 um trace width.
+2026-10-29 17:24:44.013 INFO   Necked retry routed net 'D3_ROW7_K' at 110.0 um trace width.
+2026-10-29 17:25:12.451 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net 'BLANK' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 17:25:15.463 INFO   [58C35B\B0B3F2] Auto-routing pass #13 on board '60b13db365defbc5425ce7550caa6114' was completed in 51.46 seconds with score 761.59 (39 unrouted and 43 violations), using 501.44 CPU seconds and the job allocated 391.79 GB of memory so far.
+2026-10-29 17:25:21.916 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:25:27.894 INFO   Necked retry routed net 'SCLK' at 110.0 um trace width.
+2026-10-29 17:25:31.939 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:25:32.160 INFO   Necked retry routed net 'D4_ROW6_K' at 110.0 um trace width.
+2026-10-29 17:25:36.915 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:25:43.239 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net 'D2_ROW6_K' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 17:25:44.729 INFO   [58C35B\B0B3F2] Auto-routing pass #14 on board '044bef0f07c5a27a6eabf9754633e257' was completed in 29.00 seconds with score 779.77 (36 unrouted and 43 violations), using 530.64 CPU seconds and the job allocated 415.62 GB of memory so far.
+2026-10-29 17:25:51.072 INFO   Necked retry routed net 'D4_ROW6_K' at 110.0 um trace width.
+2026-10-29 17:25:54.068 INFO   Necked retry routed net 'D3_ROW7_K' at 110.0 um trace width.
+2026-10-29 17:26:04.278 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:26:12.865 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:26:12.966 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:26:14.872 INFO   [58C35B\B0B3F2] Auto-routing pass #15 on board '3463a878f559e5b1e04c649390334ccf' was completed in 29.97 seconds with score 773.71 (37 unrouted and 43 violations), using 557.86 CPU seconds and the job allocated 436.65 GB of memory so far.
+2026-10-29 17:26:19.783 INFO   Necked retry routed net 'D2_ROW5_K' at 110.0 um trace width.
+2026-10-29 17:26:20.802 INFO   Necked retry routed net 'D4_ROW6_K' at 110.0 um trace width.
+2026-10-29 17:26:24.138 INFO   Necked retry routed net 'D3_ROW7_K' at 110.0 um trace width.
+2026-10-29 17:26:33.950 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:26:42.072 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:26:44.468 INFO   [58C35B\B0B3F2] Auto-routing pass #16 on board '3463a878f559e5b1e04c649390334ccf' was completed in 0.00 seconds with score 779.77 (36 unrouted and 43 violations), using 589.40 CPU seconds and the job allocated 462.09 GB of memory so far.
+2026-10-29 17:26:52.602 INFO   Necked retry routed net 'D3_ROW7_K' at 110.0 um trace width.
+2026-10-29 17:27:09.865 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net 'DRIVER_EN' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 17:27:13.021 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:27:33.327 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net 'VLED_5V' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 17:27:40.612 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:27:40.667 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:27:42.252 INFO   [58C35B\B0B3F2] Auto-routing pass #17 on board '3463a878f559e5b1e04c649390334ccf' was completed in 57.75 seconds with score 773.71 (37 unrouted and 43 violations), using 646.38 CPU seconds and the job allocated 508.25 GB of memory so far.
+2026-10-29 17:27:47.487 INFO   Necked retry routed net 'D2_ROW5_K' at 110.0 um trace width.
+2026-10-29 17:27:51.037 INFO   Necked retry routed net 'D3_ROW7_K' at 110.0 um trace width.
+2026-10-29 17:27:59.971 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:28:06.012 INFO   Necked retry routed net 'USB_DM' at 110.0 um trace width.
+2026-10-29 17:28:07.736 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:28:09.647 INFO   [58C35B\B0B3F2] Auto-routing pass #18 on board '746c74af4f7ee9c40fc38b5b8d1f3a8b' was completed in 27.25 seconds with score 779.77 (36 unrouted and 43 violations), using 674.39 CPU seconds and the job allocated 531.28 GB of memory so far.
+2026-10-29 17:28:20.486 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net 'COL5_A' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 17:28:23.545 INFO   Necked retry routed net 'D3_ROW7_K' at 110.0 um trace width.
+2026-10-29 17:28:32.619 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:28:39.081 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:28:39.163 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:28:41.316 INFO   [58C35B\B0B3F2] Auto-routing pass #19 on board 'daeead0e196708e1dac9507d79d27546' was completed in 31.46 seconds with score 791.89 (34 unrouted and 43 violations), using 705.41 CPU seconds and the job allocated 556.00 GB of memory so far.
+2026-10-29 17:28:50.769 INFO   Necked retry routed net 'D3_ROW7_K' at 110.0 um trace width.
+2026-10-29 17:28:59.856 INFO   Necked retry routed net 'VLED_5V' at 110.0 um trace width.
+2026-10-29 17:29:05.668 INFO   Necked retry routed net 'USB_DM' at 110.0 um trace width.
+2026-10-29 17:29:07.473 INFO   Necked retry routed net 'USB_DP' at 110.0 um trace width.
+2026-10-29 17:29:09.362 INFO   [58C35B\B0B3F2] Auto-routing pass #20 on board '0d11c872d76caa070c0b1f508d865ec3' was completed in 27.87 seconds with score 791.89 (34 unrouted and 43 violations), using 733.90 CPU seconds and the job allocated 578.98 GB of memory so far.
+2026-10-29 17:29:09.834 INFO   [58C35B\B0B3F2] Auto-routing stage completed: started with 56 unrouted nets, completed in 739.54 seconds, final score: 791.89 (34 unrouted and 43 violations), using 733.90 total CPU seconds, 578.98 GB total allocated, and 453.3 MB peak heap usage.
+2026-10-29 17:29:09.992 INFO   [58C35B\B0B3F2] Skipping optimization stage: the board has 34 unrouted connection(s) (optimizer only runs on completely routed boards).
+2026-10-29 17:29:10.044 INFO   [58C35B\B0B3F2] Job '58C35B\B0B3F2' finished with state: COMPLETED (elapsed: 12 minutes 20.16 seconds, finished at UTC: 2026-10-29T17:29:10.044007Z).
+2026-10-29 17:29:10.055 INFO   Saving output file '/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/routing-experiments/legal4.ses' (SES)...
+2026-10-29 17:29:10.075 INFO   Successfully saved output file '/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/routing-experiments/legal4.ses' (238066 bytes).

@@ -1,0 +1,62 @@
+{
+  "source": "ct-help6.kicad_pcb",
+  "attempts": 240,
+  "found": null,
+  "best": {
+    "layer": "In3.Cu",
+    "path": [
+      [
+        111.9,
+        58.5
+      ],
+      [
+        112.0,
+        58.5
+      ],
+      [
+        112.0,
+        58.65
+      ],
+      [
+        120.0,
+        58.65
+      ],
+      [
+        120.0,
+        57.05
+      ],
+      [
+        120.7375,
+        57.05
+      ]
+    ],
+    "collisions": 5,
+    "objects": [
+      {
+        "id": "a43ed93f-0cbf-46a2-a05f-bbf1022485a4",
+        "net": "GND",
+        "class": "PCB_VIA"
+      },
+      {
+        "id": "c3813a9f-a9a6-4725-b6a0-ebea3607b567",
+        "net": "GND",
+        "class": "PCB_VIA"
+      },
+      {
+        "id": "6d6e3979-6e34-4a18-a641-9b90f2ef860d",
+        "net": "+3V3",
+        "class": "PCB_TRACK"
+      },
+      {
+        "id": "625d75f5-06be-43fe-9484-8cbc2f488f32",
+        "net": "USB_DM_HOST",
+        "class": "PCB_TRACK"
+      },
+      {
+        "id": "a23fc9d4-df60-45ea-b9fa-3a51cbd645f2",
+        "net": "USB_DP_HOST",
+        "class": "PCB_TRACK"
+      }
+    ]
+  }
+}

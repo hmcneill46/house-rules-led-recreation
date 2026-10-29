@@ -1,0 +1,126 @@
+[
+  {
+    "ref": "U3",
+    "kind": "third_EP",
+    "xy": [
+      106800000,
+      59050000
+    ],
+    "diameter": 450000,
+    "net": "GND",
+    "ripped": [
+      [
+        "01ae9fe4-8dae-4eaa-b51f-cda9958721b3",
+        "D3_ROW2_K"
+      ]
+    ]
+  },
+  {
+    "ref": "U4",
+    "kind": "third_EP",
+    "xy": [
+      132200000,
+      57300000
+    ],
+    "diameter": 450000,
+    "net": "GND",
+    "ripped": [
+      [
+        "2438eab0-1b74-42ab-98b2-7364d37f8d28",
+        "D4_ROW6_K"
+      ]
+    ]
+  },
+  {
+    "ref": "R22",
+    "pin": "2",
+    "kind": "new_ground",
+    "xy": [
+      75975000,
+      61000000
+    ],
+    "diameter": 600000,
+    "net": "GND",
+    "ripped": [
+      [
+        "bd52e5f4-8da4-4d28-812f-ab2e1877f87b",
+        "LAT"
+      ]
+    ]
+  },
+  {
+    "ref": "C16",
+    "pin": "2",
+    "kind": "new_ground",
+    "xy": [
+      121975000,
+      60700000
+    ],
+    "diameter": 600000,
+    "net": "GND",
+    "ripped": [
+      [
+        "5d02b57c-d26f-4059-bc60-4577914d5b75",
+        "D3_ROW7_K"
+      ],
+      [
+        "72700663-bea3-4d75-b627-e9a56714d56f",
+        "D3_ROW7_K"
+      ],
+      [
+        "7d6504d9-bf95-4962-9c40-dec9134c6605",
+        "D3_ROW7_K"
+      ],
+      [
+        "63f535dd-d6e6-4e6f-aada-df99d30cc51a",
+        "CC1"
+      ],
+      [
+        "dec41544-6d3d-46e9-808c-283bdcd4ff32",
+        "CC1"
+      ]
+    ]
+  },
+  {
+    "ref": "U9",
+    "pin": "6",
+    "kind": "new_ground",
+    "xy": [
+      113925000,
+      60550000
+    ],
+    "diameter": 450000,
+    "net": "GND",
+    "ripped": [
+      [
+        "7b5c8e83-88a2-492c-9697-dfb99160f182",
+        "D3_ROW13_K"
+      ]
+    ]
+  },
+  {
+    "ref": "C15",
+    "pin": "2",
+    "kind": "new_ground",
+    "xy": [
+      118775000,
+      60700000
+    ],
+    "diameter": 600000,
+    "net": "GND",
+    "ripped": [
+      [
+        "78b2df35-cb01-432a-9e23-87961fa13549",
+        "CC1"
+      ],
+      [
+        "174c9b1e-57c1-4bb1-af06-4d316d1b74d8",
+        "CC2"
+      ],
+      [
+        "f8bff3db-7b5c-4316-9835-b97aca98a6d7",
+        "CC2"
+      ]
+    ]
+  }
+]

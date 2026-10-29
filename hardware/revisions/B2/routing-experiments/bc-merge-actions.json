@@ -1,0 +1,555 @@
+{
+  "source_sha256": "f0543e4be94b86b4fb2b899cb8c6a3fc7b575316d758f721555b665be23035fe",
+  "electrical_spec_sha256": "d2588ff1f24a578cf0aefa54b896fac74f876e7344c23c9c57bb0877708312ff",
+  "removed_old_USB_objects": 124,
+  "parts": [
+    {
+      "ref": "R15",
+      "action": "moved",
+      "xy_relative": [
+        12.45,
+        6.1
+      ]
+    },
+    {
+      "ref": "U9",
+      "action": "added",
+      "xy_relative": [
+        63.25,
+        11.3
+      ]
+    },
+    {
+      "ref": "C15",
+      "action": "added",
+      "xy_relative": [
+        68,
+        10.7
+      ]
+    },
+    {
+      "ref": "C16",
+      "action": "added",
+      "xy_relative": [
+        71.2,
+        10.7
+      ]
+    },
+    {
+      "ref": "R21",
+      "action": "added",
+      "xy_relative": [
+        25.15,
+        6.1
+      ]
+    },
+    {
+      "ref": "R22",
+      "action": "added",
+      "xy_relative": [
+        25.15,
+        11
+      ]
+    },
+    {
+      "ref": "R23",
+      "action": "added",
+      "xy_relative": [
+        12.45,
+        11
+      ]
+    },
+    {
+      "ref": "J19",
+      "action": "added",
+      "xy_relative": [
+        23.88,
+        0.85
+      ]
+    },
+    {
+      "ref": "J20",
+      "action": "added",
+      "xy_relative": [
+        26.42,
+        0.85
+      ]
+    }
+  ],
+  "widened_power": [
+    {
+      "uuid": "17e8e996-4d49-4e4d-a3dc-142683c59ba4",
+      "net": "COL1_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "3764adea-31a7-4104-bdef-2ad597f5e623",
+      "net": "COL1_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "609faf09-60f5-46c4-b538-21673f8c119a",
+      "net": "COL1_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "73a9f9db-81b3-44ca-8335-0c41fd1a445d",
+      "net": "COL1_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "abb9324d-84a5-4e05-9477-ac6c8aa56b2c",
+      "net": "COL1_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "b7c5bcaa-b55e-46ce-96e5-d49750732346",
+      "net": "COL1_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "d45b89a8-1ace-4f90-a23e-1dfa46891a14",
+      "net": "COL1_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "07532f78-dde4-4527-93ca-3fd9290d2e5c",
+      "net": "COL2_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "2c8ec63e-bd6d-4bbe-a235-460fca7fc87b",
+      "net": "COL2_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "3266e8b7-52b0-4e0f-b775-7eafb9055316",
+      "net": "COL2_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "3fec7975-2068-4b52-ba7e-94a175fe8b68",
+      "net": "COL2_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "3ff40765-ee2e-4e9b-8caf-bd199ea12f58",
+      "net": "COL2_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "49b3ca50-1071-4021-aeed-9b8f37a9dedb",
+      "net": "COL2_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "4c6b2a43-5c98-42db-a2e0-ee105db47695",
+      "net": "COL2_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "4fa4229a-0ee5-4058-8056-40d001c7d74e",
+      "net": "COL2_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "5ef6be9a-59a4-4db9-9540-03942c4f8f0f",
+      "net": "COL2_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "7948a73c-c1be-4e55-9b30-e504b511503b",
+      "net": "COL2_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "8d8233a8-35de-4265-80a1-8f08f722c351",
+      "net": "COL2_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "90127b6c-832f-4742-a54e-0e04ad25f8b1",
+      "net": "COL2_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "9a0d781a-1dc7-491f-95e3-55c5368ea046",
+      "net": "COL2_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "a725518b-75b1-477a-8e18-f377cf267743",
+      "net": "COL2_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "b60b1503-53e0-4706-b503-85540d880183",
+      "net": "COL2_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "c7ab7ab3-afde-4100-ac58-0c74749be911",
+      "net": "COL2_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "d79f81f9-206e-4719-a026-054745e2685c",
+      "net": "COL2_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "e51464d4-ac6c-4c34-8a39-48df76d38264",
+      "net": "COL2_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "e53f8771-f37f-4984-b19e-631cf0403d22",
+      "net": "COL2_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "eaeb6995-28bf-496c-9d01-2840dfff1226",
+      "net": "COL2_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "f6b7362a-2f99-4470-b185-066719da7e11",
+      "net": "COL2_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "f8e9a318-8dca-4950-87c4-95cda49db02e",
+      "net": "COL2_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "3cf7486e-09af-438d-9fa6-6ead430311b2",
+      "net": "COL4_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "3f096f94-c023-493a-beac-3ed27f8bbca6",
+      "net": "COL4_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "7d540003-4b31-43e0-bc6d-6aeabff8d4cb",
+      "net": "COL4_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "ca203959-0e8c-4791-a09f-9359ed89eb6a",
+      "net": "COL4_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "e1df1e8a-e060-40a7-a23f-0c00672eeb50",
+      "net": "COL4_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "685392cf-24f4-4718-b29a-2e9e800491aa",
+      "net": "COL5_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "c8a91232-5453-47c9-b09f-f9542f783e3e",
+      "net": "COL5_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "06dbd0a5-b34d-439a-b7e2-5ce516b56605",
+      "net": "COL5_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "203ddc81-316e-4d21-9711-404f986026ab",
+      "net": "COL5_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "28e95e6e-0e56-45a6-94e3-d5dccb64ce6f",
+      "net": "COL5_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "408a64b5-772f-490e-a6a1-7b33e96795b5",
+      "net": "COL5_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "42aa7391-b812-4cb3-ac52-236f80628137",
+      "net": "COL5_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "4cd8e205-6a1b-4349-9f2d-b2bfd3871152",
+      "net": "COL5_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "527f90e3-4967-4ddd-aea9-7505e5e290df",
+      "net": "COL5_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "5fea0700-9fa4-4842-aff4-3dec9cf07fd9",
+      "net": "COL5_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "650029ef-9199-4da3-9b7b-28012f4ae17e",
+      "net": "COL5_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "a1cbc9f2-ea17-45c0-8205-ace27c282e8f",
+      "net": "COL5_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "aa1677ec-835b-4876-a134-774729319d05",
+      "net": "COL5_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "c786b2f5-4fb7-40dd-b1fb-e13f2c613ad5",
+      "net": "COL5_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "f6caca8d-d69e-488a-8706-cb7af3543737",
+      "net": "COL5_A",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "b1bf0d24-7f49-448d-b972-dacc04740750",
+      "net": "COL3_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "501cc012-67b7-401c-b981-aeb51c385dbc",
+      "net": "COL3_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "b3eb1431-910d-4a26-9c16-f9e3fbe76f36",
+      "net": "COL3_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "b77ae96c-5ad7-46dd-ba02-9bf89e492f8f",
+      "net": "COL3_A",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "04f86f42-d281-4dc9-b2ee-43edf50af2fb",
+      "net": "SW_3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "09c57c9d-c0d1-4159-aab7-09a41326b26d",
+      "net": "SW_3V3",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "0d72f171-d761-4002-83c2-a1b5e1059617",
+      "net": "SW_3V3",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "25ae6299-5ae9-4153-9baa-18af9ae518f0",
+      "net": "SW_3V3",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "270c866b-76f1-4e7c-a061-a3e152f18c7f",
+      "net": "SW_3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "2993b9d6-80c7-4f67-ad4b-4dbc459e18b3",
+      "net": "SW_3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "2b9d01bf-9642-4916-ba1b-11f3ece89add",
+      "net": "SW_3V3",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "2bedb6b5-0ba1-49e2-a008-18bbd4892f85",
+      "net": "SW_3V3",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "4536eead-bc07-4150-927d-3e3cdc286f0e",
+      "net": "SW_3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "59951266-eebf-4e75-a526-98e7a81389d0",
+      "net": "SW_3V3",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "71b9b425-71c2-41ec-84b4-797204bf0501",
+      "net": "SW_3V3",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "722a374f-9589-44d7-99ca-14d8040f4735",
+      "net": "SW_3V3",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "79f01373-de73-4651-9acb-af99a516b138",
+      "net": "SW_3V3",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "7eed6ea5-8b23-449c-9a9d-ff8d462cbe1c",
+      "net": "SW_3V3",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "8a8da67e-65b1-4aad-88a0-9e7130fdc706",
+      "net": "SW_3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "8dfec1f0-1b9b-4951-a5a5-2371bbd9a2bc",
+      "net": "SW_3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "91af3044-77e2-44b0-a257-08f93d875387",
+      "net": "SW_3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "938b2943-9172-4f5b-9d0f-f36760c3d488",
+      "net": "SW_3V3",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "ac09e98e-f755-4fe5-b6fe-dd553d7ca123",
+      "net": "SW_3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "bcbef5a1-69f4-4c00-b321-4588aad26030",
+      "net": "SW_3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "c934accb-3842-4fe0-a490-ba06d8cbec62",
+      "net": "SW_3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "cbd7fe52-3505-4ec5-b013-5645f7e0d93d",
+      "net": "SW_3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "d7096ed0-9529-43fc-b660-1f4b00ea0a02",
+      "net": "SW_3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "db05c7a6-9f45-485c-9ed9-25a7bef427bb",
+      "net": "SW_3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "dc570d7f-ef9d-474d-8f14-6de322ea2631",
+      "net": "SW_3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "e4589c28-ba30-436c-8a57-5aec6a564680",
+      "net": "SW_3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "ffb5c403-6857-4cf6-90cd-1e94b2f3083a",
+      "net": "SW_3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "75733b00-d485-488e-b334-187ff400d477",
+      "net": "SW_3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "8a3519b4-043a-4426-bd9b-017524c21c31",
+      "net": "SW_3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "125096ff-7cf5-4dee-929a-c9dfc687a904",
+      "net": "+3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "29aecced-faf2-4368-b405-e983be986d30",
+      "net": "+3V3",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "34f0c1a0-4978-4cc3-8772-8171b3977466",
+      "net": "+3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "35743909-afb3-437c-a9d5-2b7da8acd1e0",
+      "net": "+3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "36c5cc62-99f7-41bc-9c8d-08d913b48c69",
+      "net": "+3V3",
+      "old_mm": 0.1124
+    },
+    {
+      "uuid": "66ab8858-32f6-4203-ae09-15d9f0133572",
+      "net": "+3V3",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "96cfbdb8-85d0-4e21-b4a6-7d76adf9f3e2",
+      "net": "+3V3",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "a4aa82bf-6e86-43a0-92b7-79c3337466fe",
+      "net": "+3V3",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "ad7bacdb-baa6-467f-add9-d07a47b7128a",
+      "net": "+3V3",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "c89a7084-21b0-4eee-9e59-8768046a1e0e",
+      "net": "+3V3",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "ef43f8b1-bb5d-42f4-9e7d-822bae46d962",
+      "net": "+3V3",
+      "old_mm": 0.11
+    },
+    {
+      "uuid": "f8a4ed45-4c02-4779-890d-57f0434e99ac",
+      "net": "+3V3",
+      "old_mm": 0.1124
+    }
+  ],
+  "counts": {
+    "footprints": 82,
+    "factory": 55
+  }
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "ref": "U2",
+    "pin": "4",
+    "status": "no no-rip escape",
+    "visited": 665
+  },
+  {
+    "ref": "U3",
+    "pin": "5",
+    "status": "no no-rip escape",
+    "visited": 657
+  },
+  {
+    "ref": "U3",
+    "pin": "12",
+    "status": "escaped",
+    "visited": 123,
+    "poly": [
+      [
+        108.15,
+        56.75
+      ],
+      [
+        108.2,
+        56.7
+      ],
+      [
+        108.25,
+        56.7
+      ],
+      [
+        108.3,
+        56.7
+      ],
+      [
+        108.35,
+        56.7
+      ],
+      [
+        108.4,
+        56.7
+      ],
+      [
+        108.45,
+        56.7
+      ],
+      [
+        108.5,
+        56.7
+      ]
+    ]
+  },
+  {
+    "ref": "U4",
+    "pin": "8",
+    "status": "no no-rip escape",
+    "visited": 1046
+  },
+  {
+    "ref": "J9",
+    "pin": "1",
+    "status": "no no-rip escape",
+    "visited": 3078
+  }
+]

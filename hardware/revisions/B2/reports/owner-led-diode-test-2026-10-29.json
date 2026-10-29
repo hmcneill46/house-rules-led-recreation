@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-29",
+  "source": "Owner-reported physical observations in this project conversation; not an agent-operated instrument measurement",
+  "module_marking_as_reported": "LMD07057AUE-101B-02",
+  "instrument": "ULTRICS UT0021YB diode-test mode",
+  "connections": "Loose module; red upper-right rear pin, black upper-left rear pin; chosen short edge kept as TOP when viewing front",
+  "observations": [
+    {
+      "front_part_number_edge": "right",
+      "front_lit_dot": {
+        "row": 1,
+        "column": 2
+      }
+    },
+    {
+      "front_part_number_edge": "left after180degree rotation",
+      "front_lit_dot": {
+        "row": 1,
+        "column": 1
+      }
+    }
+  ],
+  "conclusion": "Owner confirms the complete12-terminal map for one owned LMD07057AUE-101B-02: five positive column anodes[1,3,10,7,8], seven negative row cathodes[12,11,2,9,4,5,6]. Correct TOP has the part-number label on the left in front view. No PCB pinout change required.",
+  "verified": "One physical module: all12 pin roles/order and front orientation by11 independent lit-dot observations; first pair also checked in180degree rotation.",
+  "still_pending": [
+    "Other20 modules/batches or suffixes",
+    "PCB-powered all245 pixels/current/USB/thermal tests"
+  ],
+  "sequence_observations": {
+    "owner_answer": "Both sequences match",
+    "red_fixed_pin1_black_sequence": [
+      12,
+      11,
+      2,
+      9,
+      4,
+      5,
+      6
+    ],
+    "first_column_top_to_bottom": true,
+    "black_fixed_pin12_red_sequence": [
+      1,
+      3,
+      10,
+      7,
+      8
+    ],
+    "first_row_left_to_right": true
+  }
+}

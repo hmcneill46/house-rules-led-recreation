@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-29",
+  "status": "COST STUDY\u2014UNRELEASED, NOT FOR ORDERING",
+  "vendor": "JLCPCB",
+  "channel": "web",
+  "bare_board_quantity": 5,
+  "populated_board_quantity": 2,
+  "factory_SMT_per_board": 55,
+  "factory_BOM_groups": 18,
+  "owner_LED_modules_per_display": 7,
+  "owner_wires_per_display": 20,
+  "spec_sha256": "e3aaf3f1b4ad9ca8468e450a62830d0a29b824345e141d9a8c105f63878b9b6a",
+  "fabrication": {
+    "size_mm": [
+      88.4,
+      17.3
+    ],
+    "thickness_mm": 1.6,
+    "layers": 6,
+    "mask": "Green",
+    "finish": "ENIG1u",
+    "copper_oz": {
+      "outer": 1,
+      "inner": 0.5
+    },
+    "via_holes_mm": 0.3,
+    "via_capture_pads_mm": [
+      0.6,
+      0.45
+    ],
+    "via_cover": "Epoxy filled and copper capped",
+    "LED_PTH_holes": "84x0.9mm, OPEN and unfilled/uncapped",
+    "outline_tolerance_mm": 0.2,
+    "tooling_requirement_pending_CAM": "Removable OUTSIDE rails only; no holes within final outline"
+  },
+  "assembly": {
+    "service": "Economic",
+    "side": "Bottom",
+    "depanel_before_delivery": true,
+    "manual_production_file_review": true,
+    "manual_parts_placement_review": true,
+    "automatic_review_confirmation": false,
+    "rotations": "Native KiCad values, assembler pin1/feeder review still required"
+  },
+  "displayed_GBP": {
+    "fabrication": 37.44,
+    "assembly": 37.41,
+    "goods": 74.85,
+    "setup": 6.18,
+    "stencil": 1.16,
+    "components": 12.79,
+    "extended_part_fees": 13.9,
+    "SMT_labor": 0.67,
+    "placement_review": 0.34,
+    "nitrogen_reflow": 0.64,
+    "depanel": 1.74
+  },
+  "checkout_USD": {
+    "goods": 99.85,
+    "shipping": 5.88,
+    "UK_VAT": 21.15,
+    "total": 126.88,
+    "method": "Global Standard Direct Line",
+    "business_days": "8\u201312",
+    "tax_regime": "UK-VAT collected/remitted by JLCPCB",
+    "coupon_deducted": false,
+    "order_submitted": false,
+    "payment_made": false
+  },
+  "GBP_reference_estimate": {
+    "exchange_rate": 0.7496244366549825,
+    "JLC_delivered": 95.11,
+    "one_stock_module_set_delivered": 14.78,
+    "two_stock_module_sets_delivered": 22.17,
+    "one_complete_display_plus_spare_populated_main": 109.89,
+    "two_complete_displays": 117.28
+  },
+  "coupon_note": "Claimed$30 six-layer JLCONE coupon was accepted in prior same-account six-layer cart preview; final deduction and VAT recalculation not confirmed. Not subtracted. Native app promotional$1.50 shipping/instant discount may be channel/order-limited and not combined in this web quote. No stronger verified creator code found.",
+  "limitations": [
+    "Quotation files are an incomplete routing snapshot; never order them. Re-export and confirm actual final drill data before ordering.",
+    "All18 current BOM groups matched at quotation time; inventory is not reserved.",
+    "TLC59282 stock was enough for this minimum two-assembly batch; a larger batch needs fresh sourcing.",
+    "Stock modules/postage are an estimate from official UK retailer listings/tariffs, not paid orders.",
+    "Solder, wire, screws, filament, cable, power supply and tools are excluded; the seven LEDs per display are already owned.",
+    "Actual charge USD; payment exchange rate/fees may differ.",
+    "No manufacturing review, physical prototype, USB current/compliance or optical/thermal acceptance has been completed."
+  ],
+  "evidence": "evidence/6L-55-SMT-two-assembled-uk-vat.png"
+}

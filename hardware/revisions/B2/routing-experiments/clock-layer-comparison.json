@@ -1,0 +1,78 @@
+[
+  {
+    "layer": "F.Cu",
+    "objects": 44,
+    "nets": {
+      "LAT": 7,
+      "SW_3V3": 1,
+      "SIN": 1,
+      "COL5_A": 5,
+      "BLANK": 5,
+      "IREF2": 1,
+      "SERIAL_1_2": 1,
+      "SERIAL_2_3": 2,
+      "+5V": 6,
+      "BC_AL_N": 1,
+      "BC_DET_5V": 1,
+      "SERIAL_3_4": 1,
+      "D4_ROW6_K": 1,
+      "D3_ROW7_K": 2,
+      "COL5_GATE": 4,
+      "COL2_GATE": 2,
+      "COL2_A": 1,
+      "COL3_A": 1,
+      "D2_ROW9_K": 1
+    },
+    "protected": []
+  },
+  {
+    "layer": "In1.Cu",
+    "objects": 54,
+    "nets": {
+      "SW_3V3": 1,
+      "SIN": 1,
+      "D2_ROW7_K": 2,
+      "LAT": 2,
+      "COL4_A": 11,
+      "IREF2": 2,
+      "SERIAL_1_2": 2,
+      "COL3_GATE": 2,
+      "SERIAL_2_3": 2,
+      "D3_ROW7_K": 3,
+      "BC_AL_N": 1,
+      "BC_DET_5V": 9,
+      "SERIAL_3_4": 2,
+      "D4_ROW7_K": 1,
+      "D2_ROW8_K": 2,
+      "COL4_GATE": 3,
+      "COL5_A": 1,
+      "D2_ROW11_K": 2,
+      "DRIVER_EN": 2,
+      "BLANK": 1,
+      "COL2_GATE": 1,
+      "COL5_GATE": 1
+    },
+    "protected": []
+  },
+  {
+    "layer": "In3.Cu",
+    "objects": 48,
+    "nets": {
+      "SW_3V3": 3,
+      "SIN": 1,
+      "LAT": 2,
+      "IREF2": 1,
+      "SERIAL_1_2": 1,
+      "+3V3": 5,
+      "BC_DET_5V": 5,
+      "SERIAL_2_3": 1,
+      "COL2_GATE": 19,
+      "COL5_GATE": 4,
+      "BC_AL_N": 3,
+      "SERIAL_3_4": 1,
+      "D3_ROW7_K": 1,
+      "BLANK": 1
+    },
+    "protected": []
+  }
+]

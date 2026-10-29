@@ -1,0 +1,3 @@
+10003800 <__wrap_TinyUSB_Device_Init>:
+10003800:	4770      	bx	lr
+	...

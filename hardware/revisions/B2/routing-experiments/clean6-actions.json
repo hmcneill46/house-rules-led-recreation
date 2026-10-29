@@ -1,0 +1,362 @@
+{
+  "removed_conflicting_unlocked_objects": [
+    {
+      "uuid": "007f764d-3303-42e7-8bfa-d9f66d30dc9a",
+      "net": "COL2_GATE"
+    },
+    {
+      "uuid": "044fb727-809b-4e6e-8b18-fc233410c084",
+      "net": "D3_ROW14_K"
+    },
+    {
+      "uuid": "1c8f94cc-9842-44c6-8961-589e00e02aad",
+      "net": "SCLK"
+    },
+    {
+      "uuid": "1e8bf051-b48c-407d-b285-988f4d288aed",
+      "net": "SW_3V3"
+    },
+    {
+      "uuid": "220e9a47-36b4-4428-8335-a08d56d54853",
+      "net": "SW_3V3"
+    },
+    {
+      "uuid": "2e5a43f0-12fb-45ea-afc6-8ea0db80fa0e",
+      "net": "SW_3V3"
+    },
+    {
+      "uuid": "35743909-afb3-437c-a9d5-2b7da8acd1e0",
+      "net": "+3V3"
+    },
+    {
+      "uuid": "36c5cc62-99f7-41bc-9c8d-08d913b48c69",
+      "net": "+3V3"
+    },
+    {
+      "uuid": "3c548a04-f7e7-4d40-b7d2-579802402490",
+      "net": "D3_ROW14_K"
+    },
+    {
+      "uuid": "3dac7cd9-72b8-4605-9eac-d769874687ea",
+      "net": "D3_ROW14_K"
+    },
+    {
+      "uuid": "3e3d6577-6630-4796-a9e4-f292496cc9d1",
+      "net": "SCLK"
+    },
+    {
+      "uuid": "4013d5f8-5490-44ea-b393-b7f1b75726b8",
+      "net": "COL2_GATE"
+    },
+    {
+      "uuid": "4bb23e4e-224c-4364-af69-8bbe50ddf3f5",
+      "net": "D1_ROW13_K"
+    },
+    {
+      "uuid": "4db15318-7436-4db1-a3af-5ca830c19579",
+      "net": "BLANK"
+    },
+    {
+      "uuid": "55d29203-d346-41dc-9813-fd8aa25df29d",
+      "net": "VLED_5V"
+    },
+    {
+      "uuid": "5952afce-1538-4b6b-b475-0dca6ff9548e",
+      "net": "+5V"
+    },
+    {
+      "uuid": "5995adc7-2265-4535-9892-f956aebb3bc5",
+      "net": "SW_3V3"
+    },
+    {
+      "uuid": "5ccf9753-ebaa-413c-9af8-41a9424e4878",
+      "net": "D3_ROW14_K"
+    },
+    {
+      "uuid": "626f3b7c-b354-4f5e-9b19-683e2f2b45f4",
+      "net": "D3_ROW14_K"
+    },
+    {
+      "uuid": "62e9b784-6bd8-4e03-b038-2f63f2a19cbd",
+      "net": "SCLK"
+    },
+    {
+      "uuid": "66d0d3b8-844d-4727-a7b8-a668f3ac87c6",
+      "net": "D3_ROW14_K"
+    },
+    {
+      "uuid": "6f5b8b5e-f622-4d40-9457-22e5529608e8",
+      "net": "SCLK"
+    },
+    {
+      "uuid": "722ef3ac-267f-4346-98ec-75c77c2c4d36",
+      "net": "SW_3V3"
+    },
+    {
+      "uuid": "732d897e-5851-452c-860d-d846325588f6",
+      "net": "D1_ROW13_K"
+    },
+    {
+      "uuid": "8175284c-077b-4c5c-912d-71e1a5e5f474",
+      "net": "VLED_5V"
+    },
+    {
+      "uuid": "8175f66a-4b7c-4daa-82b6-60c1f0d70104",
+      "net": "D3_ROW14_K"
+    },
+    {
+      "uuid": "8a9b2d29-55a6-4b7e-adb8-91779a6cfc89",
+      "net": "SW_3V3"
+    },
+    {
+      "uuid": "8de7a36a-491c-4213-b657-9a2b37e80655",
+      "net": "SW_3V3"
+    },
+    {
+      "uuid": "92f9f1c4-fe7a-48d4-bc0a-28aa5af71981",
+      "net": "SW_3V3"
+    },
+    {
+      "uuid": "94e1b173-eeb3-4bcf-959e-6d8b87137409",
+      "net": "VLED_5V"
+    },
+    {
+      "uuid": "97d6583e-a7a3-4519-84a9-d25e96e0071f",
+      "net": "COL2_A"
+    },
+    {
+      "uuid": "a008d96d-2b1e-44e0-8ce1-3309438ad8a9",
+      "net": "SW_3V3"
+    },
+    {
+      "uuid": "a7c36236-2311-4350-a49f-a21b397c3a74",
+      "net": "SW_3V3"
+    },
+    {
+      "uuid": "bd993d15-c4e9-4fea-a9c3-28ec44cb0905",
+      "net": "D3_ROW14_K"
+    },
+    {
+      "uuid": "c8b87732-e96d-4d62-a2ee-9630b1347767",
+      "net": "SW_3V3"
+    },
+    {
+      "uuid": "c934accb-3842-4fe0-a490-ba06d8cbec62",
+      "net": "SW_3V3"
+    },
+    {
+      "uuid": "cff7ca8d-5c65-40a6-872a-1d622a849d05",
+      "net": "VLED_5V"
+    },
+    {
+      "uuid": "d14f6426-95c8-4c7a-85eb-19b736aa0c60",
+      "net": "D1_ROW13_K"
+    },
+    {
+      "uuid": "d153a4d7-66e1-4457-a61f-cd273aea2164",
+      "net": "D1_ROW10_K"
+    },
+    {
+      "uuid": "d589b1e9-cb09-4864-ba03-42eda2258107",
+      "net": "VLED_5V"
+    },
+    {
+      "uuid": "d9ae926e-bb01-45e7-affb-9ece855d916c",
+      "net": "VLED_5V"
+    },
+    {
+      "uuid": "e06cfa93-8b04-49f5-808f-e18847c412e3",
+      "net": "COL2_A"
+    },
+    {
+      "uuid": "e0a207da-7875-4de8-89af-6e504f0c8ab8",
+      "net": "BLANK"
+    },
+    {
+      "uuid": "e8c51bc0-84b3-4f30-a950-177d54b15717",
+      "net": "+5V"
+    },
+    {
+      "uuid": "edc16f6d-1450-43ba-b2e7-49693ebcf4cf",
+      "net": "VLED_5V"
+    },
+    {
+      "uuid": "f4427ed4-5cb3-4d82-a334-1fb686221d1b",
+      "net": "BLANK"
+    },
+    {
+      "uuid": "f7d31e14-8ff8-4fa8-aecf-fda89a3e6864",
+      "net": "VLED_5V"
+    }
+  ],
+  "thermal_and_new_ground": [
+    {
+      "ref": "U3",
+      "EP_thermal_vias": [
+        {
+          "xy": [
+            106.3,
+            58.05
+          ],
+          "diameter": 0.45,
+          "drill": 0.3
+        },
+        {
+          "xy": [
+            106.7,
+            58.45
+          ],
+          "diameter": 0.45,
+          "drill": 0.3
+        }
+      ]
+    },
+    {
+      "ref": "U2",
+      "EP_thermal_vias": [
+        {
+          "xy": [
+            82.05,
+            58.65
+          ],
+          "diameter": 0.6,
+          "drill": 0.3
+        },
+        {
+          "xy": [
+            81.5,
+            58.05
+          ],
+          "diameter": 0.45,
+          "drill": 0.3
+        },
+        {
+          "xy": [
+            82.1,
+            58.05
+          ],
+          "diameter": 0.45,
+          "drill": 0.3
+        }
+      ]
+    },
+    {
+      "ref": "U4",
+      "EP_thermal_vias": [
+        {
+          "xy": [
+            131.6,
+            57.3
+          ],
+          "diameter": 0.45,
+          "drill": 0.3
+        },
+        {
+          "xy": [
+            132.5,
+            56.8
+          ],
+          "diameter": 0.45,
+          "drill": 0.3
+        }
+      ]
+    },
+    {
+      "ref": "U1",
+      "EP_thermal_vias": [
+        {
+          "xy": [
+            55.55,
+            58.65
+          ],
+          "diameter": 0.6,
+          "drill": 0.3
+        },
+        {
+          "xy": [
+            56.1,
+            59.2
+          ],
+          "diameter": 0.6,
+          "drill": 0.3
+        },
+        {
+          "xy": [
+            56.65,
+            58.65
+          ],
+          "diameter": 0.6,
+          "drill": 0.3
+        }
+      ]
+    },
+    {
+      "ref": "R22",
+      "pin": "2",
+      "ground_via": "blocked",
+      "items": [
+        [
+          "PCB_TRACK",
+          "LAT"
+        ]
+      ]
+    },
+    {
+      "ref": "C16",
+      "pin": "2",
+      "ground_via": "blocked",
+      "items": [
+        [
+          "PCB_TRACK",
+          "D3_ROW7_K"
+        ],
+        [
+          "PCB_TRACK",
+          "D3_ROW7_K"
+        ],
+        [
+          "PCB_TRACK",
+          "D3_ROW7_K"
+        ],
+        [
+          "PCB_TRACK",
+          "CC1"
+        ],
+        [
+          "PCB_TRACK",
+          "CC1"
+        ]
+      ]
+    },
+    {
+      "ref": "U9",
+      "pin": "6",
+      "ground_via": "blocked",
+      "items": [
+        [
+          "PCB_TRACK",
+          "D3_ROW13_K"
+        ]
+      ]
+    },
+    {
+      "ref": "C15",
+      "pin": "2",
+      "ground_via": "blocked",
+      "items": [
+        [
+          "PCB_TRACK",
+          "CC1"
+        ],
+        [
+          "PCB_TRACK",
+          "CC2"
+        ],
+        [
+          "PCB_TRACK",
+          "CC2"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "status": "Completed routing candidate; parent canonical finalization and independent release checks still required",
+  "board": "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/routing-experiments/complete6.kicad_pcb",
+  "board_sha256": "61a5111ca49379492e970e5c06a6de9d353aa171afe7e5baf5be1192aac6c6f7",
+  "project": "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/routing-experiments/complete6.kicad_pro",
+  "rules": "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/routing-experiments/complete6.kicad_dru",
+  "source_spec_sha256": "8658ae95e37d72c0a062ad9cfd54ef3e18cb201437d9d5956834977edae0cc46",
+  "native_drc": {
+    "path": "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/routing-experiments/complete6-drc.json",
+    "flags": [
+      "--severity-all",
+      "--all-track-errors"
+    ],
+    "violations": 0,
+    "unconnected": 0
+  },
+  "redundant_tail_objects_removed": 39,
+  "quiet_plane_exception": {
+    "net": "CT_5V",
+    "layer": "In2.Cu",
+    "segments": 19,
+    "width_mm": 0.11,
+    "length_mm": 9.753863,
+    "new_vias": 0,
+    "approved_maximum_length_mm": 12
+  },
+  "usb": {
+    "topology": "Connector through both ESD copper lands, then BQ CON to internal switch to HOST to MCU",
+    "dm_xy_mm": 40.057433,
+    "dp_xy_mm": 39.695847,
+    "xy_skew_mm": 0.361586,
+    "dm_layer_transitions": 6,
+    "dp_layer_transitions": 8,
+    "length_excludes": [
+      "via barrels",
+      "BQ internal switch",
+      "owner wiring",
+      "XIAO traces"
+    ]
+  },
+  "required_parent_steps": [
+    "Refresh metadata from latest source",
+    "Set all 0.30 mm vias filled/capped/tented while preserving LED PTH open",
+    "Bundle models and add readable wire group labels",
+    "Run strengthened native DRC and independent electrical/drill/EP/plane audit",
+    "Export and render only after verification"
+  ],
+  "runtime_acceptance": [
+    "USB data and resume",
+    "USB source qualification and measured currents",
+    "Ghosting/deadtime and brightness",
+    "Case and IC thermal behaviour"
+  ]
+}

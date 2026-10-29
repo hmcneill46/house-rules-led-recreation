@@ -1,0 +1,23 @@
+{
+  "status": "UNROUTED COST STUDY ONLY - NEVER PRODUCTION",
+  "source_sha256": "30909bdf197070c1e14cfe1f8bfa3bea72dc9c2b98547b3fdbb10b8c2cceffd6",
+  "spec_sha256": "7ae8eb322392d3ec3e50cf49e7aa27467fde06f286c7b0fc96a65eef470e4a4b",
+  "layers": 4,
+  "size_mm": [
+    88.4,
+    17.3
+  ],
+  "thickness_mm": 1.6,
+  "ordinary_via_mm": [
+    0.6,
+    0.3
+  ],
+  "finish": "ENIG",
+  "assembly": "49 bottom factory components; seven owned LEDs and 18 wire pads excluded",
+  "via_cover": "standard tented, no filled/capped",
+  "warnings": [
+    "Unrouted: no fabrication approval",
+    "49 factory CPL entries, native bottom angles not manually corrected",
+    "Requote completed routing and actual via count before payment"
+  ]
+}

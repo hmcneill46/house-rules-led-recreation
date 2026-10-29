@@ -1,0 +1,235 @@
+[
+  {
+    "ref": "U1",
+    "pin": "2",
+    "net": "D1_ROW1_K",
+    "status": "added",
+    "via": [
+      53.6,
+      59.449999
+    ],
+    "poly": [
+      [
+        54.2,
+        59.4
+      ],
+      [
+        53.75,
+        59.4
+      ],
+      [
+        53.6,
+        59.449999
+      ]
+    ],
+    "ripped": [
+      {
+        "id": "c02605aa-3df4-4c49-bb9f-d032aa84dcc0",
+        "kind": "track",
+        "net": "D1_ROW5_K",
+        "locked": false,
+        "name": ""
+      }
+    ]
+  },
+  {
+    "ref": "U2",
+    "pin": "3",
+    "net": "D2_ROW2_K",
+    "status": "added",
+    "via": [
+      78.8,
+      58.699999
+    ],
+    "poly": [
+      [
+        79.6,
+        58.9
+      ],
+      [
+        79.149999,
+        58.9
+      ],
+      [
+        78.8,
+        58.699999
+      ]
+    ],
+    "ripped": [
+      {
+        "id": "3e3a6f16-b084-47b9-af73-81fe0df8231c",
+        "kind": "track",
+        "net": "D2_ROW5_K",
+        "locked": false,
+        "name": ""
+      }
+    ]
+  },
+  {
+    "ref": "U2",
+    "pin": "5",
+    "net": "D2_ROW4_K",
+    "status": "added",
+    "via": [
+      79.0,
+      57.9
+    ],
+    "poly": [
+      [
+        79.6,
+        57.9
+      ],
+      [
+        79.149999,
+        57.9
+      ],
+      [
+        79.0,
+        57.9
+      ]
+    ],
+    "ripped": [
+      {
+        "id": "299bf641-9859-49cf-a620-0a9d5e169ee3",
+        "kind": "track",
+        "net": "D2_ROW3_K",
+        "locked": false,
+        "name": ""
+      },
+      {
+        "id": "ebbe493a-2f6f-4900-9cff-8abdeeff5cbd",
+        "kind": "track",
+        "net": "D2_ROW3_K",
+        "locked": false,
+        "name": ""
+      },
+      {
+        "id": "47dc6a38-d299-4f97-a5bf-a12bc36bae11",
+        "kind": "track",
+        "net": "COL2_A",
+        "locked": false,
+        "name": ""
+      },
+      {
+        "id": "ade5d2f7-b9de-4f43-a436-54e4ed570e40",
+        "kind": "track",
+        "net": "D2_ROW6_K",
+        "locked": false,
+        "name": ""
+      },
+      {
+        "id": "bd7f3288-58c8-4c53-b515-817f17ea9761",
+        "kind": "track",
+        "net": "D2_ROW6_K",
+        "locked": false,
+        "name": ""
+      }
+    ]
+  },
+  {
+    "ref": "U3",
+    "pin": "6",
+    "net": "D3_ROW5_K",
+    "status": "added",
+    "via": [
+      104.35,
+      57.449999
+    ],
+    "poly": [
+      [
+        105.0,
+        57.4
+      ],
+      [
+        104.55,
+        57.4
+      ],
+      [
+        104.35,
+        57.449999
+      ]
+    ],
+    "ripped": [
+      {
+        "id": "5cfdb2e0-4f00-4c77-8cd9-9005a717bded",
+        "kind": "track",
+        "net": "D3_ROW4_K",
+        "locked": false,
+        "name": ""
+      },
+      {
+        "id": "6c69dab0-b32d-4cfe-8849-84d20d70479a",
+        "kind": "track",
+        "net": "D3_ROW4_K",
+        "locked": false,
+        "name": ""
+      }
+    ]
+  },
+  {
+    "ref": "U3",
+    "pin": "8",
+    "net": "D3_ROW7_K",
+    "status": "added",
+    "via": [
+      106.15,
+      56.15
+    ],
+    "poly": [
+      [
+        106.15,
+        56.75
+      ],
+      [
+        106.15,
+        56.3
+      ],
+      [
+        106.15,
+        56.15
+      ]
+    ],
+    "ripped": [
+      {
+        "id": "617f7a51-1963-40da-a62b-58c82885a8b0",
+        "kind": "track",
+        "net": "CC2_ADC",
+        "locked": false,
+        "name": ""
+      }
+    ]
+  },
+  {
+    "ref": "U4",
+    "pin": "7",
+    "net": "D4_ROW6_K",
+    "status": "added",
+    "via": [
+      130.75,
+      54.5
+    ],
+    "poly": [
+      [
+        131.05,
+        55.1
+      ],
+      [
+        131.05,
+        54.65
+      ],
+      [
+        130.75,
+        54.5
+      ]
+    ],
+    "ripped": [
+      {
+        "id": "35f4f093-c8e7-440f-8f7e-a9ef7ab99214",
+        "kind": "via",
+        "net": "D4_ROW7_K",
+        "locked": false,
+        "name": ""
+      }
+    ]
+  }
+]

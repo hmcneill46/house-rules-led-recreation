@@ -1,0 +1,1185 @@
+{
+  "status": "REVIEW ONLY \u2014 NOT APPROVED FOR PRODUCTION",
+  "date_utc": "2026-10-29T19:31:37.939904+00:00",
+  "kicad_version": "10.0.7",
+  "source_pcb_sha256": "90018f786599e140bdc7ed6a75be65f574c2691c98f3b2d91a7383906dbe0b04",
+  "refilled_saved_snapshot_sha256": "90018f786599e140bdc7ed6a75be65f574c2691c98f3b2d91a7383906dbe0b04",
+  "canonical_inputs_unchanged": true,
+  "input_sha256": {
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/house-rules-main-B2.kicad_pcb": "90018f786599e140bdc7ed6a75be65f574c2691c98f3b2d91a7383906dbe0b04",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/electrical-spec.json": "8658ae95e37d72c0a062ad9cfd54ef3e18cb201437d9d5956834977edae0cc46",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/kicad/house-rules-main.kicad_pcb": "8b9df50fe0897db76a186902024ef12a80ff8da990d0e1d2d342f8fa2f86a830",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/reports/kicad-default-severity-audit.json": "bae6f9f4f0a182aadfb23875d6c66fd767ef235a0ab6957a907660e81411041e",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/reports/owner-led-diode-test-2026-10-29.json": "14d7ae456b7c0cea732de646c97c06a8b65ccc012fa47aa740394b4bf4127691",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/house-rules-main-B2.kicad_pro": "065ef101b616641a2dd150e279c53e60b0562cd0a40ddf2cb0d70b1e2fee2b4a",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/house-rules-main-B2.kicad_sch": "9400693084a50c1816794bcb87904174f2bf840ae9d9ac8fab05fe5089acb163",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/house-rules-main-B2.kicad_dru": "d8a2a23ddf13a138dd2f5d15d0804543efff8cfdaff4ca27942141d8406de960",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/footprints/Capacitor_SMD.pretty/C_0603_1608Metric.kicad_mod": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/footprints/Diode_SMD.pretty/D_SOD-123F.kicad_mod": "8be1e25f240367187beafa1e339963dfdf4aa4f3e671731970e7f2e8491b6246",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/footprints/Fuse.pretty/Fuse_1206_3216Metric.kicad_mod": "8f4307d8c771db71526ed8ccf7c762824636660adec3635905932cc5e1d02280",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/footprints/HouseRules.pretty/LMD07057AUE-101B.kicad_mod": "444511399d0a99a9d5b6642c769d5b24d44703403ff69d478f55c76c8b825c1d",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/footprints/HouseRules.pretty/WirePad_B2.kicad_mod": "0fd9b367363222f6a368cdf885fac9af008a8a02d25bbf273e61b339591ade37",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/footprints/Package_DFN_QFN.pretty/Texas_UQFN-10_1.5x2mm_P0.5mm.kicad_mod": "2dc75e874b07973dc001459890305a35572f3f192da3241ff9ddc3a122e48e55",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/footprints/Package_SO.pretty/SSOP-24_3.9x8.7mm_P0.635mm.kicad_mod": "b07128e519c80ee52b1ee1fbba78c81d492789daf4b9d0e1b14d532c178040cc",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/footprints/Package_SON.pretty/USON-10_2.5x1.0mm_P0.5mm.kicad_mod": "08915959f022db57e477d1091632f6cb10a7fa605f4af70a53199462e6f21e2f",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/footprints/Package_TO_SOT_SMD.pretty/SOT-23-6.kicad_mod": "f341c73aac9dcb553456f68bf3fee3d26eb14acf6d8a1cae82b50418fe1d71ca",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/footprints/Resistor_SMD.pretty/R_0603_1608Metric.kicad_mod": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/footprints/TI.pretty/RGE0024C.kicad_mod": "ada9e21e62c1a6058ee804263219898f81e41112cf2fe21e8ad7f89ae0fe2eb5",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/3d/Capacitor_SMD__C_0603_1608Metric.step": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/3d/Diode_SMD__D_SOD-123F.step": "132323445e3d1f9231e81c083cd88a33cd204dd8b96063bb2ed1f3ab4470c7e7",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/3d/Fuse__Fuse_1206_3216Metric.step": "5e6dcbe286696143d35a8ea37d91eef4b54ff3d1bd7c2c2b4dedda83d3f8e203",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/3d/KICAD-LIBRARIES-LICENSE.md": "45d2bce75e5a4208f5afb01b8fb2c406e700371c4fe2b5f5cd5c443d46db4d8f",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/3d/LMD07057AUE-101B.wrl": "a3751a5b0ff43f5372418bfd3bf7d4c69de54b22a141eb3b4c806147fc0ca4fb",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/3d/Package_SON__USON-10_2.5x1.0mm_P0.5mm.step": "d9d0628ead2ac2bab888344afbd0ef8b0f5a4ba37641ccc66dcbe300e3a74ac0",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/3d/Package_TO_SOT_SMD__SOT-23-6.step": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/3d/Package_TO_SOT_SMD__SOT-23.step": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/3d/README.md": "d15b0d64974f99067da625754be6ac8bfe95b2a88235a9441d0f72b03a0196cb",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/3d/Resistor_SMD__R_0603_1608Metric.step": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/3d/TI_RSE0010A-envelope.wrl": "6a60adc32c6ae8d8bdb3368ae439240989ea5dc7045e698578988b4bd62bea4d",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/3d/TI__Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step": "22ab85ba4b0f0e5d408abadd3519cae724e08c09f9cdfbd31a4c6a8703ff0152",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/fp-lib-table": "664d7da465e4bf31bde6f914175dab2f228464326c51be255689f3664f1ff935",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/sym-lib-table": "eb7a84c0f84685614d5476af712c36977cf40ee1d5ce6787ddd527c3eaef0c2b",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/kicad/HouseRules_main.kicad_sym": "259bf951577ae66eddda57ada7a8275110da8dee0d08159f2c98268366f7fda4",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/tools/export_manufacturing.py": "10e4fa32fe432475b009627037b1d902b53ff9cbdc31cec70e8b646c341c7a50",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/tools/audit_board.py": "7949e92770c7dbaaabf0b3a24ad8307b1157a201ce16f6a49cb37c88e4c01f99"
+  },
+  "drc": {
+    "counts": {
+      "violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": 0
+    },
+    "included_severities": [
+      "error",
+      "warning",
+      "exclusion"
+    ],
+    "ignored_default_checks": [
+      {
+        "description": "Footprint has no courtyard defined",
+        "key": "missing_courtyard"
+      },
+      {
+        "description": "Track endpoint not centered on via",
+        "key": "track_not_centered_on_via"
+      },
+      {
+        "description": "Tuning profile track geometries",
+        "key": "tuning_profile_track_geometries"
+      },
+      {
+        "description": "Footprint doesn't match symbol's footprint filters",
+        "key": "footprint_filters_mismatch"
+      },
+      {
+        "description": "Footprint component type doesn't match footprint pads",
+        "key": "footprint_type_mismatch"
+      }
+    ],
+    "report_sha256": "af4957e96d781c53bb6a3cbd11c16b4fee07e35cfc806916e9b8839070aace49",
+    "command": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "pcb",
+      "drc",
+      "--format",
+      "json",
+      "--all-track-errors",
+      "--severity-all",
+      "--schematic-parity",
+      "--refill-zones",
+      "--save-board",
+      "--exit-code-violations",
+      "--output",
+      "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-b2-manufacturing-61aqf9oa/package/reports/native-drc.json",
+      "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-b2-manufacturing-61aqf9oa/package/source/house-rules-main-B2.kicad_pcb"
+    ]
+  },
+  "audit": {
+    "result": "PASS",
+    "component_count": 82,
+    "factory_component_count": 55,
+    "connected_pin_count": 327,
+    "via_count": 276,
+    "via_geometry_counts": [
+      {
+        "pad_mm": 0.45,
+        "drill_mm": 0.3,
+        "count": 109
+      },
+      {
+        "pad_mm": 0.6,
+        "drill_mm": 0.3,
+        "count": 167
+      }
+    ],
+    "thermal_vias": {
+      "U1": [
+        {
+          "x_mm": 55.55,
+          "y_mm": 58.65
+        },
+        {
+          "x_mm": 56.1,
+          "y_mm": 59.2
+        },
+        {
+          "x_mm": 56.65,
+          "y_mm": 58.65
+        }
+      ],
+      "U2": [
+        {
+          "x_mm": 82.1,
+          "y_mm": 58.05
+        },
+        {
+          "x_mm": 81.5,
+          "y_mm": 58.05
+        },
+        {
+          "x_mm": 82.05,
+          "y_mm": 58.65
+        }
+      ],
+      "U3": [
+        {
+          "x_mm": 106.7,
+          "y_mm": 58.45
+        },
+        {
+          "x_mm": 106.3,
+          "y_mm": 58.05
+        },
+        {
+          "x_mm": 106.8,
+          "y_mm": 59.05
+        }
+      ],
+      "U4": [
+        {
+          "x_mm": 131.6,
+          "y_mm": 57.3
+        },
+        {
+          "x_mm": 132.2,
+          "y_mm": 57.3
+        },
+        {
+          "x_mm": 132.5,
+          "y_mm": 56.8
+        }
+      ]
+    },
+    "outline": {
+      "width_mm": 88.4,
+      "height_mm": 17.3,
+      "holes": 0
+    },
+    "ground_references": {
+      "In2.Cu": {
+        "ground_zones": 1,
+        "filled_area_mm2": 1142.450521,
+        "connected_fill_outlines": 1
+      },
+      "In4.Cu": {
+        "ground_zones": 1,
+        "filled_area_mm2": 1146.503318,
+        "connected_fill_outlines": 1
+      }
+    },
+    "quiet_CT_In2_exception": {
+      "net": "CT_5V",
+      "layer": "In2.Cu",
+      "used": true,
+      "maximum_total_track_length_mm": 12.0,
+      "actual_total_track_length_mm": 9.753865347880229,
+      "track_count": 19,
+      "tracks": [
+        {
+          "length_mm": 0.025,
+          "start_mm": [
+            117.675,
+            58.725
+          ],
+          "end_mm": [
+            117.7,
+            58.725
+          ],
+          "width_mm": 0.11
+        },
+        {
+          "length_mm": 0.10606601717798214,
+          "start_mm": [
+            111.9,
+            58.5
+          ],
+          "end_mm": [
+            111.975,
+            58.425
+          ],
+          "width_mm": 0.11
+        },
+        {
+          "length_mm": 0.05,
+          "start_mm": [
+            117.2,
+            58.775
+          ],
+          "end_mm": [
+            117.25,
+            58.775
+          ],
+          "width_mm": 0.11
+        },
+        {
+          "length_mm": 0.03535533905932738,
+          "start_mm": [
+            117.175,
+            58.75
+          ],
+          "end_mm": [
+            117.2,
+            58.775
+          ],
+          "width_mm": 0.11
+        },
+        {
+          "length_mm": 0.025,
+          "start_mm": [
+            117.625,
+            58.75
+          ],
+          "end_mm": [
+            117.65,
+            58.75
+          ],
+          "width_mm": 0.11
+        },
+        {
+          "length_mm": 0.05,
+          "start_mm": [
+            117.55,
+            58.775
+          ],
+          "end_mm": [
+            117.6,
+            58.775
+          ],
+          "width_mm": 0.11
+        },
+        {
+          "length_mm": 0.025,
+          "start_mm": [
+            117.1,
+            58.725
+          ],
+          "end_mm": [
+            117.125,
+            58.725
+          ],
+          "width_mm": 0.11
+        },
+        {
+          "length_mm": 0.03535533905932738,
+          "start_mm": [
+            117.525,
+            58.8
+          ],
+          "end_mm": [
+            117.55,
+            58.775
+          ],
+          "width_mm": 0.11
+        },
+        {
+          "length_mm": 0.03535533905932738,
+          "start_mm": [
+            117.125,
+            58.725
+          ],
+          "end_mm": [
+            117.15,
+            58.75
+          ],
+          "width_mm": 0.11
+        },
+        {
+          "length_mm": 0.03535533905932738,
+          "start_mm": [
+            117.25,
+            58.775
+          ],
+          "end_mm": [
+            117.275,
+            58.8
+          ],
+          "width_mm": 0.11
+        },
+        {
+          "length_mm": 0.025,
+          "start_mm": [
+            117.15,
+            58.75
+          ],
+          "end_mm": [
+            117.175,
+            58.75
+          ],
+          "width_mm": 0.11
+        },
+        {
+          "length_mm": 1.375,
+          "start_mm": [
+            119.35,
+            57.075
+          ],
+          "end_mm": [
+            120.725,
+            57.075
+          ],
+          "width_mm": 0.11
+        },
+        {
+          "length_mm": 0.02795084971874737,
+          "start_mm": [
+            120.725,
+            57.075
+          ],
+          "end_mm": [
+            120.7375,
+            57.05
+          ],
+          "width_mm": 0.11
+        },
+        {
+          "length_mm": 4.825,
+          "start_mm": [
+            111.975,
+            58.425
+          ],
+          "end_mm": [
+            116.8,
+            58.425
+          ],
+          "width_mm": 0.11
+        },
+        {
+          "length_mm": 0.03535533905932738,
+          "start_mm": [
+            117.6,
+            58.775
+          ],
+          "end_mm": [
+            117.625,
+            58.75
+          ],
+          "width_mm": 0.11
+        },
+        {
+          "length_mm": 0.03535533905932738,
+          "start_mm": [
+            117.65,
+            58.75
+          ],
+          "end_mm": [
+            117.675,
+            58.725
+          ],
+          "width_mm": 0.11
+        },
+        {
+          "length_mm": 0.42426406871192857,
+          "start_mm": [
+            116.8,
+            58.425
+          ],
+          "end_mm": [
+            117.1,
+            58.725
+          ],
+          "width_mm": 0.11
+        },
+        {
+          "length_mm": 0.25,
+          "start_mm": [
+            117.275,
+            58.8
+          ],
+          "end_mm": [
+            117.525,
+            58.8
+          ],
+          "width_mm": 0.11
+        },
+        {
+          "length_mm": 2.3334523779156067,
+          "start_mm": [
+            117.7,
+            58.725
+          ],
+          "end_mm": [
+            119.35,
+            57.075
+          ],
+          "width_mm": 0.11
+        }
+      ],
+      "reason": "Quiet load-switch timing-capacitor connection only; four signal-layer escape was closed. No USB, clocks or other signal exception.",
+      "In4_remains_GND_only": true
+    },
+    "drill_hole_edge_clearances": {
+      "via_to_LED_PTH": {
+        "required_edge_gap_mm": 0.45,
+        "minimum_edge_gap_mm": 0.4825894882179487,
+        "closest_pair": {
+          "a": {
+            "x": 129550000,
+            "y": 59700000,
+            "drill": 300000,
+            "net": "COL5_GATE"
+          },
+          "b": {
+            "x": 128490000,
+            "y": 59920000,
+            "drill": 900000,
+            "ref": "DS7",
+            "pad": "4",
+            "net": "D4_ROW5_K"
+          }
+        },
+        "coordinate_units_per_mm": 1000000,
+        "violation_count": 0,
+        "violations": [],
+        "all_nets_including_same_net": true
+      },
+      "via_to_via": {
+        "required_edge_gap_mm": 0.25,
+        "minimum_edge_gap_mm": 0.2656854249492381,
+        "closest_pair": {
+          "a": {
+            "x": 106700000,
+            "y": 58450000,
+            "drill": 300000,
+            "net": "GND"
+          },
+          "b": {
+            "x": 106300000,
+            "y": 58050000,
+            "drill": 300000,
+            "net": "GND"
+          }
+        },
+        "coordinate_units_per_mm": 1000000,
+        "violation_count": 0,
+        "violations": [],
+        "all_nets_including_same_net": true
+      }
+    }
+  },
+  "native_default_severity_evidence": {
+    "native_version": "10.0.7",
+    "verified_default_ignored_checks": [
+      "footprint_filters_mismatch",
+      "footprint_type_mismatch",
+      "missing_courtyard",
+      "track_not_centered_on_via",
+      "tuning_profile_track_geometries"
+    ],
+    "evidence_path": "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/reports/kicad-default-severity-audit.json",
+    "evidence_sha256": "bae6f9f4f0a182aadfb23875d6c66fd767ef235a0ab6957a907660e81411041e"
+  },
+  "3D_model_portability": {
+    "all_references_resolve_within_staged_source": true,
+    "global_environment_or_absolute_model_paths_allowed": false,
+    "reference_count": 62,
+    "unique_files": 10,
+    "bundled_asset_sha256": {
+      "3d/Capacitor_SMD__C_0603_1608Metric.step": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "3d/Diode_SMD__D_SOD-123F.step": "132323445e3d1f9231e81c083cd88a33cd204dd8b96063bb2ed1f3ab4470c7e7",
+      "3d/Fuse__Fuse_1206_3216Metric.step": "5e6dcbe286696143d35a8ea37d91eef4b54ff3d1bd7c2c2b4dedda83d3f8e203",
+      "3d/KICAD-LIBRARIES-LICENSE.md": "45d2bce75e5a4208f5afb01b8fb2c406e700371c4fe2b5f5cd5c443d46db4d8f",
+      "3d/LMD07057AUE-101B.wrl": "a3751a5b0ff43f5372418bfd3bf7d4c69de54b22a141eb3b4c806147fc0ca4fb",
+      "3d/Package_SON__USON-10_2.5x1.0mm_P0.5mm.step": "d9d0628ead2ac2bab888344afbd0ef8b0f5a4ba37641ccc66dcbe300e3a74ac0",
+      "3d/Package_TO_SOT_SMD__SOT-23-6.step": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "3d/Package_TO_SOT_SMD__SOT-23.step": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "3d/README.md": "d15b0d64974f99067da625754be6ac8bfe95b2a88235a9441d0f72b03a0196cb",
+      "3d/Resistor_SMD__R_0603_1608Metric.step": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "3d/TI_RSE0010A-envelope.wrl": "6a60adc32c6ae8d8bdb3368ae439240989ea5dc7045e698578988b4bd62bea4d",
+      "3d/TI__Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step": "22ab85ba4b0f0e5d408abadd3519cae724e08c09f9cdfbd31a4c6a8703ff0152"
+    },
+    "staged_assets_match_fingerprinted_inputs": true,
+    "references": [
+      {
+        "reference": "C1",
+        "native_path": "${KIPRJMOD}/3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "staged_file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+      },
+      {
+        "reference": "C2",
+        "native_path": "${KIPRJMOD}/3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "staged_file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+      },
+      {
+        "reference": "C3",
+        "native_path": "${KIPRJMOD}/3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "staged_file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+      },
+      {
+        "reference": "C4",
+        "native_path": "${KIPRJMOD}/3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "staged_file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+      },
+      {
+        "reference": "C5",
+        "native_path": "${KIPRJMOD}/3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "staged_file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+      },
+      {
+        "reference": "C6",
+        "native_path": "${KIPRJMOD}/3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "staged_file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+      },
+      {
+        "reference": "C7",
+        "native_path": "${KIPRJMOD}/3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "staged_file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+      },
+      {
+        "reference": "C8",
+        "native_path": "${KIPRJMOD}/3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "staged_file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+      },
+      {
+        "reference": "C9",
+        "native_path": "${KIPRJMOD}/3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "staged_file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+      },
+      {
+        "reference": "C10",
+        "native_path": "${KIPRJMOD}/3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "staged_file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+      },
+      {
+        "reference": "C11",
+        "native_path": "${KIPRJMOD}/3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "staged_file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+      },
+      {
+        "reference": "C12",
+        "native_path": "${KIPRJMOD}/3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "staged_file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+      },
+      {
+        "reference": "C13",
+        "native_path": "${KIPRJMOD}/3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "staged_file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+      },
+      {
+        "reference": "C14",
+        "native_path": "${KIPRJMOD}/3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "staged_file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+      },
+      {
+        "reference": "C15",
+        "native_path": "${KIPRJMOD}/3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "staged_file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+      },
+      {
+        "reference": "C16",
+        "native_path": "${KIPRJMOD}/3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "staged_file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+        "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+      },
+      {
+        "reference": "D1",
+        "native_path": "${KIPRJMOD}/3d/Diode_SMD__D_SOD-123F.step",
+        "staged_file": "3d/Diode_SMD__D_SOD-123F.step",
+        "sha256": "132323445e3d1f9231e81c083cd88a33cd204dd8b96063bb2ed1f3ab4470c7e7"
+      },
+      {
+        "reference": "DS1",
+        "native_path": "${KIPRJMOD}/3d/LMD07057AUE-101B.wrl",
+        "staged_file": "3d/LMD07057AUE-101B.wrl",
+        "sha256": "a3751a5b0ff43f5372418bfd3bf7d4c69de54b22a141eb3b4c806147fc0ca4fb"
+      },
+      {
+        "reference": "DS2",
+        "native_path": "${KIPRJMOD}/3d/LMD07057AUE-101B.wrl",
+        "staged_file": "3d/LMD07057AUE-101B.wrl",
+        "sha256": "a3751a5b0ff43f5372418bfd3bf7d4c69de54b22a141eb3b4c806147fc0ca4fb"
+      },
+      {
+        "reference": "DS3",
+        "native_path": "${KIPRJMOD}/3d/LMD07057AUE-101B.wrl",
+        "staged_file": "3d/LMD07057AUE-101B.wrl",
+        "sha256": "a3751a5b0ff43f5372418bfd3bf7d4c69de54b22a141eb3b4c806147fc0ca4fb"
+      },
+      {
+        "reference": "DS4",
+        "native_path": "${KIPRJMOD}/3d/LMD07057AUE-101B.wrl",
+        "staged_file": "3d/LMD07057AUE-101B.wrl",
+        "sha256": "a3751a5b0ff43f5372418bfd3bf7d4c69de54b22a141eb3b4c806147fc0ca4fb"
+      },
+      {
+        "reference": "DS5",
+        "native_path": "${KIPRJMOD}/3d/LMD07057AUE-101B.wrl",
+        "staged_file": "3d/LMD07057AUE-101B.wrl",
+        "sha256": "a3751a5b0ff43f5372418bfd3bf7d4c69de54b22a141eb3b4c806147fc0ca4fb"
+      },
+      {
+        "reference": "DS6",
+        "native_path": "${KIPRJMOD}/3d/LMD07057AUE-101B.wrl",
+        "staged_file": "3d/LMD07057AUE-101B.wrl",
+        "sha256": "a3751a5b0ff43f5372418bfd3bf7d4c69de54b22a141eb3b4c806147fc0ca4fb"
+      },
+      {
+        "reference": "DS7",
+        "native_path": "${KIPRJMOD}/3d/LMD07057AUE-101B.wrl",
+        "staged_file": "3d/LMD07057AUE-101B.wrl",
+        "sha256": "a3751a5b0ff43f5372418bfd3bf7d4c69de54b22a141eb3b4c806147fc0ca4fb"
+      },
+      {
+        "reference": "F1",
+        "native_path": "${KIPRJMOD}/3d/Fuse__Fuse_1206_3216Metric.step",
+        "staged_file": "3d/Fuse__Fuse_1206_3216Metric.step",
+        "sha256": "5e6dcbe286696143d35a8ea37d91eef4b54ff3d1bd7c2c2b4dedda83d3f8e203"
+      },
+      {
+        "reference": "Q1",
+        "native_path": "${KIPRJMOD}/3d/Package_TO_SOT_SMD__SOT-23.step",
+        "staged_file": "3d/Package_TO_SOT_SMD__SOT-23.step",
+        "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+      },
+      {
+        "reference": "Q2",
+        "native_path": "${KIPRJMOD}/3d/Package_TO_SOT_SMD__SOT-23.step",
+        "staged_file": "3d/Package_TO_SOT_SMD__SOT-23.step",
+        "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+      },
+      {
+        "reference": "Q3",
+        "native_path": "${KIPRJMOD}/3d/Package_TO_SOT_SMD__SOT-23.step",
+        "staged_file": "3d/Package_TO_SOT_SMD__SOT-23.step",
+        "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+      },
+      {
+        "reference": "Q4",
+        "native_path": "${KIPRJMOD}/3d/Package_TO_SOT_SMD__SOT-23.step",
+        "staged_file": "3d/Package_TO_SOT_SMD__SOT-23.step",
+        "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+      },
+      {
+        "reference": "Q5",
+        "native_path": "${KIPRJMOD}/3d/Package_TO_SOT_SMD__SOT-23.step",
+        "staged_file": "3d/Package_TO_SOT_SMD__SOT-23.step",
+        "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+      },
+      {
+        "reference": "R1",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R2",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R3",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R4",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R5",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R6",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R7",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R8",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R9",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R10",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R11",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R12",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R13",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R14",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R15",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R16",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R17",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R18",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R19",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R20",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R21",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R22",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "R23",
+        "native_path": "${KIPRJMOD}/3d/Resistor_SMD__R_0603_1608Metric.step",
+        "staged_file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+        "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+      },
+      {
+        "reference": "U1",
+        "native_path": "${KIPRJMOD}/3d/TI__Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step",
+        "staged_file": "3d/TI__Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step",
+        "sha256": "22ab85ba4b0f0e5d408abadd3519cae724e08c09f9cdfbd31a4c6a8703ff0152"
+      },
+      {
+        "reference": "U2",
+        "native_path": "${KIPRJMOD}/3d/TI__Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step",
+        "staged_file": "3d/TI__Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step",
+        "sha256": "22ab85ba4b0f0e5d408abadd3519cae724e08c09f9cdfbd31a4c6a8703ff0152"
+      },
+      {
+        "reference": "U3",
+        "native_path": "${KIPRJMOD}/3d/TI__Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step",
+        "staged_file": "3d/TI__Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step",
+        "sha256": "22ab85ba4b0f0e5d408abadd3519cae724e08c09f9cdfbd31a4c6a8703ff0152"
+      },
+      {
+        "reference": "U4",
+        "native_path": "${KIPRJMOD}/3d/TI__Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step",
+        "staged_file": "3d/TI__Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step",
+        "sha256": "22ab85ba4b0f0e5d408abadd3519cae724e08c09f9cdfbd31a4c6a8703ff0152"
+      },
+      {
+        "reference": "U5",
+        "native_path": "${KIPRJMOD}/3d/Package_TO_SOT_SMD__SOT-23-6.step",
+        "staged_file": "3d/Package_TO_SOT_SMD__SOT-23-6.step",
+        "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635"
+      },
+      {
+        "reference": "U6",
+        "native_path": "${KIPRJMOD}/3d/Package_TO_SOT_SMD__SOT-23-6.step",
+        "staged_file": "3d/Package_TO_SOT_SMD__SOT-23-6.step",
+        "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635"
+      },
+      {
+        "reference": "U7",
+        "native_path": "${KIPRJMOD}/3d/Package_SON__USON-10_2.5x1.0mm_P0.5mm.step",
+        "staged_file": "3d/Package_SON__USON-10_2.5x1.0mm_P0.5mm.step",
+        "sha256": "d9d0628ead2ac2bab888344afbd0ef8b0f5a4ba37641ccc66dcbe300e3a74ac0"
+      },
+      {
+        "reference": "U8",
+        "native_path": "${KIPRJMOD}/3d/Package_TO_SOT_SMD__SOT-23-6.step",
+        "staged_file": "3d/Package_TO_SOT_SMD__SOT-23-6.step",
+        "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635"
+      },
+      {
+        "reference": "U9",
+        "native_path": "${KIPRJMOD}/3d/TI_RSE0010A-envelope.wrl",
+        "staged_file": "3d/TI_RSE0010A-envelope.wrl",
+        "sha256": "6a60adc32c6ae8d8bdb3368ae439240989ea5dc7045e698578988b4bd62bea4d"
+      }
+    ],
+    "footprints_without_3D_models": [
+      "J1",
+      "J2",
+      "J3",
+      "J4",
+      "J5",
+      "J6",
+      "J7",
+      "J8",
+      "J9",
+      "J10",
+      "J11",
+      "J12",
+      "J13",
+      "J14",
+      "J15",
+      "J16",
+      "J17",
+      "J18",
+      "J19",
+      "J20"
+    ],
+    "scope": "Portability of actual PCB model references; absent component models are listed, not invented or certified."
+  },
+  "actual_gerber_file_functions": [
+    {
+      "file": "house-rules-main-B2-B_Cu.gbl",
+      "function": "Copper,L6,Bot"
+    },
+    {
+      "file": "house-rules-main-B2-B_Mask.gbs",
+      "function": "Soldermask,Bot"
+    },
+    {
+      "file": "house-rules-main-B2-B_Silkscreen.gbo",
+      "function": "Legend,Bot"
+    },
+    {
+      "file": "house-rules-main-B2-Edge_Cuts.gm1",
+      "function": "Profile,NP"
+    },
+    {
+      "file": "house-rules-main-B2-F_Cu.gtl",
+      "function": "Copper,L1,Top"
+    },
+    {
+      "file": "house-rules-main-B2-F_Mask.gts",
+      "function": "Soldermask,Top"
+    },
+    {
+      "file": "house-rules-main-B2-F_Silkscreen.gto",
+      "function": "Legend,Top"
+    },
+    {
+      "file": "house-rules-main-B2-In1_Cu.g1",
+      "function": "Copper,L2,Inr"
+    },
+    {
+      "file": "house-rules-main-B2-In2_Cu.g2",
+      "function": "Copper,L3,Inr"
+    },
+    {
+      "file": "house-rules-main-B2-In3_Cu.g3",
+      "function": "Copper,L4,Inr"
+    },
+    {
+      "file": "house-rules-main-B2-In4_Cu.g4",
+      "function": "Copper,L5,Inr"
+    }
+  ],
+  "actual_drill_statistics": {
+    "files": {
+      "house-rules-main-B2-NPTH.drl": {
+        "sha256": "20d29349a653a655e43a0894ef20ed2915a4922866d490ceee32737a0354129c",
+        "tools": [],
+        "total_hits": 0
+      },
+      "house-rules-main-B2-PTH.drl": {
+        "sha256": "aeed4536cec31b7b81bef2e7527c1d63388f5ea6c5c9d2569a357e2514a55001",
+        "tools": [
+          {
+            "tool": "T1",
+            "diameter_mm": 0.3,
+            "hits": 276
+          },
+          {
+            "tool": "T2",
+            "diameter_mm": 0.9,
+            "hits": 84
+          }
+        ],
+        "total_hits": 360
+      }
+    },
+    "diameter_hit_counts": {
+      "0.300000": 276,
+      "0.900000": 84
+    },
+    "actual_plotted_drill_hole_edge_clearances": {
+      "via_to_LED_PTH": {
+        "required_edge_gap_mm": 0.45,
+        "minimum_edge_gap_mm": 0.482589488217951,
+        "closest_pair": {
+          "a": {
+            "x": 79.55,
+            "y": -9.7,
+            "drill": 0.3,
+            "file": "house-rules-main-B2-PTH.drl",
+            "tool": "T1",
+            "hit": 246
+          },
+          "b": {
+            "x": 78.49,
+            "y": -9.92,
+            "drill": 0.9,
+            "file": "house-rules-main-B2-PTH.drl",
+            "tool": "T2",
+            "hit": 76
+          }
+        },
+        "coordinate_units_per_mm": 1,
+        "violation_count": 0,
+        "violations": [],
+        "all_nets_including_same_net": true
+      },
+      "via_to_via": {
+        "required_edge_gap_mm": 0.25,
+        "minimum_edge_gap_mm": 0.265685424949241,
+        "closest_pair": {
+          "a": {
+            "x": 56.3,
+            "y": -8.05,
+            "drill": 0.3,
+            "file": "house-rules-main-B2-PTH.drl",
+            "tool": "T1",
+            "hit": 151
+          },
+          "b": {
+            "x": 56.7,
+            "y": -8.45,
+            "drill": 0.3,
+            "file": "house-rules-main-B2-PTH.drl",
+            "tool": "T1",
+            "hit": 153
+          }
+        },
+        "coordinate_units_per_mm": 1,
+        "violation_count": 0,
+        "violations": [],
+        "all_nets_including_same_net": true
+      }
+    },
+    "T1_process": "All0.30mm via holes resin filled and copper capped",
+    "T2_process": "All84 0.90mm LED PTH holes OPEN; never filled/capped"
+  },
+  "assembly": {
+    "factory_components": 55,
+    "bom_groups": 18,
+    "excluded_owner_items": 27,
+    "native_rotation_policy": "UNCORRECTED; manufacturer feeder/pin1 review required",
+    "bottom_X_negated": false,
+    "CPL_coordinate_policy": "Exact native KiCad mm CSV; no additional axis or rotation transform"
+  },
+  "export_commands": [
+    {
+      "stage": "fabrication-gerbers",
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "pcb",
+        "export",
+        "gerbers",
+        "--layers",
+        "F.Cu,In1.Cu,In2.Cu,In3.Cu,In4.Cu,B.Cu,F.Mask,B.Mask,F.SilkS,B.SilkS,Edge.Cuts",
+        "--use-drill-file-origin",
+        "--subtract-soldermask",
+        "--output",
+        "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-b2-manufacturing-61aqf9oa/package/fabrication/",
+        "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-b2-manufacturing-61aqf9oa/package/source/house-rules-main-B2.kicad_pcb"
+      ]
+    },
+    {
+      "stage": "drill",
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "pcb",
+        "export",
+        "drill",
+        "--format",
+        "excellon",
+        "--drill-origin",
+        "plot",
+        "--excellon-units",
+        "mm",
+        "--excellon-zeros-format",
+        "decimal",
+        "--excellon-separate-th",
+        "--excellon-oval-format",
+        "route",
+        "--generate-map",
+        "--map-format",
+        "svg",
+        "--generate-report",
+        "--report-path",
+        "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-b2-manufacturing-61aqf9oa/package/reports/native-drill-report.txt",
+        "--output",
+        "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-b2-manufacturing-61aqf9oa/package/fabrication/",
+        "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-b2-manufacturing-61aqf9oa/package/source/house-rules-main-B2.kicad_pcb"
+      ]
+    },
+    {
+      "stage": "assembly-paste",
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "pcb",
+        "export",
+        "gerbers",
+        "--layers",
+        "F.Paste,B.Paste",
+        "--use-drill-file-origin",
+        "--output",
+        "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-b2-manufacturing-61aqf9oa/package/assembly/",
+        "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-b2-manufacturing-61aqf9oa/package/source/house-rules-main-B2.kicad_pcb"
+      ]
+    }
+  ],
+  "generated_staged_local_state_removed": [
+    "source/house-rules-main-B2.kicad_prl"
+  ],
+  "output_sha256": {
+    "README.md": "ad736b25f401fba252ca6b739a4c47174b815f0378e253a8b0b86833cfbc781b",
+    "assembly/bom-review.csv": "c0cb13a20f43950f97c75553ee8be0bc0a42ce8dc8b70734428a5f60af9363fb",
+    "assembly/bom.csv": "df4cf137df0f5b647e6a4e97e7190f5cbae2d6076ffb7a7ededd35b3802e0469",
+    "assembly/cpl-manufacturer-review.csv": "6fcd8266507cc07e806cece3b8f425624f2cdc354a7edbd9400aac0b97ac7f2f",
+    "assembly/excluded-from-factory.csv": "89fe86759641dee9bccb0855d36eb62ef06734e080afd33910248ce8c4ed3ae7",
+    "assembly/house-rules-main-B2-B_Paste.gbp": "c2387ae86c5cb4ffe767631040e8380c8ed3c4969ca6614d7ffbd70df0a112a5",
+    "assembly/house-rules-main-B2-F_Paste.gtp": "4328aae146869bf243ff1a479a95125e9f761190573dba6413ab71e11fe0c838",
+    "assembly/house-rules-main-B2-job.gbrjob": "5958b1cab0ae532c193c631f71073db2e88d5745ac7f34cd7dd0254cfb653d9b",
+    "assembly/placement-review.csv": "6aee63453e31585f525011782df898fcc9eac95269f450a78eb0b38a40f6e9f9",
+    "assembly/positions-native-factory.csv": "cde192698cf18d7e980926b88f28946d4cdeed97b7dd5316cbeb3ce651e482a6",
+    "fabrication/house-rules-main-B2-B_Cu.gbl": "5df7c36b04753b03a2e2f1d51a438549d499cc895b37652c2d1d9fc383008e4f",
+    "fabrication/house-rules-main-B2-B_Mask.gbs": "89ed5d5ae1ca5a1f9bc614bccc3b46d1bc1aaed72e9ceae493e0c75c0aac56fc",
+    "fabrication/house-rules-main-B2-B_Silkscreen.gbo": "6ed6b99e8e472f275d94ed1e61f0e132c610aa640d3045fea528d29d6b2d9b47",
+    "fabrication/house-rules-main-B2-Edge_Cuts.gm1": "d8e24ae601b4a0ad94027011c2c2f5bf78f8f7fb77bce1b2f81529d763dfd71d",
+    "fabrication/house-rules-main-B2-F_Cu.gtl": "462e2f987ff097e7c2e4b7fca913c2486cae2c5aa3b6964bbd5743a554b96a6d",
+    "fabrication/house-rules-main-B2-F_Mask.gts": "d0e84742224e314439e1a066b2c87d14d4635fe86f3098a8c0bc4182b62b039a",
+    "fabrication/house-rules-main-B2-F_Silkscreen.gto": "d805d566e32de50c7995cdc14f3835b44bc883055ddb7a334cc41d1a4556685e",
+    "fabrication/house-rules-main-B2-In1_Cu.g1": "c313bc71a01cfeb634f0ad205ce1e36cf7baab74ca4b4c4f67620f2e8edb626a",
+    "fabrication/house-rules-main-B2-In2_Cu.g2": "8a004476f95f7b5bd89e5ca5073ccbdf0c7211e7ce0decbc537c66c1a8504b23",
+    "fabrication/house-rules-main-B2-In3_Cu.g3": "fbd617c186410fb2fb498f7b50dff9a25e618ad0b4bbbda91818a9140f12937a",
+    "fabrication/house-rules-main-B2-In4_Cu.g4": "cdccde5a0679f7582e43579973dacd45537d7a21872511ba304fa3724f7b5c91",
+    "fabrication/house-rules-main-B2-NPTH-drl_map.svg": "aad22224c7d778a3143ca7a6d9dfa9f70fe561c0ff590ee62b4bf4f13dc27805",
+    "fabrication/house-rules-main-B2-NPTH.drl": "20d29349a653a655e43a0894ef20ed2915a4922866d490ceee32737a0354129c",
+    "fabrication/house-rules-main-B2-PTH-drl_map.svg": "1930f1a9e3db0526711fbb28b11b6feb8c554439e655a8a7a4d31713fba7aab2",
+    "fabrication/house-rules-main-B2-PTH.drl": "aeed4536cec31b7b81bef2e7527c1d63388f5ea6c5c9d2569a357e2514a55001",
+    "fabrication/house-rules-main-B2-job.gbrjob": "d06691c2c60028aa1b28e560789c86eed86bd0a688820e48bdb76608c1f000ee",
+    "house-rules-main-B2-fabrication-REVIEW.zip": "c67dd2a448d841f1bb990aad5f2edf3505c2e4672b8ffe0d626e71b40f9e6aab",
+    "reports/3d-model-portability.json": "1b52b31e938ceb8743a7e266bf73d38298bcb4b62769dbc1847a687e06e5bb3d",
+    "reports/assembly-paste.log": "6a3b47e83b983deb2d83e3dcf4e45740e3afef6bddafbb172d43be8559cd4346",
+    "reports/board-audit.json": "cc2b8e7f2f942dc0c81883d158011385b0663cfa270add4f5eee7bc9fc387243",
+    "reports/drill-statistics.json": "bf69612bf267ac99d70b062b1ab1a4ff77164ae29e2249edc3b9a0285cc27a0a",
+    "reports/drill.log": "b87b030092a830cb07d1d4b3279056055b48bc8656273f8abe29b1254f1f6673",
+    "reports/fabrication-gerbers.log": "948935da3b0856322575b7653e344648da45c6286009dd7dfb49c06347394683",
+    "reports/kicad-default-severity-audit.json": "bae6f9f4f0a182aadfb23875d6c66fd767ef235a0ab6957a907660e81411041e",
+    "reports/native-drc.json": "af4957e96d781c53bb6a3cbd11c16b4fee07e35cfc806916e9b8839070aace49",
+    "reports/native-drc.log": "36a5f6312c15951753217c03a13b2081a1a1c20ea257e3949d3f5284a822ea22",
+    "reports/native-drill-report.txt": "62f848c52161686c87638e03478466b055ddc269ff315be061ae81601cc7b09a",
+    "reports/owner-led-diode-test-2026-10-29.json": "14d7ae456b7c0cea732de646c97c06a8b65ccc012fa47aa740394b4bf4127691",
+    "source/3d/Capacitor_SMD__C_0603_1608Metric.step": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+    "source/3d/Diode_SMD__D_SOD-123F.step": "132323445e3d1f9231e81c083cd88a33cd204dd8b96063bb2ed1f3ab4470c7e7",
+    "source/3d/Fuse__Fuse_1206_3216Metric.step": "5e6dcbe286696143d35a8ea37d91eef4b54ff3d1bd7c2c2b4dedda83d3f8e203",
+    "source/3d/KICAD-LIBRARIES-LICENSE.md": "45d2bce75e5a4208f5afb01b8fb2c406e700371c4fe2b5f5cd5c443d46db4d8f",
+    "source/3d/LMD07057AUE-101B.wrl": "a3751a5b0ff43f5372418bfd3bf7d4c69de54b22a141eb3b4c806147fc0ca4fb",
+    "source/3d/Package_SON__USON-10_2.5x1.0mm_P0.5mm.step": "d9d0628ead2ac2bab888344afbd0ef8b0f5a4ba37641ccc66dcbe300e3a74ac0",
+    "source/3d/Package_TO_SOT_SMD__SOT-23-6.step": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+    "source/3d/Package_TO_SOT_SMD__SOT-23.step": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+    "source/3d/README.md": "d15b0d64974f99067da625754be6ac8bfe95b2a88235a9441d0f72b03a0196cb",
+    "source/3d/Resistor_SMD__R_0603_1608Metric.step": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+    "source/3d/TI_RSE0010A-envelope.wrl": "6a60adc32c6ae8d8bdb3368ae439240989ea5dc7045e698578988b4bd62bea4d",
+    "source/3d/TI__Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step": "22ab85ba4b0f0e5d408abadd3519cae724e08c09f9cdfbd31a4c6a8703ff0152",
+    "source/HouseRules_main.kicad_sym": "259bf951577ae66eddda57ada7a8275110da8dee0d08159f2c98268366f7fda4",
+    "source/footprints/Capacitor_SMD.pretty/C_0603_1608Metric.kicad_mod": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+    "source/footprints/Diode_SMD.pretty/D_SOD-123F.kicad_mod": "8be1e25f240367187beafa1e339963dfdf4aa4f3e671731970e7f2e8491b6246",
+    "source/footprints/Fuse.pretty/Fuse_1206_3216Metric.kicad_mod": "8f4307d8c771db71526ed8ccf7c762824636660adec3635905932cc5e1d02280",
+    "source/footprints/HouseRules.pretty/LMD07057AUE-101B.kicad_mod": "444511399d0a99a9d5b6642c769d5b24d44703403ff69d478f55c76c8b825c1d",
+    "source/footprints/HouseRules.pretty/WirePad_B2.kicad_mod": "0fd9b367363222f6a368cdf885fac9af008a8a02d25bbf273e61b339591ade37",
+    "source/footprints/Package_DFN_QFN.pretty/Texas_UQFN-10_1.5x2mm_P0.5mm.kicad_mod": "2dc75e874b07973dc001459890305a35572f3f192da3241ff9ddc3a122e48e55",
+    "source/footprints/Package_SO.pretty/SSOP-24_3.9x8.7mm_P0.635mm.kicad_mod": "b07128e519c80ee52b1ee1fbba78c81d492789daf4b9d0e1b14d532c178040cc",
+    "source/footprints/Package_SON.pretty/USON-10_2.5x1.0mm_P0.5mm.kicad_mod": "08915959f022db57e477d1091632f6cb10a7fa605f4af70a53199462e6f21e2f",
+    "source/footprints/Package_TO_SOT_SMD.pretty/SOT-23-6.kicad_mod": "f341c73aac9dcb553456f68bf3fee3d26eb14acf6d8a1cae82b50418fe1d71ca",
+    "source/footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15",
+    "source/footprints/Resistor_SMD.pretty/R_0603_1608Metric.kicad_mod": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+    "source/footprints/TI.pretty/RGE0024C.kicad_mod": "ada9e21e62c1a6058ee804263219898f81e41112cf2fe21e8ad7f89ae0fe2eb5",
+    "source/fp-lib-table": "664d7da465e4bf31bde6f914175dab2f228464326c51be255689f3664f1ff935",
+    "source/house-rules-main-B2.kicad_dru": "d8a2a23ddf13a138dd2f5d15d0804543efff8cfdaff4ca27942141d8406de960",
+    "source/house-rules-main-B2.kicad_pcb": "90018f786599e140bdc7ed6a75be65f574c2691c98f3b2d91a7383906dbe0b04",
+    "source/house-rules-main-B2.kicad_pro": "065ef101b616641a2dd150e279c53e60b0562cd0a40ddf2cb0d70b1e2fee2b4a",
+    "source/house-rules-main-B2.kicad_sch": "9400693084a50c1816794bcb87904174f2bf840ae9d9ac8fab05fe5089acb163",
+    "source/sym-lib-table": "eb7a84c0f84685614d5476af712c36977cf40ee1d5ce6787ddd527c3eaef0c2b"
+  }
+}

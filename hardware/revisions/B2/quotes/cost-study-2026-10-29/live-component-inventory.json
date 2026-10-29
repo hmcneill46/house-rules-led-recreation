@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-29",
+  "method": "Official JLC assembly inventory observed through signed-in quote UI. Native Search Parts lookups by discount agent unless an individual entry explicitly names root as observer. No purchase or part reservation.",
+  "parts": [
+    {
+      "mpn": "BQ24392RSER",
+      "jlcpcb": "C128408",
+      "manufacturer": "Texas Instruments",
+      "assembly_class": "Extended",
+      "jlcpcb_stock": 937,
+      "idle_stock": 0,
+      "price_usd": {
+        "1+": 0.4226,
+        "100+": 0.3276
+      },
+      "source": "https://jlcpcb.com/partdetail/TexasInstruments-BQ24392RSER/C128408",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/bq24392.pdf",
+      "package_check": {
+        "primary_source": "https://www.ti.com/lit/ds/symlink/bq24392.pdf",
+        "manufacturer_package": "TI RSE0010A, 10 terminals, no centre exposed pad",
+        "selected_footprint": "Package_DFN_QFN:Texas_UQFN-10_1.5x2mm_P0.5mm",
+        "independent_check": "Copied KiCad footprint matches TI asymmetric ten-land pattern; no pad11. JLC generic EP label does not define the land pattern.",
+        "land_dimensions_mm": {
+          "1_4_6_9": [
+            0.55,
+            0.25
+          ],
+          "2_3_7_8": [
+            0.55,
+            0.2
+          ],
+          "5_10": [
+            0.3,
+            0.6
+          ]
+        },
+        "side_land_centres_x_mm": [
+          -0.675,
+          0.675
+        ],
+        "side_land_pitch_mm": 0.5,
+        "end_land_centres_y_mm": [
+          -0.9,
+          0.9
+        ],
+        "assembly_rotation": "Not yet approved; compare final bottom-side CPL and JLC viewer pin1 against TI top-view pin1 before manufacture."
+      }
+    },
+    {
+      "mpn": "CL10A105KB8NNNC",
+      "jlcpcb": "C15849",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "assembly_class": "Basic",
+      "jlcpcb_stock": 12697266,
+      "idle_stock": 29201,
+      "description": "1uF50V X5R\u00b110%0603; manufacturer\u221255..+85C",
+      "price_usd_displayed": {
+        "500+": 0.0108,
+        "24000+": 0.0078
+      },
+      "small_bom_quantity_price": "Not displayed in this search; use actual updated BOM quote",
+      "source": "https://jlcpcb.com/partdetail/16531-CL10A105KB8NNNC/C15849",
+      "manufacturer_product_page": "https://product.samsungsem.com/mlcc/CL10A105KB8NNN.do",
+      "manufacturer_page_note": "Samsung explicitly enumerates theC packaging suffix underCL10A105KB8NNN#;1.60x0.80x0.80mm nominal, eachdimension\u00b10.10mm;50Vdc1uF\u00b110%;MassProduction;pagecreated2026-09-05."
+    },
+    {
+      "mpn": "0603WAF6801T5E",
+      "jlcpcb": "C23212",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "assembly_class": "Basic",
+      "jlcpcb_stock": 1217892,
+      "available_order_quantity": 1051098,
+      "price_usd": {
+        "1+": 0.0023
+      },
+      "description": "6.8kOhm +/-1%,0603,100mW,+/-100ppm/degC,-55..155degC",
+      "source": "https://jlcpcb.com/partdetail/0603WAF6801T5E/C23212",
+      "observer": "Root agent in its working JLC browser session; reported directly to this agent, not independently viewed in the locked native app",
+      "approval": "Root approved R1-R4 substitution from Extended C23215 to Basic C23212; no geometry or net changes",
+      "cost_effect": "Expected removal of one Extended setup group; final updated BOM quote is authoritative",
+      "nominal_current_calculation": {
+        "formula": "IOUT_mA=1.205*41.9/R_kOhm",
+        "R_kOhm": 6.8,
+        "per_LED_peak_mA": 7.424926470588235,
+        "all_white_peak_mA": 363.8213970588235,
+        "all_white_full_average_mA": 341.9921132352941,
+        "all_white_dim_average_mA": 18.191069852941176
+      }
+    }
+  ],
+  "limits": "Stock is observed, not reserved. Unit prices exclude assembly, shipping and tax. The original49-part baseline quote is immutable and excludes later BC1.2 additions, Basic capacitor and Basic IREF substitutions. New55-part BOM must be quoted separately."
+}

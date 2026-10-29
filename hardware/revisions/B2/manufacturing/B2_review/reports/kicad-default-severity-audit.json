@@ -1,0 +1,165 @@
+{
+  "generated_utc": "2026-10-29T18:42:49.089110+00:00",
+  "source": "Native KiCad10 BOARD in a new TemporaryDirectory; no matching project/rules before first CLI run; four Edge.Cuts lines only. Second phase starts with exactly empty JSON project {}, allowing native CLI serialization of defaults; no severity entries are supplied.",
+  "native_version": "10.0.7",
+  "before_first_cli": {
+    "directory_entries": [
+      "pristine-default.kicad_pcb"
+    ],
+    "matching_project_exists": false
+  },
+  "runs": [
+    {
+      "phase": "no-matching-project",
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "pcb",
+        "drc",
+        "--format",
+        "json",
+        "--all-track-errors",
+        "--severity-all",
+        "--refill-zones",
+        "--save-board",
+        "--output",
+        "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/kicad-pristine-default-audit-rr821god/no-matching-project-drc.json",
+        "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/kicad-pristine-default-audit-rr821god/pristine-default.kicad_pcb"
+      ],
+      "return_code": 0,
+      "stdout": "Found 0 violations\nFound 0 unconnected items\nSaved DRC Report to /var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/kicad-pristine-default-audit-rr821god/no-matching-project-drc.json\nSaved board\n",
+      "stderr": "",
+      "native_drc": {
+        "$schema": "https://schemas.kicad.org/drc.v1.json",
+        "coordinate_units": "mm",
+        "date": "2026-10-29T18:42:48",
+        "ignored_checks": [
+          {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+          },
+          {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+          },
+          {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+          },
+          {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+          },
+          {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+          }
+        ],
+        "included_severities": [
+          "error",
+          "warning",
+          "exclusion"
+        ],
+        "kicad_version": "10.0.7",
+        "schematic_parity": [],
+        "source": "pristine-default.kicad_pcb",
+        "unconnected_items": [],
+        "violations": []
+      },
+      "matching_project_exists_after": false,
+      "project_contents_after": null,
+      "directory_entries_after": [
+        "no-matching-project-drc.json",
+        "pristine-default.kicad_pcb",
+        "pristine-default.kicad_prl"
+      ]
+    },
+    {
+      "phase": "empty-project-default-serialization",
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "pcb",
+        "drc",
+        "--format",
+        "json",
+        "--all-track-errors",
+        "--severity-all",
+        "--refill-zones",
+        "--save-board",
+        "--output",
+        "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/kicad-pristine-default-audit-rr821god/empty-project-default-serialization-drc.json",
+        "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/kicad-pristine-default-audit-rr821god/pristine-default.kicad_pcb"
+      ],
+      "return_code": 0,
+      "stdout": "Found 0 violations\nFound 0 unconnected items\nSaved DRC Report to /var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/kicad-pristine-default-audit-rr821god/empty-project-default-serialization-drc.json\nSaved board\n",
+      "stderr": "",
+      "native_drc": {
+        "$schema": "https://schemas.kicad.org/drc.v1.json",
+        "coordinate_units": "mm",
+        "date": "2026-10-29T18:42:49",
+        "ignored_checks": [
+          {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+          },
+          {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+          },
+          {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+          },
+          {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+          },
+          {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+          }
+        ],
+        "included_severities": [
+          "error",
+          "warning",
+          "exclusion"
+        ],
+        "kicad_version": "10.0.7",
+        "schematic_parity": [],
+        "source": "pristine-default.kicad_pcb",
+        "unconnected_items": [],
+        "violations": []
+      },
+      "matching_project_exists_after": true,
+      "project_contents_after": {},
+      "directory_entries_after": [
+        "empty-project-default-serialization-drc.json",
+        "no-matching-project-drc.json",
+        "pristine-default.kicad_pcb",
+        "pristine-default.kicad_prl",
+        "pristine-default.kicad_pro"
+      ]
+    }
+  ],
+  "files": {
+    "no-matching-project-drc.json": {
+      "sha256": "dc61ef984da00b729253e9c90b231a2b889d5d5164f6cc6877b300e6d0799165",
+      "bytes": 1094
+    },
+    "pristine-default.kicad_pcb": {
+      "sha256": "eec53054217da25e94b7e1cc4fce7444369443fcec1f6563863b4820d73c69b1",
+      "bytes": 2674
+    },
+    "pristine-default.kicad_prl": {
+      "sha256": "bbc2b34f6b479f03869f7445f90e9c35e1e08b7f0683b297e1bb5fc80ecf13ef",
+      "bytes": 2303
+    },
+    "empty-project-default-serialization-drc.json": {
+      "sha256": "46055669d011cb25ac2895b3a2e30aa907da6dbb80a71ab84e028b6284c95b07",
+      "bytes": 1094
+    },
+    "pristine-default.kicad_pro": {
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "bytes": 3
+    }
+  }
+}

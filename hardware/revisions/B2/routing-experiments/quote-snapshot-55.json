@@ -1,0 +1,11 @@
+{
+  "status": "UNRELEASED INCOMPLETE ROUTING; COST STUDY ONLY",
+  "factory": 55,
+  "footprints": 82,
+  "source": "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/routing-experiments/ready6-BC.kicad_pcb",
+  "source_sha256": "afbf7067af76a77b68b5c1674b8d4be5b1e4784f80a04cd78cc218f6efa8e0f1",
+  "snapshot_sha256": "f1a1dfe03d320929f9e88ed39de6c371c69f1f8a1fcdbbe8ac49c974c91109ed",
+  "electrical_spec_sha256": "ed0a40b7db8620b4ef07300426d4c028a645e33c89184b316d1582b27ecfc138",
+  "known_unconnected_items": 59,
+  "new_basic_caps": "C5/C6/C7/C14/C16 C15849 SamsungCL10A105KB8NNNC"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "footprint": "Package_SO:SSOP-24_3.9x8.7mm_P0.635mm",
+    "test": "Conservative rectangle/circle copper envelopes on native footprints, all driver/LED nets assumed different",
+    "required_clearance_mm": 0.15,
+    "best_pose": {
+      "min_gap_mm": -0.07878665902847837,
+      "x": 6.1,
+      "y": 8.65,
+      "angle": 0,
+      "closest_pair": [
+        "1",
+        "DS1.2"
+      ]
+    },
+    "passing_poses": 0,
+    "tested_poses": 10626,
+    "note": "Placement candidate only; complete native DRC, physical solder/body review and routing still required."
+  },
+  {
+    "footprint": "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm",
+    "test": "Conservative rectangle/circle copper envelopes on native footprints, all driver/LED nets assumed different",
+    "required_clearance_mm": 0.15,
+    "best_pose": {
+      "min_gap_mm": 0.7396007189498712,
+      "x": 6.1,
+      "y": 5.8500000000000005,
+      "angle": 90,
+      "closest_pair": [
+        "12",
+        "DS1.11"
+      ]
+    },
+    "passing_poses": 7406,
+    "tested_poses": 10626,
+    "note": "Placement candidate only; complete native DRC, physical solder/body review and routing still required."
+  }
+]

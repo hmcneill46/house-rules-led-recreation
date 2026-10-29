@@ -1,0 +1,65 @@
+{
+  "result": "PASS",
+  "date_utc": "2026-10-29T19:17:30.539689+00:00",
+  "model": "Independent physical diode/TLC/PMOS connectivity model",
+  "electrical_spec_sha256": "8658ae95e37d72c0a062ad9cfd54ef3e18cb201437d9d5956834977edae0cc46",
+  "firmware_source_sha256": {
+    "HouseRulesB2/scan_engine.h": "dca42ab3dc53c6ccbc2d7b6472b87efe4eaf856525fc55f77a85a8d105c52e09",
+    "HouseRulesB2/board_contract_generated.h": "2adf7bb63e222fb10138de0cede28428c808e5e9f100862cdb364a3f5c274cf0",
+    "HouseRulesB2/player.h": "bead21b3f649c53a891762bc8bcac4cefa4d60da6381339aa4f0c7cb8be0883c",
+    "generated_sequence.h": "a7d1963f69ca10a11635c25d9b5d51e5e6a9152601122c8f659420badfecf320"
+  },
+  "package": "TLC59282RGER RGE0024C; physical output pins2..17, EP25=GND",
+  "module_count": 7,
+  "physical_diode_paths": 245,
+  "daisy_chain_from_actual_nets": [
+    "U1",
+    "U2",
+    "U3",
+    "U4"
+  ],
+  "walking_pixels": 245,
+  "diagnostic_frames": 2,
+  "artwork_frames": 60000,
+  "artwork_commands_covered": 39,
+  "complete_artwork_traversals": 2,
+  "artwork_frame_sha256": "5cfcc3e0fd3d33e3c8aa526264e63a5529cc3bc9fb5531126e173bb8fe42a1a6",
+  "per_phase_reconstructions": 301235,
+  "nominal_single_LED_peak_mA": 7.424926470588234,
+  "nominal_all_white_LED_peak_A": 0.3638213970588235,
+  "nominal_all_white_LED_average_A_at470of500us": 0.34199211323529405,
+  "nominal_all_white_LED_average_A_at25of500us": 0.018191069852941177,
+  "fault_cases_detected": [
+    "LED anode/cathode polarity swap",
+    "Cathodes accidentally shared across modules",
+    "PMOS source/drain reversal",
+    "BQ USB upstream/downstream terminals swapped",
+    "BQ GOOD_BAT on switched rail would disconnect USB during suspend",
+    "BQ detector divider cannot meet RP2040 input-high threshold",
+    "Two column gates enabled simultaneously",
+    "Row bits set with no selected gate",
+    "Unconnected sink enabled",
+    "LED supply remains on while driver unpowered",
+    "Swapped TLC physical OUT pins change the independently reconstructed pixel",
+    "Reversed serial chip order is rejected or produces a different physical image"
+  ],
+  "blank_and_both_rails_off_force_dark": true,
+  "cosmetic_pin_labels_ignored": true,
+  "usb_frontend_static_check": {
+    "detector": "U9",
+    "physical_map": "BQ24392 RSE0010A RevG",
+    "raw_usb_pair_isolated_from_mcu_pair": true,
+    "good_bat_always3V3": true,
+    "BC_DET_high_min_V": 2.077106,
+    "BC_DET_high_max_V": 3.18121,
+    "BC_DET_low_max_V": 0.247976,
+    "CHG_AL_N_pullup_ohm": 10000.0,
+    "note": "Connectivity and static logic levels only;no charger/USB transactions simulated."
+  },
+  "limitations": [
+    "Functional connectivity only; no MOSFET gate charge, ghosting, current compliance or thermal simulation",
+    "No real USB enumeration, suspend current or startup inrush measurement",
+    "One owned module full pin map/orientation is owner-verified; other20 modules and powered-board operation remain unverified",
+    "Uses schematic electrical-spec connections, not routed-PCB extraction; final PCB net parity is a separate check"
+  ]
+}

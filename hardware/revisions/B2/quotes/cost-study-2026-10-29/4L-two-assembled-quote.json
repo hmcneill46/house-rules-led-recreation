@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-29",
+  "status": "UNROUTED COST STUDY ONLY\u2014NOT ORDERABLE",
+  "vendor": "JLCPCB",
+  "channel": "web",
+  "currency_charged": "USD",
+  "quote_currency_display": "GBP",
+  "bare_pcbs": 5,
+  "assembled_pcbs": 2,
+  "factory_components_per_board": 49,
+  "bom_groups": 16,
+  "pcb_spec": {
+    "dimensions_mm": [
+      88.4,
+      17.3
+    ],
+    "layers": 4,
+    "thickness_mm": 1.6,
+    "finish": "ENIG 1u",
+    "mask": "Green",
+    "via": "0.3 mm drill / 0.6 mm diameter; soldermask plugged, no filled/capped via-in-pad",
+    "outer_copper_oz": 1,
+    "inner_copper_oz": 0.5,
+    "production_review": "manual, no auto-confirm",
+    "placement_review": "manual, no auto-confirm",
+    "assembly_side": "Bottom",
+    "assembly_service": "Economic",
+    "depanel_before_delivery": true
+  },
+  "display_gbp": {
+    "fabrication": 19.44,
+    "assembly": 39.23,
+    "total_before_delivery_tax": 58.67,
+    "components": 12.28,
+    "extended_fees": 16.21,
+    "setup": 6.18,
+    "stencil": 1.16,
+    "smt_labor": 0.68,
+    "placement_review": 0.34,
+    "nitrogen_reflow": 0.64,
+    "depaneling": 1.74
+  },
+  "checkout_usd": {
+    "goods": 78.27,
+    "shipping": 5.71,
+    "vat": 16.8,
+    "total": 100.78,
+    "method": "Global Standard Direct Line",
+    "business_days": "8\u201312",
+    "tax_regime": "UK-VAT collected/remitted by JLCPCB",
+    "coupon_applied": false
+  },
+  "estimated_gbp_at_site_reference_rate": {
+    "jlc_delivered": 75.54,
+    "stock_modules_delivered_one_set": 14.78,
+    "stock_modules_delivered_two_sets": 22.17,
+    "one_finished_display_with_second_populated_board_spare": 90.32,
+    "two_finished_displays": 97.71
+  },
+  "scope_note": "Both populated main boards are fully reusable. Display count requires one owned seven-LED set, one XIAO Plus and one Adafruit4090 per display. Modules/postage estimate from official retailers; solder/wire/screws/filament/cable/PSU not included. No order or payment submitted. Stock and final routing may change quoted price. Coupons not deducted because only final payment page establishes eligibility. Actual charge USD; GBP depends on payment exchange rate.",
+  "evidence": "evidence/4L-two-assembled-uk-vat-summary.png"
+}

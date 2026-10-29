@@ -1,0 +1,344 @@
+{
+  "source": "hardware/cost-down/reference/xiao-rp2040-plus-cad/202004621_XIAO RP2040-Plus_V1.0_SCH&PCB_260519/XIAO RP2040.kicad_pcb",
+  "sha256": "26c0b048ea37c3f1eee3a5d2ded9bea9758459d612113934665ca122b87227b4",
+  "parts": [
+    {
+      "ref": "C15",
+      "value": "4.7uF",
+      "pins": [
+        {
+          "pad": "1",
+          "net": "VSYS"
+        },
+        {
+          "pad": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "U10",
+      "value": "TPS22916CNYFPR",
+      "pins": [
+        {
+          "pad": "A1",
+          "net": "Net-(RGB1-VDD)"
+        },
+        {
+          "pad": "A2",
+          "net": "VSYS"
+        },
+        {
+          "pad": "B1",
+          "net": "GND"
+        },
+        {
+          "pad": "B2",
+          "net": "RGB_EN"
+        }
+      ]
+    },
+    {
+      "ref": "R22",
+      "value": "100K",
+      "pins": [
+        {
+          "pad": "1",
+          "net": "GND"
+        },
+        {
+          "pad": "2",
+          "net": "Net-(Q1-G)"
+        }
+      ]
+    },
+    {
+      "ref": "R21",
+      "value": "1K",
+      "pins": [
+        {
+          "pad": "1",
+          "net": "GPIO25{slash}User_LED"
+        },
+        {
+          "pad": "2",
+          "net": "Net-(Q1-G)"
+        }
+      ]
+    },
+    {
+      "ref": "R15",
+      "value": "1.5K",
+      "pins": [
+        {
+          "pad": "1",
+          "net": "VSYS_3V3"
+        },
+        {
+          "pad": "2",
+          "net": "Net-(D3-+)"
+        }
+      ]
+    },
+    {
+      "ref": "D2",
+      "value": "Red",
+      "pins": [
+        {
+          "pad": "1",
+          "net": "Net-(D2-+)"
+        },
+        {
+          "pad": "2",
+          "net": "Charge_LED"
+        }
+      ]
+    },
+    {
+      "ref": "D3",
+      "value": "Green",
+      "pins": [
+        {
+          "pad": "1",
+          "net": "Net-(D3-+)"
+        },
+        {
+          "pad": "2",
+          "net": "Net-(D3--)"
+        }
+      ]
+    },
+    {
+      "ref": "R20",
+      "value": "100K",
+      "pins": [
+        {
+          "pad": "1",
+          "net": "GND"
+        },
+        {
+          "pad": "2",
+          "net": "GPIO24{slash}BAT_EN"
+        }
+      ]
+    },
+    {
+      "ref": "C26",
+      "value": "100nF",
+      "pins": [
+        {
+          "pad": "1",
+          "net": "VBUS"
+        },
+        {
+          "pad": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "U2",
+      "value": "TPS22916CNYFPR",
+      "pins": [
+        {
+          "pad": "A1",
+          "net": "Net-(U2-VOUT)"
+        },
+        {
+          "pad": "A2",
+          "net": "VBAT"
+        },
+        {
+          "pad": "B1",
+          "net": "GND"
+        },
+        {
+          "pad": "B2",
+          "net": "GPIO24{slash}BAT_EN"
+        }
+      ]
+    },
+    {
+      "ref": "C14",
+      "value": "100nF",
+      "pins": [
+        {
+          "pad": "1",
+          "net": "VSYS"
+        },
+        {
+          "pad": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "U18",
+      "value": "UM3301DA",
+      "pins": [
+        {
+          "pad": "1",
+          "net": "RGB_EN"
+        },
+        {
+          "pad": "2",
+          "net": "GND"
+        },
+        {
+          "pad": "3",
+          "net": "NEOPIX"
+        },
+        {
+          "pad": "4",
+          "net": "Net-(RGB1-DIN)"
+        },
+        {
+          "pad": "5",
+          "net": "RGB_EN"
+        },
+        {
+          "pad": "6",
+          "net": "Net-(RGB1-VDD)"
+        }
+      ]
+    },
+    {
+      "ref": "Q1",
+      "value": "LN237N3T5G",
+      "pins": [
+        {
+          "pad": "1",
+          "net": "Net-(Q1-G)"
+        },
+        {
+          "pad": "2",
+          "net": "GND"
+        },
+        {
+          "pad": "3",
+          "net": "Net-(D3--)"
+        }
+      ]
+    },
+    {
+      "ref": "U8",
+      "value": "TPS2116DRLR",
+      "pins": [
+        {
+          "pad": "1",
+          "net": "GND"
+        },
+        {
+          "pad": "2",
+          "net": "VSYS"
+        },
+        {
+          "pad": "3",
+          "net": "VBUS"
+        },
+        {
+          "pad": "4",
+          "net": "Net-(U8-PR1)"
+        },
+        {
+          "pad": "5",
+          "net": "VBUS"
+        },
+        {
+          "pad": "6",
+          "net": "VBAT"
+        },
+        {
+          "pad": "7",
+          "net": "VSYS"
+        },
+        {
+          "pad": "8",
+          "net": "Net-(U8-ST)"
+        }
+      ]
+    },
+    {
+      "ref": "C2",
+      "value": "1uF",
+      "pins": [
+        {
+          "pad": "1",
+          "net": "VBUS"
+        },
+        {
+          "pad": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "C6",
+      "value": "10uF",
+      "pins": [
+        {
+          "pad": "1",
+          "net": "VSYS_3V3"
+        },
+        {
+          "pad": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "R14",
+      "value": "10K",
+      "pins": [
+        {
+          "pad": "1",
+          "net": "VSYS_3V3"
+        },
+        {
+          "pad": "2",
+          "net": "Net-(D2-+)"
+        }
+      ]
+    },
+    {
+      "ref": "U3",
+      "value": "RS3236-3.3YUTDN4",
+      "pins": [
+        {
+          "pad": "1",
+          "net": "VSYS_3V3"
+        },
+        {
+          "pad": "2",
+          "net": "GND"
+        },
+        {
+          "pad": "3",
+          "net": "VSYS"
+        },
+        {
+          "pad": "4",
+          "net": "VSYS"
+        },
+        {
+          "pad": "5",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "C5",
+      "value": "10uF",
+      "pins": [
+        {
+          "pad": "1",
+          "net": "VSYS"
+        },
+        {
+          "pad": "2",
+          "net": "GND"
+        }
+      ]
+    }
+  ]
+}

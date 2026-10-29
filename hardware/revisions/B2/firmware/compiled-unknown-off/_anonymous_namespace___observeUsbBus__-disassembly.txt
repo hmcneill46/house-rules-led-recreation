@@ -1,0 +1,33 @@
+100034d8 <(anonymous namespace)::observeUsbBus()>:
+100034d8:	4b0f      	ldr	r3, [pc, #60]	@ (10003518 <(anonymous namespace)::observeUsbBus()+0x40>)
+100034da:	b510      	push	{r4, lr}
+100034dc:	681c      	ldr	r4, [r3, #0]
+100034de:	04e3      	lsls	r3, r4, #19
+100034e0:	d50d      	bpl.n	100034fe <(anonymous namespace)::observeUsbBus()+0x26>
+100034e2:	2201      	movs	r2, #1
+100034e4:	4b0d      	ldr	r3, [pc, #52]	@ (1000351c <(anonymous namespace)::observeUsbBus()+0x44>)
+100034e6:	701a      	strb	r2, [r3, #0]
+100034e8:	2200      	movs	r2, #0
+100034ea:	4b0d      	ldr	r3, [pc, #52]	@ (10003520 <(anonymous namespace)::observeUsbBus()+0x48>)
+100034ec:	701a      	strb	r2, [r3, #0]
+100034ee:	f7ff fee1 	bl	100032b4 <(anonymous namespace)::hostResume()>
+100034f2:	4b0c      	ldr	r3, [pc, #48]	@ (10003524 <(anonymous namespace)::observeUsbBus()+0x4c>)
+100034f4:	781b      	ldrb	r3, [r3, #0]
+100034f6:	2b00      	cmp	r3, #0
+100034f8:	d001      	beq.n	100034fe <(anonymous namespace)::observeUsbBus()+0x26>
+100034fa:	f7ff ffb1 	bl	10003460 <(anonymous namespace)::stopDisplay()>
+100034fe:	0423      	lsls	r3, r4, #16
+10003500:	d501      	bpl.n	10003506 <(anonymous namespace)::observeUsbBus()+0x2e>
+10003502:	f7ff fed7 	bl	100032b4 <(anonymous namespace)::hostResume()>
+10003506:	0464      	lsls	r4, r4, #17
+10003508:	d505      	bpl.n	10003516 <(anonymous namespace)::observeUsbBus()+0x3e>
+1000350a:	4b04      	ldr	r3, [pc, #16]	@ (1000351c <(anonymous namespace)::observeUsbBus()+0x44>)
+1000350c:	781b      	ldrb	r3, [r3, #0]
+1000350e:	2b00      	cmp	r3, #0
+10003510:	d001      	beq.n	10003516 <(anonymous namespace)::observeUsbBus()+0x3e>
+10003512:	f7ff ffc5 	bl	100034a0 <(anonymous namespace)::hostSuspend()>
+10003516:	bd10      	pop	{r4, pc}
+10003518:	50110098 	.word	0x50110098
+1000351c:	20003f5c 	.word	0x20003f5c
+10003520:	20003f57 	.word	0x20003f57
+10003524:	20003f52 	.word	0x20003f52

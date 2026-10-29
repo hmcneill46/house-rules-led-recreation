@@ -1,0 +1,87 @@
+{
+  "source": "kicad/house-rules-main-B2.kicad_pcb",
+  "source_sha256": "90018f786599e140bdc7ed6a75be65f574c2691c98f3b2d91a7383906dbe0b04",
+  "native_renderer": "KiCad CLI10; actual model/board snapshot",
+  "source_board_untouched": true,
+  "bare_front": "LED 3D models hidden only in disposable snapshot; no geometry or fabrication changes",
+  "renders": [
+    {
+      "view": "top",
+      "file": "render/main-top.png",
+      "sha256": "1ebea5664213dcf54b75839f3457ae463f1fefea55df01aa53171b651bacc3f9",
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "pcb",
+        "render",
+        "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-b2-render-4e0n7y8e/main.kicad_pcb",
+        "--output",
+        "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/render/main-top.png",
+        "--width",
+        "1800",
+        "--height",
+        "600",
+        "--side",
+        "top",
+        "--background",
+        "opaque",
+        "--quality",
+        "high",
+        "--zoom",
+        "2.4",
+        "--floor"
+      ]
+    },
+    {
+      "view": "bottom",
+      "file": "render/main-bottom.png",
+      "sha256": "9655a4bc7e7048afa9c504e5605bc35d2ffa7aae1823f41a4a048a851443e4ef",
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "pcb",
+        "render",
+        "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-b2-render-4e0n7y8e/main.kicad_pcb",
+        "--output",
+        "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/render/main-bottom.png",
+        "--width",
+        "1800",
+        "--height",
+        "600",
+        "--side",
+        "bottom",
+        "--background",
+        "opaque",
+        "--quality",
+        "high",
+        "--zoom",
+        "2.4",
+        "--floor"
+      ]
+    },
+    {
+      "view": "bare-front",
+      "file": "render/main-bare-front.png",
+      "sha256": "48415baa3e7badea7c5950da6d0e8fa54b747a2c24ea172557ecc48e3ef7b320",
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "pcb",
+        "render",
+        "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-b2-render-4e0n7y8e/bare.kicad_pcb",
+        "--output",
+        "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/render/main-bare-front.png",
+        "--width",
+        "1800",
+        "--height",
+        "600",
+        "--side",
+        "top",
+        "--background",
+        "opaque",
+        "--quality",
+        "high",
+        "--zoom",
+        "2.4",
+        "--floor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "board": "kicad/house-rules-main-B2.kicad_pcb",
+  "board_sha256": "30909bdf197070c1e14cfe1f8bfa3bea72dc9c2b98547b3fdbb10b8c2cceffd6",
+  "contract_sha256": "4ac1d14debe7dfb139318eeece5a6a68b0d120d6bbdeaedb92115fb53903866d",
+  "native_origin_mm": [
+    50,
+    50
+  ],
+  "contact_conflicts": [],
+  "mcu_screw_head_local_overlaps": [
+    {
+      "ref": "R9",
+      "kind": "footprint-bound",
+      "footprint": "R_0603_1608Metric",
+      "box": [
+        36.345,
+        7.895000000000003,
+        39.355000000000004,
+        9.405000000000001
+      ]
+    }
+  ],
+  "mcu_screw_head_height_conflicts": [],
+  "height_evidence": {
+    "part": "R9,0603WAF4701T5E",
+    "body_height_mm": [
+      0.35,
+      0.55
+    ],
+    "allowed_including_solder_mm": 1.0,
+    "head_lowest_z": 12.6,
+    "main_back_z": 10.9,
+    "minimum_clearance_if_contract_met_mm": 0.7,
+    "manufacturer_datasheet": "https://datasheet.lcsc.com/lcsc/2206010230_UNI-ROYAL-Uniroyal-Elec-0603WAF2201T5E_C4190.pdf"
+  },
+  "pass": true,
+  "scope": "Native pad and footprint XY bounds; a body-height contract at the cap screw; not a solder/wire/printed-fit or full 3D component audit."
+}

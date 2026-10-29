@@ -211,8 +211,8 @@ Original Artwork/cut video.mov
 Original Artwork/House Rules Video cut.mov
 
 # Local manufacturer checkout links and delivery-form evidence
-hardware/quotes/**/browser-handoff.json
-hardware/quotes/**/evidence/shipping-*
+hardware/**/browser-handoff.json
+hardware/**/evidence/shipping-*
 
 # Personal KiCad state and downloaded research sources
 *.kicad_prl

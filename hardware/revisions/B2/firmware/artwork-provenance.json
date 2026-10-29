@@ -1,0 +1,10 @@
+{
+  "copied_from": "hardware/firmware",
+  "data_identical": true,
+  "sha256": {
+    "generated_sequence.h": "a7d1963f69ca10a11635c25d9b5d51e5e6a9152601122c8f659420badfecf320",
+    "sequence_columns.bin": "4006a8b654a8fb741fb169f3b9333f579d882659d78b5aceb9f8c447d1aebcef",
+    "sequence_manifest.json": "97b2aeb12e8256fe2ba37cbae8f627ed2a9d8ddf1d780419da8fde7236d90477"
+  },
+  "player": "A1 portable artwork/diagnostic player copied unchanged; A1 hardware encoder/power helper omitted"
+}

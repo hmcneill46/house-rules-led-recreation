@@ -1,0 +1,1622 @@
+{
+  "source_xiao": "hardware/cost-down/reference/xiao-rp2040-plus-cad/202004621_XIAO RP2040-Plus_V1.0_SCH&PCB_260519/XIAO RP2040.kicad_pcb",
+  "source_xiao_sha256": "26c0b048ea37c3f1eee3a5d2ded9bea9758459d612113934665ca122b87227b4",
+  "source_adafruit_sha256": "07970b0ad3243684bdf59c0ced537b8b9a8e8b67f7e9032b9464600da21b04e0",
+  "native_outline_edge_centerline_mm": {
+    "x": [
+      97.87274,
+      118.82774
+    ],
+    "y": [
+      63.946,
+      81.726
+    ],
+    "size": [
+      20.955,
+      17.78
+    ],
+    "corner_radius": 1.905
+  },
+  "xiao_thickness_mm": 0.804,
+  "contact_rectangles_device_xy": [
+    {
+      "name": "left-top",
+      "box": [
+        41.1,
+        0.5,
+        42.2,
+        1.7
+      ]
+    },
+    {
+      "name": "left-bottom",
+      "box": [
+        41.1,
+        15.7,
+        42.2,
+        16.9
+      ]
+    },
+    {
+      "name": "right-top",
+      "box": [
+        61,
+        0.5,
+        62.1,
+        1.7
+      ]
+    },
+    {
+      "name": "right-bottom",
+      "box": [
+        61,
+        15.7,
+        62.1,
+        16.9
+      ]
+    }
+  ],
+  "native_pad_centres": [
+    {
+      "ref": "U4",
+      "pad": "1",
+      "net": "GPIO26{slash}A0{slash}D0",
+      "centre_device_xy": [
+        59.19496,
+        -0.25
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "1",
+      "net": "GPIO26{slash}A0{slash}D0",
+      "centre_device_xy": [
+        59.19496,
+        0.612
+      ],
+      "size_xy": [
+        0.95,
+        1.725
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "1",
+      "net": "GPIO26{slash}A0{slash}D0",
+      "centre_device_xy": [
+        59.19496,
+        0.92
+      ],
+      "size_xy": [
+        1.3,
+        1.3
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "2",
+      "net": "GPIO27{slash}A1{slash}D1",
+      "centre_device_xy": [
+        56.65496,
+        -0.25
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "2",
+      "net": "GPIO27{slash}A1{slash}D1",
+      "centre_device_xy": [
+        56.65496,
+        1.02
+      ],
+      "size_xy": [
+        1.35,
+        1.35
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "3",
+      "net": "GPIO28{slash}A2{slash}D2",
+      "centre_device_xy": [
+        54.11496,
+        -0.25
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "3",
+      "net": "GPIO28{slash}A2{slash}D2",
+      "centre_device_xy": [
+        54.11496,
+        1.02
+      ],
+      "size_xy": [
+        1.35,
+        1.35
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "4",
+      "net": "GPIO29{slash}A3{slash}D3_IO",
+      "centre_device_xy": [
+        51.57496,
+        -0.25
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "4",
+      "net": "GPIO29{slash}A3{slash}D3_IO",
+      "centre_device_xy": [
+        51.57496,
+        1.02
+      ],
+      "size_xy": [
+        1.35,
+        1.35
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "5",
+      "net": "GPIO6{slash}SDA0{slash}D4",
+      "centre_device_xy": [
+        49.03496,
+        -0.25
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "5",
+      "net": "GPIO6{slash}SDA0{slash}D4",
+      "centre_device_xy": [
+        49.03496,
+        1.02
+      ],
+      "size_xy": [
+        1.35,
+        1.35
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "6",
+      "net": "GPIO7{slash}SCL0{slash}D5",
+      "centre_device_xy": [
+        46.49496,
+        -0.25
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "6",
+      "net": "GPIO7{slash}SCL0{slash}D5",
+      "centre_device_xy": [
+        46.49496,
+        1.02
+      ],
+      "size_xy": [
+        1.35,
+        1.35
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "7",
+      "net": "GPIO0{slash}TX{slash}D6",
+      "centre_device_xy": [
+        43.95496,
+        -0.25
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "7",
+      "net": "GPIO0{slash}TX{slash}D6",
+      "centre_device_xy": [
+        43.95496,
+        0.92
+      ],
+      "size_xy": [
+        1.3,
+        1.3
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "8",
+      "net": "GPIO1{slash}RX{slash}D7",
+      "centre_device_xy": [
+        43.95496,
+        16.36
+      ],
+      "size_xy": [
+        1.3,
+        1.3
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "8",
+      "net": "GPIO1{slash}RX{slash}D7",
+      "centre_device_xy": [
+        43.95496,
+        17.53
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "9",
+      "net": "GPIO2{slash}SCK{slash}D8",
+      "centre_device_xy": [
+        46.49496,
+        16.26
+      ],
+      "size_xy": [
+        1.35,
+        1.35
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "9",
+      "net": "GPIO2{slash}SCK{slash}D8",
+      "centre_device_xy": [
+        46.49496,
+        17.53
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "10",
+      "net": "GPIO4{slash}MISO{slash}D9",
+      "centre_device_xy": [
+        49.03496,
+        16.26
+      ],
+      "size_xy": [
+        1.35,
+        1.35
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "10",
+      "net": "GPIO4{slash}MISO{slash}D9",
+      "centre_device_xy": [
+        49.03496,
+        17.53
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "11",
+      "net": "GPIO3{slash}MOSI{slash}D10",
+      "centre_device_xy": [
+        51.57496,
+        16.26
+      ],
+      "size_xy": [
+        1.35,
+        1.35
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "11",
+      "net": "GPIO3{slash}MOSI{slash}D10",
+      "centre_device_xy": [
+        51.57496,
+        17.53
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "12",
+      "net": "VSYS_3V3",
+      "centre_device_xy": [
+        54.11496,
+        16.26
+      ],
+      "size_xy": [
+        1.35,
+        1.35
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "12",
+      "net": "VSYS_3V3",
+      "centre_device_xy": [
+        54.11496,
+        17.53
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "13",
+      "net": "GND",
+      "centre_device_xy": [
+        56.65496,
+        16.26
+      ],
+      "size_xy": [
+        1.35,
+        1.35
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "13",
+      "net": "GND",
+      "centre_device_xy": [
+        56.65496,
+        17.53
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "14",
+      "net": "VBUS",
+      "centre_device_xy": [
+        59.19496,
+        16.36
+      ],
+      "size_xy": [
+        1.3,
+        1.3
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "14",
+      "net": "VBUS",
+      "centre_device_xy": [
+        59.19496,
+        17.53
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "15",
+      "net": "GPIO5{slash}D19",
+      "centre_device_xy": [
+        57.92496,
+        -0.25
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "16",
+      "net": "GPIO13{slash}D20",
+      "centre_device_xy": [
+        55.38496,
+        -0.25
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "17",
+      "net": "GPIO14{slash}D21",
+      "centre_device_xy": [
+        52.84496,
+        -0.25
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "18",
+      "net": "GPIO15{slash}D22",
+      "centre_device_xy": [
+        50.30496,
+        -0.25
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "19",
+      "net": "GPIO16{slash}D23",
+      "centre_device_xy": [
+        47.76496,
+        -0.25
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "20",
+      "net": "GPIO17{slash}D24",
+      "centre_device_xy": [
+        45.22496,
+        -0.25
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "21",
+      "net": "GPIO8{slash}D27",
+      "centre_device_xy": [
+        45.22496,
+        17.53
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "22",
+      "net": "GPIO9{slash}D26",
+      "centre_device_xy": [
+        47.76496,
+        17.53
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "23",
+      "net": "GPIO10{slash}D25",
+      "centre_device_xy": [
+        50.30496,
+        17.53
+      ],
+      "size_xy": [
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "ref": "TP4",
+      "pad": "1",
+      "net": "USB_D+",
+      "centre_device_xy": [
+        55.19726,
+        9.934
+      ],
+      "size_xy": [
+        1.143,
+        1.143
+      ]
+    },
+    {
+      "ref": "TP12",
+      "pad": "1",
+      "net": "USB_D-",
+      "centre_device_xy": [
+        55.19726,
+        7.404
+      ],
+      "size_xy": [
+        1.143,
+        1.143
+      ]
+    }
+  ],
+  "excluded_offboard_source_objects": [
+    {
+      "ref": "U15",
+      "value": "~",
+      "native_xy": [
+        173.606968,
+        192.606682
+      ],
+      "note": "Unplaced source object outside physical stock-board outline;excluded from occupied model."
+    },
+    {
+      "ref": "U12",
+      "value": "~",
+      "native_xy": [
+        169.084752,
+        192.469773
+      ],
+      "note": "Unplaced source object outside physical stock-board outline;excluded from occupied model."
+    },
+    {
+      "ref": "U13",
+      "value": "~",
+      "native_xy": [
+        162.223704,
+        189.472824
+      ],
+      "note": "Unplaced source object outside physical stock-board outline;excluded from occupied model."
+    },
+    {
+      "ref": "U11",
+      "value": "~",
+      "native_xy": [
+        166.305992,
+        188.153805
+      ],
+      "note": "Unplaced source object outside physical stock-board outline;excluded from occupied model."
+    },
+    {
+      "ref": "U17",
+      "value": "~",
+      "native_xy": [
+        162.223704,
+        192.706752
+      ],
+      "note": "Unplaced source object outside physical stock-board outline;excluded from occupied model."
+    },
+    {
+      "ref": "U16",
+      "value": "~",
+      "native_xy": [
+        164.686968,
+        192.606682
+      ],
+      "note": "Unplaced source object outside physical stock-board outline;excluded from occupied model."
+    }
+  ],
+  "contact_overlap_conflicts": [],
+  "all_contact_rectangles_clear_of_copper_and_component_bounds": true,
+  "adafruit_outline_wires": [
+    {
+      "x1": "20.32",
+      "y1": "11.43",
+      "x2": "20.32",
+      "y2": "2.54",
+      "width": "0",
+      "layer": "20"
+    },
+    {
+      "x1": "20.32",
+      "y1": "2.54",
+      "x2": "17.78",
+      "y2": "0",
+      "width": "0",
+      "layer": "20",
+      "curve": "-90"
+    },
+    {
+      "x1": "17.78",
+      "y1": "0",
+      "x2": "2.54",
+      "y2": "0",
+      "width": "0",
+      "layer": "20"
+    },
+    {
+      "x1": "2.54",
+      "y1": "0",
+      "x2": "0",
+      "y2": "2.54",
+      "width": "0",
+      "layer": "20",
+      "curve": "-90"
+    },
+    {
+      "x1": "0",
+      "y1": "2.54",
+      "x2": "0",
+      "y2": "11.43",
+      "width": "0",
+      "layer": "20"
+    },
+    {
+      "x1": "0",
+      "y1": "11.43",
+      "x2": "2.54",
+      "y2": "13.97",
+      "width": "0",
+      "layer": "20",
+      "curve": "-90"
+    },
+    {
+      "x1": "2.54",
+      "y1": "13.97",
+      "x2": "17.78",
+      "y2": "13.97",
+      "width": "0",
+      "layer": "20"
+    },
+    {
+      "x1": "17.78",
+      "y1": "13.97",
+      "x2": "20.32",
+      "y2": "11.43",
+      "width": "0",
+      "layer": "20",
+      "curve": "-90"
+    }
+  ],
+  "adafruit_signals": {
+    "GND": [
+      {
+        "element": "X1",
+        "pad": "B1A12"
+      },
+      {
+        "element": "X1",
+        "pad": "A1B12"
+      },
+      {
+        "element": "JP1",
+        "pad": "1"
+      },
+      {
+        "element": "R1",
+        "pad": "1"
+      },
+      {
+        "element": "R2",
+        "pad": "1"
+      }
+    ],
+    "VBUS": [
+      {
+        "element": "X1",
+        "pad": "B4A9"
+      },
+      {
+        "element": "X1",
+        "pad": "A4B9"
+      },
+      {
+        "element": "JP1",
+        "pad": "2"
+      }
+    ],
+    "D+": [
+      {
+        "element": "X1",
+        "pad": "B6"
+      },
+      {
+        "element": "X1",
+        "pad": "A6"
+      },
+      {
+        "element": "JP1",
+        "pad": "6"
+      }
+    ],
+    "D-": [
+      {
+        "element": "X1",
+        "pad": "A7"
+      },
+      {
+        "element": "X1",
+        "pad": "B7"
+      },
+      {
+        "element": "JP1",
+        "pad": "5"
+      }
+    ],
+    "CC1": [
+      {
+        "element": "X1",
+        "pad": "A5"
+      },
+      {
+        "element": "JP1",
+        "pad": "4"
+      },
+      {
+        "element": "R2",
+        "pad": "2"
+      }
+    ],
+    "CC2": [
+      {
+        "element": "X1",
+        "pad": "B5"
+      },
+      {
+        "element": "JP1",
+        "pad": "8"
+      },
+      {
+        "element": "R1",
+        "pad": "2"
+      }
+    ]
+  },
+  "adafruit_resistors": [
+    {
+      "name": "R1",
+      "library": "microbuilder",
+      "deviceset": "RESISTOR",
+      "device": "_0603_NOOUT",
+      "value": "5.1K"
+    },
+    {
+      "name": "R2",
+      "library": "microbuilder",
+      "deviceset": "RESISTOR",
+      "device": "_0603_NOOUT",
+      "value": "5.1K"
+    }
+  ],
+  "xiao_capacitors": [
+    {
+      "ref": "C15",
+      "value": "4.7uF",
+      "nets": [
+        "VSYS",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C11",
+      "value": "100nF",
+      "nets": [
+        "VSYS_3V3",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C16",
+      "value": "100nF",
+      "nets": [
+        "GND",
+        "RGB_EN"
+      ]
+    },
+    {
+      "ref": "C12",
+      "value": "100nF",
+      "nets": [
+        "VSYS_3V3",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C4",
+      "value": "100nF",
+      "nets": [
+        "Net-(U2-VOUT)",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C24",
+      "value": "100nF",
+      "nets": [
+        "RUN",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C21",
+      "value": "22pF",
+      "nets": [
+        "XIN",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C9",
+      "value": "100nF",
+      "nets": [
+        "RP2040_1V1",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C26",
+      "value": "100nF",
+      "nets": [
+        "VBUS",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C13",
+      "value": "100nF",
+      "nets": [
+        "VSYS_3V3",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C14",
+      "value": "100nF",
+      "nets": [
+        "VSYS",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C10",
+      "value": "100nF",
+      "nets": [
+        "VSYS_3V3",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C2",
+      "value": "1uF",
+      "nets": [
+        "VBUS",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C22",
+      "value": "22pF",
+      "nets": [
+        "Net-(C22-Pad1)",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C6",
+      "value": "10uF",
+      "nets": [
+        "VSYS_3V3",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C17",
+      "value": "1uF",
+      "nets": [
+        "Net-(RGB1-VDD)",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C1",
+      "value": "100nF",
+      "nets": [
+        "Net-(U6-VIN)",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C3",
+      "value": "1uF",
+      "nets": [
+        "VBAT",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C8",
+      "value": "100nF",
+      "nets": [
+        "RP2040_1V1",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C7",
+      "value": "1uF",
+      "nets": [
+        "RP2040_1V1",
+        "GND"
+      ]
+    },
+    {
+      "ref": "C5",
+      "value": "10uF",
+      "nets": [
+        "VSYS",
+        "GND"
+      ]
+    }
+  ],
+  "f_component_boxes": [
+    {
+      "ref": "D1",
+      "kind": "component-bound",
+      "box": [
+        55.165,
+        6.02174,
+        55.793,
+        7.15774
+      ]
+    },
+    {
+      "ref": "C15",
+      "kind": "component-bound",
+      "box": [
+        49.69161,
+        5.0392,
+        51.14581,
+        5.7344
+      ]
+    },
+    {
+      "ref": "U10",
+      "kind": "component-bound",
+      "box": [
+        44.56914,
+        7.1394,
+        45.67764,
+        8.2479
+      ]
+    },
+    {
+      "ref": "R22",
+      "kind": "component-bound",
+      "box": [
+        52.79176,
+        14.3225,
+        53.72276,
+        14.8455
+      ]
+    },
+    {
+      "ref": "R4",
+      "kind": "component-bound",
+      "box": [
+        53.98328,
+        8.87332,
+        54.91428,
+        9.39632
+      ]
+    },
+    {
+      "ref": "R21",
+      "kind": "component-bound",
+      "box": [
+        50.03176,
+        14.2625,
+        50.96276,
+        14.7855
+      ]
+    },
+    {
+      "ref": "U7",
+      "kind": "component-bound",
+      "box": [
+        53.59995,
+        2.37481,
+        55.91345,
+        5.86331
+      ]
+    },
+    {
+      "ref": "U6",
+      "kind": "component-bound",
+      "box": [
+        51.63339,
+        4.76088,
+        52.74189,
+        5.86938
+      ]
+    },
+    {
+      "ref": "R13",
+      "kind": "component-bound",
+      "box": [
+        44.76714,
+        11.81667,
+        45.69814,
+        12.33967
+      ]
+    },
+    {
+      "ref": "R15",
+      "kind": "component-bound",
+      "box": [
+        54.8926,
+        12.64877,
+        55.8236,
+        13.17177
+      ]
+    },
+    {
+      "ref": "C11",
+      "kind": "component-bound",
+      "box": [
+        54.25049,
+        6.01836,
+        55.18149,
+        6.54136
+      ]
+    },
+    {
+      "ref": "C16",
+      "kind": "component-bound",
+      "box": [
+        44.76918,
+        9.10496,
+        45.70018,
+        9.62796
+      ]
+    },
+    {
+      "ref": "K2",
+      "kind": "component-bound",
+      "box": [
+        41.06346,
+        11.171,
+        43.81586,
+        15.271
+      ]
+    },
+    {
+      "ref": "C12",
+      "kind": "component-bound",
+      "box": [
+        53.87507,
+        12.6508,
+        54.80607,
+        13.1738
+      ]
+    },
+    {
+      "ref": "R17",
+      "kind": "component-bound",
+      "box": [
+        46.99676,
+        14.2725,
+        47.92776,
+        14.7955
+      ]
+    },
+    {
+      "ref": "D2",
+      "kind": "component-bound",
+      "box": [
+        59.72436,
+        1.939,
+        61.88336,
+        2.955
+      ]
+    },
+    {
+      "ref": "R6",
+      "kind": "component-bound",
+      "box": [
+        45.63427,
+        13.93448,
+        46.15727,
+        14.86548
+      ]
+    },
+    {
+      "ref": "D3",
+      "kind": "component-bound",
+      "box": [
+        59.72436,
+        14.413,
+        61.88336,
+        15.429
+      ]
+    },
+    {
+      "ref": "R9",
+      "kind": "component-bound",
+      "box": [
+        52.38896,
+        2.7374,
+        52.91196,
+        3.6684
+      ]
+    },
+    {
+      "ref": "R8",
+      "kind": "component-bound",
+      "box": [
+        51.79482,
+        5.91676,
+        52.72582,
+        6.43976
+      ]
+    },
+    {
+      "ref": "C4",
+      "kind": "component-bound",
+      "box": [
+        44.53292,
+        13.93012,
+        45.05592,
+        14.86112
+      ]
+    },
+    {
+      "ref": "C24",
+      "kind": "component-bound",
+      "box": [
+        44.63485,
+        2.50423,
+        45.15785,
+        3.43523
+      ]
+    },
+    {
+      "ref": "C21",
+      "kind": "component-bound",
+      "box": [
+        45.74176,
+        5.9725,
+        46.67276,
+        6.4955
+      ]
+    },
+    {
+      "ref": "U5",
+      "kind": "component-bound",
+      "box": [
+        54.59487,
+        13.51939,
+        55.82987,
+        14.80939
+      ]
+    },
+    {
+      "ref": "R20",
+      "kind": "component-bound",
+      "box": [
+        45.63833,
+        12.91137,
+        46.16133,
+        13.84237
+      ]
+    },
+    {
+      "ref": "R1",
+      "kind": "component-bound",
+      "box": [
+        55.22258,
+        10.999,
+        55.74558,
+        11.93
+      ]
+    },
+    {
+      "ref": "R7",
+      "kind": "component-bound",
+      "box": [
+        52.74782,
+        5.91371,
+        53.67882,
+        6.43671
+      ]
+    },
+    {
+      "ref": "U14",
+      "kind": "component-bound",
+      "box": [
+        46.24588,
+        6.47889,
+        53.86938,
+        14.11739
+      ]
+    },
+    {
+      "ref": "C9",
+      "kind": "component-bound",
+      "box": [
+        53.9843,
+        9.77248,
+        54.9153,
+        10.29548
+      ]
+    },
+    {
+      "ref": "C26",
+      "kind": "component-bound",
+      "box": [
+        51.7999,
+        4.39784,
+        52.7309,
+        4.92084
+      ]
+    },
+    {
+      "ref": "R10",
+      "kind": "component-bound",
+      "box": [
+        51.20227,
+        5.06048,
+        51.72527,
+        5.99148
+      ]
+    },
+    {
+      "ref": "C13",
+      "kind": "component-bound",
+      "box": [
+        48.94189,
+        14.27945,
+        49.87289,
+        14.80245
+      ]
+    },
+    {
+      "ref": "U2",
+      "kind": "component-bound",
+      "box": [
+        44.51075,
+        12.94733,
+        45.61925,
+        14.05583
+      ]
+    },
+    {
+      "ref": "C14",
+      "kind": "component-bound",
+      "box": [
+        49.95016,
+        5.7542,
+        50.88116,
+        6.2772
+      ]
+    },
+    {
+      "ref": "C10",
+      "kind": "component-bound",
+      "box": [
+        48.2632,
+        5.9198,
+        49.1942,
+        6.4428
+      ]
+    },
+    {
+      "ref": "U18",
+      "kind": "component-bound",
+      "box": [
+        44.42441,
+        9.48704,
+        46.01291,
+        11.23054
+      ]
+    },
+    {
+      "ref": "R3",
+      "kind": "component-bound",
+      "box": [
+        51.83016,
+        2.7374,
+        52.35316,
+        3.6684
+      ]
+    },
+    {
+      "ref": "U1",
+      "kind": "component-bound",
+      "box": [
+        54.01396,
+        7.53047,
+        55.03396,
+        8.81047
+      ]
+    },
+    {
+      "ref": "Q1",
+      "kind": "component-bound",
+      "box": [
+        53.73726,
+        13.784,
+        54.41726,
+        14.864
+      ]
+    },
+    {
+      "ref": "U8",
+      "kind": "component-bound",
+      "box": [
+        49.324,
+        2.59109,
+        51.474,
+        5.00809
+      ]
+    },
+    {
+      "ref": "C2",
+      "kind": "component-bound",
+      "box": [
+        54.27792,
+        6.95612,
+        55.20892,
+        7.47912
+      ]
+    },
+    {
+      "ref": "C22",
+      "kind": "component-bound",
+      "box": [
+        44.75176,
+        5.9725,
+        45.68276,
+        6.4955
+      ]
+    },
+    {
+      "ref": "C6",
+      "kind": "component-bound",
+      "box": [
+        47.59114,
+        3.21649,
+        49.04534,
+        3.91169
+      ]
+    },
+    {
+      "ref": "D6",
+      "kind": "component-bound",
+      "box": [
+        55.17212,
+        8.12181,
+        55.80012,
+        9.25781
+      ]
+    },
+    {
+      "ref": "R19",
+      "kind": "component-bound",
+      "box": [
+        53.88171,
+        11.5783,
+        54.81271,
+        12.1013
+      ]
+    },
+    {
+      "ref": "R12",
+      "kind": "component-bound",
+      "box": [
+        45.16926,
+        2.50321,
+        45.69226,
+        3.43421
+      ]
+    },
+    {
+      "ref": "C17",
+      "kind": "component-bound",
+      "box": [
+        44.76714,
+        8.23933,
+        45.69814,
+        8.76233
+      ]
+    },
+    {
+      "ref": "R5",
+      "kind": "component-bound",
+      "box": [
+        45.06632,
+        13.93012,
+        45.58932,
+        14.86112
+      ]
+    },
+    {
+      "ref": "K1",
+      "kind": "component-bound",
+      "box": [
+        41.06346,
+        2.0546,
+        43.81586,
+        6.1546
+      ]
+    },
+    {
+      "ref": "R14",
+      "kind": "component-bound",
+      "box": [
+        52.93506,
+        2.7374,
+        53.45806,
+        3.6684
+      ]
+    },
+    {
+      "ref": "R18",
+      "kind": "component-bound",
+      "box": [
+        53.88239,
+        11.03841,
+        54.81339,
+        11.56141
+      ]
+    },
+    {
+      "ref": "C1",
+      "kind": "component-bound",
+      "box": [
+        52.80247,
+        4.41736,
+        53.32547,
+        5.34836
+      ]
+    },
+    {
+      "ref": "RGB1",
+      "kind": "component-bound",
+      "box": [
+        41.37366,
+        7.684,
+        43.24966,
+        9.8865
+      ]
+    },
+    {
+      "ref": "U3",
+      "kind": "component-bound",
+      "box": [
+        47.49458,
+        3.77696,
+        48.91408,
+        5.09046
+      ]
+    },
+    {
+      "ref": "R16",
+      "kind": "component-bound",
+      "box": [
+        47.95676,
+        14.2725,
+        48.88776,
+        14.7955
+      ]
+    },
+    {
+      "ref": "C3",
+      "kind": "component-bound",
+      "box": [
+        53.74227,
+        6.55604,
+        54.26527,
+        7.48704
+      ]
+    },
+    {
+      "ref": "C8",
+      "kind": "component-bound",
+      "box": [
+        53.87294,
+        12.11232,
+        54.80394,
+        12.63532
+      ]
+    },
+    {
+      "ref": "X3",
+      "kind": "component-bound",
+      "box": [
+        44.72389,
+        3.44572,
+        47.66139,
+        5.87922
+      ]
+    },
+    {
+      "ref": "C7",
+      "kind": "component-bound",
+      "box": [
+        44.76511,
+        11.26396,
+        45.69611,
+        11.78696
+      ]
+    },
+    {
+      "ref": "D5",
+      "kind": "component-bound",
+      "box": [
+        55.17008,
+        9.8419,
+        55.79808,
+        10.9779
+      ]
+    },
+    {
+      "ref": "R11",
+      "kind": "component-bound",
+      "box": [
+        44.76206,
+        6.52534,
+        45.69306,
+        7.04834
+      ]
+    },
+    {
+      "ref": "R2",
+      "kind": "component-bound",
+      "box": [
+        55.22055,
+        7.15243,
+        55.74355,
+        8.08343
+      ]
+    },
+    {
+      "ref": "C5",
+      "kind": "component-bound",
+      "box": [
+        47.58606,
+        5.18042,
+        49.04026,
+        5.87562
+      ]
+    }
+  ],
+  "scope": "XY pad/body bounding-box check only;no source3D-model heights,actual parts or solder envelopes measured."
+}

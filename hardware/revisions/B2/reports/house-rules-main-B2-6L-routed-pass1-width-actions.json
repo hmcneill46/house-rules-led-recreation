@@ -1,0 +1,127 @@
+[
+  {
+    "net": "COL5_GATE",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "COL5_GATE",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "COL3_GATE",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "COL3_GATE",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "SW_3V3",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "SW_3V3",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "BLANK",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "BLANK",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "LAT",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "LAT",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "CT_5V",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "CT_5V",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "DRIVER_EN",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "DRIVER_EN",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "D3_ROW10_K",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "D3_ROW10_K",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "COL3_A",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "COL3_A",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "COL5_A",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "COL5_A",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "COL4_A",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "COL4_A",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  },
+  {
+    "net": "D2_ROW6_K",
+    "before_mm": 0.075,
+    "after_mm": 0.11
+  },
+  {
+    "net": "D2_ROW6_K",
+    "before_mm": 0.075,
+    "after_mm": 0.11
+  },
+  {
+    "net": "D2_ROW6_K",
+    "before_mm": 0.09,
+    "after_mm": 0.11
+  }
+]

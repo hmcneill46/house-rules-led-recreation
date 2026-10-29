@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-29",
+  "status": "UNROUTED COST STUDY ONLY; no order or payment submitted",
+  "source": "Signed-in official JLCONE desktop UI, fresh Gerber/BOM/CPL upload",
+  "scope": "Original 49-SMT-component B2 baseline; excludes later BC1.2 additions and capacitor substitution",
+  "board": {
+    "width_mm": 88.4,
+    "height_mm": 17.3,
+    "layers": 6,
+    "thickness_mm": 1.6,
+    "color": "Green",
+    "surface_finish": "ENIG, 1U gold",
+    "outer_copper_oz": 1,
+    "inner_copper_oz": 0.5,
+    "material": "FR4 TG135",
+    "ordinary_via_hole_mm": 0.3,
+    "ordinary_via_pad_mm": 0.6,
+    "via_cover": "Epoxy Filled & Capped",
+    "via_cover_charge_usd": 0,
+    "deburr": false,
+    "bare_pcb_quantity": 5,
+    "assembly_quantity": 2,
+    "assembly": "Economic, bottom side",
+    "factory_component_count_per_board": 49,
+    "matched_bom_groups": 16,
+    "owner_leds_and_wire_pads_excluded": true,
+    "manual_production_file_review": true,
+    "manual_placement_review": true,
+    "factory_depanel_requested": true
+  },
+  "currency": "USD",
+  "fabrication": {
+    "base": 32.00,
+    "enig_finish": 16.80,
+    "enig_area": 0.08,
+    "production_file_review": 1.05,
+    "total": 49.93
+  },
+  "assembly": {
+    "setup": 8.24,
+    "stencil": 1.55,
+    "panel": 0.00,
+    "large_size": 0.00,
+    "components_including_required_spares": 16.38,
+    "extended_component_fees": 21.63,
+    "smt_placement": 0.90,
+    "placement_review": 0.45,
+    "nitrogen_reflow": 0.86,
+    "depanel": 2.32,
+    "total": 52.34,
+    "note": "Displayed rounded components add to52.33; the authoritative UI total is52.34."
+  },
+  "merchandise_total": 102.27,
+  "checkout_before_coupon": [
+    {
+      "route": "Global Standard Direct Line",
+      "delivery_business_days": "8-12",
+      "tax_treatment": "UK-VAT collected by JLCPCB",
+      "shipping_original": 5.90,
+      "shipping_payable_promotion": 1.50,
+      "customs_duties_and_taxes": 20.76,
+      "grand_total": 124.53,
+      "evidence": "native-6L-directline-vat-before-coupon.png"
+    },
+    {
+      "route": "DHL Express",
+      "delivery_business_days": "2-4",
+      "tax_treatment": "UK-VAT collected by JLCPCB",
+      "shipping_original": 24.41,
+      "shipping_payable_promotion": 18.00,
+      "customs_duties_and_taxes": 24.06,
+      "grand_total": 144.33,
+      "evidence": "native-6L-dhl-vat-before-coupon.png"
+    }
+  ],
+  "coupon": {
+    "claimed_offer": "JLCONE High-Layer PCB30USD",
+    "cart_estimate_discount": 30.00,
+    "cart_merchandise": 102.27,
+    "cart_shipping_estimate": 18.00,
+    "cart_subtotal_excluding_checkout_vat": 90.27,
+    "evidence": "native-6L-cart-coupon30.png",
+    "conditions": "Six layers included; order above5USD excluding freight; freight above5USD; region restrictions; expiry2026-12-27; one promotional coupon per batch",
+    "final_payment_application": "UNCONFIRMED: checkout says apply coupons in payment section, after Submit Order",
+    "directline_promotion_interaction": "UNCONFIRMED: original freight5.90USD but payable promotion1.50USD; do not assume it satisfies freight>5USD",
+    "vat_after_coupon": "UNCONFIRMED; do not subtract30USD from pre-coupon grand totals and present as final tax-inclusive payment"
+  },
+  "retail_controller_and_usb": {
+    "currency": "GBP",
+    "one_set_products_including_vat": 7.39,
+    "one_set_shipping_estimate": 7.39,
+    "one_set_delivered_estimate": 14.78,
+    "two_sets_delivered_estimate": 22.17,
+    "source": "../../../../cost-down/module-shipping-quote.json",
+    "note": "Separate UK consumer purchases; no checkout/order/payment. Product VAT included; final retail checkout remains authoritative."
+  },
+  "limitations": [
+    "The uploaded boards are explicitly unrouted cost-study files, not manufacturing-ready boards.",
+    "No part rotations were approved or altered in this cost study.",
+    "Final routing, drill count, precise factory tooling/rail handling and engineering review can alter charges.",
+    "Final files must specify filling of0.3mm vias only; all84 owner LED0.9mm through-holes remain open.",
+    "Two assembled units need8 TLC59282RGER plus2 factory spare allowance; observed available order quantity10 is not reserved and must be rechecked.",
+    "Promotional shipping and coupons are alternatives under review; repeated usage and stacking are not guaranteed."
+  ],
+  "privacy": "Summary-only screenshots; no address, phone, email, account identifier or private checkout URL stored in this report."
+}

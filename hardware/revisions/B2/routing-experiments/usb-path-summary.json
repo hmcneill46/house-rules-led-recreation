@@ -1,0 +1,64 @@
+{
+  "DM": {
+    "trace_length_mm": 40.057433,
+    "ESD_join_mm": 0.77,
+    "escape_stubs_mm": 1.4300009999999999,
+    "via_layer_transitions": 6,
+    "legs": [
+      {
+        "label": "DM_connector_to_ESD",
+        "length_mm": 17.105441,
+        "routing_layers": [
+          "In3.Cu"
+        ]
+      },
+      {
+        "label": "DM_ESD_to_BC_CON",
+        "length_mm": 7.810434,
+        "routing_layers": [
+          "In3.Cu"
+        ]
+      },
+      {
+        "label": "DM_BC_HOST_to_MCU",
+        "length_mm": 12.941557,
+        "routing_layers": [
+          "In3.Cu"
+        ]
+      }
+    ]
+  },
+  "DP": {
+    "trace_length_mm": 39.695847,
+    "ESD_join_mm": 0.77,
+    "escape_stubs_mm": 2.382931,
+    "via_layer_transitions": 8,
+    "legs": [
+      {
+        "label": "DP_connector_to_ESD",
+        "length_mm": 18.752215,
+        "routing_layers": [
+          "In3.Cu",
+          "F.Cu"
+        ]
+      },
+      {
+        "label": "DP_ESD_to_BC_CON",
+        "length_mm": 7.112253,
+        "routing_layers": [
+          "In3.Cu",
+          "F.Cu"
+        ]
+      },
+      {
+        "label": "DP_BC_HOST_to_MCU",
+        "length_mm": 10.678448,
+        "routing_layers": [
+          "In3.Cu"
+        ]
+      }
+    ]
+  },
+  "Dplus_minus_length_difference_mm": 0.3615860000000026,
+  "scope": "PCB copper XY length. Via vertical barrel lengths, external wires, module traces and internal BQ switch excluded; no physical USB test performed."
+}

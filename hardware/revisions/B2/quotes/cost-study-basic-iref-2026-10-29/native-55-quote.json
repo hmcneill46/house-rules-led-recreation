@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-29",
+  "status": "UNRELEASED COST STUDY ONLY; no order or payment submitted",
+  "source": "Signed-in official JLCONE desktop UI; refreshed cart and existing saved UK shipping address",
+  "scope": {
+    "bare_boards": 5,
+    "assembled_boards": 2,
+    "factory_SMT_per_board": 55,
+    "BOM_groups": 18,
+    "layers": 6,
+    "IREF": "6.8k Basic C23212",
+    "one_uF_parts": "Basic C15849",
+    "BC12": "BQ24392RSER C128408",
+    "spec_sha256": "e3aaf3f1b4ad9ca8468e450a62830d0a29b824345e141d9a8c105f63878b9b6a",
+    "fabrication_reference": "quote-summary.json"
+  },
+  "currency": "USD",
+  "goods": {
+    "fabrication": 49.94,
+    "assembly": 49.91,
+    "total": 99.85
+  },
+  "cart_previews_excluding_VAT": [
+    {
+      "shipping_method": "DHL Express",
+      "shipping_payable": 18.0,
+      "coupon": 30.0,
+      "subtotal": 87.85,
+      "evidence": "native-55-cart-coupon30.png"
+    },
+    {
+      "shipping_method": "Global Standard Direct Line",
+      "shipping_original_cart_estimate": 5.04,
+      "shipping_payable_promotion": 1.5,
+      "coupon": 30.0,
+      "subtotal": 71.35,
+      "evidence": "native-55-cart-directline-coupon30.png"
+    }
+  ],
+  "actual_checkout_before_coupon": {
+    "shipping_method": "Global Standard Direct Line",
+    "business_days": "8-12",
+    "shipping_original": 5.88,
+    "shipping_payable_promotion": 1.5,
+    "goods": 99.85,
+    "JLC_collected_UK_VAT": 20.27,
+    "grand_total": 121.62,
+    "coupon_deducted": false,
+    "discount_field": "--",
+    "coupon_message": "Apply coupons in the payment section",
+    "evidence": "native-55-directline-vat-before-coupon.png"
+  },
+  "GBP_reference_estimate_before_coupon": {
+    "exchange_rate_from_same_goods_reference": 0.7496244366549825,
+    "JLC_delivered": 91.17,
+    "one_complete_display_plus_spare_assembled_main": 105.95,
+    "two_complete_displays": 113.34,
+    "retail_shipping_source": "../../../../cost-down/module-shipping-quote.json"
+  },
+  "coupon_status": {
+    "claimed": "JLCONE High-Layer PCB30USD",
+    "expiry": "2026-12-27",
+    "conditions": "Six layers included; order above5USD excluding freight; freight above5USD; region restrictions; one promotional coupon per batch",
+    "new55_part_cart_acceptance": "Cart estimate shows30USD off alongside1.50USD promotional freight for this exact55-part job.",
+    "final_payment_application": "UNCONFIRMED; no Submit Order or Review Before Payment clicked",
+    "VAT_after_coupon": "UNCONFIRMED; do not subtract30 from the pre-coupon grand total and call it a final payable price",
+    "promotion_opt_out": "No decline-promotion control found in native shipping step; normal-price eligibility was not forced.",
+    "stacking_reuse": "Final eligibility, promotion limits and repeat use are not guaranteed by the cart estimate."
+  },
+  "preservation": {
+    "selected_scope": "Only the new55-component B2 job; all older A1 and B2 jobs unselected and unchanged",
+    "orders_submitted": 0,
+    "payments_made": 0
+  },
+  "limitations": [
+    "Manufacturing files are unreleased, incomplete routing cost-study snapshots. Finished PCB must be re-exported and re-quoted.",
+    "Final assembler/CAM review, tooling rails, pin1 rotations and live stock remain release checks.",
+    "GBP is a reference conversion; actual charge isUSD and payment exchange rate/fees may differ.",
+    "Retail modules/postage are separate current estimates; solder/wire/screws/filament/cable/power supply/tools are extra."
+  ],
+  "privacy": "Only cropped summary screenshots saved; no address, phone, email, private checkout URL or account identifier in this report."
+}

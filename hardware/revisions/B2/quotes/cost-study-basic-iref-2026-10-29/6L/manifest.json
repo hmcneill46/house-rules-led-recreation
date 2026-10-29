@@ -1,0 +1,14 @@
+{
+  "status": "UNRELEASED COST STUDY ONLY \u2014 NEVER PRODUCTION",
+  "source_sha256": "07a763d5449db98cd35389d11c2b00b5e0f7345f49a9ad510170ebee5fc712fc",
+  "electrical_spec_sha256": "e3aaf3f1b4ad9ca8468e450a62830d0a29b824345e141d9a8c105f63878b9b6a",
+  "layers": 6,
+  "factory_component_count": 55,
+  "bom_groups": 18,
+  "physical_component_count": 82,
+  "connected_pin_name_parity": 327,
+  "warnings": [
+    "UNRELEASED COST STUDY ONLY. DO NOT ORDER OR MANUFACTURE. This quotation input is not a production release. The board may be incompletely routed; native placement rotations have not received factory review. Re-export and re-quote the approved, fully verified board before ordering.",
+    "Native bottom rotations require factory verification"
+  ]
+}
