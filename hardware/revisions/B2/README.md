@@ -81,5 +81,6 @@ Relevant sources and results:
 - [Independent physical-connection simulation](simulation/README.md)
 - [Firmware, tests and compiled UF2](firmware/README.md)
 - [Case assembly and printable models](mechanical/README.md)
+- [Ender-3 V3 KE / grey Hyper PLA case and fit-test G-code](printing/README.md)
 - [Stock module mechanical contract](stock-module-contract.json)
 - [USB/module power audit](reports/usb-suspend-module-audit.md)

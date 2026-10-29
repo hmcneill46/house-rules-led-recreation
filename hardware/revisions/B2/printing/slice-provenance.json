@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-29",
+  "slicer": "OrcaSlicer2.4.2 installed app",
+  "slicer_version_command": "OrcaSlicer --help",
+  "slicing_cli_output_note": "--export-3mf takes a basename appended to --outputdir; the successful commands use this behavior. Original source projects and final exported project/Gcode copies retained.",
+  "jobs": [
+    {
+      "job": "01_B2_FitTests_KE04_HyperPLA",
+      "slicer_exit_code": 0,
+      "command": [
+        "/Applications/OrcaSlicer.app/Contents/MacOS/OrcaSlicer",
+        "--datadir",
+        "/tmp/house-rules-b2-orca/fit-user",
+        "--slice",
+        "0",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--outputdir",
+        "/tmp/house-rules-b2-orca/fit",
+        "--export-3mf",
+        "01_B2_FitTests_KE04_HyperPLA-sliced.3mf",
+        "hardware/revisions/B2/printing/projects/01_B2_FitTests_KE04_HyperPLA.3mf"
+      ],
+      "log": "logs/01-fit-slice.log",
+      "files": {
+        "prepared_project": {
+          "path": "projects/01_B2_FitTests_KE04_HyperPLA.3mf",
+          "sha256": "1cac53caa82743e38fe9eb2e85060098d8c7944af8f61169fae2b4402d262a64"
+        },
+        "sliced_project": {
+          "path": "sliced-projects/01_B2_FitTests_KE04_HyperPLA.3mf",
+          "sha256": "22b74070a45f3516e60031279186237720cb427abe77fd5a5409a6bc67ecdb4d"
+        },
+        "Gcode": {
+          "path": "gcode/01_B2_FitTests_KE04_HyperPLA.gcode",
+          "sha256": "90f3fbf60e9de8512eddb04d132309766c1ef6c698614c8536530042d32ca920"
+        }
+      },
+      "embedded_Gcode_identical": true
+    },
+    {
+      "job": "02_B2_Shell_KE04_HyperPLA",
+      "slicer_exit_code": 0,
+      "command": [
+        "/Applications/OrcaSlicer.app/Contents/MacOS/OrcaSlicer",
+        "--datadir",
+        "/tmp/house-rules-b2-orca/shell-user",
+        "--slice",
+        "0",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--outputdir",
+        "/tmp/house-rules-b2-orca/shell",
+        "--export-3mf",
+        "02_B2_Shell_KE04_HyperPLA-sliced.3mf",
+        "hardware/revisions/B2/printing/projects/02_B2_Shell_KE04_HyperPLA.3mf"
+      ],
+      "log": "logs/02-shell-slice.log",
+      "files": {
+        "prepared_project": {
+          "path": "projects/02_B2_Shell_KE04_HyperPLA.3mf",
+          "sha256": "c4970577d32c5081bafe7315454fbbc577a060316c257532c78e8085df3a99e0"
+        },
+        "sliced_project": {
+          "path": "sliced-projects/02_B2_Shell_KE04_HyperPLA.3mf",
+          "sha256": "2e8d8e3b45e42f4c50d23b1c101f4e9e82efb0b1e4998abc59c579f6605379d7"
+        },
+        "Gcode": {
+          "path": "gcode/02_B2_Shell_KE04_HyperPLA.gcode",
+          "sha256": "30aa6f6dd68e39eb352fc457266d5acd62d0dde589506e737ee3ad6973d809d9"
+        }
+      },
+      "embedded_Gcode_identical": true
+    },
+    {
+      "job": "03_B2_BackAndCap_KE04_HyperPLA",
+      "slicer_exit_code": 0,
+      "command": [
+        "/Applications/OrcaSlicer.app/Contents/MacOS/OrcaSlicer",
+        "--datadir",
+        "/tmp/house-rules-b2-orca/back-user",
+        "--slice",
+        "0",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--outputdir",
+        "/tmp/house-rules-b2-orca/back",
+        "--export-3mf",
+        "03_B2_BackAndCap_KE04_HyperPLA-sliced.3mf",
+        "hardware/revisions/B2/printing/projects/03_B2_BackAndCap_KE04_HyperPLA.3mf"
+      ],
+      "log": "logs/03-back-slice.log",
+      "files": {
+        "prepared_project": {
+          "path": "projects/03_B2_BackAndCap_KE04_HyperPLA.3mf",
+          "sha256": "422ea1b703193aa6b3bf9e3272a216879175c2d1f63b99dfbb1e6f24278fb6f9"
+        },
+        "sliced_project": {
+          "path": "sliced-projects/03_B2_BackAndCap_KE04_HyperPLA.3mf",
+          "sha256": "24c79b5b215c392d7f00f68a66a08423b6a80698be4f4c07e5bf41731dbd0b48"
+        },
+        "Gcode": {
+          "path": "gcode/03_B2_BackAndCap_KE04_HyperPLA.gcode",
+          "sha256": "744965ed7a3b8124106d80f9821eefb62dd8cfc469a34bfd137d804397fef996"
+        }
+      },
+      "embedded_Gcode_identical": true
+    }
+  ],
+  "GUI_review": {
+    "all_three_complete_toolpaths_inspected": true,
+    "shell_internal_support_cross_section_inspected": true,
+    "screenshots": [
+      "previews/01-fit-tests-orca.png",
+      "previews/02-shell-orca.png",
+      "previews/02-shell-support-section-orca.png",
+      "previews/03-back-and-cap-orca.png"
+    ]
+  },
+  "printer_connection_or_execution": "None; files only. No phone-control or firmware development."
+}

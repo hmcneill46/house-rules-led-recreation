@@ -18,7 +18,7 @@ The USB-C port stays on the bottom toward the right when viewed from the display
 | `mcu-channel-fit-coupon.stl` | Small trial of the XIAO channel and M2 pilot | Base against bed |
 | `case-closure-fit-coupon.stl` | Two separate samples of the rear-cover bead and matching wall pocket | Both flat bases against bed |
 
-Print both coupons and an empty trial case before a final case. Use 100% scale and a calibrated printer; do not compensate a tight part by scaling the whole enclosure. A 0.4 mm nozzle, 0.2 mm layers and three walls are a reasonable prototype starting point. Supports should not be needed for the 1.2 mm channel ledges, short loom bridge or small rounded closure features, but inspect the slicer's layer preview. The geometry has not yet been printed. This folder supplies STLs, not newly validated printer G-code.
+Print both coupons and an empty trial case before a final case. Use 100% scale and a calibrated printer; do not compensate a tight part by scaling the whole enclosure. The [Ender-3 V3 KE / Hyper PLA print pack](../printing/README.md) now supplies three sliced G-code jobs and editable Orca projects, including a print-only 1.6 mm dummy PCB. Its shell job uses removable build-plate supports beneath the longer flat PCB ledges and an outside brim. The back, cap and coupons keep supports out of the narrow MCU channels and use slow bridging. The new geometry has been checked in the slicer but has not yet been physically printed.
 
 ## Additional assembly parts
 

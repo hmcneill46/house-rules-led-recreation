@@ -1,0 +1,13 @@
+{
+  "bundle": "B2_KE04_HyperPLA_PrintPack.zip",
+  "sha256": "c25b1cd7164d1e141aca575de8100af9ea0fa3d062d0554c3448f036fade66a1",
+  "entries": {
+    "PRINT_FIRST.txt": "e4f4b0153cb279877cb7f15fce9e0ba961ea41bc6d2be1dcf60360c39e73afb0",
+    "01_B2_FitTests_KE04_HyperPLA.gcode": "90f3fbf60e9de8512eddb04d132309766c1ef6c698614c8536530042d32ca920",
+    "02_B2_Shell_KE04_HyperPLA.gcode": "30aa6f6dd68e39eb352fc457266d5acd62d0dde589506e737ee3ad6973d809d9",
+    "03_B2_BackAndCap_KE04_HyperPLA.gcode": "744965ed7a3b8124106d80f9821eefb62dd8cfc469a34bfd137d804397fef996",
+    "independent-gcode-audit.json": "6ec94030b73fd9259c7446c7b692d20c29c3e322fcd96b510f343187cfad6a24"
+  },
+  "instruction": "Unzip, copy the three .gcode files to the printer USB drive; start manually.",
+  "printer_execution": "Not started"
+}

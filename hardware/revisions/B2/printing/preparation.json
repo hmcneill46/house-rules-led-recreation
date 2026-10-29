@@ -1,0 +1,315 @@
+{
+  "slicer": "OrcaSlicer2.4.2",
+  "printer": "Creality Ender-3 V3 KE 0.4 nozzle",
+  "filament": "Creality Hyper PLA GREY1.75mm",
+  "base_project": "hardware/printing/HouseRules_Fit_KE04_PLA.3mf",
+  "base_project_sha256": "c89d8f14e93a4fbb7648dc309beab6a8d3d30313f1c91dcc822eae0040b4b428",
+  "machine_start_end_preserved": true,
+  "jobs": {
+    "01_B2_FitTests_KE04_HyperPLA": {
+      "project": "projects/01_B2_FitTests_KE04_HyperPLA.3mf",
+      "project_sha256": "1cac53caa82743e38fe9eb2e85060098d8c7944af8f61169fae2b4402d262a64",
+      "objects": [
+        {
+          "source": "hardware/revisions/B2/printing/models/B2-main-board-fit-1p6mm.stl",
+          "sha256": "59a5e20dd3c4de93e0a6ee8e475d4a3e919db2669d7a7f9839ea04a35d562d03",
+          "triangles": 11100,
+          "size_mm": [
+            88.4,
+            17.3,
+            1.6
+          ],
+          "source_bounds_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              88.4,
+              17.3,
+              1.6
+            ]
+          ],
+          "plate_bounds_mm": [
+            [
+              65,
+              65,
+              0
+            ],
+            [
+              153.4,
+              82.3,
+              1.6
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "source": "hardware/revisions/B2/mechanical/mcu-channel-fit-coupon.stl",
+          "sha256": "7f7b609fb40f6c3aa99f3b5b3976fd423c8cd30a5c9071053362c5d020de4d3f",
+          "triangles": 216,
+          "size_mm": [
+            20.0,
+            8.0,
+            9.2
+          ],
+          "source_bounds_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              20.0,
+              8.0,
+              9.2
+            ]
+          ],
+          "plate_bounds_mm": [
+            [
+              80,
+              105,
+              0
+            ],
+            [
+              100.0,
+              113.0,
+              9.2
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "source": "hardware/revisions/B2/mechanical/case-closure-fit-coupon.stl",
+          "sha256": "e79da5c25e33ea82bdc35ee713c7a72d6442104af55c24323f8bec4d9fcfb367",
+          "triangles": 200,
+          "size_mm": [
+            24.0,
+            15.0,
+            10.8
+          ],
+          "source_bounds_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              24.0,
+              15.0,
+              10.8
+            ]
+          ],
+          "plate_bounds_mm": [
+            [
+              115,
+              102,
+              0
+            ],
+            [
+              139.0,
+              117.0,
+              10.8
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "source": "hardware/mechanical/pin-fit-scale-50mm.stl",
+          "sha256": "8407d5a158e01f16f075c1205059893b26de417170958225695eb6dd52e3255a",
+          "triangles": 12,
+          "size_mm": [
+            50.0,
+            10.0,
+            1.0
+          ],
+          "source_bounds_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              50.0,
+              10.0,
+              1.0
+            ]
+          ],
+          "plate_bounds_mm": [
+            [
+              85,
+              140,
+              0
+            ],
+            [
+              135.0,
+              150.0,
+              1.0
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "supports": false,
+      "outside_brim_mm": 0
+    },
+    "02_B2_Shell_KE04_HyperPLA": {
+      "project": "projects/02_B2_Shell_KE04_HyperPLA.3mf",
+      "project_sha256": "c4970577d32c5081bafe7315454fbbc577a060316c257532c78e8085df3a99e0",
+      "objects": [
+        {
+          "source": "hardware/revisions/B2/mechanical/enclosure-B2-PROTOTYPE-shell.stl",
+          "sha256": "d1b7faad5d6b38c7d02baf39b9056dc8ebaf30c1104adee4305f25b28a28fed9",
+          "triangles": 1072,
+          "size_mm": [
+            93.6,
+            22.599999999999998,
+            22.8
+          ],
+          "source_bounds_mm": [
+            [
+              -2.6,
+              -3.15,
+              0.0
+            ],
+            [
+              91.0,
+              19.45,
+              22.8
+            ]
+          ],
+          "plate_bounds_mm": [
+            [
+              63.2,
+              98.7,
+              0
+            ],
+            [
+              156.8,
+              121.3,
+              22.8
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "supports": true,
+      "outside_brim_mm": 3
+    },
+    "03_B2_BackAndCap_KE04_HyperPLA": {
+      "project": "projects/03_B2_BackAndCap_KE04_HyperPLA.3mf",
+      "project_sha256": "422ea1b703193aa6b3bf9e3272a216879175c2d1f63b99dfbb1e6f24278fb6f9",
+      "objects": [
+        {
+          "source": "hardware/revisions/B2/mechanical/enclosure-B2-PROTOTYPE-back.stl",
+          "sha256": "4b3ac4a0e8ca94bf7eef557dec8269c7bac1db770e0c938e9c7884fdbcb223bb",
+          "triangles": 2112,
+          "size_mm": [
+            93.6,
+            22.599999999999998,
+            12.95
+          ],
+          "source_bounds_mm": [
+            [
+              -2.6,
+              -3.15,
+              0.0
+            ],
+            [
+              91.0,
+              19.45,
+              12.95
+            ]
+          ],
+          "plate_bounds_mm": [
+            [
+              63.2,
+              85,
+              0
+            ],
+            [
+              156.8,
+              107.6,
+              12.95
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "source": "hardware/revisions/B2/mechanical/mcu-retaining-cap.stl",
+          "sha256": "fa04d3659826efa93705072197f2c3e69b091213efd1ae58d18ada81f252bb90",
+          "triangles": 232,
+          "size_mm": [
+            6.000000190735,
+            16.4,
+            4.200000572205
+          ],
+          "source_bounds_mm": [
+            [
+              -1.90735e-07,
+              0.0,
+              -5.72205e-07
+            ],
+            [
+              6.0,
+              16.4,
+              4.2
+            ]
+          ],
+          "plate_bounds_mm": [
+            [
+              100,
+              125,
+              0
+            ],
+            [
+              106.000000190735,
+              141.4,
+              4.200000572205
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "supports": false,
+      "outside_brim_mm": 0
+    }
+  },
+  "hardware_execution": "No printer connection or print started"
+}

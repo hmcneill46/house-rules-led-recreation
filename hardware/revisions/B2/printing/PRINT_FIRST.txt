@@ -1,0 +1,34 @@
+House Rules B2 — Ender-3 V3 KE / 0.4 mm nozzle / Hyper PLA grey 1.75 mm
+
+Unzip this pack, then copy the three .gcode files to the printer's USB drive.
+Start each print at the printer. These files are for PLA.
+
+Print 01 first: MCU channel, two-piece closure test, 1.6 mm dummy PCB and
+50 mm scale coupon. Estimate: 38m 22s / 4.80 g. Check the actual stock modules
+and measured dimensions before continuing.
+
+Print 02: shell, 52m 39s / 12.24 g. Gently remove the outside brim and the
+internal support strips. Keep the permanent PCB ledges intact.
+
+Print 03: back and retaining cap, 30m 49s / 4.77 g. No supports are placed
+inside the narrow MCU channels.
+
+Nozzle: 220 C first layer / 215 C thereafter. Bed: 60 C / 55 C.
+Model layers: 0.20 mm. Scale: 100%. Native KE homing, bed mesh, purge and
+parking are retained. Real heating and levelling add time to the estimates.
+No printer was connected to or started remotely.
+
+Stock boards: one of each per display, without fitted headers.
+Seeed XIAO RP2040 Plus (SKU 100059977):
+https://www.unmannedtechshop.co.uk/products/seeed-studio-xiao-rp2040-plus
+Adafruit 4090 USB-C downstream breakout:
+https://thepihut.com/products/adafruit-usb-c-breakout-board-downstream-connection-ada4090
+Leave any loose pin headers unfitted.
+
+Full support-removal, fit-test and assembly instructions:
+https://github.com/hmcneill46/house-rules-led-recreation/tree/main/hardware/revisions/B2/printing
+
+Dummy PCB: 88.4 x 17.3 x 1.6 mm, with 84 pin centres matching the PCB.
+Its 1.0 mm FDM holes differ from the real PCB's 0.90 mm finished holes.
+It does not simulate copper, components or solder. Test everything unpowered;
+do not force the cover against leads or misplaced boards.

@@ -1,0 +1,551 @@
+{
+  "result": "PASS",
+  "audited_at_utc": "2026-10-29T20:26:10.655445+00:00",
+  "scope": "Independent read-only parse of final executableGcode, nativeconfig comments and actualsliced3MF meshes. Onlythisreportwritten; no geometry/Gcode/PCB/firmware was changed.",
+  "printer": "Creality Ender-3 V3 KE with0.4mm nozzle",
+  "material": "Creality HyperPLA GREY1.75mm",
+  "preparation_sha256": "c4d4cbe8327a03ae06614b8e49f59f53920d7fd572b177eb47a8b4637b8c9f3d",
+  "jobs": {
+    "01_B2_FitTests_KE04_HyperPLA": {
+      "result": "PASS",
+      "gcode": "gcode/01_B2_FitTests_KE04_HyperPLA.gcode",
+      "gcode_sha256": "90f3fbf60e9de8512eddb04d132309766c1ef6c698614c8536530042d32ca920",
+      "sliced_project": "sliced-projects/01_B2_FitTests_KE04_HyperPLA.3mf",
+      "sliced_project_sha256": "22b74070a45f3516e60031279186237720cb427abe77fd5a5409a6bc67ecdb4d",
+      "embedded_Gcode_byte_identical": true,
+      "native_machine_start_end_match_proven_base": true,
+      "objects": [
+        {
+          "name": "B2-main-board-fit-1p6mm",
+          "bounds_mm": [
+            [
+              64.9999992,
+              65.00000038,
+              -1.199999999368373e-08
+            ],
+            [
+              153.4000008,
+              82.29999962000001,
+              1.6000000120000002
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_identity": true,
+          "connected_mesh_bodies": 1,
+          "actual_sliced_mesh_matches_original_STL_triangle_geometry": true,
+          "floating_point_vertex_tolerance_mm": 1e-05,
+          "maximum_observed_vertex_roundtrip_error_mm": 1.913908043372454e-06
+        },
+        {
+          "name": "mcu-channel-fit-coupon",
+          "bounds_mm": [
+            [
+              80.0,
+              105.0,
+              9.99999993922529e-08
+            ],
+            [
+              100.0,
+              113.0,
+              9.1999999
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_identity": true,
+          "connected_mesh_bodies": 1,
+          "actual_sliced_mesh_matches_original_STL_triangle_geometry": true,
+          "floating_point_vertex_tolerance_mm": 1e-05,
+          "maximum_observed_vertex_roundtrip_error_mm": 2.1473006357358396e-07
+        },
+        {
+          "name": "case-closure-fit-coupon",
+          "bounds_mm": [
+            [
+              115.0,
+              102.0,
+              -9.99999993922529e-08
+            ],
+            [
+              139.0,
+              117.0,
+              10.8000001
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_identity": true,
+          "connected_mesh_bodies": 2,
+          "actual_sliced_mesh_matches_original_STL_triangle_geometry": true,
+          "floating_point_vertex_tolerance_mm": 1e-05,
+          "maximum_observed_vertex_roundtrip_error_mm": 2.4433583388123646e-07
+        },
+        {
+          "name": "pin-fit-scale-50mm",
+          "bounds_mm": [
+            [
+              85.0,
+              140.0,
+              0.0
+            ],
+            [
+              135.0,
+              150.0,
+              1.0
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_identity": true,
+          "connected_mesh_bodies": 1,
+          "actual_sliced_mesh_matches_original_STL_triangle_geometry": true,
+          "floating_point_vertex_tolerance_mm": 1e-05,
+          "maximum_observed_vertex_roundtrip_error_mm": 0
+        }
+      ],
+      "objects_have_actual_extrusion": {
+        "pin-fit-scale-50mm_id_3_copy_0": 893,
+        "case-closure-fit-coupon_id_2_copy_0": 1379,
+        "mcu-channel-fit-coupon_id_1_copy_0": 2068,
+        "B2-main-board-fit-1p6mm_id_0_copy_0": 46390
+      },
+      "model_layer_height_mm": 0.2,
+      "support_independent_layers": false,
+      "support_layer_marker_count": 0,
+      "object_layer_marker_count": 54,
+      "header_total_layer_number": 54,
+      "all_motion_bounds_mm": [
+        [
+          -2.0,
+          0.0,
+          0.0
+        ],
+        [
+          153.19,
+          218.0,
+          35.8
+        ]
+      ],
+      "actual_print_extrusion_centerline_bounds_mm": [
+        [
+          65.21,
+          65.21,
+          0.2
+        ],
+        [
+          153.19,
+          149.79,
+          10.8
+        ]
+      ],
+      "native_purge_exception": "X=-2.0/-1.7 is the preserved stock KE purge line; all printed model/support/brim moves remain within220x220mm. G28 firmware homing/probing motion is not inferred from coordinate bounds.",
+      "temperature_commands": [
+        {
+          "command": "M140",
+          "S": 60.0,
+          "layer_marker": null
+        },
+        {
+          "command": "M190",
+          "S": 60.0,
+          "layer_marker": null
+        },
+        {
+          "command": "M104",
+          "S": 220.0,
+          "layer_marker": null
+        },
+        {
+          "command": "M109",
+          "S": 220.0,
+          "layer_marker": null
+        },
+        {
+          "command": "M104",
+          "S": 215.0,
+          "layer_marker": 0.4
+        },
+        {
+          "command": "M140",
+          "S": 55.0,
+          "layer_marker": 0.4
+        },
+        {
+          "command": "M104",
+          "S": 0.0,
+          "layer_marker": 10.8
+        },
+        {
+          "command": "M140",
+          "S": 0.0,
+          "layer_marker": 10.8
+        }
+      ],
+      "fan_S_commands": [
+        0.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        0.0,
+        0.0
+      ],
+      "print_feature_extrusion_segment_counts": {
+        "Inner wall": 25971,
+        "Outer wall": 11548,
+        "Bottom surface": 1337,
+        "Internal solid infill": 11182,
+        "Top surface": 680,
+        "Overhang wall": 12
+      },
+      "supports_enabled": false,
+      "build_plate_only_supports": false,
+      "brim": "none",
+      "bed_placement_is_by_layer": true,
+      "scale_and_rotation_verified_from_actual_sliced_3MF": true,
+      "closure_two_piece_actual_extrusion_check": {
+        "separate_mesh_bodies": 2,
+        "first_layer_extrusion_segments_first_piece": 79,
+        "first_layer_extrusion_segments_second_piece": 84,
+        "no_extrusion_across_the_gap": true
+      },
+      "estimated_time": "38m 22s",
+      "estimated_filament_g": 4.8,
+      "estimated_filament_mm": 1609.56
+    },
+    "02_B2_Shell_KE04_HyperPLA": {
+      "result": "PASS",
+      "gcode": "gcode/02_B2_Shell_KE04_HyperPLA.gcode",
+      "gcode_sha256": "30aa6f6dd68e39eb352fc457266d5acd62d0dde589506e737ee3ad6973d809d9",
+      "sliced_project": "sliced-projects/02_B2_Shell_KE04_HyperPLA.3mf",
+      "sliced_project_sha256": "2e8d8e3b45e42f4c50d23b1c101f4e9e82efb0b1e4998abc59c579f6605379d7",
+      "embedded_Gcode_byte_identical": true,
+      "native_machine_start_end_match_proven_base": true,
+      "objects": [
+        {
+          "name": "enclosure-B2-PROTOTYPE-shell",
+          "bounds_mm": [
+            [
+              63.2000008,
+              98.6999998,
+              4.000000011217253e-07
+            ],
+            [
+              156.7999992,
+              121.3000002,
+              22.7999996
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_identity": true,
+          "connected_mesh_bodies": 1,
+          "actual_sliced_mesh_matches_original_STL_triangle_geometry": true,
+          "floating_point_vertex_tolerance_mm": 1e-05,
+          "maximum_observed_vertex_roundtrip_error_mm": 1.8867962291605268e-06
+        }
+      ],
+      "objects_have_actual_extrusion": {
+        "enclosure-B2-PROTOTYPE-shell_id_0_copy_0": 15868
+      },
+      "model_layer_height_mm": 0.2,
+      "support_independent_layers": true,
+      "support_layer_marker_count": 26,
+      "object_layer_marker_count": 114,
+      "header_total_layer_number": 135,
+      "all_motion_bounds_mm": [
+        [
+          -2.0,
+          0.0,
+          0.0
+        ],
+        [
+          159.464,
+          218.0,
+          47.8
+        ]
+      ],
+      "actual_print_extrusion_centerline_bounds_mm": [
+        [
+          60.536,
+          96.037,
+          0.2
+        ],
+        [
+          159.464,
+          123.964,
+          22.8
+        ]
+      ],
+      "native_purge_exception": "X=-2.0/-1.7 is the preserved stock KE purge line; all printed model/support/brim moves remain within220x220mm. G28 firmware homing/probing motion is not inferred from coordinate bounds.",
+      "temperature_commands": [
+        {
+          "command": "M140",
+          "S": 60.0,
+          "layer_marker": null
+        },
+        {
+          "command": "M190",
+          "S": 60.0,
+          "layer_marker": null
+        },
+        {
+          "command": "M104",
+          "S": 220.0,
+          "layer_marker": null
+        },
+        {
+          "command": "M109",
+          "S": 220.0,
+          "layer_marker": null
+        },
+        {
+          "command": "M104",
+          "S": 215.0,
+          "layer_marker": 0.4
+        },
+        {
+          "command": "M140",
+          "S": 55.0,
+          "layer_marker": 0.4
+        },
+        {
+          "command": "M104",
+          "S": 0.0,
+          "layer_marker": 22.8
+        },
+        {
+          "command": "M140",
+          "S": 0.0,
+          "layer_marker": 22.8
+        }
+      ],
+      "fan_S_commands": [
+        0.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        0.0,
+        0.0
+      ],
+      "print_feature_extrusion_segment_counts": {
+        "Brim": 295,
+        "Support": 923,
+        "Inner wall": 8322,
+        "Outer wall": 4813,
+        "Overhang wall": 32,
+        "Internal solid infill": 107,
+        "Support interface": 1144,
+        "Top surface": 515,
+        "Bridge": 12
+      },
+      "supports_enabled": true,
+      "build_plate_only_supports": true,
+      "brim": "3mm outer-only",
+      "bed_placement_is_by_layer": true,
+      "scale_and_rotation_verified_from_actual_sliced_3MF": true,
+      "closure_two_piece_actual_extrusion_check": null,
+      "estimated_time": "52m 39s",
+      "estimated_filament_g": 12.24,
+      "estimated_filament_mm": 4103.26
+    },
+    "03_B2_BackAndCap_KE04_HyperPLA": {
+      "result": "PASS",
+      "gcode": "gcode/03_B2_BackAndCap_KE04_HyperPLA.gcode",
+      "gcode_sha256": "744965ed7a3b8124106d80f9821eefb62dd8cfc469a34bfd137d804397fef996",
+      "sliced_project": "sliced-projects/03_B2_BackAndCap_KE04_HyperPLA.3mf",
+      "sliced_project_sha256": "24c79b5b215c392d7f00f68a66a08423b6a80698be4f4c07e5bf41731dbd0b48",
+      "embedded_Gcode_byte_identical": true,
+      "native_machine_start_end_match_proven_base": true,
+      "objects": [
+        {
+          "name": "enclosure-B2-PROTOTYPE-back",
+          "bounds_mm": [
+            [
+              63.2000008,
+              84.9999998,
+              9.99999993922529e-08
+            ],
+            [
+              156.7999992,
+              107.6000002,
+              12.9499999
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_identity": true,
+          "connected_mesh_bodies": 1,
+          "actual_sliced_mesh_matches_original_STL_triangle_geometry": true,
+          "floating_point_vertex_tolerance_mm": 1e-05,
+          "maximum_observed_vertex_roundtrip_error_mm": 1.959821425926231e-06
+        },
+        {
+          "name": "mcu-retaining-cap",
+          "bounds_mm": [
+            [
+              100.0,
+              125.00000019,
+              -8.999999989711682e-08
+            ],
+            [
+              106.0,
+              141.39999981,
+              4.20000067
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_identity": true,
+          "connected_mesh_bodies": 1,
+          "actual_sliced_mesh_matches_original_STL_triangle_geometry": true,
+          "floating_point_vertex_tolerance_mm": 1e-05,
+          "maximum_observed_vertex_roundtrip_error_mm": 2.324041764054598e-07
+        }
+      ],
+      "objects_have_actual_extrusion": {
+        "mcu-retaining-cap_id_1_copy_0": 2309,
+        "enclosure-B2-PROTOTYPE-back_id_0_copy_0": 13566
+      },
+      "model_layer_height_mm": 0.2,
+      "support_independent_layers": false,
+      "support_layer_marker_count": 0,
+      "object_layer_marker_count": 65,
+      "header_total_layer_number": 65,
+      "all_motion_bounds_mm": [
+        [
+          -2.0,
+          0.0,
+          0.0
+        ],
+        [
+          156.59,
+          218.0,
+          38.0
+        ]
+      ],
+      "actual_print_extrusion_centerline_bounds_mm": [
+        [
+          63.41,
+          85.21,
+          0.2
+        ],
+        [
+          156.59,
+          141.19,
+          13.0
+        ]
+      ],
+      "native_purge_exception": "X=-2.0/-1.7 is the preserved stock KE purge line; all printed model/support/brim moves remain within220x220mm. G28 firmware homing/probing motion is not inferred from coordinate bounds.",
+      "temperature_commands": [
+        {
+          "command": "M140",
+          "S": 60.0,
+          "layer_marker": null
+        },
+        {
+          "command": "M190",
+          "S": 60.0,
+          "layer_marker": null
+        },
+        {
+          "command": "M104",
+          "S": 220.0,
+          "layer_marker": null
+        },
+        {
+          "command": "M109",
+          "S": 220.0,
+          "layer_marker": null
+        },
+        {
+          "command": "M104",
+          "S": 215.0,
+          "layer_marker": 0.4
+        },
+        {
+          "command": "M140",
+          "S": 55.0,
+          "layer_marker": 0.4
+        },
+        {
+          "command": "M104",
+          "S": 0.0,
+          "layer_marker": 13.0
+        },
+        {
+          "command": "M140",
+          "S": 0.0,
+          "layer_marker": 13.0
+        }
+      ],
+      "fan_S_commands": [
+        0.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        255.0,
+        0.0,
+        0.0
+      ],
+      "print_feature_extrusion_segment_counts": {
+        "Inner wall": 5592,
+        "Outer wall": 7333,
+        "Bottom surface": 365,
+        "Internal solid infill": 2295,
+        "Top surface": 266,
+        "Overhang wall": 24
+      },
+      "supports_enabled": false,
+      "build_plate_only_supports": false,
+      "brim": "none",
+      "bed_placement_is_by_layer": true,
+      "scale_and_rotation_verified_from_actual_sliced_3MF": true,
+      "closure_two_piece_actual_extrusion_check": null,
+      "estimated_time": "30m 49s",
+      "estimated_filament_g": 4.77,
+      "estimated_filament_mm": 1600.49
+    }
+  },
+  "total_estimated_filament_g": 21.81,
+  "total_estimated_filament_mm": 7313.31,
+  "limitations": [
+    "No printer connection or physicalprint was started; actual temperature calibration, adhesion, dimensional accuracy and snap force remain owner checks.",
+    "Slicer time and filament figures are estimates; heating, nativebedmesh calibration and print removal add time.",
+    "Shell supportlayers are independent of0.2mm objectlayers, so its135reported layers include support-only intermediateZ values.",
+    "Gcode motionbounds describe explicit moves; firmware homing/bedmesh macros execute printer-defined motion.",
+    "Printed1.6mm dummy is a geometry/thickness gauge with1.0mmFDM holes; it has no copper/components and does not certify real0.90mmPCBdrills or electricaloperation.",
+    "Supports/brim need removing from shell before fitchecks; keep the support-free back/MCUchannels clean and avoid forcingPLA snappoints."
+  ],
+  "errors": [],
+  "PCB_dummy_independent_check": {
+    "outline_mm": [
+      88.4,
+      17.3
+    ],
+    "thickness_mm": 1.6,
+    "unique_hole_centres": 84,
+    "matches_all_canonical_board_LED_centres": true,
+    "watertight_mesh": true,
+    "mesh_Euler_characteristic": -166,
+    "mesh_genus_through_holes": 84,
+    "FDM_hole_diameter_mm": 1.0,
+    "real_PCB_finished_hole_diameter_mm": 0.9,
+    "limitation": "Geometry/thickness gaugeonly; no copper/components, mechanicalor electricalPCBqualification."
+  }
+}
