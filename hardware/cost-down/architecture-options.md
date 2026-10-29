@@ -1,6 +1,8 @@
 # Cost-down architecture options — 29 October 2026
 
-Initial read-only engineering comparison. The frozen A1 CAD and manufacturing files were not changed. Prices are observations, not reservations or assembled/delivered quotes. **Implementation update:** [B2 electrical review](../revisions/B2/electrical-review.md) is now the authoritative chosen design: four TLC59282RGER QFNs (SSOP native clearance study failed), five PMOS switches driven directly by spare TLC sinks, three power switches including USB input soft start, and stock XIAO/USB modules. It targets ordinary four layers without filled/capped via-in-pad. The two-layer targets below are earlier estimates, not achieved routing or a fabrication quote.
+Initial read-only engineering comparison. The frozen A1 CAD and manufacturing files were not changed. **Implementation update:** [B2](../revisions/B2/README.md) is now the authoritative chosen and routed design: four TLC59282RGER QFNs (the SSOP clearance study failed), five PMOS switches driven by spare TLC sinks, three power switches, a BC1.2 detector and stock XIAO/USB modules. The finished board uses **six layers, 0.30 mm filled/capped vias and 55 factory SMT parts**. It passes native DRC/parity and the independent board audit. The current observed cost is about £113 for two complete displays delivered, VAT included, before coupons and minor assembly supplies; see B2 for quotation scope and remaining physical/factory checks.
+
+The sections below preserve the initial alternatives and planning targets. Their two/four-layer and SSOP recommendations were investigated and superseded; they are not instructions for building B2 or achieved quotations. Since this comparison, the seven-module printed fit passed and the owner confirmed the complete pin map/orientation of one module.
 
 ## Recommendation
 
