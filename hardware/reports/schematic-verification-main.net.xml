@@ -1,0 +1,3120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/kicad/house-rules-main.kicad_sch</source>
+    <date>2026-10-29T13:48:22</date>
+    <tool>Eeschema 10.0.7</tool>
+    <textvar name="PROJECT">House Rules</textvar>
+    <textvar name="REV">A1</textvar>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>House Rules / main PCB</title>
+        <company>House Rules recreation</company>
+        <rev>A1</rev>
+        <date>2026-10-29</date>
+        <source>house-rules-main.kicad_sch</source>
+        <comment number="1" value="ENGINEERING PROTOTYPE / validate module pin orientation before fabrication"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100n 50V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="C1" description=""/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>df469a87-4f5f-5c4c-8e95-0a0a0d12ca27</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>1u 16V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603B105K160CT</field>
+        <field name="LCSC">C108463</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="C2" description=""/>
+      <property name="MPN" value="0603B105K160CT"/>
+      <property name="LCSC" value="C108463"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e0898cd4-e365-5e6a-b88b-de32d6835b16</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>100n 50V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="C3" description=""/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a7a21d6d-1a0a-5fcd-a00d-1ad971195123</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>1u 16V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603B105K160CT</field>
+        <field name="LCSC">C108463</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="C4" description=""/>
+      <property name="MPN" value="0603B105K160CT"/>
+      <property name="LCSC" value="C108463"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bb363a95-28f2-5c9f-ac0d-74e96974b7b0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>100n 50V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="C5" description=""/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8a47c14a-aee2-5c6d-b897-3b251eb956f5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>1u 16V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603B105K160CT</field>
+        <field name="LCSC">C108463</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="C6" description=""/>
+      <property name="MPN" value="0603B105K160CT"/>
+      <property name="LCSC" value="C108463"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2100ddbf-70d2-5b91-9be9-ecbb64706fc0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>100n 50V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="C7" description=""/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>029302b6-c070-59e7-bef0-a2ae5eda3a9c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>1u 16V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603B105K160CT</field>
+        <field name="LCSC">C108463</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="C8" description=""/>
+      <property name="MPN" value="0603B105K160CT"/>
+      <property name="LCSC" value="C108463"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3d0f8e13-b9a9-587c-b560-f7323ee369e0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>1u 16V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603B105K160CT</field>
+        <field name="LCSC">C108463</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="C9" description=""/>
+      <property name="MPN" value="0603B105K160CT"/>
+      <property name="LCSC" value="C108463"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cefa07c2-b8ca-5ef8-a24a-53cb6059d8ea</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>2u2 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603ZC225KAT2A</field>
+        <field name="LCSC">C2179699</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="C10" description=""/>
+      <property name="MPN" value="0603ZC225KAT2A"/>
+      <property name="LCSC" value="C2179699"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>22469b46-e3b0-5cad-ab07-85172d0544d7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>100n 50V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="C11" description=""/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>27f84956-3851-5340-ab1b-61acf58942cd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>100n 50V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="C12" description=""/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8759fab5-5a6d-53b3-8190-9cbed421c0aa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>1u 16V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603B105K160CT</field>
+        <field name="LCSC">C108463</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="C13" description=""/>
+      <property name="MPN" value="0603B105K160CT"/>
+      <property name="LCSC" value="C108463"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>426ebfaf-3159-5db7-8642-7dc226a154a7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="DS1">
+      <value>LMD07057AUE-101B</value>
+      <footprint>HouseRules:LMD07057AUE-101B</footprint>
+      <datasheet>https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</datasheet>
+      <description>Owner supplied; fit after factory assembly</description>
+      <fields>
+        <field name="MPN">LMD07057AUE-101B</field>
+        <field name="LCSC"/>
+        <field name="Footprint">HouseRules:LMD07057AUE-101B</field>
+        <field name="Datasheet">https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</field>
+        <field name="Description">Owner supplied; fit after factory assembly</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="DS1" description="Owner supplied; fit after factory assembly"/>
+      <property name="MPN" value="LMD07057AUE-101B"/>
+      <property name="LCSC" value=""/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1e9b44f0-51e6-5f08-af54-eaa39b0c975c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="DS2">
+      <value>LMD07057AUE-101B</value>
+      <footprint>HouseRules:LMD07057AUE-101B</footprint>
+      <datasheet>https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</datasheet>
+      <description>Owner supplied; fit after factory assembly</description>
+      <fields>
+        <field name="MPN">LMD07057AUE-101B</field>
+        <field name="LCSC"/>
+        <field name="Footprint">HouseRules:LMD07057AUE-101B</field>
+        <field name="Datasheet">https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</field>
+        <field name="Description">Owner supplied; fit after factory assembly</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="DS2" description="Owner supplied; fit after factory assembly"/>
+      <property name="MPN" value="LMD07057AUE-101B"/>
+      <property name="LCSC" value=""/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d124e78f-b856-534f-b9ee-f0bb6b258a03</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="DS3">
+      <value>LMD07057AUE-101B</value>
+      <footprint>HouseRules:LMD07057AUE-101B</footprint>
+      <datasheet>https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</datasheet>
+      <description>Owner supplied; fit after factory assembly</description>
+      <fields>
+        <field name="MPN">LMD07057AUE-101B</field>
+        <field name="LCSC"/>
+        <field name="Footprint">HouseRules:LMD07057AUE-101B</field>
+        <field name="Datasheet">https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</field>
+        <field name="Description">Owner supplied; fit after factory assembly</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="DS3" description="Owner supplied; fit after factory assembly"/>
+      <property name="MPN" value="LMD07057AUE-101B"/>
+      <property name="LCSC" value=""/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5f4d7871-d188-5af9-ab3d-23957021677a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="DS4">
+      <value>LMD07057AUE-101B</value>
+      <footprint>HouseRules:LMD07057AUE-101B</footprint>
+      <datasheet>https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</datasheet>
+      <description>Owner supplied; fit after factory assembly</description>
+      <fields>
+        <field name="MPN">LMD07057AUE-101B</field>
+        <field name="LCSC"/>
+        <field name="Footprint">HouseRules:LMD07057AUE-101B</field>
+        <field name="Datasheet">https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</field>
+        <field name="Description">Owner supplied; fit after factory assembly</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="DS4" description="Owner supplied; fit after factory assembly"/>
+      <property name="MPN" value="LMD07057AUE-101B"/>
+      <property name="LCSC" value=""/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>88ca9b1c-5570-56bb-9c51-0ded57726639</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="DS5">
+      <value>LMD07057AUE-101B</value>
+      <footprint>HouseRules:LMD07057AUE-101B</footprint>
+      <datasheet>https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</datasheet>
+      <description>Owner supplied; fit after factory assembly</description>
+      <fields>
+        <field name="MPN">LMD07057AUE-101B</field>
+        <field name="LCSC"/>
+        <field name="Footprint">HouseRules:LMD07057AUE-101B</field>
+        <field name="Datasheet">https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</field>
+        <field name="Description">Owner supplied; fit after factory assembly</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="DS5" description="Owner supplied; fit after factory assembly"/>
+      <property name="MPN" value="LMD07057AUE-101B"/>
+      <property name="LCSC" value=""/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0fbc3e4d-0f76-5add-9098-d78a71f83853</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="DS6">
+      <value>LMD07057AUE-101B</value>
+      <footprint>HouseRules:LMD07057AUE-101B</footprint>
+      <datasheet>https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</datasheet>
+      <description>Owner supplied; fit after factory assembly</description>
+      <fields>
+        <field name="MPN">LMD07057AUE-101B</field>
+        <field name="LCSC"/>
+        <field name="Footprint">HouseRules:LMD07057AUE-101B</field>
+        <field name="Datasheet">https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</field>
+        <field name="Description">Owner supplied; fit after factory assembly</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="DS6" description="Owner supplied; fit after factory assembly"/>
+      <property name="MPN" value="LMD07057AUE-101B"/>
+      <property name="LCSC" value=""/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f1ad86d3-2c0d-5537-be48-cdff2eb26b3f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="DS7">
+      <value>LMD07057AUE-101B</value>
+      <footprint>HouseRules:LMD07057AUE-101B</footprint>
+      <datasheet>https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</datasheet>
+      <description>Owner supplied; fit after factory assembly</description>
+      <fields>
+        <field name="MPN">LMD07057AUE-101B</field>
+        <field name="LCSC"/>
+        <field name="Footprint">HouseRules:LMD07057AUE-101B</field>
+        <field name="Datasheet">https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</field>
+        <field name="Description">Owner supplied; fit after factory assembly</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="DS7" description="Owner supplied; fit after factory assembly"/>
+      <property name="MPN" value="LMD07057AUE-101B"/>
+      <property name="LCSC" value=""/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>abe6dee7-5b16-56bf-a85e-97a01402bafc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F1">
+      <value>750mA PPTC</value>
+      <footprint>Fuse:Fuse_1206_3216Metric</footprint>
+      <description>Fault protection, not USB current authorisation</description>
+      <fields>
+        <field name="MPN">SMD1206B075TF/16</field>
+        <field name="LCSC">C269118</field>
+        <field name="Footprint">Fuse:Fuse_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Fault protection, not USB current authorisation</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="F1" description="Fault protection, not USB current authorisation"/>
+      <property name="MPN" value="SMD1206B075TF/16"/>
+      <property name="LCSC" value="C269118"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c1cd982b-76bc-581d-906c-f70fc45cf2d0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>USB CARRIER</value>
+      <footprint>Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical</footprint>
+      <datasheet>https://www.jst.com/wp-content/uploads/2021/01/eSH.pdf</datasheet>
+      <description>Vertical 6 way straight-numbered harness to carrier; mated body clears LED leads</description>
+      <fields>
+        <field name="MPN">BM06B-SRSS-TB(LF)(SN)</field>
+        <field name="LCSC">C160392</field>
+        <field name="Footprint">Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical</field>
+        <field name="Datasheet">https://www.jst.com/wp-content/uploads/2021/01/eSH.pdf</field>
+        <field name="Description">Vertical 6 way straight-numbered harness to carrier; mated body clears LED leads</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="J1" description="Vertical 6 way straight-numbered harness to carrier; mated body clears LED leads"/>
+      <property name="MPN" value="BM06B-SRSS-TB(LF)(SN)"/>
+      <property name="LCSC" value="C160392"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f9592e48-7162-550d-b521-76fc16de3f2e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="MP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>47k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF4702T5E</field>
+        <field name="LCSC">C25819</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="R1" description=""/>
+      <property name="MPN" value="0603WAF4702T5E"/>
+      <property name="LCSC" value="C25819"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b08cc60d-235f-5de3-9364-5a8593bb0b19</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>47k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF4702T5E</field>
+        <field name="LCSC">C25819</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="R2" description=""/>
+      <property name="MPN" value="0603WAF4702T5E"/>
+      <property name="LCSC" value="C25819"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>afafac3e-af58-50bc-bcb4-771b35191651</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>47k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF4702T5E</field>
+        <field name="LCSC">C25819</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="R3" description=""/>
+      <property name="MPN" value="0603WAF4702T5E"/>
+      <property name="LCSC" value="C25819"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>372607f3-096b-5ea9-9b44-9f1f8230222e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>47k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF4702T5E</field>
+        <field name="LCSC">C25819</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="R4" description=""/>
+      <property name="MPN" value="0603WAF4702T5E"/>
+      <property name="LCSC" value="C25819"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>531345ef-1855-5d3a-9a3c-324846b153ec</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>2k2 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF2201T5E</field>
+        <field name="LCSC">C4190</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="R5" description=""/>
+      <property name="MPN" value="0603WAF2201T5E"/>
+      <property name="LCSC" value="C4190"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>73316923-c0af-57fa-a091-12b8e3930401</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>2k2 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF2201T5E</field>
+        <field name="LCSC">C4190</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="R6" description=""/>
+      <property name="MPN" value="0603WAF2201T5E"/>
+      <property name="LCSC" value="C4190"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>029b774f-c9e2-5538-ad75-c829b38d3445</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>100k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF1003T5E</field>
+        <field name="LCSC">C25803</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="R7" description=""/>
+      <property name="MPN" value="0603WAF1003T5E"/>
+      <property name="LCSC" value="C25803"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1ef3036b-0860-5c45-973c-e4f12724b439</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="R8" description=""/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>99ec0579-cc1a-5d4d-bb62-aa3163492114</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="R9" description=""/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cf12410b-db1e-5ab0-902b-adc0ea4e8946</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>47k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF4702T5E</field>
+        <field name="LCSC">C25819</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="R10" description=""/>
+      <property name="MPN" value="0603WAF4702T5E"/>
+      <property name="LCSC" value="C25819"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7afbaf15-f055-5259-b3fc-f845ee5f70d7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>47k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF4702T5E</field>
+        <field name="LCSC">C25819</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="R11" description=""/>
+      <property name="MPN" value="0603WAF4702T5E"/>
+      <property name="LCSC" value="C25819"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5d5c9ec4-1ae1-5405-9394-754516fa9608</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>47k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF4702T5E</field>
+        <field name="LCSC">C25819</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="R12" description=""/>
+      <property name="MPN" value="0603WAF4702T5E"/>
+      <property name="LCSC" value="C25819"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aed2365d-e8f4-548b-8aa0-3313396fa796</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>47k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF4702T5E</field>
+        <field name="LCSC">C25819</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="R13" description=""/>
+      <property name="MPN" value="0603WAF4702T5E"/>
+      <property name="LCSC" value="C25819"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>20e91f97-721d-596f-aa81-006d947ca2f6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>2k2 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>BOOT button current limiting; SWD clock stays directly connected to MCU</description>
+      <fields>
+        <field name="MPN">0603WAF2201T5E</field>
+        <field name="LCSC">C4190</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">BOOT button current limiting; SWD clock stays directly connected to MCU</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="R14" description="BOOT button current limiting; SWD clock stays directly connected to MCU"/>
+      <property name="MPN" value="0603WAF2201T5E"/>
+      <property name="LCSC" value="C4190"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>05fd8626-ef97-5914-b2e1-1d020ad2766f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW1">
+      <value>BOOT</value>
+      <footprint>Button_Switch_SMD:SW_SPST_EVQP7A</footprint>
+      <fields>
+        <field name="MPN">EVQP7A01P</field>
+        <field name="LCSC">C79167</field>
+        <field name="Footprint">Button_Switch_SMD:SW_SPST_EVQP7A</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="SW1" description=""/>
+      <property name="MPN" value="EVQP7A01P"/>
+      <property name="LCSC" value="C79167"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>18fdb9c2-f148-58fa-b09a-c2c79a721fe4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW2">
+      <value>RESET</value>
+      <footprint>Button_Switch_SMD:SW_SPST_EVQP7A</footprint>
+      <fields>
+        <field name="MPN">EVQP7A01P</field>
+        <field name="LCSC">C79167</field>
+        <field name="Footprint">Button_Switch_SMD:SW_SPST_EVQP7A</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="SW2" description=""/>
+      <property name="MPN" value="EVQP7A01P"/>
+      <property name="LCSC" value="C79167"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>471dc862-2908-57b4-8530-c3700aca3395</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP1">
+      <value>GND</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>SWD recovery test pad; do not externally power 3V3</description>
+      <fields>
+        <field name="MPN">GND</field>
+        <field name="LCSC"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">SWD recovery test pad; do not externally power 3V3</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="TP1" description="SWD recovery test pad; do not externally power 3V3"/>
+      <property name="MPN" value="GND"/>
+      <property name="LCSC" value=""/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6f8f2602-8879-5484-9e51-f107ca5a9e03</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP2">
+      <value>3V3</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>SWD recovery test pad; do not externally power 3V3</description>
+      <fields>
+        <field name="MPN">3V3</field>
+        <field name="LCSC"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">SWD recovery test pad; do not externally power 3V3</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="TP2" description="SWD recovery test pad; do not externally power 3V3"/>
+      <property name="MPN" value="3V3"/>
+      <property name="LCSC" value=""/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1684d8c2-4791-58ce-b051-b929011a28b5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP3">
+      <value>SWDIO</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>SWD recovery test pad; do not externally power 3V3</description>
+      <fields>
+        <field name="MPN">SWDIO</field>
+        <field name="LCSC"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">SWD recovery test pad; do not externally power 3V3</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="TP3" description="SWD recovery test pad; do not externally power 3V3"/>
+      <property name="MPN" value="SWDIO"/>
+      <property name="LCSC" value=""/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8de38503-7f1b-51b3-a516-e9c37c80f6e1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP4">
+      <value>SWCLK</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>SWD recovery test pad; do not externally power 3V3</description>
+      <fields>
+        <field name="MPN">SWCLK</field>
+        <field name="LCSC"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">SWD recovery test pad; do not externally power 3V3</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="TP4" description="SWD recovery test pad; do not externally power 3V3"/>
+      <property name="MPN" value="SWCLK"/>
+      <property name="LCSC" value=""/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bab41dad-c8ff-547d-8370-9a4fa87b3144</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP5">
+      <value>NRST</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>SWD recovery test pad; do not externally power 3V3</description>
+      <fields>
+        <field name="MPN">NRST</field>
+        <field name="LCSC"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">SWD recovery test pad; do not externally power 3V3</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="TP5" description="SWD recovery test pad; do not externally power 3V3"/>
+      <property name="MPN" value="NRST"/>
+      <property name="LCSC" value=""/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2e3ebb08-f995-5bcd-b4be-1c8c7270e6d0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP6">
+      <value>5V</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="MPN">5V</field>
+        <field name="LCSC"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="TP6" description=""/>
+      <property name="MPN" value="5V"/>
+      <property name="LCSC" value=""/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d673553-a739-50fb-8618-6b241ab4bc4a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>IS31FL3729-QFLS4-TR</value>
+      <footprint>Package_DFN_QFN:QFN-32-1EP_4x4mm_P0.4mm_EP2.65x2.65mm</footprint>
+      <datasheet>https://www.lumissil.com/assets/pdf/core/IS31FL3729_DS.pdf</datasheet>
+      <description>LED driver, address 0x34</description>
+      <fields>
+        <field name="MPN">IS31FL3729-QFLS4-TR</field>
+        <field name="LCSC">C2940549</field>
+        <field name="Footprint">Package_DFN_QFN:QFN-32-1EP_4x4mm_P0.4mm_EP2.65x2.65mm</field>
+        <field name="Datasheet">https://www.lumissil.com/assets/pdf/core/IS31FL3729_DS.pdf</field>
+        <field name="Description">LED driver, address 0x34</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="U1" description="LED driver, address 0x34"/>
+      <property name="MPN" value="IS31FL3729-QFLS4-TR"/>
+      <property name="LCSC" value="C2940549"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>32158ca6-869e-57e8-a0b0-d322d9e035cd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>IS31FL3729-QFLS4-TR</value>
+      <footprint>Package_DFN_QFN:QFN-32-1EP_4x4mm_P0.4mm_EP2.65x2.65mm</footprint>
+      <datasheet>https://www.lumissil.com/assets/pdf/core/IS31FL3729_DS.pdf</datasheet>
+      <description>LED driver, address 0x35</description>
+      <fields>
+        <field name="MPN">IS31FL3729-QFLS4-TR</field>
+        <field name="LCSC">C2940549</field>
+        <field name="Footprint">Package_DFN_QFN:QFN-32-1EP_4x4mm_P0.4mm_EP2.65x2.65mm</field>
+        <field name="Datasheet">https://www.lumissil.com/assets/pdf/core/IS31FL3729_DS.pdf</field>
+        <field name="Description">LED driver, address 0x35</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="U2" description="LED driver, address 0x35"/>
+      <property name="MPN" value="IS31FL3729-QFLS4-TR"/>
+      <property name="LCSC" value="C2940549"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>65dcff44-7e69-5c5a-b74f-0e0b7dfde276</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>IS31FL3729-QFLS4-TR</value>
+      <footprint>Package_DFN_QFN:QFN-32-1EP_4x4mm_P0.4mm_EP2.65x2.65mm</footprint>
+      <datasheet>https://www.lumissil.com/assets/pdf/core/IS31FL3729_DS.pdf</datasheet>
+      <description>LED driver, address 0x36</description>
+      <fields>
+        <field name="MPN">IS31FL3729-QFLS4-TR</field>
+        <field name="LCSC">C2940549</field>
+        <field name="Footprint">Package_DFN_QFN:QFN-32-1EP_4x4mm_P0.4mm_EP2.65x2.65mm</field>
+        <field name="Datasheet">https://www.lumissil.com/assets/pdf/core/IS31FL3729_DS.pdf</field>
+        <field name="Description">LED driver, address 0x36</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="U3" description="LED driver, address 0x36"/>
+      <property name="MPN" value="IS31FL3729-QFLS4-TR"/>
+      <property name="LCSC" value="C2940549"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b6b6b71a-0c18-5c21-875b-ce38d99e0b45</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>IS31FL3729-QFLS4-TR</value>
+      <footprint>Package_DFN_QFN:QFN-32-1EP_4x4mm_P0.4mm_EP2.65x2.65mm</footprint>
+      <datasheet>https://www.lumissil.com/assets/pdf/core/IS31FL3729_DS.pdf</datasheet>
+      <description>LED driver, address 0x37</description>
+      <fields>
+        <field name="MPN">IS31FL3729-QFLS4-TR</field>
+        <field name="LCSC">C2940549</field>
+        <field name="Footprint">Package_DFN_QFN:QFN-32-1EP_4x4mm_P0.4mm_EP2.65x2.65mm</field>
+        <field name="Datasheet">https://www.lumissil.com/assets/pdf/core/IS31FL3729_DS.pdf</field>
+        <field name="Description">LED driver, address 0x37</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="U4" description="LED driver, address 0x37"/>
+      <property name="MPN" value="IS31FL3729-QFLS4-TR"/>
+      <property name="LCSC" value="C2940549"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7e71b7c6-da53-5c34-8edc-4f28b568d436</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>STM32G0B1KBU6</value>
+      <footprint>Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm</footprint>
+      <datasheet>https://www.st.com/resource/en/datasheet/stm32g0b1kb.pdf</datasheet>
+      <description>USB controller / artwork storage</description>
+      <fields>
+        <field name="MPN">STM32G0B1KBU6</field>
+        <field name="LCSC">C5159549</field>
+        <field name="Footprint">Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm</field>
+        <field name="Datasheet">https://www.st.com/resource/en/datasheet/stm32g0b1kb.pdf</field>
+        <field name="Description">USB controller / artwork storage</field>
+      </fields>
+      <libsource lib="HouseRules_main" part="U5" description="USB controller / artwork storage"/>
+      <property name="MPN" value="STM32G0B1KBU6"/>
+      <property name="LCSC" value="C5159549"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bdf891c4-15f0-5186-a286-27cc32dd6e11</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>TLV75533PDBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tlv755p.pdf</datasheet>
+      <fields>
+        <field name="MPN">TLV75533PDBVR</field>
+        <field name="LCSC">C404027</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv755p.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HouseRules_main" part="U6" description=""/>
+      <property name="MPN" value="TLV75533PDBVR"/>
+      <property name="LCSC" value="C404027"/>
+      <property name="Sheetname" value="house-rules-main"/>
+      <property name="Sheetfile" value="house-rules-main.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c2c54982-2763-5b22-89e9-3d868b6e4368</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="HouseRules_main" part="C1">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n 50V X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="C10">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">2u2 10V X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="C11">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n 50V X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="C12">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n 50V X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="C13">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1u 16V X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="C2">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1u 16V X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="C3">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n 50V X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="C4">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1u 16V X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="C5">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n 50V X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="C6">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1u 16V X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="C7">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n 50V X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="C8">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1u 16V X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="C9">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1u 16V X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="DS1">
+      <description>Owner supplied; fit after factory assembly</description>
+      <docs>https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</docs>
+      <fields>
+        <field name="Reference">DS</field>
+        <field name="Value">LMD07057AUE-101B</field>
+        <field name="Footprint">HouseRules:LMD07057AUE-101B</field>
+        <field name="Datasheet">https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</field>
+        <field name="Description">Owner supplied; fit after factory assembly</field>
+      </fields>
+      <pins>
+        <pin num="1" name="COL1_A" type="passive"/>
+        <pin num="2" name="ROW3_K" type="passive"/>
+        <pin num="3" name="COL2_A" type="passive"/>
+        <pin num="4" name="ROW5_K" type="passive"/>
+        <pin num="5" name="ROW6_K" type="passive"/>
+        <pin num="6" name="ROW7_K" type="passive"/>
+        <pin num="7" name="COL4_A" type="passive"/>
+        <pin num="8" name="COL5_A" type="passive"/>
+        <pin num="9" name="ROW4_K" type="passive"/>
+        <pin num="10" name="COL3_A" type="passive"/>
+        <pin num="11" name="ROW2_K" type="passive"/>
+        <pin num="12" name="ROW1_K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="DS2">
+      <description>Owner supplied; fit after factory assembly</description>
+      <docs>https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</docs>
+      <fields>
+        <field name="Reference">DS</field>
+        <field name="Value">LMD07057AUE-101B</field>
+        <field name="Footprint">HouseRules:LMD07057AUE-101B</field>
+        <field name="Datasheet">https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</field>
+        <field name="Description">Owner supplied; fit after factory assembly</field>
+      </fields>
+      <pins>
+        <pin num="1" name="COL1_A" type="passive"/>
+        <pin num="2" name="ROW3_K" type="passive"/>
+        <pin num="3" name="COL2_A" type="passive"/>
+        <pin num="4" name="ROW5_K" type="passive"/>
+        <pin num="5" name="ROW6_K" type="passive"/>
+        <pin num="6" name="ROW7_K" type="passive"/>
+        <pin num="7" name="COL4_A" type="passive"/>
+        <pin num="8" name="COL5_A" type="passive"/>
+        <pin num="9" name="ROW4_K" type="passive"/>
+        <pin num="10" name="COL3_A" type="passive"/>
+        <pin num="11" name="ROW2_K" type="passive"/>
+        <pin num="12" name="ROW1_K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="DS3">
+      <description>Owner supplied; fit after factory assembly</description>
+      <docs>https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</docs>
+      <fields>
+        <field name="Reference">DS</field>
+        <field name="Value">LMD07057AUE-101B</field>
+        <field name="Footprint">HouseRules:LMD07057AUE-101B</field>
+        <field name="Datasheet">https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</field>
+        <field name="Description">Owner supplied; fit after factory assembly</field>
+      </fields>
+      <pins>
+        <pin num="1" name="COL1_A" type="passive"/>
+        <pin num="2" name="ROW3_K" type="passive"/>
+        <pin num="3" name="COL2_A" type="passive"/>
+        <pin num="4" name="ROW5_K" type="passive"/>
+        <pin num="5" name="ROW6_K" type="passive"/>
+        <pin num="6" name="ROW7_K" type="passive"/>
+        <pin num="7" name="COL4_A" type="passive"/>
+        <pin num="8" name="COL5_A" type="passive"/>
+        <pin num="9" name="ROW4_K" type="passive"/>
+        <pin num="10" name="COL3_A" type="passive"/>
+        <pin num="11" name="ROW2_K" type="passive"/>
+        <pin num="12" name="ROW1_K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="DS4">
+      <description>Owner supplied; fit after factory assembly</description>
+      <docs>https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</docs>
+      <fields>
+        <field name="Reference">DS</field>
+        <field name="Value">LMD07057AUE-101B</field>
+        <field name="Footprint">HouseRules:LMD07057AUE-101B</field>
+        <field name="Datasheet">https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</field>
+        <field name="Description">Owner supplied; fit after factory assembly</field>
+      </fields>
+      <pins>
+        <pin num="1" name="COL1_A" type="passive"/>
+        <pin num="2" name="ROW3_K" type="passive"/>
+        <pin num="3" name="COL2_A" type="passive"/>
+        <pin num="4" name="ROW5_K" type="passive"/>
+        <pin num="5" name="ROW6_K" type="passive"/>
+        <pin num="6" name="ROW7_K" type="passive"/>
+        <pin num="7" name="COL4_A" type="passive"/>
+        <pin num="8" name="COL5_A" type="passive"/>
+        <pin num="9" name="ROW4_K" type="passive"/>
+        <pin num="10" name="COL3_A" type="passive"/>
+        <pin num="11" name="ROW2_K" type="passive"/>
+        <pin num="12" name="ROW1_K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="DS5">
+      <description>Owner supplied; fit after factory assembly</description>
+      <docs>https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</docs>
+      <fields>
+        <field name="Reference">DS</field>
+        <field name="Value">LMD07057AUE-101B</field>
+        <field name="Footprint">HouseRules:LMD07057AUE-101B</field>
+        <field name="Datasheet">https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</field>
+        <field name="Description">Owner supplied; fit after factory assembly</field>
+      </fields>
+      <pins>
+        <pin num="1" name="COL1_A" type="passive"/>
+        <pin num="2" name="ROW3_K" type="passive"/>
+        <pin num="3" name="COL2_A" type="passive"/>
+        <pin num="4" name="ROW5_K" type="passive"/>
+        <pin num="5" name="ROW6_K" type="passive"/>
+        <pin num="6" name="ROW7_K" type="passive"/>
+        <pin num="7" name="COL4_A" type="passive"/>
+        <pin num="8" name="COL5_A" type="passive"/>
+        <pin num="9" name="ROW4_K" type="passive"/>
+        <pin num="10" name="COL3_A" type="passive"/>
+        <pin num="11" name="ROW2_K" type="passive"/>
+        <pin num="12" name="ROW1_K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="DS6">
+      <description>Owner supplied; fit after factory assembly</description>
+      <docs>https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</docs>
+      <fields>
+        <field name="Reference">DS</field>
+        <field name="Value">LMD07057AUE-101B</field>
+        <field name="Footprint">HouseRules:LMD07057AUE-101B</field>
+        <field name="Datasheet">https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</field>
+        <field name="Description">Owner supplied; fit after factory assembly</field>
+      </fields>
+      <pins>
+        <pin num="1" name="COL1_A" type="passive"/>
+        <pin num="2" name="ROW3_K" type="passive"/>
+        <pin num="3" name="COL2_A" type="passive"/>
+        <pin num="4" name="ROW5_K" type="passive"/>
+        <pin num="5" name="ROW6_K" type="passive"/>
+        <pin num="6" name="ROW7_K" type="passive"/>
+        <pin num="7" name="COL4_A" type="passive"/>
+        <pin num="8" name="COL5_A" type="passive"/>
+        <pin num="9" name="ROW4_K" type="passive"/>
+        <pin num="10" name="COL3_A" type="passive"/>
+        <pin num="11" name="ROW2_K" type="passive"/>
+        <pin num="12" name="ROW1_K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="DS7">
+      <description>Owner supplied; fit after factory assembly</description>
+      <docs>https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</docs>
+      <fields>
+        <field name="Reference">DS</field>
+        <field name="Value">LMD07057AUE-101B</field>
+        <field name="Footprint">HouseRules:LMD07057AUE-101B</field>
+        <field name="Datasheet">https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf</field>
+        <field name="Description">Owner supplied; fit after factory assembly</field>
+      </fields>
+      <pins>
+        <pin num="1" name="COL1_A" type="passive"/>
+        <pin num="2" name="ROW3_K" type="passive"/>
+        <pin num="3" name="COL2_A" type="passive"/>
+        <pin num="4" name="ROW5_K" type="passive"/>
+        <pin num="5" name="ROW6_K" type="passive"/>
+        <pin num="6" name="ROW7_K" type="passive"/>
+        <pin num="7" name="COL4_A" type="passive"/>
+        <pin num="8" name="COL5_A" type="passive"/>
+        <pin num="9" name="ROW4_K" type="passive"/>
+        <pin num="10" name="COL3_A" type="passive"/>
+        <pin num="11" name="ROW2_K" type="passive"/>
+        <pin num="12" name="ROW1_K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="F1">
+      <description>Fault protection, not USB current authorisation</description>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">750mA PPTC</field>
+        <field name="Footprint">Fuse:Fuse_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Fault protection, not USB current authorisation</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="J1">
+      <description>Vertical 6 way straight-numbered harness to carrier; mated body clears LED leads</description>
+      <docs>https://www.jst.com/wp-content/uploads/2021/01/eSH.pdf</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB CARRIER</field>
+        <field name="Footprint">Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical</field>
+        <field name="Datasheet">https://www.jst.com/wp-content/uploads/2021/01/eSH.pdf</field>
+        <field name="Description">Vertical 6 way straight-numbered harness to carrier; mated body clears LED leads</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="MP" name="MP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="R1">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">47k 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="R10">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">47k 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="R11">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">47k 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="R12">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">47k 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="R13">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">47k 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="R14">
+      <description>BOOT button current limiting; SWD clock stays directly connected to MCU</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">2k2 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">BOOT button current limiting; SWD clock stays directly connected to MCU</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="R2">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">47k 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="R3">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">47k 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="R4">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">47k 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="R5">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">2k2 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="R6">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">2k2 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="R7">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="R8">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="R9">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="SW1">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">BOOT</field>
+        <field name="Footprint">Button_Switch_SMD:SW_SPST_EVQP7A</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="SW2">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">RESET</field>
+        <field name="Footprint">Button_Switch_SMD:SW_SPST_EVQP7A</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="TP1">
+      <description>SWD recovery test pad; do not externally power 3V3</description>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">GND</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">SWD recovery test pad; do not externally power 3V3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="TP2">
+      <description>SWD recovery test pad; do not externally power 3V3</description>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">3V3</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">SWD recovery test pad; do not externally power 3V3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="TP3">
+      <description>SWD recovery test pad; do not externally power 3V3</description>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">SWDIO</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">SWD recovery test pad; do not externally power 3V3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="TP4">
+      <description>SWD recovery test pad; do not externally power 3V3</description>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">SWCLK</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">SWD recovery test pad; do not externally power 3V3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="TP5">
+      <description>SWD recovery test pad; do not externally power 3V3</description>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">NRST</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">SWD recovery test pad; do not externally power 3V3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="TP6">
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">5V</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="U1">
+      <description>LED driver, address 0x34</description>
+      <docs>https://www.lumissil.com/assets/pdf/core/IS31FL3729_DS.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">IS31FL3729-QFLS4-TR</field>
+        <field name="Footprint">Package_DFN_QFN:QFN-32-1EP_4x4mm_P0.4mm_EP2.65x2.65mm</field>
+        <field name="Datasheet">https://www.lumissil.com/assets/pdf/core/IS31FL3729_DS.pdf</field>
+        <field name="Description">LED driver, address 0x34</field>
+      </fields>
+      <pins>
+        <pin num="1" name="CS4" type="output"/>
+        <pin num="2" name="CS5" type="output"/>
+        <pin num="3" name="CS6" type="output"/>
+        <pin num="4" name="CS7" type="output"/>
+        <pin num="5" name="CS8" type="output"/>
+        <pin num="6" name="CS9" type="output"/>
+        <pin num="7" name="CS10" type="output"/>
+        <pin num="8" name="CS11" type="output"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="CS12" type="output"/>
+        <pin num="11" name="CS13" type="output"/>
+        <pin num="12" name="CS14" type="output"/>
+        <pin num="13" name="CS15" type="output"/>
+        <pin num="14" name="CS16" type="output"/>
+        <pin num="15" name="SW8" type="output"/>
+        <pin num="16" name="SW7" type="output"/>
+        <pin num="17" name="SW6" type="output"/>
+        <pin num="18" name="SW5" type="output"/>
+        <pin num="19" name="SW4" type="output"/>
+        <pin num="20" name="SW3" type="output"/>
+        <pin num="21" name="SW2" type="output"/>
+        <pin num="22" name="SW1" type="output"/>
+        <pin num="23" name="VCC" type="power_in"/>
+        <pin num="24" name="GND" type="power_in"/>
+        <pin num="25" name="ISET" type="passive"/>
+        <pin num="26" name="SDA" type="bidirectional"/>
+        <pin num="27" name="SCL" type="input"/>
+        <pin num="28" name="AD" type="input"/>
+        <pin num="29" name="SDB" type="input"/>
+        <pin num="30" name="CS1" type="output"/>
+        <pin num="31" name="CS2" type="output"/>
+        <pin num="32" name="CS3" type="output"/>
+        <pin num="33" name="EP_GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="U2">
+      <description>LED driver, address 0x35</description>
+      <docs>https://www.lumissil.com/assets/pdf/core/IS31FL3729_DS.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">IS31FL3729-QFLS4-TR</field>
+        <field name="Footprint">Package_DFN_QFN:QFN-32-1EP_4x4mm_P0.4mm_EP2.65x2.65mm</field>
+        <field name="Datasheet">https://www.lumissil.com/assets/pdf/core/IS31FL3729_DS.pdf</field>
+        <field name="Description">LED driver, address 0x35</field>
+      </fields>
+      <pins>
+        <pin num="1" name="CS4" type="output"/>
+        <pin num="2" name="CS5" type="output"/>
+        <pin num="3" name="CS6" type="output"/>
+        <pin num="4" name="CS7" type="output"/>
+        <pin num="5" name="CS8" type="output"/>
+        <pin num="6" name="CS9" type="output"/>
+        <pin num="7" name="CS10" type="output"/>
+        <pin num="8" name="CS11" type="output"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="CS12" type="output"/>
+        <pin num="11" name="CS13" type="output"/>
+        <pin num="12" name="CS14" type="output"/>
+        <pin num="13" name="CS15" type="output"/>
+        <pin num="14" name="CS16" type="output"/>
+        <pin num="15" name="SW8" type="output"/>
+        <pin num="16" name="SW7" type="output"/>
+        <pin num="17" name="SW6" type="output"/>
+        <pin num="18" name="SW5" type="output"/>
+        <pin num="19" name="SW4" type="output"/>
+        <pin num="20" name="SW3" type="output"/>
+        <pin num="21" name="SW2" type="output"/>
+        <pin num="22" name="SW1" type="output"/>
+        <pin num="23" name="VCC" type="power_in"/>
+        <pin num="24" name="GND" type="power_in"/>
+        <pin num="25" name="ISET" type="passive"/>
+        <pin num="26" name="SDA" type="bidirectional"/>
+        <pin num="27" name="SCL" type="input"/>
+        <pin num="28" name="AD" type="input"/>
+        <pin num="29" name="SDB" type="input"/>
+        <pin num="30" name="CS1" type="output"/>
+        <pin num="31" name="CS2" type="output"/>
+        <pin num="32" name="CS3" type="output"/>
+        <pin num="33" name="EP_GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="U3">
+      <description>LED driver, address 0x36</description>
+      <docs>https://www.lumissil.com/assets/pdf/core/IS31FL3729_DS.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">IS31FL3729-QFLS4-TR</field>
+        <field name="Footprint">Package_DFN_QFN:QFN-32-1EP_4x4mm_P0.4mm_EP2.65x2.65mm</field>
+        <field name="Datasheet">https://www.lumissil.com/assets/pdf/core/IS31FL3729_DS.pdf</field>
+        <field name="Description">LED driver, address 0x36</field>
+      </fields>
+      <pins>
+        <pin num="1" name="CS4" type="output"/>
+        <pin num="2" name="CS5" type="output"/>
+        <pin num="3" name="CS6" type="output"/>
+        <pin num="4" name="CS7" type="output"/>
+        <pin num="5" name="CS8" type="output"/>
+        <pin num="6" name="CS9" type="output"/>
+        <pin num="7" name="CS10" type="output"/>
+        <pin num="8" name="CS11" type="output"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="CS12" type="output"/>
+        <pin num="11" name="CS13" type="output"/>
+        <pin num="12" name="CS14" type="output"/>
+        <pin num="13" name="CS15" type="output"/>
+        <pin num="14" name="CS16" type="output"/>
+        <pin num="15" name="SW8" type="output"/>
+        <pin num="16" name="SW7" type="output"/>
+        <pin num="17" name="SW6" type="output"/>
+        <pin num="18" name="SW5" type="output"/>
+        <pin num="19" name="SW4" type="output"/>
+        <pin num="20" name="SW3" type="output"/>
+        <pin num="21" name="SW2" type="output"/>
+        <pin num="22" name="SW1" type="output"/>
+        <pin num="23" name="VCC" type="power_in"/>
+        <pin num="24" name="GND" type="power_in"/>
+        <pin num="25" name="ISET" type="passive"/>
+        <pin num="26" name="SDA" type="bidirectional"/>
+        <pin num="27" name="SCL" type="input"/>
+        <pin num="28" name="AD" type="input"/>
+        <pin num="29" name="SDB" type="input"/>
+        <pin num="30" name="CS1" type="output"/>
+        <pin num="31" name="CS2" type="output"/>
+        <pin num="32" name="CS3" type="output"/>
+        <pin num="33" name="EP_GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="U4">
+      <description>LED driver, address 0x37</description>
+      <docs>https://www.lumissil.com/assets/pdf/core/IS31FL3729_DS.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">IS31FL3729-QFLS4-TR</field>
+        <field name="Footprint">Package_DFN_QFN:QFN-32-1EP_4x4mm_P0.4mm_EP2.65x2.65mm</field>
+        <field name="Datasheet">https://www.lumissil.com/assets/pdf/core/IS31FL3729_DS.pdf</field>
+        <field name="Description">LED driver, address 0x37</field>
+      </fields>
+      <pins>
+        <pin num="1" name="CS4" type="output"/>
+        <pin num="2" name="CS5" type="output"/>
+        <pin num="3" name="CS6" type="output"/>
+        <pin num="4" name="CS7" type="output"/>
+        <pin num="5" name="CS8" type="output"/>
+        <pin num="6" name="CS9" type="output"/>
+        <pin num="7" name="CS10" type="output"/>
+        <pin num="8" name="CS11" type="output"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="CS12" type="output"/>
+        <pin num="11" name="CS13" type="output"/>
+        <pin num="12" name="CS14" type="output"/>
+        <pin num="13" name="CS15" type="output"/>
+        <pin num="14" name="CS16" type="output"/>
+        <pin num="15" name="SW8" type="output"/>
+        <pin num="16" name="SW7" type="output"/>
+        <pin num="17" name="SW6" type="output"/>
+        <pin num="18" name="SW5" type="output"/>
+        <pin num="19" name="SW4" type="output"/>
+        <pin num="20" name="SW3" type="output"/>
+        <pin num="21" name="SW2" type="output"/>
+        <pin num="22" name="SW1" type="output"/>
+        <pin num="23" name="VCC" type="power_in"/>
+        <pin num="24" name="GND" type="power_in"/>
+        <pin num="25" name="ISET" type="passive"/>
+        <pin num="26" name="SDA" type="bidirectional"/>
+        <pin num="27" name="SCL" type="input"/>
+        <pin num="28" name="AD" type="input"/>
+        <pin num="29" name="SDB" type="input"/>
+        <pin num="30" name="CS1" type="output"/>
+        <pin num="31" name="CS2" type="output"/>
+        <pin num="32" name="CS3" type="output"/>
+        <pin num="33" name="EP_GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="U5">
+      <description>USB controller / artwork storage</description>
+      <docs>https://www.st.com/resource/en/datasheet/stm32g0b1kb.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">STM32G0B1KBU6</field>
+        <field name="Footprint">Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm</field>
+        <field name="Datasheet">https://www.st.com/resource/en/datasheet/stm32g0b1kb.pdf</field>
+        <field name="Description">USB controller / artwork storage</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="VDD_VDDA" type="power_in"/>
+        <pin num="5" name="VSS_VSSA" type="power_in"/>
+        <pin num="6" name="PF2_NRST" type="input"/>
+        <pin num="7" name="PA0_ADC_CC1" type="input"/>
+        <pin num="8" name="PA1_ADC_CC2" type="input"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="10" type="passive"/>
+        <pin num="11" name="11" type="passive"/>
+        <pin num="12" name="12" type="passive"/>
+        <pin num="13" name="13" type="passive"/>
+        <pin num="14" name="14" type="passive"/>
+        <pin num="15" name="PB0_LED_SDB" type="output"/>
+        <pin num="16" name="16" type="passive"/>
+        <pin num="17" name="17" type="passive"/>
+        <pin num="18" name="18" type="passive"/>
+        <pin num="19" name="19" type="passive"/>
+        <pin num="20" name="20" type="passive"/>
+        <pin num="21" name="21" type="passive"/>
+        <pin num="22" name="PA11_USB_DM" type="bidirectional"/>
+        <pin num="23" name="PA12_USB_DP" type="bidirectional"/>
+        <pin num="24" name="PA13_SWDIO" type="bidirectional"/>
+        <pin num="25" name="PA14_BOOT0_SWCLK" type="input"/>
+        <pin num="26" name="26" type="passive"/>
+        <pin num="27" name="27" type="passive"/>
+        <pin num="28" name="28" type="passive"/>
+        <pin num="29" name="29" type="passive"/>
+        <pin num="30" name="PB6_I2C1_SCL" type="bidirectional"/>
+        <pin num="31" name="PB7_I2C1_SDA" type="bidirectional"/>
+        <pin num="32" name="32" type="passive"/>
+        <pin num="33" name="EP_GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="HouseRules_main" part="U6">
+      <docs>https://www.ti.com/lit/ds/symlink/tlv755p.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV75533PDBVR</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv755p.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="passive"/>
+        <pin num="5" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="HouseRules_main">
+      <uri>${KIPRJMOD}/HouseRules_main.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3" class="Default">
+      <node ref="C10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="4" pinfunction="VDD_VDDA_4" pintype="power_in"/>
+      <node ref="U6" pin="5" pinfunction="OUT_5" pintype="power_out"/>
+    </net>
+    <net code="2" name="+5V" class="Power">
+      <node ref="C1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="F1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="23" pinfunction="VCC_23" pintype="power_in"/>
+      <node ref="U2" pin="23" pinfunction="VCC_23" pintype="power_in"/>
+      <node ref="U3" pin="23" pinfunction="VCC_23" pintype="power_in"/>
+      <node ref="U4" pin="23" pinfunction="VCC_23" pintype="power_in"/>
+      <node ref="U4" pin="28" pinfunction="AD_28" pintype="input"/>
+      <node ref="U6" pin="1" pinfunction="IN_1" pintype="power_in"/>
+      <node ref="U6" pin="3" pinfunction="EN_3" pintype="input"/>
+    </net>
+    <net code="3" name="BOOT_BUTTON" class="Default">
+      <node ref="R14" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="4" name="BOOT_SWCLK" class="Default">
+      <node ref="R14" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="25" pinfunction="PA14_BOOT0_SWCLK_25" pintype="input"/>
+    </net>
+    <net code="5" name="CC1" class="Default">
+      <node ref="J1" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="R10" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="6" name="CC1_ADC" class="Default">
+      <node ref="R10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="7" pinfunction="PA0_ADC_CC1_7" pintype="input"/>
+    </net>
+    <net code="7" name="CC2" class="Default">
+      <node ref="J1" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="R12" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="8" name="CC2_ADC" class="Default">
+      <node ref="R12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="8" pinfunction="PA1_ADC_CC2_8" pintype="input"/>
+    </net>
+    <net code="9" name="D1_CS1" class="Default">
+      <node ref="DS1" pin="12" pinfunction="ROW1_K_12" pintype="passive"/>
+      <node ref="U1" pin="30" pinfunction="CS1_30" pintype="output"/>
+    </net>
+    <net code="10" name="D1_CS2" class="Default">
+      <node ref="DS1" pin="11" pinfunction="ROW2_K_11" pintype="passive"/>
+      <node ref="U1" pin="31" pinfunction="CS2_31" pintype="output"/>
+    </net>
+    <net code="11" name="D1_CS3" class="Default">
+      <node ref="DS1" pin="2" pinfunction="ROW3_K_2" pintype="passive"/>
+      <node ref="U1" pin="32" pinfunction="CS3_32" pintype="output"/>
+    </net>
+    <net code="12" name="D1_CS4" class="Default">
+      <node ref="DS1" pin="9" pinfunction="ROW4_K_9" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="CS4_1" pintype="output"/>
+    </net>
+    <net code="13" name="D1_CS5" class="Default">
+      <node ref="DS1" pin="4" pinfunction="ROW5_K_4" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="CS5_2" pintype="output"/>
+    </net>
+    <net code="14" name="D1_CS6" class="Default">
+      <node ref="DS1" pin="5" pinfunction="ROW6_K_5" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="CS6_3" pintype="output"/>
+    </net>
+    <net code="15" name="D1_CS7" class="Default">
+      <node ref="DS1" pin="6" pinfunction="ROW7_K_6" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="CS7_4" pintype="output"/>
+    </net>
+    <net code="16" name="D1_CS8" class="Default">
+      <node ref="DS2" pin="12" pinfunction="ROW1_K_12" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="CS8_5" pintype="output"/>
+    </net>
+    <net code="17" name="D1_CS9" class="Default">
+      <node ref="DS2" pin="11" pinfunction="ROW2_K_11" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="CS9_6" pintype="output"/>
+    </net>
+    <net code="18" name="D1_CS10" class="Default">
+      <node ref="DS2" pin="2" pinfunction="ROW3_K_2" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="CS10_7" pintype="output"/>
+    </net>
+    <net code="19" name="D1_CS11" class="Default">
+      <node ref="DS2" pin="9" pinfunction="ROW4_K_9" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="CS11_8" pintype="output"/>
+    </net>
+    <net code="20" name="D1_CS12" class="Default">
+      <node ref="DS2" pin="4" pinfunction="ROW5_K_4" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="CS12_10" pintype="output"/>
+    </net>
+    <net code="21" name="D1_CS13" class="Default">
+      <node ref="DS2" pin="5" pinfunction="ROW6_K_5" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="CS13_11" pintype="output"/>
+    </net>
+    <net code="22" name="D1_CS14" class="Default">
+      <node ref="DS2" pin="6" pinfunction="ROW7_K_6" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="CS14_12" pintype="output"/>
+    </net>
+    <net code="23" name="D1_SW1" class="Default">
+      <node ref="DS1" pin="1" pinfunction="COL1_A_1" pintype="passive"/>
+      <node ref="DS2" pin="1" pinfunction="COL1_A_1" pintype="passive"/>
+      <node ref="U1" pin="22" pinfunction="SW1_22" pintype="output"/>
+    </net>
+    <net code="24" name="D1_SW2" class="Default">
+      <node ref="DS1" pin="3" pinfunction="COL2_A_3" pintype="passive"/>
+      <node ref="DS2" pin="3" pinfunction="COL2_A_3" pintype="passive"/>
+      <node ref="U1" pin="21" pinfunction="SW2_21" pintype="output"/>
+    </net>
+    <net code="25" name="D1_SW3" class="Default">
+      <node ref="DS1" pin="10" pinfunction="COL3_A_10" pintype="passive"/>
+      <node ref="DS2" pin="10" pinfunction="COL3_A_10" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="SW3_20" pintype="output"/>
+    </net>
+    <net code="26" name="D1_SW4" class="Default">
+      <node ref="DS1" pin="7" pinfunction="COL4_A_7" pintype="passive"/>
+      <node ref="DS2" pin="7" pinfunction="COL4_A_7" pintype="passive"/>
+      <node ref="U1" pin="19" pinfunction="SW4_19" pintype="output"/>
+    </net>
+    <net code="27" name="D1_SW5" class="Default">
+      <node ref="DS1" pin="8" pinfunction="COL5_A_8" pintype="passive"/>
+      <node ref="DS2" pin="8" pinfunction="COL5_A_8" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="SW5_18" pintype="output"/>
+    </net>
+    <net code="28" name="D2_CS1" class="Default">
+      <node ref="DS3" pin="12" pinfunction="ROW1_K_12" pintype="passive"/>
+      <node ref="U2" pin="30" pinfunction="CS1_30" pintype="output"/>
+    </net>
+    <net code="29" name="D2_CS2" class="Default">
+      <node ref="DS3" pin="11" pinfunction="ROW2_K_11" pintype="passive"/>
+      <node ref="U2" pin="31" pinfunction="CS2_31" pintype="output"/>
+    </net>
+    <net code="30" name="D2_CS3" class="Default">
+      <node ref="DS3" pin="2" pinfunction="ROW3_K_2" pintype="passive"/>
+      <node ref="U2" pin="32" pinfunction="CS3_32" pintype="output"/>
+    </net>
+    <net code="31" name="D2_CS4" class="Default">
+      <node ref="DS3" pin="9" pinfunction="ROW4_K_9" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="CS4_1" pintype="output"/>
+    </net>
+    <net code="32" name="D2_CS5" class="Default">
+      <node ref="DS3" pin="4" pinfunction="ROW5_K_4" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="CS5_2" pintype="output"/>
+    </net>
+    <net code="33" name="D2_CS6" class="Default">
+      <node ref="DS3" pin="5" pinfunction="ROW6_K_5" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="CS6_3" pintype="output"/>
+    </net>
+    <net code="34" name="D2_CS7" class="Default">
+      <node ref="DS3" pin="6" pinfunction="ROW7_K_6" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="CS7_4" pintype="output"/>
+    </net>
+    <net code="35" name="D2_CS8" class="Default">
+      <node ref="DS4" pin="12" pinfunction="ROW1_K_12" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="CS8_5" pintype="output"/>
+    </net>
+    <net code="36" name="D2_CS9" class="Default">
+      <node ref="DS4" pin="11" pinfunction="ROW2_K_11" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="CS9_6" pintype="output"/>
+    </net>
+    <net code="37" name="D2_CS10" class="Default">
+      <node ref="DS4" pin="2" pinfunction="ROW3_K_2" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="CS10_7" pintype="output"/>
+    </net>
+    <net code="38" name="D2_CS11" class="Default">
+      <node ref="DS4" pin="9" pinfunction="ROW4_K_9" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="CS11_8" pintype="output"/>
+    </net>
+    <net code="39" name="D2_CS12" class="Default">
+      <node ref="DS4" pin="4" pinfunction="ROW5_K_4" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="CS12_10" pintype="output"/>
+    </net>
+    <net code="40" name="D2_CS13" class="Default">
+      <node ref="DS4" pin="5" pinfunction="ROW6_K_5" pintype="passive"/>
+      <node ref="U2" pin="11" pinfunction="CS13_11" pintype="output"/>
+    </net>
+    <net code="41" name="D2_CS14" class="Default">
+      <node ref="DS4" pin="6" pinfunction="ROW7_K_6" pintype="passive"/>
+      <node ref="U2" pin="12" pinfunction="CS14_12" pintype="output"/>
+    </net>
+    <net code="42" name="D2_SW1" class="Default">
+      <node ref="DS3" pin="1" pinfunction="COL1_A_1" pintype="passive"/>
+      <node ref="DS4" pin="1" pinfunction="COL1_A_1" pintype="passive"/>
+      <node ref="U2" pin="22" pinfunction="SW1_22" pintype="output"/>
+    </net>
+    <net code="43" name="D2_SW2" class="Default">
+      <node ref="DS3" pin="3" pinfunction="COL2_A_3" pintype="passive"/>
+      <node ref="DS4" pin="3" pinfunction="COL2_A_3" pintype="passive"/>
+      <node ref="U2" pin="21" pinfunction="SW2_21" pintype="output"/>
+    </net>
+    <net code="44" name="D2_SW3" class="Default">
+      <node ref="DS3" pin="10" pinfunction="COL3_A_10" pintype="passive"/>
+      <node ref="DS4" pin="10" pinfunction="COL3_A_10" pintype="passive"/>
+      <node ref="U2" pin="20" pinfunction="SW3_20" pintype="output"/>
+    </net>
+    <net code="45" name="D2_SW4" class="Default">
+      <node ref="DS3" pin="7" pinfunction="COL4_A_7" pintype="passive"/>
+      <node ref="DS4" pin="7" pinfunction="COL4_A_7" pintype="passive"/>
+      <node ref="U2" pin="19" pinfunction="SW4_19" pintype="output"/>
+    </net>
+    <net code="46" name="D2_SW5" class="Default">
+      <node ref="DS3" pin="8" pinfunction="COL5_A_8" pintype="passive"/>
+      <node ref="DS4" pin="8" pinfunction="COL5_A_8" pintype="passive"/>
+      <node ref="U2" pin="18" pinfunction="SW5_18" pintype="output"/>
+    </net>
+    <net code="47" name="D3_CS1" class="Default">
+      <node ref="DS5" pin="12" pinfunction="ROW1_K_12" pintype="passive"/>
+      <node ref="U3" pin="30" pinfunction="CS1_30" pintype="output"/>
+    </net>
+    <net code="48" name="D3_CS2" class="Default">
+      <node ref="DS5" pin="11" pinfunction="ROW2_K_11" pintype="passive"/>
+      <node ref="U3" pin="31" pinfunction="CS2_31" pintype="output"/>
+    </net>
+    <net code="49" name="D3_CS3" class="Default">
+      <node ref="DS5" pin="2" pinfunction="ROW3_K_2" pintype="passive"/>
+      <node ref="U3" pin="32" pinfunction="CS3_32" pintype="output"/>
+    </net>
+    <net code="50" name="D3_CS4" class="Default">
+      <node ref="DS5" pin="9" pinfunction="ROW4_K_9" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="CS4_1" pintype="output"/>
+    </net>
+    <net code="51" name="D3_CS5" class="Default">
+      <node ref="DS5" pin="4" pinfunction="ROW5_K_4" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="CS5_2" pintype="output"/>
+    </net>
+    <net code="52" name="D3_CS6" class="Default">
+      <node ref="DS5" pin="5" pinfunction="ROW6_K_5" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="CS6_3" pintype="output"/>
+    </net>
+    <net code="53" name="D3_CS7" class="Default">
+      <node ref="DS5" pin="6" pinfunction="ROW7_K_6" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="CS7_4" pintype="output"/>
+    </net>
+    <net code="54" name="D3_CS8" class="Default">
+      <node ref="DS6" pin="12" pinfunction="ROW1_K_12" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="CS8_5" pintype="output"/>
+    </net>
+    <net code="55" name="D3_CS9" class="Default">
+      <node ref="DS6" pin="11" pinfunction="ROW2_K_11" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="CS9_6" pintype="output"/>
+    </net>
+    <net code="56" name="D3_CS10" class="Default">
+      <node ref="DS6" pin="2" pinfunction="ROW3_K_2" pintype="passive"/>
+      <node ref="U3" pin="7" pinfunction="CS10_7" pintype="output"/>
+    </net>
+    <net code="57" name="D3_CS11" class="Default">
+      <node ref="DS6" pin="9" pinfunction="ROW4_K_9" pintype="passive"/>
+      <node ref="U3" pin="8" pinfunction="CS11_8" pintype="output"/>
+    </net>
+    <net code="58" name="D3_CS12" class="Default">
+      <node ref="DS6" pin="4" pinfunction="ROW5_K_4" pintype="passive"/>
+      <node ref="U3" pin="10" pinfunction="CS12_10" pintype="output"/>
+    </net>
+    <net code="59" name="D3_CS13" class="Default">
+      <node ref="DS6" pin="5" pinfunction="ROW6_K_5" pintype="passive"/>
+      <node ref="U3" pin="11" pinfunction="CS13_11" pintype="output"/>
+    </net>
+    <net code="60" name="D3_CS14" class="Default">
+      <node ref="DS6" pin="6" pinfunction="ROW7_K_6" pintype="passive"/>
+      <node ref="U3" pin="12" pinfunction="CS14_12" pintype="output"/>
+    </net>
+    <net code="61" name="D3_SW1" class="Default">
+      <node ref="DS5" pin="1" pinfunction="COL1_A_1" pintype="passive"/>
+      <node ref="DS6" pin="1" pinfunction="COL1_A_1" pintype="passive"/>
+      <node ref="U3" pin="22" pinfunction="SW1_22" pintype="output"/>
+    </net>
+    <net code="62" name="D3_SW2" class="Default">
+      <node ref="DS5" pin="3" pinfunction="COL2_A_3" pintype="passive"/>
+      <node ref="DS6" pin="3" pinfunction="COL2_A_3" pintype="passive"/>
+      <node ref="U3" pin="21" pinfunction="SW2_21" pintype="output"/>
+    </net>
+    <net code="63" name="D3_SW3" class="Default">
+      <node ref="DS5" pin="10" pinfunction="COL3_A_10" pintype="passive"/>
+      <node ref="DS6" pin="10" pinfunction="COL3_A_10" pintype="passive"/>
+      <node ref="U3" pin="20" pinfunction="SW3_20" pintype="output"/>
+    </net>
+    <net code="64" name="D3_SW4" class="Default">
+      <node ref="DS5" pin="7" pinfunction="COL4_A_7" pintype="passive"/>
+      <node ref="DS6" pin="7" pinfunction="COL4_A_7" pintype="passive"/>
+      <node ref="U3" pin="19" pinfunction="SW4_19" pintype="output"/>
+    </net>
+    <net code="65" name="D3_SW5" class="Default">
+      <node ref="DS5" pin="8" pinfunction="COL5_A_8" pintype="passive"/>
+      <node ref="DS6" pin="8" pinfunction="COL5_A_8" pintype="passive"/>
+      <node ref="U3" pin="18" pinfunction="SW5_18" pintype="output"/>
+    </net>
+    <net code="66" name="D4_CS1" class="Default">
+      <node ref="DS7" pin="12" pinfunction="ROW1_K_12" pintype="passive"/>
+      <node ref="U4" pin="30" pinfunction="CS1_30" pintype="output"/>
+    </net>
+    <net code="67" name="D4_CS2" class="Default">
+      <node ref="DS7" pin="11" pinfunction="ROW2_K_11" pintype="passive"/>
+      <node ref="U4" pin="31" pinfunction="CS2_31" pintype="output"/>
+    </net>
+    <net code="68" name="D4_CS3" class="Default">
+      <node ref="DS7" pin="2" pinfunction="ROW3_K_2" pintype="passive"/>
+      <node ref="U4" pin="32" pinfunction="CS3_32" pintype="output"/>
+    </net>
+    <net code="69" name="D4_CS4" class="Default">
+      <node ref="DS7" pin="9" pinfunction="ROW4_K_9" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="CS4_1" pintype="output"/>
+    </net>
+    <net code="70" name="D4_CS5" class="Default">
+      <node ref="DS7" pin="4" pinfunction="ROW5_K_4" pintype="passive"/>
+      <node ref="U4" pin="2" pinfunction="CS5_2" pintype="output"/>
+    </net>
+    <net code="71" name="D4_CS6" class="Default">
+      <node ref="DS7" pin="5" pinfunction="ROW6_K_5" pintype="passive"/>
+      <node ref="U4" pin="3" pinfunction="CS6_3" pintype="output"/>
+    </net>
+    <net code="72" name="D4_CS7" class="Default">
+      <node ref="DS7" pin="6" pinfunction="ROW7_K_6" pintype="passive"/>
+      <node ref="U4" pin="4" pinfunction="CS7_4" pintype="output"/>
+    </net>
+    <net code="73" name="D4_SW1" class="Default">
+      <node ref="DS7" pin="1" pinfunction="COL1_A_1" pintype="passive"/>
+      <node ref="U4" pin="22" pinfunction="SW1_22" pintype="output"/>
+    </net>
+    <net code="74" name="D4_SW2" class="Default">
+      <node ref="DS7" pin="3" pinfunction="COL2_A_3" pintype="passive"/>
+      <node ref="U4" pin="21" pinfunction="SW2_21" pintype="output"/>
+    </net>
+    <net code="75" name="D4_SW3" class="Default">
+      <node ref="DS7" pin="10" pinfunction="COL3_A_10" pintype="passive"/>
+      <node ref="U4" pin="20" pinfunction="SW3_20" pintype="output"/>
+    </net>
+    <net code="76" name="D4_SW4" class="Default">
+      <node ref="DS7" pin="7" pinfunction="COL4_A_7" pintype="passive"/>
+      <node ref="U4" pin="19" pinfunction="SW4_19" pintype="output"/>
+    </net>
+    <net code="77" name="D4_SW5" class="Default">
+      <node ref="DS7" pin="8" pinfunction="COL5_A_8" pintype="passive"/>
+      <node ref="U4" pin="18" pinfunction="SW5_18" pintype="output"/>
+    </net>
+    <net code="78" name="GND" class="Default">
+      <node ref="C1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="J1" pin="MP" pinfunction="MP_MP" pintype="passive"/>
+      <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="24" pinfunction="GND_24" pintype="power_in"/>
+      <node ref="U1" pin="28" pinfunction="AD_28" pintype="input"/>
+      <node ref="U1" pin="33" pinfunction="EP_GND_33" pintype="power_in"/>
+      <node ref="U1" pin="9" pinfunction="GND_9" pintype="power_in"/>
+      <node ref="U2" pin="24" pinfunction="GND_24" pintype="power_in"/>
+      <node ref="U2" pin="33" pinfunction="EP_GND_33" pintype="power_in"/>
+      <node ref="U2" pin="9" pinfunction="GND_9" pintype="power_in"/>
+      <node ref="U3" pin="24" pinfunction="GND_24" pintype="power_in"/>
+      <node ref="U3" pin="33" pinfunction="EP_GND_33" pintype="power_in"/>
+      <node ref="U3" pin="9" pinfunction="GND_9" pintype="power_in"/>
+      <node ref="U4" pin="24" pinfunction="GND_24" pintype="power_in"/>
+      <node ref="U4" pin="33" pinfunction="EP_GND_33" pintype="power_in"/>
+      <node ref="U4" pin="9" pinfunction="GND_9" pintype="power_in"/>
+      <node ref="U5" pin="33" pinfunction="EP_GND_33" pintype="power_in"/>
+      <node ref="U5" pin="5" pinfunction="VSS_VSSA_5" pintype="power_in"/>
+      <node ref="U6" pin="2" pinfunction="GND_2" pintype="power_in"/>
+    </net>
+    <net code="79" name="ISET1" class="Default">
+      <node ref="R1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="25" pinfunction="ISET_25" pintype="passive"/>
+    </net>
+    <net code="80" name="ISET2" class="Default">
+      <node ref="R2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="25" pinfunction="ISET_25" pintype="passive"/>
+    </net>
+    <net code="81" name="ISET3" class="Default">
+      <node ref="R3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="25" pinfunction="ISET_25" pintype="passive"/>
+    </net>
+    <net code="82" name="ISET4" class="Default">
+      <node ref="R4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="25" pinfunction="ISET_25" pintype="passive"/>
+    </net>
+    <net code="83" name="LED_SDB" class="Default">
+      <node ref="R7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="29" pinfunction="SDB_29" pintype="input"/>
+      <node ref="U2" pin="29" pinfunction="SDB_29" pintype="input"/>
+      <node ref="U3" pin="29" pinfunction="SDB_29" pintype="input"/>
+      <node ref="U4" pin="29" pinfunction="SDB_29" pintype="input"/>
+      <node ref="U5" pin="15" pinfunction="PB0_LED_SDB_15" pintype="output"/>
+    </net>
+    <net code="84" name="NRST" class="Default">
+      <node ref="C12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="6" pinfunction="PF2_NRST_6" pintype="input"/>
+    </net>
+    <net code="85" name="SCL" class="Default">
+      <node ref="R5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="27" pinfunction="SCL_27" pintype="input"/>
+      <node ref="U2" pin="27" pinfunction="SCL_27" pintype="input"/>
+      <node ref="U2" pin="28" pinfunction="AD_28" pintype="input"/>
+      <node ref="U3" pin="27" pinfunction="SCL_27" pintype="input"/>
+      <node ref="U4" pin="27" pinfunction="SCL_27" pintype="input"/>
+      <node ref="U5" pin="30" pinfunction="PB6_I2C1_SCL_30" pintype="bidirectional"/>
+    </net>
+    <net code="86" name="SDA" class="Default">
+      <node ref="R6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="26" pinfunction="SDA_26" pintype="bidirectional"/>
+      <node ref="U2" pin="26" pinfunction="SDA_26" pintype="bidirectional"/>
+      <node ref="U3" pin="26" pinfunction="SDA_26" pintype="bidirectional"/>
+      <node ref="U3" pin="28" pinfunction="AD_28" pintype="input"/>
+      <node ref="U4" pin="26" pinfunction="SDA_26" pintype="bidirectional"/>
+      <node ref="U5" pin="31" pinfunction="PB7_I2C1_SDA_31" pintype="bidirectional"/>
+    </net>
+    <net code="87" name="SWDIO" class="Default">
+      <node ref="TP3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="24" pinfunction="PA13_SWDIO_24" pintype="bidirectional"/>
+    </net>
+    <net code="88" name="USB_DM" class="Default">
+      <node ref="J1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U5" pin="22" pinfunction="PA11_USB_DM_22" pintype="bidirectional"/>
+    </net>
+    <net code="89" name="USB_DP" class="Default">
+      <node ref="J1" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="U5" pin="23" pinfunction="PA12_USB_DP_23" pintype="bidirectional"/>
+    </net>
+    <net code="90" name="VBUS" class="Power">
+      <node ref="F1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="91" name="unconnected-(U1-CS15-Pad13)" class="Default">
+      <node ref="U1" pin="13" pinfunction="CS15_13" pintype="output+no_connect"/>
+    </net>
+    <net code="92" name="unconnected-(U1-CS16-Pad14)" class="Default">
+      <node ref="U1" pin="14" pinfunction="CS16_14" pintype="output+no_connect"/>
+    </net>
+    <net code="93" name="unconnected-(U1-SW6-Pad17)" class="Default">
+      <node ref="U1" pin="17" pinfunction="SW6_17" pintype="output+no_connect"/>
+    </net>
+    <net code="94" name="unconnected-(U1-SW7-Pad16)" class="Default">
+      <node ref="U1" pin="16" pinfunction="SW7_16" pintype="output+no_connect"/>
+    </net>
+    <net code="95" name="unconnected-(U1-SW8-Pad15)" class="Default">
+      <node ref="U1" pin="15" pinfunction="SW8_15" pintype="output+no_connect"/>
+    </net>
+    <net code="96" name="unconnected-(U2-CS15-Pad13)" class="Default">
+      <node ref="U2" pin="13" pinfunction="CS15_13" pintype="output+no_connect"/>
+    </net>
+    <net code="97" name="unconnected-(U2-CS16-Pad14)" class="Default">
+      <node ref="U2" pin="14" pinfunction="CS16_14" pintype="output+no_connect"/>
+    </net>
+    <net code="98" name="unconnected-(U2-SW6-Pad17)" class="Default">
+      <node ref="U2" pin="17" pinfunction="SW6_17" pintype="output+no_connect"/>
+    </net>
+    <net code="99" name="unconnected-(U2-SW7-Pad16)" class="Default">
+      <node ref="U2" pin="16" pinfunction="SW7_16" pintype="output+no_connect"/>
+    </net>
+    <net code="100" name="unconnected-(U2-SW8-Pad15)" class="Default">
+      <node ref="U2" pin="15" pinfunction="SW8_15" pintype="output+no_connect"/>
+    </net>
+    <net code="101" name="unconnected-(U3-CS15-Pad13)" class="Default">
+      <node ref="U3" pin="13" pinfunction="CS15_13" pintype="output+no_connect"/>
+    </net>
+    <net code="102" name="unconnected-(U3-CS16-Pad14)" class="Default">
+      <node ref="U3" pin="14" pinfunction="CS16_14" pintype="output+no_connect"/>
+    </net>
+    <net code="103" name="unconnected-(U3-SW6-Pad17)" class="Default">
+      <node ref="U3" pin="17" pinfunction="SW6_17" pintype="output+no_connect"/>
+    </net>
+    <net code="104" name="unconnected-(U3-SW7-Pad16)" class="Default">
+      <node ref="U3" pin="16" pinfunction="SW7_16" pintype="output+no_connect"/>
+    </net>
+    <net code="105" name="unconnected-(U3-SW8-Pad15)" class="Default">
+      <node ref="U3" pin="15" pinfunction="SW8_15" pintype="output+no_connect"/>
+    </net>
+    <net code="106" name="unconnected-(U4-CS8-Pad5)" class="Default">
+      <node ref="U4" pin="5" pinfunction="CS8_5" pintype="output+no_connect"/>
+    </net>
+    <net code="107" name="unconnected-(U4-CS9-Pad6)" class="Default">
+      <node ref="U4" pin="6" pinfunction="CS9_6" pintype="output+no_connect"/>
+    </net>
+    <net code="108" name="unconnected-(U4-CS10-Pad7)" class="Default">
+      <node ref="U4" pin="7" pinfunction="CS10_7" pintype="output+no_connect"/>
+    </net>
+    <net code="109" name="unconnected-(U4-CS11-Pad8)" class="Default">
+      <node ref="U4" pin="8" pinfunction="CS11_8" pintype="output+no_connect"/>
+    </net>
+    <net code="110" name="unconnected-(U4-CS12-Pad10)" class="Default">
+      <node ref="U4" pin="10" pinfunction="CS12_10" pintype="output+no_connect"/>
+    </net>
+    <net code="111" name="unconnected-(U4-CS13-Pad11)" class="Default">
+      <node ref="U4" pin="11" pinfunction="CS13_11" pintype="output+no_connect"/>
+    </net>
+    <net code="112" name="unconnected-(U4-CS14-Pad12)" class="Default">
+      <node ref="U4" pin="12" pinfunction="CS14_12" pintype="output+no_connect"/>
+    </net>
+    <net code="113" name="unconnected-(U4-CS15-Pad13)" class="Default">
+      <node ref="U4" pin="13" pinfunction="CS15_13" pintype="output+no_connect"/>
+    </net>
+    <net code="114" name="unconnected-(U4-CS16-Pad14)" class="Default">
+      <node ref="U4" pin="14" pinfunction="CS16_14" pintype="output+no_connect"/>
+    </net>
+    <net code="115" name="unconnected-(U4-SW6-Pad17)" class="Default">
+      <node ref="U4" pin="17" pinfunction="SW6_17" pintype="output+no_connect"/>
+    </net>
+    <net code="116" name="unconnected-(U4-SW7-Pad16)" class="Default">
+      <node ref="U4" pin="16" pinfunction="SW7_16" pintype="output+no_connect"/>
+    </net>
+    <net code="117" name="unconnected-(U4-SW8-Pad15)" class="Default">
+      <node ref="U4" pin="15" pinfunction="SW8_15" pintype="output+no_connect"/>
+    </net>
+    <net code="118" name="unconnected-(U5-Pad1)" class="Default">
+      <node ref="U5" pin="1" pinfunction="1_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="119" name="unconnected-(U5-Pad2)" class="Default">
+      <node ref="U5" pin="2" pinfunction="2_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="120" name="unconnected-(U5-Pad3)" class="Default">
+      <node ref="U5" pin="3" pinfunction="3_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="121" name="unconnected-(U5-Pad9)" class="Default">
+      <node ref="U5" pin="9" pinfunction="9_9" pintype="passive+no_connect"/>
+    </net>
+    <net code="122" name="unconnected-(U5-Pad10)" class="Default">
+      <node ref="U5" pin="10" pinfunction="10_10" pintype="passive+no_connect"/>
+    </net>
+    <net code="123" name="unconnected-(U5-Pad11)" class="Default">
+      <node ref="U5" pin="11" pinfunction="11_11" pintype="passive+no_connect"/>
+    </net>
+    <net code="124" name="unconnected-(U5-Pad12)" class="Default">
+      <node ref="U5" pin="12" pinfunction="12_12" pintype="passive+no_connect"/>
+    </net>
+    <net code="125" name="unconnected-(U5-Pad13)" class="Default">
+      <node ref="U5" pin="13" pinfunction="13_13" pintype="passive+no_connect"/>
+    </net>
+    <net code="126" name="unconnected-(U5-Pad14)" class="Default">
+      <node ref="U5" pin="14" pinfunction="14_14" pintype="passive+no_connect"/>
+    </net>
+    <net code="127" name="unconnected-(U5-Pad16)" class="Default">
+      <node ref="U5" pin="16" pinfunction="16_16" pintype="passive+no_connect"/>
+    </net>
+    <net code="128" name="unconnected-(U5-Pad17)" class="Default">
+      <node ref="U5" pin="17" pinfunction="17_17" pintype="passive+no_connect"/>
+    </net>
+    <net code="129" name="unconnected-(U5-Pad18)" class="Default">
+      <node ref="U5" pin="18" pinfunction="18_18" pintype="passive+no_connect"/>
+    </net>
+    <net code="130" name="unconnected-(U5-Pad19)" class="Default">
+      <node ref="U5" pin="19" pinfunction="19_19" pintype="passive+no_connect"/>
+    </net>
+    <net code="131" name="unconnected-(U5-Pad20)" class="Default">
+      <node ref="U5" pin="20" pinfunction="20_20" pintype="passive+no_connect"/>
+    </net>
+    <net code="132" name="unconnected-(U5-Pad21)" class="Default">
+      <node ref="U5" pin="21" pinfunction="21_21" pintype="passive+no_connect"/>
+    </net>
+    <net code="133" name="unconnected-(U5-Pad26)" class="Default">
+      <node ref="U5" pin="26" pinfunction="26_26" pintype="passive+no_connect"/>
+    </net>
+    <net code="134" name="unconnected-(U5-Pad27)" class="Default">
+      <node ref="U5" pin="27" pinfunction="27_27" pintype="passive+no_connect"/>
+    </net>
+    <net code="135" name="unconnected-(U5-Pad28)" class="Default">
+      <node ref="U5" pin="28" pinfunction="28_28" pintype="passive+no_connect"/>
+    </net>
+    <net code="136" name="unconnected-(U5-Pad29)" class="Default">
+      <node ref="U5" pin="29" pinfunction="29_29" pintype="passive+no_connect"/>
+    </net>
+    <net code="137" name="unconnected-(U5-Pad32)" class="Default">
+      <node ref="U5" pin="32" pinfunction="32_32" pintype="passive+no_connect"/>
+    </net>
+    <net code="138" name="unconnected-(U6-NC-Pad4)" class="Default">
+      <node ref="U6" pin="4" pinfunction="NC_4" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>

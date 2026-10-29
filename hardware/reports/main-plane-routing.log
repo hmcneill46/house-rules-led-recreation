@@ -1,0 +1,40 @@
+2026-10-29 12:39:46.753 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+2026-10-29 12:39:47.066 INFO   Hardware: 32 CPU cores, 230 CPU score, 16384 MB RAM
+2026-10-29 12:39:47.068 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 12:39:47.069 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-29 12:39:48.140 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 12:39:48.412 INFO   [92C62E\7A9D44] Loading board file 'house-rules-main-planes.dsn'...
+2026-10-29 12:39:48.729 WARN   DSN file 'house-rules-main-planes.dsn' was loaded with 2 warning(s).
+2026-10-29 12:39:48.771 INFO   [92C62E\7A9D44] Job '92C62E\7A9D44' started at 2026-10-29T12:39:48.771696Z.
+2026-10-29 12:39:49.345 WARN   Design Warning: Board has 19 pre-existing clearance violation(s) in the loaded design (before routing):
+  - 19 unfixable violation(s) (cannot be resolved by Freerouting):
+      * 19 fixed trace/via clearance violations (first 5 shown):
+          - FixedTrace#1068 [net D3_CS6] <-> DS5.10 [net D3_SW3]
+          - FixedTrace#1065 [net D3_CS6] <-> DS5.10 [net D3_SW3]
+          - U6.3 [net +5V] <-> FixedVia#1706 [net +5V]
+          - U6.1 [net +5V] <-> FixedVia#1708 [net +5V]
+          - F1.2 [net +5V] <-> FixedVia#1709 [net +5V]
+          ... and 14 more
+  - 0 potentially fixable violations
+Notice: Freerouting does not modify component placement, board outlines, or fixed items.
+Resolving these 19 unfixable violation(s) is the responsibility of the board author in their EDA tool (e.g. KiCad).
+2026-10-29 12:39:49.420 INFO   [92C62E\7A9D44] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=31.
+2026-10-29 12:39:50.076 INFO   [92C62E\7A9D44] Fanout stage started on board '5612fa2c581cf945d4bcfd19a66ee3f9' with 123 of 246 SMD pins needing fanout (123 already connected, 0 netless).
+2026-10-29 12:39:52.558 INFO   [92C62E\7A9D44] Fanout pass #1 on board 'ecd363032a2018a91b5b16ffde2e4e7b' completed in 2.21 seconds with 5 SMD pins fanouted, 24 not routed, 0 insert errors, +2 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-10-29 12:39:53.547 INFO   [92C62E\7A9D44] Fanout pass #2 on board 'ecd363032a2018a91b5b16ffde2e4e7b' completed in 0.95 seconds with 4 SMD pins fanouted, 2 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-10-29 12:39:53.772 INFO   [92C62E\7A9D44] Fanout stage completed: started with 246 total SMD pins, completed in 3.54 seconds, escaped pins: 185/246 (75.2%), using 3.86 total CPU seconds, 0.85 GB total allocated, and 358.6 MB peak heap usage.
+2026-10-29 12:39:54.821 INFO   [92C62E\7A9D44] Auto-routing stage started on board 'ecd363032a2018a91b5b16ffde2e4e7b' with baseline score 752.96 for 36 unrouted items.
+2026-10-29 12:40:46.149 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net 'SCL' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 12:41:32.267 INFO   [92C62E\7A9D44] Auto-routing pass #1 on board 'ecd363032a2018a91b5b16ffde2e4e7b' was completed in 97.10 seconds with score 814.50 (27 unrouted and 19 violations), using 100.80 CPU seconds and the job allocated 42.67 GB of memory so far.
+2026-10-29 12:42:28.418 INFO   [92C62E\7A9D44] Auto-routing pass #2 on board '1deb33e16434caa4a95607ee6c8413b8' was completed in 55.84 seconds with score 821.34 (26 unrouted and 19 violations), using 143.83 CPU seconds and the job allocated 65.48 GB of memory so far.
+2026-10-29 12:43:27.927 INFO   [92C62E\7A9D44] Auto-routing pass #3 on board '0c2ace1bd27506b6752dd64b0c565472' was completed in 59.17 seconds with score 841.85 (23 unrouted and 19 violations), using 191.49 CPU seconds and the job allocated 88.72 GB of memory so far.
+2026-10-29 12:44:16.670 INFO   [92C62E\7A9D44] Auto-routing pass #4 on board '2bdd512920de3a4bbf235bb212f8a56c' was completed in 48.46 seconds with score 841.85 (23 unrouted and 19 violations), using 235.57 CPU seconds and the job allocated 110.86 GB of memory so far.
+2026-10-29 12:45:07.136 INFO   [92C62E\7A9D44] Auto-routing pass #5 on board 'ac2b5c2817fef1ba3dbd9134fbf1f46b' was completed in 50.21 seconds with score 841.85 (23 unrouted and 19 violations), using 291.85 CPU seconds and the job allocated 138.74 GB of memory so far.
+2026-10-29 12:45:59.930 INFO   [92C62E\7A9D44] Auto-routing pass #6 on board '0bea42e34798736ade8377e12f9aa728' was completed in 52.53 seconds with score 841.85 (23 unrouted and 19 violations), using 339.28 CPU seconds and the job allocated 162.56 GB of memory so far.
+2026-10-29 12:46:44.076 INFO   [92C62E\7A9D44] Auto-routing pass #7 on board '8f9fff0bff81e4ef58d43fe4f66ce0c4' was completed in 43.98 seconds with score 841.85 (23 unrouted and 19 violations), using 377.96 CPU seconds and the job allocated 183.14 GB of memory so far.
+2026-10-29 12:47:28.006 INFO   [92C62E\7A9D44] Auto-routing pass #8 on board 'eb9547cbbdc508c167c5e0abff692fb4' was completed in 43.61 seconds with score 848.69 (22 unrouted and 19 violations), using 424.09 CPU seconds and the job allocated 208.43 GB of memory so far.
+2026-10-29 12:47:28.949 INFO   [92C62E\7A9D44] Auto-routing stage completed: started with 37 unrouted nets, completed in 459.23 seconds, final score: 848.69 (22 unrouted and 19 violations), using 424.09 total CPU seconds, 208.43 GB total allocated, and 341.3 MB peak heap usage.
+2026-10-29 12:47:29.205 INFO   [92C62E\7A9D44] Skipping optimization stage: the board has 22 unrouted connection(s) (optimizer only runs on completely routed boards).
+2026-10-29 12:47:29.227 INFO   [92C62E\7A9D44] Job '92C62E\7A9D44' finished with state: COMPLETED (elapsed: 7 minutes 40.45 seconds, finished at UTC: 2026-10-29T12:47:29.226234Z).
+2026-10-29 12:47:31.353 INFO   Saving output file '/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/kicad/house-rules-main-final.ses' (SES)...
+2026-10-29 12:47:31.370 INFO   Successfully saved output file '/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/kicad/house-rules-main-final.ses' (166786 bytes).

@@ -1,0 +1,19 @@
+{
+  "main-innerland-drc.json": {
+    "counts": {
+      "warning:via_dangling": 15,
+      "warning:track_dangling": 49
+    },
+    "unconnected": 17,
+    "schematic_parity": 0
+  },
+  "main-innerland-negative-control-drc.json": {
+    "counts": {
+      "error:clearance": 8,
+      "warning:via_dangling": 15,
+      "warning:track_dangling": 49
+    },
+    "unconnected": 17,
+    "schematic_parity": 0
+  }
+}

@@ -1,0 +1,50 @@
+LED matrix functional model verification
+29 October 2026
+
+Scope: digital diode connectivity, proposed IS31FL3729 register allocation,
+shutdown logic, and datasheet-based current calculations. This is not an
+analogue or MCU-machine-code emulator and is not a hardware test certificate.
+
+Host checks:
+python3 -m unittest discover -s hardware/tests -p test_matrix_model.py -v
+16 tests passed.
+
+Coverage:
+- All 245 walking pixels reconstructed through independently defined module diodes.
+- Checkerboard and all-on patterns; all five scan phases partition the 245 dots.
+- Wrong source/sink polarity rejected; swapped rows produce a visible mismatch.
+- Shared pair cathodes rejected because physical pixels alias a register address.
+- Driver package pins and generated pixel CSV checked against the derived topology.
+- Used/unused outputs, startup/reset, software and hardware shutdown.
+- I2C 10 us quiet guards before and after SDB rising.
+- 47 kohm hardware peak setting, including 1% low resistor tolerance.
+- USB pre-authorisation LEDs off; configured 500 mA permits the nominal full frame.
+- Lower authorised average-current budget caps PWM; authorisation loss blanks LEDs.
+- Firmware default-current GCC8 fallback stays below 100 mA with nominal 30 mA reserve.
+- Only completed positive BC1.2 CDP/DCP results grant charger current; host suspend blanks.
+- Unmodelled all-switches-on mode raises instead of understating current.
+
+One-time artwork integration audit:
+22,248 distinct command windows (every integer scroll offset and every flash
+bitmap) were encoded into driver register images and reconstructed through the
+physical diode model. Every reconstructed frame matched its exported columns.
+This audits pixel content, not exact elapsed-time transitions on real hardware.
+
+Browser checks:
+- Offline generated JavaScript parsed successfully.
+- Chromium headless loaded the local file with no page runtime errors.
+- All-on displayed 245 dots, logical agreement 245/245, estimated LED current 341.6 mA.
+- Default-current fallback displays a dim frame at approximately 42.7 mA all-on LED current.
+- Switching to host suspend displays zero dots.
+- Checkerboard screenshot visually inspected: emulator-preview.png.
+
+Nominal assumptions:
+R_ISET=47000 ohm, GCC=64, scaling=255, PWM=255,
+five scan phases, 32 kHz timing: 30 us active / (30+0.8+0.27) us slot.
+Peak per dot approximately 7.25 mA, average all-on approximately 341.6 mA.
+MCU/driver overhead and current-regulation error are additional.
+
+Hardware release still requires:
+Actual physical pin-1/orientation and footprint confirmation; current and thermal
+measurements; ghosting and optical tests; USB source/configuration/suspend tests;
+signal integrity, soldering/assembly and manufacturing checks.

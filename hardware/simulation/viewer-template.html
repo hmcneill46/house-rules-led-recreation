@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>House Rules | matrix functional emulator</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,sans-serif;color:#24241f;background:#f4f2eb}*{box-sizing:border-box}body{margin:0;padding:38px 24px}main{max-width:1100px;margin:auto}h1{font-size:30px;letter-spacing:-.7px;margin:0 0 8px}p{line-height:1.5}.muted{color:#66645b}.notice{padding:13px 16px;border-left:4px solid #a67426;background:#ece5d5;font-size:14px}canvas{display:block;width:100%;height:auto;background:#111;border:9px solid #252525;border-radius:6px;box-shadow:0 5px 18px #0002;margin:26px 0 15px;touch-action:none}.toolbar{display:flex;gap:15px;align-items:end;flex-wrap:wrap;background:#fff9;padding:18px;border-radius:8px}.toolbar label{display:grid;gap:6px;font-size:13px}.toolbar input,.toolbar select,.toolbar button{font:inherit}.toolbar select,.toolbar button{min-height:35px;padding:6px 9px;border:1px solid #c9c7be;border-radius:5px;background:#fff}.toolbar button{cursor:pointer;font-weight:600}.toolbar input[type=range]{width:135px}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:20px 0}.stat{padding:14px;background:#fff8;border:1px solid #e0ded5;border-radius:7px}.stat strong{display:block;font-size:24px;margin-top:5px}.stat span{font-size:13px;color:#65635a}#pin{font-family:ui-monospace,monospace;padding:12px;background:#222;color:#e1e5d6;border-radius:6px;font-size:13px;line-height:1.65;min-height:66px}.pass{color:#247858}.fail{color:#a6382b}details{background:#fff7;padding:14px 18px;margin-top:18px;border-radius:6px}li{line-height:1.55;margin:8px 0}code{font-family:ui-monospace,monospace}footer{font-size:13px;color:#666;margin:25px 0 0}#command{margin:12px 0;font-size:14px;min-height:22px}a{color:#246b84}
+</style>
+<main>
+<h1>House Rules / matrix functional emulator</h1>
+<p class="muted">Seven Wenrun 5 × 7 modules, reconstructed from their diode pins and four IS31FL3729 register images.</p>
+<p class="notice">This checks logical wiring, scan allocation and calculated current. It does not prove physical pin orientation, brightness, ghosting, signal integrity, thermal behaviour or USB compliance on hardware.</p>
+<canvas id="screen" width="1050" height="210" aria-label="Simulated seven by thirty-five LED display"></canvas>
+<div class="toolbar">
+<button id="play">Pause</button><button id="restart">Restart</button>
+<label>Pattern<select id="pattern"><option value="art">Artwork sequence</option><option value="walk">Walking pixel</option><option value="checker">Checkerboard</option><option value="all">All dots on</option></select></label>
+<label>Supply authorisation<select id="power"><option value="500">USB configured: 500 mA</option><option value="0">Default current: GCC8 dim fallback</option><option value="1500">Authorised Type-C: ≥1.5 A</option><option value="2000">BC1.2 complete: CDP/DCP charger</option><option value="-1">Host USB suspend: LEDs off</option></select></label>
+<label>PWM brightness <b id="brightValue">255 / 255</b><input id="bright" type="range" min="0" max="255" value="255"></label>
+<label>Playback speed <b id="speedValue">1×</b><input id="speed" type="range" min="0.1" max="2" step="0.1" value="1"></label>
+<label>Scan view<select id="phase"><option value="0">Combined persistence view</option><option value="1">SW1 only</option><option value="2">SW2 only</option><option value="3">SW3 only</option><option value="4">SW4 only</option><option value="5">SW5 only</option></select></label>
+</div>
+<div id="command"></div>
+<div class="stats"><div class="stat"><span>Nominal peak current per dot</span><strong id="peak"></strong></div><div class="stat"><span>Estimated average LED current</span><strong id="current"></strong></div><div class="stat"><span>Lit dots / total 245</span><strong id="lit"></strong></div><div class="stat"><span>Logical frame agreement</span><strong id="match"></strong></div></div>
+<div id="pin">Point to a dot to inspect its module pins, driver and PWM register.</div>
+<details><summary>What this model checks</summary><ul>
+<li>The module has five anode pins <code>1, 3, 10, 7, 8</code> and seven cathode pins <code>12, 11, 2, 9, 4, 5, 6</code>. Register values are decoded through those independent physical diode paths.</li>
+<li>Four drivers serve <code>2 + 2 + 2 + 1</code> modules. Paired modules share anode switches and retain separate row sinks. Every physical pixel must have a unique driver/register address.</li>
+<li>Current calculation uses <code>47 kΩ ISET</code>, <code>GCC = 64</code>, <code>scaling = 255</code>, five scan slots and the datasheet's 32 kHz blanking timing. Full PWM is <code>255/256</code>.</li>
+<li>The supply selector represents explicit permission established by firmware, not current magically available when a cable is plugged in. During actual startup/detection the drivers stay shut down; afterwards an unqualified default-current source uses GCC8 dim mode. Full current needs configuration, a positive Type-C advertisement or completed BC1.2 CDP/DCP detection. A host suspend blanks the LEDs. MCU suspend current and analogue charger detection are outside this viewer.</li>
+<li>The actual circuit still needs measurement and a full-size footprint check. A digital emulator cannot validate an incorrectly identified bottom-view pin-1 corner.</li>
+</ul></details>
+<footer>Offline model. No network requests. Artwork comes from this project's font and sequence; flash durations use nominal 60 fps. <a href="README.md">Model scope and checks</a>.</footer>
+</main>
+<script>
+'use strict';
+const D=/*__MODEL_DATA__*/;
+const bytes=Uint8Array.from(atob(D.data),c=>c.charCodeAt(0)),commands=D.manifest.commands,paths=D.paths;
+const screen=document.querySelector('#screen'),ctx=screen.getContext('2d'),el=id=>document.getElementById(id);
+let running=true,commandIndex=0,elapsed=0,lastTime=0,walkTime=0,currentColumns=new Uint8Array(35),registers=[],currentDecoded=new Uint8Array(35),activeBrightness=255;
+const iPeak=342/47000*255/256,duty=30/31.07/5;
+function zeros(){return Array.from({length:4},()=>new Uint8Array(128));}
+function encode(columns,pwm){const images=zeros();for(let x=0;x<35;x++){const mod=Math.floor(x/5),driver=Math.floor(mod/2),slot=mod%2,col=x%5;for(let row=0;row<7;row++)images[driver][col*16+slot*7+row]=(columns[x]>>row&1)?pwm:0;}return images;}
+function decode(images,phase){const out=new Uint8Array(35);for(const p of paths){if(phase&&p.sw!==phase)continue;const reg=(p.sw-1)*16+p.cs;if(images[p.driver][reg-1]>0)out[p.x]|=1<<p.y;}return out;}
+function artworkFrame(){let cmd=commands[commandIndex];while(elapsed>=(cmd.kind==='flash'?cmd.flash_frames/60:Math.max(1/60,(cmd.length-35)/47.5))){const duration=cmd.kind==='flash'?cmd.flash_frames/60:Math.max(1/60,(cmd.length-35)/47.5);elapsed-=duration;commandIndex=cmd.next_index;cmd=commands[commandIndex];}let offset=cmd.kind==='flash'?0:Math.floor(elapsed*47.5);return Uint8Array.from({length:35},(_,x)=>offset+x<cmd.length?bytes[cmd.offset+offset+x]:0);}
+function frame(){const pattern=el('pattern').value;if(pattern==='all')return new Uint8Array(35).fill(127);if(pattern==='checker')return Uint8Array.from({length:35},(_,x)=>[0x55,0x2a][x%2]);if(pattern==='walk'){const out=new Uint8Array(35),pixel=Math.floor(walkTime*20)%245;out[Math.floor(pixel/7)]=1<<(pixel%7);return out;}return artworkFrame();}
+function render(){currentColumns=frame();const requested=+el('bright').value,power=+el('power').value,gcc=power<0?0:power===0?8:64;activeBrightness=gcc?requested:0;registers=encode(currentColumns,activeBrightness);currentDecoded=decode(registers,0);const phase=+el('phase').value,shown=decode(registers,phase);ctx.fillStyle='#111';ctx.fillRect(0,0,1050,210);for(let x=0;x<35;x++)for(let y=0;y<7;y++){const on=shown[x]>>y&1;ctx.beginPath();ctx.arc(x*30+15,y*30+15,11.2,0,Math.PI*2);ctx.fillStyle=on?`rgb(${Math.round(60+195*activeBrightness/255*gcc/64)},34,23)`:'#292a27';ctx.fill();}ctx.strokeStyle='#555';for(let m=1;m<7;m++){ctx.beginPath();ctx.moveTo(m*150,0);ctx.lineTo(m*150,210);ctx.stroke();}let lit=0;for(const c of currentDecoded)for(let y=0;y<7;y++)lit+=c>>y&1;const estimate=lit*iPeak*(gcc/64)*(activeBrightness/256)*duty*1000;el('peak').textContent=(iPeak*gcc/64*1000).toFixed(2)+' mA';el('current').textContent=estimate.toFixed(1)+' mA';el('lit').textContent=lit+' / 245';const expected=currentColumns.map(c=>activeBrightness?c:0),matches=expected.every((c,x)=>c===currentDecoded[x]);el('match').textContent=matches?'245 / 245':'Mismatch';el('match').className=matches?'pass':'fail';el('brightValue').textContent=activeBrightness+' / 255';el('speedValue').textContent=el('speed').value+'×';el('command').textContent=el('pattern').value==='art'?`Command ${commandIndex+1} / ${commands.length}: ${commands[commandIndex].kind} · ${D.labels[commandIndex]}`:'Diagnostic pattern: '+el('pattern').selectedOptions[0].textContent;}
+function tick(now){const delta=lastTime?Math.min((now-lastTime)/1000,0.1):0;lastTime=now;if(running){elapsed+=delta*+el('speed').value;walkTime+=delta*+el('speed').value;}render();requestAnimationFrame(tick);}
+el('play').onclick=()=>{running=!running;el('play').textContent=running?'Pause':'Play';};el('restart').onclick=()=>{commandIndex=0;elapsed=0;walkTime=0;render();};
+screen.addEventListener('pointermove',ev=>{const box=screen.getBoundingClientRect(),x=Math.min(34,Math.max(0,Math.floor((ev.clientX-box.left-9)/(box.width-18)*35))),y=Math.min(6,Math.max(0,Math.floor((ev.clientY-box.top-9)/(box.height-18)*7))),p=paths.find(p=>p.x===x&&p.y===y);el('pin').textContent=`Pixel (${x}, ${y}) · module ${p.module+1} · anode pin ${p.anode_pin} → cathode pin ${p.cathode_pin}\nDriver ${p.driver+1} (I²C 0x${(0x34+p.driver).toString(16)}) · SW${p.sw} / CS${p.cs} · PWM register 0x${((p.sw-1)*16+p.cs).toString(16).padStart(2,'0').toUpperCase()} · value ${registers[p.driver][(p.sw-1)*16+p.cs-1]}`;el('pin').style.whiteSpace='pre-wrap';});
+render();requestAnimationFrame(tick);
+</script>
+</html>

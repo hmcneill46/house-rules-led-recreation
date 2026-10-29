@@ -1,0 +1,594 @@
+{
+  "status": "print-only test tool; no fit has been performed",
+  "pcb_finished_hole_diameter_mm": 0.9,
+  "print_hole_diameter_mm": 1.0,
+  "round_hole_facets": 32,
+  "hole_centres": [
+    {
+      "module": "DS1",
+      "pin": 1,
+      "x": 2.29,
+      "y": 2.3
+    },
+    {
+      "module": "DS1",
+      "pin": 2,
+      "x": 2.29,
+      "y": 4.84
+    },
+    {
+      "module": "DS1",
+      "pin": 3,
+      "x": 2.29,
+      "y": 7.38
+    },
+    {
+      "module": "DS1",
+      "pin": 4,
+      "x": 2.29,
+      "y": 9.92
+    },
+    {
+      "module": "DS1",
+      "pin": 5,
+      "x": 2.29,
+      "y": 12.46
+    },
+    {
+      "module": "DS1",
+      "pin": 6,
+      "x": 2.29,
+      "y": 15.0
+    },
+    {
+      "module": "DS1",
+      "pin": 12,
+      "x": 9.91,
+      "y": 2.3
+    },
+    {
+      "module": "DS1",
+      "pin": 11,
+      "x": 9.91,
+      "y": 4.84
+    },
+    {
+      "module": "DS1",
+      "pin": 10,
+      "x": 9.91,
+      "y": 7.38
+    },
+    {
+      "module": "DS1",
+      "pin": 9,
+      "x": 9.91,
+      "y": 9.92
+    },
+    {
+      "module": "DS1",
+      "pin": 8,
+      "x": 9.91,
+      "y": 12.46
+    },
+    {
+      "module": "DS1",
+      "pin": 7,
+      "x": 9.91,
+      "y": 15.0
+    },
+    {
+      "module": "DS2",
+      "pin": 1,
+      "x": 14.99,
+      "y": 2.3
+    },
+    {
+      "module": "DS2",
+      "pin": 2,
+      "x": 14.99,
+      "y": 4.84
+    },
+    {
+      "module": "DS2",
+      "pin": 3,
+      "x": 14.99,
+      "y": 7.38
+    },
+    {
+      "module": "DS2",
+      "pin": 4,
+      "x": 14.99,
+      "y": 9.92
+    },
+    {
+      "module": "DS2",
+      "pin": 5,
+      "x": 14.99,
+      "y": 12.46
+    },
+    {
+      "module": "DS2",
+      "pin": 6,
+      "x": 14.99,
+      "y": 15.0
+    },
+    {
+      "module": "DS2",
+      "pin": 12,
+      "x": 22.61,
+      "y": 2.3
+    },
+    {
+      "module": "DS2",
+      "pin": 11,
+      "x": 22.61,
+      "y": 4.84
+    },
+    {
+      "module": "DS2",
+      "pin": 10,
+      "x": 22.61,
+      "y": 7.38
+    },
+    {
+      "module": "DS2",
+      "pin": 9,
+      "x": 22.61,
+      "y": 9.92
+    },
+    {
+      "module": "DS2",
+      "pin": 8,
+      "x": 22.61,
+      "y": 12.46
+    },
+    {
+      "module": "DS2",
+      "pin": 7,
+      "x": 22.61,
+      "y": 15.0
+    },
+    {
+      "module": "DS3",
+      "pin": 1,
+      "x": 27.69,
+      "y": 2.3
+    },
+    {
+      "module": "DS3",
+      "pin": 2,
+      "x": 27.69,
+      "y": 4.84
+    },
+    {
+      "module": "DS3",
+      "pin": 3,
+      "x": 27.69,
+      "y": 7.38
+    },
+    {
+      "module": "DS3",
+      "pin": 4,
+      "x": 27.69,
+      "y": 9.92
+    },
+    {
+      "module": "DS3",
+      "pin": 5,
+      "x": 27.69,
+      "y": 12.46
+    },
+    {
+      "module": "DS3",
+      "pin": 6,
+      "x": 27.69,
+      "y": 15.0
+    },
+    {
+      "module": "DS3",
+      "pin": 12,
+      "x": 35.31,
+      "y": 2.3
+    },
+    {
+      "module": "DS3",
+      "pin": 11,
+      "x": 35.31,
+      "y": 4.84
+    },
+    {
+      "module": "DS3",
+      "pin": 10,
+      "x": 35.31,
+      "y": 7.38
+    },
+    {
+      "module": "DS3",
+      "pin": 9,
+      "x": 35.31,
+      "y": 9.92
+    },
+    {
+      "module": "DS3",
+      "pin": 8,
+      "x": 35.31,
+      "y": 12.46
+    },
+    {
+      "module": "DS3",
+      "pin": 7,
+      "x": 35.31,
+      "y": 15.0
+    },
+    {
+      "module": "DS4",
+      "pin": 1,
+      "x": 40.39,
+      "y": 2.3
+    },
+    {
+      "module": "DS4",
+      "pin": 2,
+      "x": 40.39,
+      "y": 4.84
+    },
+    {
+      "module": "DS4",
+      "pin": 3,
+      "x": 40.39,
+      "y": 7.38
+    },
+    {
+      "module": "DS4",
+      "pin": 4,
+      "x": 40.39,
+      "y": 9.92
+    },
+    {
+      "module": "DS4",
+      "pin": 5,
+      "x": 40.39,
+      "y": 12.46
+    },
+    {
+      "module": "DS4",
+      "pin": 6,
+      "x": 40.39,
+      "y": 15.0
+    },
+    {
+      "module": "DS4",
+      "pin": 12,
+      "x": 48.01,
+      "y": 2.3
+    },
+    {
+      "module": "DS4",
+      "pin": 11,
+      "x": 48.01,
+      "y": 4.84
+    },
+    {
+      "module": "DS4",
+      "pin": 10,
+      "x": 48.01,
+      "y": 7.38
+    },
+    {
+      "module": "DS4",
+      "pin": 9,
+      "x": 48.01,
+      "y": 9.92
+    },
+    {
+      "module": "DS4",
+      "pin": 8,
+      "x": 48.01,
+      "y": 12.46
+    },
+    {
+      "module": "DS4",
+      "pin": 7,
+      "x": 48.01,
+      "y": 15.0
+    },
+    {
+      "module": "DS5",
+      "pin": 1,
+      "x": 53.09,
+      "y": 2.3
+    },
+    {
+      "module": "DS5",
+      "pin": 2,
+      "x": 53.09,
+      "y": 4.84
+    },
+    {
+      "module": "DS5",
+      "pin": 3,
+      "x": 53.09,
+      "y": 7.38
+    },
+    {
+      "module": "DS5",
+      "pin": 4,
+      "x": 53.09,
+      "y": 9.92
+    },
+    {
+      "module": "DS5",
+      "pin": 5,
+      "x": 53.09,
+      "y": 12.46
+    },
+    {
+      "module": "DS5",
+      "pin": 6,
+      "x": 53.09,
+      "y": 15.0
+    },
+    {
+      "module": "DS5",
+      "pin": 12,
+      "x": 60.71,
+      "y": 2.3
+    },
+    {
+      "module": "DS5",
+      "pin": 11,
+      "x": 60.71,
+      "y": 4.84
+    },
+    {
+      "module": "DS5",
+      "pin": 10,
+      "x": 60.71,
+      "y": 7.38
+    },
+    {
+      "module": "DS5",
+      "pin": 9,
+      "x": 60.71,
+      "y": 9.92
+    },
+    {
+      "module": "DS5",
+      "pin": 8,
+      "x": 60.71,
+      "y": 12.46
+    },
+    {
+      "module": "DS5",
+      "pin": 7,
+      "x": 60.71,
+      "y": 15.0
+    },
+    {
+      "module": "DS6",
+      "pin": 1,
+      "x": 65.79,
+      "y": 2.3
+    },
+    {
+      "module": "DS6",
+      "pin": 2,
+      "x": 65.79,
+      "y": 4.84
+    },
+    {
+      "module": "DS6",
+      "pin": 3,
+      "x": 65.79,
+      "y": 7.38
+    },
+    {
+      "module": "DS6",
+      "pin": 4,
+      "x": 65.79,
+      "y": 9.92
+    },
+    {
+      "module": "DS6",
+      "pin": 5,
+      "x": 65.79,
+      "y": 12.46
+    },
+    {
+      "module": "DS6",
+      "pin": 6,
+      "x": 65.79,
+      "y": 15.0
+    },
+    {
+      "module": "DS6",
+      "pin": 12,
+      "x": 73.41,
+      "y": 2.3
+    },
+    {
+      "module": "DS6",
+      "pin": 11,
+      "x": 73.41,
+      "y": 4.84
+    },
+    {
+      "module": "DS6",
+      "pin": 10,
+      "x": 73.41,
+      "y": 7.38
+    },
+    {
+      "module": "DS6",
+      "pin": 9,
+      "x": 73.41,
+      "y": 9.92
+    },
+    {
+      "module": "DS6",
+      "pin": 8,
+      "x": 73.41,
+      "y": 12.46
+    },
+    {
+      "module": "DS6",
+      "pin": 7,
+      "x": 73.41,
+      "y": 15.0
+    },
+    {
+      "module": "DS7",
+      "pin": 1,
+      "x": 78.49,
+      "y": 2.3
+    },
+    {
+      "module": "DS7",
+      "pin": 2,
+      "x": 78.49,
+      "y": 4.84
+    },
+    {
+      "module": "DS7",
+      "pin": 3,
+      "x": 78.49,
+      "y": 7.38
+    },
+    {
+      "module": "DS7",
+      "pin": 4,
+      "x": 78.49,
+      "y": 9.92
+    },
+    {
+      "module": "DS7",
+      "pin": 5,
+      "x": 78.49,
+      "y": 12.46
+    },
+    {
+      "module": "DS7",
+      "pin": 6,
+      "x": 78.49,
+      "y": 15.0
+    },
+    {
+      "module": "DS7",
+      "pin": 12,
+      "x": 86.11,
+      "y": 2.3
+    },
+    {
+      "module": "DS7",
+      "pin": 11,
+      "x": 86.11,
+      "y": 4.84
+    },
+    {
+      "module": "DS7",
+      "pin": 10,
+      "x": 86.11,
+      "y": 7.38
+    },
+    {
+      "module": "DS7",
+      "pin": 9,
+      "x": 86.11,
+      "y": 9.92
+    },
+    {
+      "module": "DS7",
+      "pin": 8,
+      "x": 86.11,
+      "y": 12.46
+    },
+    {
+      "module": "DS7",
+      "pin": 7,
+      "x": 86.11,
+      "y": 15.0
+    }
+  ],
+  "plate": {
+    "vertices": 5384,
+    "triangles": 11100,
+    "edges": 16650,
+    "each_edge_shared_by_two_triangles": true,
+    "euler_characteristic": -166,
+    "signed_volume_mm3": 1463.7696518025755,
+    "min_xyz": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_xyz": [
+      88.4,
+      17.3,
+      1.0
+    ]
+  },
+  "separate_scale_coupon": {
+    "vertices": 8,
+    "triangles": 12,
+    "edges": 18,
+    "each_edge_shared_by_two_triangles": true,
+    "euler_characteristic": 2,
+    "signed_volume_mm3": 499.99999999999994,
+    "min_xyz": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_xyz": [
+      50.0,
+      10.0,
+      1.0
+    ]
+  },
+  "removable_3mm_spacer": {
+    "vertices": 12,
+    "triangles": 20,
+    "edges": 30,
+    "each_edge_shared_by_two_triangles": true,
+    "euler_characteristic": 2,
+    "signed_volume_mm3": 363.0,
+    "min_xyz": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_xyz": [
+      107.0,
+      3.0,
+      3.0
+    ]
+  },
+  "spacer_usage": {
+    "working_bar_xyz_mm": [
+      100,
+      1,
+      3
+    ],
+    "board_local_centre_y_mm": [
+      3.57,
+      13.73
+    ],
+    "board_local_min_y_mm": [
+      3.07,
+      13.23
+    ],
+    "assembly_z_mm": [
+      6.3,
+      9.3
+    ],
+    "nearest_nominal_0_5mm_pin_edge_clearance_mm": 0.52,
+    "remove_direction": "left, along minusX after soldering",
+    "quantity_to_print": 2,
+    "nearest_front_pad_rim_clearance_mm": 0.07,
+    "remove_after": "Two opposite pins tacked per module; cool, remove rails left, then finish remaining joints."
+  },
+  "mesh_closed_manifold": true,
+  "native_pcb_hole_centres_compared": 84,
+  "max_centre_coordinate_error_mm": 1.0000000010279564e-06,
+  "native_pcb_finished_holes_all_0_9": true
+}

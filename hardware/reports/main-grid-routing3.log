@@ -1,0 +1,20 @@
+01:41:13 PM: Debug: Adding duplicate image handler for 'PNG file'
+01:41:13 PM: Debug: Adding duplicate image handler for 'JPEG file'
+01:41:13 PM: Debug: Adding duplicate image handler for 'TIFF file'
+01:41:13 PM: Debug: Adding duplicate image handler for 'GIF file'
+01:41:13 PM: Debug: Adding duplicate image handler for 'PNM file'
+01:41:13 PM: Debug: Adding duplicate image handler for 'PCX file'
+01:41:13 PM: Debug: Adding duplicate image handler for 'IFF file'
+01:41:13 PM: Debug: Adding duplicate image handler for 'Windows icon file'
+01:41:13 PM: Debug: Adding duplicate image handler for 'Windows cursor file'
+01:41:13 PM: Debug: Adding duplicate image handler for 'Windows animated cursor file'
+01:41:13 PM: Debug: Adding duplicate image handler for 'TGA file'
+01:41:13 PM: Debug: Adding duplicate image handler for 'XPM file'
+D1_SW2 True 21 corners,0 vias,6159 nodes
+D1_SW3 True 16 corners,0 vias,419 nodes
+D1_CS8 True 27 corners,0 vias,2472 nodes
+D2_CS8 True 33 corners,2 vias,88741 nodes
+D1_CS5 True 27 corners,0 vias,1498 nodes
+SDA False timeout 180500
+SCL True 51 corners,2 vias,94106 nodes
+Added 6 connections; rerun native DRC.

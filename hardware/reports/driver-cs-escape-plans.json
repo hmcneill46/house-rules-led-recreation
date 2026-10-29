@@ -1,0 +1,500 @@
+{
+  "status": "Read-only candidate plans, no PCB mutations; apply only plans with no protected_or_pad_conflicts after fresh recheck",
+  "board_sha256_at_load": "b137630d5bfb18b3c759c740539a126d1c0c4d2777c44751d494e12931a5a428",
+  "coordinate_frame": "absolute board millimetres; auxiliary origin (50,50)",
+  "clearance_mm": 0.152,
+  "notes": [
+    "Computed while the root grid router was active; current routing may differ.",
+    "Pairs U2 CS6/CS7 via centres are .608mm apart; U3CS7/CS8 centres are .632mm apart.",
+    "New fanoutvia must be ordinary F-B through and may require removal/rerouting of listed unlocked copper; never remove pads or protected copper.",
+    "Native DRC and hole clearance checks remain authoritative after any application."
+  ],
+  "plans": [
+    {
+      "driver": "U2",
+      "net": "D2_CS6",
+      "pad": "3",
+      "stub_layer": "B.Cu",
+      "stub_width_mm": 0.1,
+      "stub_polyline_absolute_mm": [
+        [
+          83.45,
+          58.05
+        ],
+        [
+          84.5,
+          58.15
+        ]
+      ],
+      "via_absolute_mm": [
+        84.5,
+        58.15
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "protected_or_pad_conflicts": [],
+      "ripup_candidates": [
+        {
+          "uuid": "60b7dfec-8394-4fcd-b4ba-e8b2bd5bba97",
+          "net": "D2_SW3",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "F.Cu"
+          ]
+        },
+        {
+          "uuid": "6edb67b2-ae0d-45a8-a6cd-714dd2e6c8fd",
+          "net": "VBUS",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In3.Cu"
+          ]
+        },
+        {
+          "uuid": "ab9947e3-387c-4944-85ed-091611cb3faf",
+          "net": "VBUS",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In3.Cu"
+          ]
+        },
+        {
+          "uuid": "f1564f65-6900-456a-b937-2fef268fb8d4",
+          "net": "VBUS",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In3.Cu"
+          ]
+        }
+      ]
+    },
+    {
+      "driver": "U2",
+      "net": "D2_CS7",
+      "pad": "4",
+      "stub_layer": "B.Cu",
+      "stub_width_mm": 0.1,
+      "stub_polyline_absolute_mm": [
+        [
+          83.45,
+          58.45
+        ],
+        [
+          84.0,
+          58.45
+        ],
+        [
+          84.6,
+          58.75
+        ]
+      ],
+      "via_absolute_mm": [
+        84.6,
+        58.75
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "protected_or_pad_conflicts": [],
+      "ripup_candidates": [
+        {
+          "uuid": "1bff52fa-684f-4244-b4e2-42c9c22758fd",
+          "net": "D2_CS9",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "F.Cu"
+          ]
+        },
+        {
+          "uuid": "eb205d2b-4d42-42f8-b261-315bf9256507",
+          "net": "D2_CS8",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "c5f2b8bc-3ff1-4892-b498-5fe0f21d5e53",
+          "net": "VBUS",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In3.Cu"
+          ]
+        },
+        {
+          "uuid": "f1564f65-6900-456a-b937-2fef268fb8d4",
+          "net": "VBUS",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In3.Cu"
+          ]
+        },
+        {
+          "uuid": "6db3afd5-7d73-4878-a115-225cd4b0b0cd",
+          "net": "NRST",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In2.Cu"
+          ]
+        },
+        {
+          "uuid": "b244f5b4-7cee-4ed7-a22b-0d79adee2560",
+          "net": "NRST",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In2.Cu"
+          ]
+        }
+      ]
+    },
+    {
+      "driver": "U1",
+      "net": "D1_CS7",
+      "pad": "4",
+      "stub_layer": "B.Cu",
+      "stub_width_mm": 0.1,
+      "stub_polyline_absolute_mm": [
+        [
+          58.05,
+          58.45
+        ],
+        [
+          58.6,
+          58.45
+        ],
+        [
+          59.2,
+          58.75
+        ]
+      ],
+      "via_absolute_mm": [
+        59.2,
+        58.75
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "protected_or_pad_conflicts": [],
+      "ripup_candidates": [
+        {
+          "uuid": "2d7a3586-90c6-499c-8a3c-9ab1da8522dc",
+          "net": "D1_CS9",
+          "kind": "VIA",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "20250526-53cc-4315-b085-f34ffb5362d2",
+          "net": "D1_CS9",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "048c0ee0-b79e-4fad-ba54-b50a92d3b534",
+          "net": "D1_CS9",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In2.Cu"
+          ]
+        },
+        {
+          "uuid": "7c46fe9c-39c8-4e0f-89a8-49476532a5b1",
+          "net": "D1_CS8",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        }
+      ]
+    },
+    {
+      "driver": "U3",
+      "net": "D3_CS5",
+      "pad": "2",
+      "stub_layer": "B.Cu",
+      "stub_width_mm": 0.1,
+      "stub_polyline_absolute_mm": [
+        [
+          108.85,
+          57.65
+        ],
+        [
+          109.6,
+          57.65
+        ]
+      ],
+      "via_absolute_mm": [
+        109.6,
+        57.65
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "protected_or_pad_conflicts": [],
+      "ripup_candidates": [
+        {
+          "uuid": "04df155e-75a2-4d93-90dc-be7c687bc04f",
+          "net": "D3_CS6",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "085c5049-a2c4-404a-b15e-dfeed7a3f8ac",
+          "net": "D3_CS6",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "54134e3e-5ec8-4b1e-9ae3-46af11ec746c",
+          "net": "D3_CS6",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "b4340976-0ba0-4cb0-80bb-ddf1d80c6478",
+          "net": "D3_CS6",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        }
+      ]
+    },
+    {
+      "driver": "U3",
+      "net": "D3_CS7",
+      "pad": "4",
+      "stub_layer": "B.Cu",
+      "stub_width_mm": 0.1,
+      "stub_polyline_absolute_mm": [
+        [
+          108.85,
+          58.45
+        ],
+        [
+          109.4,
+          58.45
+        ],
+        [
+          110.0,
+          58.75
+        ]
+      ],
+      "via_absolute_mm": [
+        110.0,
+        58.75
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "protected_or_pad_conflicts": [],
+      "ripup_candidates": [
+        {
+          "uuid": "fe211dd7-cc4d-401e-8671-f9a71ad779af",
+          "net": "D3_CS9",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "f010836d-6035-44d4-8445-0fe267a61a4f",
+          "net": "SCL",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In2.Cu"
+          ]
+        },
+        {
+          "uuid": "c3bc19d4-cd50-4194-b679-f154b507a7f7",
+          "net": "VBUS",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In3.Cu"
+          ]
+        }
+      ]
+    },
+    {
+      "driver": "U3",
+      "net": "D3_CS8",
+      "pad": "5",
+      "stub_layer": "B.Cu",
+      "stub_width_mm": 0.1,
+      "stub_polyline_absolute_mm": [
+        [
+          108.85,
+          58.85
+        ],
+        [
+          109.5,
+          58.85
+        ],
+        [
+          109.8,
+          59.35
+        ]
+      ],
+      "via_absolute_mm": [
+        109.8,
+        59.35
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "protected_or_pad_conflicts": [],
+      "ripup_candidates": [
+        {
+          "uuid": "927ba17a-475d-4359-86de-325f37a92344",
+          "net": "D3_CS10",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "fe0277b7-e30b-4f38-b607-06a20ffd268b",
+          "net": "D3_CS9",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "fe211dd7-cc4d-401e-8671-f9a71ad779af",
+          "net": "D3_CS9",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        }
+      ]
+    },
+    {
+      "driver": "U3",
+      "net": "D3_SW3",
+      "pad": "20",
+      "stub_layer": "B.Cu",
+      "stub_width_mm": 0.1,
+      "stub_polyline_absolute_mm": [
+        [
+          104.95,
+          58.85
+        ],
+        [
+          103.9,
+          59.0
+        ]
+      ],
+      "via_absolute_mm": [
+        103.9,
+        59.0
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "protected_or_pad_conflicts": [],
+      "ripup_candidates": [
+        {
+          "uuid": "dd7c9b97-f51c-43ce-8970-4a15c0f0328c",
+          "net": "D3_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "F.Cu"
+          ]
+        },
+        {
+          "uuid": "eeda9586-4ecd-4111-93eb-7cf38226ad22",
+          "net": "D3_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "F.Cu"
+          ]
+        },
+        {
+          "uuid": "0f41b3a3-9671-4edc-8ee7-705882ac14ef",
+          "net": "D3_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "a55be90c-08d7-4bd5-ad69-43f937ba4927",
+          "net": "D3_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "e7a61c10-256c-4a26-91b8-e7a6eac0d1b7",
+          "net": "D3_SW4",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "f5216e3e-ca34-4913-87e4-48ef3ff68bbf",
+          "net": "D3_SW4",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "c3bc19d4-cd50-4194-b679-f154b507a7f7",
+          "net": "VBUS",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In3.Cu"
+          ]
+        },
+        {
+          "uuid": "5f3cf046-5c31-4549-833a-ba33f1192539",
+          "net": "D3_SW4",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        }
+      ]
+    }
+  ]
+}

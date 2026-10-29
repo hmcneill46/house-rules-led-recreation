@@ -1,0 +1,198 @@
+solid house_rules_alignment_tray
+  facet normal 0 0 -1
+    outer loop
+      vertex 0 21.8 0
+      vertex 93.8 21.8 0
+      vertex 93.8 0 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 0 21.8 0
+      vertex 93.8 0 0
+      vertex 0 0 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 1.6 1.6 1.2
+      vertex 92.2 1.6 1.2
+      vertex 92.2 20.2 1.2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 1.6 1.6 1.2
+      vertex 92.2 20.2 1.2
+      vertex 1.6 20.2 1.2
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 0 0 0
+      vertex 93.8 0 0
+      vertex 93.8 0 4.2
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 0 0 0
+      vertex 93.8 0 4.2
+      vertex 0 0 4.2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 0 0 4.2
+      vertex 93.8 0 4.2
+      vertex 92.2 1.6 4.2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 0 0 4.2
+      vertex 92.2 1.6 4.2
+      vertex 1.6 1.6 4.2
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 1.6 1.6 1.2
+      vertex 1.6 1.6 4.2
+      vertex 92.2 1.6 4.2
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 1.6 1.6 1.2
+      vertex 92.2 1.6 4.2
+      vertex 92.2 1.6 1.2
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 93.8 0 0
+      vertex 93.8 21.8 0
+      vertex 93.8 21.8 4.2
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 93.8 0 0
+      vertex 93.8 21.8 4.2
+      vertex 93.8 0 4.2
+    endloop
+  endfacet
+  facet normal 0 -0 1
+    outer loop
+      vertex 93.8 0 4.2
+      vertex 93.8 21.8 4.2
+      vertex 92.2 20.2 4.2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 93.8 0 4.2
+      vertex 92.2 20.2 4.2
+      vertex 92.2 1.6 4.2
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 92.2 1.6 1.2
+      vertex 92.2 1.6 4.2
+      vertex 92.2 20.2 4.2
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 92.2 1.6 1.2
+      vertex 92.2 20.2 4.2
+      vertex 92.2 20.2 1.2
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 93.8 21.8 0
+      vertex 0 21.8 0
+      vertex 0 21.8 4.2
+    endloop
+  endfacet
+  facet normal 0 1 -0
+    outer loop
+      vertex 93.8 21.8 0
+      vertex 0 21.8 4.2
+      vertex 93.8 21.8 4.2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 93.8 21.8 4.2
+      vertex 0 21.8 4.2
+      vertex 1.6 20.2 4.2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 93.8 21.8 4.2
+      vertex 1.6 20.2 4.2
+      vertex 92.2 20.2 4.2
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 92.2 20.2 1.2
+      vertex 92.2 20.2 4.2
+      vertex 1.6 20.2 4.2
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 92.2 20.2 1.2
+      vertex 1.6 20.2 4.2
+      vertex 1.6 20.2 1.2
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 0 21.8 0
+      vertex 0 0 0
+      vertex 0 0 4.2
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 0 21.8 0
+      vertex 0 0 4.2
+      vertex 0 21.8 4.2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 0 21.8 4.2
+      vertex 0 0 4.2
+      vertex 1.6 1.6 4.2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 0 21.8 4.2
+      vertex 1.6 1.6 4.2
+      vertex 1.6 20.2 4.2
+    endloop
+  endfacet
+  facet normal 1 0 -0
+    outer loop
+      vertex 1.6 20.2 1.2
+      vertex 1.6 20.2 4.2
+      vertex 1.6 1.6 4.2
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 1.6 20.2 1.2
+      vertex 1.6 1.6 4.2
+      vertex 1.6 1.6 1.2
+    endloop
+  endfacet
+endsolid house_rules_alignment_tray

@@ -1,0 +1,94 @@
+{
+  "actions": [
+    {
+      "uuid": "2e5cf004-2b61-4b07-89d2-922d8f91226f",
+      "action": "trim_end",
+      "new_junction_mm": [
+        58.85,
+        59.25
+      ]
+    },
+    {
+      "uuid": "2509e9dc-be86-4953-9af2-47cd66a5e037",
+      "action": "trim_end",
+      "new_junction_mm": [
+        78.571429,
+        58.771429
+      ]
+    },
+    {
+      "uuid": "c2ba5dba-20af-4cd6-ac81-e558a5e027df",
+      "action": "trim_end",
+      "new_junction_mm": [
+        81.1,
+        57
+      ]
+    },
+    {
+      "uuid": "7bbd7842-2237-4771-9058-44c377effacb",
+      "action": "trim_end",
+      "new_junction_mm": [
+        129.4,
+        58.75
+      ]
+    },
+    {
+      "uuid": "4cfc5110-560c-4f6d-bfb2-cca370ee1bf6",
+      "action": "delete_leaf"
+    },
+    {
+      "uuid": "ed9e4082-6e9e-47f5-92dd-b799047d134d",
+      "action": "trim_end",
+      "new_junction_mm": [
+        85.4056,
+        58.6556
+      ]
+    },
+    {
+      "uuid": "5b079b64-829e-4924-aafa-8e9611a40e50",
+      "action": "delete_leaf"
+    },
+    {
+      "uuid": "691af776-b7bc-4da0-9945-027e11f69db9",
+      "action": "delete_leaf"
+    },
+    {
+      "uuid": "145d100f-391c-4859-9b6f-e3f053b9e724",
+      "action": "trim_start",
+      "new_junction_mm": [
+        102.077,
+        61.313
+      ]
+    },
+    {
+      "uuid": "7fff47a1-930a-4a12-9a11-2466ea741fe3",
+      "action": "trim_start",
+      "new_junction_mm": [
+        105.107333,
+        57.836566
+      ]
+    },
+    {
+      "uuid": "aa9dd10f-614b-4a43-b27b-524b43dcf08f",
+      "action": "trim_start",
+      "new_junction_mm": [
+        117.725,
+        62.75
+      ]
+    },
+    {
+      "uuid": "1912fda3-69e7-4b35-a648-9499729b6b58",
+      "action": "delete_leaf"
+    },
+    {
+      "uuid": "41b474c8-f511-4e0b-9853-f5e23fc619ab",
+      "action": "trim_end",
+      "new_junction_mm": [
+        105.620976,
+        55.670976
+      ]
+    }
+  ],
+  "all_component_pad_connectivity_preserved": true,
+  "backup": "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/kicad/backups/tail-trim-kzjubi14"
+}

@@ -1,0 +1,14 @@
+{
+  "actual_files_unchanged": true,
+  "source_hashes": {
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/kicad/house-rules-main.kicad_pcb": "8b9df50fe0897db76a186902024ef12a80ff8da990d0e1d2d342f8fa2f86a830",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/kicad/house-rules-main.kicad_pro": "2e0d7b0d7ef4993ac4b23e576a4d584b391caf910b302a7545fe65448dd18f63",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/kicad/house-rules-main.kicad_dru": "d1811ffe2b04746012730f114a551fa35094af6fc6cb6b0a51eafe98d8fbbb06",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/kicad/house-rules-main.kicad_sch": "5809b20c5202ed11e474808ec249bbe227f2c73a28d5cae5b6f8c134469b2747"
+  },
+  "negative_copy_directory": "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-final-rule-control-g0lj8trz",
+  "omitted_only_local_QFN_rule": true,
+  "power_rule_has_explicit_mm": true,
+  "cli_output": "Found 9 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to /Users/harrymcneill/Projects/house-rules-led-recreation/hardware/reports/main-final-local-rule-negative-drc.json\n",
+  "local_libraries_copied_for_valid_comparison": true
+}

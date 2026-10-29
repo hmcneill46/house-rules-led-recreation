@@ -1,0 +1,228 @@
+{
+  "47k 1%": {
+    "manufacturer": "UNI-ROYAL",
+    "mpn": "0603WAF4702T5E",
+    "lcsc": "C25819",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "jlc_class": "Basic",
+    "source_url": "https://jlcpcb.com/partdetail/0603WAF4702T5E/C25819",
+    "listing_stock_returned": "",
+    "listing_USD_unit_price": "",
+    "minimum_purchase_qty": "",
+    "notes": "",
+    "quantity_per_replica_snapshot": 8,
+    "references_snapshot": [
+      "main:R1",
+      "main:R2",
+      "main:R3",
+      "main:R4",
+      "main:R10",
+      "main:R11",
+      "main:R12",
+      "main:R13"
+    ],
+    "verification_date": "2026-10-29",
+    "verification_status": "Primary JLC part identity, value, package and assembly class checked; stock/prices are indexed public observations, not a live reserved cart."
+  },
+  "2k2 1%": {
+    "manufacturer": "UNI-ROYAL",
+    "mpn": "0603WAF2201T5E",
+    "lcsc": "C4190",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "jlc_class": "Basic",
+    "source_url": "https://jlcpcb.com/partdetail/0603WAF2201T5E/C4190",
+    "listing_stock_returned": "6188700 (indexed LCSC)",
+    "listing_USD_unit_price": "0.0017 at 100+",
+    "minimum_purchase_qty": 100,
+    "notes": "",
+    "quantity_per_replica_snapshot": 3,
+    "references_snapshot": [
+      "main:R5",
+      "main:R6",
+      "main:R14"
+    ],
+    "verification_date": "2026-10-29",
+    "verification_status": "Primary JLC part identity, value, package and assembly class checked; stock/prices are indexed public observations, not a live reserved cart."
+  },
+  "100k 1%": {
+    "manufacturer": "UNI-ROYAL",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "jlc_class": "Basic",
+    "source_url": "https://jlcpcb.com/partdetail/0603WAF1003T5E/C25803",
+    "listing_stock_returned": "17537500 (indexed LCSC)",
+    "listing_USD_unit_price": "0.0042 at 100+",
+    "minimum_purchase_qty": 100,
+    "notes": "",
+    "quantity_per_replica_snapshot": 1,
+    "references_snapshot": [
+      "main:R7"
+    ],
+    "verification_date": "2026-10-29",
+    "verification_status": "Primary JLC part identity, value, package and assembly class checked; stock/prices are indexed public observations, not a live reserved cart."
+  },
+  "10k 1%": {
+    "manufacturer": "UNI-ROYAL",
+    "mpn": "0603WAF1002T5E",
+    "lcsc": "C25804",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "jlc_class": "Basic",
+    "source_url": "https://jlcpcb.com/partdetail/0603WAF1002T5E/C25804",
+    "listing_stock_returned": "20417600 (indexed LCSC)",
+    "listing_USD_unit_price": "0.0010 at 100+",
+    "minimum_purchase_qty": 100,
+    "notes": "",
+    "quantity_per_replica_snapshot": 2,
+    "references_snapshot": [
+      "main:R8",
+      "main:R9"
+    ],
+    "verification_date": "2026-10-29",
+    "verification_status": "Primary JLC part identity, value, package and assembly class checked; stock/prices are indexed public observations, not a live reserved cart."
+  },
+  "5k1 1%": {
+    "manufacturer": "UNI-ROYAL",
+    "mpn": "0603WAF5101T5E",
+    "lcsc": "C23186",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "jlc_class": "Basic",
+    "source_url": "https://jlcpcb.com/partdetail/0603WAF5101T5E/C23186",
+    "listing_stock_returned": "",
+    "listing_USD_unit_price": "",
+    "minimum_purchase_qty": "",
+    "notes": "Separate USB-C CC1 and CC2 Rd resistors; do not tie CC lines together.",
+    "quantity_per_replica_snapshot": 2,
+    "references_snapshot": [
+      "usb:R1",
+      "usb:R2"
+    ],
+    "verification_date": "2026-10-29",
+    "verification_status": "Primary JLC part identity, value, package and assembly class checked; stock/prices are indexed public observations, not a live reserved cart."
+  },
+  "100n 50V X7R": {
+    "manufacturer": "YAGEO",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "jlc_class": "Basic",
+    "source_url": "https://jlcpcb.com/partdetail/CC0603KRX7R9BB104/C14663",
+    "listing_stock_returned": "",
+    "listing_USD_unit_price": "",
+    "minimum_purchase_qty": "",
+    "notes": "100nF, 50V, X7R, \u00b110%; C14663 is YAGEO, not Samsung.",
+    "quantity_per_replica_snapshot": 6,
+    "references_snapshot": [
+      "main:C1",
+      "main:C3",
+      "main:C5",
+      "main:C7",
+      "main:C11",
+      "main:C12"
+    ],
+    "verification_date": "2026-10-29",
+    "verification_status": "Primary JLC part identity, value, package and assembly class checked; stock/prices are indexed public observations, not a live reserved cart."
+  },
+  "1u 16V X7R": {
+    "manufacturer": "Walsin Tech Corp",
+    "mpn": "0603B105K160CT",
+    "lcsc": "C108463",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "jlc_class": "Extended",
+    "source_url": "https://jlcpcb.com/partdetail/Walsin_TechCorp-0603B105K160CT/C108463",
+    "listing_stock_returned": "88684 (indexed JLC)",
+    "listing_USD_unit_price": "0.0162 at 1+",
+    "minimum_purchase_qty": 1,
+    "notes": "1uF, 16V, X7R, \u00b110%; Economic and Standard assembly listed. Do not substitute C15849 (X5R).",
+    "quantity_per_replica_snapshot": 6,
+    "references_snapshot": [
+      "main:C2",
+      "main:C4",
+      "main:C6",
+      "main:C8",
+      "main:C9",
+      "main:C13"
+    ],
+    "verification_date": "2026-10-29",
+    "verification_status": "Primary JLC part identity, value, package and assembly class checked; stock/prices are indexed public observations, not a live reserved cart."
+  },
+  "2u2 10V X7R": {
+    "manufacturer": "KYOCERA AVX",
+    "mpn": "0603ZC225KAT2A",
+    "lcsc": "C2179699",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "jlc_class": "Extended",
+    "source_url": "https://jlcpcb.com/partdetail/KyoceraAVX-0603ZC225KAT2A/C2179699",
+    "listing_stock_returned": "302 (indexed JLC)",
+    "listing_USD_unit_price": "0.0397 at 1+",
+    "minimum_purchase_qty": 1,
+    "notes": "2.2uF, 10V, X7R, \u00b110%; Economic and Standard assembly listed. JLC manufacturer label blank; LCSC confirms AVX. Do not substitute C23630 (X5R).",
+    "quantity_per_replica_snapshot": 1,
+    "references_snapshot": [
+      "main:C10"
+    ],
+    "verification_date": "2026-10-29",
+    "verification_status": "Primary JLC part identity, value, package and assembly class checked; stock/prices are indexed public observations, not a live reserved cart."
+  },
+  "100n 50V X7R 0402": {
+    "manufacturer": "Samsung Electro-Mechanics",
+    "mpn": "CL05B104KB54PNC",
+    "lcsc": "C307331",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "jlc_class": "Basic",
+    "source_url": "https://jlcpcb.com/partdetail/CL05B104KB54PNC/C307331",
+    "listing_stock_returned": "",
+    "listing_USD_unit_price": "",
+    "minimum_purchase_qty": "",
+    "notes": "USB-carrier C1 decoupling capacitor; 100nF, 50V, X7R, \u00b110%; Economic and Standard assembly listed.",
+    "quantity_per_replica_snapshot": 1,
+    "references_snapshot": [
+      "usb:C1"
+    ],
+    "verification_date": "2026-10-29",
+    "verification_status": "Primary JLC part identity, value, package and assembly class checked; stock/prices are indexed public observations, not a live reserved cart."
+  },
+  "BOOT": {
+    "manufacturer": "Panasonic",
+    "mpn": "EVQP7A01P",
+    "lcsc": "C79167",
+    "footprint": "Button_Switch_SMD:SW_SPST_EVQP7A",
+    "jlc_class": "Extended",
+    "source_url": "https://jlcpcb.com/partdetail/PANASONIC-EVQP7A01P/C79167",
+    "listing_stock_returned": "10104 (indexed JLC parts listing)",
+    "listing_USD_unit_price": "0.0820 at 1+",
+    "minimum_purchase_qty": 1,
+    "notes": "Side-actuated SPST tactile switch, 3.5x3.55mm, 1.35mm height, 2.2N force; Economic and Standard assembly listed.",
+    "quantity_per_replica_snapshot": 1,
+    "references_snapshot": [
+      "main:SW1"
+    ],
+    "verification_date": "2026-10-29",
+    "verification_status": "Primary JLC part identity, value, package and assembly class checked; stock/prices are indexed public observations, not a live reserved cart."
+  },
+  "RESET": {
+    "manufacturer": "Panasonic",
+    "mpn": "EVQP7A01P",
+    "lcsc": "C79167",
+    "footprint": "Button_Switch_SMD:SW_SPST_EVQP7A",
+    "jlc_class": "Extended",
+    "source_url": "https://jlcpcb.com/partdetail/PANASONIC-EVQP7A01P/C79167",
+    "listing_stock_returned": "10104 (indexed JLC parts listing)",
+    "listing_USD_unit_price": "0.0820 at 1+",
+    "minimum_purchase_qty": 1,
+    "notes": "Same component as BOOT. Factory fit both switches.",
+    "quantity_per_replica_snapshot": 1,
+    "references_snapshot": [
+      "main:SW2"
+    ],
+    "verification_date": "2026-10-29",
+    "verification_status": "Primary JLC part identity, value, package and assembly class checked; stock/prices are indexed public observations, not a live reserved cart."
+  },
+  "_metadata": {
+    "verified_date": "2026-10-29",
+    "key_format": "Exact circuit-spec value, with optional 0402 suffix for alternate package. BOOT and RESET share the same MPN.",
+    "scope": "Candidate assembly BOM mapping; no order placed. Recheck stock, PCBA service availability, price and footprint before release.",
+    "inventory_note": "Public indexed pages may be stale and may differ from live JLC assembly inventory; prices are USD component prices at stated break, excluding assembly and shipping.",
+    "capacitor_note": "Exact X7R requirement retained. 1uF and 2.2uF verified candidates are Extended; do not replace silently with similarly numbered Basic X5R parts."
+  }
+}

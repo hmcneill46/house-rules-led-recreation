@@ -1,0 +1,34 @@
+2026-10-29 13:35:16.952 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+2026-10-29 13:35:17.297 INFO   Hardware: 32 CPU cores, 517 CPU score, 16384 MB RAM
+2026-10-29 13:35:17.298 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 13:35:17.299 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-29 13:35:18.367 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 13:35:18.629 INFO   [9140DB\A654B8] Loading board file 'house-rules-main-close.dsn'...
+2026-10-29 13:35:19.059 WARN   DSN file 'house-rules-main-close.dsn' was loaded with 1 warning(s).
+2026-10-29 13:35:19.123 INFO   [9140DB\A654B8] Job '9140DB\A654B8' started at 2026-10-29T13:35:19.123596Z.
+2026-10-29 13:35:19.697 WARN   Design Warning: Board has 257 pre-existing clearance violation(s) in the loaded design (before routing):
+  - 257 unfixable violation(s) (cannot be resolved by Freerouting):
+      * 257 fixed trace/via clearance violations (first 5 shown):
+          - FixedVia#2904 [net CC1] <-> FixedTrace#2519 [net CC2]
+          - FixedVia#2904 [net CC1] <-> FixedTrace#2476 [net CC2]
+          - FixedVia#2901 [net USB_DP] <-> FixedTrace#2495 [net CC2]
+          - FixedVia#2901 [net USB_DP] <-> FixedTrace#2478 [net CC2]
+          - FixedVia#2900 [net USB_DM] <-> FixedTrace#2532 [net CC2]
+          ... and 252 more
+  - 0 potentially fixable violations
+Notice: Freerouting does not modify component placement, board outlines, or fixed items.
+Resolving these 257 unfixable violation(s) is the responsibility of the board author in their EDA tool (e.g. KiCad).
+2026-10-29 13:35:19.782 INFO   [9140DB\A654B8] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=31.
+2026-10-29 13:35:20.683 INFO   [9140DB\A654B8] Fanout stage started on board 'df43230a381d4b8f2832dcdccacad6e6' with 101 of 246 SMD pins needing fanout (145 already connected, 0 netless).
+2026-10-29 13:35:22.395 INFO   [9140DB\A654B8] Fanout pass #1 on board 'df43230a381d4b8f2832dcdccacad6e6' completed in 1.49 seconds with 7 SMD pins fanouted, 2 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-10-29 13:35:22.538 INFO   [9140DB\A654B8] Fanout stage completed: started with 246 total SMD pins, completed in 1.70 seconds, escaped pins: 198/246 (80.5%), using 2.12 total CPU seconds, 0.58 GB total allocated, and 121.1 MB peak heap usage.
+2026-10-29 13:35:23.582 INFO   [9140DB\A654B8] Auto-routing stage started on board 'df43230a381d4b8f2832dcdccacad6e6' with baseline score 794.72 for 29 unrouted items.
+2026-10-29 13:35:52.459 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net 'SCL' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 13:35:57.279 INFO   [9140DB\A654B8] Auto-routing pass #1 on board 'df43230a381d4b8f2832dcdccacad6e6' was completed in 33.26 seconds with score 835.75 (23 unrouted and 257 violations), using 37.33 CPU seconds and the job allocated 20.30 GB of memory so far.
+2026-10-29 13:36:03.409 INFO   [9140DB\A654B8] Auto-routing pass #2 on board '251413452581f2cc96fde5d82a235931' was completed in 5.70 seconds with score 849.42 (21 unrouted and 257 violations), using 43.33 CPU seconds and the job allocated 23.16 GB of memory so far.
+2026-10-29 13:36:09.966 INFO   [9140DB\A654B8] Auto-routing pass #3 on board 'db80f919b1cf44f16314e880ee7eb82e' was completed in 6.35 seconds with score 863.10 (19 unrouted and 257 violations), using 49.33 CPU seconds and the job allocated 25.90 GB of memory so far.
+2026-10-29 13:36:11.489 INFO   [9140DB\A654B8] Auto-routing stage completed: started with 29 unrouted nets, completed in 51.25 seconds, final score: 863.10 (19 unrouted and 257 violations), using 51.33 total CPU seconds, 26.35 GB total allocated, and 381.9 MB peak heap usage.
+2026-10-29 13:36:11.686 INFO   [9140DB\A654B8] Skipping optimization stage: the board has 19 unrouted connection(s) (optimizer only runs on completely routed boards).
+2026-10-29 13:36:11.730 INFO   [9140DB\A654B8] Job '9140DB\A654B8' finished with state: COMPLETED (elapsed: 52.61 seconds, finished at UTC: 2026-10-29T13:36:11.729811Z).
+2026-10-29 13:36:11.753 INFO   Saving output file '/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/kicad/house-rules-main-close.ses' (SES)...
+2026-10-29 13:36:11.755 INFO   Successfully saved output file '/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/kicad/house-rules-main-close.ses' (323933 bytes).

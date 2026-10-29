@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-29",
+  "evidence_type": "Owner report in the project conversation; not an agent measurement",
+  "owner_report": "The 3D print worked and the seven LEDs fit very nicely.",
+  "fixture": "hardware/mechanical/pin-fit-plate.stl",
+  "printed_job": "hardware/printing/HouseRules_Fit_KE04_PLA.gcode",
+  "reported_group_module_count": 7,
+  "reported_fit": "Passed",
+  "designed_outline_mm": [88.4, 17.3],
+  "pin_centres_match_main_pcb": true,
+  "printed_thickness_mm": 1.0,
+  "main_pcb_thickness_mm": 1.6,
+  "printed_nominal_hole_mm": 1.0,
+  "main_pcb_finished_hole_mm": 0.9,
+  "not_established_by_this_report": [
+    "Electrical pin numbering or polarity",
+    "Measured as-printed dimensions or PCB fabrication tolerances",
+    "Fit of the remaining fourteen LED modules",
+    "Powered operation of any PCB or enclosure"
+  ]
+}

@@ -1,0 +1,8 @@
+(version 1)
+(rule "Power trunk width" (condition "A.Type == 'Track' && (A.NetName == '+5V' || A.NetName == 'VBUS')") (constraint track_width (min 0.15mm)))
+
+# Approved JLC 1oz six-layer QFN via-in-pad escape. Only VIA-to-PAD pairs
+# intersecting the SAME U1-U4 courtyard qualify; other clearance stays 0.15.
+(rule "QFN local via-pad 100um"
+ (condition "((A.Type == 'Via' && B.Type == 'Pad') || (A.Type == 'Pad' && B.Type == 'Via')) && ((A.intersectsCourtyard('U1') && B.intersectsCourtyard('U1')) || (A.intersectsCourtyard('U2') && B.intersectsCourtyard('U2')) || (A.intersectsCourtyard('U3') && B.intersectsCourtyard('U3')) || (A.intersectsCourtyard('U4') && B.intersectsCourtyard('U4')))")
+ (constraint clearance (min 0.10mm)))

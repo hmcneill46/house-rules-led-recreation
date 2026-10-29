@@ -1,0 +1,259 @@
+[
+  {
+    "cells": [
+      "C1,C3,C5,C7,C11,C12",
+      "CC0603KRX7R9BB104",
+      "C_0603_1608Metric",
+      "CC0603KRX7R9BB104\nC14663\n100nF 50V X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "30",
+      "5",
+      "6",
+      "0",
+      "/",
+      "30",
+      "JLCPCB",
+      "Basic",
+      "$0.3060",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "C2,C4,C6,C8,C9,C13",
+      "0603B105K160CT",
+      "C_0603_1608Metric",
+      "0603B105K160CT\nC108463\n16V 1uF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "40",
+      "5",
+      "6",
+      "0",
+      "/",
+      "30",
+      "JLCPCB",
+      "Extended",
+      "$0.6280",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "C10",
+      "0603ZC225KAT2A",
+      "C_0603_1608Metric",
+      "0603ZC225KAT2A\nC2179699\n10V 2.2uF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "9",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$0.3366",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "F1",
+      "SMD1206B075TF/16",
+      "Fuse_1206_3216Metric",
+      "SMD1206B075TF/16\nC269118\n-40℃~+85℃ 1.5A 1.6mm 1.8mm 100A 16V 200ms 3.4mm 350mΩ 600mW 750mA 90mΩ 1206 Resettable Fuses ROHS",
+      "9",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$0.4131",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "J1",
+      "BM06B-SRSS-TB(LF)(SN)",
+      "JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical",
+      "BM06B-SRSS-TB(LF)(SN)\nC160392\n-25℃~+85℃ 1 1A 1mm 1x6P 3.6mm 4.25mm 50V 6 6P 8mm Auxiliary Solder Pin Copper alloy PA SH Surface Mount,Vertical Tin UL94V-0 White SMD,P=1mm Wire To Board Connector ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$1.7600",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "R1,R2,R3,R4,R10,R11,R12,R13",
+      "0603WAF4702T5E",
+      "R_0603_1608Metric",
+      "0603WAF4702T5E\nC25819\n-55℃~+155℃ 100mW 47kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
+      "40",
+      "5",
+      "8",
+      "0",
+      "/",
+      "40",
+      "JLCPCB",
+      "Basic",
+      "$0.0760",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "R5,R6,R14",
+      "0603WAF2201T5E",
+      "R_0603_1608Metric",
+      "0603WAF2201T5E\nC4190\n-55℃~+155℃ 100mW 2.2kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
+      "15",
+      "5",
+      "3",
+      "0",
+      "/",
+      "15",
+      "JLCPCB",
+      "Basic",
+      "$0.0270",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "R7",
+      "0603WAF1003T5E",
+      "R_0603_1608Metric",
+      "0603WAF1003T5E\nC25803\n-55℃~+155℃ 100kΩ 100mW 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Basic",
+      "$0.0145",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "R8,R9",
+      "0603WAF1002T5E",
+      "R_0603_1608Metric",
+      "0603WAF1002T5E\nC25804\n-55℃~+155℃ 100mW 10kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
+      "10",
+      "5",
+      "2",
+      "0",
+      "/",
+      "10",
+      "JLCPCB",
+      "Basic",
+      "$0.0220",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "SW1",
+      "EVQP7A01P",
+      "SW_SPST_EVQP7A",
+      "EVQP7A01P\nC79167\n-20℃~+70℃ 1.35mm 100,000 cycles 12V 2.2N 3.55mm 3.5mm 50mA PC Pin Rectangular Button SPST Surface Mount, Right Angle SMD,3.6x3.5mm Tactile Switches ROHS",
+      "11",
+      "5",
+      "2",
+      "0",
+      "/",
+      "10",
+      "JLCPCB",
+      "Extended",
+      "$2.0559",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "SW2",
+      "EVQP7A01P",
+      "SW_SPST_EVQP7A",
+      "EVQP7A01P\nC79167\n-20℃~+70℃ 1.35mm 100,000 cycles 12V 2.2N 3.55mm 3.5mm 50mA PC Pin Rectangular Button SPST Surface Mount, Right Angle SMD,3.6x3.5mm Tactile Switches ROHS",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "U1,U2,U3,U4",
+      "IS31FL3729-QFLS4-TR",
+      "QFN-32-1EP_4x4mm_P0.4mm_EP2.65x2.65mm",
+      "IS31FL3729-QFLS4-TR\nC2940549\n-40℃~+125℃ 16 2.7V~5.5V 35mA 400kHz~1MHz External PWM、I2C Short Circuit Protection、LED open-circuit protection QFN-32-EP(4x4) LED Drivers ROHS",
+      "20",
+      "5",
+      "4",
+      "0",
+      "/",
+      "20",
+      "JLCPCB",
+      "Extended",
+      "$19.2600",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "U5",
+      "STM32G0B1KBU6",
+      "QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm",
+      "STM32G0B1KBU6\nC5159549\n-40℃~+85℃ 1.7V~3.6V 128KB 144KB 30 32 Bit 64MHz ARM Cortex-M0+ Built-in+External FLASH UFQFPN-32(5x5) Microcontrollers (MCU/MPU/SOC) ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$26.1370",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "U6",
+      "TLV75533PDBVR",
+      "SOT-23-5",
+      "TLV75533PDBVR\nC404027\n-40℃~+125℃@(Tj) 1 238mV@(500mA) 25uA 3.3V 46dB@(100kHz) 5.5V 500mA 71.5uVrms Fixed Over Current Protection、Thermal Shutdown、Input undervoltage protection Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+      "6",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$0.7302",
+      ""
+    ],
+    "selected": true
+  }
+]

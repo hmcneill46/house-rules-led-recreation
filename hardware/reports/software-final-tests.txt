@@ -1,0 +1,32 @@
+test_constants_reject_executable_expression (test_export_sequence.ExportSequenceTests) ... ok
+test_every_command_and_pixel_matches_original (test_export_sequence.ExportSequenceTests) ... ok
+test_every_glyph_matches_original (test_export_sequence.ExportSequenceTests) ... ok
+test_flash_duration_and_last_scrolling_wrap_are_preserved (test_export_sequence.ExportSequenceTests) ... ok
+test_generated_outputs_reproduce_the_compiled_payload (test_export_sequence.ExportSequenceTests) ... ok
+test_initial_lead_in_is_skipped_on_subsequent_loops (test_export_sequence.ExportSequenceTests) ... ok
+test_last_flash_wraps_to_zero (test_export_sequence.ExportSequenceTests) ... ok
+test_malformed_input_fails_explicitly (test_export_sequence.ExportSequenceTests) ... ok
+test_punctuation_replaces_existing_columns_and_clips (test_export_sequence.ExportSequenceTests) ... ok
+test_source_is_parsed_without_running_imports_or_screen_setup (test_export_sequence.ExportSequenceTests) ... ok
+test_accidentally_shared_pair_cathodes_alias_and_are_rejected (test_matrix_model.MatrixModelTests) ... ok
+test_all_245_walking_pixels_decode_through_physical_diode_pins (test_matrix_model.MatrixModelTests) ... ok
+test_authorised_low_budget_limits_average_current_and_suspend_shuts_down (test_matrix_model.MatrixModelTests) ... ok
+test_checkerboard_and_all_on_patterns (test_matrix_model.MatrixModelTests) ... ok
+test_current_estimate_peak_margin_and_unused_outputs (test_matrix_model.MatrixModelTests) ... ok
+test_firmware_default_dim_uses_lower_peak_current_and_stays_under_default_budget (test_matrix_model.MatrixModelTests) ... ok
+test_five_scan_phases_partition_all_245_pixels (test_matrix_model.MatrixModelTests) ... ok
+test_generated_pixel_csv_matches_independently_derived_diode_paths (test_matrix_model.MatrixModelTests) ... ok
+test_hardware_current_setting_cannot_be_replaced_by_dim_pwm (test_matrix_model.MatrixModelTests) ... ok
+test_only_completed_positive_bc12_results_grant_charger_current (test_matrix_model.MatrixModelTests) ... ok
+test_optional_strict_policy_keeps_leds_off_until_500ma_is_authorised (test_matrix_model.MatrixModelTests) ... ok
+test_reset_and_initialisation_leave_leds_dark (test_matrix_model.MatrixModelTests) ... ok
+test_reversed_anode_cathode_connection_is_rejected (test_matrix_model.MatrixModelTests) ... ok
+test_sdb_bus_guard_times_are_enforced (test_matrix_model.MatrixModelTests) ... ok
+test_swapped_row_wiring_is_detected_in_the_reconstructed_display (test_matrix_model.MatrixModelTests) ... ok
+test_unmodelled_all_switches_on_mode_fails_instead_of_understating_current (test_matrix_model.MatrixModelTests) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.579s
+
+OK
+60,000 C++ player frames match exported timing/content; 2 complete traversals; diagnostics, power and driver-map assertions pass.

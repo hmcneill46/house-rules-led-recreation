@@ -1,0 +1,84 @@
+{
+  "main": {
+    "source_sha256": "8b9df50fe0897db76a186902024ef12a80ff8da990d0e1d2d342f8fa2f86a830",
+    "footprints": 50,
+    "factory_footprints": 37,
+    "copper_layers": 6,
+    "thickness_mm": 1.6,
+    "tracks": 2539,
+    "vias": 192,
+    "all_vias_ordinary_through_F_B": true,
+    "all_vias_filled_and_capped": true,
+    "minimum_track_mm": 0.1,
+    "five_volt_minimum_track_mm": 0.15,
+    "usb_track_lengths_by_layer_mm": {
+      "USB_DM": {
+        "F.Cu": 39.8134,
+        "B.Cu": 2.6032
+      },
+      "USB_DP": {
+        "F.Cu": 38.8562,
+        "B.Cu": 2.1411
+      }
+    },
+    "led_PTH_pad_count": 84,
+    "led_drills_mm": [
+      0.9
+    ],
+    "led_PTH_attributes": [
+      0
+    ],
+    "R14": {
+      "value": "2k2 1%",
+      "MPN": "0603WAF2201T5E",
+      "LCSC": "C4190",
+      "pads": {
+        "1": "BOOT_BUTTON",
+        "2": "BOOT_SWCLK"
+      },
+      "SW1_pads": [
+        [
+          "1",
+          "BOOT_BUTTON"
+        ],
+        [
+          "1",
+          "BOOT_BUTTON"
+        ],
+        [
+          "2",
+          "+3V3"
+        ],
+        [
+          "2",
+          "+3V3"
+        ]
+      ]
+    }
+  },
+  "usb": {
+    "source_sha256": "fb01d3a1369278d2435762de07fb7607957e51fce6277dc55044a102059ed40f",
+    "footprints": 7,
+    "factory_footprints": 7,
+    "copper_layers": 4,
+    "thickness_mm": 1.0,
+    "tracks": 85,
+    "vias": 10,
+    "all_vias_ordinary_through_F_B": true,
+    "all_vias_filled_and_capped": false,
+    "minimum_track_mm": 0.15,
+    "five_volt_minimum_track_mm": 0.2,
+    "usb_track_lengths_by_layer_mm": {
+      "USB_DP": {
+        "F.Cu": 11.853
+      },
+      "USB_DM": {
+        "F.Cu": 10.4221,
+        "B.Cu": 4.1692
+      }
+    },
+    "led_PTH_pad_count": 0,
+    "led_drills_mm": [],
+    "led_PTH_attributes": []
+  }
+}

@@ -1,0 +1,26 @@
+House Rules artwork data verification
+
+Scope: packed artwork export only. Hardware, LED current, driver mapping,
+scheduler timing, and physical board have not been verified by these checks.
+
+Checks:
+- python3 -m unittest discover -s hardware/tests -v: 10 tests pass.
+- Every glyph and all 39 command bitmaps match isolated original main.py helpers.
+- Full initial traversal is commands 0 through 38; subsequent loops are 1 through 38.
+- Two fresh exports produce byte-identical header, binary, and manifest files.
+- Fresh outputs also match the generated working-tree artifacts.
+- Generated header compiled and ran with cc -std=c11 -Wall -Wextra -Werror.
+
+Counts:
+- Commands: 39
+- Scrolling commands: 20
+- Flash commands: 19
+- Packed column bytes: 23574
+- Nominal artwork scheduler: 60 fps; scroll: 47.5 columns/second.
+
+SHA-256 (recompute after changes):
+a7d1963f69ca10a11635c25d9b5d51e5e6a9152601122c8f659420badfecf320  generated_sequence.h
+4006a8b654a8fb741fb169f3b9333f579d882659d78b5aceb9f8c447d1aebcef  sequence_columns.bin
+97b2aeb12e8256fe2ba37cbae8f627ed2a9d8ddf1d780419da8fde7236d90477  sequence_manifest.json
+
+Input checksum (main.py + NUL + sequence.json): 30e65047638d6d81961a35b0bef9f0354fb56c0e15a9d7934765974297230ecf

@@ -1,0 +1,503 @@
+- text: 
+- banner:
+  - generic: 24-hour PCB production. Fast Delivery to United Kingdom.
+  - link " Coupons":
+    - /url: https://jlcpcb.com/coupon-center
+    - generic: 
+    - text: Coupons
+  - link " Download APP":
+    - /url: https://jlcone.com/download
+    - generic: 
+    - text: Download APP
+  - text:     
+  - text: GBP
+  - generic: 
+- navigation:
+  - text: 
+  - link "JLCPCB logo":
+    - /url: https://jlcpcb.com
+    - generic: 
+    - generic: JLCPCB
+  - text: 
+  - generic: 
+  - text: Products
+  - link "Capabilities":
+    - /url: https://jlcpcb.com/capabilities/pcb-capabilities
+  - text:   
+  - text: Support
+  - generic: 
+  - text: About Us
+  - generic: 
+  - generic: 
+  - link "":
+    - /url: https://cart.jlcpcb.com/shopcart/cart
+    - generic: 
+  - superscript: "1"
+  - link "Order Now":
+    - /url: https://cart.jlcpcb.com/quote?spm=Jlcpcb.Homepage.1006&spm=Jlcpcb.Homepage.1006
+  - text: 
+  - text: My Account
+  - generic: 
+  - text: 
+- main:
+  - generic: house-rules-usb-fabrication-REVIEW
+  - generic: Automatically saved, last updated on 29 October, 15:00
+  - tablist:
+    - tab "PCB":
+      - generic: PCB
+    - tab "Bill of Materials" [selected]:
+      - generic: Bill of Materials
+    - tab "Component Placements":
+      - generic: Component Placements
+    - tab "Quote & Order":
+      - generic: Quote & Order
+  - tabpanel "Bill of Materials":
+    - navigation:
+      - heading "Top Side" [level=3]
+      - list:
+        - text: Total
+        - generic: "6"
+        - text: parts detected
+        - generic: "5"
+        - text: Parts confirmed
+        - generic: "1"
+        - text: parts Inventory shortage
+    - text: Complete File
+    - generic: 
+    - button "Upload BOM/CPL":
+      - text: Upload BOM/CPL
+    - text: 
+    - table:
+      - rowgroup:
+        - row "Uploaded BOM Data Review Matched Parts":
+          - columnheader "Uploaded BOM Data":
+            - generic: Uploaded BOM Data
+          - columnheader "Review Matched Parts":
+            - generic: Review Matched Parts
+          - columnheader
+        - row "Top Designator Comment Footprint Matched Part Detail Qty Source Lib Type Total Cost Select ":
+          - columnheader "Top Designator":
+            - generic: Top Designator
+          - columnheader "Comment":
+            - generic: Comment
+          - columnheader "Footprint":
+            - generic: Footprint
+          - columnheader "Matched Part Detail":
+            - generic: Matched Part Detail
+          - columnheader "Qty":
+            - generic: Qty
+          - columnheader "Source":
+            - generic: Source
+          - columnheader "Lib Type":
+            - generic: Lib Type
+          - columnheader "Total Cost":
+            - generic: Total Cost
+          - columnheader "Select ":
+            - checkbox [checked=mixed]
+            - text: Select
+            - generic: 
+          - columnheader
+    - table:
+      - rowgroup:
+        - row "C1 CL05B104KB54PNC C_0402_1005Metric CL05B104KB54PNC C307331 100nF 50V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS 2  JLCPCB Basic ￡0.0135":
+          - cell "C1":
+            - generic: C1
+          - cell "CL05B104KB54PNC":
+            - generic: CL05B104KB54PNC
+          - cell "C_0402_1005Metric":
+            - generic: C_0402_1005Metric
+          - cell "CL05B104KB54PNC C307331 100nF 50V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS":
+            - generic: CL05B104KB54PNC
+            - generic: C307331
+            - generic: 100nF 50V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS
+          - cell "2 ":
+            - generic: "2"
+            - generic: 
+          - cell "JLCPCB":
+            - generic: JLCPCB
+          - cell "Basic":
+            - generic: Basic
+          - cell "￡0.0135":
+            - generic: ￡0.0135
+          - cell:
+            - checkbox [checked]
+        - row "D1 SMF5.0A D_SOD-123F SMF5.0A C151296 -65℃~+150℃ 200W@10/1000us 21.7A 400uA 5V 7V 9.2V IEC 61000-4-2 TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD) ROHS 5  JLCPCB Extended ￡0.4887":
+          - cell "D1":
+            - generic: D1
+          - cell "SMF5.0A":
+            - generic: SMF5.0A
+          - cell "D_SOD-123F":
+            - generic: D_SOD-123F
+          - cell "SMF5.0A C151296 -65℃~+150℃ 200W@10/1000us 21.7A 400uA 5V 7V 9.2V IEC 61000-4-2 TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD) ROHS":
+            - generic: SMF5.0A
+            - generic: C151296
+            - generic: "-65℃~+150℃ 200W@10/1000us 21.7A 400uA 5V 7V 9.2V IEC 61000-4-2 TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD) ROHS"
+          - cell "5 ":
+            - generic: "5"
+            - generic: 
+          - cell "JLCPCB":
+            - generic: JLCPCB
+          - cell "Extended":
+            - generic: Extended
+          - cell "￡0.4887":
+            - generic: ￡0.4887
+          - cell:
+            - checkbox [checked]
+        - row "J2 SM06B-SRSS-TB(LF)(SN) JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal SM06B-SRSS-TB(LF)(SN) C160405 -25℃~+85℃ 1 1A 1mm 1x6P 2.9mm 4.32mm 50V 6 6P 8mm Auxiliary Solder Pin Copper alloy PA SH Surface Mount, Right Angle Tin UL94V-0 White SMD,P=1mm,Surface Mount，Right Angle Wire To Board Connector ROHS 2  JLCPCB Extended ￡1.3455":
+          - cell "J2":
+            - generic: J2
+          - cell "SM06B-SRSS-TB(LF)(SN)":
+            - generic: SM06B-SRSS-TB(LF)(SN)
+          - cell "JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal":
+            - generic: JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal
+          - cell "SM06B-SRSS-TB(LF)(SN) C160405 -25℃~+85℃ 1 1A 1mm 1x6P 2.9mm 4.32mm 50V 6 6P 8mm Auxiliary Solder Pin Copper alloy PA SH Surface Mount, Right Angle Tin UL94V-0 White SMD,P=1mm,Surface Mount，Right Angle Wire To Board Connector ROHS":
+            - generic: SM06B-SRSS-TB(LF)(SN)
+            - generic: C160405
+            - generic: "-25℃~+85℃ 1 1A 1mm 1x6P 2.9mm 4.32mm 50V 6 6P 8mm Auxiliary Solder Pin Copper alloy PA SH Surface Mount, Right Angle Tin UL94V-0 White SMD,P=1mm,Surface Mount，Right Angle Wire To Board Connector ROHS"
+          - cell "2 ":
+            - generic: "2"
+            - generic: 
+          - cell "JLCPCB":
+            - generic: JLCPCB
+          - cell "Extended":
+            - generic: Extended
+          - cell "￡1.3455":
+            - generic: ￡1.3455
+          - cell:
+            - checkbox [checked]
+        - row "R1,R2 0603WAF5101T5E R_0603_1608Metric 0603WAF5101T5E C23186 -55℃~+155℃ 100mW 5.1kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS 4  JLCPCB Basic ￡0.0045":
+          - cell "R1,R2":
+            - generic: R1,R2
+          - cell "0603WAF5101T5E":
+            - generic: 0603WAF5101T5E
+          - cell "R_0603_1608Metric":
+            - generic: R_0603_1608Metric
+          - cell "0603WAF5101T5E C23186 -55℃~+155℃ 100mW 5.1kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS":
+            - generic: 0603WAF5101T5E
+            - generic: C23186
+            - generic: "-55℃~+155℃ 100mW 5.1kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
+          - cell "4 ":
+            - generic: "4"
+            - generic: 
+          - cell "JLCPCB":
+            - generic: JLCPCB
+          - cell "Basic":
+            - generic: Basic
+          - cell "￡0.0045":
+            - generic: ￡0.0045
+          - cell:
+            - checkbox [checked]
+        - row "U1 TPD4E05U06DQAR USON-10_2.5x1.0mm_P0.5mm TPD4E05U06DQAR C138714 -40℃~+125℃ 0.5pF 10nA 14V 2.5A@8/20us 40W@8/20us 5.5V 6.5V ESD Four channels IEC 61000-4-2、IEC 61000-4-5、IEC 61000-4-4 Unidirectional USON-10(1x2.5) ESD and Surge Protection (TVS/ESD) ROHS 6  JLCPCB Extended ￡0.3751":
+          - cell "U1":
+            - generic: U1
+          - cell "TPD4E05U06DQAR":
+            - generic: TPD4E05U06DQAR
+          - cell "USON-10_2.5x1.0mm_P0.5mm":
+            - generic: USON-10_2.5x1.0mm_P0.5mm
+          - cell "TPD4E05U06DQAR C138714 -40℃~+125℃ 0.5pF 10nA 14V 2.5A@8/20us 40W@8/20us 5.5V 6.5V ESD Four channels IEC 61000-4-2、IEC 61000-4-5、IEC 61000-4-4 Unidirectional USON-10(1x2.5) ESD and Surge Protection (TVS/ESD) ROHS":
+            - generic: TPD4E05U06DQAR
+            - generic: C138714
+            - generic: "-40℃~+125℃ 0.5pF 10nA 14V 2.5A@8/20us 40W@8/20us 5.5V 6.5V ESD Four channels IEC 61000-4-2、IEC 61000-4-5、IEC 61000-4-4 Unidirectional USON-10(1x2.5) ESD and Surge Protection (TVS/ESD) ROHS"
+          - cell "6 ":
+            - generic: "6"
+            - generic: 
+          - cell "JLCPCB":
+            - generic: JLCPCB
+          - cell "Extended":
+            - generic: Extended
+          - cell "￡0.3751":
+            - generic: ￡0.3751
+          - cell:
+            - checkbox [checked]
+        - row "J1 USB4105-GF-A USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal USB4105-GF-A C3020560  -40℃~+85℃ 1 12P 48V 5A Black Female Surface Mount, Right Angle Type-C USB 2.0 SMD USB Connectors ROHS 2  Extended ￡1.1785 2 shortfall":
+          - cell "J1":
+            - generic: J1
+          - cell "USB4105-GF-A":
+            - generic: USB4105-GF-A
+          - cell "USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal":
+            - generic: USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal
+          - cell "USB4105-GF-A C3020560  -40℃~+85℃ 1 12P 48V 5A Black Female Surface Mount, Right Angle Type-C USB 2.0 SMD USB Connectors ROHS":
+            - generic: USB4105-GF-A
+            - text: C3020560
+            - generic: 
+            - generic: "-40℃~+85℃ 1 12P 48V 5A Black Female Surface Mount, Right Angle Type-C USB 2.0 SMD USB Connectors ROHS"
+          - cell "2 ":
+            - generic: "2"
+            - generic: 
+          - cell
+          - cell "Extended":
+            - generic: Extended
+          - cell "￡1.1785":
+            - generic: ￡1.1785
+          - cell "2 shortfall":
+            - generic: 2 shortfall
+    - button "+ Add Part"
+    - paragraph: Please carefully check the packages of selected parts before proceeding.
+    - text: 
+    - text: 
+    - button "Next"
+    - text:   
+  - text:                     
+- contentinfo:
+  - generic: 
+  - text: Online Chat >
+  - generic: Chat with our live agent for fast reply.
+  - generic: "Mon-Fri: 24 hours, Sat: 9am-6pm, GMT+8"
+  - link " Email Us >":
+    - /url: https://jlcpcb.com/help/contact
+    - generic: 
+    - text: Email Us >
+  - text: Contact us at support
+  - generic: 
+  - text: jlcpcb.com
+  - generic: Typically reply within hours.
+  - link " Help Center >":
+    - /url: https://jlcpcb.com/help
+    - generic: 
+    - text: Help Center >
+  - generic: Get instant answers.
+  - generic: 24/7 Available.
+  - generic: PCB Service
+  - link "FR-4 PCBs":
+    - /url: https://jlcpcb.com/pcb-fabrication/fr4-pcb
+  - link "Flexible PCBs":
+    - /url: https://jlcpcb.com/pcb-fabrication/flexible-pcb
+  - link "Metal Core PCBs":
+    - /url: https://jlcpcb.com/pcb-fabrication/metal-core-pcb
+  - link "High-Frequency PCBs":
+    - /url: https://jlcpcb.com/pcb-fabrication/high-frequency-pcb
+  - link "PCBA Service":
+    - /url: https://jlcpcb.com/pcb-assembly
+  - link "PCB Layout":
+    - /url: https://design.jlcpcb.com
+  - link "SMT Stencil":
+    - /url: https://jlcpcb.com/pcb-stencil
+  - link "Flex Heater":
+    - /url: https://flexheater.jlcpcb.com
+  - generic: Support
+  - link "Help Center":
+    - /url: https://jlcpcb.com/help
+  - link "Contact Us":
+    - /url: https://jlcpcb.com/help/contact
+  - link "Community":
+    - /url: https://jlchub.com
+  - link "Shipping Guide":
+    - /url: https://jlcpcb.com/shipping
+  - link "Payment Methods":
+    - /url: https://jlcpcb.com/payments
+  - link "How to Order":
+    - /url: https://jlcpcb.com/help/catalog/11-How-To-Order
+  - link "How to Track":
+    - /url: https://jlcpcb.com/help/article/51-How-to-Track-My-Order
+  - link "After-Sales Service":
+    - /url: https://jlcpcb.com/help/article/How-to-Make-a-Quality-Complaint
+  - link "Blog":
+    - /url: https://jlcpcb.com/blog
+  - generic: Company
+  - link "About Us":
+    - /url: https://jlcpcb.com/about-us
+  - link "Quality Assurance":
+    - /url: https://jlcpcb.com/about-us/quality-control
+  - link "How We Work":
+    - /url: https://jlcpcb.com/about-us/how-it-works
+  - link "Certifications":
+    - /url: https://jlcpcb.com/certifications
+  - link "Security":
+    - /url: https://jlcpcb.com/privacy-security
+  - link "Environment":
+    - /url: https://jlcpcb.com/green-manufacturing
+  - link "JLCAPI":
+    - /url: https://api.jlcpcb.com/
+  - link "News":
+    - /url: https://jlcpcb.com/news
+  - link "Cooperation":
+    - /url: https://jlcpcb.com/cooperation
+  - generic: Electronics
+  - link "EasyEDA":
+    - /url: https://easyeda.com
+  - link "JLCPCB":
+    - /url: https://jlcpcb.com
+  - link "JLCDFM":
+    - /url: https://jlcdfm.com
+  - link "LCSC":
+    - /url: https://www.lcsc.com
+  - link "OSHWLAB":
+    - /url: https://oshwlab.com/
+  - generic: Mechanical
+  - link "JLC3DP":
+    - /url: https://jlc3dp.com
+  - link "JLCCNC":
+    - /url: https://jlccnc.com
+  - link "JLCMC":
+    - /url: https://jlcmc.com
+  - generic: 
+  - generic: Order on JLCONE Desktop, Save $1–$20 Every Time
+  - link " Windows":
+    - /url: https://jlcone.com/download
+    - generic: 
+    - generic: Windows
+  - link " MAC":
+    - /url: https://jlcone.com/download
+    - generic: 
+    - generic: MAC
+  - link " Android":
+    - /url: https://jlcone.com/download#mobile-app
+    - generic: 
+    - generic: Android
+  - link " IOS":
+    - /url: https://jlcone.com/download#mobile-app
+    - generic: 
+    - generic: IOS
+  - generic: CONNECT WITH US
+  - link "":
+    - /url: https://www.facebook.com/jlcpcb
+    - generic: 
+  - link "":
+    - /url: https://twitter.com/jlcpcb
+    - generic: 
+  - link "":
+    - /url: https://www.instagram.com/jlcpcb
+    - generic: 
+  - link "":
+    - /url: https://www.youtube.com/JLCPCB
+    - generic: 
+  - link "":
+    - /url: https://www.linkedin.com/company/jlcpcb
+    - generic: 
+  - link "":
+    - /url: https://www.reddit.com/r/JLCPCBLab/
+    - generic: 
+  - generic: © 2026 JLCPCB.COM All Rights Reserved.
+  - link "Privacy Policy":
+    - /url: https://jlcpcb.com/help/article/Privacy-Policy
+  - link "Terms & Conditions":
+    - /url: https://jlcpcb.com/help/article/Terms-%26-Conditions
+  - link "Cookies Policy":
+    - /url: https://jlcpcb.com/help/article/JLCPCB-Cookie-Notice
+  - generic: Cookies Settings
+  - link "Do Not Sell or Share My Personal Information":
+    - /url: https://jlcpcb.com/privacy-policy/do-not-sell-or-share-my-personal-information
+- iframe
+- text: 
+- dialog "Search Parts":
+  - text: Search Parts
+  - button "Close":
+    - generic: 
+  - table:
+    - rowgroup:
+      - row "Top Designator Comment Footprint Matched Part Detail Qty Source Lib Type Total Cost":
+        - columnheader "Top Designator":
+          - generic: Top Designator
+        - columnheader "Comment":
+          - generic: Comment
+        - columnheader "Footprint":
+          - generic: Footprint
+        - columnheader "Matched Part Detail":
+          - generic: Matched Part Detail
+        - columnheader "Qty":
+          - generic: Qty
+        - columnheader "Source":
+          - generic: Source
+        - columnheader "Lib Type":
+          - generic: Lib Type
+        - columnheader "Total Cost":
+          - generic: Total Cost
+  - table:
+    - rowgroup:
+      - row "J1 USB4105-GF-A USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal USB4105-GF-A C3020560 -40℃~+85℃ 1 12P 48V 5A Black Female Surface Mount, Right Angle Type-C USB 2.0 SMD USB Connectors ROHS 2 Extended ￡1.1785":
+        - cell "J1":
+          - generic "J1"
+        - cell "USB4105-GF-A":
+          - generic "USB4105-GF-A"
+        - cell "USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal":
+          - generic "USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
+        - cell "USB4105-GF-A C3020560 -40℃~+85℃ 1 12P 48V 5A Black Female Surface Mount, Right Angle Type-C USB 2.0 SMD USB Connectors ROHS":
+          - generic: USB4105-GF-A C3020560
+          - generic: "-40℃~+85℃ 1 12P 48V 5A Black Female Surface Mount, Right Angle Type-C USB 2.0 SMD USB Connectors ROHS"
+        - cell "2":
+          - generic: "2"
+        - cell
+        - cell "Extended":
+          - generic: Extended
+        - cell "￡1.1785":
+          - generic: ￡1.1785
+  - tablist:
+    - tab "Public inventory" [selected]
+    - tab "My Inventory"
+    - tab "My Lists"
+  - tabpanel "Public inventory":
+    - textbox "Search within results": C3025063
+    - generic: 
+    - button "" [active]:
+      - generic: 
+    - generic: Show Filters
+    - text:   
+    - table:
+      - rowgroup:
+        - 'row "MFR Part # Description JLCPCB Stock Idle Parts Stock My Inventory Price"':
+          - columnheader
+          - 'columnheader "MFR Part #"':
+            - generic: "MFR Part #"
+          - columnheader
+          - columnheader "Description":
+            - generic: Description
+          - columnheader
+          - columnheader "JLCPCB Stock":
+            - generic: JLCPCB Stock
+          - columnheader
+          - columnheader "Idle Parts Stock":
+            - text: Idle Parts Stock
+          - columnheader
+          - columnheader "My Inventory":
+            - text: My Inventory
+          - columnheader
+          - columnheader "Price":
+            - generic: Price
+          - columnheader
+          - columnheader
+          - columnheader
+    - table:
+      - rowgroup:
+        - 'row "USB4105-GF-A-060-topview USB4105-GF-A-060 C3025063 Extended -40℃~+85℃ 1 12P 48V 5A Black Female Surface Mount, Right Angle Type-C USB 2.0 SMD USB Connectors ROHS 434 0 JLCPCB: 0 Other: 0 30+ ￡0.7967 1+ ￡1.0987 Show More Select  "':
+          - cell:
+            - generic: 
+          - cell "USB4105-GF-A-060-topview USB4105-GF-A-060 C3025063 Extended":
+            - img "USB4105-GF-A-060-topview"
+            - link "USB4105-GF-A-060":
+              - /url: https://jlcpcb.com/partdetail/3554049-USB4105_GF_A060/C3025063
+            - generic: C3025063
+            - generic: Extended
+          - cell
+          - cell "-40℃~+85℃ 1 12P 48V 5A Black Female Surface Mount, Right Angle Type-C USB 2.0 SMD USB Connectors ROHS":
+            - generic: "-40℃~+85℃ 1 12P 48V 5A Black Female Surface Mount, Right Angle Type-C USB 2.0 SMD USB Connectors ROHS"
+          - cell
+          - cell "434":
+            - generic: "434"
+          - cell
+          - cell "0":
+            - generic: "0"
+          - cell
+          - 'cell "JLCPCB: 0 Other: 0"':
+            - generic: "JLCPCB:"
+            - text: "0"
+            - generic: "Other:"
+            - text: "0"
+          - cell
+          - cell "30+ ￡0.7967 1+ ￡1.0987 Show More":
+            - generic: 30+
+            - generic: ￡0.7967
+            - generic: 1+
+            - generic: ￡1.0987
+            - generic: Show More
+          - cell
+          - cell "Select  ":
+            - button "Select"
+            - generic: 
+            - generic: 
+    - generic: 1 item in total
+    - button "" [disabled]:
+      - generic: 
+    - list:
+      - listitem: "1"
+    - button "" [disabled]:
+      - generic: 

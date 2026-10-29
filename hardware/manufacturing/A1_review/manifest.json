@@ -1,0 +1,141 @@
+{
+  "status": "REVIEW ONLY \u2014 NOT APPROVED FOR ORDER",
+  "kicad_version": "10.0.7",
+  "script_sha256": "6689e09a754d37244b2f9533910ebc98a6ea586452d052097949793a602b3b20",
+  "boards": {
+    "main": {
+      "layers": 6,
+      "thickness_mm": 1.6,
+      "outline_mm": [
+        88.4,
+        17.3
+      ],
+      "aux_origin_mm": [
+        50.0,
+        50.0
+      ],
+      "native_through_vias": 192,
+      "drc_counts": {
+        "violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0
+      },
+      "factory_component_count": 37,
+      "factory_excluded": [
+        "DS1",
+        "DS2",
+        "DS3",
+        "DS4",
+        "DS5",
+        "DS6",
+        "DS7",
+        "TP1",
+        "TP2",
+        "TP3",
+        "TP4",
+        "TP5",
+        "TP6"
+      ],
+      "copper_layers_top_to_bottom": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "In3.Cu",
+        "In4.Cu",
+        "B.Cu"
+      ]
+    },
+    "usb": {
+      "layers": 4,
+      "thickness_mm": 1.0,
+      "outline_mm": [
+        16.0,
+        16.8
+      ],
+      "aux_origin_mm": [
+        50.0,
+        50.0
+      ],
+      "native_through_vias": 10,
+      "drc_counts": {
+        "violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0
+      },
+      "factory_component_count": 7,
+      "factory_excluded": [],
+      "copper_layers_top_to_bottom": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ]
+    }
+  },
+  "input_sha256": {
+    "hardware/kicad/circuit-spec.json": "d98d0b94e5583f0797ecbb5a06f2285dbbb07b7fa742ab7cafb609156420fe74",
+    "hardware/kicad/house-rules-main.kicad_pcb": "8b9df50fe0897db76a186902024ef12a80ff8da990d0e1d2d342f8fa2f86a830",
+    "hardware/kicad/house-rules-main.kicad_pro": "2e0d7b0d7ef4993ac4b23e576a4d584b391caf910b302a7545fe65448dd18f63",
+    "hardware/kicad/house-rules-main.kicad_sch": "5809b20c5202ed11e474808ec249bbe227f2c73a28d5cae5b6f8c134469b2747",
+    "hardware/kicad/house-rules-main.kicad_dru": "d1811ffe2b04746012730f114a551fa35094af6fc6cb6b0a51eafe98d8fbbb06",
+    "hardware/kicad/house-rules-usb.kicad_pcb": "fb01d3a1369278d2435762de07fb7607957e51fce6277dc55044a102059ed40f",
+    "hardware/kicad/house-rules-usb.kicad_pro": "2125a531b4b2a88880a21543bb4b3afda33c4a5dd6d1041cc51e0675a9db00ab",
+    "hardware/kicad/house-rules-usb.kicad_sch": "787ff2c4decc9009c19219e089dad2fb3cab19cc97f744dc8ad973356a5da81e",
+    "hardware/kicad/house-rules-usb.kicad_dru": "bd60abe63998e6e876d4d2dd8c27f213359b9059fac1fa3e6e9c5897a224431f"
+  },
+  "output_sha256": {
+    "README.md": "d327134061db1757e5cfbd90a9dff4b0d8467cef759e9741fc87f38cd2a9bf98",
+    "main/assembly/bom.csv": "a3f6f40f77c8593f0ea79a59f85cdc6cdb21c76aad14704316d34ae2c42c9d80",
+    "main/assembly/cpl-manufacturer-review.csv": "0fe372203ad81f75a10f29c222a4e08304d757cab55269a0998e12d852703413",
+    "main/assembly/excluded-from-factory.csv": "a863f9e1e243abb44570b5c9f11e32317500f35f3ecf15ef138ec4f9597a585e",
+    "main/assembly/house-rules-main-B_Paste.gbp": "64d90236ef88038a061c104272d845912e77641f5b2b05b03d51b142497c3766",
+    "main/assembly/house-rules-main-F_Paste.gtp": "2a6f788e76c0d21514993755071e7cf053093b75ba7284f88818e37c512e76cf",
+    "main/assembly/house-rules-main-job.gbrjob": "3f80d3f7689409bde78ea7cf3b0520b1cd01c3e323dea9d738cf00fa9252cc1a",
+    "main/assembly/placement-review.csv": "e35ac73b92f76c149507e104eccb841c27ee6e4f82a449354cea862ca6cabe36",
+    "main/assembly/positions-native-factory.csv": "d69529980d2b6735623b5a5c276816e1768110c40147388df613f7ffcccd6f9e",
+    "main/fabrication/house-rules-main-B_Cu.gbl": "f1a28c52bbb74aa378ccadc5ea6c72f44c1409cedbec30cfad3c316c7cea7cbe",
+    "main/fabrication/house-rules-main-B_Mask.gbs": "8178e60546841f11ec59aab8843413bf9363e150dba2066680d8acca676da79c",
+    "main/fabrication/house-rules-main-B_Silkscreen.gbo": "de87c86df55bbc8f38a06265caaf1a7dc6e66e4a9c4f873e338170ec0db0887a",
+    "main/fabrication/house-rules-main-Edge_Cuts.gm1": "c11686c5883199c3c7bf1ccf2bf76109a2a50b01ac0ee20a6d26903b2674eed5",
+    "main/fabrication/house-rules-main-F_Cu.gtl": "6ceb1fa984de3bc65d77b4641b42169f90e860d6f5be15089e3faad0ae138156",
+    "main/fabrication/house-rules-main-F_Mask.gts": "5ebb0f35d52533eafa0eab13a8126104ff3ab816242c49db3f6b0691921c3b17",
+    "main/fabrication/house-rules-main-F_Silkscreen.gto": "e207d77cde2e89185d2ef54ddb3f05db089419df7225ac950e76dd7995c37bb0",
+    "main/fabrication/house-rules-main-In1_Cu.g1": "237f89c1fad72163fb7bc2286a8279bc5ff206767893f22d394cbac084a241d7",
+    "main/fabrication/house-rules-main-In2_Cu.g2": "11d78bb60d9183c0654a703df40c2913195a9e84e5ebc13d340646e45e607cfd",
+    "main/fabrication/house-rules-main-In3_Cu.g3": "b6f686f3668d20901a3b73ac0826c5729edd9c148650259291e451e6662d16bb",
+    "main/fabrication/house-rules-main-In4_Cu.g4": "7c46c7262788261daf1c29d336dc3183c24ac4a8b7bd8166890cf43c4128ea22",
+    "main/fabrication/house-rules-main-NPTH-drl_map.pdf": "359756c52a65b1bbddb4c0123552cf73d66a4486a6c644eaf5ae5f685a61dd48",
+    "main/fabrication/house-rules-main-NPTH.drl": "3c70d1ca22c5280de9362de165a34d51d10644e68d09816499aecbb38e0bed73",
+    "main/fabrication/house-rules-main-PTH-drl_map.pdf": "edcfae33359f695902af3336475a9f3c0b01a0b4dcda79a093aa7eae9444f745",
+    "main/fabrication/house-rules-main-PTH.drl": "f98f6683b11f7e893ab391b419a6d9cf5a0f1bdb49efcaa3588ce620f6cffb00",
+    "main/fabrication/house-rules-main-job.gbrjob": "066f03aba9c9c06733f12de437089031767b2b45f9cc6325daade87fb5211d6f",
+    "main/house-rules-main-fabrication-REVIEW.zip": "858c42a0294adc9f5ff6c67ea463d674dda39dde881e3ce416d2830d13e62c8a",
+    "main/reports/drill-report.txt": "70cb48f7167aee19eee56b06852f3a2d43a1675093bf53040baaa3bfae7053dd",
+    "main/reports/native-drc.json": "1a08e8fc198c204703e72c77323b86f4f791653fbac08df993e780f34dc9f73a",
+    "usb/assembly/bom.csv": "0e0d44e252432c72d500ff044b4a33502ab0ba84bb6073e0ab93a737ec974d40",
+    "usb/assembly/cpl-manufacturer-review.csv": "1a760ad911407c2f3ec57059a5f2e8546ec0cb1593c8c7a9423b643313fe2e22",
+    "usb/assembly/excluded-from-factory.csv": "b20bd584a6eab81511cbf8bee3ab27fbad3174e8a7a14dfa5abf6d993cd391a9",
+    "usb/assembly/house-rules-usb-B_Paste.gbp": "dc4033705b362fa83fac7ba39460de7d9d0f2e8cda4971083641ebb2509aab3e",
+    "usb/assembly/house-rules-usb-F_Paste.gtp": "76435d23a38bb103da841ee88376f3198a9f91a5dc2bd0241aa85a4fac3b9456",
+    "usb/assembly/house-rules-usb-job.gbrjob": "bff473afcd521f75c8a5d93e35a93f8ac04a0d8cd6dc4b1cdf033765f2b0aa8f",
+    "usb/assembly/placement-review.csv": "8fa7c79fee0b51734b2366ba6279ef0c9853e89f1a57506a3466efab22bc194a",
+    "usb/assembly/positions-native-factory.csv": "ac4876cd57a910fc030523a0ff30efba30b878dc42ee6e22f3c2b4ce1e04554e",
+    "usb/fabrication/house-rules-usb-B_Cu.gbl": "7de2be2237c06c833de93356dc379639ca5a86a34af55b557e00aeb35a2ba645",
+    "usb/fabrication/house-rules-usb-B_Mask.gbs": "e89648783eb3404a7ad04f0031b78d27aa30ad48a0b5c0d0c3d4b8fd2d5f3d2e",
+    "usb/fabrication/house-rules-usb-B_Silkscreen.gbo": "be6db9574e27886bab283d77b8a36298ccf076d40be2adb9fb63c37979802ff9",
+    "usb/fabrication/house-rules-usb-Edge_Cuts.gm1": "93cd63825a770e2114c35f462a76a81eff6975fbe2cff96db4895e0b5cf3d613",
+    "usb/fabrication/house-rules-usb-F_Cu.gtl": "94c75955077d405fcec6d956ee4889f0e0d8a15a3e6516383f939cc2d62715b9",
+    "usb/fabrication/house-rules-usb-F_Mask.gts": "716ca3e46894a442f1b743770c6805dec1532f98e09b5d4a4277e613704904ee",
+    "usb/fabrication/house-rules-usb-F_Silkscreen.gto": "6b2641c99a6edefca986404dca1459a61d8c8e3aa2311212a1a19876ae5a939c",
+    "usb/fabrication/house-rules-usb-In1_Cu.g1": "dd8d4e755c8e329a853d7f48a245ec5ca5b37066165690867a06ff98137496dd",
+    "usb/fabrication/house-rules-usb-In2_Cu.g2": "df347ec88a576b6423b4dfb0a8949afc2347032ae9d7faf7967be0e891b95869",
+    "usb/fabrication/house-rules-usb-NPTH-drl_map.pdf": "32e1340be68989c68061f0d2d6ed43635c155116dadffdab364442b8edc6463d",
+    "usb/fabrication/house-rules-usb-NPTH.drl": "1fc18cd4f130ada1fd4a634d7b31099d27ea11c47286ba48c918f3099f88f395",
+    "usb/fabrication/house-rules-usb-PTH-drl_map.pdf": "97b5d01e1c1ed4aa8ec4bfb33c6ea36a89ab74e532ce1ab30303c022c6607408",
+    "usb/fabrication/house-rules-usb-PTH.drl": "dc8be1a568c6152ab3596203c837a5a20f815b8d0282557e08b297290889d014",
+    "usb/fabrication/house-rules-usb-job.gbrjob": "d484aba35afab670a6c48557665c9669a1705f6c8e124a89e5171ffcd974fcde",
+    "usb/house-rules-usb-fabrication-REVIEW.zip": "2909c8da4f1e9f0ce3803680faf03d76d540d88fbc53ba4302c09ac0e9ec5b57",
+    "usb/reports/drill-report.txt": "959247bec91bd4b91444a7ee0568012107080dbd45f0e2a0b9a516b624b7772b",
+    "usb/reports/native-drc.json": "74daa807017da3665675e65b662e3dc8d0fdf62c418304e2f210421ef54ce837"
+  }
+}

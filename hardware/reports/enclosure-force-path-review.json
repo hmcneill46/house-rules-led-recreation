@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-29",
+  "case_outer_mm": [
+    93.6,
+    22.6,
+    24.0
+  ],
+  "carrier_retention_clearances_mm": {
+    "top": 0.15,
+    "left": 0.15,
+    "right": 0.45,
+    "bottom": 0.45,
+    "rear_stop": 0.15
+  },
+  "remaining_top_ledge_engagement_after_withdrawal_mm": 0.3,
+  "insertion_load_path": "USB shell stakes -> carrier PCB upper edge -> two top columns -> back locating lip -> shell",
+  "withdrawal_load_path": "USB shell stakes -> carrier PCB lower-left edge -> integral bottom shell block",
+  "lateral_load_path": "Carrier PCB edges -> lower-left pillar and integral right shell block",
+  "led_leads_structural": false,
+  "intentional_pcb_clamping_preload": false,
+  "main_pcb_retention": "Front edge ledges and rear perimeter stops; LED plastic has separate shoulders",
+  "all_fixed_carrier_stops_outside_main_insertion_envelope": true,
+  "rear_lip_usb_body_keepout": false,
+  "port_well_open_rear_edge": false,
+  "status": "Analytical concept review; no enclosure print or force test has been performed",
+  "assembly_guide_image": {
+    "path": "hardware/render/assembly-guide.png",
+    "sha256": "1e05b3d577dead0d82ba7f7db8635f98539be12a38f6d121dc82397b97c95aca"
+  },
+  "rear_lip_usb_clearance_mm": 1.69,
+  "port_well_shell_roof_mm": 2.42,
+  "main_header_wire_bend_room_mm": 5.6
+}

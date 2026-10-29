@@ -1,0 +1,1199 @@
+{
+  "status": "exclusive authorised local QFN via-pad fanout",
+  "board_sha256_before": "e77fcc79b5482a5498a524f04f23257c6912de56fa20b0b3942b7f607e35c42b",
+  "actions": [
+    {
+      "ref": "U1",
+      "pin": "20",
+      "net": "D1_SW3",
+      "via_absolute_mm": [
+        54.4,
+        58.85
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "stub_width_mm": 0.1,
+      "eligible_local_via_pad_pairs": [
+        {
+          "pad": "U1.1",
+          "net": "D1_CS4"
+        },
+        {
+          "pad": "U1.2",
+          "net": "D1_CS5"
+        },
+        {
+          "pad": "U1.3",
+          "net": "D1_CS6"
+        },
+        {
+          "pad": "U1.4",
+          "net": "D1_CS7"
+        },
+        {
+          "pad": "U1.5",
+          "net": "D1_CS8"
+        },
+        {
+          "pad": "U1.6",
+          "net": "D1_CS9"
+        },
+        {
+          "pad": "U1.7",
+          "net": "D1_CS10"
+        },
+        {
+          "pad": "U1.8",
+          "net": "D1_CS11"
+        },
+        {
+          "pad": "U1.9",
+          "net": "GND"
+        },
+        {
+          "pad": "U1.10",
+          "net": "D1_CS12"
+        },
+        {
+          "pad": "U1.11",
+          "net": "D1_CS13"
+        },
+        {
+          "pad": "U1.12",
+          "net": "D1_CS14"
+        },
+        {
+          "pad": "U1.13",
+          "net": "unconnected-(U1-CS15-Pad13)"
+        },
+        {
+          "pad": "U1.14",
+          "net": "unconnected-(U1-CS16-Pad14)"
+        },
+        {
+          "pad": "U1.15",
+          "net": "unconnected-(U1-SW8-Pad15)"
+        },
+        {
+          "pad": "U1.16",
+          "net": "unconnected-(U1-SW7-Pad16)"
+        },
+        {
+          "pad": "U1.17",
+          "net": "unconnected-(U1-SW6-Pad17)"
+        },
+        {
+          "pad": "U1.18",
+          "net": "D1_SW5"
+        },
+        {
+          "pad": "U1.19",
+          "net": "D1_SW4"
+        },
+        {
+          "pad": "U1.21",
+          "net": "D1_SW2"
+        },
+        {
+          "pad": "U1.22",
+          "net": "D1_SW1"
+        },
+        {
+          "pad": "U1.23",
+          "net": "+5V"
+        },
+        {
+          "pad": "U1.24",
+          "net": "GND"
+        },
+        {
+          "pad": "U1.25",
+          "net": "ISET1"
+        },
+        {
+          "pad": "U1.26",
+          "net": "SDA"
+        },
+        {
+          "pad": "U1.27",
+          "net": "SCL"
+        },
+        {
+          "pad": "U1.28",
+          "net": "GND"
+        },
+        {
+          "pad": "U1.29",
+          "net": "LED_SDB"
+        },
+        {
+          "pad": "U1.30",
+          "net": "D1_CS1"
+        },
+        {
+          "pad": "U1.31",
+          "net": "D1_CS2"
+        },
+        {
+          "pad": "U1.32",
+          "net": "D1_CS3"
+        },
+        {
+          "pad": "U1.33",
+          "net": "GND"
+        }
+      ],
+      "removed": [
+        {
+          "uuid": "0e8d4dc3-34ea-4464-aa3c-011d24673785",
+          "net": "D1_SW2",
+          "type": "track"
+        },
+        {
+          "uuid": "a5e4e0e0-cb81-450b-a0f3-7387cd5ace76",
+          "net": "D1_CS5",
+          "type": "track"
+        }
+      ]
+    },
+    {
+      "ref": "U2",
+      "pin": "20",
+      "net": "D2_SW3",
+      "via_absolute_mm": [
+        79.8,
+        58.85
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "stub_width_mm": 0.1,
+      "eligible_local_via_pad_pairs": [
+        {
+          "pad": "U2.1",
+          "net": "D2_CS4"
+        },
+        {
+          "pad": "U2.2",
+          "net": "D2_CS5"
+        },
+        {
+          "pad": "U2.3",
+          "net": "D2_CS6"
+        },
+        {
+          "pad": "U2.4",
+          "net": "D2_CS7"
+        },
+        {
+          "pad": "U2.5",
+          "net": "D2_CS8"
+        },
+        {
+          "pad": "U2.6",
+          "net": "D2_CS9"
+        },
+        {
+          "pad": "U2.7",
+          "net": "D2_CS10"
+        },
+        {
+          "pad": "U2.8",
+          "net": "D2_CS11"
+        },
+        {
+          "pad": "U2.9",
+          "net": "GND"
+        },
+        {
+          "pad": "U2.10",
+          "net": "D2_CS12"
+        },
+        {
+          "pad": "U2.11",
+          "net": "D2_CS13"
+        },
+        {
+          "pad": "U2.12",
+          "net": "D2_CS14"
+        },
+        {
+          "pad": "U2.13",
+          "net": "unconnected-(U2-CS15-Pad13)"
+        },
+        {
+          "pad": "U2.14",
+          "net": "unconnected-(U2-CS16-Pad14)"
+        },
+        {
+          "pad": "U2.15",
+          "net": "unconnected-(U2-SW8-Pad15)"
+        },
+        {
+          "pad": "U2.16",
+          "net": "unconnected-(U2-SW7-Pad16)"
+        },
+        {
+          "pad": "U2.17",
+          "net": "unconnected-(U2-SW6-Pad17)"
+        },
+        {
+          "pad": "U2.18",
+          "net": "D2_SW5"
+        },
+        {
+          "pad": "U2.19",
+          "net": "D2_SW4"
+        },
+        {
+          "pad": "U2.21",
+          "net": "D2_SW2"
+        },
+        {
+          "pad": "U2.22",
+          "net": "D2_SW1"
+        },
+        {
+          "pad": "U2.23",
+          "net": "+5V"
+        },
+        {
+          "pad": "U2.24",
+          "net": "GND"
+        },
+        {
+          "pad": "U2.25",
+          "net": "ISET2"
+        },
+        {
+          "pad": "U2.26",
+          "net": "SDA"
+        },
+        {
+          "pad": "U2.27",
+          "net": "SCL"
+        },
+        {
+          "pad": "U2.28",
+          "net": "SCL"
+        },
+        {
+          "pad": "U2.29",
+          "net": "LED_SDB"
+        },
+        {
+          "pad": "U2.30",
+          "net": "D2_CS1"
+        },
+        {
+          "pad": "U2.31",
+          "net": "D2_CS2"
+        },
+        {
+          "pad": "U2.32",
+          "net": "D2_CS3"
+        },
+        {
+          "pad": "U2.33",
+          "net": "GND"
+        }
+      ],
+      "removed": []
+    },
+    {
+      "ref": "U4",
+      "pin": "20",
+      "net": "D4_SW3",
+      "via_absolute_mm": [
+        130.6,
+        58.85
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "stub_width_mm": 0.1,
+      "eligible_local_via_pad_pairs": [
+        {
+          "pad": "U4.1",
+          "net": "D4_CS4"
+        },
+        {
+          "pad": "U4.2",
+          "net": "D4_CS5"
+        },
+        {
+          "pad": "U4.3",
+          "net": "D4_CS6"
+        },
+        {
+          "pad": "U4.4",
+          "net": "D4_CS7"
+        },
+        {
+          "pad": "U4.5",
+          "net": "unconnected-(U4-CS8-Pad5)"
+        },
+        {
+          "pad": "U4.6",
+          "net": "unconnected-(U4-CS9-Pad6)"
+        },
+        {
+          "pad": "U4.7",
+          "net": "unconnected-(U4-CS10-Pad7)"
+        },
+        {
+          "pad": "U4.8",
+          "net": "unconnected-(U4-CS11-Pad8)"
+        },
+        {
+          "pad": "U4.9",
+          "net": "GND"
+        },
+        {
+          "pad": "U4.10",
+          "net": "unconnected-(U4-CS12-Pad10)"
+        },
+        {
+          "pad": "U4.11",
+          "net": "unconnected-(U4-CS13-Pad11)"
+        },
+        {
+          "pad": "U4.12",
+          "net": "unconnected-(U4-CS14-Pad12)"
+        },
+        {
+          "pad": "U4.13",
+          "net": "unconnected-(U4-CS15-Pad13)"
+        },
+        {
+          "pad": "U4.14",
+          "net": "unconnected-(U4-CS16-Pad14)"
+        },
+        {
+          "pad": "U4.15",
+          "net": "unconnected-(U4-SW8-Pad15)"
+        },
+        {
+          "pad": "U4.16",
+          "net": "unconnected-(U4-SW7-Pad16)"
+        },
+        {
+          "pad": "U4.17",
+          "net": "unconnected-(U4-SW6-Pad17)"
+        },
+        {
+          "pad": "U4.18",
+          "net": "D4_SW5"
+        },
+        {
+          "pad": "U4.19",
+          "net": "D4_SW4"
+        },
+        {
+          "pad": "U4.21",
+          "net": "D4_SW2"
+        },
+        {
+          "pad": "U4.22",
+          "net": "D4_SW1"
+        },
+        {
+          "pad": "U4.23",
+          "net": "+5V"
+        },
+        {
+          "pad": "U4.24",
+          "net": "GND"
+        },
+        {
+          "pad": "U4.25",
+          "net": "ISET4"
+        },
+        {
+          "pad": "U4.26",
+          "net": "SDA"
+        },
+        {
+          "pad": "U4.27",
+          "net": "SCL"
+        },
+        {
+          "pad": "U4.28",
+          "net": "+5V"
+        },
+        {
+          "pad": "U4.29",
+          "net": "LED_SDB"
+        },
+        {
+          "pad": "U4.30",
+          "net": "D4_CS1"
+        },
+        {
+          "pad": "U4.31",
+          "net": "D4_CS2"
+        },
+        {
+          "pad": "U4.32",
+          "net": "D4_CS3"
+        },
+        {
+          "pad": "U4.33",
+          "net": "GND"
+        }
+      ],
+      "removed": []
+    },
+    {
+      "ref": "U1",
+      "pin": "5",
+      "net": "D1_CS8",
+      "via_absolute_mm": [
+        57.8,
+        58.85
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "stub_width_mm": 0.1,
+      "eligible_local_via_pad_pairs": [
+        {
+          "pad": "U1.1",
+          "net": "D1_CS4"
+        },
+        {
+          "pad": "U1.2",
+          "net": "D1_CS5"
+        },
+        {
+          "pad": "U1.3",
+          "net": "D1_CS6"
+        },
+        {
+          "pad": "U1.4",
+          "net": "D1_CS7"
+        },
+        {
+          "pad": "U1.6",
+          "net": "D1_CS9"
+        },
+        {
+          "pad": "U1.7",
+          "net": "D1_CS10"
+        },
+        {
+          "pad": "U1.8",
+          "net": "D1_CS11"
+        },
+        {
+          "pad": "U1.9",
+          "net": "GND"
+        },
+        {
+          "pad": "U1.10",
+          "net": "D1_CS12"
+        },
+        {
+          "pad": "U1.11",
+          "net": "D1_CS13"
+        },
+        {
+          "pad": "U1.12",
+          "net": "D1_CS14"
+        },
+        {
+          "pad": "U1.13",
+          "net": "unconnected-(U1-CS15-Pad13)"
+        },
+        {
+          "pad": "U1.14",
+          "net": "unconnected-(U1-CS16-Pad14)"
+        },
+        {
+          "pad": "U1.15",
+          "net": "unconnected-(U1-SW8-Pad15)"
+        },
+        {
+          "pad": "U1.16",
+          "net": "unconnected-(U1-SW7-Pad16)"
+        },
+        {
+          "pad": "U1.17",
+          "net": "unconnected-(U1-SW6-Pad17)"
+        },
+        {
+          "pad": "U1.18",
+          "net": "D1_SW5"
+        },
+        {
+          "pad": "U1.19",
+          "net": "D1_SW4"
+        },
+        {
+          "pad": "U1.20",
+          "net": "D1_SW3"
+        },
+        {
+          "pad": "U1.21",
+          "net": "D1_SW2"
+        },
+        {
+          "pad": "U1.22",
+          "net": "D1_SW1"
+        },
+        {
+          "pad": "U1.23",
+          "net": "+5V"
+        },
+        {
+          "pad": "U1.24",
+          "net": "GND"
+        },
+        {
+          "pad": "U1.25",
+          "net": "ISET1"
+        },
+        {
+          "pad": "U1.26",
+          "net": "SDA"
+        },
+        {
+          "pad": "U1.27",
+          "net": "SCL"
+        },
+        {
+          "pad": "U1.28",
+          "net": "GND"
+        },
+        {
+          "pad": "U1.29",
+          "net": "LED_SDB"
+        },
+        {
+          "pad": "U1.30",
+          "net": "D1_CS1"
+        },
+        {
+          "pad": "U1.31",
+          "net": "D1_CS2"
+        },
+        {
+          "pad": "U1.32",
+          "net": "D1_CS3"
+        },
+        {
+          "pad": "U1.33",
+          "net": "GND"
+        }
+      ],
+      "removed": []
+    },
+    {
+      "ref": "U2",
+      "pin": "5",
+      "net": "D2_CS8",
+      "via_absolute_mm": [
+        83.2,
+        58.85
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "stub_width_mm": 0.1,
+      "eligible_local_via_pad_pairs": [
+        {
+          "pad": "U2.1",
+          "net": "D2_CS4"
+        },
+        {
+          "pad": "U2.2",
+          "net": "D2_CS5"
+        },
+        {
+          "pad": "U2.3",
+          "net": "D2_CS6"
+        },
+        {
+          "pad": "U2.4",
+          "net": "D2_CS7"
+        },
+        {
+          "pad": "U2.6",
+          "net": "D2_CS9"
+        },
+        {
+          "pad": "U2.7",
+          "net": "D2_CS10"
+        },
+        {
+          "pad": "U2.8",
+          "net": "D2_CS11"
+        },
+        {
+          "pad": "U2.9",
+          "net": "GND"
+        },
+        {
+          "pad": "U2.10",
+          "net": "D2_CS12"
+        },
+        {
+          "pad": "U2.11",
+          "net": "D2_CS13"
+        },
+        {
+          "pad": "U2.12",
+          "net": "D2_CS14"
+        },
+        {
+          "pad": "U2.13",
+          "net": "unconnected-(U2-CS15-Pad13)"
+        },
+        {
+          "pad": "U2.14",
+          "net": "unconnected-(U2-CS16-Pad14)"
+        },
+        {
+          "pad": "U2.15",
+          "net": "unconnected-(U2-SW8-Pad15)"
+        },
+        {
+          "pad": "U2.16",
+          "net": "unconnected-(U2-SW7-Pad16)"
+        },
+        {
+          "pad": "U2.17",
+          "net": "unconnected-(U2-SW6-Pad17)"
+        },
+        {
+          "pad": "U2.18",
+          "net": "D2_SW5"
+        },
+        {
+          "pad": "U2.19",
+          "net": "D2_SW4"
+        },
+        {
+          "pad": "U2.20",
+          "net": "D2_SW3"
+        },
+        {
+          "pad": "U2.21",
+          "net": "D2_SW2"
+        },
+        {
+          "pad": "U2.22",
+          "net": "D2_SW1"
+        },
+        {
+          "pad": "U2.23",
+          "net": "+5V"
+        },
+        {
+          "pad": "U2.24",
+          "net": "GND"
+        },
+        {
+          "pad": "U2.25",
+          "net": "ISET2"
+        },
+        {
+          "pad": "U2.26",
+          "net": "SDA"
+        },
+        {
+          "pad": "U2.27",
+          "net": "SCL"
+        },
+        {
+          "pad": "U2.28",
+          "net": "SCL"
+        },
+        {
+          "pad": "U2.29",
+          "net": "LED_SDB"
+        },
+        {
+          "pad": "U2.30",
+          "net": "D2_CS1"
+        },
+        {
+          "pad": "U2.31",
+          "net": "D2_CS2"
+        },
+        {
+          "pad": "U2.32",
+          "net": "D2_CS3"
+        },
+        {
+          "pad": "U2.33",
+          "net": "GND"
+        }
+      ],
+      "removed": []
+    },
+    {
+      "ref": "U3",
+      "pin": "21",
+      "net": "D3_SW2",
+      "via_absolute_mm": [
+        105.2,
+        58.45
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "stub_width_mm": 0.1,
+      "eligible_local_via_pad_pairs": [
+        {
+          "pad": "U3.1",
+          "net": "D3_CS4"
+        },
+        {
+          "pad": "U3.2",
+          "net": "D3_CS5"
+        },
+        {
+          "pad": "U3.3",
+          "net": "D3_CS6"
+        },
+        {
+          "pad": "U3.4",
+          "net": "D3_CS7"
+        },
+        {
+          "pad": "U3.5",
+          "net": "D3_CS8"
+        },
+        {
+          "pad": "U3.6",
+          "net": "D3_CS9"
+        },
+        {
+          "pad": "U3.7",
+          "net": "D3_CS10"
+        },
+        {
+          "pad": "U3.8",
+          "net": "D3_CS11"
+        },
+        {
+          "pad": "U3.9",
+          "net": "GND"
+        },
+        {
+          "pad": "U3.10",
+          "net": "D3_CS12"
+        },
+        {
+          "pad": "U3.11",
+          "net": "D3_CS13"
+        },
+        {
+          "pad": "U3.12",
+          "net": "D3_CS14"
+        },
+        {
+          "pad": "U3.13",
+          "net": "unconnected-(U3-CS15-Pad13)"
+        },
+        {
+          "pad": "U3.14",
+          "net": "unconnected-(U3-CS16-Pad14)"
+        },
+        {
+          "pad": "U3.15",
+          "net": "unconnected-(U3-SW8-Pad15)"
+        },
+        {
+          "pad": "U3.16",
+          "net": "unconnected-(U3-SW7-Pad16)"
+        },
+        {
+          "pad": "U3.17",
+          "net": "unconnected-(U3-SW6-Pad17)"
+        },
+        {
+          "pad": "U3.18",
+          "net": "D3_SW5"
+        },
+        {
+          "pad": "U3.19",
+          "net": "D3_SW4"
+        },
+        {
+          "pad": "U3.20",
+          "net": "D3_SW3"
+        },
+        {
+          "pad": "U3.22",
+          "net": "D3_SW1"
+        },
+        {
+          "pad": "U3.23",
+          "net": "+5V"
+        },
+        {
+          "pad": "U3.24",
+          "net": "GND"
+        },
+        {
+          "pad": "U3.25",
+          "net": "ISET3"
+        },
+        {
+          "pad": "U3.26",
+          "net": "SDA"
+        },
+        {
+          "pad": "U3.27",
+          "net": "SCL"
+        },
+        {
+          "pad": "U3.28",
+          "net": "SDA"
+        },
+        {
+          "pad": "U3.29",
+          "net": "LED_SDB"
+        },
+        {
+          "pad": "U3.30",
+          "net": "D3_CS1"
+        },
+        {
+          "pad": "U3.31",
+          "net": "D3_CS2"
+        },
+        {
+          "pad": "U3.32",
+          "net": "D3_CS3"
+        },
+        {
+          "pad": "U3.33",
+          "net": "GND"
+        }
+      ],
+      "removed": [
+        {
+          "uuid": "00186176-69a5-41dc-a3a9-2fd6126bae99",
+          "net": "D3_SW3",
+          "type": "track"
+        },
+        {
+          "uuid": "5c850ba4-ba18-47e1-89d0-1bcf1be3b61b",
+          "net": "D3_SW3",
+          "type": "track"
+        },
+        {
+          "uuid": "6f7c66c0-68f6-48e5-a0aa-58d5708869dc",
+          "net": "D3_SW3",
+          "type": "track"
+        },
+        {
+          "uuid": "adc0e302-ffdd-45d8-803c-455ee5e7549b",
+          "net": "D3_SW3",
+          "type": "track"
+        },
+        {
+          "uuid": "dafc26ac-f7e6-48df-a276-b72e1370ba4a",
+          "net": "D3_SW3",
+          "type": "track"
+        },
+        {
+          "uuid": "e192b253-137e-4762-8dd4-ac3f88c09343",
+          "net": "D3_SW3",
+          "type": "track"
+        },
+        {
+          "uuid": "96b70641-5bf4-4506-9ff5-e3ae5b3e356c",
+          "net": "ISET3",
+          "type": "track"
+        }
+      ]
+    },
+    {
+      "ref": "U3",
+      "pin": "6",
+      "net": "D3_CS9",
+      "via_absolute_mm": [
+        108.6,
+        59.25
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "stub_width_mm": 0.1,
+      "eligible_local_via_pad_pairs": [
+        {
+          "pad": "U3.1",
+          "net": "D3_CS4"
+        },
+        {
+          "pad": "U3.2",
+          "net": "D3_CS5"
+        },
+        {
+          "pad": "U3.3",
+          "net": "D3_CS6"
+        },
+        {
+          "pad": "U3.4",
+          "net": "D3_CS7"
+        },
+        {
+          "pad": "U3.5",
+          "net": "D3_CS8"
+        },
+        {
+          "pad": "U3.7",
+          "net": "D3_CS10"
+        },
+        {
+          "pad": "U3.8",
+          "net": "D3_CS11"
+        },
+        {
+          "pad": "U3.9",
+          "net": "GND"
+        },
+        {
+          "pad": "U3.10",
+          "net": "D3_CS12"
+        },
+        {
+          "pad": "U3.11",
+          "net": "D3_CS13"
+        },
+        {
+          "pad": "U3.12",
+          "net": "D3_CS14"
+        },
+        {
+          "pad": "U3.13",
+          "net": "unconnected-(U3-CS15-Pad13)"
+        },
+        {
+          "pad": "U3.14",
+          "net": "unconnected-(U3-CS16-Pad14)"
+        },
+        {
+          "pad": "U3.15",
+          "net": "unconnected-(U3-SW8-Pad15)"
+        },
+        {
+          "pad": "U3.16",
+          "net": "unconnected-(U3-SW7-Pad16)"
+        },
+        {
+          "pad": "U3.17",
+          "net": "unconnected-(U3-SW6-Pad17)"
+        },
+        {
+          "pad": "U3.18",
+          "net": "D3_SW5"
+        },
+        {
+          "pad": "U3.19",
+          "net": "D3_SW4"
+        },
+        {
+          "pad": "U3.20",
+          "net": "D3_SW3"
+        },
+        {
+          "pad": "U3.21",
+          "net": "D3_SW2"
+        },
+        {
+          "pad": "U3.22",
+          "net": "D3_SW1"
+        },
+        {
+          "pad": "U3.23",
+          "net": "+5V"
+        },
+        {
+          "pad": "U3.24",
+          "net": "GND"
+        },
+        {
+          "pad": "U3.25",
+          "net": "ISET3"
+        },
+        {
+          "pad": "U3.26",
+          "net": "SDA"
+        },
+        {
+          "pad": "U3.27",
+          "net": "SCL"
+        },
+        {
+          "pad": "U3.28",
+          "net": "SDA"
+        },
+        {
+          "pad": "U3.29",
+          "net": "LED_SDB"
+        },
+        {
+          "pad": "U3.30",
+          "net": "D3_CS1"
+        },
+        {
+          "pad": "U3.31",
+          "net": "D3_CS2"
+        },
+        {
+          "pad": "U3.32",
+          "net": "D3_CS3"
+        },
+        {
+          "pad": "U3.33",
+          "net": "GND"
+        }
+      ],
+      "removed": []
+    },
+    {
+      "ref": "U3",
+      "pin": "3",
+      "net": "D3_CS6",
+      "via_absolute_mm": [
+        108.6,
+        58.05
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "stub_width_mm": 0.1,
+      "eligible_local_via_pad_pairs": [
+        {
+          "pad": "U3.1",
+          "net": "D3_CS4"
+        },
+        {
+          "pad": "U3.2",
+          "net": "D3_CS5"
+        },
+        {
+          "pad": "U3.4",
+          "net": "D3_CS7"
+        },
+        {
+          "pad": "U3.5",
+          "net": "D3_CS8"
+        },
+        {
+          "pad": "U3.6",
+          "net": "D3_CS9"
+        },
+        {
+          "pad": "U3.7",
+          "net": "D3_CS10"
+        },
+        {
+          "pad": "U3.8",
+          "net": "D3_CS11"
+        },
+        {
+          "pad": "U3.9",
+          "net": "GND"
+        },
+        {
+          "pad": "U3.10",
+          "net": "D3_CS12"
+        },
+        {
+          "pad": "U3.11",
+          "net": "D3_CS13"
+        },
+        {
+          "pad": "U3.12",
+          "net": "D3_CS14"
+        },
+        {
+          "pad": "U3.13",
+          "net": "unconnected-(U3-CS15-Pad13)"
+        },
+        {
+          "pad": "U3.14",
+          "net": "unconnected-(U3-CS16-Pad14)"
+        },
+        {
+          "pad": "U3.15",
+          "net": "unconnected-(U3-SW8-Pad15)"
+        },
+        {
+          "pad": "U3.16",
+          "net": "unconnected-(U3-SW7-Pad16)"
+        },
+        {
+          "pad": "U3.17",
+          "net": "unconnected-(U3-SW6-Pad17)"
+        },
+        {
+          "pad": "U3.18",
+          "net": "D3_SW5"
+        },
+        {
+          "pad": "U3.19",
+          "net": "D3_SW4"
+        },
+        {
+          "pad": "U3.20",
+          "net": "D3_SW3"
+        },
+        {
+          "pad": "U3.21",
+          "net": "D3_SW2"
+        },
+        {
+          "pad": "U3.22",
+          "net": "D3_SW1"
+        },
+        {
+          "pad": "U3.23",
+          "net": "+5V"
+        },
+        {
+          "pad": "U3.24",
+          "net": "GND"
+        },
+        {
+          "pad": "U3.25",
+          "net": "ISET3"
+        },
+        {
+          "pad": "U3.26",
+          "net": "SDA"
+        },
+        {
+          "pad": "U3.27",
+          "net": "SCL"
+        },
+        {
+          "pad": "U3.28",
+          "net": "SDA"
+        },
+        {
+          "pad": "U3.29",
+          "net": "LED_SDB"
+        },
+        {
+          "pad": "U3.30",
+          "net": "D3_CS1"
+        },
+        {
+          "pad": "U3.31",
+          "net": "D3_CS2"
+        },
+        {
+          "pad": "U3.32",
+          "net": "D3_CS3"
+        },
+        {
+          "pad": "U3.33",
+          "net": "GND"
+        }
+      ],
+      "removed": []
+    }
+  ],
+  "board_sha256_after": "beafd3813f77e58761c5da761d0a9cd8009b424d1886bab7c6dd1f97929f5d3b",
+  "project_change": "Only global minimum clearance 0.15 ->0.10; netclasses0.15 and all other constraints unchanged."
+}

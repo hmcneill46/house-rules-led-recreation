@@ -1,0 +1,5129 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-29T13:33:10",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "house-rules-main.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [D1_SW2] on In3.Cu, length 0.7071 mm",
+                    "pos": {
+                        "x": 58.45,
+                        "y": 58.9
+                    },
+                    "uuid": "4fb426be-cb87-41b6-8dd3-6b040f24d2bb"
+                },
+                {
+                    "description": "Track [D1_SW2] on B.Cu, length 0.5500 mm",
+                    "pos": {
+                        "x": 54.15,
+                        "y": 58.45
+                    },
+                    "uuid": "a2ba782e-4e00-4d94-a938-b5f65b59be6d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [D1_SW3] on In2.Cu, length 5.1486 mm",
+                    "pos": {
+                        "x": 54.7614,
+                        "y": 57.38
+                    },
+                    "uuid": "d944176b-6803-4519-bb71-1a9cebf7f4f3"
+                },
+                {
+                    "description": "Via [D1_SW3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 54.4,
+                        "y": 58.85
+                    },
+                    "uuid": "67ef056c-4e49-4234-9840-bc4797b4222c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [D1_CS8] on B.Cu, length 0.3334 mm",
+                    "pos": {
+                        "x": 59.1495,
+                        "y": 58.3064
+                    },
+                    "uuid": "7c1e9c76-6cc0-4b98-b316-8fa1e881e72b"
+                },
+                {
+                    "description": "Track [D1_CS8] on B.Cu, length 0.5559 mm",
+                    "pos": {
+                        "x": 58.05,
+                        "y": 58.85
+                    },
+                    "uuid": "898e4a39-341f-412c-9842-c207646411dd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [D2_SW3] on In2.Cu, length 1.3971 mm",
+                    "pos": {
+                        "x": 80.5341,
+                        "y": 58.005
+                    },
+                    "uuid": "cbc19179-5af2-4129-9736-e8a591eef450"
+                },
+                {
+                    "description": "Via [D2_SW3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 79.8,
+                        "y": 58.85
+                    },
+                    "uuid": "38c55010-cb16-49c0-a469-3fd603885d48"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [D4_SW3] on In2.Cu, length 4.5090 mm",
+                    "pos": {
+                        "x": 131.266,
+                        "y": 57.0446
+                    },
+                    "uuid": "1319980c-f075-4293-87f5-632ef43138a2"
+                },
+                {
+                    "description": "Via [D4_SW3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.6,
+                        "y": 58.85
+                    },
+                    "uuid": "855cf93e-1369-4c46-9c67-d72b429ab26b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [D2_CS8] on B.Cu, length 0.0059 mm",
+                    "pos": {
+                        "x": 83.4542,
+                        "y": 58.8458
+                    },
+                    "uuid": "ccb6325b-e3f8-4e92-a6ed-ddc215302ecd"
+                },
+                {
+                    "description": "Track [D2_CS8] on B.Cu, length 1.5884 mm",
+                    "pos": {
+                        "x": 86.3386,
+                        "y": 57.7226
+                    },
+                    "uuid": "f7f6e605-8fb8-4004-a255-30bdcb4b301a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [D3_SW2] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 58.55
+                    },
+                    "uuid": "1643e1aa-af9c-434d-b7a2-0a24fd69ee74"
+                },
+                {
+                    "description": "Track [D3_SW2] on B.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 104.4,
+                        "y": 58.6
+                    },
+                    "uuid": "1f6cae8b-9fdf-4c2d-b595-9a0902b6cb23"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [D3_SW2] on F.Cu, length 0.5657 mm",
+                    "pos": {
+                        "x": 109.5,
+                        "y": 58.6
+                    },
+                    "uuid": "df704352-6b95-4987-ac68-59e42dce389e"
+                },
+                {
+                    "description": "Via [D3_SW2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.2,
+                        "y": 58.45
+                    },
+                    "uuid": "5110d63e-5689-45f2-8312-ec75f00740eb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [D3_SW3] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 105.7,
+                        "y": 58.55
+                    },
+                    "uuid": "4170cbb3-e53a-473b-a7d8-d94a35b1bc9a"
+                },
+                {
+                    "description": "Pad 20 [D3_SW3] of U3 on B.Cu",
+                    "pos": {
+                        "x": 104.95,
+                        "y": 58.85
+                    },
+                    "uuid": "a7b23b98-7eaf-4cd1-a180-49fea0eaa2eb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 6 [D3_CS9] of U3 on B.Cu",
+                    "pos": {
+                        "x": 108.85,
+                        "y": 59.25
+                    },
+                    "uuid": "11279113-f172-48e3-98d1-f80fa219c73c"
+                },
+                {
+                    "description": "Track [D3_CS9] on B.Cu, length 0.7530 mm",
+                    "pos": {
+                        "x": 110.34,
+                        "y": 58.3934
+                    },
+                    "uuid": "a3be9a1e-4a81-4abf-b49a-3ee246dc4ab6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [D1_CS5] on In2.Cu, length 4.0506 mm",
+                    "pos": {
+                        "x": 54.6421,
+                        "y": 56.8296
+                    },
+                    "uuid": "fccbca77-9de0-46aa-8af5-d392aa8fb6ca"
+                },
+                {
+                    "description": "Track [D1_CS5] on In2.Cu, length 0.7383 mm",
+                    "pos": {
+                        "x": 52.29,
+                        "y": 59.92
+                    },
+                    "uuid": "2d5ff337-f629-4234-8d9a-76d9461b66ab"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [D3_CS6] on B.Cu, length 0.0481 mm",
+                    "pos": {
+                        "x": 109.783,
+                        "y": 57.1246
+                    },
+                    "uuid": "e7c4de17-3135-48a3-8e37-ea25689806ee"
+                },
+                {
+                    "description": "Track [D3_CS6] on B.Cu, length 0.4320 mm",
+                    "pos": {
+                        "x": 108.85,
+                        "y": 58.05
+                    },
+                    "uuid": "ad02d7d0-31ba-4098-a265-c704c96e29c9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 28 [SDA] of U3 on B.Cu",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 56.7
+                    },
+                    "uuid": "27c37f5d-e4b9-41bf-bee0-25357a65132d"
+                },
+                {
+                    "description": "Pad 26 [SDA] of U3 on B.Cu",
+                    "pos": {
+                        "x": 105.9,
+                        "y": 56.7
+                    },
+                    "uuid": "ca21b7b0-1464-41af-8933-2f9e0f6bde24"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [SCL] on In2.Cu, length 3.6589 mm",
+                    "pos": {
+                        "x": 105.79,
+                        "y": 61.2358
+                    },
+                    "uuid": "728de73f-15de-4be2-877c-8d53055433b1"
+                },
+                {
+                    "description": "Track [SCL] on In2.Cu, length 3.8079 mm",
+                    "pos": {
+                        "x": 124.687,
+                        "y": 58.6484
+                    },
+                    "uuid": "db51da80-a11b-4f96-9ff5-bfefc907f244"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [LED_SDB] on B.Cu, length 0.9000 mm",
+                    "pos": {
+                        "x": 107.1,
+                        "y": 56.7
+                    },
+                    "uuid": "8da65ad7-61c9-43c3-b5ce-d295c8a24678"
+                },
+                {
+                    "description": "Pad 29 [LED_SDB] of U4 on B.Cu",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 56.7
+                    },
+                    "uuid": "798a4ab0-6a96-48f9-8e4d-7ab2c262da0d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [ISET3] on In2.Cu, length 1.8328 mm",
+                    "pos": {
+                        "x": 103.811,
+                        "y": 60.8023
+                    },
+                    "uuid": "4b0d73fb-b282-47ce-8a37-fee7723f384c"
+                },
+                {
+                    "description": "Track [ISET3] on B.Cu, length 0.4584 mm",
+                    "pos": {
+                        "x": 105.5,
+                        "y": 56.7
+                    },
+                    "uuid": "afb939b8-d5fb-4133-8bd6-f8d21588ba96"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [VBUS] on In3.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 110.9,
+                        "y": 58.8
+                    },
+                    "uuid": "5602f676-8df5-4d5a-9897-b0fc9bc70e51"
+                },
+                {
+                    "description": "Track [VBUS] on In3.Cu, length 1.4902 mm",
+                    "pos": {
+                        "x": 81.0243,
+                        "y": 56.7731
+                    },
+                    "uuid": "9820e62b-d14d-412b-91e7-165e41ee303d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 21 [D1_SW2] of U1 on B.Cu",
+                    "pos": {
+                        "x": 54.15,
+                        "y": 58.45
+                    },
+                    "uuid": "5385e2cc-ef8e-4d09-ae7e-8f95989f1d9d"
+                },
+                {
+                    "description": "Via [D1_SW3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 54.4,
+                        "y": 58.85
+                    },
+                    "uuid": "67ef056c-4e49-4234-9840-bc4797b4222c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 4 [D1_CS7] of U1 on B.Cu",
+                    "pos": {
+                        "x": 58.05,
+                        "y": 58.45
+                    },
+                    "uuid": "0d2a7801-66eb-4b02-be94-f012f7866909"
+                },
+                {
+                    "description": "Via [D1_CS8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 57.8,
+                        "y": 58.85
+                    },
+                    "uuid": "d276220f-4aae-40da-bdd0-e8070dc26916"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_SW3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 79.8,
+                        "y": 58.85
+                    },
+                    "uuid": "38c55010-cb16-49c0-a469-3fd603885d48"
+                },
+                {
+                    "description": "Pad 21 [D2_SW2] of U2 on B.Cu",
+                    "pos": {
+                        "x": 79.55,
+                        "y": 58.45
+                    },
+                    "uuid": "f5fb911b-bc34-4039-9c2a-95c4de7e33f8"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Via [D4_SW3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.6,
+                        "y": 58.85
+                    },
+                    "uuid": "855cf93e-1369-4c46-9c67-d72b429ab26b"
+                },
+                {
+                    "description": "Pad 19 [D4_SW4] of U4 on B.Cu",
+                    "pos": {
+                        "x": 130.35,
+                        "y": 59.25
+                    },
+                    "uuid": "f61473e7-4ffa-4d17-b1c8-0ef345d3b47c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_CS8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 83.2,
+                        "y": 58.85
+                    },
+                    "uuid": "65ef5161-e92f-40e4-9943-96e872309341"
+                },
+                {
+                    "description": "Pad 4 [D2_CS7] of U2 on B.Cu",
+                    "pos": {
+                        "x": 83.45,
+                        "y": 58.45
+                    },
+                    "uuid": "98b3c5bb-707c-42a7-a716-51ba3bb02dc2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_SW2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.2,
+                        "y": 58.45
+                    },
+                    "uuid": "5110d63e-5689-45f2-8312-ec75f00740eb"
+                },
+                {
+                    "description": "Pad 20 [D3_SW3] of U3 on B.Cu",
+                    "pos": {
+                        "x": 104.95,
+                        "y": 58.85
+                    },
+                    "uuid": "a7b23b98-7eaf-4cd1-a180-49fea0eaa2eb"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS9] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.6,
+                        "y": 59.25
+                    },
+                    "uuid": "6f268273-f1c0-48a8-865a-2781bf124dae"
+                },
+                {
+                    "description": "Pad 5 [D3_CS8] of U3 on B.Cu",
+                    "pos": {
+                        "x": 108.85,
+                        "y": 58.85
+                    },
+                    "uuid": "b7d37e48-1085-451b-b657-501406c164e4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS6] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.6,
+                        "y": 58.05
+                    },
+                    "uuid": "a7ae4c37-923c-4047-afa5-0f1a6b4ca526"
+                },
+                {
+                    "description": "Pad 4 [D3_CS7] of U3 on B.Cu",
+                    "pos": {
+                        "x": 108.85,
+                        "y": 58.45
+                    },
+                    "uuid": "acce6d99-afc2-4476-8368-db8e5f576b87"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D1_SW1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 53.1,
+                        "y": 58.15
+                    },
+                    "uuid": "01627bec-eb30-415b-ac16-254ac3c504e8"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D1_SW1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 53.5049,
+                        "y": 56.9078
+                    },
+                    "uuid": "2f559f21-5798-4125-88ee-ba20e455ad39"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D1_SW2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 53.0,
+                        "y": 58.9
+                    },
+                    "uuid": "54605847-1433-4112-b751-87e7b7890cc5"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D1_CS13] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 56.8929,
+                        "y": 61.5327
+                    },
+                    "uuid": "3b83c5e5-1770-4a16-9d53-539043922254"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D1_CS14] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 56.2989,
+                        "y": 61.3744
+                    },
+                    "uuid": "9dc4ae92-6ced-49ea-a73a-39687c04d7ec"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D1_CS11] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.5523,
+                        "y": 60.8553
+                    },
+                    "uuid": "33747319-4a73-4642-95c3-11861fc7d873"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D1_SW3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 54.4,
+                        "y": 58.85
+                    },
+                    "uuid": "67ef056c-4e49-4234-9840-bc4797b4222c"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D1_CS9] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.85,
+                        "y": 59.25
+                    },
+                    "uuid": "84631352-8694-475e-b2d4-4e7cd8f21dad"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D1_CS8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 60.1562,
+                        "y": 58.8309
+                    },
+                    "uuid": "4e33a839-7939-448c-8f9e-aafcdc5059c6"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D1_CS8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 64.067,
+                        "y": 59.0946
+                    },
+                    "uuid": "a6794003-d355-4683-9f4a-9932ffe90afb"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D1_CS8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 57.8,
+                        "y": 58.85
+                    },
+                    "uuid": "d276220f-4aae-40da-bdd0-e8070dc26916"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_SW1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 78.8998,
+                        "y": 56.9149
+                    },
+                    "uuid": "790b1e9e-8d05-4183-b1d2-c659528ca194"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_SW1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 78.5,
+                        "y": 58.15
+                    },
+                    "uuid": "d4bddb55-fa9b-4998-9a50-1ac5080f9bac"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_CS3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 83.3521,
+                        "y": 56.2479
+                    },
+                    "uuid": "ef4a7600-a35d-4509-84ad-b0bb7efa56d4"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_SW2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 56.65
+                    },
+                    "uuid": "4c993a3d-423f-41f4-b1d7-4d75f3430d05"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_SW2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 79.45,
+                        "y": 55.35
+                    },
+                    "uuid": "c841824d-2a71-43c7-af48-68819df0b76b"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_SW2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 78.4,
+                        "y": 58.9
+                    },
+                    "uuid": "db42ac87-6fde-44f9-94cc-c163a0cad429"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_CS5] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 84.2274,
+                        "y": 57.4731
+                    },
+                    "uuid": "70cef707-a94e-4f1a-b682-a63ef48587e0"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_CS6] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 84.5,
+                        "y": 58.15
+                    },
+                    "uuid": "365451bc-b8d3-402b-b62b-3fcdf816a621"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_CS7] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 84.6,
+                        "y": 58.75
+                    },
+                    "uuid": "5175b5eb-1b46-4ba1-972d-a98e57dd29a5"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_SW4] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 78.7894,
+                        "y": 59.2992
+                    },
+                    "uuid": "b7053390-864f-4e9c-b3ef-d8df50757f0c"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_SW4] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 79.6298,
+                        "y": 60.8913
+                    },
+                    "uuid": "d13351e0-43d9-44c2-b4db-c2f3025ea459"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_SW5] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 79.9085,
+                        "y": 63.175
+                    },
+                    "uuid": "21683a35-55d4-45a9-966e-d772d04adddb"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_CS4] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 83.9112,
+                        "y": 56.0646
+                    },
+                    "uuid": "9184228b-c72e-477d-a477-45a8d3f3ce09"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_CS4] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 87.1995,
+                        "y": 56.4038
+                    },
+                    "uuid": "acf232c3-30f2-4bdf-adf3-008c63289a13"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_SW3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 79.8,
+                        "y": 58.85
+                    },
+                    "uuid": "38c55010-cb16-49c0-a469-3fd603885d48"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D4_SW1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 129.669,
+                        "y": 56.9426
+                    },
+                    "uuid": "0d2aee11-66e4-4339-9f14-0b746dd4675f"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D4_SW1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 129.3,
+                        "y": 58.15
+                    },
+                    "uuid": "381524ce-0537-42ba-8d93-f558f2d395ac"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D4_CS3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 134.154,
+                        "y": 56.2133
+                    },
+                    "uuid": "94c809b0-b7da-42be-be72-8ff87297d113"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D4_SW2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 129.199999,
+                        "y": 58.9
+                    },
+                    "uuid": "42814e67-80a2-43fe-9b8e-bc6fc343ec65"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D4_CS5] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 135.021,
+                        "y": 57.5085
+                    },
+                    "uuid": "c6dae5ed-93d1-439b-9e03-46a51d4e72e3"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D4_CS6] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.55,
+                        "y": 55.5
+                    },
+                    "uuid": "2a47cd75-6466-4ab7-a043-d03902abdc11"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D4_CS6] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 136.873,
+                        "y": 58.2074
+                    },
+                    "uuid": "54b418b4-0680-44f8-bf33-7a551100c7cd"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D4_CS6] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 128.2,
+                        "y": 58.55
+                    },
+                    "uuid": "e6c1d435-75a3-4645-b85d-a0a030514aca"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D4_CS7] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 134.522,
+                        "y": 61.4077
+                    },
+                    "uuid": "2dbd303a-8dc4-4932-9b8a-518f78784f8a"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D4_SW4] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 129.8,
+                        "y": 59.25
+                    },
+                    "uuid": "a11ae58c-528d-498e-abab-33e61b5ec9b5"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D4_SW4] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.25,
+                        "y": 60.8
+                    },
+                    "uuid": "f64c027d-4dc3-40b0-8b63-0da6a20708b8"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D4_SW5] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 129.654,
+                        "y": 60.3588
+                    },
+                    "uuid": "b475147e-2e8c-4d4e-9478-8cd066b4c00c"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D4_SW3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.6,
+                        "y": 58.85
+                    },
+                    "uuid": "855cf93e-1369-4c46-9c67-d72b429ab26b"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_CS14] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 83.0814,
+                        "y": 62.5064
+                    },
+                    "uuid": "ba103c62-3aec-4f93-9bdf-9afee3ca4739"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_CS11] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 83.45,
+                        "y": 60.5038
+                    },
+                    "uuid": "cf586965-5b91-45f9-954c-6bc3b85198d3"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_CS9] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 94.1229,
+                        "y": 54.774
+                    },
+                    "uuid": "329a5834-2ff6-4793-b1f9-055378188e63"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_CS9] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 84.204,
+                        "y": 59.2725
+                    },
+                    "uuid": "ab3ace0d-7e0e-4247-8202-cc555e55b4d2"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_CS9] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 87.0112,
+                        "y": 58.4564
+                    },
+                    "uuid": "b8485b79-e2b2-4f7c-829e-b679647aa3f4"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_CS8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 83.2,
+                        "y": 58.85
+                    },
+                    "uuid": "65ef5161-e92f-40e4-9943-96e872309341"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_SW1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 103.9,
+                        "y": 58.15
+                    },
+                    "uuid": "00a65d08-294a-4609-84d6-fe61747aaf61"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_SW1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.1,
+                        "y": 57.0
+                    },
+                    "uuid": "228b24ad-9384-40a7-abf5-991a9fe92d36"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_SW2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.9,
+                        "y": 58.2
+                    },
+                    "uuid": "2f9727c5-9289-422b-b6c2-8729180ed8f1"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_SW2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.2,
+                        "y": 58.45
+                    },
+                    "uuid": "5110d63e-5689-45f2-8312-ec75f00740eb"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS12] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.629,
+                        "y": 61.2617
+                    },
+                    "uuid": "22b7cb63-bb6b-402f-baaf-d93575cc097c"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS13] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.883,
+                        "y": 61.5802
+                    },
+                    "uuid": "0c4f494c-5279-4513-a260-f0957053c976"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS14] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.099,
+                        "y": 61.3732
+                    },
+                    "uuid": "63b1f1e4-361c-4222-b4d2-9b795dc55b73"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS11] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.318,
+                        "y": 60.5181
+                    },
+                    "uuid": "d575f953-5a6b-46fd-9b3a-d228c80b9650"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_SW3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 103.9,
+                        "y": 59.0
+                    },
+                    "uuid": "6df04249-dfb3-4120-86f9-473feb5ce24a"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS9] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.6,
+                        "y": 59.25
+                    },
+                    "uuid": "6f268273-f1c0-48a8-865a-2781bf124dae"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS9] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 112.216,
+                        "y": 57.1427
+                    },
+                    "uuid": "a4ded115-dbcb-4bfa-91dc-80f245abc88b"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.8,
+                        "y": 59.35
+                    },
+                    "uuid": "1705717e-c55a-4665-ae51-1d7b46a9cc16"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.3,
+                        "y": 54.75
+                    },
+                    "uuid": "fb8c62b5-66d0-497d-ba59-4bbb0a2c348d"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D1_CS3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.6829,
+                        "y": 55.5533
+                    },
+                    "uuid": "9bbddd43-f5c3-40b9-a91c-bf8cafe79aac"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D1_CS5] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.6927,
+                        "y": 56.8296
+                    },
+                    "uuid": "2b3d9f7c-35f6-423a-8cd6-36c99b6960d9"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D1_CS6] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.8307,
+                        "y": 57.9887
+                    },
+                    "uuid": "6c1b7d5f-c762-4807-a20a-4e94c90cecf6"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D1_CS7] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 59.2,
+                        "y": 58.75
+                    },
+                    "uuid": "bc4c953d-c183-40ec-86ad-c6d9940b5f39"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D1_CS1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 57.3708,
+                        "y": 55.5294
+                    },
+                    "uuid": "cec46f84-377b-4038-a1c7-df0566651672"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.753,
+                        "y": 56.2436
+                    },
+                    "uuid": "850bfaba-ecb5-42ea-9178-65a3140c3c34"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS5] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.6,
+                        "y": 57.65
+                    },
+                    "uuid": "77b1312b-33a6-4a45-a8c5-4ddae4e029fa"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS6] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 100.73,
+                        "y": 56.6609
+                    },
+                    "uuid": "3f087724-5f42-46a7-be92-86a835e37ab4"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS6] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 99.221,
+                        "y": 62.3334
+                    },
+                    "uuid": "a43473a9-bd15-4a8e-9f8f-2527c1460a2c"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS6] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.6,
+                        "y": 58.05
+                    },
+                    "uuid": "a7ae4c37-923c-4047-afa5-0f1a6b4ca526"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS6] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.945,
+                        "y": 56.4694
+                    },
+                    "uuid": "b5a335c1-ebd9-438e-aa6c-7f862477a8c2"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS7] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 110.0,
+                        "y": 58.75
+                    },
+                    "uuid": "a3714ca3-c798-4330-a98e-cb1bac243587"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS4] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 113.9077,
+                        "y": 57.4564
+                    },
+                    "uuid": "6b370123-dc28-4c04-9e68-8d34f690d51a"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS4] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.391,
+                        "y": 56.3891
+                    },
+                    "uuid": "e78b495d-4c49-4f34-a12d-83471dc4ca5f"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [ISET2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 80.7976,
+                        "y": 61.4726
+                    },
+                    "uuid": "32ade22e-2d9f-4a5c-b6c4-2da88bf1e5f4"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [ISET2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 76.9453,
+                        "y": 61.3182
+                    },
+                    "uuid": "91b52b40-6926-4299-bc40-743961e9ee00"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [ISET2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 78.3473,
+                        "y": 56.4853
+                    },
+                    "uuid": "c6ffca44-599f-4088-9eea-71b6afe680e0"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 76.4379,
+                        "y": 53.7812
+                    },
+                    "uuid": "031e76bf-df11-4dad-9dde-e2c018fda5b5"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 106.075,
+                        "y": 63.8404
+                    },
+                    "uuid": "03357a3d-6260-41ae-9d26-aeb261f945b5"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 54.6408,
+                        "y": 62.3658
+                    },
+                    "uuid": "050df926-63fa-4c04-a981-697dcc72a074"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 94.775,
+                        "y": 59.225
+                    },
+                    "uuid": "0a97471e-2a56-41fa-ba28-c10e687b6b8a"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.623,
+                        "y": 56.7948
+                    },
+                    "uuid": "20a88144-9fb5-4fdf-bab2-c7f2497578b1"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 133.95,
+                        "y": 61.3197
+                    },
+                    "uuid": "2afe4d86-5b2c-46fa-8371-920807e1fd14"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 68.8535,
+                        "y": 57.6931
+                    },
+                    "uuid": "3a474fff-0186-41fd-8a45-3c306d196456"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.706,
+                        "y": 63.0
+                    },
+                    "uuid": "3ade46da-5aa5-49cc-b188-986df97c9f70"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 57.9
+                    },
+                    "uuid": "3c937230-b98d-4e7b-9b2a-be99db310801"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 90.2372,
+                        "y": 53.6425
+                    },
+                    "uuid": "434c3c53-11e3-40b7-8cb0-1d914239434f"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 54.15,
+                        "y": 55.0461
+                    },
+                    "uuid": "43704d30-2fb1-4524-9069-efeecdcade4b"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 81.5,
+                        "y": 57.9
+                    },
+                    "uuid": "46c100bc-71bc-4b52-96ed-821e70712438"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 56.159,
+                        "y": 55.015
+                    },
+                    "uuid": "4a237f6f-e0db-420f-a64c-a7b417b36a1a"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 59.4
+                    },
+                    "uuid": "4a453fb3-9b76-4f00-8520-a04daaad8701"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 106.9,
+                        "y": 57.9
+                    },
+                    "uuid": "51d0b1c8-90cf-496a-b86c-481adc8ade0e"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.35,
+                        "y": 56.7791
+                    },
+                    "uuid": "5a9ca2d3-e7b2-4b0b-a28f-e856f40fa3f1"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 83.3596,
+                        "y": 61.0596
+                    },
+                    "uuid": "5d27f2da-962c-4a5a-99c4-3cfdf6c6426a"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 122.751,
+                        "y": 58.2143
+                    },
+                    "uuid": "5d931171-936c-4d96-944c-f17dd8af31b7"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 81.4285,
+                        "y": 63.1508
+                    },
+                    "uuid": "72e675ce-32e4-4d40-9520-ced461b123d3"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 94.875,
+                        "y": 64.6776
+                    },
+                    "uuid": "77aec9e5-c8f0-4cf2-affb-e8822c18774f"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 93.15,
+                        "y": 53.2
+                    },
+                    "uuid": "797e8800-4f61-4ab5-87b5-9c66051f81ed"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 93.625,
+                        "y": 58.075
+                    },
+                    "uuid": "7ebf8471-0b4d-416a-a7b1-9d622ed52797"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 133.025,
+                        "y": 53.3625
+                    },
+                    "uuid": "85fc202f-4ba8-421c-bba8-bf9372793b39"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 56.1,
+                        "y": 57.9
+                    },
+                    "uuid": "97c1a222-2e1c-4c7c-9d75-6f1ff4b89ca5"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 92.25,
+                        "y": 54.0
+                    },
+                    "uuid": "9ca6165f-fa40-4ff9-aac3-c4e6718140ab"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 79.55,
+                        "y": 56.7898
+                    },
+                    "uuid": "a66022f7-0af5-4032-ae69-b876a3254c72"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 117.725,
+                        "y": 63.405
+                    },
+                    "uuid": "a698b5e1-e9d2-44dc-940b-bf04c5c03afa"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 64.6617,
+                        "y": 66.0724
+                    },
+                    "uuid": "af01b810-4bbe-4eeb-a744-df4162ab4d86"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 81.5,
+                        "y": 59.4
+                    },
+                    "uuid": "bc0532d2-2b3c-4305-b2dc-eb41e2f281f1"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 93.625,
+                        "y": 59.225
+                    },
+                    "uuid": "c4b223db-6fa7-4b1d-84e3-0dc6329577ef"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.025,
+                        "y": 55.2716
+                    },
+                    "uuid": "f11cf377-d13c-4941-8feb-f070f344563b"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 106.9,
+                        "y": 59.4
+                    },
+                    "uuid": "f5a0220c-2194-47e7-abcb-fbb237f20b83"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 116.611,
+                        "y": 53.8137
+                    },
+                    "uuid": "fa68d78a-5a6f-4281-986d-62a619f3955a"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 94.775,
+                        "y": 58.075
+                    },
+                    "uuid": "fa6f4f17-448f-4f90-bbb0-41e8104b4c55"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 56.1,
+                        "y": 59.4
+                    },
+                    "uuid": "fb24c4f5-a49d-4d30-856c-e6dc061f86ad"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [ISET1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 52.4686,
+                        "y": 56.11
+                    },
+                    "uuid": "a45f1bea-8386-4c7f-b384-8c3846c4e609"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [ISET1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 56.2776,
+                        "y": 62.3614
+                    },
+                    "uuid": "c1402b12-3874-4d2c-86b1-85ea344572e0"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 78.8,
+                        "y": 57.65
+                    },
+                    "uuid": "052911b7-6ffd-4402-9bb3-f3755d728713"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 134.575,
+                        "y": 53.3
+                    },
+                    "uuid": "2561aa32-5840-46c8-b9ed-3df573911058"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 129.6,
+                        "y": 57.65
+                    },
+                    "uuid": "2dc8c788-ff85-434a-9eaf-ff4f83ff1b56"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 80.775,
+                        "y": 53.3
+                    },
+                    "uuid": "39aad3ac-6a9d-415d-9f47-ff4cc0e568f4"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 131.574999,
+                        "y": 53.3
+                    },
+                    "uuid": "4870b7a1-fe4a-44af-b1ae-22e0ecd2a28b"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 83.775,
+                        "y": 53.3
+                    },
+                    "uuid": "5040aaf9-dbea-472d-bded-8c7f27c83f05"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 69.575,
+                        "y": 54.3
+                    },
+                    "uuid": "5b871008-19ae-4048-ab71-7702eea79de4"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 58.175
+                    },
+                    "uuid": "63b6d555-218f-44ee-ba95-267876c76342"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 70.7875,
+                        "y": 59.6
+                    },
+                    "uuid": "8051f577-a27f-4a5a-b58b-ab143820319a"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 55.375,
+                        "y": 53.3
+                    },
+                    "uuid": "8a2ce0b2-8482-46ca-b20b-b36f0ded63e7"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 70.7875,
+                        "y": 57.7
+                    },
+                    "uuid": "9fd3efab-6607-470c-81d5-afdf66449849"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 52.1
+                    },
+                    "uuid": "b4552fdf-f8ce-417e-89ea-5bcfdd2fdfb4"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.2,
+                        "y": 57.65
+                    },
+                    "uuid": "b6db952f-1d19-4b18-98bd-63c86cbb9a16"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 106.175,
+                        "y": 53.3
+                    },
+                    "uuid": "babe8922-2f39-4183-a6d4-985212effd15"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.375,
+                        "y": 53.3
+                    },
+                    "uuid": "bb713e4d-0e2d-4eb3-a7af-5d4c9e796ea4"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 53.4,
+                        "y": 57.65
+                    },
+                    "uuid": "bf4de3be-83c7-495e-8f0a-82d12398e7cf"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.175,
+                        "y": 53.3
+                    },
+                    "uuid": "d303bd92-d5a4-472f-af2d-9d99673159b5"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 62.45,
+                        "y": 57.699999
+                    },
+                    "uuid": "d678cb80-a9eb-4e19-9a7a-cee80c1781f2"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [BOOT_SWCLK] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 96.525,
+                        "y": 64.7478
+                    },
+                    "uuid": "2923d524-532c-49f7-8aa9-e3a97900b8c1"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [BOOT_SWCLK] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 101.724,
+                        "y": 59.7244
+                    },
+                    "uuid": "31c26ac8-5d62-4f1b-bed4-0ba454a3b4a3"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [BOOT_SWCLK] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 112.608,
+                        "y": 61.19
+                    },
+                    "uuid": "824ddbda-ed0c-45fb-b1b9-43a14ec889e5"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [SDA] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 54.3918,
+                        "y": 52.6028
+                    },
+                    "uuid": "14e928f9-374b-451e-8809-31a130339e24"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [SDA] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 100.149,
+                        "y": 54.2592
+                    },
+                    "uuid": "2eeb117a-19cc-4c16-974f-47622d7784db"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [SDA] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 131.2,
+                        "y": 55.9401
+                    },
+                    "uuid": "383bfb5d-9751-4b74-9981-63ac06b7293d"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [SDA] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.064,
+                        "y": 55.3173
+                    },
+                    "uuid": "385b7616-1ba2-4430-bdb0-d5722bb5ab2d"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [SDA] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 75.9793,
+                        "y": 62.9438
+                    },
+                    "uuid": "72bca4c3-ba79-4a3d-8326-efce702c5da8"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [SDA] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 113.373,
+                        "y": 56.5949
+                    },
+                    "uuid": "8832b3a9-5364-4e44-a6de-63bb1cac8de1"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [SDA] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 96.3,
+                        "y": 59.9
+                    },
+                    "uuid": "ca6a0a86-c061-4cb1-8131-787a8d45cf15"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [SDA] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.175,
+                        "y": 55.198
+                    },
+                    "uuid": "e8df37d8-f60b-4e50-9215-d3b294beee10"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [SCL] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 57.5261,
+                        "y": 54.9625
+                    },
+                    "uuid": "0105e9bb-fbf7-4a84-82a9-43a529817693"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [SCL] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 75.7826,
+                        "y": 59.0424
+                    },
+                    "uuid": "026aaf31-e304-4b34-9b30-fd804b5c608e"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [SCL] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 100.103,
+                        "y": 59.2748
+                    },
+                    "uuid": "6ac32fd5-2fc2-4af7-bed7-cb1102a45e32"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [SCL] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 55.4948,
+                        "y": 55.0427
+                    },
+                    "uuid": "ae9565f0-d5f1-4a19-bfca-5ba7137f0e26"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [SCL] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 64.0963,
+                        "y": 58.431
+                    },
+                    "uuid": "b9f229b5-0ec5-4247-ae11-4e910b0da11a"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [SCL] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 127.38,
+                        "y": 55.9562
+                    },
+                    "uuid": "beb56bff-78f7-4293-a2ba-b9fbaf5fd8f3"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [SCL] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 81.05,
+                        "y": 56.05
+                    },
+                    "uuid": "cd6ea320-f450-4508-8d2d-aef6513c5328"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [SCL] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 106.29,
+                        "y": 55.8653
+                    },
+                    "uuid": "ef988d6d-719c-4c6c-a8ec-a1e20384d77b"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [LED_SDB] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 55.8
+                    },
+                    "uuid": "28bf3ff1-2a3d-4e46-a746-c1998be2614e"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [LED_SDB] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 61.5111,
+                        "y": 62.5423
+                    },
+                    "uuid": "5657b06a-67d2-46a8-9fd0-ec03ff9e9f6f"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [LED_SDB] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.1,
+                        "y": 55.8
+                    },
+                    "uuid": "78832a26-45aa-4bc8-a93f-4039e253c21e"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [LED_SDB] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 92.1,
+                        "y": 57.4
+                    },
+                    "uuid": "7a9aaa19-1e0a-4d41-bf9c-a13bfd81a5fb"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [LED_SDB] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 56.4132,
+                        "y": 55.6124
+                    },
+                    "uuid": "8393127a-f7cc-4788-9715-d6c3a77e5d8d"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [LED_SDB] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 73.7933,
+                        "y": 52.4546
+                    },
+                    "uuid": "cf5f0aec-2adc-421e-92cc-fa357a912ae8"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [LED_SDB] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 80.0884,
+                        "y": 53.5229
+                    },
+                    "uuid": "da17801f-f5e6-4a52-89b7-d0755678b2a7"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [LED_SDB] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 81.4772,
+                        "y": 55.6913
+                    },
+                    "uuid": "e8bdf6de-b785-4fde-8a30-85f760980cf0"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [ISET3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.742,
+                        "y": 55.4839
+                    },
+                    "uuid": "385a2784-f685-4773-aacc-eda241340c21"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [ISET3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 103.811,
+                        "y": 60.8023
+                    },
+                    "uuid": "9a309a55-ed16-4504-a1ea-3d41bcd765cf"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [ISET3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.097,
+                        "y": 62.3717
+                    },
+                    "uuid": "d4ea5a7a-c0e8-49ea-973e-158bcedb9e28"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [VBUS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 74.3831,
+                        "y": 56.0183
+                    },
+                    "uuid": "249e746d-f32b-4eb7-9953-3c9f90afe688"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [VBUS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.3,
+                        "y": 59.7
+                    },
+                    "uuid": "952544ba-b1b8-4f18-8fb7-265b4648afaf"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [USB_DM] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 94.55,
+                        "y": 55.25
+                    },
+                    "uuid": "10f76141-f76d-4ea8-8c74-e28b9c754004"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [USB_DM] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 121.8,
+                        "y": 60.7
+                    },
+                    "uuid": "c5795e5d-ec3e-4511-a0bc-af1bcecdcdc9"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [USB_DP] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 121.15,
+                        "y": 61.7
+                    },
+                    "uuid": "152f70b1-8500-4aec-91e6-a7f36ae05209"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [USB_DP] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 95.2,
+                        "y": 55.0
+                    },
+                    "uuid": "2e185b8e-d116-4bd2-a2a0-2c30cc256058"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [CC1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 94.1,
+                        "y": 52.7
+                    },
+                    "uuid": "45030fc0-8eda-4795-a2ef-1630f41eea21"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [CC1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.3,
+                        "y": 63.7
+                    },
+                    "uuid": "46ab7f05-f224-442e-ba8d-4767e70d8842"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [CC1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.587,
+                        "y": 56.6758
+                    },
+                    "uuid": "85cade5c-f34c-4275-a8ae-d1ee24fbc58d"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [CC2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 119.578,
+                        "y": 53.3385
+                    },
+                    "uuid": "00321ddd-f851-4b7c-af1e-c66babe073ad"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [CC2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 122.25,
+                        "y": 56.95
+                    },
+                    "uuid": "0ac31310-8e2c-4d14-9748-12f49aa2f63c"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [CC2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 98.4956,
+                        "y": 53.7981
+                    },
+                    "uuid": "454c59e1-4840-406a-a3ae-4735e7d4f8a1"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [CC2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.3,
+                        "y": 64.7
+                    },
+                    "uuid": "65648da0-e3fb-44f4-971d-edf57e94a206"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 112.488,
+                        "y": 55.9875
+                    },
+                    "uuid": "4d48afc0-e518-410e-96ed-ffe753edb051"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 94.4818,
+                        "y": 61.9049
+                    },
+                    "uuid": "dea45f9b-555a-4614-9a77-68d39d3aa3e0"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [NRST] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 92.9128,
+                        "y": 64.0626
+                    },
+                    "uuid": "085c8473-05e3-489d-b45d-c74cd17bf0cb"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [NRST] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 87.85,
+                        "y": 54.5827
+                    },
+                    "uuid": "0934f0d0-121e-4d86-82d4-0990edaed409"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [NRST] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 84.0004,
+                        "y": 64.0445
+                    },
+                    "uuid": "179d3be0-9bdb-456a-b868-dfe7f11fadf8"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [NRST] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 87.55,
+                        "y": 63.85
+                    },
+                    "uuid": "325c0f2c-fd52-4afa-90db-c6a05c79b9b0"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [NRST] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 79.0528,
+                        "y": 64.4927
+                    },
+                    "uuid": "97d33c04-eec7-4fa0-af90-2f9693277f2d"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [NRST] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 112.647,
+                        "y": 63.7631
+                    },
+                    "uuid": "b2367f3a-6679-411a-8d9d-b5701b56c371"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [NRST] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 86.9199,
+                        "y": 57.035
+                    },
+                    "uuid": "f93f5612-f65f-479a-abd9-5cabe7a02222"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [CC1_ADC] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 92.5514,
+                        "y": 61.9211
+                    },
+                    "uuid": "8e0120d9-df9b-400e-b866-f002e4e69941"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [CC1_ADC] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 89.393,
+                        "y": 60.607
+                    },
+                    "uuid": "fd76bbda-4387-446e-ba9d-b79ff2908d23"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [CC2_ADC] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 95.7788,
+                        "y": 54.9509
+                    },
+                    "uuid": "02535f8f-a1d2-4f4b-86f9-a02c2fef3396"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [CC2_ADC] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 91.9709,
+                        "y": 61.0847
+                    },
+                    "uuid": "cf5f639b-0211-4e12-8acb-8a5f310d049e"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [SWDIO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 111.537,
+                        "y": 55.8597
+                    },
+                    "uuid": "14eab3c2-7455-4adb-ab82-16b3af587698"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Hole size out of range (rule 'Sentinel loaded' min hole 0.9000 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Via [SWDIO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 96.4337,
+                        "y": 55.9107
+                    },
+                    "uuid": "c4676786-6bc8-4885-9800-a24b9632617b"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [D1_SW1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 53.5049,
+                        "y": 56.9078
+                    },
+                    "uuid": "2f559f21-5798-4125-88ee-ba20e455ad39"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [D1_SW2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 53.0,
+                        "y": 58.9
+                    },
+                    "uuid": "54605847-1433-4112-b751-87e7b7890cc5"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D1_SW2] on In3.Cu, length 0.7071 mm",
+                    "pos": {
+                        "x": 58.45,
+                        "y": 58.9
+                    },
+                    "uuid": "4fb426be-cb87-41b6-8dd3-6b040f24d2bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D1_SW4] on B.Cu, length 0.0697 mm",
+                    "pos": {
+                        "x": 53.1031,
+                        "y": 59.3549
+                    },
+                    "uuid": "49c624e3-6886-499d-a425-29301c693504"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D1_SW4] on B.Cu, length 0.7835 mm",
+                    "pos": {
+                        "x": 51.9077,
+                        "y": 58.9845
+                    },
+                    "uuid": "4e8d28d0-9251-4571-a338-30d4c50df03b"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [D1_SW3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 54.4,
+                        "y": 58.85
+                    },
+                    "uuid": "67ef056c-4e49-4234-9840-bc4797b4222c"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D1_SW3] on In2.Cu, length 5.1486 mm",
+                    "pos": {
+                        "x": 54.7614,
+                        "y": 57.38
+                    },
+                    "uuid": "d944176b-6803-4519-bb71-1a9cebf7f4f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D1_CS9] on B.Cu, length 1.0906 mm",
+                    "pos": {
+                        "x": 58.05,
+                        "y": 59.25
+                    },
+                    "uuid": "909944fd-1ed5-4274-b077-cdb48dbd5990"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [D1_CS8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 57.8,
+                        "y": 58.85
+                    },
+                    "uuid": "d276220f-4aae-40da-bdd0-e8070dc26916"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D1_CS8] on B.Cu, length 0.3334 mm",
+                    "pos": {
+                        "x": 59.1495,
+                        "y": 58.3064
+                    },
+                    "uuid": "7c1e9c76-6cc0-4b98-b316-8fa1e881e72b"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D1_CS8] on B.Cu, length 0.5559 mm",
+                    "pos": {
+                        "x": 58.05,
+                        "y": 58.85
+                    },
+                    "uuid": "898e4a39-341f-412c-9842-c207646411dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [D2_SW2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 78.4,
+                        "y": 58.9
+                    },
+                    "uuid": "db42ac87-6fde-44f9-94cc-c163a0cad429"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D2_SW2] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 78.55,
+                        "y": 58.75
+                    },
+                    "uuid": "1bf9a35d-b46d-4729-9603-c20fb2a7ff0c"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D2_SW2] on In2.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 78.95,
+                        "y": 58.05
+                    },
+                    "uuid": "0b07ad77-02dc-4bcb-b7a7-7809d7066945"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D2_SW2] on In2.Cu, length 2.4637 mm",
+                    "pos": {
+                        "x": 82.451,
+                        "y": 55.6379
+                    },
+                    "uuid": "3d4f866b-ef72-4552-9883-3b9f3b42328a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D2_SW2] on In2.Cu, length 0.0082 mm",
+                    "pos": {
+                        "x": 81.096033,
+                        "y": 56.992866
+                    },
+                    "uuid": "503162b3-c0d9-4615-9590-a881b0ba2dbf"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D2_CS5] on In2.Cu, length 0.1068 mm",
+                    "pos": {
+                        "x": 79.1437,
+                        "y": 58.3822
+                    },
+                    "uuid": "e1f77bcd-35d8-4409-a42c-ec03d93ab88d"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [D2_SW3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 79.8,
+                        "y": 58.85
+                    },
+                    "uuid": "38c55010-cb16-49c0-a469-3fd603885d48"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D2_SW3] on In2.Cu, length 1.3971 mm",
+                    "pos": {
+                        "x": 80.5341,
+                        "y": 58.005
+                    },
+                    "uuid": "cbc19179-5af2-4129-9736-e8a591eef450"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [D4_SW2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 129.199999,
+                        "y": 58.9
+                    },
+                    "uuid": "42814e67-80a2-43fe-9b8e-bc6fc343ec65"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D4_SW2] on B.Cu, length 1.000e-06 mm",
+                    "pos": {
+                        "x": 129.399999,
+                        "y": 58.75
+                    },
+                    "uuid": "b16cd101-53a9-4c16-b70b-1e21c19d2214"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D4_CS6] on In2.Cu, length 0.2380 mm",
+                    "pos": {
+                        "x": 128.518,
+                        "y": 58.8002
+                    },
+                    "uuid": "218bbac9-ae11-4324-b999-681c6f813d73"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D4_SW4] on B.Cu, length 0.7649 mm",
+                    "pos": {
+                        "x": 127.563,
+                        "y": 59.5219
+                    },
+                    "uuid": "3d103d08-0fdb-492f-b5a7-ade0d986d84b"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [D4_SW3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.6,
+                        "y": 58.85
+                    },
+                    "uuid": "855cf93e-1369-4c46-9c67-d72b429ab26b"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D4_SW3] on In2.Cu, length 4.5090 mm",
+                    "pos": {
+                        "x": 131.266,
+                        "y": 57.0446
+                    },
+                    "uuid": "1319980c-f075-4293-87f5-632ef43138a2"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [D2_CS8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 83.2,
+                        "y": 58.85
+                    },
+                    "uuid": "65ef5161-e92f-40e4-9943-96e872309341"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D2_CS8] on B.Cu, length 1.5884 mm",
+                    "pos": {
+                        "x": 86.3386,
+                        "y": 57.7226
+                    },
+                    "uuid": "f7f6e605-8fb8-4004-a255-30bdcb4b301a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D3_CS10] on B.Cu, length 0.7098 mm",
+                    "pos": {
+                        "x": 109.6346,
+                        "y": 59.7248
+                    },
+                    "uuid": "e59376f0-bbef-4c7b-87fb-9118072ea74a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D3_SW2] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 58.55
+                    },
+                    "uuid": "1643e1aa-af9c-434d-b7a2-0a24fd69ee74"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D3_SW2] on F.Cu, length 0.5657 mm",
+                    "pos": {
+                        "x": 109.5,
+                        "y": 58.6
+                    },
+                    "uuid": "df704352-6b95-4987-ac68-59e42dce389e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [D3_SW2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.2,
+                        "y": 58.45
+                    },
+                    "uuid": "5110d63e-5689-45f2-8312-ec75f00740eb"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D3_SW2] on B.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 104.4,
+                        "y": 58.6
+                    },
+                    "uuid": "1f6cae8b-9fdf-4c2d-b595-9a0902b6cb23"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D3_SW2] on B.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 58.55
+                    },
+                    "uuid": "97ad3458-300f-4d5f-beb4-18453bea64ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D3_SW4] on B.Cu, length 0.5335 mm",
+                    "pos": {
+                        "x": 102.544,
+                        "y": 58.9449
+                    },
+                    "uuid": "a90de37d-c197-456d-8ef3-8c5eb4f842b1"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [D3_CS11] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.318,
+                        "y": 60.5181
+                    },
+                    "uuid": "d575f953-5a6b-46fd-9b3a-d228c80b9650"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D3_CS11] on B.Cu, length 1.3608 mm",
+                    "pos": {
+                        "x": 122.448,
+                        "y": 61.7032
+                    },
+                    "uuid": "16563160-e148-42d4-842b-cc0af61810da"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D3_SW3] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 105.7,
+                        "y": 58.55
+                    },
+                    "uuid": "4170cbb3-e53a-473b-a7d8-d94a35b1bc9a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D3_SW3] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 104.55,
+                        "y": 58.7
+                    },
+                    "uuid": "4d184f86-0657-4261-b3e6-7c0d06d8483b"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [D3_CS9] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.6,
+                        "y": 59.25
+                    },
+                    "uuid": "6f268273-f1c0-48a8-865a-2781bf124dae"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D3_CS9] on B.Cu, length 0.7530 mm",
+                    "pos": {
+                        "x": 110.34,
+                        "y": 58.3934
+                    },
+                    "uuid": "a3be9a1e-4a81-4abf-b49a-3ee246dc4ab6"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D1_CS5] on F.Cu, length 2.6829 mm",
+                    "pos": {
+                        "x": 56.0098,
+                        "y": 56.8296
+                    },
+                    "uuid": "79548741-a0b5-468e-93a5-9a0362d0ff21"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D1_CS5] on In2.Cu, length 4.0506 mm",
+                    "pos": {
+                        "x": 54.6421,
+                        "y": 56.8296
+                    },
+                    "uuid": "fccbca77-9de0-46aa-8af5-d392aa8fb6ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [D3_CS6] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.6,
+                        "y": 58.05
+                    },
+                    "uuid": "a7ae4c37-923c-4047-afa5-0f1a6b4ca526"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [D3_CS6] on B.Cu, length 0.0481 mm",
+                    "pos": {
+                        "x": 109.783,
+                        "y": 57.1246
+                    },
+                    "uuid": "e7c4de17-3135-48a3-8e37-ea25689806ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on B.Cu, length 1.0010 mm",
+                    "pos": {
+                        "x": 104.625,
+                        "y": 54.2
+                    },
+                    "uuid": "5d683c1b-9d70-4f3b-a619-9e6b4f16142b"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on B.Cu, length 0.0310 mm",
+                    "pos": {
+                        "x": 117.725,
+                        "y": 62.768333
+                    },
+                    "uuid": "761604d1-5d43-409a-91de-9448ff3bcf8b"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on B.Cu, length 0.0907 mm",
+                    "pos": {
+                        "x": 121.6,
+                        "y": 58.15
+                    },
+                    "uuid": "8d5cceb3-857d-4c43-a845-83dabe498aba"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on B.Cu, length 0.9550 mm",
+                    "pos": {
+                        "x": 117.725,
+                        "y": 62.45
+                    },
+                    "uuid": "f2a7c052-d4fc-458a-a95c-3ba091ce8175"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [SDA] on In2.Cu, length 0.0243 mm",
+                    "pos": {
+                        "x": 96.671433,
+                        "y": 53.3114
+                    },
+                    "uuid": "c81bea16-cd7f-4b89-a387-e26d46c1bf22"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [SCL] on In2.Cu, length 3.6589 mm",
+                    "pos": {
+                        "x": 105.79,
+                        "y": 61.2358
+                    },
+                    "uuid": "728de73f-15de-4be2-877c-8d53055433b1"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [SCL] on In2.Cu, length 3.8079 mm",
+                    "pos": {
+                        "x": 124.687,
+                        "y": 58.6484
+                    },
+                    "uuid": "db51da80-a11b-4f96-9ff5-bfefc907f244"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [LED_SDB] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 55.8
+                    },
+                    "uuid": "28bf3ff1-2a3d-4e46-a746-c1998be2614e"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [ISET3] on In2.Cu, length 1.8328 mm",
+                    "pos": {
+                        "x": 103.811,
+                        "y": 60.8023
+                    },
+                    "uuid": "4b0d73fb-b282-47ce-8a37-fee7723f384c"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [ISET3] on In2.Cu, length 0.5161 mm",
+                    "pos": {
+                        "x": 105.107,
+                        "y": 55.8488
+                    },
+                    "uuid": "b0d14ac9-8d1f-4bc9-b01a-c2c183a4732b"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VBUS] on In3.Cu, length 0.0269 mm",
+                    "pos": {
+                        "x": 77.1555,
+                        "y": 58.3439
+                    },
+                    "uuid": "301f8736-99e6-48f0-93a1-64af2304f289"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VBUS] on In3.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 110.9,
+                        "y": 58.8
+                    },
+                    "uuid": "5602f676-8df5-4d5a-9897-b0fc9bc70e51"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VBUS] on In3.Cu, length 1.4902 mm",
+                    "pos": {
+                        "x": 81.0243,
+                        "y": 56.7731
+                    },
+                    "uuid": "9820e62b-d14d-412b-91e7-165e41ee303d"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VBUS] on In3.Cu, length 0.0181 mm",
+                    "pos": {
+                        "x": 120.193703,
+                        "y": 61.117
+                    },
+                    "uuid": "a673d3fb-71e1-42ff-9ad3-62cf4da389f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [CC1] on B.Cu, length 0.6705 mm",
+                    "pos": {
+                        "x": 121.126,
+                        "y": 56.6758
+                    },
+                    "uuid": "4ed302cd-d6dd-424b-a2f1-e1eadfcbdbf4"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [NRST] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 87.85,
+                        "y": 54.5827
+                    },
+                    "uuid": "0934f0d0-121e-4d86-82d4-0990edaed409"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [NRST] on In2.Cu, length 2.4602 mm",
+                    "pos": {
+                        "x": 82.6425,
+                        "y": 60.2264
+                    },
+                    "uuid": "075c6b41-96a5-4831-9866-ed6defc81337"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [NRST] on In2.Cu, length 2.1584 mm",
+                    "pos": {
+                        "x": 86.9199,
+                        "y": 57.0807
+                    },
+                    "uuid": "9907f236-6842-40ae-a799-85ef0af21911"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [SWDIO] on In3.Cu, length 0.0299 mm",
+                    "pos": {
+                        "x": 105.6185,
+                        "y": 55.67345
+                    },
+                    "uuid": "4628c74c-4d4b-4484-9a81-ec600caf4033"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [SWDIO] on In3.Cu, length 0.9540 mm",
+                    "pos": {
+                        "x": 105.856,
+                        "y": 55.4362
+                    },
+                    "uuid": "4d1a6007-8a27-40b2-89bb-f930db9daf89"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'HouseRules'",
+            "items": [
+                {
+                    "description": "Footprint DS2",
+                    "pos": {
+                        "x": 68.8,
+                        "y": 58.65
+                    },
+                    "uuid": "222a48ae-c4bd-455f-a087-a841f02d8c61"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'HouseRules'",
+            "items": [
+                {
+                    "description": "Footprint DS3",
+                    "pos": {
+                        "x": 81.5,
+                        "y": 58.65
+                    },
+                    "uuid": "3197ed5b-c9ed-4b88-9963-d552e3ee386a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'HouseRules'",
+            "items": [
+                {
+                    "description": "Footprint DS7",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 58.65
+                    },
+                    "uuid": "3abd98cf-747d-4785-a1e9-430804a36f4b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'HouseRules'",
+            "items": [
+                {
+                    "description": "Footprint DS4",
+                    "pos": {
+                        "x": 94.2,
+                        "y": 58.65
+                    },
+                    "uuid": "64615c33-d316-46a8-bccb-110ebdab8a56"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'HouseRules'",
+            "items": [
+                {
+                    "description": "Footprint DS6",
+                    "pos": {
+                        "x": 119.6,
+                        "y": 58.65
+                    },
+                    "uuid": "64dd7bf4-b542-4f8e-aee4-eced0d58959d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'HouseRules'",
+            "items": [
+                {
+                    "description": "Footprint DS1",
+                    "pos": {
+                        "x": 56.1,
+                        "y": 58.65
+                    },
+                    "uuid": "a92ef3c2-2871-417e-8854-5452bc2a9e90"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'HouseRules'",
+            "items": [
+                {
+                    "description": "Footprint DS5",
+                    "pos": {
+                        "x": 106.9,
+                        "y": 58.65
+                    },
+                    "uuid": "e00cb421-6de1-42e6-899f-df07246eed3c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R2",
+                    "pos": {
+                        "x": 81.5,
+                        "y": 63.0
+                    },
+                    "uuid": "05723f5f-7300-4d3a-bfaf-890855d348f7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R4",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 63.0
+                    },
+                    "uuid": "06768534-fcfe-4d15-92f5-352c1ffc5f21"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R1",
+                    "pos": {
+                        "x": 56.1,
+                        "y": 63.0
+                    },
+                    "uuid": "0c228fd9-97d2-4911-9fc9-cae00537e858"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 54.6,
+                        "y": 54.2
+                    },
+                    "uuid": "134434e9-bb40-414c-8e83-8f2da30ff89a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R9",
+                    "pos": {
+                        "x": 95.7,
+                        "y": 65.6
+                    },
+                    "uuid": "13eb3536-41bb-4c54-8c00-faf6ad5da7ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 56.1,
+                        "y": 58.65
+                    },
+                    "uuid": "26f46a94-6e3c-4515-bd5b-7958dab60b67"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R3",
+                    "pos": {
+                        "x": 106.9,
+                        "y": 63.0
+                    },
+                    "uuid": "2c34207a-b9ce-4e53-b0c5-0cf2659e826a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Connector_JST'",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 119.0,
+                        "y": 62.2
+                    },
+                    "uuid": "2cd8c842-24fd-40cb-88bc-ed922ce42716"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 54.2
+                    },
+                    "uuid": "2e1b0652-8ba1-4195-adaf-1bb8de279709"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C7",
+                    "pos": {
+                        "x": 130.8,
+                        "y": 54.2
+                    },
+                    "uuid": "3badf6d0-ba3a-45aa-b35b-37aa4ef8b746"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C13",
+                    "pos": {
+                        "x": 75.15,
+                        "y": 57.4
+                    },
+                    "uuid": "3f272252-ed9d-421d-8dcf-7505a0caa5e7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 106.9,
+                        "y": 58.65
+                    },
+                    "uuid": "3f6ef504-961c-4958-abb0-bc39427be7ba"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 80.0,
+                        "y": 54.2
+                    },
+                    "uuid": "4bdf8496-e9de-4670-be9f-e7bc0eb5635b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R6",
+                    "pos": {
+                        "x": 75.15,
+                        "y": 63.5
+                    },
+                    "uuid": "4f742d86-d1be-4785-b905-e0be41d93ae2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R7",
+                    "pos": {
+                        "x": 62.45,
+                        "y": 63.2
+                    },
+                    "uuid": "50c6b09b-4fde-4e11-86cf-fda4bd8085f2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Button_Switch_SMD'",
+            "items": [
+                {
+                    "description": "Footprint SW1",
+                    "pos": {
+                        "x": 68.8,
+                        "y": 52.1
+                    },
+                    "uuid": "5d4f3c2e-1a53-49fa-a272-4f9237bec9e8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U5",
+                    "pos": {
+                        "x": 94.2,
+                        "y": 58.65
+                    },
+                    "uuid": "5f9fd71f-7c91-4779-8641-d557917dbe48"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C10",
+                    "pos": {
+                        "x": 68.8,
+                        "y": 61.9
+                    },
+                    "uuid": "650ed314-56e5-4ddf-9986-ba457d6db045"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R11",
+                    "pos": {
+                        "x": 92.7,
+                        "y": 54.0
+                    },
+                    "uuid": "65b02115-c66b-4e1a-98e3-b6011bd185be"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Fuse'",
+            "items": [
+                {
+                    "description": "Footprint F1",
+                    "pos": {
+                        "x": 75.15,
+                        "y": 53.5
+                    },
+                    "uuid": "6aafd970-3700-41fe-9c41-ba3c813b34e7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Button_Switch_SMD'",
+            "items": [
+                {
+                    "description": "Footprint SW2",
+                    "pos": {
+                        "x": 68.8,
+                        "y": 65.2
+                    },
+                    "uuid": "7f575734-b08a-481c-98a6-92ff8e1687b6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C12",
+                    "pos": {
+                        "x": 87.85,
+                        "y": 53.0
+                    },
+                    "uuid": "8546186b-9be0-4abf-8a21-c6156ee6d95f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C5",
+                    "pos": {
+                        "x": 105.4,
+                        "y": 54.2
+                    },
+                    "uuid": "8dd93356-dd4d-4434-a234-a621cf515adb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP6",
+                    "pos": {
+                        "x": 62.45,
+                        "y": 58.65
+                    },
+                    "uuid": "9994acf7-4a9c-44a7-a6d4-6b4b67126002"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U4",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 58.65
+                    },
+                    "uuid": "9d2c6053-d898-4903-8f71-c23823cd1d81"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C6",
+                    "pos": {
+                        "x": 108.4,
+                        "y": 54.2
+                    },
+                    "uuid": "a36813b0-b2a2-4a18-a66e-97ddd511bcbc"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C8",
+                    "pos": {
+                        "x": 133.8,
+                        "y": 54.2
+                    },
+                    "uuid": "b0ca66b6-342e-4ffb-8f70-d1d865958426"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C11",
+                    "pos": {
+                        "x": 94.2,
+                        "y": 63.0
+                    },
+                    "uuid": "b625645e-77cf-4162-b78a-bcda3da01868"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP1",
+                    "pos": {
+                        "x": 113.25,
+                        "y": 53.0
+                    },
+                    "uuid": "bfde0413-4b79-4fc9-ae23-70009843f04d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP5",
+                    "pos": {
+                        "x": 113.25,
+                        "y": 63.16
+                    },
+                    "uuid": "c0599679-c6ad-4f91-8627-1787c92d8a3e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R5",
+                    "pos": {
+                        "x": 75.15,
+                        "y": 60.5
+                    },
+                    "uuid": "c3ae4312-be7f-49c2-b44f-70e5ac38acf5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 81.5,
+                        "y": 58.65
+                    },
+                    "uuid": "c8d389eb-9f17-4796-b8c9-154f77742bab"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP4",
+                    "pos": {
+                        "x": 113.25,
+                        "y": 60.62
+                    },
+                    "uuid": "d0e63ce1-be3b-43e0-bfcc-98e57b8f1978"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R10",
+                    "pos": {
+                        "x": 92.7,
+                        "y": 52.1
+                    },
+                    "uuid": "d1da5ebe-dde5-4e33-b85b-774246a3c9ce"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C9",
+                    "pos": {
+                        "x": 68.8,
+                        "y": 55.2
+                    },
+                    "uuid": "d59e85b0-188d-4183-ae50-80a894f373a0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R12",
+                    "pos": {
+                        "x": 95.7,
+                        "y": 52.1
+                    },
+                    "uuid": "dd506611-b160-43db-8c6b-66e009fe52e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R13",
+                    "pos": {
+                        "x": 95.7,
+                        "y": 54.0
+                    },
+                    "uuid": "e8303f06-fd72-4860-b278-70f690313fc5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_TO_SOT_SMD'",
+            "items": [
+                {
+                    "description": "Footprint U6",
+                    "pos": {
+                        "x": 68.8,
+                        "y": 58.65
+                    },
+                    "uuid": "ea896fc1-a1ff-4f13-be8a-e79622a05fca"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Resistor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint R8",
+                    "pos": {
+                        "x": 92.7,
+                        "y": 65.6
+                    },
+                    "uuid": "f818982f-07d5-43b4-bcc4-9b7603e7bcda"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP3",
+                    "pos": {
+                        "x": 113.25,
+                        "y": 58.08
+                    },
+                    "uuid": "fc30be43-52d1-4958-9855-a2443fbf1472"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP2",
+                    "pos": {
+                        "x": 113.25,
+                        "y": 55.54
+                    },
+                    "uuid": "fd3e3e2e-b6e6-419b-b141-cb5caf736fe2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 57.6,
+                        "y": 54.2
+                    },
+                    "uuid": "ff94ee15-2f01-47fa-95df-e26262620a8c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        }
+    ]
+}

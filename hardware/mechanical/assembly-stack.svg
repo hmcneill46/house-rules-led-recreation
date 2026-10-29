@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M0 0L10 5L0 10z" fill="#444" />
+</marker>
+</defs>
+<rect width="1200" height="900" fill="#f8f7f2" />
+<g font-family="Arial, sans-serif" fill="#242424">
+<text x="50.00" y="42.00" font-size="29" font-weight="bold" text-anchor="start" fill="#242424">House Rules / assembly and enclosure concept</text>
+<text x="50.00" y="72.00" font-size="16" font-weight="normal" text-anchor="start" fill="#242424">Dimensioned packaging study. Exact plug, wire and printed-part fit still require physical checks.</text>
+<text x="50.00" y="111.00" font-size="17" font-weight="bold" text-anchor="start" fill="#242424">SIDE ELEVATION</text>
+<rect x="110.00" y="145.00" width="672.00" height="226.00" fill="#d9dce0" stroke="#333" stroke-width="1.2" opacity="1" />
+<rect x="110.00" y="171.00" width="638.40" height="184.00" fill="#f8f7f2" stroke="none" stroke-width="1.2" opacity="1" />
+<rect x="320.00" y="161.00" width="428.40" height="194.00" fill="#f8f7f2" stroke="none" stroke-width="1.2" opacity="1" />
+<rect x="748.40" y="145.00" width="33.60" height="226.00" fill="#7795b3" stroke="#333" stroke-width="1.2" opacity="1" />
+<rect x="110.00" y="174.00" width="176.40" height="178.00" fill="#4a4b49" stroke="#333" stroke-width="1.2" opacity="1" />
+<line x1="110.00" y1="174.00" x2="110.00" y2="352.00" stroke="#111" stroke-width="4" />
+<rect x="286.40" y="174.00" width="84.00" height="178.00" fill="#f4e3ba" stroke="#bb8e28" stroke-width="1.2" opacity="0.65" stroke-dasharray="5 4" />
+<rect x="370.40" y="176.50" width="44.80" height="173.00" fill="#367b50" stroke="#333" stroke-width="1.2" opacity="1" />
+<rect x="415.20" y="258.50" width="176.40" height="80.00" fill="#d4c9a8" stroke="#333" stroke-width="1.2" opacity="0.5" stroke-dasharray="4 3" />
+<rect x="513.20" y="179.00" width="28.00" height="168.00" fill="#418fad" stroke="#333" stroke-width="1.2" opacity="1" />
+<rect x="541.20" y="279.25" width="92.68" height="73.50" fill="#b8bec4" stroke="#333" stroke-width="1.2" opacity="1" />
+<rect x="286.40" y="171.50" width="33.60" height="4.00" fill="#93999e" stroke="#333" stroke-width="1.2" opacity="1" />
+<rect x="286.40" y="350.00" width="33.60" height="4.00" fill="#93999e" stroke="#333" stroke-width="1.2" opacity="1" />
+<rect x="336.80" y="161.00" width="33.60" height="25.50" fill="#93999e" stroke="#333" stroke-width="1.2" opacity="1" />
+<rect x="336.80" y="339.50" width="33.60" height="15.50" fill="#93999e" stroke="#333" stroke-width="1.2" opacity="1" />
+<rect x="498.64" y="350.25" width="182.00" height="20.75" fill="#f8f7f2" stroke="#ad526a" stroke-width="1.2" opacity="1" stroke-dasharray="4 3" />
+<line x1="541.20" y1="352.75" x2="633.88" y2="352.75" stroke="#535c65" stroke-width="3" />
+<line x1="620.00" y1="408.00" x2="620.00" y2="356.75" stroke="#444" stroke-width="1.5" marker-end="url(#arrow)" />
+<text x="620.00" y="430.00" font-size="14" font-weight="normal" text-anchor="middle" fill="#242424">USB-C plug enters bottom face</text>
+<line x1="110.00" y1="117.00" x2="782.00" y2="117.00" stroke="#444" stroke-width="1" />
+<line x1="110.00" y1="112.00" x2="110.00" y2="122.00" stroke="#444" stroke-width="1" />
+<line x1="782.00" y1="112.00" x2="782.00" y2="122.00" stroke="#444" stroke-width="1" />
+<text x="446.00" y="110.00" font-size="16" font-weight="normal" text-anchor="middle" fill="#242424">24.0 mm total depth</text>
+<line x1="110.00" y1="389.00" x2="286.40" y2="389.00" stroke="#444" stroke-width="1" />
+<line x1="110.00" y1="384.00" x2="110.00" y2="394.00" stroke="#444" stroke-width="1" />
+<line x1="286.40" y1="384.00" x2="286.40" y2="394.00" stroke="#444" stroke-width="1" />
+<text x="198.20" y="382.00" font-size="12" font-weight="normal" text-anchor="middle" fill="#242424">6.3</text>
+<line x1="286.40" y1="389.00" x2="370.40" y2="389.00" stroke="#444" stroke-width="1" />
+<line x1="286.40" y1="384.00" x2="286.40" y2="394.00" stroke="#444" stroke-width="1" />
+<line x1="370.40" y1="384.00" x2="370.40" y2="394.00" stroke="#444" stroke-width="1" />
+<text x="328.40" y="382.00" font-size="12" font-weight="normal" text-anchor="middle" fill="#242424">3.0</text>
+<line x1="370.40" y1="389.00" x2="415.20" y2="389.00" stroke="#444" stroke-width="1" />
+<line x1="370.40" y1="384.00" x2="370.40" y2="394.00" stroke="#444" stroke-width="1" />
+<line x1="415.20" y1="384.00" x2="415.20" y2="394.00" stroke="#444" stroke-width="1" />
+<text x="392.80" y="382.00" font-size="12" font-weight="normal" text-anchor="middle" fill="#242424">1.6</text>
+<line x1="415.20" y1="389.00" x2="513.20" y2="389.00" stroke="#444" stroke-width="1" />
+<line x1="415.20" y1="384.00" x2="415.20" y2="394.00" stroke="#444" stroke-width="1" />
+<line x1="513.20" y1="384.00" x2="513.20" y2="394.00" stroke="#444" stroke-width="1" />
+<text x="464.20" y="382.00" font-size="12" font-weight="normal" text-anchor="middle" fill="#242424">3.5</text>
+<line x1="513.20" y1="389.00" x2="541.20" y2="389.00" stroke="#444" stroke-width="1" />
+<line x1="513.20" y1="384.00" x2="513.20" y2="394.00" stroke="#444" stroke-width="1" />
+<line x1="541.20" y1="384.00" x2="541.20" y2="394.00" stroke="#444" stroke-width="1" />
+<text x="527.20" y="382.00" font-size="12" font-weight="normal" text-anchor="middle" fill="#242424">1.0</text>
+<line x1="541.20" y1="389.00" x2="633.88" y2="389.00" stroke="#444" stroke-width="1" />
+<line x1="541.20" y1="384.00" x2="541.20" y2="394.00" stroke="#444" stroke-width="1" />
+<line x1="633.88" y1="384.00" x2="633.88" y2="394.00" stroke="#444" stroke-width="1" />
+<text x="587.54" y="382.00" font-size="12" font-weight="normal" text-anchor="middle" fill="#242424">3.31</text>
+<line x1="633.88" y1="389.00" x2="748.40" y2="389.00" stroke="#444" stroke-width="1" />
+<line x1="633.88" y1="384.00" x2="633.88" y2="394.00" stroke="#444" stroke-width="1" />
+<line x1="748.40" y1="384.00" x2="748.40" y2="394.00" stroke="#444" stroke-width="1" />
+<text x="691.14" y="382.00" font-size="12" font-weight="normal" text-anchor="middle" fill="#242424">4.09</text>
+<line x1="748.40" y1="389.00" x2="782.00" y2="389.00" stroke="#444" stroke-width="1" />
+<line x1="748.40" y1="384.00" x2="748.40" y2="394.00" stroke="#444" stroke-width="1" />
+<line x1="782.00" y1="384.00" x2="782.00" y2="394.00" stroke="#444" stroke-width="1" />
+<text x="765.20" y="382.00" font-size="12" font-weight="normal" text-anchor="middle" fill="#242424">1.2</text>
+<text x="110.00" y="465.00" font-size="14" font-weight="normal" text-anchor="start" fill="#242424">Stack dimensions in mm; dark face is at z=0. Projected component envelopes are illustrative.</text>
+<text x="845.00" y="150.00" font-size="17" font-weight="bold" text-anchor="start" fill="#242424">STACK</text>
+<rect x="845.00" y="165.00" width="14.00" height="14.00" fill="#4a4b49" stroke="#333" stroke-width="1.2" opacity="1" />
+<text x="869.00" y="177.00" font-size="15" font-weight="normal" text-anchor="start" fill="#242424">LED body: 6.3</text>
+<rect x="845.00" y="193.00" width="14.00" height="14.00" fill="#f4e3ba" stroke="#333" stroke-width="1.2" opacity="1" />
+<text x="869.00" y="205.00" font-size="15" font-weight="normal" text-anchor="start" fill="#242424">LED standoff: 3.0</text>
+<rect x="845.00" y="221.00" width="14.00" height="14.00" fill="#367b50" stroke="#333" stroke-width="1.2" opacity="1" />
+<text x="869.00" y="233.00" font-size="15" font-weight="normal" text-anchor="start" fill="#242424">Main PCB: 1.6</text>
+<rect x="845.00" y="249.00" width="14.00" height="14.00" fill="#d4c9a8" stroke="#333" stroke-width="1.2" opacity="1" />
+<text x="869.00" y="261.00" font-size="15" font-weight="normal" text-anchor="start" fill="#242424">Main vertical JST: 6.3 (at left)</text>
+<rect x="845.00" y="277.00" width="14.00" height="14.00" fill="#418fad" stroke="#333" stroke-width="1.2" opacity="1" />
+<text x="869.00" y="289.00" font-size="15" font-weight="normal" text-anchor="start" fill="#242424">USB carrier PCB: 1.0</text>
+<rect x="845.00" y="305.00" width="14.00" height="14.00" fill="#b8bec4" stroke="#333" stroke-width="1.2" opacity="1" />
+<text x="869.00" y="317.00" font-size="15" font-weight="normal" text-anchor="start" fill="#242424">USB receptacle height: 3.31</text>
+<rect x="845.00" y="333.00" width="14.00" height="14.00" fill="#7795b3" stroke="#333" stroke-width="1.2" opacity="1" />
+<text x="869.00" y="345.00" font-size="15" font-weight="normal" text-anchor="start" fill="#242424">Removable back: 1.2</text>
+<text x="845.00" y="381.00" font-size="14" font-weight="normal" text-anchor="start" fill="#242424">Main rear → carrier underside: 3.5 mm</text>
+<text x="845.00" y="405.00" font-size="14" font-weight="normal" text-anchor="start" fill="#242424">Air above USB → back: 4.09 mm</text>
+<text x="845.00" y="429.00" font-size="14" font-weight="normal" text-anchor="start" fill="#242424">Port well: 14 × 6.5; closed roof</text>
+<text x="845.00" y="453.00" font-size="14" font-weight="normal" text-anchor="start" fill="#242424">Socket recess from outer wall: 1.825</text>
+<text x="50.00" y="513.00" font-size="17" font-weight="bold" text-anchor="start" fill="#242424">REAR PLAN / case open</text>
+<text x="50.00" y="538.00" font-size="15" font-weight="normal" text-anchor="start" fill="#242424">Carrier slides into the back; main vertical JST wires bend left and join the carrier’s left-entry harness.</text>
+<rect x="60.00" y="560.00" width="842.40" height="203.40" fill="#d9dce0" stroke="#333" stroke-width="1.2" opacity="1" />
+<rect x="74.40" y="574.40" width="813.60" height="174.60" fill="#ecedf0" stroke="#333" stroke-width="1.2" opacity="1" stroke-dasharray="3 3" />
+<rect x="74.40" y="583.40" width="813.60" height="165.60" fill="#f8f7f2" stroke="#333" stroke-width="1.2" opacity="1" />
+<rect x="83.40" y="588.35" width="795.60" height="155.70" fill="#e5eee6" stroke="#367b50" stroke-width="1.2" opacity="1" />
+<rect x="732.75" y="590.60" width="144.00" height="151.20" fill="#d8eaf0" stroke="#418fad" stroke-width="1.2" opacity="1" stroke-dasharray="5 3" />
+<rect x="788.82" y="680.83" width="80.46" height="66.15" fill="#b8bec4" stroke="#333" stroke-width="1.2" opacity="1" />
+<rect x="719.47" y="599.60" width="56.25" height="72.00" fill="#e6dbc2" stroke="#333" stroke-width="1.2" opacity="1" />
+<rect x="687.30" y="662.15" width="26.10" height="72.00" fill="#e6dbc2" stroke="#333" stroke-width="1.2" opacity="1" stroke-dasharray="4 3" />
+<rect x="744.90" y="576.38" width="18.00" height="12.87" fill="#8f79a2" stroke="#5b426e" stroke-width="1.2" opacity="1" />
+<rect x="853.80" y="576.38" width="18.00" height="12.87" fill="#8f79a2" stroke="#5b426e" stroke-width="1.2" opacity="1" />
+<rect x="720.60" y="714.35" width="18.00" height="18.00" fill="#8f79a2" stroke="#5b426e" stroke-width="1.2" opacity="1" />
+<rect x="880.80" y="651.35" width="21.60" height="18.00" fill="#8f79a2" stroke="#5b426e" stroke-width="1.2" opacity="1" />
+<rect x="740.40" y="745.85" width="18.00" height="17.55" fill="#8f79a2" stroke="#5b426e" stroke-width="1.2" opacity="1" />
+<rect x="569.40" y="606.35" width="117.00" height="117.00" fill="#f5d9a8" stroke="#c58b24" stroke-width="1.2" opacity="0.8" stroke-dasharray="4 3" />
+<text x="627.90" y="648.65" font-size="13" font-weight="normal" text-anchor="middle" fill="#242424">30–50 mm loop</text>
+<text x="627.90" y="669.35" font-size="12" font-weight="normal" text-anchor="middle" fill="#242424">reserved space</text>
+<path d="M700.3499999999999 698.15 C587.4 698.15,578.4 635.6,623.4 635.6 L719.4749999999999 635.6" fill="none" stroke="#bf7e18" stroke-width="3" stroke-dasharray="5 3" marker-end="url(#arrow)" />
+<text x="792.60" y="606.35" font-size="13" font-weight="bold" text-anchor="start" fill="#242424">Carrier</text>
+<text x="829.05" y="725.15" font-size="12" font-weight="bold" text-anchor="middle" fill="#242424">USB-C</text>
+<line x1="829.05" y1="756.98" x2="829.05" y2="746.98" stroke="#444" stroke-width="1.3" marker-end="url(#arrow)" />
+<text x="943.00" y="588.00" font-size="15" font-weight="normal" text-anchor="start" fill="#242424">All PCB outlines remain</text>
+<text x="943.00" y="610.00" font-size="15" font-weight="normal" text-anchor="start" fill="#242424">behind the LED silhouette.</text>
+<text x="943.00" y="642.00" font-size="15" font-weight="normal" text-anchor="start" fill="#242424">Main: 88.4 × 17.3</text>
+<text x="943.00" y="664.00" font-size="15" font-weight="normal" text-anchor="start" fill="#242424">Carrier: 16.0 × 16.8</text>
+<text x="943.00" y="696.00" font-size="14" font-weight="normal" text-anchor="start" fill="#242424">Socket centre x=82.85</text>
+<text x="943.00" y="718.00" font-size="14" font-weight="normal" text-anchor="start" fill="#242424">Socket face y=17.625</text>
+<text x="943.00" y="745.00" font-size="14" font-weight="normal" text-anchor="start" fill="#242424">Carrier columns ≥1.2 mm</text>
+<line x1="60.00" y1="789.00" x2="902.40" y2="789.00" stroke="#444" stroke-width="1" />
+<line x1="60.00" y1="784.00" x2="60.00" y2="794.00" stroke="#444" stroke-width="1" />
+<line x1="902.40" y1="784.00" x2="902.40" y2="794.00" stroke="#444" stroke-width="1" />
+<text x="481.20" y="782.00" font-size="15" font-weight="normal" text-anchor="middle" fill="#242424">93.6 mm outer width</text>
+<line x1="36.00" y1="560.00" x2="36.00" y2="763.40" stroke="#444" stroke-width="1" />
+<line x1="31.00" y1="560.00" x2="41.00" y2="560.00" stroke="#444" stroke-width="1" />
+<line x1="31.00" y1="763.40" x2="41.00" y2="763.40" stroke="#444" stroke-width="1" />
+<text x="24" y="661.7" font-size="14" text-anchor="middle" transform="rotate(-90 24 661.7)">22.6 mm outer height</text>
+<text x="50.00" y="830.00" font-size="15" font-weight="normal" text-anchor="start" fill="#242424">Front opening: 90.4 × 18.4 mm. Reinforced removable-back cradle; all structural columns and lip ≥1.2 mm.</text>
+<text x="50.00" y="858.00" font-size="13" font-weight="normal" text-anchor="start" fill="#666">Engineering concept / 29 October 2026 / prototype STL; physical fit unverified</text>
+</g>
+</svg>

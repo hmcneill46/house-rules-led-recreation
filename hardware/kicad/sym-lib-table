@@ -1,0 +1,4 @@
+(sym_lib_table (version 7)
+(lib (name "HouseRules_main")(type "KiCad")(uri "${KIPRJMOD}/HouseRules_main.kicad_sym")(options "")(descr "Explicit House Rules package symbols"))
+(lib (name "HouseRules_usb")(type "KiCad")(uri "${KIPRJMOD}/HouseRules_usb.kicad_sym")(options "")(descr "Explicit House Rules package symbols"))
+)

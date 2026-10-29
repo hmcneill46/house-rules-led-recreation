@@ -1,0 +1,92 @@
+{
+  "status": "placement proposal; native DRC checked without tracks",
+  "units": "mm",
+  "board": {
+    "width": 16.0,
+    "height": 16.8,
+    "thickness": 1.0,
+    "layers": 4
+  },
+  "assembly_offset_from_main": {
+    "x": 72.15,
+    "y": 0.25,
+    "underside_clearance_from_main_rear": 3.5
+  },
+  "parts": [
+    {
+      "ref": "J1",
+      "x": 10.7,
+      "y": 13.7,
+      "angle": 0,
+      "side": "F"
+    },
+    {
+      "ref": "J2",
+      "x": 3.1,
+      "y": 5.0,
+      "angle": 270,
+      "side": "F"
+    },
+    {
+      "ref": "R1",
+      "x": 1.4,
+      "y": 12.0,
+      "angle": 90,
+      "side": "F"
+    },
+    {
+      "ref": "R2",
+      "x": 4.5,
+      "y": 12.0,
+      "angle": 90,
+      "side": "F"
+    },
+    {
+      "ref": "C1",
+      "x": 14.6,
+      "y": 2.0,
+      "angle": 90,
+      "side": "F",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "value": "100n 25V X7R"
+    },
+    {
+      "ref": "U1",
+      "x": 8,
+      "y": 7.6,
+      "angle": 270,
+      "side": "F"
+    },
+    {
+      "ref": "D1",
+      "x": 14.6,
+      "y": 6.3,
+      "angle": 90,
+      "side": "F"
+    }
+  ],
+  "native_drc": {
+    "violations": 0,
+    "unconnected_items": 34,
+    "clearance": 0.15,
+    "min_copper_edge_clearance": 0.25,
+    "min_hole_clearance": 0.2,
+    "stock_courtyards_unchanged": true,
+    "scratch_pcb": "/tmp/house-rules-carrier-placement/left_entry_shifted_usb/house-rules-usb.kicad_pcb",
+    "scratch_report": "/tmp/house-rules-carrier-placement/left_entry_shifted_usb/drc.json"
+  },
+  "mechanical": {
+    "usb_mating_face_y_global": 17.625,
+    "usb_centre_x_global": 82.85,
+    "jst_entry_direction": "left / -x in board front view",
+    "jst_mated_depth": 6.25,
+    "estimated_jst_wire_exit_x_global": 70.675
+  },
+  "notes": [
+    "Actual JST footprint mounting is F.Cu. Rotation270 gives left entry;90 gives right entry.",
+    "C1 changes from0603to0402;use100nF25V-or-higherX7Rwithverifiedfactorypart.",
+    "No copper routing is included in the trial. Re-route carrier and repeat complete DRC after adopting.",
+    "Keep current ESD opposite-pad net assignments from the latest circuit specification; placement does not determine them.",
+    "Physical mating plug and harness bend space require sample verification."
+  ]
+}

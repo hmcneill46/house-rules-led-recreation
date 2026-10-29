@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-29",
+  "review_scope": "Independent package pin maps and placement geometry; routing/thermal/USB bench operation excluded",
+  "spec_sha256": "39e905bb28f4a460762b59433d9ced5c5bba1c7eeb59f48019005393fe871973",
+  "checks": {
+    "mcu_selected_pin_map_matches_independent_reference": true,
+    "mcu_installed_kicad_library_power_pins": {
+      "4": "VDD",
+      "5": "VSS",
+      "33": "VSS"
+    },
+    "mcu_usb_default_pin_functions": "PA11/PA12 are default; keep PA11_RMP/PA12_RMP clear. Setting remap selects PA9/PA10 functions instead.",
+    "driver_control_power_and_all_output_pin_names_match_datasheet": true,
+    "all_245_led_positions_have_correct_grouped_polarity_mapping": true,
+    "usb_both_orientations_and_shell_mapping_correct": true,
+    "harness_pin_numbers_match_both_boards": true
+  },
+  "boards": {
+    "main": {
+      "pcb_sha256": "10df6ab9aa47b8d5d4e1ebd64a84e22632beb7e1f29707a57e5667f8e1ad603f",
+      "part_count": 49,
+      "physical_pad_net_mismatches": [],
+      "unmapped_numbered_pads": [],
+      "outline_width_mm": 88.4,
+      "outline_height_mm": 17.3,
+      "tracks_and_vias_at_review": 20,
+      "led_footprint_geometry": [
+        {
+          "module": 1,
+          "centre_mm": [
+            6.1,
+            8.65
+          ],
+          "front_pin1_offset_mm": [
+            -3.81,
+            -6.35
+          ],
+          "drill_mm": 0.9,
+          "pad_mm": 1.4,
+          "annular_ring_mm": 0.25
+        },
+        {
+          "module": 2,
+          "centre_mm": [
+            18.8,
+            8.65
+          ],
+          "front_pin1_offset_mm": [
+            -3.81,
+            -6.35
+          ],
+          "drill_mm": 0.9,
+          "pad_mm": 1.4,
+          "annular_ring_mm": 0.25
+        },
+        {
+          "module": 3,
+          "centre_mm": [
+            31.5,
+            8.65
+          ],
+          "front_pin1_offset_mm": [
+            -3.81,
+            -6.35
+          ],
+          "drill_mm": 0.9,
+          "pad_mm": 1.4,
+          "annular_ring_mm": 0.25
+        },
+        {
+          "module": 4,
+          "centre_mm": [
+            44.199999,
+            8.65
+          ],
+          "front_pin1_offset_mm": [
+            -3.81,
+            -6.35
+          ],
+          "drill_mm": 0.9,
+          "pad_mm": 1.4,
+          "annular_ring_mm": 0.25
+        },
+        {
+          "module": 5,
+          "centre_mm": [
+            56.9,
+            8.65
+          ],
+          "front_pin1_offset_mm": [
+            -3.81,
+            -6.35
+          ],
+          "drill_mm": 0.9,
+          "pad_mm": 1.4,
+          "annular_ring_mm": 0.25
+        },
+        {
+          "module": 6,
+          "centre_mm": [
+            69.6,
+            8.65
+          ],
+          "front_pin1_offset_mm": [
+            -3.81,
+            -6.35
+          ],
+          "drill_mm": 0.9,
+          "pad_mm": 1.4,
+          "annular_ring_mm": 0.25
+        },
+        {
+          "module": 7,
+          "centre_mm": [
+            82.299999,
+            8.65
+          ],
+          "front_pin1_offset_mm": [
+            -3.81,
+            -6.35
+          ],
+          "drill_mm": 0.9,
+          "pad_mm": 1.4,
+          "annular_ring_mm": 0.25
+        }
+      ],
+      "nominal_led_envelope_mm": {
+        "x": [
+          -0.25,
+          88.65
+        ],
+        "y": [
+          -0.25,
+          17.55
+        ]
+      },
+      "nominal_inset_each_edge_mm": 0.25
+    },
+    "usb": {
+      "pcb_sha256": "1c12ff0f3ab2f401569c2bcec0a9740854159153dcf88e91fbf0eea528b2567a",
+      "part_count": 7,
+      "physical_pad_net_mismatches": [],
+      "unmapped_numbered_pads": [],
+      "outline_width_mm": 16.0,
+      "outline_height_mm": 16.599999,
+      "tracks_and_vias_at_review": 23
+    }
+  },
+  "release_holds": [
+    "All seven modules must simultaneously match the 1:1 print before fabrication. A pair breadboard test alone does not prove full-array fit; approximately90 mm reported body width differs from88.9 mm nominal.",
+    "Physical pin1/12 low-current sample test must verify front upper-left pixel and other rows/columns.",
+    "No hardware current, driver temperature, USB power-policy operation, ROM DFU, USB cable/harness signal integrity or enclosure plug fit has been bench validated.",
+    "This review snapshot excludes routing. ERC and package mapping do not establish PCB copper continuity or fabrication readiness."
+  ],
+  "issues": []
+}

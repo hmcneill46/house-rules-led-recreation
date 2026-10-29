@@ -1,0 +1,17 @@
+{
+  "AD28_removed": [
+    {
+      "uuid": "060c0c72-98ff-4f1a-9ec2-95916c1ae2c2",
+      "net": "D3_SW3"
+    },
+    {
+      "uuid": "8855c30d-3bd8-4bb4-b1bb-393c0bae762a",
+      "net": "D3_CS6"
+    }
+  ],
+  "BOOT_branch_removed": "bd2188f5-2b80-4e0a-9560-3431b5097c39",
+  "BOOT_bridge_renetted": "1643baf6-2728-4b3b-9673-bf65ba53730c",
+  "MCU25_TP4_preserved": true,
+  "main_parts": 50,
+  "board_sha256": "6df7de15b005959ceb2717a4921e6eae89881e68508c36fd7a88d9b36429ed6f"
+}

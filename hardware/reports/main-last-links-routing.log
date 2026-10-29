@@ -1,0 +1,18 @@
+01:52:28 PM: Debug: Adding duplicate image handler for 'PNG file'
+01:52:28 PM: Debug: Adding duplicate image handler for 'JPEG file'
+01:52:28 PM: Debug: Adding duplicate image handler for 'TIFF file'
+01:52:28 PM: Debug: Adding duplicate image handler for 'GIF file'
+01:52:28 PM: Debug: Adding duplicate image handler for 'PNM file'
+01:52:28 PM: Debug: Adding duplicate image handler for 'PCX file'
+01:52:28 PM: Debug: Adding duplicate image handler for 'IFF file'
+01:52:28 PM: Debug: Adding duplicate image handler for 'Windows icon file'
+01:52:28 PM: Debug: Adding duplicate image handler for 'Windows cursor file'
+01:52:28 PM: Debug: Adding duplicate image handler for 'Windows animated cursor file'
+01:52:28 PM: Debug: Adding duplicate image handler for 'TGA file'
+01:52:28 PM: Debug: Adding duplicate image handler for 'XPM file'
+D1_SW1 True 18 corners,0 vias,376 nodes
+D3_SW3 True 9 corners,0 vias,217 nodes
+D3_CS6 True 29 corners,0 vias,2316 nodes
+BOOT_SWCLK True 46 corners,1 vias,14472 nodes
+SDA True 17 corners,0 vias,2279 nodes
+Added 5 connections; rerun native DRC.

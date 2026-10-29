@@ -1,0 +1,61 @@
+{
+  "file": "hardware/printing/HouseRules_Fit_KE04_PLA.gcode",
+  "sha256": "6ec4a20aab41bfcfbbc914d3c4cbd04b31e1d967b3efbce91491afa91dd6227b",
+  "slicer": "OrcaSlicer2.4.2",
+  "printer": "Creality Ender-3 V3 KE, 0.4 mm nozzle",
+  "filament": "Creality Hyper PLA grey 1.75 mm",
+  "nozzle_C": [
+    220,
+    215
+  ],
+  "bed_C": [
+    60,
+    55
+  ],
+  "layers_mm": [
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+  ],
+  "model_count": 2,
+  "estimated_time": "17m20s plus real heating/levelling variability",
+  "estimated_filament_g": 2.44,
+  "all_explicit_motion_bounds_mm": {
+    "X": [
+      -2.0,
+      150.039
+    ],
+    "Y": [
+      20.0,
+      218.0
+    ],
+    "Z": [
+      0.2,
+      26.0
+    ]
+  },
+  "stock_negative_X_purge_preserved": true,
+  "model_extrusion_bounds_mm": {
+    "X": [
+      62.059,
+      150.039
+    ],
+    "Y": [
+      72.622,
+      114.79
+    ],
+    "Z": [
+      0.2,
+      1.0
+    ]
+  },
+  "supports": false,
+  "brim": false,
+  "XY_scale_percent": 100,
+  "XY_hole_compensation_mm": 0,
+  "elephant_foot_correction_mm": 0.05,
+  "native_machine_start_end_preserved": true,
+  "hardware_execution": "Not started; exported for the user to print."
+}

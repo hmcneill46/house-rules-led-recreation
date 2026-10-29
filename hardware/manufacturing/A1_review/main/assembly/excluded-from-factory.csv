@@ -1,0 +1,14 @@
+Designator,Value,Reason
+DS1,LMD07057AUE-101B,Owner supplied LED; fit after PCBA
+DS2,LMD07057AUE-101B,Owner supplied LED; fit after PCBA
+DS3,LMD07057AUE-101B,Owner supplied LED; fit after PCBA
+DS4,LMD07057AUE-101B,Owner supplied LED; fit after PCBA
+DS5,LMD07057AUE-101B,Owner supplied LED; fit after PCBA
+DS6,LMD07057AUE-101B,Owner supplied LED; fit after PCBA
+DS7,LMD07057AUE-101B,Owner supplied LED; fit after PCBA
+TP1,GND,PCB test pad; no component to purchase or place
+TP2,3V3,PCB test pad; no component to purchase or place
+TP3,SWDIO,PCB test pad; no component to purchase or place
+TP4,SWCLK,PCB test pad; no component to purchase or place
+TP5,NRST,PCB test pad; no component to purchase or place
+TP6,5V,PCB test pad; no component to purchase or place

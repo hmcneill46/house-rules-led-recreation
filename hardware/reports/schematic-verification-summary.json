@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-29",
+  "spec_sha256": "d98d0b94e5583f0797ecbb5a06f2285dbbb07b7fa742ab7cafb609156420fe74",
+  "boards": {
+    "main": {
+      "component_count": 50,
+      "connected_pin_count": 279,
+      "netlist_matches_spec": true,
+      "erc_exit_code": 0,
+      "erc_violation_count": 0,
+      "erc_report": "schematic-verification-main.erc.json",
+      "netlist": "schematic-verification-main.net.xml"
+    },
+    "usb": {
+      "component_count": 7,
+      "connected_pin_count": 40,
+      "netlist_matches_spec": true,
+      "erc_exit_code": 0,
+      "erc_violation_count": 0,
+      "erc_report": "schematic-verification-usb.erc.json",
+      "netlist": "schematic-verification-usb.net.xml"
+    }
+  },
+  "erc_exclusions": false
+}

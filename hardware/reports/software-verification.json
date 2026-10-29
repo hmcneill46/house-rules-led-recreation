@@ -1,0 +1,41 @@
+{
+  "timestamp_utc": "2026-10-29T13:11:28.170968+00:00",
+  "scope": "Host software tests and compiled-image inspection; no physical board, USB, electrical or thermal validation.",
+  "status": "passed",
+  "unittest_count": 26,
+  "checks": [
+    {
+      "command": "/Applications/Xcode.app/Contents/Developer/usr/bin/python3 -m unittest discover -s hardware/tests -p test_*.py",
+      "exit_code": 0,
+      "output": "..........................\n----------------------------------------------------------------------\nRan 26 tests in 0.393s\n\nOK"
+    },
+    {
+      "command": "/Applications/Xcode.app/Contents/Developer/usr/bin/python3 hardware/firmware/test_player.py",
+      "exit_code": 0,
+      "output": "60,000 C++ player frames match exported timing/content; 2 complete traversals; diagnostics, power and driver-map assertions pass."
+    },
+    {
+      "command": "/Applications/Xcode.app/Contents/Developer/usr/bin/python3 hardware/tools/firmware-build/audit_elf.py",
+      "exit_code": 0,
+      "output": "USB full-speed configuration bytes: 09 02 43 00 02 01 00 80 fa\nBus powered: bmAttributes=0x80; bMaxPower=250 x 2 mA=500 mA.\nActual USB pin-map entries: PA_11=11, PA_12=12, no PREMAP flag.\nAutomatic premain USB start is a no-op; setup starts CDC after pin/CC preparation.\nThe strong re-enumeration helper detaches only; no pre-BCD reconnect.\nLink-wrapper call-flow verified in actual ARM ELF:\n- hw_config_init -> __wrap_USBD_CDC_init\n- setup -> _ZN9USBSerial5beginEv\n- _ZN9USBSerial5beginEv -> CDC_init\n- loop -> _Z20handleSerialCommandsv\n- CDC_init -> __wrap_USBD_Start\n- USBD_LL_Init -> USBD_reenumerate\n- USBD_LL_Init -> __wrap_HAL_PCD_Init\n- HAL_PCD_SuspendCallback -> __wrap_USBD_LL_Suspend\n- HAL_PCD_ResumeCallback -> __wrap_USBD_LL_Resume\n- __wrap_USBD_Start -> HAL_PCDEx_BCD_VBUSDetect\n\nSHA-256:\n6ea619cf4bf5c18033a87964acfd9ac2c68c241575a8528b129d5185226f01c6  HouseRules.ino.bin\n4caa8af008cab2ab12c6d3d00505e0666718723b43b0d98b9a0b38096927e89f  HouseRules.ino.elf\n3636de41270c26ec5a4d0e7fc8b111017b2e05eea29ba088f82c9f9be4329360  HouseRules.ino.hex\n9031748f781c5caa2af990d54ba9429a8c1fbe0bd4ed5677a42726f6a6fa3767  HouseRules.ino.map"
+    }
+  ],
+  "sha256": {
+    "hardware/tests/test_export_sequence.py": "ab6b2fc4c1049440c7ec2acf8a2372f301e31cd74f58253f77dc49c9c4f77b78",
+    "hardware/tests/test_matrix_model.py": "1ed572ad99c7486a4e89827176657808ad0d96868a87179e45f232a531ae0b7e",
+    "hardware/simulation/matrix_model.py": "7f5ad38ddaeb0ddcd6be0e89facb8ac2f53907bc077639b0ddf81d4b0c3089f2",
+    "hardware/tools/export_sequence.py": "3faec7f56aa8609f4c100c99c10b1e3f73ba3da9760a2298b9e86b278a0fcdf6",
+    "hardware/firmware/test_player.py": "feb2b839b84d7a483d5fd2e9318e92df2d8d91b95fd43004f48e557aabdc5f61",
+    "hardware/firmware/HouseRules/player.h": "01f03f367b11a5b8dd0e06f02da141e13c774e9239df04ac083c3ba1bdd482a9",
+    "hardware/firmware/HouseRules/HouseRules.ino": "e1f05ede3ed6b32918e86ad6a32b955ae97c2994c06d2e656bc8c6bb2d382c72",
+    "hardware/firmware/compiled/HouseRules.ino.elf": "4caa8af008cab2ab12c6d3d00505e0666718723b43b0d98b9a0b38096927e89f",
+    "main.py": "a258fa419e29caaa9c6528aace148464203324be42812f57db16d62767a2fa3f",
+    "sequence.json": "6bc690d361caf2eed78c47c56ee3ebced2b2eceacfa310fdb129f55b4b780742",
+    "hardware/design/module-connections.csv": "ce8082e5e6b2800a4ff56e2e21e8cfb71c3c31228ff56fb2c98b6ebfee8f55a5",
+    "hardware/design/pixel-map.csv": "d617fd04a03d714d16db2af3bdb3ea723aeeae0f9a29c61db5e703022a5b3704",
+    "hardware/firmware/generated_sequence.h": "a7d1963f69ca10a11635c25d9b5d51e5e6a9152601122c8f659420badfecf320",
+    "hardware/firmware/sequence_manifest.json": "97b2aeb12e8256fe2ba37cbae8f627ed2a9d8ddf1d780419da8fde7236d90477",
+    "hardware/firmware/sequence_columns.bin": "4006a8b654a8fb741fb169f3b9333f579d882659d78b5aceb9f8c447d1aebcef",
+    "hardware/tools/firmware-build/audit_elf.py": "efb8a38fe939fcbe27dcce16f27b2db7f481e81df5f3793af0e9143261151fef"
+  }
+}

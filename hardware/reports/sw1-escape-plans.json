@@ -1,0 +1,441 @@
+{
+  "status": "Read-only route proposals; never applied by this analysis",
+  "board_sha256_at_load": "7133b097d8dfc19cac498e8d09aa53dc45d966043f59b53e3d482efd07344c16",
+  "coordinate_frame": "absolute board millimetres; KiCad auxiliary origin is (50,50)",
+  "clearance_mm": 0.152,
+  "notes": [
+    "Same-net copper is ignored, so SW1 island trapping is not self-blocking.",
+    "U1/U2/U4 use the root candidate via positions; U3 must differ because the corresponding root candidate hits locked USB_DP.",
+    "After ripup/addition refill planes and run native DRC; connect the new SW1 via on F/In2/In3 and reroute displaced nets.",
+    "Current file may change while the root routes; re-evaluate every proposed conflict against the current PCB before applying."
+  ],
+  "plans": [
+    {
+      "driver": "U1",
+      "net": "D1_SW1",
+      "pad": "22",
+      "stub_layer": "B.Cu",
+      "stub_width_mm": 0.1,
+      "stub_polyline_absolute_mm": [
+        [
+          54.15,
+          58.05
+        ],
+        [
+          53.1,
+          58.15
+        ]
+      ],
+      "via_absolute_mm": [
+        53.1,
+        58.15
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "via_type": "ordinary through F.Cu-B.Cu",
+      "ripup_candidates": [
+        {
+          "uuid": "2b4f85fc-1988-48b3-bd01-fb6a24eaa962",
+          "net": "D1_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "2b9d541a-ba17-4927-97ad-0e6627bb4aa8",
+          "net": "D1_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "c7bafe71-4708-4b4d-ac1d-4bf1d1aab3fc",
+          "net": "D1_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "0b922cbd-c65b-4730-b540-049747b0438f",
+          "net": "D1_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In3.Cu"
+          ]
+        },
+        {
+          "uuid": "3c846328-1f1d-46d5-bbdf-51308b0c0f98",
+          "net": "D1_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In3.Cu"
+          ]
+        }
+      ]
+    },
+    {
+      "driver": "U2",
+      "net": "D2_SW1",
+      "pad": "22",
+      "stub_layer": "B.Cu",
+      "stub_width_mm": 0.1,
+      "stub_polyline_absolute_mm": [
+        [
+          79.55,
+          58.05
+        ],
+        [
+          78.5,
+          58.15
+        ]
+      ],
+      "via_absolute_mm": [
+        78.5,
+        58.15
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "via_type": "ordinary through F.Cu-B.Cu",
+      "ripup_candidates": [
+        {
+          "uuid": "cdbf2705-3b7d-4698-8c9e-5c17cfe7a364",
+          "net": "D2_SW2",
+          "kind": "VIA",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "15a6080c-7f5e-43d3-8371-438c0565deb4",
+          "net": "D2_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "3eccd81f-1f9d-49bd-b682-0a3de66b6532",
+          "net": "D2_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "7a9baa03-5d68-4f00-85f5-cb5116e5ebab",
+          "net": "D2_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "8a31ab44-3de8-4b62-980e-866e8bfbd802",
+          "net": "D2_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "95bb423c-7c4a-4b80-891b-8ed1bb0c1cd2",
+          "net": "D2_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "e474ce89-66bd-4999-a70d-0c29b940c3ea",
+          "net": "D2_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "e70bc3e3-1a82-4aa8-9647-b749e81fa8bc",
+          "net": "D2_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "fa239f9e-a8be-40eb-a719-1f7291fe6b26",
+          "net": "D2_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "082bfbfc-264d-475f-b9ed-b6d577482526",
+          "net": "D2_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In2.Cu"
+          ]
+        },
+        {
+          "uuid": "3258b85c-6a0d-4d14-895d-1ff2f39bca66",
+          "net": "D2_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In2.Cu"
+          ]
+        },
+        {
+          "uuid": "33a6244a-56b0-4613-8737-bbbc868dacc3",
+          "net": "D2_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In2.Cu"
+          ]
+        },
+        {
+          "uuid": "358d17c4-74c5-40fd-bf73-9c587cb54475",
+          "net": "D2_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        }
+      ]
+    },
+    {
+      "driver": "U3",
+      "net": "D3_SW1",
+      "pad": "22",
+      "stub_layer": "B.Cu",
+      "stub_width_mm": 0.1,
+      "stub_polyline_absolute_mm": [
+        [
+          104.95,
+          58.05
+        ],
+        [
+          103.9,
+          58.15
+        ],
+        [
+          103.9,
+          59.1
+        ],
+        [
+          104.2,
+          59.4
+        ]
+      ],
+      "via_absolute_mm": [
+        104.2,
+        59.4
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "via_type": "ordinary through F.Cu-B.Cu",
+      "ripup_candidates": [
+        {
+          "uuid": "5f3cf046-5c31-4549-833a-ba33f1192539",
+          "net": "D3_SW4",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "685c5020-0d12-4055-a346-9bdb9b53de3c",
+          "net": "D3_SW4",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "e7a61c10-256c-4a26-91b8-e7a6eac0d1b7",
+          "net": "D3_SW4",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "2c58a692-9af9-4360-97df-ff49cc3a914a",
+          "net": "D3_SW5",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "e3bb8c72-699c-4caa-9087-052117e949e3",
+          "net": "D3_SW5",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "09679705-fe78-4640-a566-a571e099e5c2",
+          "net": "D3_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "221c0dd9-ed57-4687-a273-e3807494492b",
+          "net": "D3_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "820da820-f7b1-4a20-a0ad-662673d45592",
+          "net": "D3_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "f5216e3e-ca34-4913-87e4-48ef3ff68bbf",
+          "net": "D3_SW4",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        }
+      ]
+    },
+    {
+      "driver": "U4",
+      "net": "D4_SW1",
+      "pad": "22",
+      "stub_layer": "B.Cu",
+      "stub_width_mm": 0.1,
+      "stub_polyline_absolute_mm": [
+        [
+          130.35,
+          58.05
+        ],
+        [
+          129.3,
+          58.15
+        ]
+      ],
+      "via_absolute_mm": [
+        129.3,
+        58.15
+      ],
+      "via_diameter_mm": 0.4,
+      "via_drill_mm": 0.2,
+      "via_type": "ordinary through F.Cu-B.Cu",
+      "ripup_candidates": [
+        {
+          "uuid": "384b7a41-f2d3-4dfb-ab8c-7ad3d8eeedf7",
+          "net": "D4_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "7227ae6b-aa84-482c-9267-30cdb16a9a72",
+          "net": "D4_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        },
+        {
+          "uuid": "2274b370-2b0a-4ac9-8f86-21fddbea6859",
+          "net": "D4_CS6",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In2.Cu"
+          ]
+        },
+        {
+          "uuid": "26df2b04-f558-4ae9-86a4-0c98960e48aa",
+          "net": "D4_CS6",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In2.Cu"
+          ]
+        },
+        {
+          "uuid": "4604b4ee-d26e-4614-a20f-d47c092e5c21",
+          "net": "D4_CS6",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In2.Cu"
+          ]
+        },
+        {
+          "uuid": "5c655583-15d0-4cb7-a71e-353466c6d388",
+          "net": "D4_CS6",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In2.Cu"
+          ]
+        },
+        {
+          "uuid": "c2e3fadb-d7a5-4cb8-98e9-2b565510f05c",
+          "net": "D4_CS6",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "In2.Cu"
+          ]
+        },
+        {
+          "uuid": "2a3d28b5-9b90-4c7c-afac-a8695b7adbec",
+          "net": "D4_SW2",
+          "kind": "TRACK",
+          "locked": false,
+          "layers": [
+            "B.Cu"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "review_date": "2026-10-29",
+  "review_kind": "Final native electrical/manufacturing file audit; no physical compliance test",
+  "actual_design_files_unchanged_during_negative_control": true,
+  "source_sha256": {
+    "hardware/kicad/house-rules-main.kicad_pcb": "8b9df50fe0897db76a186902024ef12a80ff8da990d0e1d2d342f8fa2f86a830",
+    "hardware/kicad/house-rules-main.kicad_pro": "2e0d7b0d7ef4993ac4b23e576a4d584b391caf910b302a7545fe65448dd18f63",
+    "hardware/kicad/house-rules-main.kicad_dru": "d1811ffe2b04746012730f114a551fa35094af6fc6cb6b0a51eafe98d8fbbb06",
+    "hardware/kicad/house-rules-main.kicad_sch": "5809b20c5202ed11e474808ec249bbe227f2c73a28d5cae5b6f8c134469b2747",
+    "hardware/kicad/house-rules-usb.kicad_pcb": "fb01d3a1369278d2435762de07fb7607957e51fce6277dc55044a102059ed40f",
+    "hardware/kicad/house-rules-usb.kicad_pro": "2125a531b4b2a88880a21543bb4b3afda33c4a5dd6d1041cc51e0675a9db00ab",
+    "hardware/kicad/house-rules-usb.kicad_dru": "bd60abe63998e6e876d4d2dd8c27f213359b9059fac1fa3e6e9c5897a224431f",
+    "hardware/kicad/house-rules-usb.kicad_sch": "787ff2c4decc9009c19219e089dad2fb3cab19cc97f744dc8ad973356a5da81e"
+  },
+  "boards": {
+    "main": {
+      "source_sha256": "8b9df50fe0897db76a186902024ef12a80ff8da990d0e1d2d342f8fa2f86a830",
+      "footprints": 50,
+      "factory_footprints": 37,
+      "copper_layers": 6,
+      "thickness_mm": 1.6,
+      "tracks": 2539,
+      "vias": 192,
+      "all_vias_ordinary_through_F_B": true,
+      "all_vias_filled_and_capped": true,
+      "minimum_track_mm": 0.1,
+      "five_volt_minimum_track_mm": 0.15,
+      "usb_track_lengths_by_layer_mm": {
+        "USB_DM": {
+          "F.Cu": 39.8134,
+          "B.Cu": 2.6032
+        },
+        "USB_DP": {
+          "F.Cu": 38.8562,
+          "B.Cu": 2.1411
+        }
+      },
+      "led_PTH_pad_count": 84,
+      "led_drills_mm": [
+        0.9
+      ],
+      "led_PTH_attributes": [
+        0
+      ],
+      "R14": {
+        "value": "2k2 1%",
+        "MPN": "0603WAF2201T5E",
+        "LCSC": "C4190",
+        "pads": {
+          "1": "BOOT_BUTTON",
+          "2": "BOOT_SWCLK"
+        },
+        "SW1_pads": [
+          [
+            "1",
+            "BOOT_BUTTON"
+          ],
+          [
+            "1",
+            "BOOT_BUTTON"
+          ],
+          [
+            "2",
+            "+3V3"
+          ],
+          [
+            "2",
+            "+3V3"
+          ]
+        ]
+      }
+    },
+    "usb": {
+      "source_sha256": "fb01d3a1369278d2435762de07fb7607957e51fce6277dc55044a102059ed40f",
+      "footprints": 7,
+      "factory_footprints": 7,
+      "copper_layers": 4,
+      "thickness_mm": 1.0,
+      "tracks": 85,
+      "vias": 10,
+      "all_vias_ordinary_through_F_B": true,
+      "all_vias_filled_and_capped": false,
+      "minimum_track_mm": 0.15,
+      "five_volt_minimum_track_mm": 0.2,
+      "usb_track_lengths_by_layer_mm": {
+        "USB_DP": {
+          "F.Cu": 11.853
+        },
+        "USB_DM": {
+          "F.Cu": 10.4221,
+          "B.Cu": 4.1692
+        }
+      },
+      "led_PTH_pad_count": 0,
+      "led_drills_mm": [],
+      "led_PTH_attributes": []
+    }
+  },
+  "native_reports": {
+    "main_positive": {
+      "file": "main-final-drc.json",
+      "sha256": "c6ef5353414a67426d9765f1503c94e2a3120e21f65f99af550625eb1a7d0623",
+      "counts": {
+        "violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0
+      },
+      "violation_types": {}
+    },
+    "main_negative_local_rule_omitted": {
+      "file": "main-final-local-rule-negative-drc.json",
+      "sha256": "8faedda31cc583a0ed595c42c289c042b1c5e212a81f6831dc38e5afb3fe40b5",
+      "counts": {
+        "violations": 9,
+        "unconnected_items": 0,
+        "schematic_parity": 0
+      },
+      "violation_types": {
+        "clearance": 9
+      }
+    },
+    "usb_positive": {
+      "file": "usb-electrical-final-drc.json",
+      "sha256": "142ee8166ca1c4298e189ea13ba7f8d290252ba83c04a6ce2bb4d3f947d5fb01",
+      "counts": {
+        "violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0
+      },
+      "violation_types": {}
+    }
+  },
+  "local_rule_control": {
+    "negative_copy_only_omits_same_U1_U4_courtyard_via_pad_rule": true,
+    "copied_valid_power_rule_explicit_mm": true,
+    "main_global_clearance_floor_mm": 0.1,
+    "Default_and_Power_clearance_mm": 0.15,
+    "positive_all_violations": 0,
+    "negative_local_via_pad_clearance_errors": 9,
+    "all_negative_actual_gaps_mm": 0.1,
+    "no_actual_design_mutation": true
+  },
+  "fabrication": {
+    "main_all_192_through_vias": "IPC-4761 Type VII resin filled and copper capped / VIPPO / POFV",
+    "main_LED_84_PTH_pads": "0.9 mm plated drills; remain open for owner-fit LED leads",
+    "usb_socket_shell_PTH": "Factory solder mechanical tabs; holes must remain open for tabs",
+    "outer_copper": "1 oz",
+    "main_stack": "Standard 6-layer 1.6 mm FR4, actual stack confirmed at quote",
+    "usb_stack": "Standard 4-layer 1.0 mm FR4, actual stack confirmed at quote"
+  },
+  "physical_validation_still_required": [
+    "Owned LED pinout/polarity/footprint fit and seven-module pitch",
+    "Case fit and plain SHR-06V-S harness insertion/bend clearance",
+    "USB power/current/BC1.2/CC/DFU/suspend and LED scan measurements",
+    "Assembler rotations and fine QFN filled/capped via process in actual quote"
+  ]
+}

@@ -1,0 +1,245 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-29T14:07:59",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "house-rules-main.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Via [D1_SW3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 54.4,
+                        "y": 58.85
+                    },
+                    "uuid": "67ef056c-4e49-4234-9840-bc4797b4222c"
+                },
+                {
+                    "description": "Pad 19 [D1_SW4] of U1 on B.Cu",
+                    "pos": {
+                        "x": 54.15,
+                        "y": 59.25
+                    },
+                    "uuid": "bc3b4a8a-8527-4d20-aaed-0294871bf6b9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 4 [D1_CS7] of U1 on B.Cu",
+                    "pos": {
+                        "x": 58.05,
+                        "y": 58.45
+                    },
+                    "uuid": "0d2a7801-66eb-4b02-be94-f012f7866909"
+                },
+                {
+                    "description": "Via [D1_CS8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 57.8,
+                        "y": 58.85
+                    },
+                    "uuid": "d276220f-4aae-40da-bdd0-e8070dc26916"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Via [D2_SW3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 79.8,
+                        "y": 58.85
+                    },
+                    "uuid": "38c55010-cb16-49c0-a469-3fd603885d48"
+                },
+                {
+                    "description": "Pad 19 [D2_SW4] of U2 on B.Cu",
+                    "pos": {
+                        "x": 79.55,
+                        "y": 59.25
+                    },
+                    "uuid": "3ee7d6d8-e247-442d-93a5-3eb377a48874"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Via [D4_SW3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.6,
+                        "y": 58.85
+                    },
+                    "uuid": "855cf93e-1369-4c46-9c67-d72b429ab26b"
+                },
+                {
+                    "description": "Pad 19 [D4_SW4] of U4 on B.Cu",
+                    "pos": {
+                        "x": 130.35,
+                        "y": 59.25
+                    },
+                    "uuid": "f61473e7-4ffa-4d17-b1c8-0ef345d3b47c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 6 [D2_CS9] of U2 on B.Cu",
+                    "pos": {
+                        "x": 83.45,
+                        "y": 59.25
+                    },
+                    "uuid": "4e094e21-94e2-4876-a9f2-9ce069bba420"
+                },
+                {
+                    "description": "Via [D2_CS8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 83.2,
+                        "y": 58.85
+                    },
+                    "uuid": "65ef5161-e92f-40e4-9943-96e872309341"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_SW2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.2,
+                        "y": 58.45
+                    },
+                    "uuid": "5110d63e-5689-45f2-8312-ec75f00740eb"
+                },
+                {
+                    "description": "Pad 22 [D3_SW1] of U3 on B.Cu",
+                    "pos": {
+                        "x": 104.95,
+                        "y": 58.05
+                    },
+                    "uuid": "65b57345-8a8b-484f-a8b8-698b2c009c28"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS9] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.6,
+                        "y": 59.25
+                    },
+                    "uuid": "6f268273-f1c0-48a8-865a-2781bf124dae"
+                },
+                {
+                    "description": "Pad 5 [D3_CS8] of U3 on B.Cu",
+                    "pos": {
+                        "x": 108.85,
+                        "y": 58.85
+                    },
+                    "uuid": "b7d37e48-1085-451b-b657-501406c164e4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Via [D3_CS6] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 108.6,
+                        "y": 58.05
+                    },
+                    "uuid": "a7ae4c37-923c-4047-afa5-0f1a6b4ca526"
+                },
+                {
+                    "description": "Pad 2 [D3_CS5] of U3 on B.Cu",
+                    "pos": {
+                        "x": 108.85,
+                        "y": 57.65
+                    },
+                    "uuid": "c401c5d2-0ae4-4c69-984a-eec3e00030a8"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 27 [SCL] of U3 on B.Cu",
+                    "pos": {
+                        "x": 106.3,
+                        "y": 56.7
+                    },
+                    "uuid": "c9c8f318-5b00-465c-8d4c-6c260b9bc2d2"
+                },
+                {
+                    "description": "Via [SDA] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 56.95
+                    },
+                    "uuid": "cdfc7f97-935f-46f6-9ac4-74ed56c48107"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        }
+    ]
+}

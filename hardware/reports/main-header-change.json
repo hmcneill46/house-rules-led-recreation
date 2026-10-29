@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-29",
+  "change": "Main J1 only, horizontal SM06B to vertical BM06B, root approved",
+  "footprint": "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical",
+  "mpn": "BM06B-SRSS-TB(LF)(SN)",
+  "lcsc": "C160392",
+  "source_angle": 270,
+  "backside_final_angle": -90.0,
+  "centre": [
+    69.0,
+    12.2
+  ],
+  "old_pad_positions": [
+    {
+      "pad": "1",
+      "net": "VBUS",
+      "x": 71.6,
+      "y": 11.15
+    },
+    {
+      "pad": "2",
+      "net": "USB_DM",
+      "x": 71.6,
+      "y": 10.15
+    },
+    {
+      "pad": "3",
+      "net": "USB_DP",
+      "x": 71.6,
+      "y": 9.15
+    },
+    {
+      "pad": "4",
+      "net": "GND",
+      "x": 71.6,
+      "y": 8.15
+    },
+    {
+      "pad": "5",
+      "net": "CC1",
+      "x": 71.6,
+      "y": 7.15
+    },
+    {
+      "pad": "6",
+      "net": "CC2",
+      "x": 71.6,
+      "y": 6.15
+    },
+    {
+      "pad": "MP",
+      "net": "GND",
+      "x": 67.725,
+      "y": 12.45
+    },
+    {
+      "pad": "MP",
+      "net": "GND",
+      "x": 67.725,
+      "y": 4.85
+    }
+  ],
+  "new_pad_positions": [
+    {
+      "pad": "1",
+      "net": "VBUS",
+      "x": 70.325,
+      "y": 9.7
+    },
+    {
+      "pad": "2",
+      "net": "USB_DM",
+      "x": 70.325,
+      "y": 10.7
+    },
+    {
+      "pad": "3",
+      "net": "USB_DP",
+      "x": 70.325,
+      "y": 11.7
+    },
+    {
+      "pad": "4",
+      "net": "GND",
+      "x": 70.325,
+      "y": 12.7
+    },
+    {
+      "pad": "5",
+      "net": "CC1",
+      "x": 70.325,
+      "y": 13.7
+    },
+    {
+      "pad": "6",
+      "net": "CC2",
+      "x": 70.325,
+      "y": 14.7
+    },
+    {
+      "pad": "MP",
+      "net": "GND",
+      "x": 67.8,
+      "y": 8.4
+    },
+    {
+      "pad": "MP",
+      "net": "GND",
+      "x": 67.8,
+      "y": 16.0
+    }
+  ],
+  "all_other_tracks_unchanged": true,
+  "tracks_and_vias_preserved": 1450,
+  "prechange_backup": "hardware/reports/main-header-before-change.kicad_pcb",
+  "routing_repair_required": true
+}

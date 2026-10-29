@@ -1,0 +1,50 @@
+01:06:15 PM: Debug: Adding duplicate image handler for 'PNG file'
+01:06:15 PM: Debug: Adding duplicate image handler for 'JPEG file'
+01:06:15 PM: Debug: Adding duplicate image handler for 'TIFF file'
+01:06:15 PM: Debug: Adding duplicate image handler for 'GIF file'
+01:06:15 PM: Debug: Adding duplicate image handler for 'PNM file'
+01:06:15 PM: Debug: Adding duplicate image handler for 'PCX file'
+01:06:15 PM: Debug: Adding duplicate image handler for 'IFF file'
+01:06:15 PM: Debug: Adding duplicate image handler for 'Windows icon file'
+01:06:15 PM: Debug: Adding duplicate image handler for 'Windows cursor file'
+01:06:15 PM: Debug: Adding duplicate image handler for 'Windows animated cursor file'
+01:06:15 PM: Debug: Adding duplicate image handler for 'TGA file'
+01:06:15 PM: Debug: Adding duplicate image handler for 'XPM file'
+D1_SW1 True 19 corners,0 vias,1789 nodes
+D1_SW2 False timeout 76500
+D1_SW2 False timeout 82000
+D2_SW1 True 19 corners,0 vias,1385 nodes
+D2_SW2 True 52 corners,2 vias,47334 nodes
+D2_SW2 False timeout 63000
+D2_CS6 False timeout 75000
+D2_CS7 False timeout 90000
+D4_SW1 True 19 corners,0 vias,1516 nodes
+D4_SW2 False timeout 50500
+D4_CS6 True 37 corners,2 vias,40308 nodes
+D2_CS9 True 15 corners,0 vias,623 nodes
+D3_SW1 True 21 corners,1 vias,1694 nodes
+D3_SW2 True 21 corners,0 vias,929 nodes
+D3_SW2 True 22 corners,1 vias,31151 nodes
+D3_CS11 True 36 corners,0 vias,36637 nodes
+D3_SW3 False timeout 72500
+D3_CS8 False timeout 106500
+D1_CS7 False timeout 114000
+D3_CS5 False timeout 67000
+D3_CS7 False timeout 98000
+GND True 9 corners,2 vias,27397 nodes
+GND True 4 corners,0 vias,685 nodes
+GND True 6 corners,0 vias,791 nodes
+GND True 6 corners,0 vias,849 nodes
++5V True 2 corners,0 vias,214 nodes
+SDA True 26 corners,0 vias,4888 nodes
+SDA False timeout 71500
+LED_SDB True 56 corners,0 vias,21181 nodes
+LED_SDB True 24 corners,0 vias,9076 nodes
+LED_SDB False timeout 103500
+VBUS True 7 corners,1 vias,1705 nodes
+CC1 True 4 corners,1 vias,347 nodes
+CC1 True 27 corners,1 vias,20342 nodes
+CC2 True 68 corners,2 vias,36607 nodes
++3V3 True 21 corners,0 vias,1153 nodes
+SWDIO True 15 corners,0 vias,1852 nodes
+Added 24 connections; rerun native DRC.

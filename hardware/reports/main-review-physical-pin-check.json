@@ -1,0 +1,645 @@
+{
+  "date": "2026-10-29",
+  "source_pcb_sha256": "7133b097d8dfc19cac498e8d09aa53dc45d966043f59b53e3d482efd07344c16",
+  "component_count": 49,
+  "physical_numbered_pads": 330,
+  "connected_pin_assignments_checked": 277,
+  "pad_net_mismatches": [],
+  "led_pins_geometrically_checked": 84,
+  "model_count": 43,
+  "missing_models": [],
+  "led_footprints": [
+    {
+      "ref": "DS2",
+      "front_pin1": "upper left; square pad",
+      "front_order": "left 1..6 down, right 12..7 down",
+      "pads": [
+        {
+          "pin": 1,
+          "x": 14.99,
+          "y": 2.3
+        },
+        {
+          "pin": 2,
+          "x": 14.99,
+          "y": 4.84
+        },
+        {
+          "pin": 3,
+          "x": 14.99,
+          "y": 7.38
+        },
+        {
+          "pin": 4,
+          "x": 14.99,
+          "y": 9.92
+        },
+        {
+          "pin": 5,
+          "x": 14.99,
+          "y": 12.46
+        },
+        {
+          "pin": 6,
+          "x": 14.99,
+          "y": 15.0
+        },
+        {
+          "pin": 7,
+          "x": 22.61,
+          "y": 15.0
+        },
+        {
+          "pin": 8,
+          "x": 22.61,
+          "y": 12.46
+        },
+        {
+          "pin": 9,
+          "x": 22.61,
+          "y": 9.92
+        },
+        {
+          "pin": 10,
+          "x": 22.61,
+          "y": 7.38
+        },
+        {
+          "pin": 11,
+          "x": 22.61,
+          "y": 4.84
+        },
+        {
+          "pin": 12,
+          "x": 22.61,
+          "y": 2.3
+        }
+      ],
+      "front_silk_marker": [
+        {
+          "start": [
+            14.989999999999995,
+            0.8500000000000014
+          ],
+          "end": [
+            15.5,
+            0.8500000000000014
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "DS3",
+      "front_pin1": "upper left; square pad",
+      "front_order": "left 1..6 down, right 12..7 down",
+      "pads": [
+        {
+          "pin": 1,
+          "x": 27.69,
+          "y": 2.3
+        },
+        {
+          "pin": 2,
+          "x": 27.69,
+          "y": 4.84
+        },
+        {
+          "pin": 3,
+          "x": 27.69,
+          "y": 7.38
+        },
+        {
+          "pin": 4,
+          "x": 27.69,
+          "y": 9.92
+        },
+        {
+          "pin": 5,
+          "x": 27.69,
+          "y": 12.46
+        },
+        {
+          "pin": 6,
+          "x": 27.69,
+          "y": 15.0
+        },
+        {
+          "pin": 7,
+          "x": 35.31,
+          "y": 15.0
+        },
+        {
+          "pin": 8,
+          "x": 35.31,
+          "y": 12.46
+        },
+        {
+          "pin": 9,
+          "x": 35.31,
+          "y": 9.92
+        },
+        {
+          "pin": 10,
+          "x": 35.31,
+          "y": 7.38
+        },
+        {
+          "pin": 11,
+          "x": 35.31,
+          "y": 4.84
+        },
+        {
+          "pin": 12,
+          "x": 35.31,
+          "y": 2.3
+        }
+      ],
+      "front_silk_marker": [
+        {
+          "start": [
+            27.689999999999998,
+            0.8500000000000014
+          ],
+          "end": [
+            28.200000000000003,
+            0.8500000000000014
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "DS7",
+      "front_pin1": "upper left; square pad",
+      "front_order": "left 1..6 down, right 12..7 down",
+      "pads": [
+        {
+          "pin": 1,
+          "x": 78.49,
+          "y": 2.3
+        },
+        {
+          "pin": 2,
+          "x": 78.49,
+          "y": 4.84
+        },
+        {
+          "pin": 3,
+          "x": 78.49,
+          "y": 7.38
+        },
+        {
+          "pin": 4,
+          "x": 78.49,
+          "y": 9.92
+        },
+        {
+          "pin": 5,
+          "x": 78.49,
+          "y": 12.46
+        },
+        {
+          "pin": 6,
+          "x": 78.49,
+          "y": 15.0
+        },
+        {
+          "pin": 7,
+          "x": 86.11,
+          "y": 15.0
+        },
+        {
+          "pin": 8,
+          "x": 86.11,
+          "y": 12.46
+        },
+        {
+          "pin": 9,
+          "x": 86.11,
+          "y": 9.92
+        },
+        {
+          "pin": 10,
+          "x": 86.11,
+          "y": 7.38
+        },
+        {
+          "pin": 11,
+          "x": 86.11,
+          "y": 4.84
+        },
+        {
+          "pin": 12,
+          "x": 86.11,
+          "y": 2.3
+        }
+      ],
+      "front_silk_marker": [
+        {
+          "start": [
+            78.49000000000001,
+            0.8500000000000014
+          ],
+          "end": [
+            79.0,
+            0.8500000000000014
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "DS4",
+      "front_pin1": "upper left; square pad",
+      "front_order": "left 1..6 down, right 12..7 down",
+      "pads": [
+        {
+          "pin": 1,
+          "x": 40.39,
+          "y": 2.3
+        },
+        {
+          "pin": 2,
+          "x": 40.39,
+          "y": 4.84
+        },
+        {
+          "pin": 3,
+          "x": 40.39,
+          "y": 7.38
+        },
+        {
+          "pin": 4,
+          "x": 40.39,
+          "y": 9.92
+        },
+        {
+          "pin": 5,
+          "x": 40.39,
+          "y": 12.46
+        },
+        {
+          "pin": 6,
+          "x": 40.39,
+          "y": 15.0
+        },
+        {
+          "pin": 7,
+          "x": 48.01,
+          "y": 15.0
+        },
+        {
+          "pin": 8,
+          "x": 48.01,
+          "y": 12.46
+        },
+        {
+          "pin": 9,
+          "x": 48.01,
+          "y": 9.92
+        },
+        {
+          "pin": 10,
+          "x": 48.01,
+          "y": 7.38
+        },
+        {
+          "pin": 11,
+          "x": 48.01,
+          "y": 4.84
+        },
+        {
+          "pin": 12,
+          "x": 48.01,
+          "y": 2.3
+        }
+      ],
+      "front_silk_marker": [
+        {
+          "start": [
+            40.39,
+            0.8500000000000014
+          ],
+          "end": [
+            40.900000000000006,
+            0.8500000000000014
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "DS6",
+      "front_pin1": "upper left; square pad",
+      "front_order": "left 1..6 down, right 12..7 down",
+      "pads": [
+        {
+          "pin": 1,
+          "x": 65.79,
+          "y": 2.3
+        },
+        {
+          "pin": 2,
+          "x": 65.79,
+          "y": 4.84
+        },
+        {
+          "pin": 3,
+          "x": 65.79,
+          "y": 7.38
+        },
+        {
+          "pin": 4,
+          "x": 65.79,
+          "y": 9.92
+        },
+        {
+          "pin": 5,
+          "x": 65.79,
+          "y": 12.46
+        },
+        {
+          "pin": 6,
+          "x": 65.79,
+          "y": 15.0
+        },
+        {
+          "pin": 7,
+          "x": 73.41,
+          "y": 15.0
+        },
+        {
+          "pin": 8,
+          "x": 73.41,
+          "y": 12.46
+        },
+        {
+          "pin": 9,
+          "x": 73.41,
+          "y": 9.92
+        },
+        {
+          "pin": 10,
+          "x": 73.41,
+          "y": 7.38
+        },
+        {
+          "pin": 11,
+          "x": 73.41,
+          "y": 4.84
+        },
+        {
+          "pin": 12,
+          "x": 73.41,
+          "y": 2.3
+        }
+      ],
+      "front_silk_marker": [
+        {
+          "start": [
+            65.79,
+            0.8500000000000014
+          ],
+          "end": [
+            66.3,
+            0.8500000000000014
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "DS1",
+      "front_pin1": "upper left; square pad",
+      "front_order": "left 1..6 down, right 12..7 down",
+      "pads": [
+        {
+          "pin": 1,
+          "x": 2.29,
+          "y": 2.3
+        },
+        {
+          "pin": 2,
+          "x": 2.29,
+          "y": 4.84
+        },
+        {
+          "pin": 3,
+          "x": 2.29,
+          "y": 7.38
+        },
+        {
+          "pin": 4,
+          "x": 2.29,
+          "y": 9.92
+        },
+        {
+          "pin": 5,
+          "x": 2.29,
+          "y": 12.46
+        },
+        {
+          "pin": 6,
+          "x": 2.29,
+          "y": 15.0
+        },
+        {
+          "pin": 7,
+          "x": 9.91,
+          "y": 15.0
+        },
+        {
+          "pin": 8,
+          "x": 9.91,
+          "y": 12.46
+        },
+        {
+          "pin": 9,
+          "x": 9.91,
+          "y": 9.92
+        },
+        {
+          "pin": 10,
+          "x": 9.91,
+          "y": 7.38
+        },
+        {
+          "pin": 11,
+          "x": 9.91,
+          "y": 4.84
+        },
+        {
+          "pin": 12,
+          "x": 9.91,
+          "y": 2.3
+        }
+      ],
+      "front_silk_marker": [
+        {
+          "start": [
+            2.289999999999999,
+            0.8500000000000014
+          ],
+          "end": [
+            2.799999999999997,
+            0.8500000000000014
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "DS5",
+      "front_pin1": "upper left; square pad",
+      "front_order": "left 1..6 down, right 12..7 down",
+      "pads": [
+        {
+          "pin": 1,
+          "x": 53.09,
+          "y": 2.3
+        },
+        {
+          "pin": 2,
+          "x": 53.09,
+          "y": 4.84
+        },
+        {
+          "pin": 3,
+          "x": 53.09,
+          "y": 7.38
+        },
+        {
+          "pin": 4,
+          "x": 53.09,
+          "y": 9.92
+        },
+        {
+          "pin": 5,
+          "x": 53.09,
+          "y": 12.46
+        },
+        {
+          "pin": 6,
+          "x": 53.09,
+          "y": 15.0
+        },
+        {
+          "pin": 7,
+          "x": 60.71,
+          "y": 15.0
+        },
+        {
+          "pin": 8,
+          "x": 60.71,
+          "y": 12.46
+        },
+        {
+          "pin": 9,
+          "x": 60.71,
+          "y": 9.92
+        },
+        {
+          "pin": 10,
+          "x": 60.71,
+          "y": 7.38
+        },
+        {
+          "pin": 11,
+          "x": 60.71,
+          "y": 4.84
+        },
+        {
+          "pin": 12,
+          "x": 60.71,
+          "y": 2.3
+        }
+      ],
+      "front_silk_marker": [
+        {
+          "start": [
+            53.09,
+            0.8500000000000014
+          ],
+          "end": [
+            53.599999999999994,
+            0.8500000000000014
+          ]
+        }
+      ]
+    }
+  ],
+  "led_nominal_body_extent": {
+    "x": [
+      -0.25,
+      88.65
+    ],
+    "y": [
+      -0.25,
+      17.55
+    ]
+  },
+  "board_extent": [
+    88.4,
+    17.3
+  ],
+  "nominal_pcb_inset_each_edge": 0.25,
+  "model_body_z_above_front_pcb": [
+    3.0,
+    9.3
+  ],
+  "model_lead_z_relative_front_pcb": [
+    -2.6,
+    3.0
+  ],
+  "main_board_thickness": 1.6,
+  "model_lead_projection_below_pcb": 1.0,
+  "notes": [
+    "Snapshot is provisional while main routing continues.",
+    "Physical upper-left dot pin test and simultaneous seven-module fit remain required.",
+    "3D model represents trimmed 0.5 mm round leads; actual lead form and solder fillets require a hardware check."
+  ],
+  "main_header": {
+    "mpn": "BM06B-SRSS-TB(LF)(SN)",
+    "centre": [
+      69.0,
+      12.2
+    ],
+    "source_angle": 270,
+    "side": "B",
+    "header_body_envelope_xy": [
+      [
+        67.1,
+        70.0
+      ],
+      [
+        8.2,
+        16.2
+      ]
+    ],
+    "mated_height": 6.3,
+    "mated_rear_z": 17.2,
+    "back_wire_bend_room": 5.6,
+    "carrier_mated_plug_min_x": 70.675,
+    "minimum_plastic_x_gap": 0.675,
+    "minimum_led_pad_copper_gap_x": 0.41,
+    "mating_housing": "SHR-06V-S without protrusions"
+  },
+  "led_model_primitive_fix": "Cylinder primitives replaced with explicit triangulated IndexedFaceSet in model_wrl(); native render now shows all 245 dots and all leads.",
+  "render_images": {
+    "main-review-top.png": {
+      "width": 1768,
+      "height": 592,
+      "sha256": "0bdfad443b718c7d3c12060e4a8f4447cc55637944265d6022b8828d63344629"
+    },
+    "main-review-bottom.png": {
+      "width": 1768,
+      "height": 592,
+      "sha256": "974ac6c9fe15533996dea9a7a8d334780ae8dbbaf2fb7c53808f1f3f4a2f83a4"
+    },
+    "main-review-bare-front.png": {
+      "width": 1768,
+      "height": 592,
+      "sha256": "c3c82ca7a7fd94e0611a99e20af35fb9228e3df60004b82631181f08c4d17880"
+    },
+    "main-review-edge.png": {
+      "width": 1768,
+      "height": 592,
+      "sha256": "c8227b03c7f2e7b443b8e942ea02bae52a6efde837b85158bf2c0fa00f950b68"
+    }
+  }
+}

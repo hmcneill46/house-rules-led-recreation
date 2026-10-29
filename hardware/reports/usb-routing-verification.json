@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-29",
+  "board": "usb",
+  "connected_logical_pins_checked": 40,
+  "physical_numbered_pads": 46,
+  "component_count": 7,
+  "pad_net_and_metadata_mismatches": [],
+  "pcb_sha256": "fb01d3a1369278d2435762de07fb7607957e51fce6277dc55044a102059ed40f",
+  "drc_report": "usb-routing-final-drc.json",
+  "drc_violations": 0,
+  "drc_unconnected": 0,
+  "drc_schematic_parity_issues": 0,
+  "routing_note": "Carrier retains full-speed USB locked traces; finishing script adds CC2 bridge and VBUS escape via In1.Cu. SES is the earlier autorouter session and must be followed by finish_usb_routing.py if re-imported."
+}

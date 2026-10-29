@@ -1,0 +1,9 @@
+{
+  "removed": [
+    "0e28b5de-d177-4a0d-81b3-ff4c933c6570",
+    "9c25bc4c-5fa5-4086-a5ab-945bdae3870e",
+    "5a39e4a6-d034-45c2-bb19-793d70eea2af"
+  ],
+  "all_component_pad_connectivity_preserved": true,
+  "last_report": "hardware/reports/main-tail-chain4-drc.json"
+}

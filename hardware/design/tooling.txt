@@ -1,0 +1,40 @@
+PCB software installed 29 October 2026
+
+KiCad 10.0.7, official universal macOS distribution.
+Installed app suite: /Applications/KiCad
+Main app: /Applications/KiCad/KiCad.app
+CLI: /Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli
+CLI version check returned 10.0.7.
+Bundled pcbnew Python binding also returned 10.0.7.
+
+Official source: https://www.kicad.org/download/macos/
+Downloaded official CERN mirror DMG:
+/Users/harrymcneill/Downloads/house-rules-tools/kicad-unified-universal-10.0.7.dmg
+Disk image checksums verified during mounting; image detached after installation.
+
+Homebrew installation was attempted first and failed because an unrelated
+/usr/local/share/man/man8 directory was not writable. Its permissions were not
+changed. The official drag-and-drop app bundle was installed directly instead.
+
+No matching PCB plugin was returned by the available plugin directory search.
+No unverified community MCP server was installed.
+
+Native KiCad schematic/PCB projects now exist under hardware/kicad/.
+They are the editable prototype design; final manufacturing release remains
+conditional on physical pin/fit checks, first-unit bench tests and supplier DFM.
+
+Freerouting 2.5.0 is installed at /Applications/freerouting.app.
+Its macOS launcher uses the bundled JVM. The standalone native CLI build was
+not used after a runtime serialization failure. Routing is checked in KiCad.
+
+Arduino CLI 1.5.1 / STM32duino 3.0.0 are pinned in a separate task cache.
+Firmware source, compiled image, build metadata and audit are under firmware/.
+
+The original design/ topology drawings are an early connection study; use
+kicad/ native boards, render/ CAD images and mechanical/assembly-stack.svg
+for the final geometry. Nothing has been ordered, purchased or published.
+
+OpenSCAD 2021.01 (official Intel macOS build) is installed at
+/Applications/OpenSCAD.app. Its downloaded DMG checksum matched the official
+openscad.org checksum. It compiled the prototype shell/back STLs and preview;
+positive-volume envelope/inter-part checks returned empty intersections.

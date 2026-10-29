@@ -1,0 +1,10 @@
+{
+  "removed": [
+    "b8961c83-0c00-42ad-b0e7-e2f0d4d34ea2",
+    "9350e4b5-8676-4da1-a4cd-bdcf468d118a",
+    "69734f20-b190-4e46-abd5-8a07e97ddc6e"
+  ],
+  "retained": [],
+  "all_component_pad_connectivity_preserved": true,
+  "temporary_directory": "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-route-cleanup-qjup_poj"
+}

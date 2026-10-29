@@ -1,0 +1,89 @@
+{
+  "status": "Read-only final protective change plan; not applied by this analysis",
+  "source_board_sha256": "898a2828f9272651f245421932c7af1265a65313df1dd219f97f5a91ab7bbda7",
+  "BOOT_series_resistor": {
+    "ref": "R14",
+    "value": "2k2 1%",
+    "manufacturer": "UNI-ROYAL",
+    "MPN": "0603WAF2201T5E",
+    "LCSC": "C4190",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "side": "B",
+    "source_angle_deg": 0,
+    "position_relative_aux_mm": [
+      14.3,
+      0.9
+    ],
+    "pins": {
+      "1": "BOOT_BUTTON",
+      "2": "BOOT_SWCLK"
+    },
+    "physical_pad_centres_relative_aux_mm": {
+      "1": [
+        15.125,
+        0.9
+      ],
+      "2": [
+        13.475,
+        0.9
+      ]
+    },
+    "net_update": {
+      "SW1.1": "BOOT_BUTTON",
+      "R14.1": "BOOT_BUTTON",
+      "R14.2": "BOOT_SWCLK",
+      "U5.25": "BOOT_SWCLK",
+      "R9.1": "BOOT_SWCLK"
+    },
+    "apply_notes": [
+      "SW1 has two physical pads numbered1; change both to BOOT_BUTTON.",
+      "Disconnect old BOOT_SWCLK copper from the SW1pin1 island; do not leave a copper bypass across R14.",
+      "Route SW1pin1 to R14pin1 and reconnect R14pin2 to the existing PA14/SWCLK net. R9 remains10k toGND.",
+      "Add the resistor to circuit-spec/source schematic and native PCB; retain existing geometry and rerun ERC/DRC/parity.",
+      "This position has no courtyard or copper collisions in the inspected board. Proposed(15.9,.9)was rejected for SW1courtyard/pad overlap.",
+      "Firmware and boot option-byte requirements do not change."
+    ],
+    "electrical_check": {
+      "nominal_ratio_external_10k_only": 0.819672131147541,
+      "conservative_ratio_10k_1percent_and_internal_pulldown25k": 0.7614264732756229,
+      "VIH_fraction_VDD_required": 0.7,
+      "max_contention_mA_at3V3_Rminus1percent": 1.5151515151515151
+    },
+    "primary_source": "https://www.st.com/resource/en/datasheet/stm32g0b1kb.pdf"
+  },
+  "U3_AD28_SDA_escape": {
+    "net": "SDA",
+    "pad": "U3.28",
+    "stub_layer": "B.Cu",
+    "stub_width_mm": 0.1,
+    "stub_polyline_absolute_mm": [
+      [
+        106.7,
+        56.7
+      ],
+      [
+        106.7,
+        56.95
+      ]
+    ],
+    "via_absolute_mm": [
+      106.7,
+      56.95
+    ],
+    "via_diameter_mm": 0.4,
+    "via_drill_mm": 0.2,
+    "via_type": "normal F.Cu-B.Cu through",
+    "lock_new_copper": true,
+    "native_shape_check": "No pad/protected-copper conflict at approved local via-pad0.10mm and otherwise0.15mm. Existing unlocked track conflicts need recheck after any routing edits.",
+    "unlocked_conflicts": [
+      {
+        "net": "D3_SW3",
+        "uuid": "060c0c72-98ff-4f1a-9ec2-95916c1ae2c2"
+      },
+      {
+        "net": "D3_CS6",
+        "uuid": "8855c30d-3bd8-4bb4-b1bb-393c0bae762a"
+      }
+    ]
+  }
+}

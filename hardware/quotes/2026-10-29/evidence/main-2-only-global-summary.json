@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-29",
+  "source": "Authenticated JLCPCB website checkout, root tab; summary screenshot saved beside this record",
+  "scope": "Main board only: five bare boards, two assembled; not both board designs",
+  "delivery": "Global Standard Direct Line, saved UK address",
+  "currency": "USD",
+  "merchandise": 144.02,
+  "shipping": 6.52,
+  "customs_duties_and_taxes": 30.11,
+  "discount_applied": null,
+  "grand_total": 180.65,
+  "no_order_submitted": true,
+  "note": "Main-only goods are below the \u00a3135 UK intrinsic-value threshold; use the actual checkout tax and route. Do not substitute this total for the combined order."
+}

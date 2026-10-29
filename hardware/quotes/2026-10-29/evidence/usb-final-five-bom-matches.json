@@ -1,0 +1,116 @@
+[
+  {
+    "cells": [
+      "C1",
+      "CL05B104KB54PNC",
+      "C_0402_1005Metric",
+      "CL05B104KB54PNC\nC307331\n100nF 50V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Basic",
+      "$0.0450",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "D1",
+      "SMF5.0A",
+      "D_SOD-123F",
+      "SMF5.0A\nC151296\n-65℃~+150℃ 200W@10/1000us 21.7A 400uA 5V 7V 9.2V IEC 61000-4-2 TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD) ROHS",
+      "7",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$0.9128",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "J1",
+      "USB4105-GF-A",
+      "USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+      "USB4105-GF-A-120\nC5184243 \n-40℃~+85℃ 1 16P 48V 5A Black Female Type-C USB 2.0 SMD USB Connectors ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$4.5855",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "J2",
+      "SM06B-SRSS-TB(LF)(SN)",
+      "JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal",
+      "SM06B-SRSS-TB(LF)(SN)\nC160405\n-25℃~+85℃ 1 1A 1mm 1x6P 2.9mm 4.32mm 50V 6 6P 8mm Auxiliary Solder Pin Copper alloy PA SH Surface Mount, Right Angle Tin UL94V-0 White SMD,P=1mm,Surface Mount，Right Angle Wire To Board Connector ROHS",
+      "5",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$4.4875",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "R1,R2",
+      "0603WAF5101T5E",
+      "R_0603_1608Metric",
+      "0603WAF5101T5E\nC23186\n-55℃~+155℃ 100mW 5.1kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
+      "10",
+      "5",
+      "2",
+      "0",
+      "/",
+      "10",
+      "JLCPCB",
+      "Basic",
+      "$0.0150",
+      ""
+    ],
+    "selected": true
+  },
+  {
+    "cells": [
+      "U1",
+      "TPD4E05U06DQAR",
+      "USON-10_2.5x1.0mm_P0.5mm",
+      "TPD4E05U06DQAR\nC138714\n-40℃~+125℃ 0.5pF 10nA 14V 2.5A@8/20us 40W@8/20us 5.5V 6.5V ESD Four channels IEC 61000-4-2、IEC 61000-4-5、IEC 61000-4-4 Unidirectional USON-10(1x2.5) ESD and Surge Protection (TVS/ESD) ROHS",
+      "9",
+      "5",
+      "1",
+      "0",
+      "/",
+      "5",
+      "JLCPCB",
+      "Extended",
+      "$0.7506",
+      ""
+    ],
+    "selected": true
+  }
+]

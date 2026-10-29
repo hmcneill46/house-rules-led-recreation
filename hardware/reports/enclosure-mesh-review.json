@@ -1,0 +1,42 @@
+{
+  "enclosure-PROTOTYPE-shell.stl": {
+    "triangles": 756,
+    "vertices": 376,
+    "watertight": true,
+    "winding_consistent": true,
+    "components": 1,
+    "bounds_mm": [
+      [
+        -2.599999,
+        -3.15,
+        0.0
+      ],
+      [
+        91.0,
+        19.450001,
+        22.799999
+      ]
+    ],
+    "signed_volume_mm3": 9295.826442708327
+  },
+  "enclosure-PROTOTYPE-back.stl": {
+    "triangles": 676,
+    "vertices": 340,
+    "watertight": true,
+    "winding_consistent": true,
+    "components": 1,
+    "bounds_mm": [
+      [
+        -2.599999,
+        -3.15,
+        0.0
+      ],
+      [
+        90.999992,
+        19.449989,
+        12.950001
+      ]
+    ],
+    "signed_volume_mm3": 3523.654702182434
+  }
+}

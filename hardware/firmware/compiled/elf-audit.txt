@@ -1,0 +1,22 @@
+USB full-speed configuration bytes: 09 02 43 00 02 01 00 80 fa
+Bus powered: bmAttributes=0x80; bMaxPower=250 x 2 mA=500 mA.
+Actual USB pin-map entries: PA_11=11, PA_12=12, no PREMAP flag.
+Automatic premain USB start is a no-op; setup starts CDC after pin/CC preparation.
+The strong re-enumeration helper detaches only; no pre-BCD reconnect.
+Link-wrapper call-flow verified in actual ARM ELF:
+- hw_config_init -> __wrap_USBD_CDC_init
+- setup -> _ZN9USBSerial5beginEv
+- _ZN9USBSerial5beginEv -> CDC_init
+- loop -> _Z20handleSerialCommandsv
+- CDC_init -> __wrap_USBD_Start
+- USBD_LL_Init -> USBD_reenumerate
+- USBD_LL_Init -> __wrap_HAL_PCD_Init
+- HAL_PCD_SuspendCallback -> __wrap_USBD_LL_Suspend
+- HAL_PCD_ResumeCallback -> __wrap_USBD_LL_Resume
+- __wrap_USBD_Start -> HAL_PCDEx_BCD_VBUSDetect
+
+SHA-256:
+6ea619cf4bf5c18033a87964acfd9ac2c68c241575a8528b129d5185226f01c6  HouseRules.ino.bin
+4caa8af008cab2ab12c6d3d00505e0666718723b43b0d98b9a0b38096927e89f  HouseRules.ino.elf
+3636de41270c26ec5a4d0e7fc8b111017b2e05eea29ba088f82c9f9be4329360  HouseRules.ino.hex
+9031748f781c5caa2af990d54ba9429a8c1fbe0bd4ed5677a42726f6a6fa3767  HouseRules.ino.map

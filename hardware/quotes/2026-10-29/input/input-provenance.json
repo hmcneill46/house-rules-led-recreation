@@ -1,0 +1,18 @@
+{
+  "main": {
+    "source_bom_sha256": "a3f6f40f77c8593f0ea79a59f85cdc6cdb21c76aad14704316d34ae2c42c9d80",
+    "quote_bom_sha256": "956cb51950d1a491388221745199b1dc3173d64158def1bdd888ef6381453807",
+    "source_cpl_sha256": "0fe372203ad81f75a10f29c222a4e08304d757cab55269a0998e12d852703413",
+    "quote_cpl_sha256": "0fe372203ad81f75a10f29c222a4e08304d757cab55269a0998e12d852703413",
+    "factory_placements_per_unit": 37,
+    "notes": "Column adaptation only. Exact MPN and LCSC identities retained. CPL unchanged; feeder rotations require manufacturer preview before order."
+  },
+  "usb": {
+    "source_bom_sha256": "0e0d44e252432c72d500ff044b4a33502ab0ba84bb6073e0ab93a737ec974d40",
+    "quote_bom_sha256": "e38b594f826bd35acc7ba3dd595d66d0e1fc1568a687924a24a7beee6d9dbe83",
+    "source_cpl_sha256": "1a760ad911407c2f3ec57059a5f2e8546ec0cb1593c8c7a9423b643313fe2e22",
+    "quote_cpl_sha256": "1a760ad911407c2f3ec57059a5f2e8546ec0cb1593c8c7a9423b643313fe2e22",
+    "factory_placements_per_unit": 7,
+    "notes": "Column adaptation only. Exact MPN and LCSC identities retained. CPL unchanged; feeder rotations require manufacturer preview before order."
+  }
+}

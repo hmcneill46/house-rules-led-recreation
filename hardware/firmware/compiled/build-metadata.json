@@ -1,0 +1,26 @@
+{
+  "arduino_cli": "1.5.1",
+  "stm32_core": "3.0.0",
+  "fqbn": "STMicroelectronics:stm32:GenG0:pnum=GENERIC_G0B1KBUX,usb=CDCgen,opt=osstd,upload_method=dfuMethod",
+  "usb_bMaxPower": 250,
+  "usb_bus_powered": true,
+  "link_time_optimisation": false,
+  "build_command": [
+    "/Users/harrymcneill/.cache/house-rules-arduino/bin/arduino-cli",
+    "compile",
+    "--config-file",
+    "/Users/harrymcneill/.cache/house-rules-arduino/arduino-cli.yaml",
+    "--fqbn",
+    "STMicroelectronics:stm32:GenG0:pnum=GENERIC_G0B1KBUX,usb=CDCgen,opt=osstd,upload_method=dfuMethod",
+    "--build-path",
+    "/Users/harrymcneill/.cache/house-rules-arduino/build/objects",
+    "--output-dir",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/firmware/compiled",
+    "--build-property",
+    "build.extra_flags=-DUSBD_SELF_POWERED=0 -DUSBD_MAX_POWER=250 -DADC_SAMPLINGTIME=ADC_SAMPLETIME_160CYCLES_5",
+    "--build-property",
+    "compiler.c.elf.extra_flags=-Wl,--wrap=USBD_Start -Wl,--wrap=USBD_LL_Suspend -Wl,--wrap=USBD_LL_Resume -Wl,--wrap=HAL_PCD_Init -Wl,--wrap=USBD_CDC_init",
+    "/Users/harrymcneill/.cache/house-rules-arduino/build/HouseRules"
+  ],
+  "status": "compiled; hardware untested"
+}

@@ -209,3 +209,14 @@ Original Artwork/House Rules Video.mov
 .DS_Store
 Original Artwork/cut video.mov
 Original Artwork/House Rules Video cut.mov
+
+# Local manufacturer checkout links and delivery-form evidence
+hardware/quotes/**/browser-handoff.json
+hardware/quotes/**/evidence/shipping-*
+
+# Personal KiCad state and downloaded research sources
+*.kicad_prl
+hardware/cost-down/reference/
+
+# Keep hardware verification/build records despite the general log rule above
+!hardware/**/*.log

@@ -1,0 +1,16 @@
+{
+  "main": {
+    "bom_rows": 14,
+    "placements": 37,
+    "all_selected": true,
+    "exact_mpn_lcsc_footprint_matches": true,
+    "source": "main-bom-jlc.csv"
+  },
+  "usb": {
+    "bom_rows": 6,
+    "placements": 7,
+    "all_selected": true,
+    "exact_mpn_lcsc_footprint_matches": true,
+    "source": "usb-bom-jlc-120-quote-only.csv"
+  }
+}

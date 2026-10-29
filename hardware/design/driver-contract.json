@@ -1,0 +1,41 @@
+{
+  "status": "proposed electrical mapping; actual pin orientation and hardware untested",
+  "driver": "IS31FL3729-QFLS4-TR",
+  "driver_datasheet": "https://www.lumissil.com/assets/pdf/core/IS31FL3729_DS.pdf",
+  "modules_per_driver": [
+    2,
+    2,
+    2,
+    1
+  ],
+  "address_AD_connections": [
+    "GND",
+    "SCL",
+    "SDA",
+    "VCC"
+  ],
+  "i2c_7bit_addresses": [
+    "0x34",
+    "0x35",
+    "0x36",
+    "0x37"
+  ],
+  "scan_phases": 5,
+  "ISET_ohms_provisional": 47000,
+  "GCC_maximum": "0x40",
+  "unused_outputs": "unconnected, PWM/scaling disabled; SW6-8 and CS16/SW9 also unused",
+  "support_pins": {
+    "VCC": 23,
+    "GND": [
+      9,
+      24,
+      "exposed pad"
+    ],
+    "ISET": 25,
+    "SDA": 26,
+    "SCL": 27,
+    "AD": 28,
+    "SDB": 29
+  },
+  "important": "This is not a complete schematic. Add power, decoupling, shutdown, logic, USB, MCU and test circuitry before layout. Register addresses do not specify an initialization sequence."
+}

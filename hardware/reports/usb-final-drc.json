@@ -1,0 +1,392 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-29T11:53:19",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [
+        {
+            "description": "C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 64.6,
+                        "y": 54.8
+                    },
+                    "uuid": "2071d3f3-1dc0-4ae7-804f-1c22967778fe"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Missing symbol field 'MPN' in footprint",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 64.6,
+                        "y": 54.8
+                    },
+                    "uuid": "2071d3f3-1dc0-4ae7-804f-1c22967778fe"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "D_SOD-123F doesn't match footprint given by symbol (Diode_SMD:D_SOD-123F)",
+            "items": [
+                {
+                    "description": "Footprint D1",
+                    "pos": {
+                        "x": 51.4,
+                        "y": 54.8
+                    },
+                    "uuid": "0665e2be-cca9-497f-8819-971961691887"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Missing symbol field 'MPN' in footprint",
+            "items": [
+                {
+                    "description": "Footprint D1",
+                    "pos": {
+                        "x": 51.4,
+                        "y": 54.8
+                    },
+                    "uuid": "0665e2be-cca9-497f-8819-971961691887"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal doesn't match footprint given by symbol (Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal)",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 63.5
+                    },
+                    "uuid": "df506a8b-74f6-4d62-9d19-7a137b8e59fe"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Missing symbol field 'MPN' in footprint",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 63.5
+                    },
+                    "uuid": "df506a8b-74f6-4d62-9d19-7a137b8e59fe"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-PadA8))",
+            "items": [
+                {
+                    "description": "Pad A8 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 59.25,
+                        "y": 59.82
+                    },
+                    "uuid": "bbfe9249-5492-4d83-bae7-42c14b964d1c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-PadB8))",
+            "items": [
+                {
+                    "description": "Pad B8 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 56.25,
+                        "y": 59.82
+                    },
+                    "uuid": "954e8721-2cd0-4bc8-92a1-bb4c65b747fc"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal doesn't match footprint given by symbol (Connector_JST:JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal)",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 53.1
+                    },
+                    "uuid": "30492c81-4774-474b-8246-e40bd71c9a04"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Missing symbol field 'MPN' in footprint",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 53.1
+                    },
+                    "uuid": "30492c81-4774-474b-8246-e40bd71c9a04"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)",
+            "items": [
+                {
+                    "description": "Footprint R1",
+                    "pos": {
+                        "x": 51.4,
+                        "y": 60.2
+                    },
+                    "uuid": "2b41ec5f-f1aa-46c7-a1f4-9a94f2826c05"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Missing symbol field 'MPN' in footprint",
+            "items": [
+                {
+                    "description": "Footprint R1",
+                    "pos": {
+                        "x": 51.4,
+                        "y": 60.2
+                    },
+                    "uuid": "2b41ec5f-f1aa-46c7-a1f4-9a94f2826c05"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)",
+            "items": [
+                {
+                    "description": "Footprint R2",
+                    "pos": {
+                        "x": 64.6,
+                        "y": 60.2
+                    },
+                    "uuid": "3f372c35-ee35-4ab2-8294-6c6ae40168d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Missing symbol field 'MPN' in footprint",
+            "items": [
+                {
+                    "description": "Footprint R2",
+                    "pos": {
+                        "x": 64.6,
+                        "y": 60.2
+                    },
+                    "uuid": "3f372c35-ee35-4ab2-8294-6c6ae40168d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "USON-10_2.5x1.0mm_P0.5mm doesn't match footprint given by symbol (Package_SON:USON-10_2.5x1.0mm_P0.5mm)",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 57.6
+                    },
+                    "uuid": "44337cde-62bf-4816-9a0c-eabf3b7016cd"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Missing symbol field 'MPN' in footprint",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 57.6
+                    },
+                    "uuid": "44337cde-62bf-4816-9a0c-eabf3b7016cd"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        }
+    ],
+    "source": "house-rules-usb.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.5450 mm",
+                    "pos": {
+                        "x": 54.255,
+                        "y": 59.82
+                    },
+                    "uuid": "b332e828-a63d-4478-ae12-03587fc74f1a"
+                },
+                {
+                    "description": "Track [GND] on F.Cu, length 0.7750 mm",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 57.2125
+                    },
+                    "uuid": "382c915d-6fba-4461-a98a-e580172496e6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track width (board setup constraints min width 0.1500 mm; actual 0.1124 mm)",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 1.7984 mm",
+                    "pos": {
+                        "x": 50.5738,
+                        "y": 57.6074
+                    },
+                    "uuid": "08525d80-3308-48dc-b169-9126ac4b9314"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.1500 mm; actual 0.1124 mm)",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.2975 mm",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 57.1922
+                    },
+                    "uuid": "37404030-9c04-49d8-8b1e-72b5e40d055d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.1500 mm; actual 0.1124 mm)",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 1.5368 mm",
+                    "pos": {
+                        "x": 65.3511,
+                        "y": 56.9563
+                    },
+                    "uuid": "6c46572c-c153-4bab-8b8c-db3259643e81"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.1500 mm; actual 0.1124 mm)",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.1072 mm",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 56.8947
+                    },
+                    "uuid": "6c4a155f-c902-4c4b-96d7-cfb82ebfbf30"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.1500 mm; actual 0.1124 mm)",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.0897 mm",
+                    "pos": {
+                        "x": 50.5738,
+                        "y": 55.809
+                    },
+                    "uuid": "f8bc6654-8ceb-466e-a74a-fb342e3b53bd"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.1500 mm; actual 0.1124 mm)",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.1959 mm",
+                    "pos": {
+                        "x": 65.3511,
+                        "y": 55.4195
+                    },
+                    "uuid": "ff512ad9-6c65-450a-b507-c8620ae15542"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        }
+    ]
+}

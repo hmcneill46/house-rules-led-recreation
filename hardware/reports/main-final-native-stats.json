@@ -1,0 +1,30 @@
+{
+  "pcb_sha256": "8b9df50fe0897db76a186902024ef12a80ff8da990d0e1d2d342f8fa2f86a830",
+  "footprints": 50,
+  "factory_footprints": 37,
+  "copper_layers": 6,
+  "thickness_mm": 1.6,
+  "tracks": 2539,
+  "vias": 192,
+  "via_types": {
+    "4": 192
+  },
+  "via_layer_spans": {
+    "0-2": 192
+  },
+  "via_filling_modes": {
+    "1": 192
+  },
+  "via_capping_modes": {
+    "1": 192
+  },
+  "minimum_track_mm": 0.1,
+  "power_widths_mm": {
+    "GND": 0.1,
+    "+5V": 0.15,
+    "VBUS": 0.15,
+    "+3V3": 0.1
+  },
+  "led_holes": 84,
+  "all_vias_through_and_type_vii": true
+}

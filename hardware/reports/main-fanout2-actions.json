@@ -1,0 +1,552 @@
+{
+  "status": "authorised exclusive fanout batch",
+  "source_board_sha256": "5332d6df01888bf60531bf0a1f7dc762fb9df119a4fe32a9cf4357d697813d8f",
+  "plans": [
+    {
+      "net": "D2_CS6",
+      "applied": true,
+      "via": [
+        84.5,
+        58.15
+      ],
+      "stub": [
+        [
+          83.45,
+          58.05
+        ],
+        [
+          84.5,
+          58.15
+        ]
+      ],
+      "removed": [
+        {
+          "uuid": "60b7dfec-8394-4fcd-b4ba-e8b2bd5bba97",
+          "net": "D2_SW3",
+          "type": "track"
+        },
+        {
+          "uuid": "6edb67b2-ae0d-45a8-a6cd-714dd2e6c8fd",
+          "net": "VBUS",
+          "type": "track"
+        },
+        {
+          "uuid": "ab9947e3-387c-4944-85ed-091611cb3faf",
+          "net": "VBUS",
+          "type": "track"
+        },
+        {
+          "uuid": "f1564f65-6900-456a-b937-2fef268fb8d4",
+          "net": "VBUS",
+          "type": "track"
+        }
+      ]
+    },
+    {
+      "net": "D2_CS7",
+      "applied": true,
+      "via": [
+        84.6,
+        58.75
+      ],
+      "stub": [
+        [
+          83.45,
+          58.45
+        ],
+        [
+          84.0,
+          58.45
+        ],
+        [
+          84.6,
+          58.75
+        ]
+      ],
+      "removed": [
+        {
+          "uuid": "1bff52fa-684f-4244-b4e2-42c9c22758fd",
+          "net": "D2_CS9",
+          "type": "track"
+        },
+        {
+          "uuid": "eb205d2b-4d42-42f8-b261-315bf9256507",
+          "net": "D2_CS8",
+          "type": "track"
+        },
+        {
+          "uuid": "c5f2b8bc-3ff1-4892-b498-5fe0f21d5e53",
+          "net": "VBUS",
+          "type": "track"
+        },
+        {
+          "uuid": "6db3afd5-7d73-4878-a115-225cd4b0b0cd",
+          "net": "NRST",
+          "type": "track"
+        },
+        {
+          "uuid": "b244f5b4-7cee-4ed7-a22b-0d79adee2560",
+          "net": "NRST",
+          "type": "track"
+        }
+      ]
+    },
+    {
+      "net": "D1_CS7",
+      "applied": true,
+      "via": [
+        59.2,
+        58.75
+      ],
+      "stub": [
+        [
+          58.05,
+          58.45
+        ],
+        [
+          58.6,
+          58.45
+        ],
+        [
+          59.2,
+          58.75
+        ]
+      ],
+      "removed": [
+        {
+          "uuid": "2d7a3586-90c6-499c-8a3c-9ab1da8522dc",
+          "net": "D1_CS9",
+          "type": "via"
+        },
+        {
+          "uuid": "20250526-53cc-4315-b085-f34ffb5362d2",
+          "net": "D1_CS9",
+          "type": "track"
+        },
+        {
+          "uuid": "048c0ee0-b79e-4fad-ba54-b50a92d3b534",
+          "net": "D1_CS9",
+          "type": "track"
+        },
+        {
+          "uuid": "7c46fe9c-39c8-4e0f-89a8-49476532a5b1",
+          "net": "D1_CS8",
+          "type": "track"
+        }
+      ]
+    },
+    {
+      "net": "D3_CS5",
+      "applied": true,
+      "via": [
+        109.6,
+        57.65
+      ],
+      "stub": [
+        [
+          108.85,
+          57.65
+        ],
+        [
+          109.6,
+          57.65
+        ]
+      ],
+      "removed": [
+        {
+          "uuid": "04df155e-75a2-4d93-90dc-be7c687bc04f",
+          "net": "D3_CS6",
+          "type": "track"
+        },
+        {
+          "uuid": "085c5049-a2c4-404a-b15e-dfeed7a3f8ac",
+          "net": "D3_CS6",
+          "type": "track"
+        },
+        {
+          "uuid": "54134e3e-5ec8-4b1e-9ae3-46af11ec746c",
+          "net": "D3_CS6",
+          "type": "track"
+        },
+        {
+          "uuid": "b4340976-0ba0-4cb0-80bb-ddf1d80c6478",
+          "net": "D3_CS6",
+          "type": "track"
+        }
+      ]
+    },
+    {
+      "net": "D3_CS7",
+      "applied": true,
+      "via": [
+        110.0,
+        58.75
+      ],
+      "stub": [
+        [
+          108.85,
+          58.45
+        ],
+        [
+          109.4,
+          58.45
+        ],
+        [
+          110.0,
+          58.75
+        ]
+      ],
+      "removed": [
+        {
+          "uuid": "fe211dd7-cc4d-401e-8671-f9a71ad779af",
+          "net": "D3_CS9",
+          "type": "track"
+        },
+        {
+          "uuid": "f010836d-6035-44d4-8445-0fe267a61a4f",
+          "net": "SCL",
+          "type": "track"
+        },
+        {
+          "uuid": "c3bc19d4-cd50-4194-b679-f154b507a7f7",
+          "net": "VBUS",
+          "type": "track"
+        }
+      ]
+    },
+    {
+      "net": "D3_CS8",
+      "applied": true,
+      "via": [
+        109.8,
+        59.35
+      ],
+      "stub": [
+        [
+          108.85,
+          58.85
+        ],
+        [
+          109.5,
+          58.85
+        ],
+        [
+          109.8,
+          59.35
+        ]
+      ],
+      "removed": [
+        {
+          "uuid": "927ba17a-475d-4359-86de-325f37a92344",
+          "net": "D3_CS10",
+          "type": "track"
+        },
+        {
+          "uuid": "fe0277b7-e30b-4f38-b607-06a20ffd268b",
+          "net": "D3_CS9",
+          "type": "track"
+        }
+      ]
+    },
+    {
+      "net": "D3_SW3",
+      "applied": true,
+      "via": [
+        103.9,
+        59.0
+      ],
+      "stub": [
+        [
+          104.95,
+          58.85
+        ],
+        [
+          103.9,
+          59.0
+        ]
+      ],
+      "removed": [
+        {
+          "uuid": "dd7c9b97-f51c-43ce-8970-4a15c0f0328c",
+          "net": "D3_SW2",
+          "type": "track"
+        },
+        {
+          "uuid": "eeda9586-4ecd-4111-93eb-7cf38226ad22",
+          "net": "D3_SW2",
+          "type": "track"
+        },
+        {
+          "uuid": "0f41b3a3-9671-4edc-8ee7-705882ac14ef",
+          "net": "D3_SW2",
+          "type": "track"
+        },
+        {
+          "uuid": "a55be90c-08d7-4bd5-ad69-43f937ba4927",
+          "net": "D3_SW2",
+          "type": "track"
+        },
+        {
+          "uuid": "5f3cf046-5c31-4549-833a-ba33f1192539",
+          "net": "D3_SW4",
+          "type": "track"
+        },
+        {
+          "uuid": "e7a61c10-256c-4a26-91b8-e7a6eac0d1b7",
+          "net": "D3_SW4",
+          "type": "track"
+        },
+        {
+          "uuid": "f5216e3e-ca34-4913-87e4-48ef3ff68bbf",
+          "net": "D3_SW4",
+          "type": "track"
+        }
+      ]
+    },
+    {
+      "net": "D1_SW2",
+      "applied": true,
+      "via": [
+        53.0,
+        58.9
+      ],
+      "stub": [
+        [
+          54.15,
+          58.45
+        ],
+        [
+          53.6,
+          58.45
+        ],
+        [
+          53.0,
+          58.9
+        ]
+      ],
+      "removed": [
+        {
+          "uuid": "19db6880-8a2e-45c6-bdaf-fec46ea09185",
+          "net": "D1_SW4",
+          "type": "track"
+        },
+        {
+          "uuid": "465999a3-4de7-4598-8851-0c1888aec4de",
+          "net": "D1_SW4",
+          "type": "track"
+        },
+        {
+          "uuid": "7bcbf62e-b8dc-4b70-8491-32234c8e195a",
+          "net": "D1_SW3",
+          "type": "via"
+        },
+        {
+          "uuid": "ec290ada-7ec0-4ff6-ad0d-bb91abb10119",
+          "net": "D1_SW3",
+          "type": "track"
+        },
+        {
+          "uuid": "c796fd36-dbb4-4f6e-a03d-bc468bf04166",
+          "net": "D1_SW3",
+          "type": "track"
+        }
+      ]
+    },
+    {
+      "net": "D2_SW2",
+      "applied": true,
+      "via": [
+        78.4,
+        58.9
+      ],
+      "stub": [
+        [
+          79.55,
+          58.45
+        ],
+        [
+          79.0,
+          58.45
+        ],
+        [
+          78.4,
+          58.9
+        ]
+      ],
+      "removed": [
+        {
+          "uuid": "62867758-cd10-4ba7-8b08-41a50e7beecf",
+          "net": "D2_CS5",
+          "type": "track"
+        },
+        {
+          "uuid": "8fb598f5-9ddd-4703-8cc6-c8310111654b",
+          "net": "D2_SW3",
+          "type": "track"
+        },
+        {
+          "uuid": "1ea5fec3-b464-41dc-9df6-dc122a8202e3",
+          "net": "D2_SW3",
+          "type": "track"
+        },
+        {
+          "uuid": "df3f9dd9-9ce7-43fc-9970-89cf25f935e1",
+          "net": "D2_SW3",
+          "type": "track"
+        }
+      ]
+    },
+    {
+      "net": "D4_SW2",
+      "applied": true,
+      "via": [
+        129.2,
+        58.9
+      ],
+      "stub": [
+        [
+          130.35,
+          58.45
+        ],
+        [
+          129.79999999999998,
+          58.45
+        ],
+        [
+          129.2,
+          58.9
+        ]
+      ],
+      "removed": [
+        {
+          "uuid": "09762fd9-e0be-4b17-8368-c9be0aa54b63",
+          "net": "D4_SW4",
+          "type": "track"
+        },
+        {
+          "uuid": "7d66f4ff-a619-4aa9-8065-47c962b8a2f7",
+          "net": "D4_SW4",
+          "type": "track"
+        },
+        {
+          "uuid": "bd88dbb9-e42b-4f18-a6ae-a127fbd57444",
+          "net": "D4_SW4",
+          "type": "track"
+        },
+        {
+          "uuid": "807469d7-0288-41f9-9b9c-bf9f927b4cda",
+          "net": "D4_SW3",
+          "type": "via"
+        },
+        {
+          "uuid": "4ffbca10-f682-4728-814b-9db13b722b7a",
+          "net": "D4_SW3",
+          "type": "track"
+        },
+        {
+          "uuid": "e97a0ecc-66f7-451e-8edc-1efd807cfd6c",
+          "net": "D4_SW3",
+          "type": "track"
+        },
+        {
+          "uuid": "97c2b80c-a55e-4585-96b7-9b7b4682b4fc",
+          "net": "D4_SW3",
+          "type": "track"
+        }
+      ]
+    }
+  ],
+  "power_tracks_widened_to_0.15_mm": [
+    {
+      "uuid": "1f1f8fea-a751-4620-9495-f83fb8841e1b",
+      "net": "+5V",
+      "old_width_mm": 0.1
+    },
+    {
+      "uuid": "bbd64497-b09d-4fa1-a0ef-c79e4aa74c4f",
+      "net": "+5V",
+      "old_width_mm": 0.1
+    },
+    {
+      "uuid": "c1cf48b9-cf22-47ec-9cca-30e1f5c5f3e1",
+      "net": "+5V",
+      "old_width_mm": 0.1
+    },
+    {
+      "uuid": "d63b9249-abc6-4cce-8b54-bcf3f8484c1b",
+      "net": "VBUS",
+      "old_width_mm": 0.1
+    },
+    {
+      "uuid": "05d92a85-f747-4bcd-8654-40ef2b0a7471",
+      "net": "VBUS",
+      "old_width_mm": 0.1
+    },
+    {
+      "uuid": "0636f7ad-c8b2-418d-acf5-5ebc944279db",
+      "net": "VBUS",
+      "old_width_mm": 0.1
+    },
+    {
+      "uuid": "0ba4fdb3-7ec4-4050-b5b7-d2521fff3f6d",
+      "net": "VBUS",
+      "old_width_mm": 0.1
+    },
+    {
+      "uuid": "0d442085-dddc-4b9b-932e-1f8d78902252",
+      "net": "VBUS",
+      "old_width_mm": 0.1
+    },
+    {
+      "uuid": "2fc2b11b-3186-4de5-8418-33885e46ff54",
+      "net": "VBUS",
+      "old_width_mm": 0.1
+    },
+    {
+      "uuid": "3fc71372-0172-4368-b2fa-3a6a2bcc183e",
+      "net": "VBUS",
+      "old_width_mm": 0.1
+    },
+    {
+      "uuid": "4a745984-0beb-45b8-aeef-09a6574559cc",
+      "net": "VBUS",
+      "old_width_mm": 0.1
+    },
+    {
+      "uuid": "5602f676-8df5-4d5a-9897-b0fc9bc70e51",
+      "net": "VBUS",
+      "old_width_mm": 0.1
+    },
+    {
+      "uuid": "a673d3fb-71e1-42ff-9ad3-62cf4da389f9",
+      "net": "VBUS",
+      "old_width_mm": 0.1
+    },
+    {
+      "uuid": "a6ae804b-9ac8-4f98-8b08-d3ebf8211603",
+      "net": "VBUS",
+      "old_width_mm": 0.1
+    },
+    {
+      "uuid": "a737689c-178d-4735-aa98-3a053b8bc635",
+      "net": "VBUS",
+      "old_width_mm": 0.1
+    },
+    {
+      "uuid": "d17b1761-90cd-4ae7-9942-a853c65a7249",
+      "net": "VBUS",
+      "old_width_mm": 0.1
+    },
+    {
+      "uuid": "ed49b6db-b1f8-457e-8583-b4ca5aa5bac4",
+      "net": "VBUS",
+      "old_width_mm": 0.1
+    },
+    {
+      "uuid": "f8a0c68c-4970-4a27-ae58-5aeff20306b4",
+      "net": "VBUS",
+      "old_width_mm": 0.1
+    }
+  ],
+  "final_board_sha256": "e18782999f17e81a4fe566190c06910b4298dd33de3f2ab402e9bd15b6c70eb0"
+}

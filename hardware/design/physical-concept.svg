@@ -1,0 +1,294 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="640" viewBox="0 0 1120 640">
+<rect width="1120" height="640" fill="#f4f2eb"/>
+<g font-family="Arial, sans-serif" fill="#222">
+<text x="60" y="49" font-size="30" font-weight="700">House Rules / physical design study</text>
+<text x="60" y="78" font-size="16">Nominal geometry and proposed wiring. Component placement and PCB outline remain to be verified.</text>
+<path d="M60 106H1038 M60 100V112 M1038 100V112" stroke="#444"/>
+<text x="549" y="101" font-size="15" text-anchor="middle">88.9 mm nominal</text>
+<rect x="60.00" y="126" width="139.7" height="195.8" fill="#151515" stroke="#666" stroke-width="1"/>
+<circle cx="73.97" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="73.97" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="73.97" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="73.97" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="73.97" cy="251.84" r="10.45" fill="#343434"/>
+<circle cx="73.97" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="73.97" cy="307.72" r="10.45" fill="#343434"/>
+<circle cx="101.91" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="101.91" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="101.91" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="101.91" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="101.91" cy="251.84" r="10.45" fill="#343434"/>
+<circle cx="101.91" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="101.91" cy="307.72" r="10.45" fill="#343434"/>
+<circle cx="129.85" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="129.85" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="129.85" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="129.85" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="129.85" cy="251.84" r="10.45" fill="#343434"/>
+<circle cx="129.85" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="129.85" cy="307.72" r="10.45" fill="#343434"/>
+<circle cx="157.79" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="157.79" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="157.79" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="157.79" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="157.79" cy="251.84" r="10.45" fill="#343434"/>
+<circle cx="157.79" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="157.79" cy="307.72" r="10.45" fill="#343434"/>
+<circle cx="185.73" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="185.73" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="185.73" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="185.73" cy="223.90" r="10.45" fill="#ef3e31"/>
+<circle cx="185.73" cy="251.84" r="10.45" fill="#ef3e31"/>
+<circle cx="185.73" cy="279.78" r="10.45" fill="#ef3e31"/>
+<circle cx="185.73" cy="307.72" r="10.45" fill="#ef3e31"/>
+<text x="129.85" y="347" text-anchor="middle" font-size="15">Module 1</text>
+<rect x="199.70" y="126" width="139.7" height="195.8" fill="#151515" stroke="#666" stroke-width="1"/>
+<circle cx="213.67" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="213.67" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="213.67" cy="195.96" r="10.45" fill="#ef3e31"/>
+<circle cx="213.67" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="213.67" cy="251.84" r="10.45" fill="#343434"/>
+<circle cx="213.67" cy="279.78" r="10.45" fill="#ef3e31"/>
+<circle cx="213.67" cy="307.72" r="10.45" fill="#343434"/>
+<circle cx="241.61" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="241.61" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="241.61" cy="195.96" r="10.45" fill="#ef3e31"/>
+<circle cx="241.61" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="241.61" cy="251.84" r="10.45" fill="#343434"/>
+<circle cx="241.61" cy="279.78" r="10.45" fill="#ef3e31"/>
+<circle cx="241.61" cy="307.72" r="10.45" fill="#343434"/>
+<circle cx="269.55" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="269.55" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="269.55" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="269.55" cy="223.90" r="10.45" fill="#ef3e31"/>
+<circle cx="269.55" cy="251.84" r="10.45" fill="#ef3e31"/>
+<circle cx="269.55" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="269.55" cy="307.72" r="10.45" fill="#343434"/>
+<circle cx="297.49" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="297.49" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="297.49" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="297.49" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="297.49" cy="251.84" r="10.45" fill="#343434"/>
+<circle cx="297.49" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="297.49" cy="307.72" r="10.45" fill="#343434"/>
+<circle cx="325.43" cy="140.08" r="10.45" fill="#ef3e31"/>
+<circle cx="325.43" cy="168.02" r="10.45" fill="#ef3e31"/>
+<circle cx="325.43" cy="195.96" r="10.45" fill="#ef3e31"/>
+<circle cx="325.43" cy="223.90" r="10.45" fill="#ef3e31"/>
+<circle cx="325.43" cy="251.84" r="10.45" fill="#ef3e31"/>
+<circle cx="325.43" cy="279.78" r="10.45" fill="#ef3e31"/>
+<circle cx="325.43" cy="307.72" r="10.45" fill="#ef3e31"/>
+<text x="269.55" y="347" text-anchor="middle" font-size="15">Module 2</text>
+<rect x="339.40" y="126" width="139.7" height="195.8" fill="#151515" stroke="#666" stroke-width="1"/>
+<circle cx="353.37" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="353.37" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="353.37" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="353.37" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="353.37" cy="251.84" r="10.45" fill="#343434"/>
+<circle cx="353.37" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="353.37" cy="307.72" r="10.45" fill="#343434"/>
+<circle cx="381.31" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="381.31" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="381.31" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="381.31" cy="223.90" r="10.45" fill="#ef3e31"/>
+<circle cx="381.31" cy="251.84" r="10.45" fill="#ef3e31"/>
+<circle cx="381.31" cy="279.78" r="10.45" fill="#ef3e31"/>
+<circle cx="381.31" cy="307.72" r="10.45" fill="#343434"/>
+<circle cx="409.25" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="409.25" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="409.25" cy="195.96" r="10.45" fill="#ef3e31"/>
+<circle cx="409.25" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="409.25" cy="251.84" r="10.45" fill="#ef3e31"/>
+<circle cx="409.25" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="409.25" cy="307.72" r="10.45" fill="#ef3e31"/>
+<circle cx="437.19" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="437.19" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="437.19" cy="195.96" r="10.45" fill="#ef3e31"/>
+<circle cx="437.19" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="437.19" cy="251.84" r="10.45" fill="#ef3e31"/>
+<circle cx="437.19" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="437.19" cy="307.72" r="10.45" fill="#ef3e31"/>
+<circle cx="465.13" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="465.13" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="465.13" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="465.13" cy="223.90" r="10.45" fill="#ef3e31"/>
+<circle cx="465.13" cy="251.84" r="10.45" fill="#ef3e31"/>
+<circle cx="465.13" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="465.13" cy="307.72" r="10.45" fill="#ef3e31"/>
+<text x="409.25" y="347" text-anchor="middle" font-size="15">Module 3</text>
+<rect x="479.10" y="126" width="139.7" height="195.8" fill="#151515" stroke="#666" stroke-width="1"/>
+<circle cx="493.07" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="493.07" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="493.07" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="493.07" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="493.07" cy="251.84" r="10.45" fill="#343434"/>
+<circle cx="493.07" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="493.07" cy="307.72" r="10.45" fill="#343434"/>
+<circle cx="521.01" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="521.01" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="521.01" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="521.01" cy="223.90" r="10.45" fill="#ef3e31"/>
+<circle cx="521.01" cy="251.84" r="10.45" fill="#ef3e31"/>
+<circle cx="521.01" cy="279.78" r="10.45" fill="#ef3e31"/>
+<circle cx="521.01" cy="307.72" r="10.45" fill="#343434"/>
+<circle cx="548.95" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="548.95" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="548.95" cy="195.96" r="10.45" fill="#ef3e31"/>
+<circle cx="548.95" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="548.95" cy="251.84" r="10.45" fill="#ef3e31"/>
+<circle cx="548.95" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="548.95" cy="307.72" r="10.45" fill="#ef3e31"/>
+<circle cx="576.89" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="576.89" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="576.89" cy="195.96" r="10.45" fill="#ef3e31"/>
+<circle cx="576.89" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="576.89" cy="251.84" r="10.45" fill="#ef3e31"/>
+<circle cx="576.89" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="576.89" cy="307.72" r="10.45" fill="#ef3e31"/>
+<circle cx="604.83" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="604.83" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="604.83" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="604.83" cy="223.90" r="10.45" fill="#ef3e31"/>
+<circle cx="604.83" cy="251.84" r="10.45" fill="#ef3e31"/>
+<circle cx="604.83" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="604.83" cy="307.72" r="10.45" fill="#ef3e31"/>
+<text x="548.95" y="347" text-anchor="middle" font-size="15">Module 4</text>
+<rect x="618.80" y="126" width="139.7" height="195.8" fill="#151515" stroke="#666" stroke-width="1"/>
+<circle cx="632.77" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="632.77" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="632.77" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="632.77" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="632.77" cy="251.84" r="10.45" fill="#343434"/>
+<circle cx="632.77" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="632.77" cy="307.72" r="10.45" fill="#343434"/>
+<circle cx="660.71" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="660.71" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="660.71" cy="195.96" r="10.45" fill="#ef3e31"/>
+<circle cx="660.71" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="660.71" cy="251.84" r="10.45" fill="#343434"/>
+<circle cx="660.71" cy="279.78" r="10.45" fill="#ef3e31"/>
+<circle cx="660.71" cy="307.72" r="10.45" fill="#ef3e31"/>
+<circle cx="688.65" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="688.65" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="688.65" cy="195.96" r="10.45" fill="#ef3e31"/>
+<circle cx="688.65" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="688.65" cy="251.84" r="10.45" fill="#ef3e31"/>
+<circle cx="688.65" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="688.65" cy="307.72" r="10.45" fill="#ef3e31"/>
+<circle cx="716.59" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="716.59" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="716.59" cy="195.96" r="10.45" fill="#ef3e31"/>
+<circle cx="716.59" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="716.59" cy="251.84" r="10.45" fill="#ef3e31"/>
+<circle cx="716.59" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="716.59" cy="307.72" r="10.45" fill="#ef3e31"/>
+<circle cx="744.53" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="744.53" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="744.53" cy="195.96" r="10.45" fill="#ef3e31"/>
+<circle cx="744.53" cy="223.90" r="10.45" fill="#ef3e31"/>
+<circle cx="744.53" cy="251.84" r="10.45" fill="#343434"/>
+<circle cx="744.53" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="744.53" cy="307.72" r="10.45" fill="#ef3e31"/>
+<text x="688.65" y="347" text-anchor="middle" font-size="15">Module 5</text>
+<rect x="758.50" y="126" width="139.7" height="195.8" fill="#151515" stroke="#666" stroke-width="1"/>
+<circle cx="772.47" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="772.47" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="772.47" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="772.47" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="772.47" cy="251.84" r="10.45" fill="#343434"/>
+<circle cx="772.47" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="772.47" cy="307.72" r="10.45" fill="#343434"/>
+<circle cx="800.41" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="800.41" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="800.41" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="800.41" cy="223.90" r="10.45" fill="#ef3e31"/>
+<circle cx="800.41" cy="251.84" r="10.45" fill="#ef3e31"/>
+<circle cx="800.41" cy="279.78" r="10.45" fill="#ef3e31"/>
+<circle cx="800.41" cy="307.72" r="10.45" fill="#343434"/>
+<circle cx="828.35" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="828.35" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="828.35" cy="195.96" r="10.45" fill="#ef3e31"/>
+<circle cx="828.35" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="828.35" cy="251.84" r="10.45" fill="#ef3e31"/>
+<circle cx="828.35" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="828.35" cy="307.72" r="10.45" fill="#ef3e31"/>
+<circle cx="856.29" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="856.29" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="856.29" cy="195.96" r="10.45" fill="#ef3e31"/>
+<circle cx="856.29" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="856.29" cy="251.84" r="10.45" fill="#ef3e31"/>
+<circle cx="856.29" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="856.29" cy="307.72" r="10.45" fill="#ef3e31"/>
+<circle cx="884.23" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="884.23" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="884.23" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="884.23" cy="223.90" r="10.45" fill="#ef3e31"/>
+<circle cx="884.23" cy="251.84" r="10.45" fill="#ef3e31"/>
+<circle cx="884.23" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="884.23" cy="307.72" r="10.45" fill="#ef3e31"/>
+<text x="828.35" y="347" text-anchor="middle" font-size="15">Module 6</text>
+<rect x="898.20" y="126" width="139.7" height="195.8" fill="#151515" stroke="#666" stroke-width="1"/>
+<circle cx="912.17" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="912.17" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="912.17" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="912.17" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="912.17" cy="251.84" r="10.45" fill="#343434"/>
+<circle cx="912.17" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="912.17" cy="307.72" r="10.45" fill="#343434"/>
+<circle cx="940.11" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="940.11" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="940.11" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="940.11" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="940.11" cy="251.84" r="10.45" fill="#343434"/>
+<circle cx="940.11" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="940.11" cy="307.72" r="10.45" fill="#343434"/>
+<circle cx="968.05" cy="140.08" r="10.45" fill="#ef3e31"/>
+<circle cx="968.05" cy="168.02" r="10.45" fill="#ef3e31"/>
+<circle cx="968.05" cy="195.96" r="10.45" fill="#ef3e31"/>
+<circle cx="968.05" cy="223.90" r="10.45" fill="#ef3e31"/>
+<circle cx="968.05" cy="251.84" r="10.45" fill="#343434"/>
+<circle cx="968.05" cy="279.78" r="10.45" fill="#ef3e31"/>
+<circle cx="968.05" cy="307.72" r="10.45" fill="#ef3e31"/>
+<circle cx="995.99" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="995.99" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="995.99" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="995.99" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="995.99" cy="251.84" r="10.45" fill="#343434"/>
+<circle cx="995.99" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="995.99" cy="307.72" r="10.45" fill="#343434"/>
+<circle cx="1023.93" cy="140.08" r="10.45" fill="#343434"/>
+<circle cx="1023.93" cy="168.02" r="10.45" fill="#343434"/>
+<circle cx="1023.93" cy="195.96" r="10.45" fill="#343434"/>
+<circle cx="1023.93" cy="223.90" r="10.45" fill="#343434"/>
+<circle cx="1023.93" cy="251.84" r="10.45" fill="#343434"/>
+<circle cx="1023.93" cy="279.78" r="10.45" fill="#343434"/>
+<circle cx="1023.93" cy="307.72" r="10.45" fill="#343434"/>
+<text x="968.05" y="347" text-anchor="middle" font-size="15">Module 7</text>
+<path d="M65.00 359V371H334.40V359" fill="none" stroke="#277e81" stroke-width="3"/>
+<rect x="65.00" y="390" width="269.40" height="75" rx="8" fill="#277e81"/>
+<text x="199.70" y="418" fill="white" text-anchor="middle" font-size="17">Driver 1</text>
+<text x="199.70" y="444" fill="white" text-anchor="middle" font-size="14">I2C 0x34</text>
+<path d="M199.70 465V493" stroke="#277e81" stroke-width="2"/>
+<path d="M344.40 359V371H613.80V359" fill="none" stroke="#397ab8" stroke-width="3"/>
+<rect x="344.40" y="390" width="269.40" height="75" rx="8" fill="#397ab8"/>
+<text x="479.10" y="418" fill="white" text-anchor="middle" font-size="17">Driver 2</text>
+<text x="479.10" y="444" fill="white" text-anchor="middle" font-size="14">I2C 0x35</text>
+<path d="M479.10 465V493" stroke="#397ab8" stroke-width="2"/>
+<path d="M623.80 359V371H893.20V359" fill="none" stroke="#8061b4" stroke-width="3"/>
+<rect x="623.80" y="390" width="269.40" height="75" rx="8" fill="#8061b4"/>
+<text x="758.50" y="418" fill="white" text-anchor="middle" font-size="17">Driver 3</text>
+<text x="758.50" y="444" fill="white" text-anchor="middle" font-size="14">I2C 0x36</text>
+<path d="M758.50 465V493" stroke="#8061b4" stroke-width="2"/>
+<path d="M903.20 359V371H1032.90V359" fill="none" stroke="#a86c2e" stroke-width="3"/>
+<rect x="903.20" y="390" width="129.70" height="75" rx="8" fill="#a86c2e"/>
+<text x="968.05" y="418" fill="white" text-anchor="middle" font-size="17">Driver 4</text>
+<text x="968.05" y="444" fill="white" text-anchor="middle" font-size="14">I2C 0x37</text>
+<path d="M968.05 465V493" stroke="#a86c2e" stroke-width="2"/>
+<path d="M150 493H971" stroke="#555" stroke-width="2"/>
+<rect x="450" y="510" width="220" height="55" rx="7" fill="#333"/>
+<text x="560" y="544" text-anchor="middle" fill="white" font-size="17">USB-capable controller</text>
+<path d="M560 493V510 M300 538H450" stroke="#555" stroke-width="2"/>
+<text x="285" y="544" text-anchor="end" font-size="17">USB-C power + data</text>
+<text x="60" y="599" font-size="16">All electronics sit behind the display. Driver boxes show electrical groups, not physical chip sizes or positions.</text>
+<text x="60" y="624" font-size="14">Seven upright modules touch along their long edges. PCB must remain inside the measured LED envelope.</text>
+</g></svg>

@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-29",
+  "renderer": "KiCad 10.0.7 native raytracer; high quality; opaque background; floor enabled",
+  "carrier_pcb_sha256": "fb01d3a1369278d2435762de07fb7607957e51fce6277dc55044a102059ed40f",
+  "component_models_checked": [
+    {
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "exists": true
+    },
+    {
+      "path": "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+      "exists": true
+    },
+    {
+      "path": "${KICAD10_3DMODEL_DIR}/Connector_JST.3dshapes/JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal.step",
+      "exists": true
+    },
+    {
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "exists": true
+    },
+    {
+      "path": "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/USON-10_2.5x1.0mm_P0.5mm.step",
+      "exists": true
+    },
+    {
+      "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step",
+      "exists": true
+    },
+    {
+      "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+      "exists": true
+    }
+  ],
+  "images": {
+    "usb-top.png": {
+      "width": 1208,
+      "height": 1208,
+      "sha256": "794187bb618b1cca3a84393b75b6aa9b78b8326811cada0325595ef82d532bf7"
+    },
+    "usb-bottom.png": {
+      "width": 1208,
+      "height": 1208,
+      "sha256": "5eeef2657ad90bde5d3deba5b20389f1edb4c218ed3121ef32569b8ebe37c3f1"
+    },
+    "usb-isometric.png": {
+      "width": 1208,
+      "height": 1208,
+      "sha256": "774467d591ed636a5c721efed3b4390989d0c2d9ca7707f448ae2a29b0590715"
+    },
+    "assembly-stack.png": {
+      "width": 1200,
+      "height": 900,
+      "sha256": "b2b7fe1c419e1aba8d757e79fefae80efdce212553760be0188611f9281b8a27"
+    }
+  },
+  "visual_review": [
+    "All seven populated carrier parts have stock STEP models and appear aligned to their pads.",
+    "JST header entry faces left, USB mating face points toward the bottom edge.",
+    "Top and bottom renders show the complete carrier and USB shell with framing margin.",
+    "Bottom view includes shell stakes, locating holes, vias and readable six-wire pin legend.",
+    "Isometric view exposes the USB mouth and connector height.",
+    "Assembly overview reflects the 93.6 x 22.6 x 21.0 concept and reinforced supports."
+  ],
+  "limits": "Images show the designed assembly, not a manufactured prototype; mated JST harness and enclosure are not present in the standalone PCB render."
+}

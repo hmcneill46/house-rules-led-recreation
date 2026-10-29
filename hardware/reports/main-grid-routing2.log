@@ -1,0 +1,45 @@
+01:18:16 PM: Debug: Adding duplicate image handler for 'PNG file'
+01:18:16 PM: Debug: Adding duplicate image handler for 'JPEG file'
+01:18:16 PM: Debug: Adding duplicate image handler for 'TIFF file'
+01:18:16 PM: Debug: Adding duplicate image handler for 'GIF file'
+01:18:16 PM: Debug: Adding duplicate image handler for 'PNM file'
+01:18:16 PM: Debug: Adding duplicate image handler for 'PCX file'
+01:18:16 PM: Debug: Adding duplicate image handler for 'IFF file'
+01:18:16 PM: Debug: Adding duplicate image handler for 'Windows icon file'
+01:18:16 PM: Debug: Adding duplicate image handler for 'Windows cursor file'
+01:18:16 PM: Debug: Adding duplicate image handler for 'Windows animated cursor file'
+01:18:16 PM: Debug: Adding duplicate image handler for 'TGA file'
+01:18:16 PM: Debug: Adding duplicate image handler for 'XPM file'
+D1_SW2 True 23 corners,0 vias,1298 nodes
+D1_SW2 True 12 corners,0 vias,2413 nodes
+D1_SW4 True 15 corners,0 vias,1868 nodes
+D1_SW3 False timeout 45500
+D1_CS9 True 3 corners,1 vias,277 nodes
+D1_CS8 False timeout 71500
+D2_SW2 True 11 corners,0 vias,1694 nodes
+D2_CS5 True 14 corners,0 vias,715 nodes
+D2_CS6 True 69 corners,0 vias,14281 nodes
+D2_CS7 True 17 corners,0 vias,1904 nodes
+D2_SW3 False timeout 42500
+D4_SW2 True 23 corners,0 vias,1298 nodes
+D4_SW4 True 9 corners,2 vias,25152 nodes
+D4_SW3 False timeout 85000
+D2_CS9 True 15 corners,0 vias,238 nodes
+D2_CS8 False timeout 68500
+D3_CS10 True 2 corners,0 vias,80 nodes
+D3_SW2 False timeout 72000
+D3_SW2 False timeout 91500
+D3_SW4 True 23 corners,0 vias,5991 nodes
+D3_SW3 True 58 corners,0 vias,26084 nodes
+D3_CS9 False timeout 75000
+D3_CS8 True 36 corners,1 vias,57935 nodes
+D1_CS7 True 25 corners,0 vias,4306 nodes
+D3_CS5 True 88 corners,0 vias,13448 nodes
+D3_CS6 False timeout 72000
+D3_CS7 True 17 corners,0 vias,4828 nodes
+SDA False timeout 47500
+SCL False timeout 38500
+LED_SDB False timeout 67000
+VBUS False timeout 41500
+NRST True 30 corners,1 vias,54353 nodes
+Added 19 connections; rerun native DRC.

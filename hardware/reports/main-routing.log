@@ -1,0 +1,45 @@
+2026-10-29 12:01:49.397 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+2026-10-29 12:01:49.694 INFO   Hardware: 32 CPU cores, 526 CPU score, 16384 MB RAM
+2026-10-29 12:01:49.695 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 12:01:49.696 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-29 12:01:50.755 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 12:01:51.023 INFO   [B40CD9\5CAC4C] Loading board file 'house-rules-main.dsn'...
+2026-10-29 12:01:51.105 INFO   Layer 'In1.Cu' contains a power plane / large copper pour covering >=30% of the board; associated net(s) configured for plane routing.
+2026-10-29 12:01:51.131 INFO   [B40CD9\5CAC4C] Job 'B40CD9\5CAC4C' started at 2026-10-29T12:01:51.131750Z.
+2026-10-29 12:01:51.196 WARN   Design Warning: Board has 2 pre-existing clearance violation(s) in the loaded design (before routing):
+  - 2 unfixable violation(s) (cannot be resolved by Freerouting):
+      * 2 fixed trace/via clearance violations:
+          - J1.3 [net USB_DP] <-> FixedVia#599 [net USB_DP]
+          - J1.2 [net USB_DM] <-> FixedVia#600 [net USB_DM]
+  - 0 potentially fixable violations
+Notice: Freerouting does not modify component placement, board outlines, or fixed items.
+Resolving these 2 unfixable violation(s) is the responsibility of the board author in their EDA tool (e.g. KiCad).
+2026-10-29 12:01:51.231 INFO   [B40CD9\5CAC4C] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=31.
+2026-10-29 12:01:51.294 INFO   [B40CD9\5CAC4C] Fanout stage started on board 'e935d1a4f1f3e5a6af64d8eee2f41e26' with 194 of 246 SMD pins needing fanout (52 already connected, 0 netless).
+2026-10-29 12:01:56.078 INFO   [B40CD9\5CAC4C] Fanout pass #1 on board '718ed513c4640d5d3dda97330a401cc9' completed in 4.74 seconds with 175 SMD pins fanouted, 19 not routed, 0 insert errors, +69 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-10-29 12:01:59.083 INFO   [B40CD9\5CAC4C] Fanout pass #2 on board '057747e3a3efe393ef26e6ee50e1e169' completed in 2.99 seconds with 79 SMD pins fanouted, 16 not routed, 0 insert errors, +24 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-10-29 12:02:01.396 INFO   [B40CD9\5CAC4C] Fanout pass #3 on board '8799c5876ff0f936b5e34af49fd3401a' completed in 2.29 seconds with 41 SMD pins fanouted, 16 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=300).
+2026-10-29 12:02:03.504 INFO   [B40CD9\5CAC4C] Fanout pass #4 on board 'cca70afb7f5c4a9a2bb730c7556a8258' completed in 2.09 seconds with 30 SMD pins fanouted, 16 not routed, 0 insert errors, +2 extra vias (0 SMD pins still to check in pass, ripup costs=400).
+2026-10-29 12:02:04.914 INFO   [B40CD9\5CAC4C] Fanout pass #5 on board 'e375944f55c28978ac06395482acc371' completed in 1.39 seconds with 29 SMD pins fanouted, 17 not routed, 0 insert errors, +3 extra vias (0 SMD pins still to check in pass, ripup costs=500).
+2026-10-29 12:02:05.886 INFO   [B40CD9\5CAC4C] Fanout pass #6 on board '2b8489cdec8a3c044d14f6d23a9e16d3' completed in 0.95 seconds with 26 SMD pins fanouted, 17 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=600).
+2026-10-29 12:02:06.670 INFO   [B40CD9\5CAC4C] Fanout pass #7 on board 'be30cb1dc0fcfa316a54a6233ba99edd' completed in 0.78 seconds with 24 SMD pins fanouted, 17 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=700).
+2026-10-29 12:02:07.313 INFO   [B40CD9\5CAC4C] Fanout pass #8 on board '82a5da97aff2e4e86aa4d942a3f9af53' completed in 0.64 seconds with 22 SMD pins fanouted, 18 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=800).
+2026-10-29 12:02:07.869 INFO   [B40CD9\5CAC4C] Fanout pass #9 on board 'd52371b088cf33a93349d7f02c7b744e' completed in 0.55 seconds with 22 SMD pins fanouted, 18 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=900).
+2026-10-29 12:02:08.351 INFO   [B40CD9\5CAC4C] Fanout pass #10 on board '8bd8cf9db888aa42fc8e4ff9f0132d5c' completed in 0.47 seconds with 22 SMD pins fanouted, 18 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1000).
+2026-10-29 12:02:08.859 INFO   [B40CD9\5CAC4C] Fanout pass #11 on board 'fc048daa5df81ac9d82c3f51a73c058d' completed in 0.50 seconds with 22 SMD pins fanouted, 18 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1100).
+2026-10-29 12:02:08.859 INFO   Fanout stopped after 11 passes: no progress for 3 consecutive passes.
+2026-10-29 12:02:08.888 INFO   [B40CD9\5CAC4C] Fanout stage completed: started with 246 total SMD pins, completed in 17.58 seconds, escaped pins: 169/246 (68.7%), using 17.49 total CPU seconds, 9.22 GB total allocated, and 328.7 MB peak heap usage.
+2026-10-29 12:02:09.023 INFO   [B40CD9\5CAC4C] Auto-routing stage started on board 'fc048daa5df81ac9d82c3f51a73c058d' with baseline score 278.30 for 113 unrouted items.
+2026-10-29 12:02:52.874 INFO   [B40CD9\5CAC4C] Auto-routing pass #1 on board 'fc048daa5df81ac9d82c3f51a73c058d' was completed in 43.79 seconds with score 594.45 (59 unrouted and 2 violations), using 60.87 CPU seconds and the job allocated 40.28 GB of memory so far.
+2026-10-29 12:03:36.781 INFO   [B40CD9\5CAC4C] Auto-routing pass #2 on board 'e1acf713762ca766d4268201d2aa9187' was completed in 43.85 seconds with score 594.45 (59 unrouted and 2 violations), using 104.89 CPU seconds and the job allocated 75.24 GB of memory so far.
+2026-10-29 12:04:08.015 INFO   [B40CD9\5CAC4C] Auto-routing pass #3 on board 'f3e2569bec370a6e0566aa05bc3e3b80' was completed in 31.06 seconds with score 690.67 (45 unrouted and 2 violations), using 135.94 CPU seconds and the job allocated 96.45 GB of memory so far.
+2026-10-29 12:04:37.062 INFO   [B40CD9\5CAC4C] Auto-routing pass #4 on board 'fba5b6d8c922abb30f7bb352c5baeeb5' was completed in 28.88 seconds with score 738.78 (38 unrouted and 2 violations), using 164.93 CPU seconds and the job allocated 116.84 GB of memory so far.
+2026-10-29 12:05:18.952 INFO   [B40CD9\5CAC4C] Auto-routing pass #5 on board 'e1f5faf8bc9d083eaaa23108cd87114d' was completed in 41.83 seconds with score 752.53 (36 unrouted and 2 violations), using 205.90 CPU seconds and the job allocated 140.43 GB of memory so far.
+2026-10-29 12:05:59.452 INFO   [B40CD9\5CAC4C] Auto-routing pass #6 on board 'e1c90af7f572d195275a74eacd13e76b' was completed in 40.40 seconds with score 766.27 (34 unrouted and 2 violations), using 246.96 CPU seconds and the job allocated 166.85 GB of memory so far.
+2026-10-29 12:06:53.636 INFO   [B40CD9\5CAC4C] Auto-routing pass #7 on board '6140506e0dc32980ca52db39491e122a' was completed in 53.98 seconds with score 766.27 (34 unrouted and 2 violations), using 299.86 CPU seconds and the job allocated 192.87 GB of memory so far.
+2026-10-29 12:07:48.939 INFO   [B40CD9\5CAC4C] Auto-routing pass #8 on board '281e155a48ad5b6e35dfe050a460ecd6' was completed in 55.11 seconds with score 773.15 (33 unrouted and 2 violations), using 340.56 CPU seconds and the job allocated 212.46 GB of memory so far.
+2026-10-29 12:07:49.452 INFO   [B40CD9\5CAC4C] Auto-routing stage completed: started with 192 unrouted nets, completed in 358.06 seconds, final score: 773.15 (33 unrouted and 2 violations), using 340.56 total CPU seconds, 212.46 GB total allocated, and 417.1 MB peak heap usage.
+2026-10-29 12:07:50.256 INFO   [B40CD9\5CAC4C] Skipping optimization stage: the board has 33 unrouted connection(s) (optimizer only runs on completely routed boards).
+2026-10-29 12:07:50.269 INFO   [B40CD9\5CAC4C] Job 'B40CD9\5CAC4C' finished with state: COMPLETED (elapsed: 5 minutes 59.14 seconds, finished at UTC: 2026-10-29T12:07:50.268499Z).
+2026-10-29 12:07:50.524 INFO   Saving output file '/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/kicad/house-rules-main.ses' (SES)...
+2026-10-29 12:07:50.525 INFO   Successfully saved output file '/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/kicad/house-rules-main.ses' (84884 bytes).

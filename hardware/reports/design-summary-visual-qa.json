@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-10-29T14:15:01.562Z",
+  "scope": "Local design-summary browser and link verification only; no physical hardware testing.",
+  "status": "passed",
+  "sectionCount": 8,
+  "localLinkCount": 24,
+  "images": [
+    {
+      "src": "render/main-top.png",
+      "width": 1768,
+      "height": 592
+    },
+    {
+      "src": "render/main-bottom.png",
+      "width": 1768,
+      "height": 592
+    },
+    {
+      "src": "render/main-bare-front.png",
+      "width": 1768,
+      "height": 592
+    },
+    {
+      "src": "render/usb-top.png",
+      "width": 1208,
+      "height": 1208
+    },
+    {
+      "src": "render/enclosure-PROTOTYPE-assembled.png",
+      "width": 1600,
+      "height": 900
+    }
+  ],
+  "desktop": {
+    "viewport": 1200,
+    "scrollWidth": 1200
+  },
+  "mobile": {
+    "viewport": 390,
+    "scrollWidth": 390
+  },
+  "boardRows": [
+    "Main display PCB 0 0 / 0 / 0 29 Oct 2026, 14:06 GMT Latest saved report",
+    "USB carrier 0 0 / 0 / 0 29 Oct 2026, 14:08 GMT Latest saved report"
+  ],
+  "browserErrors": [],
+  "missingLocalLinks": [],
+  "preview": "hardware/render/design-summary-preview.png"
+}

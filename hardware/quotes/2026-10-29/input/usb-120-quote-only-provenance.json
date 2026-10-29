@@ -1,0 +1,34 @@
+{
+  "status": "Quotation-only engineering-approved socket variant; not a released manufacturing BOM",
+  "source": "usb-bom-jlc.csv",
+  "source_sha256": "e38b594f826bd35acc7ba3dd595d66d0e1fc1568a687924a24a7beee6d9dbe83",
+  "output": "usb-bom-jlc-120-quote-only.csv",
+  "output_sha256": "60581042a20640054719b5c75615a4111716e9eb0f979857ca91f7d899648ea7",
+  "changes": [
+    {
+      "designator": "J1",
+      "before": {
+        "Comment": "USB4105-GF-A",
+        "Designator": "J1",
+        "Footprint": "USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+        "LCSC Part #": "C3020560"
+      },
+      "after": {
+        "Comment": "USB4105-GF-A-120",
+        "Designator": "J1",
+        "Footprint": "USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+        "LCSC Part #": "C5184243"
+      }
+    }
+  ],
+  "engineering_review": "../usb-socket-alternatives.md",
+  "unchanged": [
+    "PCB geometry",
+    "Gerbers",
+    "CPL positions and rotations",
+    "other component identities",
+    "canonical manufacturing package"
+  ],
+  "factory_requirement": "Factory must solder all four plated shell anchors as well as the SMT contacts, and confirm the supported process and final charge before production.",
+  "release_requirement": "Propagate approved variant to a new coherent source/manufacturing release before any actual order; review JLC part matching and feeder orientation."
+}

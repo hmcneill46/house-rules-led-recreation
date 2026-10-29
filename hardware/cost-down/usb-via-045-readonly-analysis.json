@@ -1,0 +1,152 @@
+{
+  "method": "Read-only KiCad effective copper-shape distance from each via centre to other-net tracks/vias/pads, minus proposed0.225mm radius AND another0.025mm when the other object is also a resized via. This is not full native DRC. Zones/thermal changes, hole clearances and soldermask not checked. No board saved or modified.",
+  "source": "hardware/kicad/house-rules-usb.kicad_pcb",
+  "sha256": "fb01d3a1369278d2435762de07fb7607957e51fce6277dc55044a102059ed40f",
+  "proposed_via_diameter_mm": 0.45,
+  "drill_unchanged_mm": 0.2,
+  "required_clearance_mm": 0.15,
+  "total_vias": 10,
+  "vias_below_clearance": 5,
+  "vias": [
+    {
+      "via_net": "GND",
+      "x_mm": 64.6,
+      "y_mm": 55.8152,
+      "nearest_other_net": {
+        "new_gap_mm": 0.6265,
+        "original_gap_mm": 0.6515,
+        "object": "track VBUS",
+        "object_net": "VBUS",
+        "layer": "F.Cu",
+        "other_via_grown": false
+      },
+      "below_0_15mm": false
+    },
+    {
+      "via_net": "GND",
+      "x_mm": 58.0,
+      "y_mm": 58.6,
+      "nearest_other_net": {
+        "new_gap_mm": 0.135235,
+        "original_gap_mm": 0.185235,
+        "object": "via VBUS",
+        "object_net": "VBUS",
+        "layer": "F.Cu",
+        "other_via_grown": true
+      },
+      "below_0_15mm": true
+    },
+    {
+      "via_net": "VBUS",
+      "x_mm": 63.1,
+      "y_mm": 58.9,
+      "nearest_other_net": {
+        "new_gap_mm": 0.620591,
+        "original_gap_mm": 0.645591,
+        "object": "J1.B5",
+        "object_net": "CC2",
+        "layer": "F.Cu",
+        "other_via_grown": false
+      },
+      "below_0_15mm": false
+    },
+    {
+      "via_net": "VBUS",
+      "x_mm": 58.2,
+      "y_mm": 59.15,
+      "nearest_other_net": {
+        "new_gap_mm": 0.135235,
+        "original_gap_mm": 0.185235,
+        "object": "via GND",
+        "object_net": "GND",
+        "layer": "F.Cu",
+        "other_via_grown": true
+      },
+      "below_0_15mm": true
+    },
+    {
+      "via_net": "CC1",
+      "x_mm": 52.2434,
+      "y_mm": 62.825,
+      "nearest_other_net": {
+        "new_gap_mm": 1.2431,
+        "original_gap_mm": 1.2681,
+        "object": "track GND",
+        "object_net": "GND",
+        "layer": "F.Cu",
+        "other_via_grown": false
+      },
+      "below_0_15mm": false
+    },
+    {
+      "via_net": "CC1",
+      "x_mm": 59.45,
+      "y_mm": 61.493,
+      "nearest_other_net": {
+        "new_gap_mm": 0.129525,
+        "original_gap_mm": 0.179525,
+        "object": "via USB_DM",
+        "object_net": "USB_DM",
+        "layer": "F.Cu",
+        "other_via_grown": true
+      },
+      "below_0_15mm": true
+    },
+    {
+      "via_net": "CC1",
+      "x_mm": 57.4094,
+      "y_mm": 58.6351,
+      "nearest_other_net": {
+        "new_gap_mm": 0.141641,
+        "original_gap_mm": 0.191641,
+        "object": "via GND",
+        "object_net": "GND",
+        "layer": "F.Cu",
+        "other_via_grown": true
+      },
+      "below_0_15mm": true
+    },
+    {
+      "via_net": "USB_DM",
+      "x_mm": 60.3,
+      "y_mm": 58.3,
+      "nearest_other_net": {
+        "new_gap_mm": 0.475,
+        "original_gap_mm": 0.5,
+        "object": "track VBUS",
+        "object_net": "VBUS",
+        "layer": "In1.Cu",
+        "other_via_grown": false
+      },
+      "below_0_15mm": false
+    },
+    {
+      "via_net": "USB_DM",
+      "x_mm": 60.95,
+      "y_mm": 61.2,
+      "nearest_other_net": {
+        "new_gap_mm": 0.4667,
+        "original_gap_mm": 0.4917,
+        "object": "track CC2",
+        "object_net": "CC2",
+        "layer": "F.Cu",
+        "other_via_grown": false
+      },
+      "below_0_15mm": false
+    },
+    {
+      "via_net": "USB_DM",
+      "x_mm": 59.95,
+      "y_mm": 61.2,
+      "nearest_other_net": {
+        "new_gap_mm": 0.129525,
+        "original_gap_mm": 0.179525,
+        "object": "via CC1",
+        "object_net": "CC1",
+        "layer": "F.Cu",
+        "other_via_grown": true
+      },
+      "below_0_15mm": true
+    }
+  ]
+}

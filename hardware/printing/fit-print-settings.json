@@ -1,0 +1,134 @@
+{
+  "source": "hardware/printing/pin-fit-KE-original.3mf",
+  "output": "hardware/printing/HouseRules_Fit_KE04_PLA.3mf",
+  "printer": "Creality Ender-3 V3 KE 0.4 nozzle",
+  "filament": "Creality Hyper PLA grey 1.75 mm",
+  "models_and_placement_preserved": true,
+  "machine_start_end_preserved": true,
+  "unmodified_entry_sha256": {
+    "[Content_Types].xml": "4acce1f577c7f0af6d9d5923faac96a76aeb1c06f0eef1762b2c8905cc0c846b",
+    "Metadata/plate_1.png": "25686fd6067bcaad03b277d02c25e275394b0d4ce96ea10aabaa26be8a60861b",
+    "Metadata/plate_1_small.png": "a7ba3e7a802dbc727c88da19f04d91c4cb3f2a99e7b033feab4ea52b264119dd",
+    "Metadata/plate_no_light_1.png": "549e37a91ef8c88c4fa7d2599787b2b1090092fca90eb1d1bc1513cf66e33d6d",
+    "Metadata/top_1.png": "60514c46bc3041c9a11c03d8985c0cc67c943c9bd3280ea961baccc50ecddd47",
+    "Metadata/pick_1.png": "a59a87b3bd88403fd24e0b1e649b695db8e485138bbcfc2932391b80d9630a04",
+    "3D/3dmodel.model": "2eb9c245a3b2b864161e4ec8d40b0c3b1b45f96d26aa9a7c449161a62237d328",
+    "3D/_rels/3dmodel.model.rels": "67fb04cd9691b55c3d058feef1ac2d9c78471bd256bc59e1d14f36d7a542ecad",
+    "3D/Objects/pin-fit-scale-50mm.stl_2.model": "45fa1bc1e7bfe3d1306338f21ff3a4b243deebffab79188bfbe6cc8c1e55c11c",
+    "3D/Objects/pin-fit-plate.stl_1.model": "fa516c9e43dc656e663a5564adb4115eb72039d006ec7cde3dba47abddaca3d9",
+    "Metadata/model_settings.config": "5c8e0b262bc3ef045fd9f4ec930ea0414ca6aead94378ec4ea8a37aae4cfaf6b",
+    "Metadata/slice_info.config": "fa4c767811be276df82bfc4a10de2208f7e775a859a350a186130b799a768e3b",
+    "Metadata/filament_sequence.json": "b22b4b14fba3081538bb78d2304ff061b72ccaf6b742d1edd5bf13ceb3242884",
+    "_rels/.rels": "eba9728f3f5482ecaee5c07f78ab85ac1b537747f60035da471f79678f858aa9"
+  },
+  "settings_overrides": {
+    "print_settings_id": "House Rules Fit 0.20mm @Ender-3 V3 KE 0.4",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "wall_loops": "3",
+    "top_shell_layers": "5",
+    "bottom_shell_layers": "5",
+    "top_shell_thickness": "0",
+    "bottom_shell_thickness": "0",
+    "initial_layer_speed": "20",
+    "initial_layer_infill_speed": "20",
+    "outer_wall_speed": "40",
+    "inner_wall_speed": "80",
+    "sparse_infill_speed": "100",
+    "internal_solid_infill_speed": "100",
+    "top_surface_speed": "40",
+    "gap_infill_speed": "40",
+    "small_perimeter_threshold": "2",
+    "small_perimeter_speed": "50%",
+    "default_acceleration": "2000",
+    "inner_wall_acceleration": "2000",
+    "outer_wall_acceleration": "1000",
+    "top_surface_acceleration": "1000",
+    "initial_layer_acceleration": "500",
+    "travel_acceleration": "2000",
+    "travel_speed": "200",
+    "xy_hole_compensation": "0",
+    "xy_contour_compensation": "0",
+    "elefant_foot_compensation": "0.05",
+    "elefant_foot_compensation_layers": "1",
+    "enable_support": "0",
+    "raft_layers": "0",
+    "brim_type": "no_brim",
+    "skirt_loops": "0",
+    "enable_prime_tower": "0",
+    "enable_arc_fitting": "0",
+    "filament_settings_id": [
+      "House Rules Hyper PLA Grey @Ender-3 V3 KE"
+    ],
+    "filament_vendor": [
+      "Creality"
+    ],
+    "filament_type": [
+      "PLA"
+    ],
+    "filament_colour": [
+      "#808080"
+    ],
+    "filament_multi_colour": [
+      "#808080"
+    ],
+    "nozzle_temperature": [
+      "215"
+    ],
+    "nozzle_temperature_initial_layer": [
+      "220"
+    ],
+    "filament_max_volumetric_speed": [
+      "10"
+    ],
+    "fan_min_speed": [
+      "100"
+    ],
+    "fan_max_speed": [
+      "100"
+    ],
+    "close_fan_the_first_x_layers": [
+      "1"
+    ],
+    "first_x_layer_fan_speed": [
+      "0"
+    ],
+    "full_fan_speed_layer": [
+      "2"
+    ],
+    "additional_cooling_fan_speed": [
+      "0"
+    ],
+    "slow_down_for_layer_cooling": [
+      "1"
+    ],
+    "slow_down_layer_time": [
+      "8"
+    ],
+    "slow_down_min_speed": [
+      "10"
+    ],
+    "dont_slow_down_outer_wall": [
+      "0"
+    ],
+    "hot_plate_temp": [
+      "55"
+    ],
+    "hot_plate_temp_initial_layer": [
+      "60"
+    ],
+    "eng_plate_temp": [
+      "55"
+    ],
+    "eng_plate_temp_initial_layer": [
+      "60"
+    ],
+    "textured_plate_temp": [
+      "55"
+    ],
+    "textured_plate_temp_initial_layer": [
+      "60"
+    ]
+  },
+  "note": "PLA fit-test only. Do not use this G-code with PETG. Physical print/caliper check still required."
+}

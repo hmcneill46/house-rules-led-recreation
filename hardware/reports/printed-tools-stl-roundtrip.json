@@ -1,0 +1,65 @@
+{
+  "pin-fit-plate.stl": {
+    "triangles": 11100,
+    "unique_vertices": 5384,
+    "all_edges_twice": true,
+    "opposite_winding_on_shared_edges": true,
+    "euler": -166,
+    "bounds": [
+      [
+        0.0,
+        88.4000015258789
+      ],
+      [
+        0.0,
+        17.299999237060547
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "pin-fit-scale-50mm.stl": {
+    "triangles": 12,
+    "unique_vertices": 8,
+    "all_edges_twice": true,
+    "opposite_winding_on_shared_edges": true,
+    "euler": 2,
+    "bounds": [
+      [
+        0.0,
+        50.0
+      ],
+      [
+        0.0,
+        10.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "led-standoff-spacer-3mm.stl": {
+    "triangles": 20,
+    "unique_vertices": 12,
+    "all_edges_twice": true,
+    "opposite_winding_on_shared_edges": true,
+    "euler": 2,
+    "bounds": [
+      [
+        0.0,
+        107.0
+      ],
+      [
+        0.0,
+        3.0
+      ],
+      [
+        0.0,
+        3.0
+      ]
+    ]
+  }
+}

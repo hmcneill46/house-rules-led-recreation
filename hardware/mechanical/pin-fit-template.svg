@@ -1,0 +1,307 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297">
+<rect width="210" height="297" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#111">
+<text x="20" y="20" font-size="5" font-weight="bold" text-anchor="start">House Rules / LED pin fit template</text>
+<text x="20" y="27" font-size="3" font-weight="normal" text-anchor="start">PRINT AT 100% / ACTUAL SIZE. Disable “fit to page”. Verify the 50 mm scale first.</text>
+<text x="20" y="32" font-size="3" font-weight="normal" text-anchor="start">Seven modules: front/LED-face view. Holes shown through the module bodies.</text>
+<rect x="20.0" y="37" width="12.7" height="17.8" fill="none" stroke="#777" stroke-width="0.15"/>
+<circle cx="22.54" cy="39.55" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<rect x="21.84" y="38.849999999999994" width="1.4" height="1.4" fill="none" stroke="#ca3d29" stroke-width="0.18"/>
+<text x="23.24" y="39.87" font-size="0.9" font-weight="normal" text-anchor="start">1</text>
+<circle cx="22.54" cy="42.09" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="23.24" y="42.410000000000004" font-size="0.9" font-weight="normal" text-anchor="start">2</text>
+<circle cx="22.54" cy="44.63" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="23.24" y="44.95" font-size="0.9" font-weight="normal" text-anchor="start">3</text>
+<circle cx="22.54" cy="47.17" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="23.24" y="47.49" font-size="0.9" font-weight="normal" text-anchor="start">4</text>
+<circle cx="22.54" cy="49.71" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="23.24" y="50.03" font-size="0.9" font-weight="normal" text-anchor="start">5</text>
+<circle cx="22.54" cy="52.25" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="23.24" y="52.57" font-size="0.9" font-weight="normal" text-anchor="start">6</text>
+<circle cx="30.16" cy="39.55" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="29.46" y="39.87" font-size="0.9" font-weight="normal" text-anchor="end">12</text>
+<circle cx="30.16" cy="42.09" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="29.46" y="42.410000000000004" font-size="0.9" font-weight="normal" text-anchor="end">11</text>
+<circle cx="30.16" cy="44.63" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="29.46" y="44.95" font-size="0.9" font-weight="normal" text-anchor="end">10</text>
+<circle cx="30.16" cy="47.17" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="29.46" y="47.49" font-size="0.9" font-weight="normal" text-anchor="end">9</text>
+<circle cx="30.16" cy="49.71" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="29.46" y="50.03" font-size="0.9" font-weight="normal" text-anchor="end">8</text>
+<circle cx="30.16" cy="52.25" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="29.46" y="52.57" font-size="0.9" font-weight="normal" text-anchor="end">7</text>
+<text x="26.35" y="58" font-size="2.3" font-weight="normal" text-anchor="middle">M1</text>
+<rect x="32.7" y="37" width="12.7" height="17.8" fill="none" stroke="#777" stroke-width="0.15"/>
+<circle cx="35.24" cy="39.55" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<rect x="34.54" y="38.849999999999994" width="1.4" height="1.4" fill="none" stroke="#ca3d29" stroke-width="0.18"/>
+<text x="35.940000000000005" y="39.87" font-size="0.9" font-weight="normal" text-anchor="start">1</text>
+<circle cx="35.24" cy="42.09" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="35.940000000000005" y="42.410000000000004" font-size="0.9" font-weight="normal" text-anchor="start">2</text>
+<circle cx="35.24" cy="44.63" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="35.940000000000005" y="44.95" font-size="0.9" font-weight="normal" text-anchor="start">3</text>
+<circle cx="35.24" cy="47.17" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="35.940000000000005" y="47.49" font-size="0.9" font-weight="normal" text-anchor="start">4</text>
+<circle cx="35.24" cy="49.71" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="35.940000000000005" y="50.03" font-size="0.9" font-weight="normal" text-anchor="start">5</text>
+<circle cx="35.24" cy="52.25" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="35.940000000000005" y="52.57" font-size="0.9" font-weight="normal" text-anchor="start">6</text>
+<circle cx="42.86" cy="39.55" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="42.16" y="39.87" font-size="0.9" font-weight="normal" text-anchor="end">12</text>
+<circle cx="42.86" cy="42.09" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="42.16" y="42.410000000000004" font-size="0.9" font-weight="normal" text-anchor="end">11</text>
+<circle cx="42.86" cy="44.63" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="42.16" y="44.95" font-size="0.9" font-weight="normal" text-anchor="end">10</text>
+<circle cx="42.86" cy="47.17" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="42.16" y="47.49" font-size="0.9" font-weight="normal" text-anchor="end">9</text>
+<circle cx="42.86" cy="49.71" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="42.16" y="50.03" font-size="0.9" font-weight="normal" text-anchor="end">8</text>
+<circle cx="42.86" cy="52.25" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="42.16" y="52.57" font-size="0.9" font-weight="normal" text-anchor="end">7</text>
+<text x="39.05" y="58" font-size="2.3" font-weight="normal" text-anchor="middle">M2</text>
+<rect x="45.4" y="37" width="12.7" height="17.8" fill="none" stroke="#777" stroke-width="0.15"/>
+<circle cx="47.94" cy="39.55" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<rect x="47.239999999999995" y="38.849999999999994" width="1.4" height="1.4" fill="none" stroke="#ca3d29" stroke-width="0.18"/>
+<text x="48.64" y="39.87" font-size="0.9" font-weight="normal" text-anchor="start">1</text>
+<circle cx="47.94" cy="42.09" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="48.64" y="42.410000000000004" font-size="0.9" font-weight="normal" text-anchor="start">2</text>
+<circle cx="47.94" cy="44.63" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="48.64" y="44.95" font-size="0.9" font-weight="normal" text-anchor="start">3</text>
+<circle cx="47.94" cy="47.17" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="48.64" y="47.49" font-size="0.9" font-weight="normal" text-anchor="start">4</text>
+<circle cx="47.94" cy="49.71" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="48.64" y="50.03" font-size="0.9" font-weight="normal" text-anchor="start">5</text>
+<circle cx="47.94" cy="52.25" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="48.64" y="52.57" font-size="0.9" font-weight="normal" text-anchor="start">6</text>
+<circle cx="55.56" cy="39.55" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="54.86" y="39.87" font-size="0.9" font-weight="normal" text-anchor="end">12</text>
+<circle cx="55.56" cy="42.09" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="54.86" y="42.410000000000004" font-size="0.9" font-weight="normal" text-anchor="end">11</text>
+<circle cx="55.56" cy="44.63" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="54.86" y="44.95" font-size="0.9" font-weight="normal" text-anchor="end">10</text>
+<circle cx="55.56" cy="47.17" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="54.86" y="47.49" font-size="0.9" font-weight="normal" text-anchor="end">9</text>
+<circle cx="55.56" cy="49.71" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="54.86" y="50.03" font-size="0.9" font-weight="normal" text-anchor="end">8</text>
+<circle cx="55.56" cy="52.25" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="54.86" y="52.57" font-size="0.9" font-weight="normal" text-anchor="end">7</text>
+<text x="51.75" y="58" font-size="2.3" font-weight="normal" text-anchor="middle">M3</text>
+<rect x="58.099999999999994" y="37" width="12.7" height="17.8" fill="none" stroke="#777" stroke-width="0.15"/>
+<circle cx="60.63999999999999" cy="39.55" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<rect x="59.93999999999999" y="38.849999999999994" width="1.4" height="1.4" fill="none" stroke="#ca3d29" stroke-width="0.18"/>
+<text x="61.339999999999996" y="39.87" font-size="0.9" font-weight="normal" text-anchor="start">1</text>
+<circle cx="60.63999999999999" cy="42.09" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="61.339999999999996" y="42.410000000000004" font-size="0.9" font-weight="normal" text-anchor="start">2</text>
+<circle cx="60.63999999999999" cy="44.63" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="61.339999999999996" y="44.95" font-size="0.9" font-weight="normal" text-anchor="start">3</text>
+<circle cx="60.63999999999999" cy="47.17" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="61.339999999999996" y="47.49" font-size="0.9" font-weight="normal" text-anchor="start">4</text>
+<circle cx="60.63999999999999" cy="49.71" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="61.339999999999996" y="50.03" font-size="0.9" font-weight="normal" text-anchor="start">5</text>
+<circle cx="60.63999999999999" cy="52.25" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="61.339999999999996" y="52.57" font-size="0.9" font-weight="normal" text-anchor="start">6</text>
+<circle cx="68.25999999999999" cy="39.55" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="67.55999999999999" y="39.87" font-size="0.9" font-weight="normal" text-anchor="end">12</text>
+<circle cx="68.25999999999999" cy="42.09" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="67.55999999999999" y="42.410000000000004" font-size="0.9" font-weight="normal" text-anchor="end">11</text>
+<circle cx="68.25999999999999" cy="44.63" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="67.55999999999999" y="44.95" font-size="0.9" font-weight="normal" text-anchor="end">10</text>
+<circle cx="68.25999999999999" cy="47.17" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="67.55999999999999" y="47.49" font-size="0.9" font-weight="normal" text-anchor="end">9</text>
+<circle cx="68.25999999999999" cy="49.71" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="67.55999999999999" y="50.03" font-size="0.9" font-weight="normal" text-anchor="end">8</text>
+<circle cx="68.25999999999999" cy="52.25" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="67.55999999999999" y="52.57" font-size="0.9" font-weight="normal" text-anchor="end">7</text>
+<text x="64.44999999999999" y="58" font-size="2.3" font-weight="normal" text-anchor="middle">M4</text>
+<rect x="70.8" y="37" width="12.7" height="17.8" fill="none" stroke="#777" stroke-width="0.15"/>
+<circle cx="73.34" cy="39.55" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<rect x="72.64" y="38.849999999999994" width="1.4" height="1.4" fill="none" stroke="#ca3d29" stroke-width="0.18"/>
+<text x="74.04" y="39.87" font-size="0.9" font-weight="normal" text-anchor="start">1</text>
+<circle cx="73.34" cy="42.09" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="74.04" y="42.410000000000004" font-size="0.9" font-weight="normal" text-anchor="start">2</text>
+<circle cx="73.34" cy="44.63" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="74.04" y="44.95" font-size="0.9" font-weight="normal" text-anchor="start">3</text>
+<circle cx="73.34" cy="47.17" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="74.04" y="47.49" font-size="0.9" font-weight="normal" text-anchor="start">4</text>
+<circle cx="73.34" cy="49.71" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="74.04" y="50.03" font-size="0.9" font-weight="normal" text-anchor="start">5</text>
+<circle cx="73.34" cy="52.25" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="74.04" y="52.57" font-size="0.9" font-weight="normal" text-anchor="start">6</text>
+<circle cx="80.96" cy="39.55" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="80.25999999999999" y="39.87" font-size="0.9" font-weight="normal" text-anchor="end">12</text>
+<circle cx="80.96" cy="42.09" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="80.25999999999999" y="42.410000000000004" font-size="0.9" font-weight="normal" text-anchor="end">11</text>
+<circle cx="80.96" cy="44.63" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="80.25999999999999" y="44.95" font-size="0.9" font-weight="normal" text-anchor="end">10</text>
+<circle cx="80.96" cy="47.17" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="80.25999999999999" y="47.49" font-size="0.9" font-weight="normal" text-anchor="end">9</text>
+<circle cx="80.96" cy="49.71" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="80.25999999999999" y="50.03" font-size="0.9" font-weight="normal" text-anchor="end">8</text>
+<circle cx="80.96" cy="52.25" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="80.25999999999999" y="52.57" font-size="0.9" font-weight="normal" text-anchor="end">7</text>
+<text x="77.15" y="58" font-size="2.3" font-weight="normal" text-anchor="middle">M5</text>
+<rect x="83.5" y="37" width="12.7" height="17.8" fill="none" stroke="#777" stroke-width="0.15"/>
+<circle cx="86.04" cy="39.55" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<rect x="85.34" y="38.849999999999994" width="1.4" height="1.4" fill="none" stroke="#ca3d29" stroke-width="0.18"/>
+<text x="86.74000000000001" y="39.87" font-size="0.9" font-weight="normal" text-anchor="start">1</text>
+<circle cx="86.04" cy="42.09" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="86.74000000000001" y="42.410000000000004" font-size="0.9" font-weight="normal" text-anchor="start">2</text>
+<circle cx="86.04" cy="44.63" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="86.74000000000001" y="44.95" font-size="0.9" font-weight="normal" text-anchor="start">3</text>
+<circle cx="86.04" cy="47.17" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="86.74000000000001" y="47.49" font-size="0.9" font-weight="normal" text-anchor="start">4</text>
+<circle cx="86.04" cy="49.71" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="86.74000000000001" y="50.03" font-size="0.9" font-weight="normal" text-anchor="start">5</text>
+<circle cx="86.04" cy="52.25" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="86.74000000000001" y="52.57" font-size="0.9" font-weight="normal" text-anchor="start">6</text>
+<circle cx="93.66" cy="39.55" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="92.96" y="39.87" font-size="0.9" font-weight="normal" text-anchor="end">12</text>
+<circle cx="93.66" cy="42.09" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="92.96" y="42.410000000000004" font-size="0.9" font-weight="normal" text-anchor="end">11</text>
+<circle cx="93.66" cy="44.63" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="92.96" y="44.95" font-size="0.9" font-weight="normal" text-anchor="end">10</text>
+<circle cx="93.66" cy="47.17" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="92.96" y="47.49" font-size="0.9" font-weight="normal" text-anchor="end">9</text>
+<circle cx="93.66" cy="49.71" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="92.96" y="50.03" font-size="0.9" font-weight="normal" text-anchor="end">8</text>
+<circle cx="93.66" cy="52.25" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="92.96" y="52.57" font-size="0.9" font-weight="normal" text-anchor="end">7</text>
+<text x="89.85" y="58" font-size="2.3" font-weight="normal" text-anchor="middle">M6</text>
+<rect x="96.19999999999999" y="37" width="12.7" height="17.8" fill="none" stroke="#777" stroke-width="0.15"/>
+<circle cx="98.74" cy="39.55" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<rect x="98.03999999999999" y="38.849999999999994" width="1.4" height="1.4" fill="none" stroke="#ca3d29" stroke-width="0.18"/>
+<text x="99.44" y="39.87" font-size="0.9" font-weight="normal" text-anchor="start">1</text>
+<circle cx="98.74" cy="42.09" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="99.44" y="42.410000000000004" font-size="0.9" font-weight="normal" text-anchor="start">2</text>
+<circle cx="98.74" cy="44.63" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="99.44" y="44.95" font-size="0.9" font-weight="normal" text-anchor="start">3</text>
+<circle cx="98.74" cy="47.17" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="99.44" y="47.49" font-size="0.9" font-weight="normal" text-anchor="start">4</text>
+<circle cx="98.74" cy="49.71" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="99.44" y="50.03" font-size="0.9" font-weight="normal" text-anchor="start">5</text>
+<circle cx="98.74" cy="52.25" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="99.44" y="52.57" font-size="0.9" font-weight="normal" text-anchor="start">6</text>
+<circle cx="106.35999999999999" cy="39.55" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="105.65999999999998" y="39.87" font-size="0.9" font-weight="normal" text-anchor="end">12</text>
+<circle cx="106.35999999999999" cy="42.09" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="105.65999999999998" y="42.410000000000004" font-size="0.9" font-weight="normal" text-anchor="end">11</text>
+<circle cx="106.35999999999999" cy="44.63" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="105.65999999999998" y="44.95" font-size="0.9" font-weight="normal" text-anchor="end">10</text>
+<circle cx="106.35999999999999" cy="47.17" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="105.65999999999998" y="47.49" font-size="0.9" font-weight="normal" text-anchor="end">9</text>
+<circle cx="106.35999999999999" cy="49.71" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="105.65999999999998" y="50.03" font-size="0.9" font-weight="normal" text-anchor="end">8</text>
+<circle cx="106.35999999999999" cy="52.25" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="105.65999999999998" y="52.57" font-size="0.9" font-weight="normal" text-anchor="end">7</text>
+<text x="102.54999999999998" y="58" font-size="2.3" font-weight="normal" text-anchor="middle">M7</text>
+<rect x="20.25" y="37.25" width="88.4" height="17.3" fill="none" stroke="#287d60" stroke-width="0.15" stroke-dasharray="1,0.7"/>
+<text x="116" y="43" font-size="2.7" font-weight="normal" text-anchor="start">Grey: module bodies</text>
+<text x="116" y="48" font-size="2.7" font-weight="normal" text-anchor="start">Green: PCB outline</text>
+<text x="116" y="53" font-size="2.7" font-weight="normal" text-anchor="start">Red square: pin 1</text>
+<text x="20" y="67" font-size="3" font-weight="bold" text-anchor="start">50 mm check scale</text>
+<rect x="20" y="70" width="10" height="2" fill="#111" stroke="#111" stroke-width="0.15"/>
+<rect x="30" y="70" width="10" height="2" fill="white" stroke="#111" stroke-width="0.15"/>
+<rect x="40" y="70" width="10" height="2" fill="#111" stroke="#111" stroke-width="0.15"/>
+<rect x="50" y="70" width="10" height="2" fill="white" stroke="#111" stroke-width="0.15"/>
+<rect x="60" y="70" width="10" height="2" fill="#111" stroke="#111" stroke-width="0.15"/>
+<text x="20" y="76" font-size="2.4" font-weight="normal" text-anchor="middle">0</text>
+<text x="30" y="76" font-size="2.4" font-weight="normal" text-anchor="middle">10</text>
+<text x="40" y="76" font-size="2.4" font-weight="normal" text-anchor="middle">20</text>
+<text x="50" y="76" font-size="2.4" font-weight="normal" text-anchor="middle">30</text>
+<text x="60" y="76" font-size="2.4" font-weight="normal" text-anchor="middle">40</text>
+<text x="70" y="76" font-size="2.4" font-weight="normal" text-anchor="middle">50</text>
+<text x="20" y="85" font-size="3" font-weight="normal" text-anchor="start">Nominal body: 12.7 × 17.8 mm. Centre pitch: 12.70 mm. Lead grid: 2.54 × 7.62 mm.</text>
+<text x="20" y="90" font-size="3" font-weight="normal" text-anchor="start">Hole circles: Ø0.9 mm. Proposed copper pad: Ø1.4 mm. PCB: 88.4 × 17.3 mm.</text>
+<text x="20" y="103" font-size="3.5" font-weight="bold" text-anchor="start">Individual module / rear pin view (1:1)</text>
+<rect x="20" y="108" width="12.7" height="17.8" fill="none" stroke="#777" stroke-width="0.15"/>
+<circle cx="22.54" cy="110.55" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="23.24" y="110.86999999999999" font-size="0.9" font-weight="normal" text-anchor="start">12</text>
+<circle cx="22.54" cy="113.09" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="23.24" y="113.41" font-size="0.9" font-weight="normal" text-anchor="start">11</text>
+<circle cx="22.54" cy="115.63" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="23.24" y="115.94999999999999" font-size="0.9" font-weight="normal" text-anchor="start">10</text>
+<circle cx="22.54" cy="118.17" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="23.24" y="118.49" font-size="0.9" font-weight="normal" text-anchor="start">9</text>
+<circle cx="22.54" cy="120.71000000000001" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="23.24" y="121.03" font-size="0.9" font-weight="normal" text-anchor="start">8</text>
+<circle cx="22.54" cy="123.25" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="23.24" y="123.57" font-size="0.9" font-weight="normal" text-anchor="start">7</text>
+<circle cx="30.16" cy="110.55" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<rect x="29.46" y="109.85" width="1.4" height="1.4" fill="none" stroke="#ca3d29" stroke-width="0.18"/>
+<text x="29.46" y="110.86999999999999" font-size="0.9" font-weight="normal" text-anchor="end">1</text>
+<circle cx="30.16" cy="113.09" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="29.46" y="113.41" font-size="0.9" font-weight="normal" text-anchor="end">2</text>
+<circle cx="30.16" cy="115.63" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="29.46" y="115.94999999999999" font-size="0.9" font-weight="normal" text-anchor="end">3</text>
+<circle cx="30.16" cy="118.17" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="29.46" y="118.49" font-size="0.9" font-weight="normal" text-anchor="end">4</text>
+<circle cx="30.16" cy="120.71000000000001" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="29.46" y="121.03" font-size="0.9" font-weight="normal" text-anchor="end">5</text>
+<circle cx="30.16" cy="123.25" r="0.45" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="29.46" y="123.57" font-size="0.9" font-weight="normal" text-anchor="end">6</text>
+<text x="39" y="113" font-size="3" font-weight="normal" text-anchor="start">Pins face you. This view is mirrored left/right.</text>
+<text x="39" y="118" font-size="3" font-weight="normal" text-anchor="start">Pin 1 is upper-right when the module is upright</text>
+<text x="39" y="123" font-size="3" font-weight="normal" text-anchor="start">in the front-view diagram above.</text>
+<text x="20" y="138" font-size="3.5" font-weight="bold" text-anchor="start">Orientation diagrams enlarged ×3 for readable pin numbers</text>
+<rect x="24" y="145" width="38.099999999999994" height="53.400000000000006" fill="none" stroke="#777" stroke-width="0.15"/>
+<circle cx="31.62" cy="152.65" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<rect x="29.520000000000003" y="150.55" width="4.199999999999999" height="4.199999999999999" fill="none" stroke="#ca3d29" stroke-width="0.18"/>
+<text x="33.72" y="153.61" font-size="2.7" font-weight="normal" text-anchor="start">1</text>
+<circle cx="31.62" cy="160.27" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="33.72" y="161.23000000000002" font-size="2.7" font-weight="normal" text-anchor="start">2</text>
+<circle cx="31.62" cy="167.89" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="33.72" y="168.85" font-size="2.7" font-weight="normal" text-anchor="start">3</text>
+<circle cx="31.62" cy="175.51" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="33.72" y="176.47" font-size="2.7" font-weight="normal" text-anchor="start">4</text>
+<circle cx="31.62" cy="183.13" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="33.72" y="184.09" font-size="2.7" font-weight="normal" text-anchor="start">5</text>
+<circle cx="31.62" cy="190.75" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="33.72" y="191.71" font-size="2.7" font-weight="normal" text-anchor="start">6</text>
+<circle cx="54.480000000000004" cy="152.65" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="52.38" y="153.61" font-size="2.7" font-weight="normal" text-anchor="end">12</text>
+<circle cx="54.480000000000004" cy="160.27" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="52.38" y="161.23000000000002" font-size="2.7" font-weight="normal" text-anchor="end">11</text>
+<circle cx="54.480000000000004" cy="167.89" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="52.38" y="168.85" font-size="2.7" font-weight="normal" text-anchor="end">10</text>
+<circle cx="54.480000000000004" cy="175.51" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="52.38" y="176.47" font-size="2.7" font-weight="normal" text-anchor="end">9</text>
+<circle cx="54.480000000000004" cy="183.13" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="52.38" y="184.09" font-size="2.7" font-weight="normal" text-anchor="end">8</text>
+<circle cx="54.480000000000004" cy="190.75" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="52.38" y="191.71" font-size="2.7" font-weight="normal" text-anchor="end">7</text>
+<rect x="87" y="145" width="38.099999999999994" height="53.400000000000006" fill="none" stroke="#777" stroke-width="0.15"/>
+<circle cx="94.62" cy="152.65" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="96.72" y="153.61" font-size="2.7" font-weight="normal" text-anchor="start">12</text>
+<circle cx="94.62" cy="160.27" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="96.72" y="161.23000000000002" font-size="2.7" font-weight="normal" text-anchor="start">11</text>
+<circle cx="94.62" cy="167.89" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="96.72" y="168.85" font-size="2.7" font-weight="normal" text-anchor="start">10</text>
+<circle cx="94.62" cy="175.51" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="96.72" y="176.47" font-size="2.7" font-weight="normal" text-anchor="start">9</text>
+<circle cx="94.62" cy="183.13" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="96.72" y="184.09" font-size="2.7" font-weight="normal" text-anchor="start">8</text>
+<circle cx="94.62" cy="190.75" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="96.72" y="191.71" font-size="2.7" font-weight="normal" text-anchor="start">7</text>
+<circle cx="117.48" cy="152.65" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<rect x="115.38000000000001" y="150.55" width="4.199999999999999" height="4.199999999999999" fill="none" stroke="#ca3d29" stroke-width="0.18"/>
+<text x="115.38000000000001" y="153.61" font-size="2.7" font-weight="normal" text-anchor="end">1</text>
+<circle cx="117.48" cy="160.27" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="115.38000000000001" y="161.23000000000002" font-size="2.7" font-weight="normal" text-anchor="end">2</text>
+<circle cx="117.48" cy="167.89" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="115.38000000000001" y="168.85" font-size="2.7" font-weight="normal" text-anchor="end">3</text>
+<circle cx="117.48" cy="175.51" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="115.38000000000001" y="176.47" font-size="2.7" font-weight="normal" text-anchor="end">4</text>
+<circle cx="117.48" cy="183.13" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="115.38000000000001" y="184.09" font-size="2.7" font-weight="normal" text-anchor="end">5</text>
+<circle cx="117.48" cy="190.75" r="1.35" fill="none" stroke="#111" stroke-width="0.12"/>
+<text x="115.38000000000001" y="191.71" font-size="2.7" font-weight="normal" text-anchor="end">6</text>
+<text x="43" y="204" font-size="3.2" font-weight="bold" text-anchor="middle">Front / LED face</text>
+<text x="106" y="204" font-size="3.2" font-weight="bold" text-anchor="middle">Rear / pins toward you</text>
+<text x="20" y="218" font-size="3.6" font-weight="bold" text-anchor="start">Electrical sample check before ordering</text>
+<text x="20" y="224" font-size="3" font-weight="normal" text-anchor="start">Identify the physical pin-1 corner; use the pin numbers, not readable side text.</text>
+<text x="20" y="230" font-size="3" font-weight="normal" text-anchor="start">At low current, pin 1 is the positive column anode and pin 12 the negative row cathode.</text>
+<text x="20" y="236" font-size="3" font-weight="normal" text-anchor="start">That pair should light the upper-left dot in the front view. Verify other rows/columns too.</text>
+<text x="20" y="245" font-size="3" font-weight="normal" text-anchor="start">A fit print verifies geometry only. It does not verify polarity, pad mapping, brightness or current.</text>
+<text x="20" y="251" font-size="3" font-weight="normal" text-anchor="start">The uploaded rear photo is rotated relative to these upright diagrams.</text>
+<text x="20" y="257" font-size="3" font-weight="normal" text-anchor="start">Check all three selected groups of seven modules against this template.</text>
+<text x="20" y="276" font-size="2.6" font-weight="normal" text-anchor="start">Design check drawing / 29 October 2026 / not a PCB manufacturing file</text>
+</g></svg>
