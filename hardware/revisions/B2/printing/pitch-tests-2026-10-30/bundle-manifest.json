@@ -1,0 +1,10 @@
+{
+  "bundle": "LED_Pitch_ABC_KE04_HyperPLA.zip",
+  "sha256": "dae070ad13e5b6f5b5469723422cf9c28c426372e626dae15c222f540466d1c3",
+  "entries_sha256": {
+    "LED_Pitch_ABC_KE04_HyperPLA.gcode": "53b96fd71387526b9321a7ee2ea648ea56e3aa40652a0850ede6944fe910eb1a",
+    "PRINT_FIRST.txt": "e25181d180dfbf2ca9bcd882e6b1749a71c69f7028f2cdc01debf2d48d9000d6",
+    "verification.json": "2ba4108c9790d68b053baf12f4156b16081f2feff0a4f9a06a5c137dfa3604cd"
+  },
+  "hardware_execution": "Not started"
+}

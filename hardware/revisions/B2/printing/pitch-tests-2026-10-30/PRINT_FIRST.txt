@@ -1,0 +1,29 @@
+LED SPACING TRIALS — Ender-3 V3 KE, 0.4 mm, grey Hyper PLA 1.75 mm
+
+Copy LED_Pitch_ABC_KE04_HyperPLA.gcode to the printer USB drive and start it
+manually. One file prints all three full seven-module strips and a 50 mm
+scale coupon. Estimate: 1h 24m 38s / 11.28 g, plus heating and levelling.
+Nozzle 220 C first layer / 215 C thereafter; bed 60 C / 55 C. No supports.
+
+A: P12.80 = 12.80 mm centre pitch, +0.10 mm per join.
+B: P12.90 = 12.90 mm centre pitch, +0.20 mm per join. Best-guess middle trial.
+C: P13.00 = 13.00 mm centre pitch, +0.30 mm per join.
+These labels are raised on end tabs outside the LED area. Pitch is not the
+visible air gap. The individual 12-hole patterns are unchanged.
+
+Cool completely. Check EACH EMPTY strip lies flat before fitting LEDs.
+Reuse the same seven modules in the same order; keep them square and their
+pins straight. Start with B, then try A if B fits freely, or C if B is tight.
+Do not force a fit. Pick the smallest pitch that stays flat with all seven.
+If all three bow, or the empty strips already bow, report that instead.
+
+Please report the winning letter, the 50 mm coupon's caliper measurement,
+and whether the empty/fitted strip was flat. Try the other 14 modules too
+before committing all three displays to a revised board.
+
+The tabbed strips are spacing tools, not final PCB/case outlines.
+Do not order the existing 12.70 mm-pitch PCB yet. The chosen spacing needs
+PCB/case/routing/export checks before ordering. No printer was started remotely.
+
+Full instructions:
+https://github.com/hmcneill46/house-rules-led-recreation/tree/main/hardware/revisions/B2/printing/pitch-tests-2026-10-30

@@ -1,0 +1,11 @@
+30 October2026: PHYSICAL MODULE SPACING UNDER REVIEW — DO NOT ORDER
+
+The owner reports the12-hole pattern fits each module, but photos show the
+seven-module plastic strip bowing when fitted. The current B2_review package
+still uses12.70mm module repeat. Its zero DRC/parity results establish only
+represented connectivity/geometry, not stress-free physical fit.
+
+Keep that hashed package as historical evidence. Do not order it. Complete the
+labelled12.80/12.90/13.00mm pitch trials, then revise/recheck PCB, case, routing,
+exports and quote as needed. Test-strip tabs/outlines are not final PCB sizes.
+No order/payment has been made. See ../README.md and the dated printing guide.

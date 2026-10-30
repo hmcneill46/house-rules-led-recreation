@@ -1,5 +1,7 @@
 # B2 assembly and first test
 
+**30 October: resolve the [new module-spacing trials](printing/pitch-tests-2026-10-30/README.md) before ordering the PCB.** The fitted strip bows at the current 12.70 mm repeat although each individual 12-hole group fits. The electrical pin map remains confirmed; the mechanical repeat and case fit need rechecking after a winning sample is selected.
+
 The owner has identified an **ULTRICS UT0021YB** meter. Its diode-test mode can replace the two-AA/resistor tester: use the [specific meter and LED pin-test steps](led-diode-test.md). The owner has confirmed both complete probe sequences on one module: **all 12 pins match, with the part-number label on the left in front view**. Other modules still need consistent orientation and checks.
 
 Start with one set of inexpensive stock electronics and a trial print. Test their fit and programming **before spending money on the custom PCB**. B2 remains an engineering prototype: files marked `UNRELEASED`, `UNROUTED` or `DO-NOT-ORDER` are quotation studies, not order files.

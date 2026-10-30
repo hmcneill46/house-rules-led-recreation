@@ -1,5 +1,7 @@
 # Final routed B2 quotation — 29 October 2026
 
+**30 October physical-fit update:** this quote preserves the original 12.70 mm-pitch design. New owner photos show a bowed seven-module fit. Do not order this saved job: complete the [spacing trials](../../printing/pitch-tests-2026-10-30/README.md), then revise/recheck the PCB/case and obtain a matching quote as needed. The quoted observations below remain historical evidence.
+
 A fresh JLCONE draft used the actual routed review Gerbers, final 55-component BOM and bottom-side CPL. All 18 BOM groups matched. Earlier quote jobs were retained unchanged. **No order, Review Before Payment or payment was submitted.**
 
 Five bare six-layer boards and two Economic assemblies were quoted at **$99.84**: $49.94 fabrication and $49.90 assembly, including manual file/placement review and $2.32 depaneling. [Price and review remarks](fabrication-and-assembly.png).

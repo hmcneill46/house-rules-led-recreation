@@ -1,5 +1,7 @@
 # B2 case and fit-test prints — Ender-3 V3 KE / Hyper PLA grey
 
+**30 October: use the [new labelled LED spacing trials](pitch-tests-2026-10-30/README.md) first.** The owner now reports a bowed seven-module fit at the original 12.70 mm repeat. The case and dummy files below preserve that earlier geometry and may need revision after a pitch is chosen; they are not confirmation of the final combined fit.
+
 Ready-to-copy G-code for a **stock Creality Ender-3 V3 KE with a 0.4 mm nozzle**, using **Creality Hyper PLA grey, 1.75 mm**. These are PLA files. Copy the selected `.gcode` to the printer's USB drive and start it at the printer. No printer was connected to or started remotely.
 
 [Download the three-file print pack](B2_KE04_HyperPLA_PrintPack.zip), unzip it and read `PRINT_FIRST.txt`, or use the individual files below.

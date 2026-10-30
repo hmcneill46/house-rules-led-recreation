@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-30",
+  "source": "Owner report and two attached photographs; not calibrated metrology",
+  "owner_observation": "Individual12-pin groups fit perfectly; seven-module repeat appears slightly too tight and fitted plasticstrip bows. Extra spacing believed small.",
+  "photo_references": [
+    {
+      "filename": "1-Photo-1.jpg",
+      "sha256": "ffb7dde60f77f2137b37403921f1d44f231af804f72072ea9d3b45afe0f0f2c8"
+    },
+    {
+      "filename": "2-Photo-2.jpg",
+      "sha256": "e778272b8ee4e969336cb4c11a42c527e1f5e80c8276d4d648b626f189b36347"
+    }
+  ],
+  "photo_inference": "Visible fitted bow and closely contacting body edges are consistent with cumulative body interference. Perspective, seating depth and possible pre-existing print warpage prevent a precise pitch measurement.",
+  "prior_owner_caliper_estimate_mm": {
+    "single_body_width": 12.9,
+    "single_body_height": 18,
+    "seven_bodies_total_approx": 90
+  },
+  "prior_assumption_superseded": "Earlier report that the12.70mm array fit was successful did not establish a stress-free, flat assembly.",
+  "electrical_pinmap": "One-module diode-test evidence remains unchanged; no electricalpinmap change inferred.",
+  "test_plan": {
+    "A_pitch_mm": 12.8,
+    "B_pitch_mm": 12.9,
+    "C_pitch_mm": 13,
+    "increments_per_join_mm": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "module_count_per_strip": 7,
+    "individual12_hole_patterns_preserved": true,
+    "printed_hole_diameter_mm": 1,
+    "empty_strip_flatness_control_required": true,
+    "reuse_same7modules_each_trial": true,
+    "confirm_other14_after_choice": true
+  },
+  "ordering_status": "Do not order current12.70mm PCB; determine pitch, then revise/recheck PCB/enclosure/export/quote as needed. No PCB/case geometry changed for this trial."
+}

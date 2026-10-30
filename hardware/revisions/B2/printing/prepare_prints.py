@@ -77,7 +77,8 @@ def make_dummy():
     return output
 
 
-def project(job, objects, config):
+def project(job, objects, config, output_root=None):
+    destination = HERE if output_root is None else Path(output_root)
     model = ET.Element('{' + CORE + '}model', {
         'unit': 'millimeter', 'requiredextensions': 'p',
         '{http://www.w3.org/XML/1998/namespace}lang': 'en-US'})
@@ -162,11 +163,11 @@ def project(job, objects, config):
             '<Relationship Target="/3D/3dmodel.model" Id="rel-1" '
             'Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>').encode(),
         '[Content_Types].xml': b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/><Default Extension="png" ContentType="image/png"/><Default Extension="gcode" ContentType="text/x.gcode"/></Types>'})
-    output = HERE / 'projects' / (job + '.3mf')
+    output = destination / 'projects' / (job + '.3mf')
     with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED) as archive:
         for name, data in entries.items():
             archive.writestr(name, data)
-    return {'project': str(output.relative_to(HERE)), 'project_sha256': sha(output), 'objects': record}
+    return {'project': str(output.relative_to(destination)), 'project_sha256': sha(output), 'objects': record}
 
 
 def main():

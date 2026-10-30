@@ -2,16 +2,18 @@
 
 This is the separate cost-reduction revision of the House Rules display. The original A1 design is preserved at the Git tag [`hardware-a1-2026-10-29`](https://github.com/hmcneill46/house-rules-led-recreation/tree/hardware-a1-2026-10-29). Do not mix A1 and B2 firmware, wiring, placement files or fabrication files.
 
-**Status: routed and software-verified engineering prototype, ready for manufacturing review.** The canonical PCB passes native KiCad DRC and schematic parity with zero reported violations or missing connections. The [manufacturing review package](manufacturing/B2_review/README.md) has its own fresh checks and source hashes. Factory CAM/placement review and first-board physical acceptance remain requirements before production approval. Files marked `COST-STUDY`, `UNRELEASED` or `UNROUTED` must never be ordered. No order or payment has been submitted.
+**30 October update: do not order the current PCB; module spacing is under physical review.** New owner photos show the fitted strip bowing, although each module's individual 12-hole pattern fits. The earlier positive fit report did not establish a stress-free seven-module assembly. [Labelled pitch trials](printing/pitch-tests-2026-10-30/README.md) bracket small spacing increases. Confirm the winning pitch, then recheck PCB placement/routing, the enclosure and quotation before ordering. Existing fabrication files, case models and G-code retain the old12.70mm repeat as historical prototypes.
+
+The canonical PCB still passes native KiCad DRC and schematic parity with zero reported violations or missing connections. The [manufacturing review package](manufacturing/B2_review/README.md) records that unchanged design and its hashes. These software results do not resolve the new physical spacing issue. Factory CAM/placement review and first-board acceptance also remain requirements. No order or payment has been submitted.
 
 ## What stays the same
 
-- Seven owned Wenrun 5 × 7 LED modules, touching side by side, make the same 35 × 7 display.
-- The custom main PCB remains **88.4 × 17.3 × 1.6 mm**, with the same 84 LED hole centres as the successful owner-reported printed fit plate.
+- Seven owned Wenrun 5 × 7 LED modules, arranged side by side, make the same 35 × 7 display. The smallest stress-free module spacing is being tested.
+- The existing prototype main PCB is **88.4 × 17.3 × 1.6 mm**, with 84 LED holes at the old 12.70 mm repeat. Its final module spacing and combined mechanical fit are pending the new trials.
 - The case remains **93.6 × 22.6 × 24 mm**, with a bottom-right USB-C port. The stock socket moves its centre about 4.7 mm left within that face.
 - The supplied program uses the original artwork, timing and orientation. It also includes walking-pixel, all-on and checkerboard diagnostics. Firmware can be replaced repeatedly with other text or animations.
 
-The successful plastic fit establishes the hole arrangement and outline. The owner also verified all 12 terminal roles/order and orientation on one real module using the UT0021YB diode test: **part-number label on the left in front view**. [Physical pin-map evidence](reports/owner-led-diode-test-2026-10-29.json). The other 20 modules, PCB manufacturing tolerances and soldering remain separate checks.
+The owner reports that the individual 12-hole pattern fits, but the 30 October photos supersede the earlier assumption that seven modules fit without stress at 12.70 mm pitch. Module spacing and final enclosure fit remain unresolved. The owner separately verified all 12 terminal roles/order and electrical orientation on one real module using the UT0021YB diode test: **part-number label on the left in front view**. [Physical pin-map evidence](reports/owner-led-diode-test-2026-10-29.json). That electrical evidence remains valid; the other 20 modules still need consistent checks.
 
 ## What changes and why it costs less
 

@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-30",
+  "slicer": "Installed OrcaSlicer2.4.2",
+  "slicer_exit_code": 0,
+  "command": [
+    "/Applications/OrcaSlicer.app/Contents/MacOS/OrcaSlicer",
+    "--datadir",
+    "/tmp/house-rules-pitch-2026-10-30/user",
+    "--slice",
+    "0",
+    "--arrange",
+    "0",
+    "--orient",
+    "0",
+    "--outputdir",
+    "/tmp/house-rules-pitch-2026-10-30",
+    "--export-3mf",
+    "LED_Pitch_ABC_KE04_HyperPLA-sliced.3mf",
+    "hardware/revisions/B2/printing/pitch-tests-2026-10-30/projects/LED_Pitch_ABC_KE04_HyperPLA.3mf"
+  ],
+  "prepared_project_sha256": "84ce058bac9329abe7d25b1ab7ccd39b726f90fdd53eeb8ea58c68dcb9705fb8",
+  "sliced_project_sha256": "f326a7031b926db923dbfb0f1d6ff392244b603a31d7e798dd6415b9c85a9b92",
+  "Gcode_sha256": "53b96fd71387526b9321a7ee2ea648ea56e3aa40652a0850ede6944fe910eb1a",
+  "embedded_Gcode_identical": true,
+  "source_STL_preview": "previews/spacing-trials.png; nativeOpenSCAD actualmesh compositor, not a photograph or an OrcaGUI screenshot",
+  "GUI_note": "Owner Orca scene has unsaved changes; it was preserved without replacement or saving. Independent executableGcode/mesh audit used.",
+  "printer_execution": "None; files only."
+}

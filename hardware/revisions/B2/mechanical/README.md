@@ -1,5 +1,7 @@
 # B2 enclosure and stock-module assembly
 
+**30 October spacing review:** the owner reports that each module's 12-hole group fits but the assembled seven-module strip bows. The PCB/case below retain the original 12.70 mm repeat. Complete the [labelled pitch trials](../printing/pitch-tests-2026-10-30/README.md), then recheck the combined fit before ordering or treating these case dimensions as final.
+
 This prototype keeps the original **93.6 × 22.6 × 24 mm** outside dimensions, front opening and seven-module appearance. The 88.4 × 17.3 mm custom mounting PCB remains behind the nominal 88.9 × 17.8 mm LED silhouette. The separate custom USB board is replaced by an Adafruit 4090; a Seeed XIAO RP2040 **Plus** fits beside it on the removable rear cover. These are engineering renders of source-derived board envelopes, not photographs or a promise that an unmeasured module revision fits.
 
 The owner has physically verified all 12 pin roles/order on one `LMD07057AUE-101B-02`; its correct upright front view has the part-number label on the **left**. Orient the other modules consistently and check them against that reference before soldering. The other 20 modules remain unverified. [Owner diode-test record](../reports/owner-led-diode-test-2026-10-29.json).

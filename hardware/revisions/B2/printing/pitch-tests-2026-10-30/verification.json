@@ -1,0 +1,263 @@
+{
+  "result": "PASS",
+  "date_utc": "2026-10-30T16:00:22.705330+00:00",
+  "scope": "Independent actual STL, sliced3MF and executable Gcode checks; software inspection only, not a physical fit guarantee.",
+  "canonical_PCB_unchanged": true,
+  "mesh_checks": {
+    "A": {
+      "STL": "models/A_pitch_12p80.stl",
+      "STL_sha256": "2792954fcdcf31d57307c92847ed63d0965b16d9c0e03601ea8d1a6c35970aa7",
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "connected_solid_bodies": 1,
+      "positive_volume_mm3": 2877.5333412613163,
+      "Euler_characteristic": -166,
+      "independent_bottom_boundary_holes": 84,
+      "circular_hole_polygon_vertices": 32,
+      "nominal_print_holes_mm": 1,
+      "maximum_hole_centre_error_mm": 8.83883476763741e-06,
+      "canonical_intramodule_pattern_plus_only_pitch_translation": true,
+      "raised_labels_exist_entirely_on_external_negative_X_tab": true,
+      "actual_bounds_mm": [
+        [
+          -18.0,
+          0.0,
+          0.0
+        ],
+        [
+          89.0,
+          17.3,
+          2.2
+        ]
+      ]
+    },
+    "B": {
+      "STL": "models/B_pitch_12p90.stl",
+      "STL_sha256": "dc89944ee4d6cf0031c1b3c78d4310a9c14183c37c4d1f626a298f6cc92fdf39",
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "connected_solid_bodies": 1,
+      "positive_volume_mm3": 2895.7153125165455,
+      "Euler_characteristic": -166,
+      "independent_bottom_boundary_holes": 84,
+      "circular_hole_polygon_vertices": 32,
+      "nominal_print_holes_mm": 1,
+      "maximum_hole_centre_error_mm": 8.83883476763741e-06,
+      "canonical_intramodule_pattern_plus_only_pitch_translation": true,
+      "raised_labels_exist_entirely_on_external_negative_X_tab": true,
+      "actual_bounds_mm": [
+        [
+          -18.0,
+          0.0,
+          0.0
+        ],
+        [
+          89.6,
+          17.3,
+          2.2
+        ]
+      ]
+    },
+    "C": {
+      "STL": "models/C_pitch_13p00.stl",
+      "STL_sha256": "61e59f9bbe5b84c5da1047613d4ac7354013e54ef5b873209602381aba7d4ee4",
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "connected_solid_bodies": 1,
+      "positive_volume_mm3": 2910.8067439016972,
+      "Euler_characteristic": -166,
+      "independent_bottom_boundary_holes": 84,
+      "circular_hole_polygon_vertices": 32,
+      "nominal_print_holes_mm": 1,
+      "maximum_hole_centre_error_mm": 8.83883476763741e-06,
+      "canonical_intramodule_pattern_plus_only_pitch_translation": true,
+      "raised_labels_exist_entirely_on_external_negative_X_tab": true,
+      "actual_bounds_mm": [
+        [
+          -18.0,
+          0.0,
+          0.0
+        ],
+        [
+          90.2,
+          17.3,
+          2.2
+        ]
+      ]
+    }
+  },
+  "sliced_project_checks": {
+    "A": {
+      "source_mesh_geometry_retained": true,
+      "scale_percent": 100,
+      "rotation_identity": true,
+      "triangles": 13700,
+      "maximum_float32_vertex_roundtrip_error_mm": 1.980908884202698e-06,
+      "actual_plate_bounds_mm": [
+        [
+          55.0,
+          62.00000038,
+          -1.999999987845058e-08
+        ],
+        [
+          162.0,
+          79.29999962000001,
+          2.20000002
+        ]
+      ]
+    },
+    "B": {
+      "source_mesh_geometry_retained": true,
+      "scale_percent": 100,
+      "rotation_identity": true,
+      "triangles": 14136,
+      "maximum_float32_vertex_roundtrip_error_mm": 2.728601105192082e-06,
+      "actual_plate_bounds_mm": [
+        [
+          55.000000799999995,
+          94.00000038,
+          -1.999999987845058e-08
+        ],
+        [
+          162.5999992,
+          111.29999962000001,
+          2.20000002
+        ]
+      ]
+    },
+    "C": {
+      "source_mesh_geometry_retained": true,
+      "scale_percent": 100,
+      "rotation_identity": true,
+      "triangles": 14292,
+      "maximum_float32_vertex_roundtrip_error_mm": 3.454345102713523e-06,
+      "actual_plate_bounds_mm": [
+        [
+          55.000001499999996,
+          126.00000038,
+          -1.999999987845058e-08
+        ],
+        [
+          163.1999985,
+          143.29999962,
+          2.20000002
+        ]
+      ]
+    },
+    "50mm_scale": {
+      "source_mesh_geometry_retained": true,
+      "scale_percent": 100,
+      "rotation_identity": true,
+      "triangles": 12,
+      "maximum_float32_vertex_roundtrip_error_mm": 0,
+      "actual_plate_bounds_mm": [
+        [
+          85.0,
+          165.0,
+          0.0
+        ],
+        [
+          135.0,
+          175.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "errors": [],
+  "Gcode_sha256": "53b96fd71387526b9321a7ee2ea648ea56e3aa40652a0850ede6944fe910eb1a",
+  "sliced_project_sha256": "f326a7031b926db923dbfb0f1d6ff392244b603a31d7e798dd6415b9c85a9b92",
+  "embedded_Gcode_byte_identical": true,
+  "Gcode_checks": {
+    "actual_config_verified": true,
+    "native_start_end_preserved": true,
+    "temperatures_C": {
+      "nozzle": [
+        220,
+        215
+      ],
+      "bed": [
+        60,
+        55
+      ]
+    },
+    "fan_PWM_sequence": [
+      0,
+      255
+    ],
+    "model_layer_z_mm": [
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0,
+      1.2,
+      1.4,
+      1.6,
+      1.8,
+      2.0,
+      2.2
+    ],
+    "supports": false,
+    "brim": false,
+    "object_extrusion_segment_counts": {
+      "pin-fit-scale-50mm_id_3_copy_0": 893,
+      "C_pitch_13p00_id_2_copy_0": 49746,
+      "B_pitch_12p90_id_1_copy_0": 49014,
+      "A_pitch_12p80_id_0_copy_0": 48110
+    },
+    "all_four_objects_print_first_layer": true,
+    "actual_raised_label_segment_counts_by_row": {
+      "C": {
+        "13.4": 122,
+        "8.4": 315,
+        "3.8": 240
+      },
+      "B": {
+        "13.4": 265,
+        "8.4": 339,
+        "3.8": 225
+      },
+      "A": {
+        "13.4": 114,
+        "8.4": 357,
+        "3.8": 217
+      }
+    },
+    "raised_label_extrusion_confined_to_external_tabs": true,
+    "label_extrusion_scope": "Above 1.6 mm, only A/B/C external-tab text extrudes; every label row has executable extrusion.",
+    "model_extrusion_bounds_mm": [
+      [
+        55.21,
+        62.21,
+        0.2
+      ],
+      [
+        162.99,
+        174.79,
+        2.2
+      ]
+    ],
+    "all_motion_bounds_mm": [
+      [
+        -2.0,
+        20.0,
+        0.2
+      ],
+      [
+        162.99,
+        218.0,
+        27.2
+      ]
+    ],
+    "stock_negative_X_purge_preserved": true,
+    "estimated_time": "1h 24m 38s",
+    "estimated_filament_g": 11.28
+  },
+  "limitations": [
+    "Photos cannot establish exact required pitch or distinguish all printing warpage.",
+    "Check each empty strip is flat before fitting all seven LEDs without force.",
+    "Printed 1.0 mm holes do not establish 0.90 mm finished PCB hole tolerance.",
+    "Label-tab test widths are not final PCB/case outlines; recheck hardware after selecting the pitch."
+  ]
+}
