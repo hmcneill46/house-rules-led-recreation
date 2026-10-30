@@ -1,0 +1,33 @@
+HOUSE RULES - FINE SPACING TRIALS D / E / F
+
+Use LED_Pitch_DEF_Fine_KE04_HyperPLA.gcode.
+ONE file prints all three full seven-module strips and a 50.00 mm scale coupon.
+
+Printer: Creality Ender-3 V3 KE, stock 0.4 mm nozzle.
+Material: Creality Hyper PLA grey, 1.75 mm. Do not use this file for PETG.
+Settings: 0.20 mm layers, 100% scale, no supports or brim.
+Nozzle: 220 C first layer, 215 C thereafter.
+Bed: 60 C first layer, 55 C thereafter.
+Slicer estimate: 1 hour 24 minutes 20 seconds; 11.24 g of filament.
+
+Raised labels on each strip:
+  D / P12.825 / +0.125   centre pitch 12.825 mm
+  E / P12.850 / +0.150   centre pitch 12.850 mm
+  F / P12.875 / +0.175   centre pitch 12.875 mm
+The + value is the increase per join from the old 12.700 mm pitch.
+Each module's original 12-hole pattern is unchanged, with 1.0 mm print holes.
+
+Copy the G-code onto your printer's USB drive and start it manually.
+Let the prints cool before removal. Check that each empty strip lies flat.
+Measure the 50 mm coupon with calipers and keep the reading.
+Try the same seven LEDs in the same order and orientation in each strip.
+Keep modules square and insertion depth consistent; do not force the pins.
+Choose the smallest pitch that seats all seven without bowing or pressure.
+Report the winning letter D/E/F and the coupon measurement.
+If the differences are inconclusive or empty strips bow, report that instead.
+
+The 0.025 mm steps are nominal CAD values, not a promise of printer accuracy.
+Adjacent trials differ by 0.150 mm across all six joins.
+The label tab is outside the LED area. These are fitting tools, not case parts.
+The current PCB/case remains on hold until the chosen pitch is applied/rechecked.
+No printer connection, print start, PCB order or payment has been made.

@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-30",
+  "bundle": "LED_Pitch_DEF_Fine_KE04_HyperPLA.zip",
+  "bundle_sha256": "95812a1bf5b28f63409c98814908de5531580fb2d840e081e289a138f2ecf82c",
+  "entry_sha256": {
+    "LED_Pitch_DEF_Fine_KE04_HyperPLA.gcode": "bc5bd78561fed395c076caeae47eb2ae65cad6899bb849adf330270865bfad04",
+    "PRINT_FIRST.txt": "bd9fe1942eca130a0611c27c713523478ce2cfa000626b632084ae43bcd83d9e",
+    "verification.json": "4eb3b461daea100d053291f3d9c2a1a10412f8d4a8945f0b2ef076689503911d"
+  },
+  "zip_integrity_and_entry_bytes_verified": true
+}

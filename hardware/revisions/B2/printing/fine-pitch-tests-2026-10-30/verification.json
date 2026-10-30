@@ -1,0 +1,462 @@
+{
+  "result": "PASS",
+  "date_utc": "2026-10-30T20:44:19.988383+00:00",
+  "scope": "Independent actual STL boundary measurements, sliced3MF and executable Gcode checks; software inspection only, not a physical fit guarantee.",
+  "canonical_PCB_unchanged": true,
+  "canonical_PCB_sha256": "90018f786599e140bdc7ed6a75be65f574c2691c98f3b2d91a7383906dbe0b04",
+  "canonical_geometry_audit_sha256": "dcff4cee7e936d55cf4f6ec9cb2f9738aff947b8211fd825b1446313e96c455b",
+  "mesh_checks": {
+    "D": {
+      "STL": "models/D_pitch_12p825.stl",
+      "STL_sha256": "9dcb6ebbe1bfeda1de17924406336aed82792f6720f9a2d9f926f4121c751da6",
+      "label_source_strings": {
+        "actual_SCAD_text": [
+          "D",
+          "P12.825",
+          "+0.125"
+        ],
+        "three_decimal_pitch_and_increment": true
+      },
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "connected_solid_bodies": 1,
+      "positive_volume_mm3": 2886.1714670386873,
+      "Euler_characteristic": -166,
+      "independent_bottom_boundary_holes": 84,
+      "circular_hole_polygon_vertices": 32,
+      "nominal_print_holes_mm": 1,
+      "maximum_hole_centre_error_mm": 8.838834775173854e-06,
+      "nominal_pitch_mm": 12.825,
+      "pitch_increment_from_12p700_mm": 0.125,
+      "coordinate_arithmetic": "Independent expected centres computed in integer nanometres, then compared with actual STL bottom boundaries.",
+      "canonical_intramodule_pattern_plus_only_pitch_translation": true,
+      "raised_labels_exist_entirely_on_external_negative_X_tab": true,
+      "physical_raised_text_row_bounds_mm": {
+        "letter": [
+          [
+            -10.5874,
+            11.5338,
+            2.2
+          ],
+          [
+            -7.1805,
+            15.3557,
+            2.2
+          ]
+        ],
+        "pitch": [
+          [
+            -16.301,
+            6.9587,
+            2.2
+          ],
+          [
+            -1.4821,
+            9.90853,
+            2.2
+          ]
+        ],
+        "increment": [
+          [
+            -15.1044,
+            2.3587,
+            2.2
+          ],
+          [
+            -2.78247,
+            5.30853,
+            2.2
+          ]
+        ]
+      },
+      "measured_adjacent_module_pitch_mm_range": [
+        12.82499374999999,
+        12.825006250000015
+      ],
+      "maximum_rigid_intramodule_pattern_error_mm": 6.250000026852831e-06,
+      "actual_bounds_mm": [
+        [
+          -18.0,
+          0.0,
+          0.0
+        ],
+        [
+          89.15,
+          17.3,
+          2.2
+        ]
+      ]
+    },
+    "E": {
+      "STL": "models/E_pitch_12p850.stl",
+      "STL_sha256": "70a245cede98286b3c2b669c5f6e48d0a828ca3c70dd981fc2e7a12ed82fc866",
+      "label_source_strings": {
+        "actual_SCAD_text": [
+          "E",
+          "P12.850",
+          "+0.150"
+        ],
+        "three_decimal_pitch_and_increment": true
+      },
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "connected_solid_bodies": 1,
+      "positive_volume_mm3": 2890.368787787758,
+      "Euler_characteristic": -166,
+      "independent_bottom_boundary_holes": 84,
+      "circular_hole_polygon_vertices": 32,
+      "nominal_print_holes_mm": 1,
+      "maximum_hole_centre_error_mm": 8.83883476763741e-06,
+      "nominal_pitch_mm": 12.85,
+      "pitch_increment_from_12p700_mm": 0.15,
+      "coordinate_arithmetic": "Independent expected centres computed in integer nanometres, then compared with actual STL bottom boundaries.",
+      "canonical_intramodule_pattern_plus_only_pitch_translation": true,
+      "raised_labels_exist_entirely_on_external_negative_X_tab": true,
+      "physical_raised_text_row_bounds_mm": {
+        "letter": [
+          [
+            -10.4377,
+            11.5338,
+            2.2
+          ],
+          [
+            -7.32106,
+            15.3557,
+            2.2
+          ]
+        ],
+        "pitch": [
+          [
+            -16.301,
+            6.9587,
+            2.2
+          ],
+          [
+            -1.53702,
+            9.90853,
+            2.2
+          ]
+        ],
+        "increment": [
+          [
+            -15.1044,
+            2.3587,
+            2.2
+          ],
+          [
+            -2.8374,
+            5.30853,
+            2.2
+          ]
+        ]
+      },
+      "measured_adjacent_module_pitch_mm_range": [
+        12.849993749999982,
+        12.850006250000021
+      ],
+      "maximum_rigid_intramodule_pattern_error_mm": 6.250000026852831e-06,
+      "actual_bounds_mm": [
+        [
+          -18.0,
+          0.0,
+          0.0
+        ],
+        [
+          89.3,
+          17.3,
+          2.2
+        ]
+      ]
+    },
+    "F": {
+      "STL": "models/F_pitch_12p875.stl",
+      "STL_sha256": "61c3dbada7a7cbbfead47e455b0b433add5f81b427bb69d2c875f3ffd9f61e5c",
+      "label_source_strings": {
+        "actual_SCAD_text": [
+          "F",
+          "P12.875",
+          "+0.175"
+        ],
+        "three_decimal_pitch_and_increment": true
+      },
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "connected_solid_bodies": 1,
+      "positive_volume_mm3": 2892.249923448178,
+      "Euler_characteristic": -166,
+      "independent_bottom_boundary_holes": 84,
+      "circular_hole_polygon_vertices": 32,
+      "nominal_print_holes_mm": 1,
+      "maximum_hole_centre_error_mm": 8.83883476763741e-06,
+      "nominal_pitch_mm": 12.875,
+      "pitch_increment_from_12p700_mm": 0.175,
+      "coordinate_arithmetic": "Independent expected centres computed in integer nanometres, then compared with actual STL bottom boundaries.",
+      "canonical_intramodule_pattern_plus_only_pitch_translation": true,
+      "raised_labels_exist_entirely_on_external_negative_X_tab": true,
+      "physical_raised_text_row_bounds_mm": {
+        "letter": [
+          [
+            -10.2854,
+            11.5338,
+            2.2
+          ],
+          [
+            -7.4671,
+            15.3557,
+            2.2
+          ]
+        ],
+        "pitch": [
+          [
+            -16.301,
+            6.9587,
+            2.2
+          ],
+          [
+            -1.4821,
+            9.90853,
+            2.2
+          ]
+        ],
+        "increment": [
+          [
+            -15.1044,
+            2.3587,
+            2.2
+          ],
+          [
+            -2.78247,
+            5.30853,
+            2.2
+          ]
+        ]
+      },
+      "measured_adjacent_module_pitch_mm_range": [
+        12.874993749999973,
+        12.875006250000002
+      ],
+      "maximum_rigid_intramodule_pattern_error_mm": 6.250000026852831e-06,
+      "actual_bounds_mm": [
+        [
+          -18.0,
+          0.0,
+          0.0
+        ],
+        [
+          89.45,
+          17.3,
+          2.2
+        ]
+      ]
+    }
+  },
+  "sliced_project_checks": {
+    "D": {
+      "source_mesh_geometry_retained": true,
+      "scale_percent": 100,
+      "rotation_identity": true,
+      "triangles": 14348,
+      "maximum_float32_vertex_roundtrip_error_mm": 2.7575351420094004e-06,
+      "actual_plate_bounds_mm": [
+        [
+          54.999999200000005,
+          62.00000038,
+          -1.999999987845058e-08
+        ],
+        [
+          162.1500008,
+          79.29999962000001,
+          2.20000002
+        ]
+      ]
+    },
+    "E": {
+      "source_mesh_geometry_retained": true,
+      "scale_percent": 100,
+      "rotation_identity": true,
+      "triangles": 14272,
+      "maximum_float32_vertex_roundtrip_error_mm": 3.4545187816916104e-06,
+      "actual_plate_bounds_mm": [
+        [
+          54.999998500000004,
+          94.00000038,
+          -1.999999987845058e-08
+        ],
+        [
+          162.3000015,
+          111.29999962000001,
+          2.20000002
+        ]
+      ]
+    },
+    "F": {
+      "source_mesh_geometry_retained": true,
+      "scale_percent": 100,
+      "rotation_identity": true,
+      "triangles": 13784,
+      "maximum_float32_vertex_roundtrip_error_mm": 3.454345102713523e-06,
+      "actual_plate_bounds_mm": [
+        [
+          55.000001499999996,
+          126.00000038,
+          -1.999999987845058e-08
+        ],
+        [
+          162.4499985,
+          143.29999962,
+          2.20000002
+        ]
+      ]
+    },
+    "50mm_scale": {
+      "source_mesh_geometry_retained": true,
+      "scale_percent": 100,
+      "rotation_identity": true,
+      "triangles": 12,
+      "maximum_float32_vertex_roundtrip_error_mm": 0,
+      "actual_plate_bounds_mm": [
+        [
+          85.0,
+          165.0,
+          0.0
+        ],
+        [
+          135.0,
+          175.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "errors": [],
+  "Gcode_sha256": "bc5bd78561fed395c076caeae47eb2ae65cad6899bb849adf330270865bfad04",
+  "sliced_project_sha256": "3c2f3283fb504caad1aaa0570e1fd9a686cc4de4a025bf999df2da594bd8c49d",
+  "embedded_Gcode_byte_identical": true,
+  "Gcode_checks": {
+    "actual_config_verified": true,
+    "native_start_end_preserved": true,
+    "temperatures_C": {
+      "nozzle": [
+        220,
+        215
+      ],
+      "bed": [
+        60,
+        55
+      ]
+    },
+    "actual_heater_commands": [
+      [
+        "M140",
+        60.0
+      ],
+      [
+        "M190",
+        60.0
+      ],
+      [
+        "M104",
+        220.0
+      ],
+      [
+        "M109",
+        220.0
+      ],
+      [
+        "M104",
+        215.0
+      ],
+      [
+        "M140",
+        55.0
+      ],
+      [
+        "M104",
+        0.0
+      ],
+      [
+        "M140",
+        0.0
+      ]
+    ],
+    "fan_PWM_sequence": [
+      0,
+      255
+    ],
+    "model_layer_z_mm": [
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0,
+      1.2,
+      1.4,
+      1.6,
+      1.8,
+      2.0,
+      2.2
+    ],
+    "supports": false,
+    "brim": false,
+    "object_extrusion_segment_counts": {
+      "pin-fit-scale-50mm_id_3_copy_0": 893,
+      "F_pitch_12p875_id_2_copy_0": 48614,
+      "E_pitch_12p850_id_1_copy_0": 48556,
+      "D_pitch_12p825_id_0_copy_0": 48250
+    },
+    "all_four_objects_print_first_layer": true,
+    "actual_raised_label_segment_counts_by_row": {
+      "F": {
+        "13.4": 78,
+        "8.4": 409,
+        "3.8": 265
+      },
+      "E": {
+        "13.4": 111,
+        "8.4": 434,
+        "3.8": 287
+      },
+      "D": {
+        "13.4": 118,
+        "8.4": 435,
+        "3.8": 290
+      }
+    },
+    "raised_label_extrusion_confined_to_external_tabs": true,
+    "label_extrusion_scope": "Above 1.6 mm, only D/E/F external-tab text extrudes; every label row has executable extrusion.",
+    "model_extrusion_bounds_mm": [
+      [
+        55.21,
+        62.21,
+        0.2
+      ],
+      [
+        162.24,
+        174.79,
+        2.2
+      ]
+    ],
+    "all_motion_bounds_mm": [
+      [
+        -2.0,
+        20.0,
+        0.2
+      ],
+      [
+        162.24,
+        218.0,
+        27.2
+      ]
+    ],
+    "stock_negative_X_purge_preserved": true,
+    "estimated_time": "1h 24m 20s",
+    "estimated_filament_g": 11.24
+  },
+  "limitations": [
+    "Photos cannot establish exact required pitch or distinguish all printing warpage.",
+    "Nominal 0.025 mm CAD increments are not an assertion of FDM dimensional accuracy; across six joins the variants differ by 0.150 mm.",
+    "Check each empty strip is flat before fitting all seven LEDs without force.",
+    "Printed 1.0 mm holes do not establish 0.90 mm finished PCB hole tolerance.",
+    "Label-tab test widths are not final PCB/case outlines; recheck hardware after selecting the pitch."
+  ]
+}

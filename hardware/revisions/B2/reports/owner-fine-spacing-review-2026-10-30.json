@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-30",
+  "source": "Owner follow-up after the coarse spacing trials",
+  "owner_observation": "Required spacing definitely lies in12.80\u201312.90mm range.",
+  "owner_requested_pitch_mm": [
+    "12.825",
+    "12.850",
+    "12.875"
+  ],
+  "requested_increments_from12p700_mm": [
+    "0.125",
+    "0.150",
+    "0.175"
+  ],
+  "trial_labels": [
+    "D",
+    "E",
+    "F"
+  ],
+  "not_inferred": [
+    "No exact final pitch selected yet",
+    "No calibrated absolute printer accuracy established",
+    "No specific A/B success/failure inferred beyond the owner-reported interval"
+  ],
+  "status": "Fine print trials only; currentPCB/case remain on hold pending choice and recheck."
+}

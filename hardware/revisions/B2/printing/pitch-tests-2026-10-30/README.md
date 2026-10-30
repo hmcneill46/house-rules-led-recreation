@@ -1,5 +1,7 @@
 # Labelled seven-module spacing trials — 30 October 2026
 
+**Follow-up:** the owner has narrowed the required pitch to 12.80–12.90 mm. Use the [new D/E/F fine trials](../fine-pitch-tests-2026-10-30/README.md) for 12.825/12.850/12.875 mm. This A/B/C set remains preserved for reference.
+
 Use this set before ordering a PCB. The owner reports that the individual 12-hole patterns fit, but the complete fitted strip bows. The two photos are consistent with slight body interference, while perspective and possible print warpage prevent an exact measurement. The earlier caliper estimate of about 12.9 mm body width makes **B the middle, best-guess trial**, with A and C bracketing it. This is a test range, not a measured answer from the photographs.
 
 One G-code file prints **all three full seven-module strips**, plus a separate 50.00 mm scale coupon:

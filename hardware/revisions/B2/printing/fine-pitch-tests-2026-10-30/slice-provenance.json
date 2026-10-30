@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-30",
+  "slicer": "Installed OrcaSlicer 2.4.2",
+  "slicer_exit_code": 0,
+  "command": [
+    "/Applications/OrcaSlicer.app/Contents/MacOS/OrcaSlicer",
+    "--datadir",
+    "/tmp/house-rules-fine-pitch-2026-10-30/user",
+    "--slice",
+    "0",
+    "--arrange",
+    "0",
+    "--orient",
+    "0",
+    "--outputdir",
+    "/tmp/house-rules-fine-pitch-2026-10-30",
+    "--export-3mf",
+    "LED_Pitch_DEF_Fine_KE04_HyperPLA-sliced.3mf",
+    "hardware/revisions/B2/printing/fine-pitch-tests-2026-10-30/projects/LED_Pitch_DEF_Fine_KE04_HyperPLA.3mf"
+  ],
+  "prepared_project_sha256": "017f48837d10b3c814bba2793d7749561f92048a02c3344f470cd2bb46b4a471",
+  "sliced_project_sha256": "3c2f3283fb504caad1aaa0570e1fd9a686cc4de4a025bf999df2da594bd8c49d",
+  "Gcode_sha256": "bc5bd78561fed395c076caeae47eb2ae65cad6899bb849adf330270865bfad04",
+  "embedded_Gcode_identical": true,
+  "source_STL_preview": "previews/fine-spacing-trials.png; native OpenSCAD rendering of the actual STL meshes, not a photograph or an Orca GUI screenshot",
+  "GUI_note": "Owner unsaved Orca scene preserved; CLI slicing and independent executable G-code/mesh audit used.",
+  "printer_execution": "None; files only."
+}
