@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-31",
+  "method": "Reproduced merchant native add-to-cart metadata from public Kaching deal settings and storefront JavaScript for genuine published quantity tiers. Actual cart discounts only, no invented or overridden prices. No checkout order/payment.",
+  "source": "abe6727f-e621-4112-8504-0c775e581c01",
+  "results": [
+    {
+      "batch": 2,
+      "cart_total_pence": 540,
+      "original_pence": 540,
+      "discount_pence": 0,
+      "items": [
+        {
+          "title": "M2 Self Colour 10.9 High Tensile Socket Button Head Screws ISO 7380-1 - M2 (2mm) / 8mm",
+          "quantity": 2,
+          "price": 90,
+          "final_price": 90,
+          "line_price": 180,
+          "final_line_price": 180,
+          "discounts": [],
+          "line_level_discount_allocations": []
+        },
+        {
+          "title": "M2 Self Colour 10.9 High Tensile Socket Button Head Screws ISO 7380-1 - M2 (2mm) / 6mm",
+          "quantity": 4,
+          "price": 90,
+          "final_price": 90,
+          "line_price": 360,
+          "final_line_price": 360,
+          "discounts": [],
+          "line_level_discount_allocations": []
+        }
+      ]
+    },
+    {
+      "batch": 3,
+      "cart_total_pence": 810,
+      "original_pence": 810,
+      "discount_pence": 0,
+      "items": [
+        {
+          "title": "M2 Self Colour 10.9 High Tensile Socket Button Head Screws ISO 7380-1 - M2 (2mm) / 8mm",
+          "quantity": 3,
+          "price": 90,
+          "final_price": 90,
+          "line_price": 270,
+          "final_line_price": 270,
+          "discounts": [],
+          "line_level_discount_allocations": []
+        },
+        {
+          "title": "M2 Self Colour 10.9 High Tensile Socket Button Head Screws ISO 7380-1 - M2 (2mm) / 6mm",
+          "quantity": 6,
+          "price": 90,
+          "final_price": 90,
+          "line_price": 540,
+          "final_line_price": 540,
+          "discounts": [],
+          "line_level_discount_allocations": []
+        }
+      ]
+    },
+    {
+      "batch": 5,
+      "cart_total_pence": 1350,
+      "original_pence": 1350,
+      "discount_pence": 0,
+      "items": [
+        {
+          "title": "M2 Self Colour 10.9 High Tensile Socket Button Head Screws ISO 7380-1 - M2 (2mm) / 8mm",
+          "quantity": 5,
+          "price": 90,
+          "final_price": 90,
+          "line_price": 450,
+          "final_line_price": 450,
+          "discounts": [],
+          "line_level_discount_allocations": []
+        },
+        {
+          "title": "M2 Self Colour 10.9 High Tensile Socket Button Head Screws ISO 7380-1 - M2 (2mm) / 6mm",
+          "quantity": 10,
+          "price": 90,
+          "final_price": 90,
+          "line_price": 900,
+          "final_line_price": 900,
+          "discounts": [],
+          "line_level_discount_allocations": []
+        }
+      ]
+    }
+  ]
+}

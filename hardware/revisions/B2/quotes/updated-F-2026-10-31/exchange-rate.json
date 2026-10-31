@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-31",
+  "USD_to_GBP_mid_market_reference": 0.7467,
+  "source": "https://wise.com/gb/currency-converter/usd-to-gbp-rate",
+  "observed_page_text": "$1 USD = 0.7467 GBP",
+  "not_a_card_rate": "JLC chargesUSD; bank/card conversion and fees can differ."
+}

@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-31",
+  "status": "PROVISIONAL MODEL, NOT A COMPLETE ORDERABLE FACTORY QUOTE",
+  "scope": "Current12.875pitch89.45x17.3board; all55smallSMTparts assumed factory assembled; combine live51SMTbaseline with unpaid exact-driver procurement preview and explicitly unconfirmed assembly increments.",
+  "FX_USD_to_GBP": 0.7467,
+  "FX_source": "https://wise.com/gb/currency-converter/usd-to-gbp-rate",
+  "tax_method": "Budget20% on combined partial goods, depanel allowance, exact-driver procurement including handling, modeled assembly increments and shipping. This is an allowance, not confirmed VAT assessment across the separate China-sourcing and UK-PCBA transactions. Avoid calling it final tax or a guaranteed ceiling.",
+  "quantities": [
+    {
+      "assembled_PCB_count": 2,
+      "finished_display_count": 2,
+      "fabricated_PCB_count": 5,
+      "partial_51SMT_goods_USD": 82.68,
+      "depanel_allowance_USD": 2.32,
+      "exact_driver_procurement_preview_USD": 25.77,
+      "modeled_added_extended_part_type_fee_USD": 3.09,
+      "modeled_added_driver_SMT_labor_USD": 0.34,
+      "modeled_combined_goods_and_procurement_USD": 114.2,
+      "shipping_budget_USD": 1.5,
+      "shipping_status": "Actual current JLCONE51-SMT checkout:1.50USD promotional shipping verified for this quantity. Must recheck after full55-SMT match.",
+      "modeled_20percent_tax_allowance_USD": 23.14,
+      "modeled_combined_USD_including_tax_allowance": 138.84,
+      "modeled_custom_PCB_and_sourcing_GBP": 103.67,
+      "remaining_retail_GBP": 53.2,
+      "modeled_all_in_GBP": 156.87,
+      "potential_coupon_effect_GBP": 26.88,
+      "modeled_all_in_if_30USD_coupon_reduces_tax_base_GBP": 129.99,
+      "firm_complete_orderable_quote": false
+    },
+    {
+      "assembled_PCB_count": 5,
+      "finished_display_count": 5,
+      "fabricated_PCB_count": 5,
+      "partial_51SMT_goods_USD": 90.39,
+      "depanel_allowance_USD": 3.31,
+      "exact_driver_procurement_preview_USD": 44.26,
+      "modeled_added_extended_part_type_fee_USD": 3.09,
+      "modeled_added_driver_SMT_labor_USD": 0.84,
+      "modeled_combined_goods_and_procurement_USD": 141.89,
+      "shipping_budget_USD": 1.5,
+      "shipping_status": "Actual current JLCONE51-SMT checkout:1.50USD promotional shipping verified for this quantity. Must recheck after full55-SMT match.",
+      "modeled_20percent_tax_allowance_USD": 28.68,
+      "modeled_combined_USD_including_tax_allowance": 172.07,
+      "modeled_custom_PCB_and_sourcing_GBP": 128.48,
+      "remaining_retail_GBP": 118.86,
+      "modeled_all_in_GBP": 247.34,
+      "potential_coupon_effect_GBP": 26.88,
+      "modeled_all_in_if_30USD_coupon_reduces_tax_base_GBP": 220.46,
+      "firm_complete_orderable_quote": false
+    }
+  ],
+  "optional_three_finished_two_spare_PCBS": {
+    "assembled_PCB_count": 5,
+    "finished_display_count": 3,
+    "spare_assembled_PCB_count": 2,
+    "fabricated_PCB_count": 5,
+    "existing_LEDs_used": 21,
+    "new_LEDs_needed": 0,
+    "remaining_retail_GBP": 65.09,
+    "modeled_all_in_GBP": 193.57,
+    "modeled_all_in_if_30USD_coupon_reduces_tax_base_GBP": 166.69,
+    "firm_complete_orderable_quote": false
+  },
+  "sourcing_qty": {
+    "two_boards": 13,
+    "five_boards": 25,
+    "spares_each": 5,
+    "five_spares_is_factory_requirement": false
+  },
+  "known_live_five_partial_checkout": {
+    "goods_USD": 90.39,
+    "shipping_USD": 1.5,
+    "original_shipping_USD": 6.36,
+    "VAT_USD": 18.38,
+    "total_USD": 110.27,
+    "delivery_business_days": "8\u201312",
+    "depanel_USD_excluded": 3.31,
+    "factory_SMT_placements_per_board": 51,
+    "missing_drivers_per_board": 4,
+    "not_functional": true
+  },
+  "discount_caveat": "$30coupon preview not finally deducted. \u00a326.88assumes the coupon also reduces the20%taxbase; actual tax/coupon treatment may differ. No additional random JLCONE discount counted.",
+  "robust_round_budgets_without_unverified_coupon": {
+    "two_finished_GBP": 165,
+    "five_finished_GBP": 255,
+    "three_finished_plus_two_assembled_spares_GBP": 200,
+    "basis": "Modest rounding/headroom above model; not guaranteed caps. CardFX, final sourcing tax, fullassembly fee, discount and shipping must be rechecked."
+  },
+  "limitations": [
+    "No complete55-SMTquote until exactdrivers reach JLCwarehouse.",
+    "Procurement/PCBA is two separate paid transactions; no orders made.",
+    "Depanel is budgeted because delivery of separated final-outline PCBs remains intended, even though current savedpartialcart excludes it.",
+    "SMTlabor estimates do not establish exact accounting of24pins plus exposed thermalpad.",
+    "Retail totals include whole packs/lengths and deliveryVAT allowances; ownedtools/power/cables/filament excluded.",
+    "Five completeunits require14moreLEDs; optional3finished+2populatedspares does not."
+  ],
+  "known_live_two_partial_checkout": {
+    "goods_USD": 82.68,
+    "shipping_USD": 1.5,
+    "original_shipping_USD": 5.75,
+    "VAT_USD": 16.84,
+    "total_USD": 101.02,
+    "depanel_USD_excluded": 2.32,
+    "factory_SMT_placements_per_board": 51,
+    "missing_drivers_per_board": 4,
+    "not_functional": true
+  },
+  "optional_twenty_drivers_no_spares": {
+    "procurement_total_USD": 39.1,
+    "saving_USD_before_tax_vs25": 5.16,
+    "modeled_saving_GBP_with20percent_tax": 4.62,
+    "five_finished_GBP": 242.72,
+    "three_finished_plus_two_spare_PCBs_GBP": 188.95,
+    "condition": "Only if20chips satisfy JLC assembly attrition. No extra chips for losses. Do not promise as final minimum."
+  }
+}

@@ -1,0 +1,422 @@
+{
+  "date": "2026-10-31",
+  "currency": "GBP",
+  "scope": "B2 / F12.875 mm. Primary scenario is actual new spending using the owner-confirmed tools, solder/flux, suitable USB supplies and USB-C cables. Custom PCB and factory assembly priced separately.",
+  "owned": {
+    "LED_modules": 21,
+    "filament": "grey HyperPLA, newcash\u00a30",
+    "printer": "Ender-3V3KE",
+    "multimeter": "UT0021YB",
+    "iron_and_stand": true,
+    "solder_and_flux": true,
+    "wire_strippers_and_cutters": true,
+    "suitable_USB_power_supplies": "Owner confirms plenty; no new purchase required",
+    "USB_C_cables": "Owner confirms plenty; use a data-capable cable for programming",
+    "ownership_confirmation_date": "2026-10-31"
+  },
+  "privacy": "No contact/address/account/session/checkout tokens saved. UKmainland shipping rates queried using owner authorised postcode.",
+  "items": [
+    {
+      "id": "xiao",
+      "name": "Headerless Seeed XIAO RP2040 Plus",
+      "sku": "100059977",
+      "unit_gross_pence": 449,
+      "per_display": 1,
+      "tax_basis": "Explicit merchant taxes included",
+      "stock": "Available live product API; carts accepted 2,3,5",
+      "url": "https://www.unmannedtechshop.co.uk/products/seeed-studio-xiao-rp2040-plus"
+    },
+    {
+      "id": "usb",
+      "name": "Adafruit 4090 USB-C downstream breakout, loose header supplied",
+      "sku": "ADA4090",
+      "unit_gross_pence": 290,
+      "per_display": 1,
+      "tax_basis": "Explicit merchant incl VAT",
+      "stock": "Available live product API; carts accepted 2,3,5",
+      "url": "https://thepihut.com/products/adafruit-usb-c-breakout-board-downstream-connection-ada4090"
+    },
+    {
+      "id": "power",
+      "name": "Official Raspberry Pi 15W UK PSU, white,5.1V3A,captive1.5mUSB-C lead",
+      "sku": "SC0443",
+      "unit_gross_pence": 770,
+      "per_display": 1,
+      "tax_basis": "Explicit merchant incl VAT",
+      "stock": "Available live product API; complete carts accepted 2,3,5",
+      "url": "https://thepihut.com/products/raspberry-pi-psu-uk",
+      "owner_inventory_scenario_new_purchase_quantity": 0,
+      "owner_inventory_scenario_new_spend_pence": 0,
+      "reference_only": "Retained as requirement and buy-all reference; owner confirms suitable inventory."
+    },
+    {
+      "id": "data",
+      "name": "USB-C to USB-C data cable,50cm,480Mbps,shared programming cable",
+      "unit_gross_pence": 250,
+      "per_batch": 1,
+      "tax_basis": "Explicit merchant incl VAT",
+      "stock": "Available; complete carts accepted",
+      "url": "https://thepihut.com/products/usb-c-to-usb-c-cable-1m",
+      "owner_inventory_scenario_new_purchase_quantity": 0,
+      "owner_inventory_scenario_new_spend_pence": 0,
+      "reference_only": "Retained as requirement and buy-all reference; owner confirms suitable inventory."
+    },
+    {
+      "id": "wire",
+      "name": "28AWG stranded BS3G210 PTFE wire,7/.120mm,maxOD.71mm,whole1m lengths",
+      "unit_net_pence": 150,
+      "unit_gross_pence": 180,
+      "quantities_by_batch": {
+        "2": {
+          "red_m": 1,
+          "black_m": 1,
+          "blue_m": 2
+        },
+        "3": {
+          "red_m": 1,
+          "black_m": 1,
+          "blue_m": 3
+        },
+        "5": {
+          "red_m": 1,
+          "black_m": 1,
+          "blue_m": 5
+        }
+      },
+      "tax_basis": "Anonymous UK checkout confirms goods VAT;shippingVAT calculated conservatively",
+      "stock": "All selected colours available; carts accepted",
+      "url": "https://thesaberarmory.com/products/28awg-ptfe-bs-spec-hook-up-wire-1-metre-lengths"
+    },
+    {
+      "id": "screw",
+      "name": "ISO7380-1 M2 socket button head,black steel,6mm and8mm lengths",
+      "unit_gross_pence": 90,
+      "quantities_by_batch": {
+        "2": {
+          "M2x6": 4,
+          "M2x8": 2
+        },
+        "3": {
+          "M2x6": 6,
+          "M2x8": 3
+        },
+        "5": {
+          "M2x6": 10,
+          "M2x8": 5
+        }
+      },
+      "tax_basis": "Explicit inc VAT; no unverified bulk discount deducted",
+      "stock": "Live product API available; exact carts accepted",
+      "url": "https://boltbase.com/products/m2-self-colour-10-9-high-tensile-socket-button-head-screws-iso-7380-1"
+    },
+    {
+      "id": "adhesive",
+      "name": "Chip Quik EGS10C-20G, clear electronics-grade flexible silicone,20g tube",
+      "unit_net_pence": 392,
+      "unit_gross_pence": 470,
+      "per_batch": 1,
+      "tax_basis": "CPC primary catalogue ex VAT; aggregatebasketVATrounding allowed1p",
+      "stock": "PrimaryUKproductpage320 in stock; directHTTPblocked, not checkoutlocked",
+      "url": "https://cpc.farnell.com/chip-quik/egs10c-20g/silicone-adhesive-sealant-20g/dp/SA03781",
+      "sku": "CPC SA03781",
+      "engineering_substitution": "Clear EGS electronics-grade silicone replaces white EGS only in procurement. Same specified non-corrosive, non-conductive flexible strain-relief method; no tape-only substitution or CAD change."
+    },
+    {
+      "id": "cableties",
+      "name": "ProPower PP01582,100mmx2.5mm black cableties,100pack",
+      "unit_net_pence": 52,
+      "unit_gross_pence": 62,
+      "per_batch": 1,
+      "tax_basis": "CPC primarypageincVAT62p; exVAT52p",
+      "stock": "PrimaryUKproductpage5039 packs in stock",
+      "url": "https://cpc.farnell.com/pro-power/pp01582/cable-tie-100x2-5mm-blk-100pk/dp/CBBR6697?gross_price=true",
+      "sku": "CPC CBBR6697"
+    },
+    {
+      "id": "solder",
+      "name": "Antex lead-free solder,0.8mm,4m tube",
+      "unit_gross_pence": 440,
+      "per_batch": 1,
+      "tax_basis": "Explicit merchant incl VAT",
+      "stock": "Live available; full carts accepted",
+      "url": "https://thepihut.com/products/antex-lead-free-solder",
+      "owner_inventory_scenario_new_purchase_quantity": 0,
+      "owner_inventory_scenario_new_spend_pence": 0,
+      "reference_only": "Retained as requirement and buy-all reference; owner confirms suitable inventory."
+    },
+    {
+      "id": "flux",
+      "name": "WartonFuture315 lowresidue no-clean fluxpen",
+      "unit_gross_pence": 780,
+      "per_batch": 1,
+      "tax_basis": "Explicit merchant incl VAT",
+      "stock": "Live available; full carts accepted",
+      "url": "https://thepihut.com/products/flux-pen-future-315-low-residue-no-clean",
+      "owner_inventory_scenario_new_purchase_quantity": 0,
+      "owner_inventory_scenario_new_spend_pence": 0,
+      "reference_only": "Retained as requirement and buy-all reference; owner confirms suitable inventory."
+    },
+    {
+      "id": "led",
+      "name": "LMD07057AUE-101B-02 rawred5x7LED module",
+      "sku": "485646",
+      "unit_net_pence": 150,
+      "unit_gross_pence": 180,
+      "quantities_by_batch": {
+        "2": 0,
+        "3": 0,
+        "5": 14
+      },
+      "tax_basis": "Fresh anonymous UK checkout confirms \u00a321net ->\u00a325.20gross for14;shippingVATbudgetedconservatively",
+      "stock": "Live available;14cartaccepted",
+      "url": "https://www.switchelectronics.co.uk/products/red-5-x-7-dot-matrix-led-display-17-8x12-7mm"
+    },
+    {
+      "id": "hexkey",
+      "name": "1.3mm DIN911 short arm hexkey",
+      "per_batch": 1,
+      "unit_gross_pence": 50,
+      "url": "https://boltbase.com/products/1-3mm-metric-short-arm-hex-keys-din-911",
+      "stock": "Live APIavailable; fresh exactcarts with screws accepted",
+      "ownership": "Unconfirmed. Included inprimarynewspend;remove50p if owned."
+    }
+  ],
+  "batches": [
+    {
+      "complete_display_count": 2,
+      "new_LED_modules": 0,
+      "installed_stock_modules": {
+        "xiao_plus": 2,
+        "adafruit4090": 2
+      },
+      "required_suitable_USB_supply_count": 2,
+      "required_shared_USB_data_cable_count": 1,
+      "new_USB_supply_count": 0,
+      "new_USB_data_cable_count": 0,
+      "new_solder_flux_count": 0,
+      "retailer_baskets": [
+        {
+          "shop": "UnmannedTech",
+          "gross_goods_pence": 898,
+          "gross_delivery_pence": 359,
+          "confidence": "Live exactquantity anonymouscart andshippingrate; pricesexplicitlyVATincluded"
+        },
+        {
+          "shop": "ThePiHut",
+          "gross_goods_pence": 580,
+          "gross_delivery_pence": 380,
+          "confidence": "Only exactUSBboards needed now; live modulecart/rateverifiedearlier"
+        },
+        {
+          "shop": "TheSaberArmory",
+          "net_goods_pence": 600,
+          "gross_goods_pence": 720,
+          "net_delivery_pence": 350,
+          "gross_delivery_pence": 420,
+          "confidence": "Live exactcart;goodsVATconfirmed inUKcheckout;20%shippingVAT allowance"
+        },
+        {
+          "shop": "BoltBase",
+          "gross_goods_pence": 590,
+          "gross_delivery_pence": 390,
+          "confidence": "Exact screws plus one1.3mmkey; fresh anonymouscart/rate; no unverified discount"
+        },
+        {
+          "shop": "CPC",
+          "net_goods_pence": 444,
+          "gross_goods_pence": 533,
+          "net_delivery_pence": 375,
+          "gross_delivery_pence": 450,
+          "confidence": "PrimaryUKcatalogue+publishedonline smallorderhandlingcharge; notcheckoutlocked. AggregateVATroundingbudget1p higher thanseparatelyroundedunitprices."
+        }
+      ],
+      "retail_excluding_customPCB_pence": 5320,
+      "actual_new_spend_includes_hexkey_pence": 50,
+      "retail_if_1p3mm_hexkey_owned_pence": 5270,
+      "buy_all_supplies_reference_excluding_customPCB_pence": 8330,
+      "owner_inventory_saving_vs_buy_all_reference_pence": 3010,
+      "additional_tools_new_spend_pence": 0,
+      "buy_all_reference_with_full_toolset_pence": 11660,
+      "status": "Primary inventory-aware VAT-inclusive delivered retail budget; add separately verified customPCB/PCBA quote. No order. Catalogue/shipping allowance caveats retained."
+    },
+    {
+      "complete_display_count": 3,
+      "new_LED_modules": 0,
+      "installed_stock_modules": {
+        "xiao_plus": 3,
+        "adafruit4090": 3
+      },
+      "required_suitable_USB_supply_count": 3,
+      "required_shared_USB_data_cable_count": 1,
+      "new_USB_supply_count": 0,
+      "new_USB_data_cable_count": 0,
+      "new_solder_flux_count": 0,
+      "retailer_baskets": [
+        {
+          "shop": "UnmannedTech",
+          "gross_goods_pence": 1347,
+          "gross_delivery_pence": 359,
+          "confidence": "Live exactquantity anonymouscart andshippingrate; pricesexplicitlyVATincluded"
+        },
+        {
+          "shop": "ThePiHut",
+          "gross_goods_pence": 870,
+          "gross_delivery_pence": 380,
+          "confidence": "Only exactUSBboards needed now; live modulecart/rateverifiedearlier"
+        },
+        {
+          "shop": "TheSaberArmory",
+          "net_goods_pence": 750,
+          "gross_goods_pence": 900,
+          "net_delivery_pence": 350,
+          "gross_delivery_pence": 420,
+          "confidence": "Live exactcart;goodsVATconfirmed inUKcheckout;20%shippingVAT allowance"
+        },
+        {
+          "shop": "BoltBase",
+          "gross_goods_pence": 860,
+          "gross_delivery_pence": 390,
+          "confidence": "Exact screws plus one1.3mmkey; fresh anonymouscart/rate; no unverified discount"
+        },
+        {
+          "shop": "CPC",
+          "net_goods_pence": 444,
+          "gross_goods_pence": 533,
+          "net_delivery_pence": 375,
+          "gross_delivery_pence": 450,
+          "confidence": "PrimaryUKcatalogue+publishedonline smallorderhandlingcharge; notcheckoutlocked. AggregateVATroundingbudget1p higher thanseparatelyroundedunitprices."
+        }
+      ],
+      "retail_excluding_customPCB_pence": 6509,
+      "actual_new_spend_includes_hexkey_pence": 50,
+      "retail_if_1p3mm_hexkey_owned_pence": 6459,
+      "buy_all_supplies_reference_excluding_customPCB_pence": 10289,
+      "owner_inventory_saving_vs_buy_all_reference_pence": 3780,
+      "additional_tools_new_spend_pence": 0,
+      "buy_all_reference_with_full_toolset_pence": 13619,
+      "status": "Primary inventory-aware VAT-inclusive delivered retail budget; add separately verified customPCB/PCBA quote. No order. Catalogue/shipping allowance caveats retained."
+    },
+    {
+      "complete_display_count": 5,
+      "new_LED_modules": 14,
+      "installed_stock_modules": {
+        "xiao_plus": 5,
+        "adafruit4090": 5
+      },
+      "required_suitable_USB_supply_count": 5,
+      "required_shared_USB_data_cable_count": 1,
+      "new_USB_supply_count": 0,
+      "new_USB_data_cable_count": 0,
+      "new_solder_flux_count": 0,
+      "retailer_baskets": [
+        {
+          "shop": "UnmannedTech",
+          "gross_goods_pence": 2245,
+          "gross_delivery_pence": 359,
+          "confidence": "Live exactquantity anonymouscart andshippingrate; pricesexplicitlyVATincluded"
+        },
+        {
+          "shop": "ThePiHut",
+          "gross_goods_pence": 1450,
+          "gross_delivery_pence": 380,
+          "confidence": "Only exactUSBboards needed now; live modulecart/rateverifiedearlier"
+        },
+        {
+          "shop": "TheSaberArmory",
+          "net_goods_pence": 1050,
+          "gross_goods_pence": 1260,
+          "net_delivery_pence": 350,
+          "gross_delivery_pence": 420,
+          "confidence": "Live exactcart;goodsVATconfirmed inUKcheckout;20%shippingVAT allowance"
+        },
+        {
+          "shop": "BoltBase",
+          "gross_goods_pence": 1400,
+          "gross_delivery_pence": 390,
+          "confidence": "Exact screws plus one1.3mmkey; fresh anonymouscart/rate; no unverified discount"
+        },
+        {
+          "shop": "CPC",
+          "net_goods_pence": 444,
+          "gross_goods_pence": 533,
+          "net_delivery_pence": 375,
+          "gross_delivery_pence": 450,
+          "confidence": "PrimaryUKcatalogue+publishedonline smallorderhandlingcharge; notcheckoutlocked. AggregateVATroundingbudget1p higher thanseparatelyroundedunitprices."
+        },
+        {
+          "shop": "SwitchElectronics",
+          "net_goods_pence": 2100,
+          "gross_goods_pence": 2520,
+          "net_delivery_pence": 399,
+          "gross_delivery_pence": 479,
+          "confidence": "14LEDcartaccepted,goodsVATconfirmed;shippingVATallowance20%"
+        }
+      ],
+      "retail_excluding_customPCB_pence": 11886,
+      "actual_new_spend_includes_hexkey_pence": 50,
+      "retail_if_1p3mm_hexkey_owned_pence": 11836,
+      "buy_all_supplies_reference_excluding_customPCB_pence": 17206,
+      "owner_inventory_saving_vs_buy_all_reference_pence": 5320,
+      "additional_tools_new_spend_pence": 0,
+      "buy_all_reference_with_full_toolset_pence": 20536,
+      "status": "Primary inventory-aware VAT-inclusive delivered retail budget; add separately verified customPCB/PCBA quote. No order. Catalogue/shipping allowance caveats retained."
+    }
+  ],
+  "cost_reduction_notes": [
+    "Owner now confirms iron+stand,solder+flux,wirestrippers/cutters,suitable USB supplies andUSB-C cables: all retained as requirements but\u00a30newspend.",
+    "Shared1.3mmhexkey ownership unconfirmed: includeone50pkeywithscrews;remove50p ifowned.",
+    "CPC clear EGS10C20g electronics-grade silicone plus100correct2.5mmties costs\u00a39.83deliveredinclVAT, replacing\u00a318.48Farnellreferencebasket andsaving\u00a38.65perbatch withoutchangingstrainreliefmethod.",
+    "CPC aggregatebudget: adhesive\u00a33.92exVAT+ties\u00a30.52exVAT+onlinehandling\u00a33.75exVAT=\u00a38.19exVAT;20%VAT=\u00a39.828roundedto\u00a39.83. MerchantunitVATroundingmaymake1pless.",
+    "No tape-only strainrelief substitution. Clear EGS silicone hasprimaryspecificationfornon-corrosive,non-conductive flexiblebondingofcorrosionsensitiveelectronics. Fit smallbeadafterelectricaltests asassemblyguidealreadyrequires.",
+    "Only14additionalLEDsneededfor5completedisplays; existing21cover2or3units.",
+    "Whole1mwirelengths,packsandtubescounted,notperconsumedunitamortisation.",
+    "Thin28AWGstrandedPTFEOD.71mm retainedforall20wires;no cheap1.2mmODwire substitution.",
+    "Actualcartsreturnednobulkdiscount onscrews, so no phantom saving deducted.",
+    "WireandLEDgoodsVATconfirmedusinganonymousUKcheckout. ShippingVATbudgeted20%;CPCcatalogue+publishedcharge remainsabudget,notprivateaddresscheckout.",
+    "Originalbefore-inventoryquotespreservedin README-before-owner-inventory.md andretail-quote-summary-before-owner-inventory.json forhistory."
+  ],
+  "assembly_note": "SmallcustomPCBcomponentsassembledbyfactory;ownerstillhas84LEDpinjointsand40wirejointsperdisplayplusmechanicalassemblyandfirmwareloading. Retail stock module revisions and realUSBplugcasefit still requirephysicalreceiptchecks.",
+  "unconfirmed_owned": [
+    "1.3 mm hex key: one50p key included in primary basket; subtract50p if already owned.",
+    "Suitable electronics-safe silicone adhesive and2.5mm cableties: purchased in primary basket.",
+    "Thin flexible28AWG stranded wire: purchased in primary basket."
+  ],
+  "conditional_tools_reference_only": [
+    {
+      "id": "iron",
+      "gross_pence": 1690,
+      "shipping_pence": 290,
+      "stock": "LivemerchantJSON-LDInStock,VATincluded",
+      "url": "https://kunkune.co.uk/shop/soldering-iron-kits/yihua-928d-i-soldering-iron-65w-uk-plug/"
+    },
+    {
+      "id": "stand",
+      "gross_pence": 400,
+      "shipping_pence": 0,
+      "shipping_note": "Add existingPiHutbasket",
+      "url": "https://thepihut.com/products/soldering-iron-bench-stand"
+    },
+    {
+      "id": "strippers",
+      "gross_pence": 600,
+      "shipping_pence": 0,
+      "shipping_note": "Add existingPiHutbasket;20-30AWG",
+      "url": "https://thepihut.com/products/wire-strippers"
+    },
+    {
+      "id": "cutters",
+      "gross_pence": 350,
+      "shipping_pence": 0,
+      "shipping_note": "Add existingPiHutbasket",
+      "url": "https://thepihut.com/products/precision-diagonal-cutters"
+    },
+    {
+      "id": "hexkey",
+      "gross_pence": 50,
+      "shipping_pence": 0,
+      "shipping_note": "AddexistingBoltBasebasket;1.3mmneededbyM2buttonhead",
+      "url": "https://boltbase.com/products/1-3mm-metric-short-arm-hex-keys-din-911"
+    }
+  ],
+  "conditional_tools_reference_note": "Owner confirms iron+stand, solder+flux andwirestrippers/cutters. Do notcharge these. Key50p is now in primarybasket already. Historical fullnewtoolsetcost3380p includedkey; remainingreplacementtoolswouldcost3330p andarenotneeded."
+}

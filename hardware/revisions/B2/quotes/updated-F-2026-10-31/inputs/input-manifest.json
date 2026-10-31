@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-31",
+  "canonical_PCB_sha256": "b42e3d59b40a2e9cc877f8c5595d58339a2c7b0797970fa826ea84c19b8105f1",
+  "pitch_mm": 12.875,
+  "outline_mm": [
+    89.45,
+    17.3
+  ],
+  "files": {
+    "B2-F12p875-89p45x17p30-REVIEW-20261031.zip": {
+      "manufacturing_source": "hardware/revisions/B2/manufacturing/B2_F_12p875_review_2026-10-31/house-rules-main-B2-fabrication-REVIEW.zip",
+      "sha256": "2ec2649640f93a60dcf0dfa970e13907fc002abc4798adc57c50c915215cbc03",
+      "alias_bytes_identical": true
+    },
+    "B2-F12p875-55SMT-BOM.csv": {
+      "manufacturing_source": "hardware/revisions/B2/manufacturing/B2_F_12p875_review_2026-10-31/assembly/bom.csv",
+      "sha256": "df4cf137df0f5b647e6a4e97e7190f5cbae2d6076ffb7a7ededd35b3802e0469",
+      "alias_bytes_identical": true
+    },
+    "B2-F12p875-55SMT-native-CPL.csv": {
+      "manufacturing_source": "hardware/revisions/B2/manufacturing/B2_F_12p875_review_2026-10-31/assembly/cpl-manufacturer-review.csv",
+      "sha256": "07caaf8634302a350b234418473bba4223fe561926207837a10ef53ed14cf9c9",
+      "alias_bytes_identical": true
+    }
+  }
+}

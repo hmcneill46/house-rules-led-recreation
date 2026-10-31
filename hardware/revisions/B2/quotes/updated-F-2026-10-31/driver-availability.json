@@ -1,0 +1,154 @@
+{
+  "date": "2026-10-31",
+  "checked_utc": "2026-10-31T20:35:45.304995+00:00",
+  "scope": "Public official manufacturer/distributor/JLC research only. No account access, component reservation, purchase, design edit or part substitution.",
+  "canonical_part": {
+    "mpn": "TLC59282RGER",
+    "jlc_lcsc": "C702074",
+    "per_display": 4,
+    "package": "TI RGE 24-pin VQFN 4x4mm exposed pad"
+  },
+  "owner_account_observation_from_parent": "The current signed-in JLCONE cart flags C702074 out of stock for old Economic assembly drafts. This is stronger current availability evidence than cached public search stock counts.",
+  "minimum_fitted_counts": {
+    "2_displays": 8,
+    "3_displays": 12,
+    "5_displays": 20
+  },
+  "attrition": "Factory spare/attrition quantity must be added according to the live JLC quotation. No arbitrary spare allowance is assumed here.",
+  "same_device_carrier_option": {
+    "mpn": "TLC59282RGET",
+    "jlc_lcsc": "C202205",
+    "package": "Same TI RGE 24-pin VQFN 4x4mm exposed pad",
+    "manufacturer_explicit_equivalence": true,
+    "difference": "RGER large tape/reel standard quantity3000; RGET small tape/reel standard quantity250. TI states these products are exactly the same except carrier type.",
+    "jlc_assembly_type": "JLC public listing says Economic and Standard SMT assembly",
+    "live_jlc_stock_or_price_confirmed": false,
+    "applied_to_design_or_quote_by_this_agent": false,
+    "source_urls": [
+      "https://www.ti.com/product/TLC59282/part-details/TLC59282RGER",
+      "https://www.ti.com/packaging/tw/docs/carriermaterial/carrierlookup?OPN=TLC59282RGET&state=details",
+      "https://jlcpcb.com/partdetail/TexasInstruments-TLC59282RGET/C202205"
+    ]
+  },
+  "public_stock_evidence": [
+    {
+      "supplier": "TI direct",
+      "mpn": [
+        "TLC59282RGER",
+        "TLC59282RGET"
+      ],
+      "observation": "Public TI part page says ACTIVE but Out of stock / Not available for both carrier choices. Inventory/login caveat present.",
+      "source": "https://www.ti.com/product/TLC59282/part-details/TLC59282RGER",
+      "certainty": "Public rendered page; not logged-in inventory"
+    },
+    {
+      "supplier": "JLCPCB",
+      "mpn": "TLC59282RGER",
+      "source": "https://jlcpcb.com/partdetail/TexasInstruments-TLC59282RGER/C702074",
+      "observation": "Exact C702074 listing, Economic and Standard SMT supported. Public HTML does not show current stock or price.",
+      "certainty": "Product identity verified; live availability must use parent account UI"
+    },
+    {
+      "supplier": "JLCPCB",
+      "mpn": "TLC59282RGET",
+      "source": "https://jlcpcb.com/partdetail/TexasInstruments-TLC59282RGET/C202205",
+      "observation": "Exact C202205 listing, Economic and Standard SMT supported. Public HTML does not show current stock or price.",
+      "certainty": "Product identity verified; live availability must use parent account UI"
+    },
+    {
+      "supplier": "LCSC",
+      "mpn": "TLC59282RGER",
+      "source": "https://www.lcsc.com/product-detail/LED-Drivers_Texas-Instruments-TLC59282RGER_C702074.html",
+      "observation": "Search-index snapshot (last month) showed27units, USD1.3563 at1+,1.1989at10+. Opening the page today omits stock/price in readable page content; direct public HTML request returned403. Do not treat27as live stock.",
+      "certainty": "Historical cached lead only; unsuitable for confirmed total"
+    },
+    {
+      "supplier": "LCSC",
+      "mpn": "TLC59282RGET",
+      "source": "https://www.lcsc.com/product-detail/C202205.html",
+      "observation": "C202205 identity verified; cached RGER related-product table lists RGET quantity0. Current stock not readable.",
+      "certainty": "No current in-stock claim"
+    },
+    {
+      "supplier": "DigiKey",
+      "mpn": "TLC59282RGER",
+      "source": "https://www.digikey.com/en/products/detail/texas-instruments/TLC59282RGER/2741825",
+      "part_numbers": [
+        "296-29400-1-ND cut tape",
+        "296-29400-2-ND full reel"
+      ],
+      "observed_published_stock": 1232,
+      "published_cut_tape_USD_tiers": {
+        "1": 1.63,
+        "10": 1.191,
+        "25": 1.082,
+        "100": 0.9616
+      },
+      "certainty": "Official distributor page/search-index snapshot crawled2weeks\u20131month ago; external procurement lead, not current JLC sourcing quotation or reservation"
+    },
+    {
+      "supplier": "DigiKey",
+      "mpn": "TLC59282RGET",
+      "source": "https://www.digikey.com/en/products/detail/texas-instruments/TLC59282RGET/2751300",
+      "part_numbers": [
+        "296-29518-1-ND cut tape",
+        "296-29518-2-ND full reel"
+      ],
+      "observed_published_stock": 5206,
+      "published_cut_tape_USD_tiers": {
+        "1": 2.06,
+        "10": 1.518,
+        "25": 1.3828,
+        "100": 1.2344
+      },
+      "certainty": "Official distributor snapshot, not current JLC sourcing quotation or reservation"
+    }
+  ],
+  "external_component_cost_reference_only": {
+    "currency": "USD",
+    "basis": "Published DigiKey RGER cut-tape tiers, excludes JLC sourcing/assembly/attrition/VAT/shipping and does not establish live procurement availability",
+    "2_display_fitted_only_8_at1p63": 13.04,
+    "2_display_10part_tier_purchase_at1p191": 11.91,
+    "3_display_fitted_only_12_at1p191": 14.292,
+    "5_display_fitted_only_20_at1p191": 23.82,
+    "caution": "Ten parts can cost less than eight at these published tiers, but the factory required purchase quantity must be quoted; do not assume ten covers attrition."
+  },
+  "procurement_routes": [
+    {
+      "route": "JLC public stock or private Pre-Order",
+      "recommendation": "Use unchanged RGER C702074 if live matching confirms enough stock; ask live page for restock/pre-order lead when unavailable. No lead or exact pre-order price is confirmed by this public research.",
+      "source": "https://jlcpcb.com/help/article/pcba-parts-sourcing-instruction"
+    },
+    {
+      "route": "JLC Global Sourcing exact RGER or TI-equivalent carrier RGET",
+      "published_lead_days": [
+        9,
+        15
+      ],
+      "warehouse_arrival_required_before_PCBA_use": true,
+      "published_standard_inbound_shipping_charge": "No shipping charge for ordinary Global Sourcing orders; extra cost can apply to excessive size/weight. Other review, tax, loose-part/baking fees may apply depending on part/route.",
+      "recommendation": "Potential no-PCB-redesign route if account UI offers current distributor inventory. Obtain actual price/quantity/attrition/service quote; external distributor stock alone is not a total.",
+      "source_urls": [
+        "https://jlcpcb.com/help/article/pcba-parts-sourcing-instruction",
+        "https://jlcpcb.com/help/article/how-to-use-jlcpcb-global-sourcing-parts-service",
+        "https://jlcpcb.com/help/article/global-sourcing-parts-order-terms-conditions"
+      ]
+    },
+    {
+      "route": "Overseas consignment",
+      "recommendation": "Avoid assuming this is economical for8\u201320ICs; separate inbound freight, customs/Chinese VAT deposit, handling and attrition can dominate. Current official guide describes13%importVATdeposit and2%handling minimumUSD10, while other official terms refer toUSD85servicecost. Actual portal quotation must resolve applicable route.",
+      "source_urls": [
+        "https://jlcpcb.com/help/article/how-to-consign-parts-to-jlcpcb",
+        "https://jlcpcb.com/help/article/consignment-part-terms-conditions",
+        "https://jlcpcb.com/help/article/important-note-before-you-consign-the-part-to-jlcpcb"
+      ]
+    }
+  ],
+  "forbidden_assumptions": [
+    "Do not substitute TLC59283 as if interchangeable",
+    "Do not substitute SSOP DBQR onto the RGE footprint",
+    "Do not treat public distributor availability as current JLC reserved inventory",
+    "Do not buy parts, consign or accept new sourcing terms while quoting only",
+    "If RGET is selected later, record exact carrier/orderable MPN and matching evidence in final assembly documentation rather than silently editing the canonical BOM"
+  ]
+}

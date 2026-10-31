@@ -35,7 +35,11 @@ These are native KiCad renders of the actual routed board. The first hides the L
 
 ![Rear component side of B2](render/main-bottom.png)
 
-## Historical cost evidence — fresh quote required
+## Current cost check — 31 October
+
+The [confirmed-F purchasing comparison](quotes/updated-F-2026-10-31/README.md) budgets approximately **£165 for two complete displays**, **£200 for three complete displays plus two populated spare mains**, or **£255 for five complete displays**, with owned tools, power supplies, cables, solder and filament excluded. These are provisional budgets including delivery/tax allowances, not final payable quotes. Both correct QFN driver catalogue listings are currently out of JLC stock. An exact Mouser sourcing preview is recorded, but parts must reach JLC before a complete 55-SMT assembly quote is available. The live 51-SMT cost drafts omit U1–U4, are not functional and must not be ordered. No order or payment was submitted in this new quote session.
+
+## Historical cost evidence — earlier pitch
 
 These prices were checked for the **earlier 88.40 mm / 12.700 mm-pitch board on 29 October**. They remain budget evidence, not a current quote for the revised 89.45 mm board. Re-quote the new manufacturing package and verify component stock, shipping, VAT and discounts before ordering.
 

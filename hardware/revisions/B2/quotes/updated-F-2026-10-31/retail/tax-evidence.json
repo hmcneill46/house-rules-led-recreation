@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-31",
+  "evidence_type": "Public merchant text and fresh isolated anonymous checkout summaries, saved without checkout tokens/customer address/contact data.",
+  "shops": [
+    {
+      "shop": "UMT",
+      "source": "https://www.unmannedtechshop.co.uk/products/seeed-studio-xiao-rp2040-plus",
+      "evidence": "Merchant product page says taxes included. \u00a34.49/unit treated as gross."
+    },
+    {
+      "shop": "The Pi Hut",
+      "source": "https://thepihut.com/products/adafruit-usb-c-breakout-board-downstream-connection-ada4090",
+      "evidence": "Merchant product pages explicitly label displayed prices incl. VAT. Combined basket accepted exact quantities and returned Royal Mail rate \u00a33.80."
+    },
+    {
+      "shop": "The Saber Armory",
+      "source": "https://thesaberarmory.com/products/28awg-ptfe-bs-spec-hook-up-wire-1-metre-lengths",
+      "evidence": "Cart says shipping & taxes calculated at checkout. Fresh anonymous UK checkout for 4 metres shows \u00a36.00 subtotal and \u00a37.20 total before shipping, confirming the \u00a31.50 catalogue price is ex VAT. Shipping rate API \u00a33.50; allowance \u00a34.20 including VAT. Shipping VAT is calculated allowance, not observed final address checkout."
+    },
+    {
+      "shop": "Switch Electronics",
+      "source": "https://www.switchelectronics.co.uk/products/red-5-x-7-dot-matrix-led-display-17-8x12-7mm",
+      "evidence": "Cart says taxes and shipping calculated at checkout. Merchant VAT app config includingTax:false, GB20%. \u00a31.50 raw LED price is therefore \u00a31.80 incl VAT. Shipping API \u00a33.99 is budgeted as \u00a34.79 incl VAT conservatively; final checkout shipping tax not observed."
+    },
+    {
+      "shop": "Bolt Base",
+      "source": "https://boltbase.com/products/m2-self-colour-10-9-high-tensile-socket-button-head-screws-iso-7380-1",
+      "evidence": "Product page \u00a30.90 inc. VAT / \u00a30.75 exc. VAT. Exact quantity anonymous carts show no discounts. Shipping API \u00a33.90 Tracked48 used without adding VAT again; merchant consumer delivery price treated gross."
+    },
+    {
+      "shop": "Farnell",
+      "source": "https://uk.farnell.com/help/delivery-information",
+      "evidence": "Primary delivery page shows \u00a38.99 standard under \u00a340. Products and default merchant prices ex VAT, therefore \u00a310.79 gross delivery budget. Adhesive product \u00a35.04 ex VAT and cable tie individual product \u00a31.37 ex VAT used as conservative retail budget; current category lower tie price \u00a30.683 not deducted without cart confirmation. This is catalogue+delivery budget, not checkout-locked quote.",
+      "status": "Superseded buy-all reference. Current primary adhesive/tie basket uses CPC, below."
+    },
+    {
+      "shop": "CPC",
+      "source": "https://cpc.farnell.com/terms-of-purchase",
+      "evidence": "Current primary supplier for adhesive/ties. UK catalogue silicone EGS10C-20G \u00a33.92exVAT, PP01582 ties \u00a30.52exVAT; online small-order handling \u00a33.75exVAT. Aggregate\u00a38.19exVAT \u00d71.2 =\u00a39.828, conservatively\u00a39.83 includingVAT. SeparateunitVATroundingmaymake1pless. No privateaddresscheckout completed."
+    }
+  ]
+}

@@ -1,0 +1,1894 @@
+{
+  "xiao": {
+    "url": "https://www.unmannedtechshop.co.uk/products/seeed-studio-xiao-rp2040-plus.js",
+    "title": "Seeed Studio XIAO RP2040 Plus",
+    "price": 449,
+    "available": true,
+    "variants": [
+      {
+        "id": 58631516488061,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "100059977",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "Seeed Studio XIAO RP2040 Plus",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 449,
+        "weight": 0,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ]
+  },
+  "usb": {
+    "url": "https://thepihut.com/products/adafruit-usb-c-breakout-board-downstream-connection-ada4090.js",
+    "title": "Adafruit USB Type C Breakout Board - Downstream Connection",
+    "price": 290,
+    "available": true,
+    "variants": [
+      {
+        "id": 18634596089918,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "ADA4090",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "Adafruit USB Type C Breakout Board - Downstream Connection",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 290,
+        "weight": 3,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": "ADA4090",
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ]
+  },
+  "led": {
+    "url": "https://www.switchelectronics.co.uk/products/red-5-x-7-dot-matrix-led-display-17-8x12-7mm.js",
+    "title": "Red 5 x 7 Dot Matrix LED Display 17.8x12.7mm",
+    "price": 150,
+    "available": true,
+    "variants": [
+      {
+        "id": 45338906984757,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "485646",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "Red 5 x 7 Dot Matrix LED Display 17.8x12.7mm",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 150,
+        "weight": 2,
+        "compare_at_price": 150,
+        "inventory_management": "shopify",
+        "barcode": "5063200127897",
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ]
+  },
+  "wire_white": {
+    "url": "https://thepihut.com/products/silicone-cover-stranded-core-wire-2m-30awg-white.js",
+    "title": "Silicone Cover Stranded-Core Wire - 2m 30AWG White",
+    "price": 80,
+    "available": false,
+    "variants": [
+      {
+        "id": 27739709649,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "104359",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": false,
+        "name": "Silicone Cover Stranded-Core Wire - 2m 30AWG White",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 80,
+        "weight": 3,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": "7.02E+11",
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ]
+  },
+  "silicone-cover-stranded-core-wire-2m-30awg-black": {
+    "title": "Silicone Cover Stranded-Core Wire - 2m 30AWG Black",
+    "price": 80,
+    "available": false,
+    "variants": [
+      {
+        "id": 27739708945,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "102807",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": false,
+        "name": "Silicone Cover Stranded-Core Wire - 2m 30AWG Black",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 80,
+        "weight": 3,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": "5056415213097",
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ],
+    "url": "https://thepihut.com/products/silicone-cover-stranded-core-wire-2m-30awg-black"
+  },
+  "silicone-cover-stranded-core-wire-2m-30awg-red": {
+    "title": "Silicone Cover Stranded-Core Wire - 2m 30AWG Red",
+    "price": 80,
+    "available": false,
+    "variants": [
+      {
+        "id": 27739708753,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "104356",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": false,
+        "name": "Silicone Cover Stranded-Core Wire - 2m 30AWG Red",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 80,
+        "weight": 3,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": "7.02E+11",
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ],
+    "url": "https://thepihut.com/products/silicone-cover-stranded-core-wire-2m-30awg-red"
+  },
+  "silicone-cover-stranded-core-wire-2m-30awg-blue": {
+    "title": "Silicone Cover Stranded-Core Wire - 2m 30AWG Blue",
+    "price": 80,
+    "available": false,
+    "variants": [
+      {
+        "id": 27739708817,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "103728",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": false,
+        "name": "Silicone Cover Stranded-Core Wire - 2m 30AWG Blue",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 80,
+        "weight": 3,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": "5056415213103",
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ],
+    "url": "https://thepihut.com/products/silicone-cover-stranded-core-wire-2m-30awg-blue"
+  },
+  "silicone-cover-stranded-core-wire-2m-30awg-yellow": {
+    "title": "Silicone Cover Stranded-Core Wire - 2m 30AWG Yellow",
+    "price": 80,
+    "available": false,
+    "variants": [
+      {
+        "id": 27739709009,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "104357",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": false,
+        "name": "Silicone Cover Stranded-Core Wire - 2m 30AWG Yellow",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 80,
+        "weight": 3,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": "7.12E+11",
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ],
+    "url": "https://thepihut.com/products/silicone-cover-stranded-core-wire-2m-30awg-yellow"
+  },
+  "silicone-cover-stranded-core-wire-2m-30awg-green": {
+    "title": "Silicone Cover Stranded-Core Wire - 2m 30AWG Green",
+    "price": 80,
+    "available": false,
+    "variants": [
+      {
+        "id": 27739709201,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "104358",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": false,
+        "name": "Silicone Cover Stranded-Core Wire - 2m 30AWG Green",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 80,
+        "weight": 3,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": "7.02E+11",
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ],
+    "url": "https://thepihut.com/products/silicone-cover-stranded-core-wire-2m-30awg-green"
+  },
+  "antex-lead-free-solder": {
+    "title": "Antex Lead Free Solder - 4m Tube",
+    "price": 440,
+    "available": true,
+    "variants": [
+      {
+        "id": 758600381,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "100327",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "Antex Lead Free Solder - 4m Tube",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 440,
+        "weight": 18,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": "0702565900831",
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ],
+    "url": "https://thepihut.com/products/antex-lead-free-solder"
+  },
+  "100mm-black-cable-ties": {
+    "title": "100mm Black Cable Ties",
+    "price": 150,
+    "available": false,
+    "variants": [
+      {
+        "id": 32299732729918,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "103060",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": false,
+        "name": "100mm Black Cable Ties",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 150,
+        "weight": 31,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ],
+    "url": "https://thepihut.com/products/100mm-black-cable-ties"
+  },
+  "usb-a-to-usb-c-cable-black": {
+    "error": "HTTP Error 404: Not Found"
+  },
+  "raspberry-pi-15w-usb-c-power-supply-uk-plug": {
+    "error": "HTTP Error 404: Not Found"
+  },
+  "wire_50ft_white": {
+    "title": "Silicone Cover Stranded-Core Wire - 50ft 30AWG White",
+    "price": 480,
+    "available": true,
+    "variants": [
+      {
+        "id": 27740367441,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "ADA3169",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "Silicone Cover Stranded-Core Wire - 50ft 30AWG White",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 480,
+        "weight": 24,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": "5056415213196",
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ],
+    "url": "https://thepihut.com/products/silicone-cover-stranded-core-wire-50ft-30awg-white.js"
+  },
+  "wire_50ft_yellow": {
+    "title": "Silicone Cover Stranded-Core Wire - 50ft 30AWG Yellow",
+    "price": 480,
+    "available": true,
+    "variants": [
+      {
+        "id": 27740366801,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "ADA3167",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "Silicone Cover Stranded-Core Wire - 50ft 30AWG Yellow",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 480,
+        "weight": 23,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": "5056415213202",
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ],
+    "url": "https://thepihut.com/products/silicone-cover-stranded-core-wire-50ft-30awg-yellow.js"
+  },
+  "psu": {
+    "title": "Raspberry Pi 15W USB-C Power Supply - UK Plug",
+    "price": 770,
+    "available": true,
+    "variants": [
+      {
+        "id": 20064004505662,
+        "title": "White",
+        "option1": "White",
+        "option2": null,
+        "option3": null,
+        "sku": "SC0443",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": {
+          "id": 33448809988291,
+          "product_id": 2215881179198,
+          "position": 1,
+          "created_at": "2022-03-03T15:57:03+00:00",
+          "updated_at": "2022-03-03T15:57:03+00:00",
+          "alt": "Raspberry Pi 15W USB-C Power Supply - UK Plug by Raspberry Pi - The Pi Hut",
+          "width": 1500,
+          "height": 1500,
+          "src": "https://cdn.shopify.com/s/files/1/0176/3274/products/official-uk-raspberry-pi-4-power-supply-5-1v-3a-raspberry-pi-sc0212-7009471070270.jpg?v=1646323023",
+          "variant_ids": [
+            20064004505662
+          ]
+        },
+        "available": true,
+        "name": "Raspberry Pi 15W USB-C Power Supply - UK Plug - White",
+        "public_title": "White",
+        "options": [
+          "White"
+        ],
+        "price": 770,
+        "weight": 120,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "featured_media": {
+          "alt": "Raspberry Pi 15W USB-C Power Supply - UK Plug by Raspberry Pi - The Pi Hut",
+          "id": 25751652827331,
+          "position": 1,
+          "preview_image": {
+            "aspect_ratio": 1.0,
+            "height": 1500,
+            "width": 1500,
+            "src": "https://cdn.shopify.com/s/files/1/0176/3274/products/official-uk-raspberry-pi-4-power-supply-5-1v-3a-raspberry-pi-sc0212-7009471070270.jpg?v=1646323023"
+          }
+        },
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 20064070303806,
+        "title": "Black",
+        "option1": "Black",
+        "option2": null,
+        "option3": null,
+        "sku": "SC0216",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": {
+          "id": 33448811233475,
+          "product_id": 2215881179198,
+          "position": 2,
+          "created_at": "2022-03-03T15:57:06+00:00",
+          "updated_at": "2022-03-03T15:57:06+00:00",
+          "alt": "Raspberry Pi 15W USB-C Power Supply - UK Plug by Raspberry Pi - The Pi Hut",
+          "width": 1500,
+          "height": 1500,
+          "src": "https://cdn.shopify.com/s/files/1/0176/3274/products/official-uk-raspberry-pi-4-power-supply-5-1v-3a-raspberry-pi-sc0216-7009470906430.jpg?v=1646323026",
+          "variant_ids": [
+            20064070303806
+          ]
+        },
+        "available": true,
+        "name": "Raspberry Pi 15W USB-C Power Supply - UK Plug - Black",
+        "public_title": "Black",
+        "options": [
+          "Black"
+        ],
+        "price": 770,
+        "weight": 120,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "featured_media": {
+          "alt": "Raspberry Pi 15W USB-C Power Supply - UK Plug by Raspberry Pi - The Pi Hut",
+          "id": 25751654039747,
+          "position": 2,
+          "preview_image": {
+            "aspect_ratio": 1.0,
+            "height": 1500,
+            "width": 1500,
+            "src": "https://cdn.shopify.com/s/files/1/0176/3274/products/official-uk-raspberry-pi-4-power-supply-5-1v-3a-raspberry-pi-sc0216-7009470906430.jpg?v=1646323026"
+          }
+        },
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ],
+    "url": "https://thepihut.com/products/raspberry-pi-psu-uk.js"
+  },
+  "wire_4_black30": {
+    "error": "HTTP Error 404: Not Found",
+    "url": "https://thepihut.com/products/silicone-cover-stranded-core-ribbon-cable-4-wires-1-meter-long-30-awg-black.js"
+  },
+  "screws": {
+    "title": "M2 Self Colour 10.9 High Tensile Socket Button Head Screws ISO 7380-1",
+    "price": 90,
+    "available": true,
+    "variants": [
+      {
+        "id": 57465567281533,
+        "title": "M2 (2mm) / 6mm",
+        "option1": "M2 (2mm)",
+        "option2": "6mm",
+        "option3": null,
+        "sku": "SC10.9BT-2X6",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "M2 Self Colour 10.9 High Tensile Socket Button Head Screws ISO 7380-1 - M2 (2mm) / 6mm",
+        "public_title": "M2 (2mm) / 6mm",
+        "options": [
+          "M2 (2mm)",
+          "6mm"
+        ],
+        "price": 90,
+        "weight": 0,
+        "compare_at_price": null,
+        "inventory_management": null,
+        "barcode": "5056670769971",
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 57465567314301,
+        "title": "M2 (2mm) / 8mm",
+        "option1": "M2 (2mm)",
+        "option2": "8mm",
+        "option3": null,
+        "sku": "SC10.9BT-2X8",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "M2 Self Colour 10.9 High Tensile Socket Button Head Screws ISO 7380-1 - M2 (2mm) / 8mm",
+        "public_title": "M2 (2mm) / 8mm",
+        "options": [
+          "M2 (2mm)",
+          "8mm"
+        ],
+        "price": 90,
+        "weight": 0,
+        "compare_at_price": null,
+        "inventory_management": null,
+        "barcode": "5056670769988",
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ],
+    "url": "https://boltbase.com/products/m2-self-colour-10-9-high-tensile-socket-button-head-screws-iso-7380-1.js"
+  },
+  "saber_wire": {
+    "title": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths)",
+    "price": 150,
+    "available": true,
+    "variants": [
+      {
+        "id": 31995307261988,
+        "title": "Black",
+        "option1": "Black",
+        "option2": null,
+        "option3": null,
+        "sku": "28AWGBLACK",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": {
+          "id": 14608854351908,
+          "product_id": 4644833984548,
+          "position": 1,
+          "created_at": "2020-05-17T18:17:37+01:00",
+          "updated_at": "2020-05-17T18:17:37+01:00",
+          "alt": null,
+          "width": 2084,
+          "height": 2084,
+          "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857",
+          "variant_ids": [
+            31995307261988,
+            31995307294756,
+            31995307360292,
+            31995307393060,
+            31995307458596,
+            31995307524132,
+            31995307556900,
+            31995307589668,
+            31995307622436,
+            31995307655204,
+            31995307687972
+          ]
+        },
+        "available": true,
+        "name": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Black",
+        "public_title": "Black",
+        "options": [
+          "Black"
+        ],
+        "price": 150,
+        "weight": 2,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "featured_media": {
+          "alt": null,
+          "id": 6782088839204,
+          "position": 1,
+          "preview_image": {
+            "aspect_ratio": 1.0,
+            "height": 2084,
+            "width": 2084,
+            "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857"
+          }
+        },
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 31995307294756,
+        "title": "Green",
+        "option1": "Green",
+        "option2": null,
+        "option3": null,
+        "sku": "28AWGGREEN",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": {
+          "id": 14608854351908,
+          "product_id": 4644833984548,
+          "position": 1,
+          "created_at": "2020-05-17T18:17:37+01:00",
+          "updated_at": "2020-05-17T18:17:37+01:00",
+          "alt": null,
+          "width": 2084,
+          "height": 2084,
+          "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857",
+          "variant_ids": [
+            31995307261988,
+            31995307294756,
+            31995307360292,
+            31995307393060,
+            31995307458596,
+            31995307524132,
+            31995307556900,
+            31995307589668,
+            31995307622436,
+            31995307655204,
+            31995307687972
+          ]
+        },
+        "available": true,
+        "name": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Green",
+        "public_title": "Green",
+        "options": [
+          "Green"
+        ],
+        "price": 150,
+        "weight": 2,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "featured_media": {
+          "alt": null,
+          "id": 6782088839204,
+          "position": 1,
+          "preview_image": {
+            "aspect_ratio": 1.0,
+            "height": 2084,
+            "width": 2084,
+            "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857"
+          }
+        },
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 31995307360292,
+        "title": "Pink",
+        "option1": "Pink",
+        "option2": null,
+        "option3": null,
+        "sku": "28AWGPINK",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": {
+          "id": 14608854351908,
+          "product_id": 4644833984548,
+          "position": 1,
+          "created_at": "2020-05-17T18:17:37+01:00",
+          "updated_at": "2020-05-17T18:17:37+01:00",
+          "alt": null,
+          "width": 2084,
+          "height": 2084,
+          "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857",
+          "variant_ids": [
+            31995307261988,
+            31995307294756,
+            31995307360292,
+            31995307393060,
+            31995307458596,
+            31995307524132,
+            31995307556900,
+            31995307589668,
+            31995307622436,
+            31995307655204,
+            31995307687972
+          ]
+        },
+        "available": true,
+        "name": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Pink",
+        "public_title": "Pink",
+        "options": [
+          "Pink"
+        ],
+        "price": 150,
+        "weight": 2,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "featured_media": {
+          "alt": null,
+          "id": 6782088839204,
+          "position": 1,
+          "preview_image": {
+            "aspect_ratio": 1.0,
+            "height": 2084,
+            "width": 2084,
+            "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857"
+          }
+        },
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 31995307393060,
+        "title": "Brown",
+        "option1": "Brown",
+        "option2": null,
+        "option3": null,
+        "sku": "28AWGBROWN",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": {
+          "id": 14608854351908,
+          "product_id": 4644833984548,
+          "position": 1,
+          "created_at": "2020-05-17T18:17:37+01:00",
+          "updated_at": "2020-05-17T18:17:37+01:00",
+          "alt": null,
+          "width": 2084,
+          "height": 2084,
+          "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857",
+          "variant_ids": [
+            31995307261988,
+            31995307294756,
+            31995307360292,
+            31995307393060,
+            31995307458596,
+            31995307524132,
+            31995307556900,
+            31995307589668,
+            31995307622436,
+            31995307655204,
+            31995307687972
+          ]
+        },
+        "available": true,
+        "name": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Brown",
+        "public_title": "Brown",
+        "options": [
+          "Brown"
+        ],
+        "price": 150,
+        "weight": 2,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "featured_media": {
+          "alt": null,
+          "id": 6782088839204,
+          "position": 1,
+          "preview_image": {
+            "aspect_ratio": 1.0,
+            "height": 2084,
+            "width": 2084,
+            "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857"
+          }
+        },
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 31995307458596,
+        "title": "Orange",
+        "option1": "Orange",
+        "option2": null,
+        "option3": null,
+        "sku": "28AWGORANGE",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": {
+          "id": 14608854351908,
+          "product_id": 4644833984548,
+          "position": 1,
+          "created_at": "2020-05-17T18:17:37+01:00",
+          "updated_at": "2020-05-17T18:17:37+01:00",
+          "alt": null,
+          "width": 2084,
+          "height": 2084,
+          "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857",
+          "variant_ids": [
+            31995307261988,
+            31995307294756,
+            31995307360292,
+            31995307393060,
+            31995307458596,
+            31995307524132,
+            31995307556900,
+            31995307589668,
+            31995307622436,
+            31995307655204,
+            31995307687972
+          ]
+        },
+        "available": true,
+        "name": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Orange",
+        "public_title": "Orange",
+        "options": [
+          "Orange"
+        ],
+        "price": 150,
+        "weight": 2,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "featured_media": {
+          "alt": null,
+          "id": 6782088839204,
+          "position": 1,
+          "preview_image": {
+            "aspect_ratio": 1.0,
+            "height": 2084,
+            "width": 2084,
+            "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857"
+          }
+        },
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 31995307524132,
+        "title": "Slate",
+        "option1": "Slate",
+        "option2": null,
+        "option3": null,
+        "sku": "28AWGSLATE",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": {
+          "id": 14608854351908,
+          "product_id": 4644833984548,
+          "position": 1,
+          "created_at": "2020-05-17T18:17:37+01:00",
+          "updated_at": "2020-05-17T18:17:37+01:00",
+          "alt": null,
+          "width": 2084,
+          "height": 2084,
+          "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857",
+          "variant_ids": [
+            31995307261988,
+            31995307294756,
+            31995307360292,
+            31995307393060,
+            31995307458596,
+            31995307524132,
+            31995307556900,
+            31995307589668,
+            31995307622436,
+            31995307655204,
+            31995307687972
+          ]
+        },
+        "available": true,
+        "name": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Slate",
+        "public_title": "Slate",
+        "options": [
+          "Slate"
+        ],
+        "price": 150,
+        "weight": 2,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "featured_media": {
+          "alt": null,
+          "id": 6782088839204,
+          "position": 1,
+          "preview_image": {
+            "aspect_ratio": 1.0,
+            "height": 2084,
+            "width": 2084,
+            "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857"
+          }
+        },
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 31995307556900,
+        "title": "Blue",
+        "option1": "Blue",
+        "option2": null,
+        "option3": null,
+        "sku": "28AWGBLUE",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": {
+          "id": 14608854351908,
+          "product_id": 4644833984548,
+          "position": 1,
+          "created_at": "2020-05-17T18:17:37+01:00",
+          "updated_at": "2020-05-17T18:17:37+01:00",
+          "alt": null,
+          "width": 2084,
+          "height": 2084,
+          "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857",
+          "variant_ids": [
+            31995307261988,
+            31995307294756,
+            31995307360292,
+            31995307393060,
+            31995307458596,
+            31995307524132,
+            31995307556900,
+            31995307589668,
+            31995307622436,
+            31995307655204,
+            31995307687972
+          ]
+        },
+        "available": true,
+        "name": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Blue",
+        "public_title": "Blue",
+        "options": [
+          "Blue"
+        ],
+        "price": 150,
+        "weight": 2,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "featured_media": {
+          "alt": null,
+          "id": 6782088839204,
+          "position": 1,
+          "preview_image": {
+            "aspect_ratio": 1.0,
+            "height": 2084,
+            "width": 2084,
+            "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857"
+          }
+        },
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 31995307589668,
+        "title": "Violet",
+        "option1": "Violet",
+        "option2": null,
+        "option3": null,
+        "sku": "28AWGVIOLET",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": {
+          "id": 14608854351908,
+          "product_id": 4644833984548,
+          "position": 1,
+          "created_at": "2020-05-17T18:17:37+01:00",
+          "updated_at": "2020-05-17T18:17:37+01:00",
+          "alt": null,
+          "width": 2084,
+          "height": 2084,
+          "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857",
+          "variant_ids": [
+            31995307261988,
+            31995307294756,
+            31995307360292,
+            31995307393060,
+            31995307458596,
+            31995307524132,
+            31995307556900,
+            31995307589668,
+            31995307622436,
+            31995307655204,
+            31995307687972
+          ]
+        },
+        "available": true,
+        "name": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Violet",
+        "public_title": "Violet",
+        "options": [
+          "Violet"
+        ],
+        "price": 150,
+        "weight": 2,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "featured_media": {
+          "alt": null,
+          "id": 6782088839204,
+          "position": 1,
+          "preview_image": {
+            "aspect_ratio": 1.0,
+            "height": 2084,
+            "width": 2084,
+            "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857"
+          }
+        },
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 31995307622436,
+        "title": "White",
+        "option1": "White",
+        "option2": null,
+        "option3": null,
+        "sku": "28AWGWHITE",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": {
+          "id": 14608854351908,
+          "product_id": 4644833984548,
+          "position": 1,
+          "created_at": "2020-05-17T18:17:37+01:00",
+          "updated_at": "2020-05-17T18:17:37+01:00",
+          "alt": null,
+          "width": 2084,
+          "height": 2084,
+          "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857",
+          "variant_ids": [
+            31995307261988,
+            31995307294756,
+            31995307360292,
+            31995307393060,
+            31995307458596,
+            31995307524132,
+            31995307556900,
+            31995307589668,
+            31995307622436,
+            31995307655204,
+            31995307687972
+          ]
+        },
+        "available": true,
+        "name": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - White",
+        "public_title": "White",
+        "options": [
+          "White"
+        ],
+        "price": 150,
+        "weight": 2,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "featured_media": {
+          "alt": null,
+          "id": 6782088839204,
+          "position": 1,
+          "preview_image": {
+            "aspect_ratio": 1.0,
+            "height": 2084,
+            "width": 2084,
+            "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857"
+          }
+        },
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 31995307655204,
+        "title": "Yellow",
+        "option1": "Yellow",
+        "option2": null,
+        "option3": null,
+        "sku": "28AWGYELLOW",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": {
+          "id": 14608854351908,
+          "product_id": 4644833984548,
+          "position": 1,
+          "created_at": "2020-05-17T18:17:37+01:00",
+          "updated_at": "2020-05-17T18:17:37+01:00",
+          "alt": null,
+          "width": 2084,
+          "height": 2084,
+          "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857",
+          "variant_ids": [
+            31995307261988,
+            31995307294756,
+            31995307360292,
+            31995307393060,
+            31995307458596,
+            31995307524132,
+            31995307556900,
+            31995307589668,
+            31995307622436,
+            31995307655204,
+            31995307687972
+          ]
+        },
+        "available": true,
+        "name": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Yellow",
+        "public_title": "Yellow",
+        "options": [
+          "Yellow"
+        ],
+        "price": 150,
+        "weight": 2,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "featured_media": {
+          "alt": null,
+          "id": 6782088839204,
+          "position": 1,
+          "preview_image": {
+            "aspect_ratio": 1.0,
+            "height": 2084,
+            "width": 2084,
+            "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857"
+          }
+        },
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 31995307687972,
+        "title": "Red",
+        "option1": "Red",
+        "option2": null,
+        "option3": null,
+        "sku": "28AWGRED",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": {
+          "id": 14608854351908,
+          "product_id": 4644833984548,
+          "position": 1,
+          "created_at": "2020-05-17T18:17:37+01:00",
+          "updated_at": "2020-05-17T18:17:37+01:00",
+          "alt": null,
+          "width": 2084,
+          "height": 2084,
+          "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857",
+          "variant_ids": [
+            31995307261988,
+            31995307294756,
+            31995307360292,
+            31995307393060,
+            31995307458596,
+            31995307524132,
+            31995307556900,
+            31995307589668,
+            31995307622436,
+            31995307655204,
+            31995307687972
+          ]
+        },
+        "available": true,
+        "name": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Red",
+        "public_title": "Red",
+        "options": [
+          "Red"
+        ],
+        "price": 150,
+        "weight": 2,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "featured_media": {
+          "alt": null,
+          "id": 6782088839204,
+          "position": 1,
+          "preview_image": {
+            "aspect_ratio": 1.0,
+            "height": 2084,
+            "width": 2084,
+            "src": "https://cdn.shopify.com/s/files/1/0262/5368/8868/products/28AWGPTFEWIRE.jpg?v=1589735857"
+          }
+        },
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ],
+    "url": "https://thesaberarmory.com/products/28awg-ptfe-bs-spec-hook-up-wire-1-metre-lengths.js"
+  },
+  "usb-a-to-usb-c-cable-1m.js": {
+    "url": "https://thepihut.com/products/usb-a-to-usb-c-cable-1m.js",
+    "title": "USB-A to USB-C Cable - Black",
+    "price": 225,
+    "available": true,
+    "variants": [
+      {
+        "id": 37890096267459,
+        "title": "15cm",
+        "option1": "15cm",
+        "option2": null,
+        "option3": null,
+        "sku": "105545",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "USB-A to USB-C Cable - Black - 15cm",
+        "public_title": "15cm",
+        "options": [
+          "15cm"
+        ],
+        "price": 225,
+        "weight": 13,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 37890096234691,
+        "title": "50cm",
+        "option1": "50cm",
+        "option2": null,
+        "option3": null,
+        "sku": "103482",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "USB-A to USB-C Cable - Black - 50cm",
+        "public_title": "50cm",
+        "options": [
+          "50cm"
+        ],
+        "price": 250,
+        "weight": 28,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 42520360747203,
+        "title": "1m",
+        "option1": "1m",
+        "option2": null,
+        "option3": null,
+        "sku": "103388",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "USB-A to USB-C Cable - Black - 1m",
+        "public_title": "1m",
+        "options": [
+          "1m"
+        ],
+        "price": 350,
+        "weight": 46,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 42520360779971,
+        "title": "2m",
+        "option1": "2m",
+        "option2": null,
+        "option3": null,
+        "sku": "105548",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": false,
+        "name": "USB-A to USB-C Cable - Black - 2m",
+        "public_title": "2m",
+        "options": [
+          "2m"
+        ],
+        "price": 450,
+        "weight": 60,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ]
+  },
+  "180mm-black-cable-ties.js": {
+    "url": "https://thepihut.com/products/180mm-black-cable-ties.js",
+    "title": "180mm Black Cable Ties",
+    "price": 300,
+    "available": true,
+    "variants": [
+      {
+        "id": 32299657330750,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "103058",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "180mm Black Cable Ties",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 300,
+        "weight": 115,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ]
+  },
+  "chip-quik-no-clean-liquid-flux-pen-10ml-pen-w-tip.js": {
+    "url": "https://thepihut.com/products/chip-quik-no-clean-liquid-flux-pen-10ml-pen-w-tip.js",
+    "title": "Chip Quik No-Clean Liquid Flux Pen \u2013 10ml Pen w/ Tip (CQ4LF) [Discontinued]",
+    "price": 950,
+    "available": false,
+    "variants": [
+      {
+        "id": 36183756881,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "ADA3468",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": false,
+        "name": "Chip Quik No-Clean Liquid Flux Pen \u2013 10ml Pen w/ Tip (CQ4LF) [Discontinued]",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 950,
+        "weight": 23,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": "5056415203906",
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ]
+  },
+  "c_to_c_data": {
+    "url": "https://thepihut.com/products/usb-c-to-usb-c-cable-1m.js",
+    "title": "USB-C to USB-C Cable - Black",
+    "price": 225,
+    "available": true,
+    "variants": [
+      {
+        "id": 42520365498563,
+        "title": "15cm",
+        "option1": "15cm",
+        "option2": null,
+        "option3": null,
+        "sku": "105551",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "USB-C to USB-C Cable - Black - 15cm",
+        "public_title": "15cm",
+        "options": [
+          "15cm"
+        ],
+        "price": 225,
+        "weight": 11,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 42520365531331,
+        "title": "50cm",
+        "option1": "50cm",
+        "option2": null,
+        "option3": null,
+        "sku": "105550",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "USB-C to USB-C Cable - Black - 50cm",
+        "public_title": "50cm",
+        "options": [
+          "50cm"
+        ],
+        "price": 250,
+        "weight": 21,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 42520365564099,
+        "title": "1m",
+        "option1": "1m",
+        "option2": null,
+        "option3": null,
+        "sku": "103998",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "USB-C to USB-C Cable - Black - 1m",
+        "public_title": "1m",
+        "options": [
+          "1m"
+        ],
+        "price": 350,
+        "weight": 40,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 42520365596867,
+        "title": "2m",
+        "option1": "2m",
+        "option2": null,
+        "option3": null,
+        "sku": "105552",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "USB-C to USB-C Cable - Black - 2m",
+        "public_title": "2m",
+        "options": [
+          "2m"
+        ],
+        "price": 450,
+        "weight": 61,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ]
+  },
+  "flux-pen-future-315-low-residue-no-clean": {
+    "url": "https://thepihut.com/products/flux-pen-future-315-low-residue-no-clean",
+    "title": "Flux Pen - Future 315 Low-Residue No-Clean",
+    "price": 780,
+    "available": true,
+    "variants": [
+      {
+        "id": 43798465183939,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "106030",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "Flux Pen - Future 315 Low-Residue No-Clean",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 780,
+        "weight": 18,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ]
+  },
+  "chip-quik-tack-flux-10cc-syringe-with-plunger-and-tip": {
+    "url": "https://thepihut.com/products/chip-quik-tack-flux-10cc-syringe-with-plunger-and-tip",
+    "title": "Chip Quik Tack Flux 10cc Syringe with Plunger and Tip (SMD291)",
+    "price": 1920,
+    "available": true,
+    "variants": [
+      {
+        "id": 27740042193,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "ADA2667",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "Chip Quik Tack Flux 10cc Syringe with Plunger and Tip (SMD291)",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 1920,
+        "weight": 26,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": "5056415203920",
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ]
+  },
+  "soldering-iron-bench-stand": {
+    "url": "https://thepihut.com/products/soldering-iron-bench-stand",
+    "title": "Soldering Iron Stand",
+    "price": 400,
+    "available": true,
+    "variants": [
+      {
+        "id": 758600373,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "100326",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "Soldering Iron Stand",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 400,
+        "weight": 203,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": "0702565900824",
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ]
+  },
+  "adjustable-60w-pen-style-soldering-iron-220vac-uk-plug-best-102c": {
+    "error": "HTTP Error 404: Not Found"
+  },
+  "flush-diagonal-cutters": {
+    "error": "HTTP Error 404: Not Found"
+  },
+  "precision-diagonal-cutters": {
+    "url": "https://thepihut.com/products/precision-diagonal-cutters",
+    "title": "Precision Diagonal Cutters",
+    "price": 350,
+    "available": true,
+    "variants": [
+      {
+        "id": 41906552111299,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "105113",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "Precision Diagonal Cutters",
+        "public_title": null,
+        "options": [
+          "Default Title"
+        ],
+        "price": 350,
+        "weight": 59,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-31",
+  "status": "INCOMPLETE 51-SMT COST BASELINE ONLY - NOT A QUOTE FOR WORKING DISPLAYS; U1-U4 omitted due stock zero",
+  "board_size_mm": [
+    89.45,
+    17.3
+  ],
+  "pitch_mm": 12.875,
+  "fabricated_boards": 5,
+  "partially_assembled_boards": 2,
+  "factory_placements_per_board": 51,
+  "required_factory_placements_per_board": 55,
+  "missing_refs_per_board": [
+    "U1",
+    "U2",
+    "U3",
+    "U4"
+  ],
+  "required_missing_chips": 8,
+  "parts_groups_selected": 17,
+  "parts_groups_required": 18,
+  "fabrication_USD": 49.94,
+  "assembly_quote_USD": 35.06,
+  "goods_quote_USD": 85.0,
+  "assembly_breakdown_USD": {
+    "setup": 8.24,
+    "stencil": 1.55,
+    "parts_17_groups_with_spares": 5.64,
+    "extended_5_types": 15.45,
+    "SMT": 0.55,
+    "manual_placement_review": 0.45,
+    "nitrogen": 0.86,
+    "depanel": 2.32
+  },
+  "cart_goods_USD": 82.68,
+  "cart_omits_quoted_depanel_USD": 2.32,
+  "temporary_DHL_checkout": {
+    "goods": 82.68,
+    "shipping": 18,
+    "VAT": 20.14,
+    "total": 120.82,
+    "lowest_delivery_not_yet_selected": true,
+    "coupon_deducted": false
+  },
+  "unavailable_driver_public_inventory": {
+    "C702074_TLC59282RGER": {
+      "JLC_stock": 0,
+      "idle_stock": 0,
+      "user_stock": 0,
+      "public_USD_1plus": 1.4272,
+      "public_USD_10plus": 1.2615
+    },
+    "C202205_TLC59282RGET": {
+      "JLC_stock": 0,
+      "idle_stock": 0,
+      "user_stock": 0,
+      "public_USD_1plus": 1.2041
+    }
+  },
+  "complete_board_quote_available": false,
+  "complete_orderable_price_available": false,
+  "orders_submitted": 0,
+  "payments_made": 0,
+  "draft_warning": "Final cart label INCOMPLETE-DRIVERS-MISSING-DO-NOT-ORDER verified; draft deselected. Canonical PCB/BOM/CPL unchanged.",
+  "current_JLCONE_checkout": {
+    "goods_USD": 82.68,
+    "shipping_USD": 1.5,
+    "original_shipping_USD": 5.75,
+    "VAT_USD": 16.84,
+    "total_USD": 101.02,
+    "delivery_business_days": "8\u201312",
+    "depanel_USD_excluded": 2.32,
+    "coupon_deducted": false,
+    "JLCONE_exclusive_discount": "--",
+    "orders_submitted": 0,
+    "evidence": "evidence/two-INCOMPLETE-delivered-summary.png"
+  },
+  "depanel_accounting_clarification": "On fresh editing, JLC explicitly says depanel is an advanced option excluded from Total Price and charged after review. Original native quote included it inline. Budget it; do not treat its absence in checkout as free depanel."
+}

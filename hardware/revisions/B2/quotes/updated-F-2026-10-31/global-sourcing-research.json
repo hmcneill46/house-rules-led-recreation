@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-31",
+  "scope": "Public primary-source research only. No account interaction, vendor contact, procurement order, payment, or CAD change.",
+  "conclusion": "Global Sourcing/pre-order is a supported route for the exact QFN driver, but the public pages do not expose its current JLC procurement price, MOQ, attrition quantity or supplier availability. A firm complete-assembly total cannot be inferred from public catalogue or DigiKey prices. Obtain the signed-in supplier quote before ordering.",
+  "required_part": {
+    "canonical": "TLC59282RGER",
+    "JLC": "C702074",
+    "acceptable_carrier_variant": "TLC59282RGET / C202205",
+    "package": "TI RGE 24-pin 4x4 mm VQFN exposed pad",
+    "units_per_board": 4,
+    "minimum_installed_for_two": 8,
+    "minimum_installed_for_five": 20,
+    "additional_attrition": "Not verified; use JLC order-specific calculator. Do not assume zero.",
+    "substitution_warning": "DBQ/DBQR SSOP package and TLC59283 are not approved replacements."
+  },
+  "procurement_routes": [
+    {
+      "route": "JLC Global Sourcing",
+      "path": "Sign in → Parts Manager → Order Parts → Global Sourcing Parts → exact MFR part search → supplier/quantity quote",
+      "public_terms_summary": "Suppliers and quantities determine pricing. Ordinary inbound shipping is free; oversized shipments can cost extra. Some categories attract duty/inspection charges; these are not established for this IC. Loose untaped parts have preparation fees. No assembly storage fee. Warehouse receipt precedes PCBA use. Paid purchases cannot be cancelled/returned.",
+      "review_business_days": "1–3",
+      "sourcing_business_days": "Normally 9–20 in detailed guide; 9–15 days in overview. Exact offer governs.",
+      "normal_inbound_shipping_USD": 0,
+      "universal_percentage_procurement_fee": "No such rate published in the inspected official guide; do not invent one.",
+      "price_MOQ_attrition": "Signed-in quote required",
+      "source": "https://jlcpcb.com/help/article/how-to-use-jlcpcb-global-sourcing-parts-service"
+    },
+    {
+      "route": "JLC pre-order",
+      "public_terms_summary": "Non-stock extended parts can require MOQ. The exact price may be confirmed within48hours after initial payment, then refunded or topped up. Inventory is for JLC assembly; do not treat an initial pre-order price as a final landed quote.",
+      "source": "https://jlcpcb.com/help/article/what-is-jlcpcb-parts-pre-order-service",
+      "terms": "https://jlcpcb.com/help/article/pre-ordering-parts-terms-conditions"
+    }
+  ],
+  "additional_published_charge_details": {
+    "global_sourcing_guide": {
+      "large_package": "Extra inbound shipping may apply",
+      "selected_categories": "3%–30% customs fees for some components; examples include relays, modules and cables. This does not establish a tariff for TLC59282.",
+      "commodity_inspection": "$20 per affected part kind; switches/fuses/batteries etc examples. Not established for TLC59282.",
+      "loose_untaped_components": "≤5pins:$0.017/pin; >5pins capped$0.078/component. Conditional, not automatically added to taped QFN."
+    },
+    "pickup": "Not needed. Parts pickup incurs separate fees; do not add pickup fees to parts consumed in JLC assembly."
+  },
+  "public_product_pages": [
+    {
+      "url": "https://jlcpcb.com/partdetail/TexasInstruments-TLC59282RGER/C702074",
+      "verified_identity": "TLC59282RGER; C702074; VQFN24EP4x4; Extended; Economic andStandard assembly",
+      "public_text_stock_price": "Dynamic current inventory/price absent from web extraction; parent live UI stock0 remains authoritative"
+    },
+    {
+      "url": "https://jlcpcb.com/partdetail/TexasInstruments-TLC59282RGET/C202205",
+      "verified_identity": "TLC59282RGET; C202205; VQFN24EP4x4; Extended; Economic andStandard assembly",
+      "public_text_stock_price": "Dynamic inventory/price absent from web extraction"
+    }
+  ],
+  "manufacturer_carrier_evidence": {
+    "url": "https://www.ti.com/product/TLC59282/part-details/TLC59282RGER",
+    "summary": "TI identifies RGET as exactly the same product with a different carrier option. RGER large reel3000; RGET small reel250. A reel package size is not proof that JLC procurement MOQ is a reel."
+  },
+  "distributor_reference_only": {
+    "url": "https://www.digikey.com/en/products/detail/texas-instruments/TLC59282RGET/2751300",
+    "extracted_index": {
+      "RGET_stock": 5206,
+      "RGET_USD_1plus": 2.06,
+      "RGET_USD_10plus": 1.518,
+      "RGET_USD_25plus": 1.3828,
+      "cut_tape_MOQ": 1,
+      "custom_Digi_Reel_fee_USD": 7,
+      "RGER_alternate_USD_1plus": 1.63
+    },
+    "caveat": "Search-index snapshot, not verified current JLC supplier quote or UK delivered purchase. Do not add these figures as an all-in JLC procurement charge."
+  },
+  "sources": [
+    "https://jlcpcb.com/help/article/how-to-use-jlcpcb-global-sourcing-parts-service",
+    "https://jlcpcb.com/help/article/global-sourcing-parts-order-terms-conditions",
+    "https://jlcpcb.com/help/article/pcba-parts-sourcing-instruction",
+    "https://jlcpcb.com/help/article/what-is-jlcpcb-parts-pre-order-service",
+    "https://jlcpcb.com/help/article/pre-ordering-parts-terms-conditions",
+    "https://jlcpcb.com/blog/reduce-pcb-assembly-cost-prototype",
+    "https://www.ti.com/product/TLC59282/part-details/TLC59282RGER"
+  ],
+  "quote_release_requirement": "Need actual supplier MOQ/attrition and complete55-SMT assembly quote, shipping, VAT, validated final discount; no procurement or board order authorised."
+}

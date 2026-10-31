@@ -1,0 +1,45 @@
+text Charge Details
+						171 text PCB Price $49.94 Via Covering: $0.00 Special Offer: $32.00 Surface Finish: $16.80 ENIG Area Surcharge
+						172 text 
+						173 text  : $0.09 Confirm Production file: $1.05 Economic PCBA Price $35.06 Setup Fee: $8.24 Stencil: $1.55 Panel: $0.00 Large Size: $0.00 Components(17 items): $5.64 Extended components fee:
+						174 text 
+						175 text $15.45 SMT Assembly
+						176 text 
+						177 text $0.55 Confirm Parts Placement: $0.45 Nitrogen reflow soldering: $0.86 Depanel boards & edge rail before delivery: $2.32
+						178 text Build Time:
+						179 text 
+						180 text PCB: 7-8 days $0.00 Assembly:
+						181 radio button  3 - 4 days, Value: 1
+							182 text  3 - 4 days
+						183 text $0.00
+						184 link Add 1 more day (extended by advanced options)
+							185 text Add 1 more day (extended by advanced options)
+						186 text Total Price:
+						187 text $85.00
+						188 text Weight
+						189 text 
+						190 text 233.10g
+						191 container
+							192 text Product Description
+							193 text 
+							194 container
+								195 text field Value: Reserch\Education\DIY\Entertainment / DIY  - HS Code 902300, Placeholder: Select
+								196 text 
+							197 text Remark
+							198 text 
+							199 text Assembly Remark:
+							200 text entry area (settable) INCOMPLETE COST BASELINE ONLY - DO NOT ORDER. U1-U4 TLC59282RGER omitted because stock is zero. Functional design requires55 bottom SMT parts; this draft places51 only. No substitute driver or manufacturing release. Final89.45x17.3mm outline. All84 LED holes OPEN;276 dia0.30mm vias filled/capped. Removable OUTSIDE rails only. Manual CAM/pin1/feeder review required. Requote complete BOM after drivers sourced. Depanel before delivery.
+							201 text 436/500
+							202 button  Attach
+								203 text 
+								204 text Attach
+							205 text  PCB Remark:
+							206 container
+								207 text entry area (settable) QUOTE ONLY. Fill/cap ONLY276 dia0.30mm vias(T1). Keep84 dia0.90mm LED PTH(T2) OPEN. Final89.45x17.3mm; removable OUTSIDE rails only, no internal tooling holes. Manual CAM required.
+								208 text 180/200
+							209 button SAVE TO CART
+						210 container
+							211 text By placing your order, you agree to
+							212 link Description: the Terms and Conditions of JLCPCB assembly Service. , Value: jlcpcb.com/help/article/Terms-and-Conditions-of-JLCPCB-Assembly-Service
+							213 text .
+				214 HTML content Online Chat - JLCPCB, URL: cart.jlcpcb.com/im/

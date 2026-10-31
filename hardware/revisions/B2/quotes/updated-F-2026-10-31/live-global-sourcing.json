@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-31",
+  "evidence_type": "Parent-observed signed-in JLCONE Global Sourcing search, unpaid parts cart and pre-submission checkout. No UI interaction by this research agent.",
+  "status": "Unpaid procurement preview, not submitted or purchased. Parts must arrive before a full55-SMT assembly quote is available.",
+  "canonical_part": "TLC59282RGER",
+  "sources_observed": [
+    {
+      "supplier": "Mouser",
+      "supplier_part": "595-TLC59282RGER",
+      "stock": 1417,
+      "MOQ": 13,
+      "carrier": "MouseReel",
+      "price_USD_10plus": 1.9048,
+      "lead_time_business_days": "10\u201320",
+      "quoted_quantity": 13,
+      "search_line_extended_USD": 24.76,
+      "cart_goods_USD": 24.77,
+      "checkout_handling_USD": 1,
+      "checkout_grand_total_USD": 25.77,
+      "billing_form_completed": false,
+      "UK_VAT_verified": false
+    },
+    {
+      "supplier": "TI",
+      "stock": 0,
+      "MOQ": 1,
+      "unit_USD": 1.7847,
+      "orderable": false
+    },
+    {
+      "supplier": "Quest",
+      "stock": 121,
+      "MOQ": 58,
+      "quoted_extended_USD": 69.68
+    },
+    {
+      "supplier": "Verical/Arrow",
+      "MOQ": 211,
+      "quoted_extended_USD": 294.91
+    }
+  ],
+  "carrier_variant_observed": {
+    "part": "TLC59282RGET",
+    "supplier": "Mouser",
+    "MOQ": 8,
+    "unit_USD_1plus": 3.127,
+    "unit_USD_10plus": 2.3016,
+    "conclusion": "More expensive than live RGER Mouser MOQ13 route at quantities examined."
+  },
+  "minimum_installed_counts": {
+    "two_PCBs": 8,
+    "five_PCBs": 20
+  },
+  "pending": {
+    "procurement_VAT": "Checkout billing not yet filled; VAT treatment not verified.",
+    "assembly_attrition": "Need JLC calculator; MOQ13 is procurement minimum, not proof of required attrition.",
+    "full_assembly_quote": "Unavailable until parts in warehouse. Keep model distinct.",
+    "modeled_extra_extended_fee_USD": 3.09,
+    "modeled_24pin_SMT_labor": "Separate unconfirmed model; driver has24pins plus exposed thermalpad. Do not present as live quote.",
+    "quantity_20_or_25_note": "25piece preview verified. Five spare chips budgeted voluntarily; do not imply JLC requires exactly5."
+  },
+  "relationship_to_public_research": "Supersedes earlier unavailable-price/MOQ finding for the exact-driver13,20and25piece unpaid previews. Warehouse receipt and final assembly/tax review remain necessary.",
+  "orders_submitted": 0,
+  "payments_made": 0,
+  "privacy": "No account identifiers, contact details, billing address or session URLs saved.",
+  "five_board_procurement_preview": {
+    "supplier": "Mouser",
+    "supplier_part": "595-TLC59282RGER",
+    "quantity": 25,
+    "installed_for_five_boards": 20,
+    "spare_budget_quantity": 5,
+    "spare_quantity_is_factory_requirement": false,
+    "cart_goods_USD": 43.26,
+    "checkout_handling_USD": 1.0,
+    "checkout_grand_total_USD": 44.26,
+    "billing_form_completed": false,
+    "UK_VAT_verified": false,
+    "source": "Parent-observed signed-in JLCONE cart and checkout, no submission."
+  },
+  "five_board_minimum_installed_quantity_preview": {
+    "quantity": 20,
+    "installed_chips": 20,
+    "extra_chips": 0,
+    "goods_USD": 38.1,
+    "handling_USD": 1,
+    "total_USD": 39.1,
+    "attrition_coverage_verified": false,
+    "evidence": "evidence/sourcing-20-handling-summary.png",
+    "note": "Potentially cheaper if factory confirms no additional attrition needed. Not assumed adequate for complete assembly."
+  },
+  "final_UI_state": "Unpaid20piece sourcing draft left deselected. No billing form saved, terms accepted, procurement order submitted or payment made."
+}

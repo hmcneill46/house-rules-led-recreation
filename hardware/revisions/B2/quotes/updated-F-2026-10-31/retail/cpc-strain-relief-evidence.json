@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-31",
+  "status": "Lower-cost primary procurement budget; UK catalogue andpublished shipping evidence, not an order/checkoutlockedquote.",
+  "adhesive": {
+    "manufacturer": "Chip Quik",
+    "mpn": "EGS10C-20G",
+    "order_code": "SA03781",
+    "price_ex_VAT_GBP": 3.92,
+    "unit_price_approx_incl_VAT_GBP": 4.7,
+    "stock_primary_UK_page": 320,
+    "url": "https://cpc.farnell.com/chip-quik/egs10c-20g/silicone-adhesive-sealant-20g/dp/SA03781",
+    "technical_basis": "Noncorrosive,nonconductive,flexibleelectronicsgradesilicone;clearvarianthasnosubstantialeffectonhiddeninternalstrainreliefbead. Manufacturer sameEGSfamily.",
+    "manufacturer_url": "https://www.chipquik.com/store/index.php?cPath=490_492"
+  },
+  "ties": {
+    "manufacturer": "Pro Power",
+    "mpn": "PP01582",
+    "order_code": "CBBR6697",
+    "pack_quantity": 100,
+    "size_mm": [
+      100,
+      2.5
+    ],
+    "price_ex_VAT_GBP": 0.52,
+    "price_incl_VAT_GBP": 0.62,
+    "stock_primary_UK_page": 5039,
+    "url": "https://cpc.farnell.com/pro-power/pp01582/cable-tie-100x2-5mm-blk-100pk/dp/CBBR6697?gross_price=true"
+  },
+  "delivery": {
+    "net_GBP": 3.75,
+    "gross_GBP": 4.5,
+    "source": "https://cpc.farnell.com/terms-of-purchase",
+    "policy": "All online orders under\u00a324.99exVAT attract\u00a33.75exVATsmallorderhandlingcharge. StandardUKdelivery otherwiseusuallyfree. Noextraexpressservicechosen."
+  },
+  "basket": {
+    "net_GBP": 8.19,
+    "gross_budget_GBP": 9.83,
+    "rounding_note": "Aggregate20%VAT roundsupfinal\u00a39.828. SeparateunitVATroundingmaymake\u00a39.82."
+  },
+  "saving_vs_previous_Farnell_basket_GBP": 8.65,
+  "why_not_tape_only": "CurrentassemblycontractneedsstrainreliefatmainPCBsoldermaskaswellaslidtie. A thinpolyimidetapepurchasealonehasnotbeenphysicallyqualifiedagainstloompeel;nofunctionalprotectionremovedjusttosavepostage.",
+  "rejected_cheaper_silicone": {
+    "EGS10B-20G": "\u00a33.54exVATCPC,butbackorderfrom8Nov2026",
+    "EGS10W-20G": "\u00a33.54exVATCPC,butbackorderfrom16Nov2026"
+  }
+}

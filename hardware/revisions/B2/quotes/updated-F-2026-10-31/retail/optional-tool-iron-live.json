@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-31",
+  "url": "https://kunkune.co.uk/shop/soldering-iron-kits/yihua-928d-i-soldering-iron-65w-uk-plug/",
+  "method": "Merchant live HTML JSON-LD and stock text; no order or checkout",
+  "offers": [
+    {
+      "product": "YIHUA 928D-I Digital Soldering Iron 65W LED Display - UK Plug - Kunkune",
+      "offers": {
+        "@type": "Offer",
+        "price": "16.90",
+        "priceCurrency": "GBP",
+        "priceValidUntil": "2027-12-31",
+        "availability": "http://schema.org/InStock",
+        "itemCondition": "NewCondition",
+        "url": "https://kunkune.co.uk/shop/soldering-iron-kits/yihua-928d-i-soldering-iron-65w-uk-plug/",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://kunkune.co.uk/",
+          "name": "Kunkune",
+          "url": "https://kunkune.co.uk",
+          "logo": "https://kunkune.co.uk/wp-content/uploads/2022/05/logo2.png"
+        },
+        "priceSpecification": {
+          "price": "16.90",
+          "priceCurrency": "GBP",
+          "valueAddedTaxIncluded": "true"
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "GB",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": "30",
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "maxValue": "0",
+            "currency": "GBP"
+          },
+          "deliveryTime": {
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": "0",
+              "maxValue": "5",
+              "unitCode": "DAY"
+            },
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "value": "1",
+              "minValue": "0",
+              "maxValue": "3",
+              "unitCode": "DAY"
+            }
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "GB"
+          }
+        }
+      }
+    }
+  ],
+  "stock_text": []
+}

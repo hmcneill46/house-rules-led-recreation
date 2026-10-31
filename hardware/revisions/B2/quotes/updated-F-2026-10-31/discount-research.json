@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-31",
+  "scope": "Read-only public-source research and earlier repository quotation evidence; no account/browser/cart interaction, coupon claim, order, payment or vendor communication by this researcher.",
+  "project": {
+    "revision": "B2 confirmed F",
+    "PCB_mm": [
+      89.45,
+      17.3,
+      1.6
+    ],
+    "layers": 6,
+    "factory_SMT_components": 55,
+    "assembly_side": "bottom",
+    "via_requirement": "276 ordinary0.30mm vias filled/capped;84LED0.90mm PTH open",
+    "complete_batch_comparisons": [
+      2,
+      3,
+      5
+    ]
+  },
+  "recommended_checkout_comparison": [
+    "Quote the exact new Gerbers/BOM/CPL with Economic assembly and the actual available quantities; do not multiply a one-board price.",
+    "Use JLCONE to compare its actual shipping/promotion fields against web checkout, keeping the saved UK destination.",
+    "Inspect the already-claimed High-Layer PCB30USD voucher first, and current coupon-center/campaign vouchers for a stronger eligible alternative.",
+    "Compare one eligible coupon at a time; do not sum PCB, SMT, shipping and new-user coupon amounts.",
+    "Use the actual final discount and recomputed VAT only if obtainable without submitting an order. If submission is required, retain an undiscounted quote and show coupon savings separately as unconfirmed.",
+    "Each2/3/5scenario is an alternative purchase, not three simultaneous orders. A once-per-account voucher cannot be assumed reusable across all of them."
+  ],
+  "offers": [
+    {
+      "name": "Previously claimed JLCONE High-Layer PCB30USD",
+      "amount_USD": 30,
+      "typed_code": null,
+      "origin": "Account voucher previously inspected on29October2026; not a public creator code",
+      "expiry_observed": "2026-12-27",
+      "recorded_conditions": [
+        "Six-layer design eligible by layer count",
+        "Order above5USD excluding freight",
+        "Freight above5USD",
+        "Regional and one-coupon-per-batch restrictions"
+      ],
+      "prior_observation": "Earlier same-account cart accepted30USD alongside1.50USD promotional freight, but final payment deduction and VAT were not confirmed.",
+      "current_application_confirmed": false,
+      "deduct_from_new_total_without_checkout_confirmation": false,
+      "evidence": [
+        "../final-review-2026-10-29/quote-summary.json",
+        "../cost-study-basic-iref-2026-10-29/native-55-quote.json"
+      ]
+    },
+    {
+      "name": "JLCONE random instant discount",
+      "advertised_range_USD": [
+        1,
+        20
+      ],
+      "typed_code": null,
+      "public_evidence": "Official22August2026 announcement",
+      "conditions": [
+        "Limited-time desktop checkout promotion",
+        "Official announcement permits one valid promotional coupon plus the instant discount; multiple coupons are not combinable"
+      ],
+      "caveat": "The current PCB Innovation Season campaign FAQ is stricter and says its coupons cannot combine with other promotions; individual voucher/current checkout terms determine compatibility. Do not deduct the advertised maximum20USD without observing it.",
+      "current_amount_confirmed": false,
+      "source": "https://jlcpcb.com/news/jlcpcb-jlcone-desktop-app"
+    },
+    {
+      "name": "Monthly SMT service coupons",
+      "amounts_USD": [
+        6,
+        9,
+        10
+      ],
+      "typed_code": null,
+      "conditions": [
+        "Official page describes monthly account issuance",
+        "6USD and9USD SMT special offers require orders over1USD excluding shipping",
+        "10USD PCBA coupon requires EasyEDA-exported files"
+      ],
+      "project_relevance": "The9USD SMT coupon is an alternative to the stronger30USD high-layer coupon if eligible; native KiCad files do not meet the described10USD EasyEDA requirement.",
+      "current_account_availability_confirmed": false,
+      "source": "https://jlcpcb.com/news/free-assembly-1-6-layer-pcb-discount-8-20-layer-pcba"
+    },
+    {
+      "name": "PCB Innovation Season",
+      "public_campaign_valid_through": "2026-12-31",
+      "typed_code": null,
+      "public_rules": [
+        "Multi-Layer coupons cover6\u201332layer orders",
+        "Each user may claim each coupon once",
+        "Coupons are non-transferable",
+        "FAQ says coupons cannot combine with other promotions"
+      ],
+      "amounts_and_thresholds": "Coupon cards load client-side; no usable amounts/thresholds were returned by the public page. Inspect current signed-in coupon cards rather than inferring a60USD offer.",
+      "current_account_availability_confirmed": false,
+      "source": "https://jlcpcb.com/pcb-campaign"
+    },
+    {
+      "name": "35USD6\u20138layer special new-user bonus",
+      "amount_USD": 35,
+      "advertised_size": "5pcs50\u00d750mm promo size",
+      "project_relevance": "Not counted: project longest side89.45mm exceeds the advertised50mm promo dimension; eligibility for this exact board is not proven.",
+      "source": "https://jlcpcb.com/ads/pcb-manufacturer-comparison?style=v2"
+    }
+  ],
+  "coupon_rules": {
+    "one_coupon_per_batch": true,
+    "coupon_types_not_interchangeable": true,
+    "coupons_on_payment_page_after_shipping": true,
+    "final_discount_and_VAT_need_actual_confirmation": true,
+    "source": "https://jlcpcb.com/help/article/how-do-i-use-a-coupon-for-my-order"
+  },
+  "quantity_evidence": {
+    "fabrication_minimum": 5,
+    "Economic_PCBA_minimum": 2,
+    "Economic_PCBA_range": [
+      2,
+      50
+    ],
+    "note": "Official current docs give the range, not every selectable integer. Parent must confirm whether3assembledisactuallyavailable in this quote. Five fabricated boards with2populated means2completeunits plus3bare spares, not7boards.",
+    "sources": [
+      "https://jlcpcb.com/capabilities/pcb-assembly-capabilities",
+      "https://jlcpcb.com/blog/reduce-pcb-assembly-cost-prototype"
+    ]
+  },
+  "excluded_leads": [
+    {
+      "offer": "Engineers Day60USD6-layer coupon",
+      "reason": "Official event article is9September2024 for5September\u20135October; not evidence of a current31October2026 offer.",
+      "source": "https://jlcpcb.com/news/celebrate-engineers-day"
+    },
+    {
+      "offer": "Creator coupon JLCPCB9Sky",
+      "reason": "Found only on third-party coupon aggregators, advertised9USD/new-user; not primary-verified or stronger than the already-observed30USD voucher. Not counted."
+    },
+    {
+      "offer": "GETCOUPON",
+      "reason": "A third-party call-to-action/button label is not verified as a functioning checkout code. Not counted."
+    },
+    {
+      "offer": "104USD or123USD coupon package",
+      "reason": "Total package face value is not a single discount applicable to this order. Do not subtract the package total."
+    },
+    {
+      "offer": "Social share/review rewards",
+      "reason": "Would require public posting or other action outside this quote; no user authorization to publish or message vendors. Not pursued."
+    }
+  ],
+  "result": "No stronger generally-applicable public creator code was verified. The current account30USD high-layer voucher plus any actually displayed compatible desktop discount is the best lead to test; nothing is deducted here.",
+  "orders_submitted": 0,
+  "payments_made": 0,
+  "current_root_UI_verification": {
+    "date": "2026-10-31",
+    "cart_coupon_preview_USD": 30,
+    "final_checkout_coupon": "--",
+    "JLCONE_exclusive_discount": "--",
+    "payment_section_requires_Submit_Order": true,
+    "coupon_deducted_from_budget": false,
+    "shipping_promotion_USD": 1.5,
+    "shipping_promotion_verified_for_PCBA_quantities": [
+      2,
+      5
+    ],
+    "Economic_qty_choices_with5fabricated": [
+      2,
+      5
+    ],
+    "no3option_observed": true,
+    "order_submitted": false
+  }
+}

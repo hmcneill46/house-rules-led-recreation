@@ -1,0 +1,402 @@
+{
+  "date": "2026-10-31",
+  "method": "Freshanonymouscompletebasketsincludingstand/strippers/cutters;noorders",
+  "results": [
+    {
+      "shop": "ThePiHut including optional shared tools",
+      "batch": 2,
+      "currency": "GBP",
+      "products_total_pence": 4940,
+      "taxes_included": null,
+      "items": [
+        {
+          "variant_id": 41906552111299,
+          "title": "Precision Diagonal Cutters",
+          "quantity": 1,
+          "unit_pence": 350,
+          "line_total_pence": 350
+        },
+        {
+          "variant_id": 763068201,
+          "title": "Multifunction Wire Strippers",
+          "quantity": 1,
+          "unit_pence": 600,
+          "line_total_pence": 600
+        },
+        {
+          "variant_id": 758600373,
+          "title": "Soldering Iron Stand",
+          "quantity": 1,
+          "unit_pence": 400,
+          "line_total_pence": 400
+        },
+        {
+          "variant_id": 43798465183939,
+          "title": "Flux Pen - Future 315 Low-Residue No-Clean",
+          "quantity": 1,
+          "unit_pence": 780,
+          "line_total_pence": 780
+        },
+        {
+          "variant_id": 758600381,
+          "title": "Antex Lead Free Solder - 4m Tube",
+          "quantity": 1,
+          "unit_pence": 440,
+          "line_total_pence": 440
+        },
+        {
+          "variant_id": 42520365531331,
+          "title": "USB-C to USB-C Cable - Black - 50cm",
+          "quantity": 1,
+          "unit_pence": 250,
+          "line_total_pence": 250
+        },
+        {
+          "variant_id": 20064004505662,
+          "title": "Raspberry Pi 15W USB-C Power Supply - UK Plug - White",
+          "quantity": 2,
+          "unit_pence": 770,
+          "line_total_pence": 1540
+        },
+        {
+          "variant_id": 18634596089918,
+          "title": "Adafruit USB Type C Breakout Board - Downstream Connection",
+          "quantity": 2,
+          "unit_pence": 290,
+          "line_total_pence": 580
+        }
+      ],
+      "shipping": {
+        "shipping_rates": [
+          {
+            "name": "Royal Mail 1st Class [Tracked]",
+            "presentment_name": "Royal Mail 1st Class [Tracked]",
+            "code": "Royal Mail 1st Class [Tracked]",
+            "price": "3.80",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [
+              1,
+              2
+            ],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": "",
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          },
+          {
+            "name": "DHL Express (Next Day, Excl Weekends)",
+            "presentment_name": "DHL Express (Next Day, Excl Weekends)",
+            "code": "DHL Express (Next Day, Excl Weekends)",
+            "price": "9.99",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": "Weekday delivery only. Order by 2pm",
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          }
+        ]
+      },
+      "tax_note_evidence": [],
+      "postcode": "UK mainland (postcode omitted from saved evidence)"
+    },
+    {
+      "shop": "ThePiHut including optional shared tools",
+      "batch": 3,
+      "currency": "GBP",
+      "products_total_pence": 6000,
+      "taxes_included": null,
+      "items": [
+        {
+          "variant_id": 41906552111299,
+          "title": "Precision Diagonal Cutters",
+          "quantity": 1,
+          "unit_pence": 350,
+          "line_total_pence": 350
+        },
+        {
+          "variant_id": 763068201,
+          "title": "Multifunction Wire Strippers",
+          "quantity": 1,
+          "unit_pence": 600,
+          "line_total_pence": 600
+        },
+        {
+          "variant_id": 758600373,
+          "title": "Soldering Iron Stand",
+          "quantity": 1,
+          "unit_pence": 400,
+          "line_total_pence": 400
+        },
+        {
+          "variant_id": 43798465183939,
+          "title": "Flux Pen - Future 315 Low-Residue No-Clean",
+          "quantity": 1,
+          "unit_pence": 780,
+          "line_total_pence": 780
+        },
+        {
+          "variant_id": 758600381,
+          "title": "Antex Lead Free Solder - 4m Tube",
+          "quantity": 1,
+          "unit_pence": 440,
+          "line_total_pence": 440
+        },
+        {
+          "variant_id": 42520365531331,
+          "title": "USB-C to USB-C Cable - Black - 50cm",
+          "quantity": 1,
+          "unit_pence": 250,
+          "line_total_pence": 250
+        },
+        {
+          "variant_id": 20064004505662,
+          "title": "Raspberry Pi 15W USB-C Power Supply - UK Plug - White",
+          "quantity": 3,
+          "unit_pence": 770,
+          "line_total_pence": 2310
+        },
+        {
+          "variant_id": 18634596089918,
+          "title": "Adafruit USB Type C Breakout Board - Downstream Connection",
+          "quantity": 3,
+          "unit_pence": 290,
+          "line_total_pence": 870
+        }
+      ],
+      "shipping": {
+        "shipping_rates": [
+          {
+            "name": "Royal Mail 1st Class [Tracked]",
+            "presentment_name": "Royal Mail 1st Class [Tracked]",
+            "code": "Royal Mail 1st Class [Tracked]",
+            "price": "3.80",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [
+              1,
+              2
+            ],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": "",
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          },
+          {
+            "name": "DHL Express (Next Day, Excl Weekends)",
+            "presentment_name": "DHL Express (Next Day, Excl Weekends)",
+            "code": "DHL Express (Next Day, Excl Weekends)",
+            "price": "9.99",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": "Weekday delivery only. Order by 2pm",
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          }
+        ]
+      },
+      "tax_note_evidence": [],
+      "postcode": "UK mainland (postcode omitted from saved evidence)"
+    },
+    {
+      "shop": "ThePiHut including optional shared tools",
+      "batch": 5,
+      "currency": "GBP",
+      "products_total_pence": 8120,
+      "taxes_included": null,
+      "items": [
+        {
+          "variant_id": 41906552111299,
+          "title": "Precision Diagonal Cutters",
+          "quantity": 1,
+          "unit_pence": 350,
+          "line_total_pence": 350
+        },
+        {
+          "variant_id": 763068201,
+          "title": "Multifunction Wire Strippers",
+          "quantity": 1,
+          "unit_pence": 600,
+          "line_total_pence": 600
+        },
+        {
+          "variant_id": 758600373,
+          "title": "Soldering Iron Stand",
+          "quantity": 1,
+          "unit_pence": 400,
+          "line_total_pence": 400
+        },
+        {
+          "variant_id": 43798465183939,
+          "title": "Flux Pen - Future 315 Low-Residue No-Clean",
+          "quantity": 1,
+          "unit_pence": 780,
+          "line_total_pence": 780
+        },
+        {
+          "variant_id": 758600381,
+          "title": "Antex Lead Free Solder - 4m Tube",
+          "quantity": 1,
+          "unit_pence": 440,
+          "line_total_pence": 440
+        },
+        {
+          "variant_id": 42520365531331,
+          "title": "USB-C to USB-C Cable - Black - 50cm",
+          "quantity": 1,
+          "unit_pence": 250,
+          "line_total_pence": 250
+        },
+        {
+          "variant_id": 20064004505662,
+          "title": "Raspberry Pi 15W USB-C Power Supply - UK Plug - White",
+          "quantity": 5,
+          "unit_pence": 770,
+          "line_total_pence": 3850
+        },
+        {
+          "variant_id": 18634596089918,
+          "title": "Adafruit USB Type C Breakout Board - Downstream Connection",
+          "quantity": 5,
+          "unit_pence": 290,
+          "line_total_pence": 1450
+        }
+      ],
+      "shipping": {
+        "shipping_rates": [
+          {
+            "name": "Royal Mail 1st Class [Tracked]",
+            "presentment_name": "Royal Mail 1st Class [Tracked]",
+            "code": "Royal Mail 1st Class [Tracked]",
+            "price": "3.80",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [
+              1,
+              2
+            ],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": "",
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          },
+          {
+            "name": "DHL Express (Next Day, Excl Weekends)",
+            "presentment_name": "DHL Express (Next Day, Excl Weekends)",
+            "code": "DHL Express (Next Day, Excl Weekends)",
+            "price": "9.99",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": "Weekday delivery only. Order by 2pm",
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          }
+        ]
+      },
+      "tax_note_evidence": [],
+      "postcode": "UK mainland (postcode omitted from saved evidence)"
+    }
+  ]
+}

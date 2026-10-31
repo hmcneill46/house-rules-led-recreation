@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-31",
+  "status": "INCOMPLETE51-SMT cost baseline; not functional; not complete orderable quote",
+  "fabricated_boards": 5,
+  "partially_assembled_boards": 5,
+  "factory_placements_per_board": 51,
+  "required_factory_placements_per_board": 55,
+  "missing_refs_per_board": [
+    "U1",
+    "U2",
+    "U3",
+    "U4"
+  ],
+  "missing_installed_chips": 20,
+  "PCB_mm": [
+    89.45,
+    17.3,
+    1.6
+  ],
+  "pitch_mm": 12.875,
+  "fabrication_USD": 49.94,
+  "assembly_USD": 40.45,
+  "goods_USD": 90.39,
+  "assembly_breakdown_USD": {
+    "setup": 8.24,
+    "stencil": 1.55,
+    "parts17groups_including_spares": 12.61,
+    "extended5types": 15.45,
+    "SMT": 1.24,
+    "placement_review": 0.45,
+    "nitrogen": 0.91
+  },
+  "depanel_USD_excluded_until_review": 3.31,
+  "JLCONE_checkout": {
+    "goods_USD": 90.39,
+    "shipping_USD": 1.5,
+    "original_shipping_USD": 6.36,
+    "VAT_USD": 18.38,
+    "total_USD": 110.27,
+    "coupon_deducted": false,
+    "JLCONE_exclusive_discount": "--",
+    "delivery_business_days": "8\u201312",
+    "evidence": "evidence/five-INCOMPLETE-delivered-summary.png"
+  },
+  "orders_submitted": 0,
+  "payments_made": 0,
+  "note": "Compared by editing the same new-revision draft only. Current saved draft reverted to two partial boards, clearly labelled incomplete and deselected. All other cart jobs preserved."
+}

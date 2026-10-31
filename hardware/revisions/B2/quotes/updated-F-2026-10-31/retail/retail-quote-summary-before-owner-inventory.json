@@ -1,0 +1,364 @@
+{
+  "date": "2026-10-31",
+  "currency": "GBP",
+  "scope": "B2,F12.875mm,complete standalone display retail parts/supplies. Does not include customPCB/manufacturerassembly; parent quote combines separately.",
+  "owned": {
+    "LED_modules": 21,
+    "filament": "grey HyperPLA, newcash\u00a30",
+    "printer": "Ender-3V3KE",
+    "multimeter": "UT0021YB"
+  },
+  "privacy": "No contact/address/account/session/checkout tokens saved. UKmainland shipping rates queried using owner authorised postcode.",
+  "items": [
+    {
+      "id": "xiao",
+      "name": "Headerless Seeed XIAO RP2040 Plus",
+      "sku": "100059977",
+      "unit_gross_pence": 449,
+      "per_display": 1,
+      "tax_basis": "Explicit merchant taxes included",
+      "stock": "Available live product API; carts accepted 2,3,5",
+      "url": "https://www.unmannedtechshop.co.uk/products/seeed-studio-xiao-rp2040-plus"
+    },
+    {
+      "id": "usb",
+      "name": "Adafruit 4090 USB-C downstream breakout, loose header supplied",
+      "sku": "ADA4090",
+      "unit_gross_pence": 290,
+      "per_display": 1,
+      "tax_basis": "Explicit merchant incl VAT",
+      "stock": "Available live product API; carts accepted 2,3,5",
+      "url": "https://thepihut.com/products/adafruit-usb-c-breakout-board-downstream-connection-ada4090"
+    },
+    {
+      "id": "power",
+      "name": "Official Raspberry Pi 15W UK PSU, white,5.1V3A,captive1.5mUSB-C lead",
+      "sku": "SC0443",
+      "unit_gross_pence": 770,
+      "per_display": 1,
+      "tax_basis": "Explicit merchant incl VAT",
+      "stock": "Available live product API; complete carts accepted 2,3,5",
+      "url": "https://thepihut.com/products/raspberry-pi-psu-uk"
+    },
+    {
+      "id": "data",
+      "name": "USB-C to USB-C data cable,50cm,480Mbps,shared programming cable",
+      "unit_gross_pence": 250,
+      "per_batch": 1,
+      "tax_basis": "Explicit merchant incl VAT",
+      "stock": "Available; complete carts accepted",
+      "url": "https://thepihut.com/products/usb-c-to-usb-c-cable-1m"
+    },
+    {
+      "id": "wire",
+      "name": "28AWG stranded BS3G210 PTFE wire,7/.120mm,maxOD.71mm,whole1m lengths",
+      "unit_net_pence": 150,
+      "unit_gross_pence": 180,
+      "quantities_by_batch": {
+        "2": {
+          "red_m": 1,
+          "black_m": 1,
+          "blue_m": 2
+        },
+        "3": {
+          "red_m": 1,
+          "black_m": 1,
+          "blue_m": 3
+        },
+        "5": {
+          "red_m": 1,
+          "black_m": 1,
+          "blue_m": 5
+        }
+      },
+      "tax_basis": "Anonymous UK checkout confirms goods VAT;shippingVAT calculated conservatively",
+      "stock": "All selected colours available; carts accepted",
+      "url": "https://thesaberarmory.com/products/28awg-ptfe-bs-spec-hook-up-wire-1-metre-lengths"
+    },
+    {
+      "id": "screw",
+      "name": "ISO7380-1 M2 socket button head,black steel,6mm and8mm lengths",
+      "unit_gross_pence": 90,
+      "quantities_by_batch": {
+        "2": {
+          "M2x6": 4,
+          "M2x8": 2
+        },
+        "3": {
+          "M2x6": 6,
+          "M2x8": 3
+        },
+        "5": {
+          "M2x6": 10,
+          "M2x8": 5
+        }
+      },
+      "tax_basis": "Explicit inc VAT; no unverified bulk discount deducted",
+      "stock": "Live product API available; exact carts accepted",
+      "url": "https://boltbase.com/products/m2-self-colour-10-9-high-tensile-socket-button-head-screws-iso-7380-1"
+    },
+    {
+      "id": "adhesive",
+      "name": "Chip Quik EGS10W-20G,electronics-grade flexible silicone,20g tube",
+      "unit_net_pence": 504,
+      "unit_gross_pence": 605,
+      "per_batch": 1,
+      "tax_basis": "Catalogue ex VAT multiplied1.2; catalogue/delivery budget, notcheckoutlocked",
+      "stock": "Primary product page15 in stock; direct HTTP access blocked",
+      "url": "https://uk.farnell.com/chip-quik/egs10w-20g/silicone-adhesive-electronics/dp/4715839"
+    },
+    {
+      "id": "cableties",
+      "name": "Pro Power0301CV-100W,100mmx2.5mm black cable ties,pack100",
+      "unit_net_pence": 137,
+      "unit_gross_pence": 164,
+      "per_batch": 1,
+      "tax_basis": "Conservative higher primary productpage price;category lower68.3p exVAT notdeducted",
+      "stock": "Primary product page258packs in stock; directHTTP blocked",
+      "url": "https://uk.farnell.com/pro-power/0301cv-100w/cable-tie-100mm-pa66-pk100-black/dp/1366999"
+    },
+    {
+      "id": "solder",
+      "name": "Antex lead-free solder,0.8mm,4m tube",
+      "unit_gross_pence": 440,
+      "per_batch": 1,
+      "tax_basis": "Explicit merchant incl VAT",
+      "stock": "Live available; full carts accepted",
+      "url": "https://thepihut.com/products/antex-lead-free-solder"
+    },
+    {
+      "id": "flux",
+      "name": "WartonFuture315 lowresidue no-clean fluxpen",
+      "unit_gross_pence": 780,
+      "per_batch": 1,
+      "tax_basis": "Explicit merchant incl VAT",
+      "stock": "Live available; full carts accepted",
+      "url": "https://thepihut.com/products/flux-pen-future-315-low-residue-no-clean"
+    },
+    {
+      "id": "led",
+      "name": "LMD07057AUE-101B-02 rawred5x7LED module",
+      "sku": "485646",
+      "unit_net_pence": 150,
+      "unit_gross_pence": 180,
+      "quantities_by_batch": {
+        "2": 0,
+        "3": 0,
+        "5": 14
+      },
+      "tax_basis": "Fresh anonymous UK checkout confirms \u00a321net ->\u00a325.20gross for14;shippingVATbudgetedconservatively",
+      "stock": "Live available;14cartaccepted",
+      "url": "https://www.switchelectronics.co.uk/products/red-5-x-7-dot-matrix-led-display-17-8x12-7mm"
+    }
+  ],
+  "batches": [
+    {
+      "complete_display_count": 2,
+      "new_LED_modules": 0,
+      "installed_stock_modules": {
+        "xiao_plus": 2,
+        "adafruit4090": 2
+      },
+      "independent_UK_USB_C_PSU_count": 2,
+      "shared_USB_C_data_cable_count": 1,
+      "retailer_baskets": [
+        {
+          "shop": "UnmannedTech",
+          "gross_goods_pence": 898,
+          "gross_delivery_pence": 359,
+          "confidence": "Live anonymous exact quantity cart +rate; product taxincluded"
+        },
+        {
+          "shop": "ThePiHut",
+          "gross_goods_pence": 3590,
+          "gross_delivery_pence": 380,
+          "confidence": "Live anonymous complete basket +shipping rate; all productsgross"
+        },
+        {
+          "shop": "TheSaberArmory",
+          "net_goods_pence": 600,
+          "gross_goods_pence": 720,
+          "net_delivery_pence": 350,
+          "gross_delivery_pence": 420,
+          "confidence": "Live cart and goods checkout; shippingVAT allowance20%"
+        },
+        {
+          "shop": "BoltBase",
+          "gross_goods_pence": 540,
+          "gross_delivery_pence": 390,
+          "confidence": "Live exactquantity cart, noactualdiscount; consumer shippinggross"
+        },
+        {
+          "shop": "Farnell",
+          "net_goods_pence": 641,
+          "gross_goods_pence": 769,
+          "net_delivery_pence": 899,
+          "gross_delivery_pence": 1079,
+          "confidence": "Primary catalogue+current delivery policy budget; higher conflictingtiepriceused, notlivecheckout"
+        }
+      ],
+      "retail_excluding_customPCB_pence": 9145,
+      "optional_tools_if_none_owned_pence": 3380,
+      "retail_including_optional_tools_pence": 12525,
+      "status": "VAT-inclusive delivered retail budget. Add parent verified JLCPCB total for custom boards/assembly. Not an order; shippingVAT andFarnell catalogue points noted."
+    },
+    {
+      "complete_display_count": 3,
+      "new_LED_modules": 0,
+      "installed_stock_modules": {
+        "xiao_plus": 3,
+        "adafruit4090": 3
+      },
+      "independent_UK_USB_C_PSU_count": 3,
+      "shared_USB_C_data_cable_count": 1,
+      "retailer_baskets": [
+        {
+          "shop": "UnmannedTech",
+          "gross_goods_pence": 1347,
+          "gross_delivery_pence": 359,
+          "confidence": "Live anonymous exact quantity cart +rate; product taxincluded"
+        },
+        {
+          "shop": "ThePiHut",
+          "gross_goods_pence": 4650,
+          "gross_delivery_pence": 380,
+          "confidence": "Live anonymous complete basket +shipping rate; all productsgross"
+        },
+        {
+          "shop": "TheSaberArmory",
+          "net_goods_pence": 750,
+          "gross_goods_pence": 900,
+          "net_delivery_pence": 350,
+          "gross_delivery_pence": 420,
+          "confidence": "Live cart and goods checkout; shippingVAT allowance20%"
+        },
+        {
+          "shop": "BoltBase",
+          "gross_goods_pence": 810,
+          "gross_delivery_pence": 390,
+          "confidence": "Live exactquantity cart, noactualdiscount; consumer shippinggross"
+        },
+        {
+          "shop": "Farnell",
+          "net_goods_pence": 641,
+          "gross_goods_pence": 769,
+          "net_delivery_pence": 899,
+          "gross_delivery_pence": 1079,
+          "confidence": "Primary catalogue+current delivery policy budget; higher conflictingtiepriceused, notlivecheckout"
+        }
+      ],
+      "retail_excluding_customPCB_pence": 11104,
+      "optional_tools_if_none_owned_pence": 3380,
+      "retail_including_optional_tools_pence": 14484,
+      "status": "VAT-inclusive delivered retail budget. Add parent verified JLCPCB total for custom boards/assembly. Not an order; shippingVAT andFarnell catalogue points noted."
+    },
+    {
+      "complete_display_count": 5,
+      "new_LED_modules": 14,
+      "installed_stock_modules": {
+        "xiao_plus": 5,
+        "adafruit4090": 5
+      },
+      "independent_UK_USB_C_PSU_count": 5,
+      "shared_USB_C_data_cable_count": 1,
+      "retailer_baskets": [
+        {
+          "shop": "UnmannedTech",
+          "gross_goods_pence": 2245,
+          "gross_delivery_pence": 359,
+          "confidence": "Live anonymous exact quantity cart +rate; product taxincluded"
+        },
+        {
+          "shop": "ThePiHut",
+          "gross_goods_pence": 6770,
+          "gross_delivery_pence": 380,
+          "confidence": "Live anonymous complete basket +shipping rate; all productsgross"
+        },
+        {
+          "shop": "TheSaberArmory",
+          "net_goods_pence": 1050,
+          "gross_goods_pence": 1260,
+          "net_delivery_pence": 350,
+          "gross_delivery_pence": 420,
+          "confidence": "Live cart and goods checkout; shippingVAT allowance20%"
+        },
+        {
+          "shop": "BoltBase",
+          "gross_goods_pence": 1350,
+          "gross_delivery_pence": 390,
+          "confidence": "Live exactquantity cart, noactualdiscount; consumer shippinggross"
+        },
+        {
+          "shop": "Farnell",
+          "net_goods_pence": 641,
+          "gross_goods_pence": 769,
+          "net_delivery_pence": 899,
+          "gross_delivery_pence": 1079,
+          "confidence": "Primary catalogue+current delivery policy budget; higher conflictingtiepriceused, notlivecheckout"
+        },
+        {
+          "shop": "SwitchElectronics",
+          "net_goods_pence": 2100,
+          "gross_goods_pence": 2520,
+          "net_delivery_pence": 399,
+          "gross_delivery_pence": 479,
+          "confidence": "Livecart14+goodscheckout;shippingVAT20%allowance"
+        }
+      ],
+      "retail_excluding_customPCB_pence": 18021,
+      "optional_tools_if_none_owned_pence": 3380,
+      "retail_including_optional_tools_pence": 21401,
+      "status": "VAT-inclusive delivered retail budget. Add parent verified JLCPCB total for custom boards/assembly. Not an order; shippingVAT andFarnell catalogue points noted."
+    }
+  ],
+  "conditional_tools": [
+    {
+      "id": "iron",
+      "gross_pence": 1690,
+      "shipping_pence": 290,
+      "stock": "LivemerchantJSON-LDInStock,VATincluded",
+      "url": "https://kunkune.co.uk/shop/soldering-iron-kits/yihua-928d-i-soldering-iron-65w-uk-plug/"
+    },
+    {
+      "id": "stand",
+      "gross_pence": 400,
+      "shipping_pence": 0,
+      "shipping_note": "Add existingPiHutbasket",
+      "url": "https://thepihut.com/products/soldering-iron-bench-stand"
+    },
+    {
+      "id": "strippers",
+      "gross_pence": 600,
+      "shipping_pence": 0,
+      "shipping_note": "Add existingPiHutbasket;20-30AWG",
+      "url": "https://thepihut.com/products/wire-strippers"
+    },
+    {
+      "id": "cutters",
+      "gross_pence": 350,
+      "shipping_pence": 0,
+      "shipping_note": "Add existingPiHutbasket",
+      "url": "https://thepihut.com/products/precision-diagonal-cutters"
+    },
+    {
+      "id": "hexkey",
+      "gross_pence": 50,
+      "shipping_pence": 0,
+      "shipping_note": "AddexistingBoltBasebasket;1.3mmneededbyM2buttonhead",
+      "url": "https://boltbase.com/products/1-3mm-metric-short-arm-hex-keys-din-911"
+    }
+  ],
+  "cost_reduction_notes": [
+    "Already ownsmeter,printer,filamentand21LEDs: no new spending on these for2/3displays. Five displays require14extraLEDmodules.",
+    "One programming cable,soldertube,fluxpen,adhesivetubeandtiepack shared acrossbatch; whole purchases counted,noconsumedcostprorating.",
+    "One captive-leadPSU perdisplaycounted so everyunitcanrun independently;reuseknownsuitableownedsourcesifavailable.",
+    "UMT exactheaderlessRP2040Plus avoidsdesolderingwrongpresolderedstandardXIAOvariant.",
+    "Thin28AWGstrandedwireforall20wireskeepspowerrecommendationandODcontract;cheapthicker1.2mm28AWGnotselected.",
+    "BoltBasepublishedbulksettingsweretestedbutcartdiscountremainedzero, sonodeductionclaimed.",
+    "WireandLEDUKgoodsVAT verifiedin anonymouscheckouts. ShippingVATbudgeted20%;no finalprivateaddresscheckoutcreated.",
+    "Farnellhigherindividualproducttiepriceusedbecausecategory/productpricesconflict; savingabout82piflowercategorypriceapplies.",
+    "PSUincludespowerlead,noextraC-to-Cpowercableperunit.",
+    "No discount requiringa newsubscription,extraunneededgoodsorunprovenpromotiondeducted."
+  ],
+  "assembly_note": "SmallcustomPCBcomponentsassembledbyfactory;ownerstillhas84LEDpinjointsand40wirejointsperdisplayplusmechanicalassemblyandfirmwareloading. Retail stock module revisions and realUSBplugcasefit still requirephysicalreceiptchecks."
+}

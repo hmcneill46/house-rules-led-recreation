@@ -1,0 +1,306 @@
+{
+  "date": "2026-10-31",
+  "method": "Fresh isolated anonymous carts; exactscrews+oneunconfirmedowned1.3mmhexkey. No order/payment.",
+  "results": [
+    {
+      "shop": "BoltBase screws plus1.3mmkey",
+      "batch": 2,
+      "currency": "GBP",
+      "products_total_pence": 590,
+      "taxes_included": null,
+      "items": [
+        {
+          "variant_id": 57576795832701,
+          "title": "1.3mm Metric Short Arm Hex Keys DIN 911",
+          "quantity": 1,
+          "unit_pence": 50,
+          "line_total_pence": 50
+        },
+        {
+          "variant_id": 57465567314301,
+          "title": "M2 Self Colour 10.9 High Tensile Socket Button Head Screws ISO 7380-1 - M2 (2mm) / 8mm",
+          "quantity": 2,
+          "unit_pence": 90,
+          "line_total_pence": 180
+        },
+        {
+          "variant_id": 57465567281533,
+          "title": "M2 Self Colour 10.9 High Tensile Socket Button Head Screws ISO 7380-1 - M2 (2mm) / 6mm",
+          "quantity": 4,
+          "unit_pence": 90,
+          "line_total_pence": 360
+        }
+      ],
+      "shipping": {
+        "shipping_rates": [
+          {
+            "name": "Royal Mail Tracked 48 (2-3 Days)",
+            "presentment_name": "Royal Mail Tracked 48 (2-3 Days)",
+            "code": "Royal Mail Tracked 48 (2-3 Days)",
+            "price": "3.90",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [
+              2,
+              3
+            ],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": "",
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          },
+          {
+            "name": "Royal Mail Tracked 24 (1-2 Days)",
+            "presentment_name": "Royal Mail Tracked 24 (1-2 Days)",
+            "code": "Royal Mail Tracked 24 (1-2 Days)",
+            "price": "4.80",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [
+              1,
+              2
+            ],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": "",
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          }
+        ]
+      },
+      "tax_note_evidence": [],
+      "postcode": "UK mainland (postcode omitted from saved evidence)"
+    },
+    {
+      "shop": "BoltBase screws plus1.3mmkey",
+      "batch": 3,
+      "currency": "GBP",
+      "products_total_pence": 860,
+      "taxes_included": null,
+      "items": [
+        {
+          "variant_id": 57576795832701,
+          "title": "1.3mm Metric Short Arm Hex Keys DIN 911",
+          "quantity": 1,
+          "unit_pence": 50,
+          "line_total_pence": 50
+        },
+        {
+          "variant_id": 57465567314301,
+          "title": "M2 Self Colour 10.9 High Tensile Socket Button Head Screws ISO 7380-1 - M2 (2mm) / 8mm",
+          "quantity": 3,
+          "unit_pence": 90,
+          "line_total_pence": 270
+        },
+        {
+          "variant_id": 57465567281533,
+          "title": "M2 Self Colour 10.9 High Tensile Socket Button Head Screws ISO 7380-1 - M2 (2mm) / 6mm",
+          "quantity": 6,
+          "unit_pence": 90,
+          "line_total_pence": 540
+        }
+      ],
+      "shipping": {
+        "shipping_rates": [
+          {
+            "name": "Royal Mail Tracked 48 (2-3 Days)",
+            "presentment_name": "Royal Mail Tracked 48 (2-3 Days)",
+            "code": "Royal Mail Tracked 48 (2-3 Days)",
+            "price": "3.90",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [
+              2,
+              3
+            ],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": "",
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          },
+          {
+            "name": "Royal Mail Tracked 24 (1-2 Days)",
+            "presentment_name": "Royal Mail Tracked 24 (1-2 Days)",
+            "code": "Royal Mail Tracked 24 (1-2 Days)",
+            "price": "4.80",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [
+              1,
+              2
+            ],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": "",
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          }
+        ]
+      },
+      "tax_note_evidence": [],
+      "postcode": "UK mainland (postcode omitted from saved evidence)"
+    },
+    {
+      "shop": "BoltBase screws plus1.3mmkey",
+      "batch": 5,
+      "currency": "GBP",
+      "products_total_pence": 1400,
+      "taxes_included": null,
+      "items": [
+        {
+          "variant_id": 57576795832701,
+          "title": "1.3mm Metric Short Arm Hex Keys DIN 911",
+          "quantity": 1,
+          "unit_pence": 50,
+          "line_total_pence": 50
+        },
+        {
+          "variant_id": 57465567314301,
+          "title": "M2 Self Colour 10.9 High Tensile Socket Button Head Screws ISO 7380-1 - M2 (2mm) / 8mm",
+          "quantity": 5,
+          "unit_pence": 90,
+          "line_total_pence": 450
+        },
+        {
+          "variant_id": 57465567281533,
+          "title": "M2 Self Colour 10.9 High Tensile Socket Button Head Screws ISO 7380-1 - M2 (2mm) / 6mm",
+          "quantity": 10,
+          "unit_pence": 90,
+          "line_total_pence": 900
+        }
+      ],
+      "shipping": {
+        "shipping_rates": [
+          {
+            "name": "Royal Mail Tracked 48 (2-3 Days)",
+            "presentment_name": "Royal Mail Tracked 48 (2-3 Days)",
+            "code": "Royal Mail Tracked 48 (2-3 Days)",
+            "price": "3.90",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [
+              2,
+              3
+            ],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": "",
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          },
+          {
+            "name": "Royal Mail Tracked 24 (1-2 Days)",
+            "presentment_name": "Royal Mail Tracked 24 (1-2 Days)",
+            "code": "Royal Mail Tracked 24 (1-2 Days)",
+            "price": "4.80",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [
+              1,
+              2
+            ],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": "",
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          }
+        ]
+      },
+      "tax_note_evidence": [],
+      "postcode": "UK mainland (postcode omitted from saved evidence)"
+    }
+  ]
+}

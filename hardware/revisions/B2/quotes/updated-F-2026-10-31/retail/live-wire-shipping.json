@@ -1,0 +1,392 @@
+{
+  "date": "2026-10-31",
+  "results": [
+    {
+      "shop": "Saber Armory",
+      "batch": 2,
+      "currency": "GBP",
+      "products_total_pence": 600,
+      "taxes_included": null,
+      "items": [
+        {
+          "variant_id": 31995307556900,
+          "title": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Blue",
+          "quantity": 2,
+          "unit_pence": 150,
+          "line_total_pence": 300
+        },
+        {
+          "variant_id": 31995307687972,
+          "title": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Red",
+          "quantity": 1,
+          "unit_pence": 150,
+          "line_total_pence": 150
+        },
+        {
+          "variant_id": 31995307261988,
+          "title": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Black",
+          "quantity": 1,
+          "unit_pence": 150,
+          "line_total_pence": 150
+        }
+      ],
+      "shipping": {
+        "shipping_rates": [
+          {
+            "name": "Royal Mail First Class Large Letter",
+            "presentment_name": "Royal Mail First Class Large Letter",
+            "code": "Royal Mail First Class Large Letter",
+            "price": "3.50",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [
+              1,
+              2
+            ],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": "No Tracking",
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          },
+          {
+            "name": "Royal Mail First Class Signed For Large Letter",
+            "presentment_name": "Royal Mail First Class Signed For Large Letter",
+            "code": "Royal Mail First Class Signed For Large Letter",
+            "price": "5.20",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [
+              1,
+              2
+            ],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": "Tracking number provided",
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          },
+          {
+            "name": "DPD UK Mainland",
+            "presentment_name": "DPD UK Mainland",
+            "code": "DPD UK Mainland",
+            "price": "6.65",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": null,
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          }
+        ]
+      },
+      "tax_note_evidence": [],
+      "postcode": "UK mainland (postcode omitted from saved evidence)"
+    },
+    {
+      "shop": "Saber Armory",
+      "batch": 3,
+      "currency": "GBP",
+      "products_total_pence": 750,
+      "taxes_included": null,
+      "items": [
+        {
+          "variant_id": 31995307556900,
+          "title": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Blue",
+          "quantity": 3,
+          "unit_pence": 150,
+          "line_total_pence": 450
+        },
+        {
+          "variant_id": 31995307687972,
+          "title": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Red",
+          "quantity": 1,
+          "unit_pence": 150,
+          "line_total_pence": 150
+        },
+        {
+          "variant_id": 31995307261988,
+          "title": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Black",
+          "quantity": 1,
+          "unit_pence": 150,
+          "line_total_pence": 150
+        }
+      ],
+      "shipping": {
+        "shipping_rates": [
+          {
+            "name": "Royal Mail First Class Large Letter",
+            "presentment_name": "Royal Mail First Class Large Letter",
+            "code": "Royal Mail First Class Large Letter",
+            "price": "3.50",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [
+              1,
+              2
+            ],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": "No Tracking",
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          },
+          {
+            "name": "Royal Mail First Class Signed For Large Letter",
+            "presentment_name": "Royal Mail First Class Signed For Large Letter",
+            "code": "Royal Mail First Class Signed For Large Letter",
+            "price": "5.20",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [
+              1,
+              2
+            ],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": "Tracking number provided",
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          },
+          {
+            "name": "DPD UK Mainland",
+            "presentment_name": "DPD UK Mainland",
+            "code": "DPD UK Mainland",
+            "price": "6.65",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": null,
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          }
+        ]
+      },
+      "tax_note_evidence": [],
+      "postcode": "UK mainland (postcode omitted from saved evidence)"
+    },
+    {
+      "shop": "Saber Armory",
+      "batch": 5,
+      "currency": "GBP",
+      "products_total_pence": 1050,
+      "taxes_included": null,
+      "items": [
+        {
+          "variant_id": 31995307556900,
+          "title": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Blue",
+          "quantity": 5,
+          "unit_pence": 150,
+          "line_total_pence": 750
+        },
+        {
+          "variant_id": 31995307687972,
+          "title": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Red",
+          "quantity": 1,
+          "unit_pence": 150,
+          "line_total_pence": 150
+        },
+        {
+          "variant_id": 31995307261988,
+          "title": "28AWG PTFE BS Spec Hook Up Wire (1 Metre Lengths) - Black",
+          "quantity": 1,
+          "unit_pence": 150,
+          "line_total_pence": 150
+        }
+      ],
+      "shipping": {
+        "shipping_rates": [
+          {
+            "name": "Royal Mail First Class Large Letter",
+            "presentment_name": "Royal Mail First Class Large Letter",
+            "code": "Royal Mail First Class Large Letter",
+            "price": "3.50",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [
+              1,
+              2
+            ],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": "No Tracking",
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          },
+          {
+            "name": "Royal Mail First Class Signed For Large Letter",
+            "presentment_name": "Royal Mail First Class Signed For Large Letter",
+            "code": "Royal Mail First Class Signed For Large Letter",
+            "price": "5.20",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [
+              1,
+              2
+            ],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": "Tracking number provided",
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          },
+          {
+            "name": "DPD UK Mainland",
+            "presentment_name": "DPD UK Mainland",
+            "code": "DPD UK Mainland",
+            "price": "6.65",
+            "markup": "0.00",
+            "source": "shopify",
+            "delivery_date": null,
+            "delivery_range": null,
+            "delivery_days": [],
+            "compare_price": null,
+            "phone_required": false,
+            "currency": "GBP",
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "using_merchant_account": null,
+            "carrier_service_id": null,
+            "description": null,
+            "additional_data": null,
+            "incoterm": null,
+            "api_client_id": null,
+            "requested_fulfillment_service_id": null,
+            "shipment_options": null,
+            "charge_items": null,
+            "has_restrictions": null,
+            "rating_classification": null,
+            "accepts_instructions": false,
+            "metafields": null
+          }
+        ]
+      },
+      "tax_note_evidence": [],
+      "postcode": "UK mainland (postcode omitted from saved evidence)"
+    }
+  ]
+}
