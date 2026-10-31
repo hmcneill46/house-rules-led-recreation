@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-31",
+  "scope": "Primary official public-source research only. No CAD upload, accounts, supplier messages, RFQ submission, order or payment.",
+  "best_candidates": [
+    "PCBWay Turnkey",
+    "NextPCB Standard Turnkey"
+  ],
+  "exact_board": {
+    "revision": "B2 confirmed F12.875",
+    "size_mm": [
+      89.45,
+      17.3,
+      1.6
+    ],
+    "layers": 6,
+    "SMT_per_board": 55,
+    "BOM_groups": 18,
+    "assembly_side": "bottom",
+    "driver": "TLC59282RGER",
+    "drivers_per_board": 4,
+    "filled_capped_through_vias": 276,
+    "via_drill_mm": 0.3,
+    "via_pad_counts": {
+      ".60mm": 167,
+      ".45mm": 109
+    },
+    "min_nominal_annulus_mm": 0.075,
+    "open_LED_PTH": 84,
+    "LED_PTH_mm": 0.9
+  },
+  "unchanged_design_gate": "Each manufacturer must explicitly CAM-accept the .075mm escape via annuli, existing copper/drill clearances, exact fill/cap plus open LED holes, layer stack and external rail/depanel arrangement. Capabilities in general do not establish acceptance of this exact Gerber set.",
+  "factories": [
+    {
+      "name": "PCBWay",
+      "calculator": "https://www.pcbway.com/quotesmt.aspx",
+      "supports": [
+        "6layers",
+        "ENIG",
+        "allviasresinfilledandcapped",
+        "viainpad",
+        "turnkeysourcingfromMouserandDigiKey"
+      ],
+      "advertised_assembly_from_USD": 29,
+      "promo_quantity_range": [
+        1,
+        20
+      ],
+      "promo_is_all_in": false,
+      "calc_excludes": [
+        "parts",
+        "PCB fabrication unless linked",
+        "unreviewed specialprocess extras",
+        "VAT/customsbydefault"
+      ],
+      "standard_via_annulus_mm": 0.15,
+      "advanced_via_annulus_mil": 3,
+      "advanced_via_annulus_mm": 0.0762,
+      "assembly_smallboard_note": "PublishedFAQcallsforpanelisationbelow50x100mm; requestoutsiderailsremovedandnoinsidetoolingholes.",
+      "exact_driver_availability_confirmed": false,
+      "complete_quote_available": false,
+      "sources": [
+        "https://www.pcbway.com/quotesmt.aspx",
+        "https://www.pcbway.com/pcb_prototype/Electronic_Components.html",
+        "https://www.pcbway.com/assembly-faq.html",
+        "https://www.pcbway.com/advanced-pcb-capabilities.html",
+        "https://www.pcbway.com/capabilities.html",
+        "https://m.pcbway.com/terms-service.html",
+        "https://www.pcbway.com/"
+      ]
+    },
+    {
+      "name": "NextPCB Standard Turnkey",
+      "calculator": "https://www.nextpcb.com/pcb-assembly-quote",
+      "supports": [
+        "6layers",
+        "ENIG",
+        "Non-ConductiveFillandCapIPCTypeVII",
+        "Tg135",
+        "globaldistributorpartssourcing",
+        "MOQ1assembled"
+      ],
+      "published_standard_annulus_mil": 3.5,
+      "published_standard_annulus_mm_approx": 0.09,
+      "advanced_annulus_not_publicly_confirmed": true,
+      "promo": {
+        "name": "2026turnkey1to10boards",
+        "maximum_discount_USD": 200,
+        "minimum_order_USD": 50,
+        "automatic": true,
+        "verified_applicable_to_this_exact_job": false,
+        "comment": "NeedquoteclarificationofeligibleSMTchargesandminimumorder; do notsubtract200fromthewholejob."
+      },
+      "Rev0_not_suitable": {
+        "min_board_mm": [
+          50,
+          50
+        ],
+        "quantities": [
+          5,
+          10
+        ],
+        "parts": "HQOnlineonly",
+        "special_process": "outsideRev0scope",
+        "reason": "17.30mmboardwidthbelowminimumandfillcapmanualreview."
+      },
+      "complete_quote_available": false,
+      "exact_driver_availability_confirmed": false,
+      "sources": [
+        "https://www.nextpcb.com/pcb-assembly-quote",
+        "https://www.nextpcb.com/pcb-assembly-services",
+        "https://www.nextpcb.com/advanced-pcb-manufacturing-capabilities",
+        "https://www.nextpcb.com/pcb-capabilities",
+        "https://www.nextpcb.com/blog/nextpcb-discount",
+        "https://www.nextpcb.com/blog/what-is-nextpcb-rev0-pcba-service",
+        "https://www.nextpcb.com/prices",
+        "https://www.nextpcb.com/terms-of-service"
+      ]
+    },
+    {
+      "name": "PCBGOGO",
+      "calculator": "https://www.pcbgogo.com/pcba-quote.html",
+      "assembly_MOQ": 1,
+      "needs_manual_confirmation": [
+        "coppercapprocess",
+        "tightviaannulus",
+        "exactRGERstock",
+        "UKlandedtotal"
+      ],
+      "public_calculator_components_included": false,
+      "sources": [
+        "https://www.pcbgogo.com/pcba-quote.html",
+        "https://www.pcbgogo.com/capabilities/pcba-capabilities.html"
+      ]
+    },
+    {
+      "name": "SeeedFusionAdvanced",
+      "assembly_MOQ": 1,
+      "fabrication_MOQ": 5,
+      "POFV_advanced_only": true,
+      "published_via_annulus_mil": 4,
+      "unchanged_acceptance_unconfirmed": true,
+      "sources": [
+        "https://wiki.seeedstudio.com/Service_for_Fusion_PCB/",
+        "https://support.seeed.cc/portal/en/kb/articles/what-is-the-difference-between-fusion-standard-pcb-and-fusion-advanced-pcb",
+        "https://support.seeed.cc/portal/en/kb/articles/fusion-advanced-pcb-specification"
+      ]
+    },
+    {
+      "name": "Elecrow",
+      "service": "https://www.elecrow.com/maker/assembly/index",
+      "assembly_MOQ": 1,
+      "sources_parts_from": [
+        "DigiKey",
+        "Mouser",
+        "TME",
+        "Element14"
+      ],
+      "final_quote": "projectmanager",
+      "needs_manual_confirmation": [
+        "6layerfillcap",
+        "tightviaannuli",
+        "exactdriverstock",
+        "UKlandedprice"
+      ],
+      "placeholder_1USD_is_quote": false
+    }
+  ],
+  "price_comparison": {
+    "no_current_competitor_full_quote": true,
+    "JLC_provisional_custom_landed_GBP": {
+      "2assembled_plus3bare": 103.67,
+      "5assembled": 128.48
+    },
+    "retail_same_for_unchanged_board": true,
+    "source": "../updated-F-2026-10-31/provisional-complete-budget-model.json",
+    "note": "JLCreferenceincludesexactdriversourcingand20percenttaxallowancebutnoverifiedcoupon. Do notcomparecompetitorlaboronlyorbarePCBpromopricetothiscompletecustomboardbudget."
+  },
+  "drafts": [
+    "pcbway-rfq-UNSENT.txt",
+    "nextpcb-rfq-UNSENT.txt"
+  ],
+  "drafts_sent": false,
+  "private_contact_data_saved": false
+}

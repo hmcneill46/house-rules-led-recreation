@@ -1,0 +1,28 @@
+UNSENT DRAFT — no contact or manufacturing authorization
+To: support@nextpcb.com
+Subject: Standard Turnkey quote only: 2 or 5 assembled six-layer narrow LED boards
+
+Hello,
+
+Please provide a Standard Turnkey prototype quote for:
+A) Five PCBs fabricated, two fully SMT assembled and three bare.
+B) Five PCBs fabricated, all five fully SMT assembled.
+
+Review package: https://github.com/hmcneill46/house-rules-led-recreation/tree/main/hardware/revisions/B2/manufacturing/B2_F_12p875_review_2026-10-31
+Use this confirmed 12.875 mm LED-pitch B2 package only. Gerbers, Excellon, exact BOM, native CPL, pin-1 coordinates and review instructions are included. This is not production approval.
+
+Final board is 89.45 x 17.30 x 1.6 mm FR4, six copper layers, green mask/white silk, ENIG 1 microinch, 1 oz outer / 0.5 oz inner copper, TG135 or quoted approved equivalent. Please confirm the dielectric stack while retaining layer order and ground references.
+
+We believe Standard Turnkey rather than Rev 0 is required because the board is narrower than 50 mm and uses filled/capped vias. Please confirm unchanged CAM feasibility, especially 109 vias at 0.30 mm drill / 0.45 mm pad, nominal 0.075 mm annulus, below your standard 3.5 mil published minimum. Other vias have 0.60 mm pads. Do not alter pad/drill sizes, holes or routing without approval.
+
+Fill and COPPER CAP all 276 ordinary 0.30 mm through vias flat, including the QFN thermal vias (Excellon PTH T1). Keep all 84 x 0.90 mm LED PTH OPEN, unfilled and uncapped (PTH T2). No blind/buried vias are needed; tenting/solder fill alone is not equivalent.
+
+Fully assemble all 55 bottom SMT components in 18 BOM groups, including four exact TI TLC59282RGER VQFN drivers per board. Please quote their actual sourcing availability, MOQ/attrition and lead time, together with all other exact BOM parts. No driver substitution or DNP omission without approval. The LEDs, XIAO controller, external USB breakout and wiring are fitted by the owner and excluded from your assembly.
+
+Use temporary external rails/tooling if required, with no tooling holes inside the final board. Include removal of rails and complete depanel before delivery to maintain the final hidden-behind-LED outline. Review native CPL bottom-side rotations/pin-1 and diode polarity against the supplied placement review, rather than assuming generic angles are feeder-approved.
+
+Please itemise fabrication, components/attrition, stencil/setup/labor, fill/cap, panel/depanel and QFN inspection, plus economical tracked delivery to UK mainland. State VAT/duties/courier clearance costs or offer a written landed total; exact private delivery details can be provided separately. Please also confirm whether your current 1–10-board turnkey assembly discount applies, its minimum charge, and the resulting payable total, validity and lead time.
+
+This is a feasibility/quotation request only, not an order. Please report any required CAD changes before proceeding, and do not manufacture or procure chargeable parts without a separately authorized order.
+
+Thank you.

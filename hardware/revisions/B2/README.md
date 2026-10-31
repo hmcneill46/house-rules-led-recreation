@@ -37,6 +37,8 @@ These are native KiCad renders of the actual routed board. The first hides the L
 
 ## Current cost check — 31 October
 
+The later [driver/manufacturer investigation](quotes/alternatives-2026-10-31/README.md) quotes two in-stock, same-footprint alternatives. The balanced TLC59283RGER + 7.15 kΩ candidate gives complete purchasing budgets around **£142 for two finished displays**, **£168 for three plus two populated spare mains**, or **£222 for five**, including verified native delivery/VAT and depanel allowances. TLC59281 is slightly cheaper in goods cost but uses more internal current. These are unreleased substitution studies; canonical B2 still uses TLC59282 and precharge/rail-transient acceptance remains necessary. PCBWay/NextPCB calculator comparisons are higher. JLC support confirmed no original-driver restock schedule and accepted a quotation-only sourcing enquiry, now pending.
+
 The [confirmed-F purchasing comparison](quotes/updated-F-2026-10-31/README.md) budgets approximately **£165 for two complete displays**, **£200 for three complete displays plus two populated spare mains**, or **£255 for five complete displays**, with owned tools, power supplies, cables, solder and filament excluded. These are provisional budgets including delivery/tax allowances, not final payable quotes. Both correct QFN driver catalogue listings are currently out of JLC stock. An exact Mouser sourcing preview is recorded, but parts must reach JLC before a complete 55-SMT assembly quote is available. The live 51-SMT cost drafts omit U1–U4, are not functional and must not be ordered. No order or payment was submitted in this new quote session.
 
 ## Historical cost evidence — earlier pitch

@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-31",
+  "scope": "Public official-source research and existing project quotation evidence only; no user-account UI, supplier message, stock notification, request, order, payment or CAD edit",
+  "recommendation": "Worth one concise support enquiry before redesigning; do not wait on an unspecified restock date or assume old prices will return",
+  "published_part_specific_JLC_restock_ETA_found": false,
+  "parts": [
+    "TLC59282RGER / C702074",
+    "TLC59282RGET / C202205"
+  ],
+  "official_FAQ": {
+    "url": "https://jlcpcb.com/help/article/pcb-assembly-faqs-part-2",
+    "updated": "2026-09-09",
+    "sections": [5, 6, 11],
+    "restock_policy": "Purchasing plans replenishment, but delivery dates can be unpredictable; regularly inspect current catalogue",
+    "LCSC_inventory_not_JLC_inventory": true,
+    "FAQ_says_no_simple_transfer_between_warehouse_sources": true,
+    "restock_price_can_change": true
+  },
+  "existing_live_sourcing_previews": {
+    "evidence": "../../updated-F-2026-10-31/live-global-sourcing.json",
+    "exact_part": "TLC59282RGER",
+    "supplier": "Mouser 595-TLC59282RGER",
+    "MOQ": 13,
+    "lead_time_business_days": "10–20",
+    "quantity_13_total_USD_with_handling": 25.77,
+    "quantity_20_total_USD_with_handling": 39.10,
+    "quantity_25_total_USD_with_handling": 44.26,
+    "UK_tax_treatment_verified": false,
+    "reserved_or_purchased": false,
+    "required_installed_count_for_2_boards": 8,
+    "required_installed_count_for_5_boards": 20,
+    "factory_attrition_requirement_verified": false
+  },
+  "preorder": {
+    "official_url": "https://jlcpcb.com/help/article/what-is-jlcpcb-parts-pre-order-service",
+    "terms": "https://jlcpcb.com/help/article/pre-ordering-parts-terms-conditions",
+    "nonstock_extended_MOQ_may_apply": true,
+    "final_price_can_follow_initial_payment_hours": 48,
+    "price_can_require_topup_or_refund": true,
+    "warehouse_arrival_before_assembly_required": true,
+    "not_a_no_commitment_final_price": true
+  },
+  "global_sourcing": {
+    "detailed_guide": "https://jlcpcb.com/help/article/how-to-use-jlcpcb-global-sourcing-parts-service",
+    "overview": "https://jlcpcb.com/help/article/pcba-parts-sourcing-instruction",
+    "generic_overview_lead_days": "9–15",
+    "detailed_review_business_days": "1–3",
+    "detailed_normal_sourcing_business_days": "9–20",
+    "specific_supplier_offer_governs": true,
+    "warehouse_arrival_before_assembly_required": true
+  },
+  "contact": {
+    "official_url": "https://jlcpcb.com/help/contact",
+    "methods": ["online chat", "email", "contact form"],
+    "published_hours": "Mon–Fri24hours; Sat9am–6pmGMT+8",
+    "published_typical_reply": "Within hours during support hours, not an SLA",
+    "draft": "support-enquiry-draft.txt",
+    "sent": false,
+    "notifications_or_requests_created": false,
+    "draft_questions": [
+      "Scheduled incoming quantity/date for either exact part and whether ETA is firm",
+      "Domestic preorder pricing and lead time; do not assume simple LCSC warehouse transfer",
+      "Installed8/20 plus actual attrition, MOQ, fees",
+      "Complete55-SMT assembly cost with all4drivers per board, no substitutions"
+    ]
+  }
+}

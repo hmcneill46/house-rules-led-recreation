@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-31",
+  "status": "Unreleased comparison only; no canonicalCAD/firmwareBOMchange, order or payment.",
+  "candidate": "4xTLC59283RGER/C485815 +4x0603WAF7151T5E/C25980 (7.15kohm,1%,0603)",
+  "changes": "BOM identity/value only in sameexistingfootprints; no trace,outline,case orwirechangeinthisstudy. Engineeringrevisionstillrequired.",
+  "live_stock": {
+    "C485815_TLC59283RGER": 3117,
+    "C25980_7p15k": 61580
+  },
+  "observed_unit_prices_USD": {
+    "TLC59283_1plus": 0.8055,
+    "TLC59283_10plus": 0.6431,
+    "7p15k_1plus": 0.0018
+  },
+  "quote_match_method": "Original uploaded B2BOMsourcecomments retained; exactalternativeparts manuallymatchedinJLC18groups. AssemblyremarkclearlystatesnewMPNs/7.15kandDO NOTORDER. IsolatedcandidateBOMcorrectlyidentifiestheproposedpartsbutnotuploaded/manufacturingreleased. NativeCPL/Gerbersunchanged.",
+  "quotes": [
+    {
+      "fabricated_boards": 5,
+      "assembled_boards": 2,
+      "factory_SMT_per_board": 55,
+      "BOM_groups_matched_selected": 18,
+      "shortfall_groups": 0,
+      "fabrication_USD": 49.94,
+      "assembly_USD": 45.76,
+      "goods_USD": 95.7,
+      "assembly_breakdown_USD": {
+        "setup": 8.24,
+        "stencil": 1.55,
+        "parts": 12.1,
+        "extended7types": 21.63,
+        "SMT": 0.93,
+        "placement_review": 0.45,
+        "nitrogen": 0.86
+      },
+      "JLCONE_checkout": {
+        "shipping_USD": 1.5,
+        "original_shipping_USD": 5.85,
+        "shipping_method": "Global Standard Direct Line",
+        "transit_business_days": "8\u201312",
+        "VAT_USD": 19.44,
+        "total_USD": 116.64,
+        "coupon_deducted": false,
+        "random_desktop_discount": "--"
+      },
+      "depanel_excluded_until_review_USD": 2.32,
+      "depanel_including20percent_VAT_allowance_USD": 2.78,
+      "factory_landed_allowance_USD": 119.42,
+      "factory_landed_allowance_GBP": 89.17,
+      "remaining_retail_GBP": 53.2,
+      "complete_display_budget_GBP": 142.37
+    },
+    {
+      "fabricated_boards": 5,
+      "assembled_boards": 5,
+      "factory_SMT_per_board": 55,
+      "BOM_groups_matched_selected": 18,
+      "shortfall_groups": 0,
+      "fabrication_USD": 49.94,
+      "assembly_USD": 60.38,
+      "goods_USD": 110.32,
+      "assembly_breakdown_USD": {
+        "setup": 8.24,
+        "stencil": 1.55,
+        "parts": 25.48,
+        "extended7types": 21.63,
+        "SMT": 2.12,
+        "placement_review": 0.45,
+        "nitrogen": 0.91
+      },
+      "JLCONE_checkout": {
+        "shipping_USD": 1.5,
+        "original_shipping_USD": 6.52,
+        "shipping_method": "Global Standard Direct Line",
+        "transit_business_days": "8\u201312",
+        "VAT_USD": 22.37,
+        "total_USD": 134.19,
+        "coupon_deducted": false,
+        "random_desktop_discount": "--"
+      },
+      "depanel_excluded_until_review_USD": 3.31,
+      "depanel_including20percent_VAT_allowance_USD": 3.97,
+      "factory_landed_allowance_USD": 138.16,
+      "factory_landed_allowance_GBP": 103.16,
+      "remaining_retail_GBP": 118.86,
+      "complete_display_budget_GBP": 222.02
+    }
+  ],
+  "three_finished_plus_two_populated_spare_mains_GBP": 168.25,
+  "same_day_USD_to_GBP": 0.7467,
+  "FX_source": "https://wise.com/gb/currency-converter/usd-to-gbp-rate",
+  "web_five_checkout_reference": {
+    "goods_USD": 110.32,
+    "shipping_USD": 6.52,
+    "VAT_USD": 23.37,
+    "total_USD": 140.21
+  },
+  "desktop_shipping_promotional_saving_including_tax_USD_for5": 6.02,
+  "factory_review_caveats": [
+    "Depanel and assemblyremarksfinalisedafterreview",
+    "ActualnativeVATfor5is22.37,onecentabovesimpleaggregate20percent;usemerchanttotal",
+    "Stockunreserved;pricingandpromotionscanchange",
+    "Engineeringvalidationprecharge/railtransients/current/thermal/brightnessrequired"
+  ],
+  "final_cart_label": "ALT-TLC59283-7p15k-COST-ONLY-NOT-APPROVED",
+  "final_cart_selected": false,
+  "orders_submitted": 0,
+  "payments_made": 0
+}

@@ -1,0 +1,33 @@
+{
+  "review_date": "2026-10-31",
+  "status": "PASS",
+  "model_type": "Illustrative independent digital register model",
+  "source": "https://www.ti.com/lit/ds/symlink/tlc59281.pdf",
+  "source_section": "Register Configuration, printed page14",
+  "seed": 59281,
+  "devices": 4,
+  "bits_per_device": 16,
+  "fresh_bits_per_frame": 64,
+  "complete_frames_checked": 1000,
+  "full_write_before_single_latch": "PASS for every frame",
+  "full_zero_write_after_reserved_data": "PASS",
+  "extra_latch_without_write_counterexample": [
+    65535,
+    65535,
+    65535,
+    65535
+  ],
+  "partial_63_clock_clear_counterexample": [
+    0,
+    0,
+    0,
+    32768
+  ],
+  "conclusion": "A complete64bit write before each single LAT flushes arbitrary reserved contents; relatching or partial writes are unsafe.",
+  "limitations": [
+    "Not a real-device model, analogue simulator or full firmware emulator.",
+    "Reserved contents are deliberately arbitrary, not actual TI test data.",
+    "No setup/hold, propagation, current, MOSFET, USB or thermal behavior modeled.",
+    "Firmware source inspection is a separate review, not executed by this probe."
+  ]
+}

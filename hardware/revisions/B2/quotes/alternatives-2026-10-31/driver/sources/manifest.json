@@ -1,0 +1,23 @@
+[
+  {
+    "device": "TLC59281",
+    "url": "https://www.ti.com/lit/ds/symlink/tlc59281.pdf",
+    "sha256": "751495b089e2062ec535b4d3f9eadeff5f81cad90130268f11a6909a18d81f9c",
+    "read_date": "2026-10-31",
+    "local_pdf_not_redistributed": true
+  },
+  {
+    "device": "TLC59282",
+    "url": "https://www.ti.com/lit/ds/symlink/tlc59282.pdf",
+    "sha256": "fbaa2ba9d405f998fde950995af83ce6745dd9fb546e0e059d30c111e41cc5ba",
+    "read_date": "2026-10-31",
+    "local_pdf_not_redistributed": true
+  },
+  {
+    "device": "TLC59283",
+    "url": "https://www.ti.com/lit/ds/symlink/tlc59283.pdf",
+    "sha256": "e6384c07f712ba8ec53328b0f37e5fe64ab83039fd554db4016bb23c48bfa2ed",
+    "read_date": "2026-10-31",
+    "local_pdf_not_redistributed": true
+  }
+]

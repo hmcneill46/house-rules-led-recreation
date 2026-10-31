@@ -1,0 +1,9 @@
+{
+  "status": "QUOTE/REVIEW only; noCADorrotationedits",
+  "BOM_source": "hardware/revisions/B2/manufacturing/B2_F_12p875_review_2026-10-31/assembly/bom-review.csv",
+  "BOM_groups": 18,
+  "placements": 55,
+  "CPL_native_file": "hardware/revisions/B2/manufacturing/B2_F_12p875_review_2026-10-31/assembly/cpl-manufacturer-review.csv",
+  "CPL_sha256": "07caaf8634302a350b234418473bba4223fe561926207837a10ef53ed14cf9c9",
+  "warning": "Nativebottomrotationsandcoordinatesnotmanuallyapproved;factorypin1reviewrequired."
+}

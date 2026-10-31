@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-31",
+  "evidence": "Agent-observed anonymous public browser calculator UI; nohiddenAPI, noaccounts, noorders",
+  "PCBWay": {
+    "quote_url": "https://www.pcbway.com/quotesmt.aspx",
+    "quantities": [
+      {
+        "fabricated": 5,
+        "assembled": 2
+      },
+      {
+        "fabricated": 5,
+        "assembled": 5
+      }
+    ],
+    "size_mm": [
+      89.45,
+      17.3,
+      1.6
+    ],
+    "layers": 6,
+    "track_spacing_option_mil": [
+      4,
+      4
+    ],
+    "actual_B2_mintrace_mm": 0.11,
+    "actual_B2_copperclearance_mm": 0.15,
+    "min_drill_mm": 0.3,
+    "surface": "ENIG1microinch",
+    "mask": "green",
+    "outer_copper_oz": 1,
+    "inner_copper_UI_oz": 1,
+    "required_inner_copper_oz": 0.5,
+    "inner_copper_mismatch_requires_manual_quote": true,
+    "material_UI": "S1000HTG150",
+    "required_material": "TG135orapprovedequivalent",
+    "all_vias_resin_filled_and_capped_selected": true,
+    "factory_SMT_perboard": 55,
+    "BOM_types": 18,
+    "BGA_QFP_input": 0,
+    "QFN_review_requested_separately": true,
+    "PCB_USD": 573.4,
+    "assembly_promo_USD": 29.0,
+    "UK_FedEx_FICP_USD": 27.37,
+    "shipping_discount_USD": 27.37,
+    "total_USD_excludingparts_VAT_review": 602.4,
+    "total_same_for_2_and5": true,
+    "parts_included": false,
+    "VAT_included": false,
+    "manual_CAM_annulus_accepted": false,
+    "special_process_prices_final": false,
+    "no_CAD_uploaded": true,
+    "no_cart_saved": true,
+    "evidence_files": [
+      "evidence/pcbway-two-4mil-INCOMPLETE-estimate.jpg",
+      "evidence/pcbway-five-4mil-INCOMPLETE-estimate.jpg"
+    ],
+    "exploration_note": "Initial3/3milselectionwasoverconservative. Corrected4/4milselectionwasverifiedactiveandgaveidenticalprices. TemporaryunfilledviadiagnosticgavePCB431.79USDbutisnotavalidmanufacturingoption;requiredresinfillcapwasrestored."
+  },
+  "NextPCB": {
+    "quote_url": "https://www.nextpcb.com/pcb-assembly-quote",
+    "source": "Confirmed-FpublicGerberexactBOMandnativeCPLuploadedanonymouslyforquoteonly",
+    "fabricated": 5,
+    "actual_Gerber_size_mm": [
+      89.45,
+      17.3
+    ],
+    "UI_rounded_quote_size_mm": [
+      89.5,
+      17.3
+    ],
+    "thickness_mm": 1.6,
+    "layers": 6,
+    "material": "TG135Random",
+    "outer_copper_oz": 1,
+    "inner_copper_oz": 0.5,
+    "mask": "green",
+    "surface": "ENIG1microinch",
+    "track_spacing_option_mil": [
+      4,
+      4
+    ],
+    "parsed_actual_track_spacing_mil": [
+      4.33071,
+      5.90505
+    ],
+    "drill_mm": 0.3,
+    "via_process": "Non-ConductiveFillandCapIPCTypeVII",
+    "manual_Gerber_approval": true,
+    "data_conflict": "AskforConfirmation",
+    "external_rails": "N/AUI;outsiderailsandremovalexplicitlyrequestedinreviewnote. Actualtooling/depanelfeeunconfirmed.",
+    "all_BOM_groups_matched": 18,
+    "required_BOM_groups": 18,
+    "required_factory_SMT_perboard": 55,
+    "quantities": [
+      {
+        "assembled": 2,
+        "PCB_USD": 96.33,
+        "BOM_USD": 32.9,
+        "SMT_USD_beforepromo": 181.22,
+        "promo_USD": 131.22,
+        "SMT_USD_afterpromo": 50,
+        "goods_USD": 179.23,
+        "driver_unit_USD": 2.22606,
+        "driver_qty": 8,
+        "driver_overage_listed": 0,
+        "evidence": "evidence/nextpcb-two-matched-estimate.jpg"
+      },
+      {
+        "assembled": 5,
+        "PCB_USD": 96.33,
+        "BOM_USD": 53.19,
+        "SMT_USD_beforepromo": 264.99,
+        "promo_USD": 200,
+        "SMT_USD_afterpromo": 64.99,
+        "goods_USD": 214.51,
+        "driver_unit_USD": 1.62644,
+        "driver_qty": 20,
+        "driver_overage_listed": 0,
+        "evidence": "evidence/nextpcb-five-matched-estimate.jpg"
+      }
+    ],
+    "driver_MPN": "TLC59282RGER",
+    "driver_lead_working_days": "7\u201318",
+    "production_working_days": "14\u201327",
+    "shipping_included": false,
+    "VAT_included": false,
+    "shipping_quote_blocker": "AddtoCartopensLoginmodal. Noaccountcreated, nologinorCAPTCHAcompleted.",
+    "CAM_exact_annulus_approval": false,
+    "full_payable_landed_quote": false
+  },
+  "no_design_changes": true,
+  "orders_submitted": 0,
+  "payments_made": 0,
+  "contact_details_not_saved_in_public_records": true
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-31",
+  "status": "PRICE/COMPATIBILITY STUDY ONLY; not a manufacturing release; canonicalCADunchanged",
+  "driver_only_BOM_change": "U1-U4 TLC59282RGER/C702074 \u2192 TLC59281RGER/C130033; all55SMTrefsincluded",
+  "Gerbers_and_CPL": "Byte-identical confirmedF89.45x17.3 source; no routing/outline/pin-pattern edits",
+  "files": {
+    "ALT-TLC59281-F12p875-COST-ONLY-NOT-RELEASED.zip": "2ec2649640f93a60dcf0dfa970e13907fc002abc4798adc57c50c915215cbc03",
+    "ALT-TLC59281-COST-ONLY-native-CPL.csv": "07caaf8634302a350b234418473bba4223fe561926207837a10ef53ed14cf9c9",
+    "ALT-TLC59281-55SMT-COST-ONLY-NOT-RELEASED-BOM.csv": "c7693446105f20687380aaacb7785d1361e9d206fcc99b983c5e50a3b1857d26"
+  }
+}

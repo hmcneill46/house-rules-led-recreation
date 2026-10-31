@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-31",
+  "status": "RESEARCH ONLY: no canonical CAD/BOM/firmware modified; not a manufacturing release",
+  "primary_datasheets": {
+    "TLC59281": "https://www.ti.com/lit/ds/symlink/tlc59281.pdf",
+    "TLC59282": "https://www.ti.com/lit/ds/symlink/tlc59282.pdf",
+    "TLC59283": "https://www.ti.com/lit/ds/symlink/tlc59283.pdf"
+  },
+  "manual_datasheet_pin_table": {
+    "1": "LAT",
+    "2": "OUT0",
+    "3": "OUT1",
+    "4": "OUT2",
+    "5": "OUT3",
+    "6": "OUT4",
+    "7": "OUT5",
+    "8": "OUT6",
+    "9": "OUT7",
+    "10": "OUT8",
+    "11": "OUT9",
+    "12": "OUT10",
+    "13": "OUT11",
+    "14": "OUT12",
+    "15": "OUT13",
+    "16": "OUT14",
+    "17": "OUT15",
+    "18": "BLANK",
+    "19": "SOUT",
+    "20": "IREF",
+    "21": "VCC",
+    "22": "GND",
+    "23": "SIN",
+    "24": "SCLK",
+    "25": "EP_GND"
+  },
+  "current_U1_U4_pin_names_match_59281": {
+    "U1": true,
+    "U2": true,
+    "U3": true,
+    "U4": true
+  },
+  "mechanics": {
+    "same_RGE0024C": true,
+    "body_mm": [
+      4,
+      4
+    ],
+    "EP_mm": [
+      2.1,
+      2.1
+    ],
+    "pad_pitch_mm": 0.5,
+    "CAD_reposition_needed_from_datasheet_review": false,
+    "qualified_footprint_and_feeder_review_still_required": true
+  },
+  "nominal_current_mA": {
+    "59282_6p8k": 7.424926470588235,
+    "59281_6p8k": 7.411764705882353,
+    "59283_6p8k": 7.780941176470588,
+    "59281_change_percent": -0.1772645797641026,
+    "59283_change_percent": 4.794858336881913,
+    "59283_equal_current_resistor_kohm": 7.126050366907971,
+    "59283_equal_average_full_on_us": 448.4952863709214
+  },
+  "power_planning_mA": {
+    "method": "Conservative datasheet test-condition ICC maxima at3k used as planning bounds at6.8k, not guaranteed whole product USB compliance",
+    "59282_driver_ICC_full94percent": 57.839999999999996,
+    "59281_driver_ICC_full94percent": 69.6,
+    "59282_driver_ICC_dim5percent": 25.799999999999997,
+    "59281_driver_ICC_dim5percent": 34.0,
+    "59282_49_LED_peak": 363.82139705882355,
+    "59281_49_LED_peak": 363.1764705882353,
+    "59282_49_LED_average_full": 341.99211323529414,
+    "59281_49_LED_average_full": 341.38588235294117,
+    "59282_49_LED_average_dim": 18.19106985294118,
+    "59281_49_LED_average_dim": 18.158823529411766,
+    "net_full_increase": 11.153769117647077,
+    "net_dim_increase": 8.167753676470593
+  },
+  "protocol_59281_independent_model": {
+    "frames_checked": 1000,
+    "devices": 4,
+    "bits_each_frame": 64,
+    "one_LAT_per_frame": true,
+    "post_LAT_shift_contents": "Randomised reserved data; next full64bit frame flushes them",
+    "status": "PASS; a second LAT without fresh64bits corrupts intended output in the model",
+    "limitations": "Illustrativeindependentdigitalregistermodelonly. Notrealchipmodel,analogue/timingsimulationorfullfirmwareemulator.",
+    "standalone_probe": "protocol_latch_probe.py",
+    "recorded_result": "protocol-latch-probe-result.json"
+  },
+  "firmware_inspection": {
+    "application_path": "hardware/revisions/B2/firmware/HouseRulesB2/application.cpp",
+    "application_sha256": "bceb3dc88eafd9a1328ec983b38ff55578066a773d28a783b3b6cd8133e61bca",
+    "observed": "HardwareIO::shiftAndLatch writes8freshbytes, one LAT rising edge,1us high thenlow, only whileBLANKhigh. RailPower wake/off each call same full64bit method; scanner does not relatch onBLANKedges.",
+    "timing_inference": "1us LAT high exceeds100ns LAT rising-to-next-clock guard; phase64bits8MHz takes8us before1usLAT, inside30usdeadtime. SPI hardware waveform still bench-verify."
+  },
+  "limits": {
+    "simultaneous_switching": "59281 removes59282grouped output delay; prototype ground-bounce/ghosting/false-clock check required",
+    "bank_tolerance": "59281typdeviceerror\u00b11%,max\u00b16% vs59282typ\u00b11%,max\u00b13% at specifiedtestcondition; do not promisebankuniformitywithoutmeasurement",
+    "unpowered": "No VCC=0 output leakage guarantee found for candidate. Retain both switchedrails, QOD, BLANKhigh impedance/controls low beforepoweroff; powered-up/down transient and suspend tests remain.",
+    "gate_low": "7.41mA sink versus max~1.18mA5.5V/4.7k pullup, at1Vgate positive sinkmargin; retaining existing gate-drive inference, not a manufacturer-specified gate-driver application",
+    "unknown_USB_power": "Higher blankICC increases DIMplanningbudget; unknown-OFF firmware variant alreadyexists; measured current acceptance required",
+    "gate_high": "Powered output leakage max0.1\u00b5A atOUT17V/BLANKHIGH gives\u22640.47mV drop across4.7k. No powered-off leakage guarantee inferred."
+  },
+  "visual_verification": {
+    "TLC59281_page4": "Rendered with PyMuPDF and visually checked: IIN\u00b11\u00b5A and output leakage0.1\u00b5A(max), not mA as the PDF extractor wrongly reports.",
+    "TLC59281_page6": "Rendered pinmap agrees with manually entered25padtable.",
+    "pin1_and_package": "TI published RGE0024C drawings checked, not inferred from package-name similarity."
+  },
+  "parent_live_stock_observations": {
+    "source": "Parent signed-in JLC UI; not independently accessed by this research agent",
+    "TLC59281RGER": {
+      "C": "C130033",
+      "stock": 988,
+      "USD1plus": 0.7136,
+      "USD10plus": 0.6299
+    },
+    "TLC59283RGER": {
+      "C": "C485815",
+      "stock": 3117,
+      "USD1plus": 0.8055,
+      "USD10plus": 0.6431,
+      "USD30plus": 0.5627
+    }
+  },
+  "balanced_recommendation": {
+    "least_change_lowest_nominal_part_cost": "TLC59281RGER/C130033; same6.8kresistors, higherlogiccurrent, no grouped output delay",
+    "more_balanced_power_and_switching": "TLC59283RGER/C485815 plus7.15kIREF/C25980; liveJLCstockconfirmed forboth. Lowerpower andgroupedswitching; prechargequalification remains.",
+    "approved_for_manufacture": false,
+    "followup": "tlc59283-matched-current-followup.json"
+  }
+}

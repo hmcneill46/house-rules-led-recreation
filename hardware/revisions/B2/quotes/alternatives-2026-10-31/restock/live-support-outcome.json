@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-31",
+  "JLCPCB": {
+    "channel": "Authenticated JLCONE PCBA support live chat",
+    "enquiry_sent": true,
+    "agent_reply": "No restock schedule currently available for original TLC59282RGER/RGET; requested use quotation-only Parts Request Quote page.",
+    "subsequent_part_Rfq_submitted": true,
+    "parts": [
+      "TLC59282RGER / C702074",
+      "TLC59282RGET / C202205"
+    ],
+    "RFQ_quantity_each": 20,
+    "note": "Alternative carrier procurement price enquiries, not40chip purchase. Chat also asks8installed+attrition and20installed+attrition.",
+    "RFQ_status": "Quoting",
+    "quoted_vs_requested_groups": [
+      0,
+      2
+    ],
+    "private_account_quote_identifier_saved": false,
+    "evidence": "../evidence/JLC-original-driver-request-Quoting.jpg",
+    "orders_or_paid_procurement": false
+  },
+  "competitors": {
+    "PCBWay": "Prepared webform requiresCAPTCHA; no submission. Mail draft unsent.",
+    "NextPCB": "Contactform attempt returnedfailure/reset; no confirmed enquiry receipt. Mail draft unsent.",
+    "owner_latest_constraint": "Only send if there appears a realistic chance of price competitiveness. Current calculator evidence doesnot meetthatcondition; no supplier emails sent.",
+    "sender_reply_addresses_omitted_for_privacy": true
+  }
+}

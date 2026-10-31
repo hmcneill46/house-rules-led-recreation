@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-31",
+  "status": "Research follow-up, no BOM/CAD/firmware changes. No manufacturing release.",
+  "question": "Is TLC59283 with matched-current resistor a closer-performance choice than cheaperTLC59281?",
+  "conclusion": "Worth comparison with completeJLCquote. Samegeometrywith7.15kIREF, lowerpower andgrouped switching. Live resistorstockconfirmed. No poweredsteady-state gatehardblockidentified; no proof of poweredoffreversecurrent/transientbehavior. Not manufacturingapproved.",
+  "calculated_variants": [
+    {
+      "IREF_ohm": 7130,
+      "nominal_peak_mA": 7.420813464235624,
+      "change_percent_vs_original": -0.05539457352073951,
+      "49_LED_average_full_mA": 341.80266816269284,
+      "four_driver_ICC_full_planning_mA": 34.8,
+      "four_driver_ICC_dim_planning_mA": 17.0,
+      "net_full_planning_change_vs_original_mA": -23.22944507260127,
+      "net_DIM_planning_change_vs_original_mA": -8.810076865563895
+    },
+    {
+      "IREF_ohm": 7150,
+      "nominal_peak_mA": 7.400055944055943,
+      "change_percent_vs_original": -0.3349599033850348,
+      "49_LED_average_full_mA": 340.84657678321673,
+      "four_driver_ICC_full_planning_mA": 34.8,
+      "four_driver_ICC_dim_planning_mA": 17.0,
+      "net_full_planning_change_vs_original_mA": -24.185536452077386,
+      "net_DIM_planning_change_vs_original_mA": -8.860932790004114
+    }
+  ],
+  "stock_resistor_identity_lead": {
+    "mpn": "0603WAF7151T5E",
+    "LCSC": "C25980",
+    "JLC_live_stock": 61580,
+    "JLC_class": "Extended",
+    "USD1plus": 0.0018,
+    "power_mW": 100,
+    "tolerance_percent": 1,
+    "verification": "Parent live signed-inJLCsearch on2026-10-31"
+  },
+  "published_comparison": {
+    "TLC59282": {
+      "device_typ_error_percent": 1,
+      "device_max_error_percent": 3,
+      "channel_typ_error_percent": 0.6,
+      "channel_max_error_percent": 2,
+      "ICC_on_testmax_mA": 15,
+      "ICC_blank_testmax_mA": 6,
+      "grouped_output_delay": true,
+      "precharge": false,
+      "output_working_V": 17
+    },
+    "TLC59281": {
+      "device_typ_error_percent": 1,
+      "device_max_error_percent": 6,
+      "channel_typ_error_percent": 1,
+      "channel_max_error_percent": 3,
+      "ICC_on_testmax_mA": 18,
+      "ICC_blank_testmax_mA": 8,
+      "grouped_output_delay": false,
+      "precharge": false,
+      "output_working_V": 17
+    },
+    "TLC59283": {
+      "device_typ_error_percent": 2,
+      "device_max_error_percent": 4,
+      "channel_typ_error_percent": 1.4,
+      "channel_max_error_percent": 3,
+      "ICC_on_testmax_mA": 9,
+      "ICC_blank_testmax_mA": 4,
+      "grouped_output_delay": true,
+      "precharge": true,
+      "output_working_V": 10
+    }
+  },
+  "gate_and_rail_assessment": {
+    "qualified_powered_facts": "TLC59283 supportsOUT10V working withVCC3\u20135.5V and specifies lowleakage withBLANKhigh/prechargeON. Thus an unconditionalclampofOUTtoVCC cannotbeassumed;5Vgatepullupsteady-state is supported.",
+    "ordinary_gate_off": "Using0.5\u00b5A125Cworstleakage and4.7k yields2.35mV pullupdrop;at85C0.2\u00b5A gives0.94mV.",
+    "ordinary_gate_on": "At1Vgate, programmed7.4mAsink greatlyexceeds~0.85mAfrom5V4.7kpullup;existinggateanalysisstillplausible.",
+    "precharge_reverse_LED": "Prechargeat3.3V is1.3\u20132.5V. InactivecolumnsbleedtoGND;thisreversebiasisbelowWenrun5Vabsolute rating. Existingmultiplexingalreadypermitschargedcathodesagainstinactiveanodes. No transientorlongtermLEDqualificationfollows.",
+    "poweroff_unknown": "BothrailsQODandclear-before-off mitigate storedenergy/backpower butdo notprove no currentintoVCC whenitfallsbelow3V. Candidateadds internal prechargepath;poweroffI/Oleakage isunspecified. Do not claimexistingQODis sufficientwithoutmeasurementsorTIconfirmation.",
+    "possible_if_bench_fails": "Independentsequencingorchangeddischargeratiosmayrequirecircuitrevision;no suchchangeplannedorassumedhere.",
+    "startup_unknown": "BLANKpullup and10mssettle/zero-latch remain. BothrampsandMCUreset needrealwaveforms.",
+    "voltage_headroom_tradeoff": "Workingoutputlimit10Vvsold17V remainsabove5Vnormalrail;transientheadroomisreduced.",
+    "loop_stability": "SLVAFP4warns outputringingwithlargeparasiticinductance;notproofcurrentshort-PCBtracesoscillate. Currentdesignneedsbenchwaveforms;RCadditionifneededwouldbearealPCBrevision."
+  },
+  "primary_sources": {
+    "TLC59283": "https://www.ti.com/lit/ds/symlink/tlc59283.pdf",
+    "TLC59282": "https://www.ti.com/lit/ds/symlink/tlc59282.pdf",
+    "TLC59281": "https://www.ti.com/lit/ds/symlink/tlc59281.pdf",
+    "TI_application_note": "https://www.ti.com/lit/an/slvafp4/slvafp4.pdf",
+    "LED_local_reference": "hardware/reference/LMD07057AUE.pdf"
+  },
+  "TI_application_note_observation": "SLVAFP4p2explicitlydescribesusingTLC59283outputstocontrolcommon-linePNPtransistors,reducingMCUIO. It supports this topologyclass,notblanketqualificationofourPMOS/rails.",
+  "source_hashes": {
+    "SLVAFP4": "be878af128fd8f698d6716e1d8ceb6f88411fbd9ceda6c60113c49ea5274adad",
+    "Wenrun": "3d5338d55dd293679cccaf977dbd4f64f208684cb6ccef85b98d1c943256b990"
+  },
+  "not_a_USB_bound": "ICCmaximaquotedat3kIREFaretoconservativelyreusetheexistingplanningmethod,notguaranteedworstcaseforalldynamicloadsorwholeproduct."
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-31",
+  "status": "UnreleasedBOMcoststudyonly",
+  "changes": {
+    "U1-U4": "TLC59283RGER/C485815",
+    "R1-R4": "0603WAF7151T5E/C25980,7.15kohm"
+  },
+  "Gerbers": "Useunchangedconfirmed-F89.45x17.3reviewarchive;noCADchange",
+  "BOM_groups": 18,
+  "SMT_placements": 55,
+  "files": {
+    "ALT-TLC59283-7p15k-55SMT-COST-ONLY-BOM.csv": "929230387b64a2603d6d805a676ab52382772bfb2edbd83c90f0f254472b13f0",
+    "ALT-TLC59283-COST-ONLY-native-CPL.csv": "07caaf8634302a350b234418473bba4223fe561926207837a10ef53ed14cf9c9"
+  }
+}

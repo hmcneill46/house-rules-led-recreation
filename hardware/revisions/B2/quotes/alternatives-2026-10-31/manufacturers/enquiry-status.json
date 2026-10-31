@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-31",
+  "user_authorized_contact": true,
+  "reply_email": "Ownerprovidedprivately;omittedfrompublicrecord",
+  "PCBWay": {
+    "channel": "https://www.pcbway.com/contact.html",
+    "state": "Technicalbodyandapprovedname/emailprepared; explicithumanCAPTCHAunchecked; Submitnotclicked. Rootcoordinatinghandoff.",
+    "blocker": "IABvisibilityunsupportedinchildagent; preparedtabmarkHandoff. Rootmayneedrecreateform."
+  },
+  "NextPCB": {
+    "channel": "https://www.nextpcb.com/contactus",
+    "attempted": true,
+    "body_file": "nextpcb-contact-body-458chars.txt",
+    "result": "Oops! Your form details could not be submitted. Form thenreset.",
+    "received_confirmation": false,
+    "sent_successfully": false,
+    "next_step": "Emailfallbackorparent-coordinatedretry;donotclaimreceivedorautomaticfollowup."
+  },
+  "orders": 0,
+  "payments": 0,
+  "new_Terms_accepted": false,
+  "final_root_status": {
+    "PCBWay": "Prepared webform requiresCAPTCHA; no submission. Mail draft unsent.",
+    "NextPCB": "Contactform attempt returnedfailure/reset; no confirmed enquiry receipt. Mail draft unsent.",
+    "owner_latest_constraint": "Only send if there appears a realistic chance of price competitiveness. Current calculator evidence doesnot meetthatcondition; no supplier emails sent.",
+    "sender_reply_addresses_omitted_for_privacy": true
+  }
+}

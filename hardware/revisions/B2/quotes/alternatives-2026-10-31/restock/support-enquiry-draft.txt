@@ -1,0 +1,19 @@
+UNSENT DRAFT — enquiry only; no order or parts purchase authorised
+
+Subject: TLC59282RGER/C702074 restock ETA and low-quantity Economic PCBA sourcing
+
+Hello JLCPCB support,
+
+I am comparing costs before ordering a small prototype. My board uses four TLC59282RGER/C702074 drivers per board, in TI's RGE 24-pin 4×4 mm VQFN exposed-pad package. C702074 and the same-device alternate reel TLC59282RGET/C202205 currently show no stock for assembly.
+
+Could you please confirm:
+
+1. Is either part on an incoming purchase order, and what quantity and date are expected to be usable for Economic PCBA? Please distinguish a firm scheduled arrival from an estimate.
+2. Is there a cheaper/faster domestic pre-order route through your purchasing team than Global Sourcing? I understand displayed LCSC inventory is separate from your assembly stock. What total quantity, price, handling charges and lead time would apply for two boards (8 installed chips plus required attrition) and five boards (20 installed plus required attrition)?
+3. What is the exact attrition quantity for this package, and can the complete assembly cost be quoted before buying the drivers? The board has 55 bottom-side SMT parts in 18 BOM groups; all four drivers must be assembled.
+
+The exact RGER Global Sourcing preview through Mouser currently offers a 13-piece minimum and 10–20-business-day lead time. I would prefer to keep the existing PCB if ordinary replenishment is imminent.
+
+No SSOP/DBQ/DBQR package or TLC59283 substitution is authorised. Please provide information/quotation only; do not create an order or purchase components.
+
+Thank you.

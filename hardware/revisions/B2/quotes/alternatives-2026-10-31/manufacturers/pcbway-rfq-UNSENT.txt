@@ -1,0 +1,28 @@
+UNSENT DRAFT — no contact or manufacturing authorization
+To: service@pcbway.com
+Subject: Quote request only: 2 or 5 assembled six-layer 89.45 x 17.30 mm LED boards
+
+Hello,
+
+Please quote these two alternatives for a hobby LED display prototype, without placing an order:
+A) Five PCBs fabricated, two fully SMT assembled and three bare.
+B) Five PCBs fabricated, all five fully SMT assembled.
+
+Review package: https://github.com/hmcneill46/house-rules-led-recreation/tree/main/hardware/revisions/B2/manufacturing/B2_F_12p875_review_2026-10-31
+This is the confirmed 12.875 mm LED-pitch B2 version, not earlier revision files. The package contains fabrication Gerbers/drills, exact BOM, native placement data, pin-1 review coordinates and manufacturing instructions. It is a review package, not production approval.
+
+Required final board: 89.45 x 17.30 x 1.6 mm FR4, six copper layers, green mask/white silk, ENIG 1 microinch, 1 oz outer / 0.5 oz inner copper, standard TG135 or a quoted approved equivalent. Layer order and ground references must be retained; please confirm the dielectric stack.
+
+Please confirm CAM acceptance of the unchanged geometry before quoting it as manufacturable. In particular, 109 vias use 0.30 mm drill / 0.45 mm pad, a nominal 0.075 mm annular ring, slightly below your published advanced 3 mil figure. Other via pads are 0.60 mm. Do not change pad/drill sizes or routing without approval.
+
+Fill and copper-cap ALL 276 ordinary 0.30 mm through vias flat, including exposed-pad thermal vias. Excellon PTH T1 = these vias. Keep ALL 84 x 0.90 mm LED mounting PTH holes OPEN, unfilled and uncapped (PTH T2). Tenting or solder filling is not equivalent. No blind/buried vias are required.
+
+Assembly is 55 SMT components on bottom only, 18 BOM groups, including four exact TI TLC59282RGER VQFN drivers per board. Please source the complete exact BOM, disclose each component's MOQ/attrition, supplier, price and lead time, and include QFN hidden-pad inspection. No driver substitutions or DNP omissions without approval. LEDs, XIAO controller, external USB breakout and wiring are owner-fitted and excluded from factory assembly.
+
+You may use removable external tooling/panel rails, but no tooling holes within the finished outline. Include complete depanel before delivery so the final board fits behind the LEDs. Please review native bottom-side CPL orientation, pin-1 and diode polarity against the supplied placement review; the exported angles are not pre-approved feeder rotations.
+
+Please itemise fabrication, components/attrition, stencil, setup/labor, fill/cap, panel/depanel, review/inspection and delivery. Quote economical tracked UK-mainland delivery and state VAT/duty/clearance costs separately or offer a written landed total. Exact private delivery details can be supplied separately. Please include any applicable prototype offer, quote validity and total lead time from payment to dispatch.
+
+This is a quotation and feasibility request only. Please flag any required design change for review; do not manufacture or procure chargeable parts until a separate order is authorized.
+
+Thank you.

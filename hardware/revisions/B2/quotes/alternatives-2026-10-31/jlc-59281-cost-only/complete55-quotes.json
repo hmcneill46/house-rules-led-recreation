@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-31",
+  "status": "Complete55-SMT stocked-driver QUOTE STUDY, NOT engineering/manufacturing approval. No orders/payments.",
+  "canonical_design_unchanged": true,
+  "PCB_mm": [
+    89.45,
+    17.3,
+    1.6
+  ],
+  "pitch_mm": 12.875,
+  "all_other_BOM_parts_unchanged": true,
+  "live_stock": {
+    "C130033_TLC59281RGER": {
+      "stock": 988,
+      "USD1plus": 0.7136,
+      "USD10plus": 0.6299,
+      "USD30plus": 0.5889
+    },
+    "C485815_TLC59283RGER": {
+      "stock": 3117,
+      "USD1plus": 0.8055,
+      "USD10plus": 0.6431
+    }
+  },
+  "quote_input_method": "Reused the confirmed-F fabrication Gerbers and nativeCPL. Manually selected C130033 for U1-U4 in assembly matcher. Uploaded source comment remains TLC59282; explicit assembly remark warns of discrepancy and no release. Isolated candidateBOM file has correctnewMPN, but browserfilechooser didnotcompleteupload. Do not treat quote draft as final manufacturing documents.",
+  "quantities": [
+    {
+      "assembled_PCBs": 2,
+      "fabricated_PCBs": 5,
+      "factory_placements_per_board": 55,
+      "BOM_groups_matched_and_selected": 18,
+      "shortfall_groups": 0,
+      "driver": "TLC59281RGER / C130033",
+      "driver_usage": 8,
+      "fabrication_USD": 49.94,
+      "assembly_USD": 41.88,
+      "assembly_breakdown_USD": {
+        "setup": 8.24,
+        "stencil": 1.55,
+        "parts_with_required_spares": 11.35,
+        "extended6types": 18.54,
+        "SMT": 0.89,
+        "placement_review": 0.45,
+        "nitrogen": 0.86
+      },
+      "goods_USD": 91.82,
+      "web_checkout": {
+        "shipping_USD": 6.37,
+        "method": "Global Standard Direct Line",
+        "transit_business_days": "8\u201312",
+        "VAT_USD": 19.64,
+        "total_USD": 117.83,
+        "coupon_applied": false
+      },
+      "depanel_excluded_until_review_USD": 2.32,
+      "depanel_with_20percent_VAT_allowance_USD": 2.78,
+      "factory_landed_including_depanel_allowance_USD": 120.61,
+      "factory_landed_GBP": 90.06,
+      "remaining_retail_GBP": 53.2,
+      "complete_display_budget_GBP": 143.26,
+      "engineering_release": false
+    },
+    {
+      "assembled_PCBs": 5,
+      "fabricated_PCBs": 5,
+      "factory_placements_per_board": 55,
+      "BOM_groups_matched_and_selected": 18,
+      "shortfall_groups": 0,
+      "driver": "TLC59281RGER / C130033",
+      "driver_usage": 20,
+      "fabrication_USD": 49.94,
+      "assembly_USD": 56.98,
+      "assembly_breakdown_USD": {
+        "setup": 8.24,
+        "stencil": 1.55,
+        "parts_with_required_spares": 25.2,
+        "extended6types": 18.54,
+        "SMT": 2.09,
+        "placement_review": 0.45,
+        "nitrogen": 0.91
+      },
+      "goods_USD": 106.92,
+      "web_checkout": {
+        "shipping_USD": 7.47,
+        "method": "Global Standard Direct Line",
+        "transit_business_days": "8\u201312",
+        "VAT_USD": 22.88,
+        "total_USD": 137.27,
+        "coupon_applied": false
+      },
+      "depanel_excluded_until_review_USD": 3.31,
+      "depanel_with_20percent_VAT_allowance_USD": 3.97,
+      "factory_landed_including_depanel_allowance_USD": 141.24,
+      "factory_landed_GBP": 105.46,
+      "remaining_retail_GBP": 118.86,
+      "complete_display_budget_GBP": 224.32,
+      "engineering_release": false
+    }
+  ],
+  "three_finished_plus_two_populated_spares_GBP": 170.55,
+  "GBP_USD_rate": 0.7467,
+  "FX_source": "https://wise.com/gb/currency-converter/usd-to-gbp-rate",
+  "shipping_caveat": "Current browser shipping verified for candidate; JLCONE1.50promotion verified earlier onlyfororiginalpartialjob, NOT assumed for candidate. No desktop/coupon saving deducted.",
+  "review_caveat": "Depanel and remark/manualCAMcharges finalized after review. Stock not reserved. CardFX/retailer shipping allowances may differ.",
+  "final_cart_label": "ALT-TLC59281-COST-ONLY-NOT-APPROVED",
+  "final_cart_selected": false,
+  "orders_submitted": 0,
+  "payments_made": 0
+}
