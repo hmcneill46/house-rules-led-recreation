@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-31",
+  "bundle": "B2_F_AllParts_OnePlate_KE04_HyperPLA.zip",
+  "bundle_sha256": "b4ada1220cfe67ec5e6e7c06d8c0bce5b4f3fd91c22fdf49396eb7ff04a2efb9",
+  "entry_sha256": {
+    "B2_F_AllParts_OnePlate_KE04_HyperPLA.gcode": "90f37e09226037a13de08d0505d5f33fb598724c9364dbfd469abcbb2d86bccb",
+    "PRINT_FIRST.txt": "1ff6771b4180e7b59dc4a8a6cb8bd5c29d75fac6a5ddf15ce32c5abe6ef3a148",
+    "verification.json": "e8d9bcad1753527d3327200062c75a95a8f47b437e6cced65ddadf10906e253b"
+  },
+  "zip_integrity_and_entry_bytes_verified": true
+}

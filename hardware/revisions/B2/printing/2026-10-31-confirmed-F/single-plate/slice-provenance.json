@@ -1,0 +1,27 @@
+{
+  "date_utc": "2026-10-31T20:17:37.542209+00:00",
+  "slicer": "Installed OrcaSlicer 2.4.2",
+  "command": [
+    "/Applications/OrcaSlicer.app/Contents/MacOS/OrcaSlicer",
+    "--datadir",
+    "/tmp/house-rules-B2-F-single-plate-2026-10-31/user",
+    "--slice",
+    "0",
+    "--arrange",
+    "0",
+    "--orient",
+    "0",
+    "--outputdir",
+    "/tmp/house-rules-B2-F-single-plate-2026-10-31",
+    "--export-3mf",
+    "B2_F_AllParts_OnePlate_KE04_HyperPLA-sliced.3mf",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/printing/2026-10-31-confirmed-F/single-plate/projects/B2_F_AllParts_OnePlate_KE04_HyperPLA.3mf"
+  ],
+  "exit_code": 0,
+  "prepared_project_sha256": "f4acf791ea1c2ffba06b2d6d0523b2b0894bfe1d1d3b866fcf34770291ec0299",
+  "sliced_project_sha256": "de01f6234ca1ad6b8b6e11985d2c7c7dc092dca3b4c9782be39c373a85d42c93",
+  "Gcode_sha256": "90f37e09226037a13de08d0505d5f33fb598724c9364dbfd469abcbb2d86bccb",
+  "embedded_Gcode_byte_identical": true,
+  "owner_UI_state": "Existing unsaved Orca scene preserved.",
+  "printer_execution": "None; no printer connection or print start."
+}

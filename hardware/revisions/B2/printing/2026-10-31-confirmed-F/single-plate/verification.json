@@ -1,0 +1,458 @@
+{
+  "result": "PASS",
+  "date_utc": "2026-10-31T20:18:33.443728+00:00",
+  "scope": "Independent actual STL, sliced mesh/settings and executable G-code checks; no physical print or fit guarantee.",
+  "canonical_PCB_sha256": "b42e3d59b40a2e9cc877f8c5595d58339a2c7b0797970fa826ea84c19b8105f1",
+  "mechanical_report_sha256": "b210a688eef208fbac14b88599df4ba6b30dbf54a43650bb52799cf9c54f9fb9",
+  "job": "B2_F_AllParts_OnePlate_KE04_HyperPLA",
+  "prepared_project_sha256": "f4acf791ea1c2ffba06b2d6d0523b2b0894bfe1d1d3b866fcf34770291ec0299",
+  "sliced_project_sha256": "de01f6234ca1ad6b8b6e11985d2c7c7dc092dca3b4c9782be39c373a85d42c93",
+  "Gcode_sha256": "90f37e09226037a13de08d0505d5f33fb598724c9364dbfd469abcbb2d86bccb",
+  "embedded_Gcode_byte_identical": true,
+  "source_meshes_frozen_and_unscaled": true,
+  "object_count": 7,
+  "dummy": {
+    "closed_consistently_wound_single_body": true,
+    "actual_hole_count": 84,
+    "actual_hole_diameter_mm": 1.0,
+    "maximum_centre_error_from_native_PCB_mm": 8.83883476763741e-06,
+    "actual_bounds_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        89.45,
+        17.3,
+        1.6
+      ]
+    ],
+    "nominal_module_pitch_mm": 12.875
+  },
+  "meshes": {
+    "B2-main-board-fit-1p6mm": {
+      "source_mesh_geometry_retained": true,
+      "scale_percent": 100,
+      "rotation_identity": true,
+      "triangles": 11100,
+      "maximum_float32_vertex_roundtrip_error_mm": 3.4543705777834278e-06,
+      "actual_plate_bounds_mm": [
+        [
+          62.000001499999996,
+          124.00000038,
+          -1.199999999368373e-08
+        ],
+        [
+          151.4499985,
+          141.29999962,
+          1.6000000120000002
+        ]
+      ]
+    },
+    "mcu-channel-fit-coupon": {
+      "source_mesh_geometry_retained": true,
+      "scale_percent": 100,
+      "rotation_identity": true,
+      "triangles": 216,
+      "maximum_float32_vertex_roundtrip_error_mm": 2.3602753950417587e-07,
+      "actual_plate_bounds_mm": [
+        [
+          60.0,
+          179.0,
+          9.99999993922529e-08
+        ],
+        [
+          80.0,
+          187.0,
+          9.1999999
+        ]
+      ]
+    },
+    "case-closure-fit-coupon": {
+      "source_mesh_geometry_retained": true,
+      "scale_percent": 100,
+      "rotation_identity": true,
+      "triangles": 200,
+      "maximum_float32_vertex_roundtrip_error_mm": 3.087069830107832e-07,
+      "actual_plate_bounds_mm": [
+        [
+          123.0,
+          151.0,
+          -9.99999993922529e-08
+        ],
+        [
+          147.0,
+          166.0,
+          10.8000001
+        ]
+      ]
+    },
+    "pin-fit-scale-50mm": {
+      "source_mesh_geometry_retained": true,
+      "scale_percent": 100,
+      "rotation_identity": true,
+      "triangles": 12,
+      "maximum_float32_vertex_roundtrip_error_mm": 0,
+      "actual_plate_bounds_mm": [
+        [
+          60.0,
+          155.0,
+          0.0
+        ],
+        [
+          110.0,
+          165.0,
+          1.0
+        ]
+      ]
+    },
+    "enclosure-B2-PROTOTYPE-shell": {
+      "source_mesh_geometry_retained": true,
+      "scale_percent": 100,
+      "rotation_identity": true,
+      "triangles": 1072,
+      "maximum_float32_vertex_roundtrip_error_mm": 2.825402627648675e-06,
+      "actual_plate_bounds_mm": [
+        [
+          59.999999200000005,
+          49.9999998,
+          4.000000011217253e-07
+        ],
+        [
+          154.6500008,
+          72.6000002,
+          22.7999996
+        ]
+      ]
+    },
+    "enclosure-B2-PROTOTYPE-back": {
+      "source_mesh_geometry_retained": true,
+      "scale_percent": 100,
+      "rotation_identity": true,
+      "triangles": 2104,
+      "maximum_float32_vertex_roundtrip_error_mm": 2.7180139772637617e-06,
+      "actual_plate_bounds_mm": [
+        [
+          59.999999200000005,
+          87.9999998,
+          9.99999993922529e-08
+        ],
+        [
+          154.6500008,
+          110.6000002,
+          12.9499999
+        ]
+      ]
+    },
+    "mcu-retaining-cap": {
+      "source_mesh_geometry_retained": true,
+      "scale_percent": 100,
+      "rotation_identity": true,
+      "triangles": 232,
+      "maximum_float32_vertex_roundtrip_error_mm": 4.466243259108608e-07,
+      "actual_plate_bounds_mm": [
+        [
+          100.0,
+          174.00000018999998,
+          -8.999999989711682e-08
+        ],
+        [
+          106.0,
+          190.39999981,
+          4.20000067
+        ]
+      ]
+    }
+  },
+  "effective_sliced_per_object_settings": {
+    "enclosure-B2-PROTOTYPE-shell": {
+      "enable_support": "1",
+      "brim_type": "outer_only",
+      "brim_width": "3",
+      "support_type": "normal(auto)",
+      "support_style": "snug",
+      "support_on_build_plate_only": "1",
+      "support_top_z_distance": "0.2",
+      "support_interface_top_layers": "2"
+    },
+    "enclosure-B2-PROTOTYPE-back": {
+      "enable_support": "0",
+      "brim_type": "no_brim",
+      "brim_width": "0",
+      "support_type": "normal(auto)",
+      "support_style": "snug",
+      "support_on_build_plate_only": "1",
+      "support_top_z_distance": "0.2",
+      "support_interface_top_layers": "2"
+    },
+    "B2-main-board-fit-1p6mm": {
+      "enable_support": "0",
+      "brim_type": "no_brim",
+      "brim_width": "0",
+      "support_type": "normal(auto)",
+      "support_style": "snug",
+      "support_on_build_plate_only": "1",
+      "support_top_z_distance": "0.2",
+      "support_interface_top_layers": "2"
+    },
+    "pin-fit-scale-50mm": {
+      "enable_support": "0",
+      "brim_type": "no_brim",
+      "brim_width": "0",
+      "support_type": "normal(auto)",
+      "support_style": "snug",
+      "support_on_build_plate_only": "1",
+      "support_top_z_distance": "0.2",
+      "support_interface_top_layers": "2"
+    },
+    "case-closure-fit-coupon": {
+      "enable_support": "0",
+      "brim_type": "no_brim",
+      "brim_width": "0",
+      "support_type": "normal(auto)",
+      "support_style": "snug",
+      "support_on_build_plate_only": "1",
+      "support_top_z_distance": "0.2",
+      "support_interface_top_layers": "2"
+    },
+    "mcu-channel-fit-coupon": {
+      "enable_support": "0",
+      "brim_type": "no_brim",
+      "brim_width": "0",
+      "support_type": "normal(auto)",
+      "support_style": "snug",
+      "support_on_build_plate_only": "1",
+      "support_top_z_distance": "0.2",
+      "support_interface_top_layers": "2"
+    },
+    "mcu-retaining-cap": {
+      "enable_support": "0",
+      "brim_type": "no_brim",
+      "brim_width": "0",
+      "support_type": "normal(auto)",
+      "support_style": "snug",
+      "support_on_build_plate_only": "1",
+      "support_top_z_distance": "0.2",
+      "support_interface_top_layers": "2"
+    }
+  },
+  "allocated_pairwise_gaps": [
+    {
+      "a": "B2-main-board-fit-1p6mm",
+      "b": "case-closure-fit-coupon",
+      "allocated_bounding_rectangle_gap_mm": 9.700000380000006
+    },
+    {
+      "a": "B2-main-board-fit-1p6mm",
+      "b": "enclosure-B2-PROTOTYPE-back",
+      "allocated_bounding_rectangle_gap_mm": 13.400000180000006
+    },
+    {
+      "a": "B2-main-board-fit-1p6mm",
+      "b": "enclosure-B2-PROTOTYPE-shell",
+      "allocated_bounding_rectangle_gap_mm": 48.25000018
+    },
+    {
+      "a": "B2-main-board-fit-1p6mm",
+      "b": "mcu-channel-fit-coupon",
+      "allocated_bounding_rectangle_gap_mm": 37.700000380000006
+    },
+    {
+      "a": "B2-main-board-fit-1p6mm",
+      "b": "mcu-retaining-cap",
+      "allocated_bounding_rectangle_gap_mm": 32.700000569999986
+    },
+    {
+      "a": "B2-main-board-fit-1p6mm",
+      "b": "pin-fit-scale-50mm",
+      "allocated_bounding_rectangle_gap_mm": 13.700000380000006
+    },
+    {
+      "a": "case-closure-fit-coupon",
+      "b": "enclosure-B2-PROTOTYPE-back",
+      "allocated_bounding_rectangle_gap_mm": 40.3999998
+    },
+    {
+      "a": "case-closure-fit-coupon",
+      "b": "enclosure-B2-PROTOTYPE-shell",
+      "allocated_bounding_rectangle_gap_mm": 75.2499998
+    },
+    {
+      "a": "case-closure-fit-coupon",
+      "b": "mcu-channel-fit-coupon",
+      "allocated_bounding_rectangle_gap_mm": 44.92215489043241
+    },
+    {
+      "a": "case-closure-fit-coupon",
+      "b": "mcu-retaining-cap",
+      "allocated_bounding_rectangle_gap_mm": 18.788294308957365
+    },
+    {
+      "a": "case-closure-fit-coupon",
+      "b": "pin-fit-scale-50mm",
+      "allocated_bounding_rectangle_gap_mm": 13.0
+    },
+    {
+      "a": "enclosure-B2-PROTOTYPE-back",
+      "b": "enclosure-B2-PROTOTYPE-shell",
+      "allocated_bounding_rectangle_gap_mm": 12.249999599999995
+    },
+    {
+      "a": "enclosure-B2-PROTOTYPE-back",
+      "b": "mcu-channel-fit-coupon",
+      "allocated_bounding_rectangle_gap_mm": 68.3999998
+    },
+    {
+      "a": "enclosure-B2-PROTOTYPE-back",
+      "b": "mcu-retaining-cap",
+      "allocated_bounding_rectangle_gap_mm": 63.39999998999998
+    },
+    {
+      "a": "enclosure-B2-PROTOTYPE-back",
+      "b": "pin-fit-scale-50mm",
+      "allocated_bounding_rectangle_gap_mm": 44.3999998
+    },
+    {
+      "a": "enclosure-B2-PROTOTYPE-shell",
+      "b": "mcu-channel-fit-coupon",
+      "allocated_bounding_rectangle_gap_mm": 103.2499998
+    },
+    {
+      "a": "enclosure-B2-PROTOTYPE-shell",
+      "b": "mcu-retaining-cap",
+      "allocated_bounding_rectangle_gap_mm": 98.24999998999998
+    },
+    {
+      "a": "enclosure-B2-PROTOTYPE-shell",
+      "b": "pin-fit-scale-50mm",
+      "allocated_bounding_rectangle_gap_mm": 79.2499998
+    },
+    {
+      "a": "mcu-channel-fit-coupon",
+      "b": "mcu-retaining-cap",
+      "allocated_bounding_rectangle_gap_mm": 20.0
+    },
+    {
+      "a": "mcu-channel-fit-coupon",
+      "b": "pin-fit-scale-50mm",
+      "allocated_bounding_rectangle_gap_mm": 14.0
+    },
+    {
+      "a": "mcu-retaining-cap",
+      "b": "pin-fit-scale-50mm",
+      "allocated_bounding_rectangle_gap_mm": 9.00000018999998
+    }
+  ],
+  "Gcode_checks": {
+    "all_seven_objects_extrude_on_first_layer": true,
+    "print_sequence": "by layer; actual layer Z never resets",
+    "native_start_end_and_negative_X_purge_preserved": true,
+    "actual_heater_commands_and_Klipper_KE04_PLA_profile_verified": true,
+    "temperatures_C": {
+      "nozzle": [
+        220,
+        215
+      ],
+      "bed": [
+        60,
+        55
+      ]
+    },
+    "all_motion_bounds_mm": [
+      [
+        -2.0,
+        20.0,
+        0.2
+      ],
+      [
+        157.314,
+        218.0,
+        47.8
+      ]
+    ],
+    "extrusion_bounds_mm": [
+      [
+        57.336,
+        47.337,
+        0.2
+      ],
+      [
+        157.314,
+        190.19,
+        22.8
+      ]
+    ],
+    "support_interface_brim_only_in_shell_allocation": true,
+    "shell_allocation_including_3p15mm_brim_mm": [
+      [
+        56.849999200000006,
+        46.8499998
+      ],
+      [
+        157.8000008,
+        75.7500002
+      ]
+    ],
+    "special_feature_bounds_mm": [
+      [
+        57.336,
+        47.337,
+        0.2
+      ],
+      [
+        157.314,
+        75.264,
+        7.8
+      ]
+    ],
+    "special_feature_segments": {
+      "Brim": 299,
+      "Support": 931,
+      "Support interface": 1164
+    },
+    "special_feature_segments_by_active_object": {
+      "None": {
+        "Brim": 299
+      },
+      "enclosure-B2-PROTOTYPE-shell": {
+        "Support": 931,
+        "Support interface": 1164
+      }
+    },
+    "model_segments_by_object": {
+      "mcu-channel-fit-coupon": 2068,
+      "pin-fit-scale-50mm": 893,
+      "mcu-retaining-cap": 2309,
+      "case-closure-fit-coupon": 1379,
+      "B2-main-board-fit-1p6mm": 47232,
+      "enclosure-B2-PROTOTYPE-back": 13414,
+      "enclosure-B2-PROTOTYPE-shell": 13847
+    },
+    "all_feature_segments": {
+      "Inner wall": 39801,
+      "Outer wall": 23605,
+      "Bottom surface": 1719,
+      "Brim": 299,
+      "Support": 931,
+      "Internal solid infill": 14468,
+      "Top surface": 1469,
+      "Overhang wall": 68,
+      "Support interface": 1164,
+      "Bridge": 12
+    },
+    "actual_model_maximum_Z_by_object_mm": {
+      "mcu-channel-fit-coupon": 9.2,
+      "pin-fit-scale-50mm": 1.0,
+      "mcu-retaining-cap": 4.2,
+      "case-closure-fit-coupon": 10.8,
+      "B2-main-board-fit-1p6mm": 1.6,
+      "enclosure-B2-PROTOTYPE-back": 13.0,
+      "enclosure-B2-PROTOTYPE-shell": 22.8
+    },
+    "estimated_time": "1h 58m 37s",
+    "estimated_filament_g": 21.94
+  },
+  "canonical_PCB_unchanged": true,
+  "no_printer_connection_or_execution": true
+}

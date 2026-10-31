@@ -1,0 +1,22 @@
+HOUSE RULES B2 CONFIRMED F - ALL PARTS ON ONE PLATE
+
+Use B2_F_AllParts_OnePlate_KE04_HyperPLA.gcode.
+ONE file prints the shell, rear cover, MCU cap and all four fit-test objects.
+The closure coupon contains two pieces; they are one positioned mesh object.
+
+Printer: Ender-3 V3 KE, stock 0.4 mm nozzle.
+Material: Creality Hyper PLA grey 1.75 mm. This file is not for PETG.
+Estimate: 1 hour 58 minutes 37 seconds, 21.94 g of filament.
+Layers: 0.20 mm, 100% scale, by layer (not sequential whole objects).
+Nozzle: 220 C first layer, then 215 C. Bed: 60 C first, then 55 C.
+Only the shell has supports and a 3 mm outside brim.
+All other objects have supports and brim disabled individually.
+
+Copy the G-code to the printer USB drive and start it manually.
+Let the plate cool before removing the parts. Remove shell supports/brim.
+Measure the 50 mm coupon and the 89.45 x 17.30 x 1.60 mm PCB dummy.
+Fit holes are 1.0 mm FDM holes; real PCB holes will be 0.90 mm finished.
+Dry-fit the actual stock MCU/USB boards, screws and USB cable without power.
+Check the cover closes/reopens and all parts seat without force.
+Follow the mechanical guide for wire allowances, lead trimming and assembly.
+No printer has been connected or started remotely, and no PCB order was placed.

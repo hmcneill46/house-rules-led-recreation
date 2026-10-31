@@ -90,8 +90,10 @@ def make_dummy(output_root=None):
     return output
 
 
-def project(job, objects, config, output_root=None):
+def project(job, objects, config, output_root=None, object_overrides=None):
     destination = HERE if output_root is None else Path(output_root)
+    overrides = object_overrides or {}
+    assert set(overrides) <= {source.stem for source, _ in objects}
     model = ET.Element('{' + CORE + '}model', {
         'unit': 'millimeter', 'requiredextensions': 'p',
         '{http://www.w3.org/XML/1998/namespace}lang': 'en-US'})
@@ -151,6 +153,9 @@ def project(job, objects, config, output_root=None):
         obj_config = ET.SubElement(settings, 'object', {'id': str(even)})
         metadata(obj_config, 'name', source.stem)
         metadata(obj_config, 'extruder', '1')
+        for key, value in overrides.get(source.stem, {}).items():
+            assert key not in {'name', 'extruder'}, 'Reserved object metadata key'
+            metadata(obj_config, key, value)
         part = ET.SubElement(obj_config, 'part', {'id': str(odd), 'subtype': 'normal_part'})
         for k, v in [('name', source.stem), ('matrix', '1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1'),
                      ('source_file', source.name), ('source_object_id', '0'), ('source_volume_id', '0')]:
@@ -166,7 +171,8 @@ def project(job, objects, config, output_root=None):
             'triangles': len(ts), 'size_mm': size, 'source_bounds_mm': [lo, hi],
             'plate_bounds_mm': [minimum_xy + [0],
                 [minimum_xy[0] + size[0], minimum_xy[1] + size[1], size[2]]],
-            'scale_percent': 100, 'rotation_degrees': [0, 0, 0]})
+            'scale_percent': 100, 'rotation_degrees': [0, 0, 0],
+            **({'object_settings': overrides[source.stem]} if source.stem in overrides else {})})
     settings.append(plate)
     entries.update({'3D/3dmodel.model': xml_bytes(model),
         '3D/_rels/3dmodel.model.rels': xml_bytes(relationships),

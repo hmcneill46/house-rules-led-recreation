@@ -1,5 +1,7 @@
 # Confirmed-F case and fit prints — 31 October 2026
 
+**All parts can also print together:** use the [single-plate G-code and ZIP](single-plate/README.md) for the shell, back, cap and all fit-test objects in one job (**1h 58m 37s / 21.94 g**). Supports and brim remain limited to the shell. The three separate jobs below remain available for checking the small fit pieces before printing the case.
+
 This pack matches the owner-selected **12.875 mm** module pitch: **F / +0.175 mm per join**. The seven-module PCB is **89.450 × 17.300 mm**; the case outside is **94.650 × 22.600 × 24.000 mm**. The older 12.700 mm jobs in the parent folder remain historical reference files.
 
 Use a **stock Ender-3 V3 KE, 0.4 mm nozzle, Creality Hyper PLA grey 1.75 mm**. These files are for PLA. No printer has been connected or started remotely. Copy a G-code file to the printer's USB drive and start it manually.

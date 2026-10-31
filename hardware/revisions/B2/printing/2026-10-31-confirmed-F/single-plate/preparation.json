@@ -1,0 +1,397 @@
+{
+  "slicer": "OrcaSlicer2.4.2",
+  "printer": "Creality Ender-3 V3 KE 0.4 nozzle",
+  "filament": "Creality Hyper PLA GREY1.75mm",
+  "base_project": "hardware/printing/HouseRules_Fit_KE04_PLA.3mf",
+  "base_project_sha256": "c89d8f14e93a4fbb7648dc309beab6a8d3d30313f1c91dcc822eae0040b4b428",
+  "machine_start_end_preserved": true,
+  "main_PCB_sha256": "b42e3d59b40a2e9cc877f8c5595d58339a2c7b0797970fa826ea84c19b8105f1",
+  "main_PCB_audit_sha256": "e15d163de562dc528b01c00ad6531912ecb14c85d6651054081aa0fd58cb8e9f",
+  "mechanical_contract_sha256": "7653904daacf65a17fb7dc5f0a91ad7bb080203d2dea5089ab3ed35382ad9311",
+  "confirmed_module_pitch_mm": 12.875,
+  "main_PCB_xy_mm": [
+    89.45,
+    17.3
+  ],
+  "date": "2026-10-31",
+  "jobs": {
+    "B2_F_AllParts_OnePlate_KE04_HyperPLA": {
+      "project": "projects/B2_F_AllParts_OnePlate_KE04_HyperPLA.3mf",
+      "project_sha256": "f4acf791ea1c2ffba06b2d6d0523b2b0894bfe1d1d3b866fcf34770291ec0299",
+      "objects": [
+        {
+          "source": "hardware/revisions/B2/mechanical/enclosure-B2-PROTOTYPE-shell.stl",
+          "sha256": "568d92a04acd80bb85939bcf59cb91d3df77d251180da0e0bae272e63dd40bb3",
+          "triangles": 1072,
+          "size_mm": [
+            94.64999999999999,
+            22.599999999999998,
+            22.8
+          ],
+          "source_bounds_mm": [
+            [
+              -2.6,
+              -3.15,
+              0.0
+            ],
+            [
+              92.05,
+              19.45,
+              22.8
+            ]
+          ],
+          "plate_bounds_mm": [
+            [
+              60,
+              50,
+              0
+            ],
+            [
+              154.64999999999998,
+              72.6,
+              22.8
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ],
+          "object_settings": {
+            "enable_support": "1",
+            "brim_type": "outer_only",
+            "brim_width": "3",
+            "brim_object_gap": "0.15"
+          }
+        },
+        {
+          "source": "hardware/revisions/B2/mechanical/enclosure-B2-PROTOTYPE-back.stl",
+          "sha256": "fb5dcc29a8ca4c8559f471e5d2cde42042af05010f8449a3655fd8bac2574af9",
+          "triangles": 2104,
+          "size_mm": [
+            94.64999999999999,
+            22.599999999999998,
+            12.95
+          ],
+          "source_bounds_mm": [
+            [
+              -2.6,
+              -3.15,
+              0.0
+            ],
+            [
+              92.05,
+              19.45,
+              12.95
+            ]
+          ],
+          "plate_bounds_mm": [
+            [
+              60,
+              88,
+              0
+            ],
+            [
+              154.64999999999998,
+              110.6,
+              12.95
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ],
+          "object_settings": {
+            "enable_support": "0",
+            "brim_type": "no_brim",
+            "brim_width": "0",
+            "brim_object_gap": "0.15"
+          }
+        },
+        {
+          "source": "hardware/revisions/B2/printing/2026-10-31-confirmed-F/models/B2-main-board-fit-1p6mm.stl",
+          "sha256": "643ecddb8ad7384f3c721909019f144565dcae5642ff531b7a59f3a5442d8c9e",
+          "triangles": 11100,
+          "size_mm": [
+            89.45,
+            17.3,
+            1.6
+          ],
+          "source_bounds_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              89.45,
+              17.3,
+              1.6
+            ]
+          ],
+          "plate_bounds_mm": [
+            [
+              62,
+              124,
+              0
+            ],
+            [
+              151.45,
+              141.3,
+              1.6
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ],
+          "object_settings": {
+            "enable_support": "0",
+            "brim_type": "no_brim",
+            "brim_width": "0",
+            "brim_object_gap": "0.15"
+          }
+        },
+        {
+          "source": "hardware/mechanical/pin-fit-scale-50mm.stl",
+          "sha256": "8407d5a158e01f16f075c1205059893b26de417170958225695eb6dd52e3255a",
+          "triangles": 12,
+          "size_mm": [
+            50.0,
+            10.0,
+            1.0
+          ],
+          "source_bounds_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              50.0,
+              10.0,
+              1.0
+            ]
+          ],
+          "plate_bounds_mm": [
+            [
+              60,
+              155,
+              0
+            ],
+            [
+              110.0,
+              165.0,
+              1.0
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ],
+          "object_settings": {
+            "enable_support": "0",
+            "brim_type": "no_brim",
+            "brim_width": "0",
+            "brim_object_gap": "0.15"
+          }
+        },
+        {
+          "source": "hardware/revisions/B2/mechanical/case-closure-fit-coupon.stl",
+          "sha256": "af8297bc7ef0153aae03c1c863ac9521cd3c536ebac961e16e313ba1dabd6d11",
+          "triangles": 200,
+          "size_mm": [
+            24.0,
+            15.0,
+            10.8
+          ],
+          "source_bounds_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              24.0,
+              15.0,
+              10.8
+            ]
+          ],
+          "plate_bounds_mm": [
+            [
+              123,
+              151,
+              0
+            ],
+            [
+              147.0,
+              166.0,
+              10.8
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ],
+          "object_settings": {
+            "enable_support": "0",
+            "brim_type": "no_brim",
+            "brim_width": "0",
+            "brim_object_gap": "0.15"
+          }
+        },
+        {
+          "source": "hardware/revisions/B2/mechanical/mcu-channel-fit-coupon.stl",
+          "sha256": "7f7b609fb40f6c3aa99f3b5b3976fd423c8cd30a5c9071053362c5d020de4d3f",
+          "triangles": 216,
+          "size_mm": [
+            20.0,
+            8.0,
+            9.2
+          ],
+          "source_bounds_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              20.0,
+              8.0,
+              9.2
+            ]
+          ],
+          "plate_bounds_mm": [
+            [
+              60,
+              179,
+              0
+            ],
+            [
+              80.0,
+              187.0,
+              9.2
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ],
+          "object_settings": {
+            "enable_support": "0",
+            "brim_type": "no_brim",
+            "brim_width": "0",
+            "brim_object_gap": "0.15"
+          }
+        },
+        {
+          "source": "hardware/revisions/B2/mechanical/mcu-retaining-cap.stl",
+          "sha256": "baa5db4801ea1992f102fffc7f4c64ede8f2175703322fae2d54381a8a7d307e",
+          "triangles": 232,
+          "size_mm": [
+            6.000000190735,
+            16.4,
+            4.200000572205
+          ],
+          "source_bounds_mm": [
+            [
+              -1.90735e-07,
+              0.0,
+              -5.72205e-07
+            ],
+            [
+              6.0,
+              16.4,
+              4.2
+            ]
+          ],
+          "plate_bounds_mm": [
+            [
+              100,
+              174,
+              0
+            ],
+            [
+              106.000000190735,
+              190.4,
+              4.200000572205
+            ]
+          ],
+          "scale_percent": 100,
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ],
+          "object_settings": {
+            "enable_support": "0",
+            "brim_type": "no_brim",
+            "brim_width": "0",
+            "brim_object_gap": "0.15"
+          }
+        }
+      ],
+      "supports": "shell only",
+      "outside_brim_mm": 3,
+      "object_settings": {
+        "enclosure-B2-PROTOTYPE-shell": {
+          "enable_support": "1",
+          "brim_type": "outer_only",
+          "brim_width": "3",
+          "brim_object_gap": "0.15"
+        },
+        "enclosure-B2-PROTOTYPE-back": {
+          "enable_support": "0",
+          "brim_type": "no_brim",
+          "brim_width": "0",
+          "brim_object_gap": "0.15"
+        },
+        "B2-main-board-fit-1p6mm": {
+          "enable_support": "0",
+          "brim_type": "no_brim",
+          "brim_width": "0",
+          "brim_object_gap": "0.15"
+        },
+        "pin-fit-scale-50mm": {
+          "enable_support": "0",
+          "brim_type": "no_brim",
+          "brim_width": "0",
+          "brim_object_gap": "0.15"
+        },
+        "case-closure-fit-coupon": {
+          "enable_support": "0",
+          "brim_type": "no_brim",
+          "brim_width": "0",
+          "brim_object_gap": "0.15"
+        },
+        "mcu-channel-fit-coupon": {
+          "enable_support": "0",
+          "brim_type": "no_brim",
+          "brim_width": "0",
+          "brim_object_gap": "0.15"
+        },
+        "mcu-retaining-cap": {
+          "enable_support": "0",
+          "brim_type": "no_brim",
+          "brim_width": "0",
+          "brim_object_gap": "0.15"
+        }
+      },
+      "print_sequence": "by layer"
+    }
+  },
+  "all_seven_original_meshes_unchanged": true,
+  "original_three_job_preparation_sha256": "fd81fc8aa5689fad6367e6682044b2e043738a1b79d1eaec09e6fe5f0b864455",
+  "hardware_execution": "None; files only"
+}
