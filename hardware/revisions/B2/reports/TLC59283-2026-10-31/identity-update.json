@@ -1,0 +1,66 @@
+{
+  "result": "PASS for exact non-geometric identity substitutions",
+  "predecessor_source": "manufacturing/B2_F_12p875_review_2026-10-31/source/house-rules-main-B2.kicad_pcb",
+  "predecessor_pcb_sha256": "b42e3d59b40a2e9cc877f8c5595d58339a2c7b0797970fa826ea84c19b8105f1",
+  "updated_pcb_sha256": "765d4747e2cf559ff0f6a29024d232458d9b7a66ed96825eba6f3a657c313024",
+  "driver_references": [
+    "U1",
+    "U2",
+    "U3",
+    "U4"
+  ],
+  "resistor_references": [
+    "R1",
+    "R2",
+    "R3",
+    "R4"
+  ],
+  "substitutions": [
+    {
+      "from": "TLC59282RGER",
+      "to": "TLC59283RGER",
+      "occurrences": 16
+    },
+    {
+      "from": "tlc59282.pdf",
+      "to": "tlc59283.pdf",
+      "occurrences": 4
+    },
+    {
+      "from": "C702074",
+      "to": "C485815",
+      "occurrences": 4
+    },
+    {
+      "from": "6k8 1%",
+      "to": "7k15 1%",
+      "occurrences": 4
+    },
+    {
+      "from": "0603WAF6801T5E",
+      "to": "0603WAF7151T5E",
+      "occurrences": 4
+    },
+    {
+      "from": "C23212",
+      "to": "C25980",
+      "occurrences": 4
+    },
+    {
+      "from": "Sets 7.42493mA nominal peak; Basic resistor avoids Extended setup fee",
+      "to": "Sets 7.40006mA nominal peak for TLC59283; Extended resistor setup included in quote",
+      "occurrences": 4
+    },
+    {
+      "from": "16-bit current sinks; U4 OUT7..11 also sink PMOS gate current",
+      "to": "16-bit current sinks with precharge; U4 OUT7..11 also sink PMOS gate current",
+      "occurrences": 4
+    }
+  ],
+  "reversing_only_identity_strings_restores_every_source_byte": true,
+  "copper_pads_holes_zones_models_outline_and_rules_unchanged": true,
+  "nominal_current_equation_mA": "1.208 * 43.8 / 7.15",
+  "nominal_peak_mA": 7.400055944055943,
+  "scope": "Represented geometry and metadata only; native checks and powered precharge/rail/optical/USB/thermal acceptance remain separate",
+  "order_or_payment_submitted": false
+}

@@ -19,6 +19,9 @@ CATHODES = (12,11,2,9,4,5,6)
 # TI RGE physical terminal assignment; not taken from firmware or pin_names.
 RGE = {'LAT':1,'OUT':tuple(range(2,18)),'BLANK':18,'SOUT':19,
        'IREF':20,'VCC':21,'GND':22,'SIN':23,'SCLK':24,'EP':25}
+# TI TLC59283 Rev.C p7, footnote2. Nominal calculation, not a current bound.
+IREF_REFERENCE_V = 1.208
+IREF_GAIN = 43.8
 P_MOS = {'G':1,'S':2,'D':3}
 # TI BQ24392 RSE0010A terminal map, independently transcribed from RevG p3.
 BQ_RSE = {'SW_OPEN':1,'DM_HOST':2,'DP_HOST':3,'CHG_AL_N':4,'GOOD_BAT':5,
@@ -55,11 +58,11 @@ class ModuleArray:
         self.spec=json.loads(SPEC.read_text()) if spec is None else spec
         self.parts={p['ref']:p for p in self.spec['parts']}
         if len(self.parts)!=len(self.spec['parts']):raise CircuitError('Duplicate component reference')
-        self.drivers={r:p for r,p in self.parts.items() if p.get('mpn')=='TLC59282RGER'}
+        self.drivers={r:p for r,p in self.parts.items() if p.get('mpn')=='TLC59283RGER'}
         self.mosfets={r:p for r,p in self.parts.items() if p.get('mpn')=='AO3401A'}
         self.modules=sorted((p for p in self.parts.values() if p['ref'].startswith('DS')),key=lambda p:int(p['ref'][2:]))
         if len(self.drivers)!=4 or len(self.mosfets)!=5 or len(self.modules)!=7:
-            raise CircuitError('Expected4 TLC59282RGER,5 AO3401A and7 raw matrices')
+            raise CircuitError('Expected4 TLC59283RGER,5 AO3401A and7 raw matrices')
         def net(part,pin):return part['pins'].get(str(pin))
         self.net=net
         self.sinks={}
@@ -112,7 +115,9 @@ class ModuleArray:
         self.peak_a={}
         for ref,p in self.drivers.items():
             r=self._resistor_between(net(p,RGE['IREF']),'GND')
-            self.peak_a[ref]=1.205*41.9/r
+            if r != 7150:
+                raise CircuitError('TLC59283 must use the reviewed7.15kohm IREF value')
+            self.peak_a[ref]=IREF_REFERENCE_V*IREF_GAIN/r
         self.usb_frontend=self._validate_bc12()
 
     def _validate_bc12(self):

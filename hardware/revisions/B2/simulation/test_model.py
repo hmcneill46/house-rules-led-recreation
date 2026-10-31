@@ -82,6 +82,12 @@ def run():
         assert (FW/name).read_bytes()==(ROOT/'hardware/firmware'/name).read_bytes(),name
     assert all_phases is not None
     faults=[]
+    wrong_iref=copy.deepcopy(spec)
+    next(p for p in wrong_iref['parts'] if p['ref']=='R1')['value']='6k8 1%'
+    faults.append(reject(lambda:ModuleArray(wrong_iref),'Old6.8kohm resistor on TLC59283 would change peak current'))
+    mixed_driver=copy.deepcopy(spec)
+    next(p for p in mixed_driver['parts'] if p['ref']=='U1')['mpn']='TLC59282RGER'
+    faults.append(reject(lambda:ModuleArray(mixed_driver),'Mixed original/replacement driver identity'))
     faults.append(reject(lambda:ModuleArray(swapped(spec,'DS1',1,12)),'LED anode/cathode polarity swap'))
     shared=copy.deepcopy(spec)
     ds1=next(p for p in shared['parts'] if p['ref']=='DS1');ds2=next(p for p in shared['parts'] if p['ref']=='DS2')
@@ -119,11 +125,12 @@ def run():
     assert model.decode_serial(bytes([255]*8),driver_power=False,vled_power=False)==bytes(35)
     assert model.decode_serial(bytes(8))==bytes(35)
     peak=max(model.led_peak_current_a(p) for p in all_phases)
-    assert abs(peak-49*1.205*41.9/6800)<1e-12
+    assert abs(peak-49*1.208*43.8/7150)<1e-12
     report={
       'result':'PASS','date_utc':datetime.now(timezone.utc).isoformat(),'model':'Independent physical diode/TLC/PMOS connectivity model',
       'electrical_spec_sha256':sha(SPEC),'firmware_source_sha256':{str(p.relative_to(FW)):sha(p) for p in [FW/'HouseRulesB2/scan_engine.h',FW/'HouseRulesB2/board_contract_generated.h',FW/'HouseRulesB2/player.h',FW/'generated_sequence.h']},
-      'package':'TLC59282RGER RGE0024C; physical output pins2..17, EP25=GND',
+      'package':'TLC59283RGER RGE0024C; physical output pins2..17, EP25=GND',
+      'iref_ohms':7150,'nominal_current_formula':'1.208V *43.8 /7150ohm; TI Rev.C p7 footnote2',
       'module_count':7,'physical_diode_paths':len(model.paths),'daisy_chain_from_actual_nets':model.chain,
       'walking_pixels':245,'diagnostic_frames':2,'artwork_frames':60000,'artwork_commands_covered':len(artwork_commands),
       'complete_artwork_traversals':wraps,'artwork_frame_sha256':artwork_digest.hexdigest(),
@@ -133,6 +140,7 @@ def run():
       'fault_cases_detected':faults,'blank_and_both_rails_off_force_dark':True,'cosmetic_pin_labels_ignored':True,
       'usb_frontend_static_check':model.usb_frontend,
       'limitations':['Functional connectivity only; no MOSFET gate charge, ghosting, current compliance or thermal simulation',
+                    'TLC59283 precharge, transient LED reverse bias and powered-off reverse current are not analog modeled',
                     'No real USB enumeration, suspend current or startup inrush measurement',
                     'One owned module full pin map/orientation is owner-verified; other20 modules and powered-board operation remain unverified',
                     'Uses schematic electrical-spec connections, not routed-PCB extraction; final PCB net parity is a separate check']}

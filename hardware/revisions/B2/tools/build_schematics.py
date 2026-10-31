@@ -35,19 +35,19 @@ def build(spec):
     positions = {ref:(66.04+110.49*c,72.39+60.96*r) for r,(_,refs) in enumerate(rows) for c,ref in enumerate(refs)}
     assert len(positions) == len(parts), 'Every component must occur exactly once in schematic layout'
     s=[f'(kicad_sch (version 20250114) (generator "eeschema") (generator_version "10.0") (uuid {h.q(sheet)}) (paper "A0")',
-       '(title_block (title "House Rules B2 / LED carrier, power and interface") (date "2026-10-29") (rev "B2") (company "House Rules recreation") (comment 1 "ENGINEERING PROTOTYPE / no manufacture release"))',
+       '(title_block (title "House Rules B2 / LED carrier, power and interface") (date "2026-10-31") (rev "B2-F-59283") (company "House Rules recreation") (comment 1 "ENGINEERING PROTOTYPE / case and powered acceptance pending"))',
        '(lib_symbols', '\n'.join(h.symbol(p)[0] for p in parts),h.flag_symbol('main'),')']
     for p in parts: s.extend(h.instance(p,*positions[p['ref']],sheet,stem))
     for r,(title,_) in enumerate(rows): s.append(h.drawing_text(title,12.7,40.64+60.96*r,2.3))
     notes = [
         'Named labels connect matching nodes. Every package pin is explicit; crosses mark intentional no-connects. Owner-supplied LEDs and wire pads are excluded from factory assembly.',
-        'IREF=6.8k: 7.42493mA nominal per LED. U4 OUT7..11 sink PMOS gates, exactly one selected column. BLANK HIGH disables every LED and gate sink.',
+        'TLC59283RGER + IREF=7.15k: 7.40006mA nominal. U4 OUT7..11 sink PMOS gates, exactly one selected column. BLANK HIGH disables sinks and enables precharge.',
         '400Hz frame / 5x500us phases / >=30us BLANK before next phase / <=470us full on. LAT LOW while shifting, pulse HIGH then LOW while blanked.',
         'USB-C 5V only, no PD. Adafruit4090 supplies separate5.1k Rd resistors; no duplicate Rd on this board. CC divider loading checked against tolerance.',
         'Both TPS22918 switches default OFF. BLANK pullup uses SW_3V3. Park serial controls LOW and BLANK high-Z before disabling rails to prevent backfeed.',
         'TPD4E05U06 opposite NC pads are joined by external copper to corresponding DC nets. Do not treat the IC as internally flow-through.',
         'BQ24392 isolates raw USB_DP/DM from USB_DP_HOST/DM_HOST. GOOD_BAT always3V3; BC full grant requires DET HIGH and AL_N LOW; host suspend always overrides.',
-        'One owned LED fully diode-verified; check other20. Fit/current/inrush/suspend, 30us deadtime and temperature need bench tests. In2: CT_5V<=12mm only; In4: pure GND.'
+        'One owned LED diode-verified; check other20. Full case print pending. Precharge/rail transients/current/inrush/suspend, 30us settling and temperature need bench tests. In2: CT_5V<=12mm only; In4: pure GND.'
     ]
     for i,t in enumerate(notes): s.append(h.drawing_text(t,12.7,754.38+5.08*i,1.8))
     fy=797.56
@@ -75,7 +75,16 @@ def build(spec):
         elif lib=='HouseRules':shutil.copyfile(ROOT/'hardware/kicad/HouseRules.pretty'/(name+'.kicad_mod'),output)
         elif lib=='TI':
             if not output.exists():raise FileNotFoundError(f'Root-owned B2 TI land pattern not created yet: {output}')
-        else:shutil.copyfile(standard/(lib+'.pretty')/(name+'.kicad_mod'),output)
+        else:
+            shutil.copyfile(standard/(lib+'.pretty')/(name+'.kicad_mod'),output)
+            if p['ref'] == 'U9':
+                # This native land pattern also serves the BQ24392 RSE package.
+                # Preserve the correct RSE envelope rather than replacing it
+                # with the similarly named installed UQFN model on rebuild.
+                old = '${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/Texas_UQFN-10_1.5x2mm_P0.5mm.step'
+                text = output.read_text()
+                assert text.count(old) == 1
+                output.write_text(text.replace(old, '${KIPRJMOD}/3d/TI_RSE0010A-envelope.wrl'))
     (target/'fp-lib-table').write_text('(fp_lib_table (version 7)\n'+''.join(f'(lib (name "{lib}")(type "KiCad")(uri "${{KIPRJMOD}}/footprints/{lib}.pretty")(options "")(descr "B2 KiCad footprint"))\n' for lib in sorted(libs))+')\n')
     return path
 

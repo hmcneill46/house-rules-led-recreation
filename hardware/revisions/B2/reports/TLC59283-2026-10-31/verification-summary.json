@@ -1,0 +1,250 @@
+{
+  "status": "PASS for represented electrical, layout, manufacturing output, software and mechanical checks; physical case trial, factory and powered acceptance remain pending",
+  "date_utc": "2026-10-31T23:35:00.512306+00:00",
+  "revision": "B2-F-TLC59283-7p15k",
+  "driver": "TLC59283RGER/C485815",
+  "IREF": "7.15kohm,0603WAF7151T5E/C25980",
+  "canonical_pcb_sha256": "765d4747e2cf559ff0f6a29024d232458d9b7a66ed96825eba6f3a657c313024",
+  "electrical_spec_sha256": "ba719eb506720a63d95acdcf24c94ecf49344484cd5644f3d4c2f8e9050c0981",
+  "PCB_outline_mm": [
+    89.45,
+    17.3,
+    1.6
+  ],
+  "LED_module_pitch_mm": 12.875,
+  "case_exterior_mm": [
+    94.65,
+    22.6,
+    24
+  ],
+  "physical_geometry_and_case_unchanged": true,
+  "native_ERC_violations": 0,
+  "native_DRC_counts": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "custom_DRC_ERC_exclusions": 0,
+  "native_default_ignored_checks_documented": [
+    {
+      "path": "/board/design_settings/rule_severities/footprint_filters_mismatch",
+      "value": "ignore"
+    },
+    {
+      "path": "/board/design_settings/rule_severities/footprint_type_mismatch",
+      "value": "ignore"
+    },
+    {
+      "path": "/board/design_settings/rule_severities/missing_courtyard",
+      "value": "ignore"
+    },
+    {
+      "path": "/board/design_settings/rule_severities/track_not_centered_on_via",
+      "value": "ignore"
+    },
+    {
+      "path": "/board/design_settings/rule_severities/tuning_profile_track_geometries",
+      "value": "ignore"
+    }
+  ],
+  "physical_references": 82,
+  "factory_SMT_components": 55,
+  "connected_pins": 327,
+  "LED_holes_open": true,
+  "LED_hole_count": 84,
+  "ordinary_filled_capped_vias": 276,
+  "thermal_vias": {
+    "U1": [
+      {
+        "x_mm": 55.55,
+        "y_mm": 58.65
+      },
+      {
+        "x_mm": 56.1,
+        "y_mm": 59.2
+      },
+      {
+        "x_mm": 56.65,
+        "y_mm": 58.65
+      }
+    ],
+    "U2": [
+      {
+        "x_mm": 82.45,
+        "y_mm": 58.05
+      },
+      {
+        "x_mm": 81.85,
+        "y_mm": 58.05
+      },
+      {
+        "x_mm": 82.4,
+        "y_mm": 58.65
+      }
+    ],
+    "U3": [
+      {
+        "x_mm": 107.4,
+        "y_mm": 58.45
+      },
+      {
+        "x_mm": 107.0,
+        "y_mm": 58.05
+      },
+      {
+        "x_mm": 107.5,
+        "y_mm": 59.05
+      }
+    ],
+    "U4": [
+      {
+        "x_mm": 132.65,
+        "y_mm": 57.3
+      },
+      {
+        "x_mm": 133.25,
+        "y_mm": 57.3
+      },
+      {
+        "x_mm": 133.55,
+        "y_mm": 56.8
+      }
+    ]
+  },
+  "ground_references": {
+    "In2.Cu": {
+      "ground_zones": 1,
+      "filled_area_mm2": 1159.658556,
+      "connected_fill_outlines": 1
+    },
+    "In4.Cu": {
+      "ground_zones": 1,
+      "filled_area_mm2": 1163.754624,
+      "connected_fill_outlines": 1
+    }
+  },
+  "drill_hole_edge_clearances": {
+    "via_to_LED_PTH": {
+      "required_edge_gap_mm": 0.45,
+      "minimum_edge_gap_mm": 0.4825894882179487,
+      "closest_pair": {
+        "a": {
+          "x": 130600000,
+          "y": 59700000,
+          "drill": 300000,
+          "net": "COL5_GATE"
+        },
+        "b": {
+          "x": 129540000,
+          "y": 59920000,
+          "drill": 900000,
+          "ref": "DS7",
+          "pad": "4",
+          "net": "D4_ROW5_K"
+        }
+      },
+      "coordinate_units_per_mm": 1000000,
+      "violation_count": 0,
+      "violations": [],
+      "all_nets_including_same_net": true
+    },
+    "via_to_via": {
+      "required_edge_gap_mm": 0.25,
+      "minimum_edge_gap_mm": 0.2656854249492381,
+      "closest_pair": {
+        "a": {
+          "x": 107400000,
+          "y": 58450000,
+          "drill": 300000,
+          "net": "GND"
+        },
+        "b": {
+          "x": 107000000,
+          "y": 58050000,
+          "drill": 300000,
+          "net": "GND"
+        }
+      },
+      "coordinate_units_per_mm": 1000000,
+      "violation_count": 0,
+      "violations": [],
+      "all_nets_including_same_net": true
+    }
+  },
+  "native_CPL_unchanged": true,
+  "actual_plotted_files_unchanged_except_timestamps": 15,
+  "independent_actual_manufacturing_result": "PASS",
+  "manufacturing_review_package": "manufacturing/B2_F_TLC59283_7p15k_review_2026-10-31",
+  "case_native_geometry_result": true,
+  "fresh_OpenSCAD_meshes": 5,
+  "case_contacts_and_head_clearance": true,
+  "physical_case_print_and_stock_module_USB_plug_fit": "PENDING; owner explicitly has not completed the full case check",
+  "software_result": "PASS",
+  "walking_pixels": 245,
+  "artwork_frames": 60000,
+  "phase_reconstructions": 301235,
+  "injected_fault_cases_detected": [
+    "Old6.8kohm resistor on TLC59283 would change peak current",
+    "Mixed original/replacement driver identity",
+    "LED anode/cathode polarity swap",
+    "Cathodes accidentally shared across modules",
+    "PMOS source/drain reversal",
+    "BQ USB upstream/downstream terminals swapped",
+    "BQ GOOD_BAT on switched rail would disconnect USB during suspend",
+    "BQ detector divider cannot meet RP2040 input-high threshold",
+    "Two column gates enabled simultaneously",
+    "Row bits set with no selected gate",
+    "Unconnected sink enabled",
+    "LED supply remains on while driver unpowered",
+    "Swapped TLC physical OUT pins change the independently reconstructed pixel",
+    "Reversed serial chip order is rejected or produces a different physical image"
+  ],
+  "actual_HardwareIO_transactions": 1000,
+  "compiled_image_audits": {
+    "compiled": "PASS",
+    "compiled-unknown-off": "PASS"
+  },
+  "rebuilt_UF2_payloads_unchanged": true,
+  "nominal_LED_peak_mA": 7.400055944055946,
+  "nominal_LED_full_average_mA": 340.8465767832169,
+  "digital_scan_timing_unchanged": {
+    "frame_Hz": 400,
+    "phase_us": 500,
+    "blank_us": 30,
+    "full_on_us": 470
+  },
+  "selected_purchase_budget_GBP": 177.25,
+  "selected_finished_displays": 3,
+  "factory_assembled_main_PCBS": 5,
+  "extra_screws_and_wire_included": true,
+  "optional_later_two_display_budget_GBP": 52.16,
+  "remaining_acceptance": [
+    "Owner full case/stock-module/actual USB-plug printed dryfit and other two seven-LED groups",
+    "Fresh coherent-package quote/current stock and factoryCAM for filled/capped vias,84 openLEDholes,finaloutline/external removable rails",
+    "Factory feeder/pin1/rotation/polarity review of exact selectedMPNs; no silent substitutions",
+    "Firstpowered prototype: precharge and bothrail/gate/anode/cathode waveforms throughstartup,shutdown,reset,suspend/resume",
+    "All245pixels, brightnessuniformity/ghosting, outputringing, current/inrush/USBsuspend, externalUSBprogramming and enclosedtemperature"
+  ],
+  "no_order_payment_or_printer_execution": true,
+  "limitations": "Simulation/staticchecks do not establish analogue precharge/VCC0 behaviour, measuredUSB compliance, physicalfit or thermal/optical acceptance. Prototypebudget excludes remake/rework.",
+  "evidence_sha256": {
+    "kicad/house-rules-main-B2.kicad_pcb": "765d4747e2cf559ff0f6a29024d232458d9b7a66ed96825eba6f3a657c313024",
+    "kicad/house-rules-main-B2.kicad_sch": "ca673ab6b9ab25bd4f059419eadd9045efc53a4c864ee0e9c2659fd91c598d37",
+    "electrical-spec.json": "ba719eb506720a63d95acdcf24c94ecf49344484cd5644f3d4c2f8e9050c0981",
+    "reports/schematic-verification-summary.json": "03d25f21d3a0b3d264ac7199aef7c5f69dbaca63c08bd646ecb33262e4008124",
+    "reports/final-drc.json": "7fbd68e27499b31e548e96c5f5c99e0f355a3a0b68152870afd1978bad88aca2",
+    "reports/board-audit.json": "e083c591dd52e2fa82c5570db2beb65fa45cbcb81ab4151a509036c0b443c08a",
+    "reports/render-source.json": "b0bd8925b6d7fdcc0a8144f3144f75a0be6384c4c1867ff6eaa140a9e8b71978",
+    "reports/TLC59283-2026-10-31/identity-update.json": "fb75209b09115ab905ab2d7e5268972f3fd3df326a8004a17ea32ae63f77ce83",
+    "reports/TLC59283-2026-10-31/independent-electrical.json": "36e82eee465385d611f1d410e110b775e3a64a7235e632431cc779eb20c707a6",
+    "reports/TLC59283-2026-10-31/manufacturing-verification.json": "58033a190071cae45a9e425b928cacaca89ea9196a4495fa46c57625cf019d80",
+    "reports/TLC59283-2026-10-31/mechanical-purchase.json": "829d0d23a26bf07f79f90dbd250f08b0db7a3018bef444806eaee7e79bbc6127",
+    "reports/TLC59283-2026-10-31/selected-purchase-plan.json": "09ce420ef268a812d7bad4658f83265f544eb944e04badd378150189fcbf127c",
+    "reports/TLC59283-2026-10-31/software/software-verification-summary.json": "4a529574b575504fac54638a063b6b86afc52e57b632dc15faf6e1d284e75601",
+    "manufacturing/B2_F_TLC59283_7p15k_review_2026-10-31/manifest.json": "b669f91e032be4701be95465279a3cab2e26ba14b474e46feec5ddae1eb52082",
+    "mechanical/main-placement-mechanical-audit.json": "4702cfc3ce81c41b5324d7772fea0af639ac335051f697081ea24f6a1eaef4e5",
+    "stock-module-contract.json": "7653904daacf65a17fb7dc5f0a91ad7bb080203d2dea5089ab3ed35382ad9311",
+    "reports/TLC59283-2026-10-31/source-regeneration-check.json": "dc57fae1b14a05b21efbd7e997f8dc14b93f83a1ed9d71938e6e2713347d4ba2"
+  },
+  "source_regeneration_check": "PASS"
+}

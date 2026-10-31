@@ -1,0 +1,145 @@
+{
+  "status": "PASS for represented electrical, routing, mechanical, export and software checks; physical case trial, fresh quote and factory/first-board acceptance remain",
+  "date_utc": "2026-10-31T20:04:22.181137+00:00",
+  "revision": "B2 / confirmed F",
+  "owner_confirmed_module_pitch_mm": 12.875,
+  "per_join_increment_mm": 0.175,
+  "increase_across_six_joins_mm": 1.05,
+  "canonical_pcb_sha256": "b42e3d59b40a2e9cc877f8c5595d58339a2c7b0797970fa826ea84c19b8105f1",
+  "pcb_outline_mm": [
+    89.45,
+    17.3,
+    1.6
+  ],
+  "case_exterior_mm": [
+    94.65,
+    22.6,
+    24
+  ],
+  "native_ERC_violations": 0,
+  "native_DRC_violations": 0,
+  "native_unconnected_items": 0,
+  "native_schematic_parity_issues": 0,
+  "custom_DRC_ERC_exclusions": 0,
+  "native_default_ignored_checks_documented": [
+    {
+      "path": "/board/design_settings/rule_severities/footprint_filters_mismatch",
+      "value": "ignore"
+    },
+    {
+      "path": "/board/design_settings/rule_severities/footprint_type_mismatch",
+      "value": "ignore"
+    },
+    {
+      "path": "/board/design_settings/rule_severities/missing_courtyard",
+      "value": "ignore"
+    },
+    {
+      "path": "/board/design_settings/rule_severities/track_not_centered_on_via",
+      "value": "ignore"
+    },
+    {
+      "path": "/board/design_settings/rule_severities/tuning_profile_track_geometries",
+      "value": "ignore"
+    }
+  ],
+  "physical_references": 82,
+  "factory_SMT_components": 55,
+  "connected_pins": 327,
+  "LED_hole_count": 84,
+  "LED_individual_frozen_A1_patterns_plus_exact175000nm_per_module_index_match": true,
+  "LED_geometry_exactly_matches_A1": false,
+  "LED_holes_open": true,
+  "ordinary_filled_capped_vias": 276,
+  "driver_thermal_vias": 12,
+  "quiet_CT_In2_length_mm": 9.856275177872403,
+  "ground_references": {
+    "In2.Cu": {
+      "ground_zones": 1,
+      "filled_area_mm2": 1159.658556,
+      "connected_fill_outlines": 1
+    },
+    "In4.Cu": {
+      "ground_zones": 1,
+      "filled_area_mm2": 1163.754624,
+      "connected_fill_outlines": 1
+    }
+  },
+  "physical_drill_edge_minimum_mm": {
+    "via_to_LED_PTH": 0.4825894882179487,
+    "via_to_via": 0.2656854249492381
+  },
+  "exported_source_and_render_match_canonical": true,
+  "actual_exported_LED_via_counts": [
+    84,
+    276
+  ],
+  "independent_actual_manufacturing_check": "PASS",
+  "case_meshes": 5,
+  "case_collision_checks_empty": true,
+  "native_case_contacts_and_head_clearance": "PASS",
+  "internal_stop_moved_mm": 0.8,
+  "physical_case_fit_still_required": true,
+  "firmware_sources_and_compiled_images_unchanged": true,
+  "host_test_result": "PASS",
+  "independent_physical_model_result": "PASS",
+  "walking_pixels": 245,
+  "artwork_frames": 60000,
+  "independent_phase_reconstructions": 301235,
+  "injected_fault_cases_detected": [
+    "LED anode/cathode polarity swap",
+    "Cathodes accidentally shared across modules",
+    "PMOS source/drain reversal",
+    "BQ USB upstream/downstream terminals swapped",
+    "BQ GOOD_BAT on switched rail would disconnect USB during suspend",
+    "BQ detector divider cannot meet RP2040 input-high threshold",
+    "Two column gates enabled simultaneously",
+    "Row bits set with no selected gate",
+    "Unconnected sink enabled",
+    "LED supply remains on while driver unpowered",
+    "Swapped TLC physical OUT pins change the independently reconstructed pixel",
+    "Reversed serial chip order is rejected or produces a different physical image"
+  ],
+  "compiled_image_audits": {
+    "compiled": "PASS",
+    "compiled-unknown-off": "PASS"
+  },
+  "KE04_HyperPLA_print_pack_check": "PASS",
+  "KE04_HyperPLA_total_slicer_estimate": "2h3m8s /22.03g including fit tests, supports and brim",
+  "historical_manufacturing_package_unchanged": "manufacturing/B2_review/",
+  "remaining_acceptance": [
+    "Trial print revised case with actual stock MCU/USB boards, wire/solder allowances and selected USB cable",
+    "Check other two seven-module groups against owner-selected pitch/orientation",
+    "Fresh quote/current component stock, shipping, VAT and discounts for revised package",
+    "Factory CAM: final89.45x17.3outline, externalremovablerails, filled/capped.30vias and84open.90LEDholes",
+    "Factory feeder/pin1/rotation/polarity review; exactparts and no silent substitutions",
+    "Firstassembly:245pixels, externalUSB UF2/serial, current/inrush/suspend/resume, scanedges/ghosting and enclosedtemperatures"
+  ],
+  "no_order_payment_or_printer_execution": true,
+  "evidence_sha256": {
+    "kicad/house-rules-main-B2.kicad_pcb": "b42e3d59b40a2e9cc877f8c5595d58339a2c7b0797970fa826ea84c19b8105f1",
+    "kicad/house-rules-main-B2.kicad_sch": "9400693084a50c1816794bcb87904174f2bf840ae9d9ac8fab05fe5089acb163",
+    "kicad/house-rules-main-B2.kicad_pro": "065ef101b616641a2dd150e279c53e60b0562cd0a40ddf2cb0d70b1e2fee2b4a",
+    "kicad/house-rules-main-B2.kicad_dru": "d8a2a23ddf13a138dd2f5d15d0804543efff8cfdaff4ca27942141d8406de960",
+    "electrical-spec.json": "755a5b30c8b0919af8874b58b9979ca0133f9cbc2a0dc6002b77b13267fb6e28",
+    "placement.json": "c35d185c1ad91097c04cf05cb14742714c42e9bde3ef30095f3c27af8afe5aa0",
+    "stock-module-contract.json": "7653904daacf65a17fb7dc5f0a91ad7bb080203d2dea5089ab3ed35382ad9311",
+    "reports/owner-pitch-confirmation-2026-10-31.json": "92727b772c20f697a14c8f4e6a1882060d472a2b478caa780d7fa252ce1e7ae0",
+    "reports/final-drc.json": "299d09ff08582793e1be4c41acc7210a9510bc3eb02e816b46455f7c2a34730c",
+    "reports/board-audit.json": "e15d163de562dc528b01c00ad6531912ecb14c85d6651054081aa0fd58cb8e9f",
+    "reports/finalization.json": "1e98fdda3b3e22785ca81e9ad66b6459d9c9cdc1b2639d44e22bfac7d00ac906",
+    "reports/render-source.json": "38f4ee8370791e3fe1ea244074e0f363f1e4b60ac8a2e2c51781ca44b4c977ca",
+    "reports/confirmed-F-2026-10-31/pitch-update.json": "9dbb39bcde3894e998568f2c059e7721ddde88d933b488000a03b320df085c65",
+    "reports/confirmed-F-2026-10-31/independent-hardware-verification.json": "4ef87a3e17fead0c4f87af43f8ae5e31ca6f4e8794178acdf0fca1b34b737967",
+    "reports/confirmed-F-2026-10-31/software-verification-summary.json": "bc11c0b0e34cc9ad4a64e4e1f04e5424ae999aa7844bb33071bd4bf6648744ba",
+    "manufacturing/B2_F_12p875_review_2026-10-31/manifest.json": "d67330e85941358707b75a971349cad94bdd267372b6c8f40efc4be043210e01",
+    "mechanical/geometry-verification.json": "b210a688eef208fbac14b88599df4ba6b30dbf54a43650bb52799cf9c54f9fb9",
+    "mechanical/main-placement-mechanical-audit.json": "ee3fb8ecc8d0c5f395e1ce5ce794e646cc93e8b421a66138093a7c91707d0642",
+    "mechanical/bc-placement-audit.json": "8eb9c19c84b7978a3e3156b6963678025f1cb8abe455da16e392e43f1632000a",
+    "mechanical/contact-stop-adjustment-2026-10-31.json": "d24e1fc48c1e790be00dd223e8596a0c6503060826b5999866e3383d41070f8f",
+    "printing/2026-10-31-confirmed-F/verification.json": "ce4708a233474457a08e831a28d0629d547eabf50859e2872080297389709c21",
+    "printing/2026-10-31-confirmed-F/bundle-manifest.json": "9f53453cf9ec45ff6c712f8cfe93495ccaa76d4a8b0b004fccc71c9e488dda5e",
+    "firmware/verification-summary.json": "bffaae4164725d4acfb5f03cd7d3aa504e1ea5327fe1111da181788f3e074703",
+    "simulation/verification.json": "a4bb03ffd2e800fd37908d719881603e04abb9b281cdf5b2ea54edf92418f1b1"
+  }
+}

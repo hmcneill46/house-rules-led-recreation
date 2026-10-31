@@ -1,6 +1,6 @@
 # B2 prototype firmware
 
-This firmware is for the **XIAO RP2040 Plus, 2 MB**, four TLC59282 sinks, five PMOS scan columns, BQ24392 charger/data switch and three TPS22918 switches on revision B2. Two switches control the driver rails; the third limits input startup slew. It preserves the A1 artwork, scrolling speed, flash durations and 35 × 7 pixel orientation. The artwork data/header/manifest are byte-for-byte copies of A1; `artwork-provenance.json` records their hashes.
+This firmware is for the **XIAO RP2040 Plus, 2 MB**, four TLC59283RGER sinks with 7.15 kΩ current-setting resistors, five PMOS scan columns, BQ24392 charger/data switch and three TPS22918 switches on revision B2. Two switches control the driver rails; the third limits input startup slew. It preserves the A1 artwork, scrolling speed, flash durations and 35 × 7 pixel orientation. The artwork data/header/manifest are byte-for-byte copies of A1; `artwork-provenance.json` records their hashes. The earlier TLC59282 firmware artifacts remain in the dated pre-change report archive and Git history.
 
 **Do not flash this image to A1 hardware.** B2 uses a different controller, driver interface and power arrangement. No physical B2 has been connected or tested yet. The final PCB net map must be compared with `scan-map.json` before a manufacturing release. Host simulation and compilation do not validate LED pin polarity, switching edges, USB current, mounting or soldering.
 
@@ -31,7 +31,9 @@ The artwork engine advances at an exact average 60 frames/s independently of the
 
 ## Electrical contract and power
 
-`scan-map.json` is the mapping source. `tools/firmware-build/generate_contract.py` checks it and generates the C++ header. The current arrangement maps modules 0/1 to U1 OUT0–13, modules 2/3 to U2 OUT0–13, modules 4/5 to U3 OUT0–13 and module6 to U4 OUT0–6. U4 OUT7–11 pull down the five PMOS gates. Exactly one gate bit is active per scan phase; all unused outputs stay zero. The 64 serial bits go to the farthest chip first, U4 through U1, MSB first.
+`scan-map.json` is the mapping source and identifies TLC59283RGER with 7.15 kΩ IREF resistors. `tools/firmware-build/generate_contract.py` rejects a mismatch against the electrical source and generates the C++ header. The current arrangement maps modules 0/1 to U1 OUT0–13, modules 2/3 to U2 OUT0–13, modules 4/5 to U3 OUT0–13 and module6 to U4 OUT0–6. U4 OUT7–11 pull down the five PMOS gates. Exactly one gate bit is active per scan phase; all unused outputs stay zero. The 64 serial bits go to the farthest chip first, U4 through U1, MSB first.
+
+TLC59283 LAT is level-sensitive: the output latch follows the shift register while LAT is high. The existing backend keeps LAT low throughout the complete SPI write, then pulses it high for 1 µs with no further clocks. No scan or artwork timing change is needed. The backend transaction test executes the actual `HardwareIO` C++ class against an independent digital latch model, including failed SPI and invalid-power-state paths.
 
 | Function | Raw RP2040 GPIO |
 |---|---:|
@@ -50,9 +52,11 @@ A small shared USB IRQ observer records hardware bus reset/suspend/resume before
 
 Both driver 3.3 V and LED 5 V are switched off for host suspend. TLC BLANK alone does not reduce chip quiescent current enough. Startup holds control data low and BLANK high impedance while the external pull-up follows the switched 3.3 V rail; after 10 ms it asserts BLANK, latches all-zero outputs, then starts scanning. Shutdown asserts BLANK, latches zeros including the gate bits, waits 30 µs, parks SIN/SCLK/LAT low, makes BLANK high impedance and removes both rails. Cancelling startup never drives high logic into a partially powered driver rail.
 
+TLC59283 enables its output precharge while BLANK is high. Its powered-off output behavior is unspecified, so the unchanged rail/QOD and HiZ sequence is a mitigation rather than proof of safe power transients. Check startup, shutdown, reset and suspend waveforms on both rails, gates and LED cathodes; also check reverse bias and unintended light. No software or digital model can qualify those analog effects.
+
 The CPU runs at **48 MHz**, the WS2812 power pin GPIO11 stays off, GPIO12 stays low, GPIO25 stays low to switch off the green user LED through its N-MOS gate and BAT_EN GPIO24 stays low. The Plus board's power/charging indicators and regulator draw cannot all be disabled in software. Host suspend changes the system clock to 12 MHz, preserves USB's 48 MHz PLL/clock and uses the SDK's SLEEP_EN/SLEEPDEEP clock gating around WFI. Only the two USB-controller clock destinations plus timer/watchdog timekeeping remain enabled in sleep; the prior masks and processor sleep state are restored before IRQ handlers run. WAKE_EN is unchanged so SRAM/XIP/bus clocks return on wake. Core1 stays parked and no DMA is used. Dormant mode is avoided because it would stop the USB clock. A 250 ms watchdog resets an active stalled foreground; timing/SPI/map errors latch the display dark. A lost scan callback is also checked in the foreground. The scan alarm has higher interrupt priority than the USB task so ordinary CDC traffic cannot hold off the dim-pulse turn-off; stress this timing on the prototype.
 
-**Current budgets remain unvalidated.** At the specified 6.8k current-setting resistors the electrical target is about 7.425 mA peak per selected LED. Default unknown-source dim gives about 18.191 mA average LED current. Together with driver and stock-module current, the design target is below the USB unconfigured 100 mA allowance, but code cannot prove this. Measure the whole device before relying on that default. Measure the entire device during real USB suspend and after reset as well; rail shutdown and low clock do not establish the 2.5 mA suspend limit. If the stock module cannot meet it, hardware or further verified power management must change before release. Scope PMOS/anode turn-off to qualify the physical 30 µs blank interval.
+**Current budgets remain unvalidated.** At the specified 7.15 kΩ resistors the nominal electrical target is 7.4001 mA peak per selected LED, using TI's 1.208 V × 43.8 / RIREF equation. The full-duty LED average is 340.85 mA; default unknown-source dim gives about 18.130 mA average LED current. These figures exclude controller/driver overhead and component variation. The design target is below the USB unconfigured 100 mA allowance, but code cannot prove this. Measure the whole device before relying on that default. Measure the entire device during real USB suspend and after reset as well; rail shutdown and low clock do not establish the 2.5 mA suspend limit. If the stock module cannot meet it, hardware or further verified power management must change before release. Scope PMOS/anode turn-off to qualify the physical 30 µs blank interval.
 
 ## Rebuilding and verification
 
@@ -62,7 +66,11 @@ From the repository root:
 
 ```sh
 python3 hardware/revisions/B2/tools/firmware-build/setup.py
+python3 hardware/revisions/B2/tools/firmware-build/generate_contract.py
+python3 hardware/revisions/B2/firmware/tests/test_contract.py
 python3 hardware/revisions/B2/firmware/tests/test_host.py
+python3 hardware/revisions/B2/firmware/tests/test_driver_transactions.py
+python3 hardware/revisions/B2/simulation/test_model.py
 python3 hardware/revisions/B2/tools/firmware-build/build.py
 python3 hardware/revisions/B2/tools/firmware-build/build.py --unknown-off
 ```
@@ -71,4 +79,4 @@ python3 hardware/revisions/B2/tools/firmware-build/build.py --unknown-off
 
 The host verification executes 60,000 artwork frames against an independent manifest/data reference, all 245 individual pixels and 1,000 random patterns. It checks serial order, unused outputs, one gate per phase, full/dim scan timing, frame boundaries, missing/late interrupts, SPI faults, CC qualification, the BQ status truth table and withdrawal, all 64 source/suspend policy combinations, switched-rail sequencing and the diagnostics. Results are in `tests/verification.json` and `compiled/binary-audit.json`.
 
-Primary references: [Seeed Plus hardware/pin details](https://wiki.seeedstudio.com/XIAO-RP2040/), [Seeed Arduino and BOOT procedure](https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/), [TI BQ24392 datasheet, Tables 2–3](https://www.ti.com/lit/ds/symlink/bq24392.pdf), [Arduino-Pico USB stacks](https://arduino-pico.readthedocs.io/en/latest/usb.html), [USB serial reset behavior](https://arduino-pico.readthedocs.io/en/latest/serial.html), [official package index](https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json), [Raspberry Pi SDK power/clock functions](https://www.raspberrypi.com/documentation/pico-sdk/high_level.html).
+Primary references: [TI TLC59283 Rev.C pin map, LAT/precharge and current equation](https://www.ti.com/lit/ds/symlink/tlc59283.pdf), [Seeed Plus hardware/pin details](https://wiki.seeedstudio.com/XIAO-RP2040/), [Seeed Arduino and BOOT procedure](https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/), [TI BQ24392 datasheet, Tables 2–3](https://www.ti.com/lit/ds/symlink/bq24392.pdf), [Arduino-Pico USB stacks](https://arduino-pico.readthedocs.io/en/latest/usb.html), [USB serial reset behavior](https://arduino-pico.readthedocs.io/en/latest/serial.html), [official package index](https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json), [Raspberry Pi SDK power/clock functions](https://www.raspberrypi.com/documentation/pico-sdk/high_level.html).

@@ -1,0 +1,6 @@
+(version 1)
+# B2: ordinary through vias, no clearance exceptions.
+
+(rule "B2 power minimum150um" (condition "A.NetName == '+3V3' || A.NetName == '+5V' || A.NetName == 'COL1_A' || A.NetName == 'COL2_A' || A.NetName == 'COL3_A' || A.NetName == 'COL4_A' || A.NetName == 'COL5_A' || A.NetName == 'FUSED_VBUS' || A.NetName == 'SW_3V3' || A.NetName == 'VBUS' || A.NetName == 'VLED_5V'") (constraint track_width (min 0.15mm)))
+
+(rule "Power neck minimum" (condition "A.NetName == 'VBUS' || A.NetName == 'FUSED_VBUS' || A.NetName == '+5V' || A.NetName == '+3V3' || A.NetName == 'SW_3V3' || A.NetName == 'VLED_5V' || A.NetName == 'GND' || A.NetName == 'COL1_A' || A.NetName == 'COL2_A' || A.NetName == 'COL3_A' || A.NetName == 'COL4_A' || A.NetName == 'COL5_A'") (constraint track_width (min 0.15mm)))

@@ -29,12 +29,14 @@ def build():
         part(f'DS{m+1}', 'LMD07057AUE-101B', 'HouseRules:LMD07057AUE-101B', pins,
              datasheet='https://cdn.shopify.com/s/files/1/0695/1347/8453/files/LMD07057AUE.pdf',
              role='Owner supplied, front fitted after factory assembly', assembly='owner', side='F')
-    # DBQR failed native pad-clearance study. RGER has a DIFFERENT pin map;
-    # never change only the footprint or MPN to substitute it.
+    # Historical TLC59282 DBQR failed native pad-clearance study. It has a
+    # DIFFERENT pin map and is not an approved alternative. The selected
+    # TLC59283 RGER retains the previous QFN copper/pin map, with new IREF.
     package_options = {
-        'DBQR': {'mpn':'TLC59282DBQR','lcsc':'C129352','footprint':'Package_SO:SSOP-24_3.9x8.7mm_P0.635mm',
+        'DBQR': {'status':'Historical rejected TLC59282 package study, not a substitution',
+                 'mpn':'TLC59282DBQR','lcsc':'C129352','footprint':'Package_SO:SSOP-24_3.9x8.7mm_P0.635mm',
                  'signals':{'GND':1,'SIN':2,'SCLK':3,'LAT':4,'BLANK':21,'SOUT':22,'IREF':23,'VCC':24}, 'out_pins':list(range(5,21))},
-        'RGER': {'mpn':'TLC59282RGER','lcsc':'C702074','footprint':'TI:RGE0024C',
+        'RGER': {'mpn':'TLC59283RGER','lcsc':'C485815','footprint':'TI:RGE0024C',
                  'signals':{'LAT':1,'BLANK':18,'SOUT':19,'IREF':20,'VCC':21,'GND':22,'SIN':23,'SCLK':24,'EP_GND':25}, 'out_pins':list(range(2,18))}
     }
     pkg = package_options['RGER']
@@ -49,9 +51,9 @@ def build():
             if i < (14 if bank < 4 else 7): pins[p] = f'D{bank}_ROW{i+1}_K'
             elif bank == 4 and 7 <= i <= 11: pins[p] = f'COL{i-6}_GATE'
         part(f'U{bank}',pkg['mpn'],pkg['footprint'],pins,mpn=pkg['mpn'],lcsc=pkg['lcsc'],pin_names=names,
-             datasheet='https://www.ti.com/lit/ds/symlink/tlc59282.pdf',role='16-bit current sinks; U4 OUT7..11 also sink PMOS gate current',
+             datasheet='https://www.ti.com/lit/ds/symlink/tlc59283.pdf',role='16-bit current sinks with precharge; U4 OUT7..11 also sink PMOS gate current',
              types={**{p:'open_collector' for p in pkg['out_pins']},s['GND']:'power_in',s['VCC']:'power_in',s['IREF']:'passive',s['SIN']:'input',s['SCLK']:'input',s['LAT']:'input',s['BLANK']:'input',s['SOUT']:'output',**({s['EP_GND']:'power_in'} if 'EP_GND' in s else {})})
-        passive(f'R{bank}','6k8 1%',f'IREF{bank}','GND','0603WAF6801T5E','C23212','Sets 7.42493mA nominal peak; Basic resistor avoids Extended setup fee')
+        passive(f'R{bank}','7k15 1%',f'IREF{bank}','GND','0603WAF7151T5E','C25980','Sets 7.40006mA nominal peak for TLC59283; Extended resistor setup included in quote')
         passive(f'C{bank}','100n 50V X7R','SW_3V3','GND','CC0603KRX7R9BB104','C14663','Place at corresponding TLC VCC/GND')
     for col in range(1,6):
         part(f'Q{col}','AO3401A','Package_TO_SOT_SMD:SOT-23',{1:f'COL{col}_GATE',2:'VLED_5V',3:f'COL{col}_A'},
@@ -117,7 +119,8 @@ def build():
             'DRIVER_EN':{'gpio':6,'label':'D4','module_pad':5},'CC1_ADC':{'gpio':26,'label':'D0','module_pad':1},
             'CC2_ADC':{'gpio':27,'label':'D1','module_pad':2},
             'BC_DET':{'gpio':7,'label':'D5','module_pad':6},'BC_AL_N':{'gpio':0,'label':'D6','module_pad':7}}
-    result = {'revision':'B2','status':'engineering prototype; not released for manufacture',
+    result = {'revision':'B2','hardware_variant':'F-12p875-TLC59283-7p15k',
+      'status':'engineering prototype; case trial, factory review and powered acceptance pending; no order',
       'boards':{'main':{'width':89.45,'height':17.3,'layers':6,'thickness':1.6,
                'led_module_pitch_mm':12.875,
                'mechanical_confirmation':'Owner selected fine trial F / P12.875 / +0.175 on2026-10-31; individual12-pin geometry unchanged',
@@ -135,7 +138,13 @@ def build():
                     'reason':'Existing CT captures could not escape through four signal layers; quiet load-switch timing-capacitor bridge only. No USB/clock/other plane exceptions.',
                     'ground_requirement':'In2 filled GND remains one connected outline; In4 remains GND-only'},
                'historical_cost_study':'Four-layer prices are retained as an earlier alternative study, not the selected fabrication process'}},
-      'driver_package':'RGER','driver_package_options':package_options,'parts':parts,'gpio':gpio,
+      'driver_package':'RGER','driver_package_options':package_options,
+      'driver_identity':{'mpn':'TLC59283RGER','lcsc':'C485815','current_resistor_ohm':7150,
+                         'current_resistor_mpn':'0603WAF7151T5E','current_resistor_lcsc':'C25980',
+                         'nominal_current_equation':'1.208 V * 43.8 / RIREF_ohm',
+                         'output_precharge':True,'current_reference_V':1.208,'current_gain':43.8,
+                         'qualification':'BLANK enables precharge; powered-off leakage/rail transients and actual optical/current/thermal behaviour require measurements'},
+      'parts':parts,'gpio':gpio,
       'owned_module_verification':{'date':'2026-10-29','source':'reports/owner-led-diode-test-2026-10-29.json',
           'module_marking':'LMD07057AUE-101B-02','verified_module_count':1,'remaining_unverified_count':20,
           'method':'Owner-reported diode-test observations: eleven independent lit dots cover all12 terminals',
@@ -163,8 +172,9 @@ def build():
                   'row_bits':[list(range(0,14)),list(range(16,30)),list(range(32,46)),list(range(48,55))],
                   'column_gate_bits':[55,56,57,58,59],'unused_bits':[14,15,30,31,46,47,60,61,62,63],
                   'gate_bit_polarity':'1=sink enabled=PMOS gate LOW=column ON; exactly one gate bit in active phases',
-                  'row_bit_polarity':'1=cathode sink ON','blank_polarity':'HIGH=all outputs OFF','latch':'level-sensitive HIGH, LOW while shifting; pulse HIGH then LOW while BLANK is HIGH'},
-      'scan':{'frame_hz':400,'phases':5,'phase_us':500,'blank_min_us':30,'full_on_us':470,'peak_led_mA':1.205*41.9/6.8,
+                  'row_bit_polarity':'1=cathode sink ON','blank_polarity':'HIGH=all current sinks OFF; TLC59283 precharge enabled',
+                  'latch':'level-sensitive HIGH, LOW while shifting; pulse HIGH then LOW while BLANK is HIGH'},
+      'scan':{'frame_hz':400,'phases':5,'phase_us':500,'blank_min_us':30,'full_on_us':470,'peak_led_mA':1.208*43.8/7.15,
               'default':'Prototype unknown-source DIM at25us light per500us phase; measured<100mA budget not yet qualified; compile-time unknown-source OFF alternative available','unknown_source_on_us':25,'initial_rail_settle_ms':10},
       'power':{'usb_voltage_V':5,'pd_requested':False,'raw_input_fuse_mA':750,'rated_usb_configuration_mA':500,
                'input_soft_start':{'ref':'U8','mpn':'TPS22918DBVR','input':'FUSED_VBUS','output':'+5V','enable':'FUSED_VBUS','ct_pF':1000,'raw_main_input_cap_uF':1.0,'typical_5V_rise_us':2540,'qualification':'Measure whole assembly USB input current/charge, including stock XIAO mux and LDO startup'},
@@ -172,7 +182,15 @@ def build():
                'suspend':'BLANK HIGH; wait>=30us; SIN/SCLK/LAT LOW; BLANK input high-Z no pulls; DRIVER_EN LOW; MCU USB suspend/clock/power policy still requires bench qualification',
                'wake':'BLANK input high-Z no pulls; SIN/SCLK/LAT LOW; DRIVER_EN HIGH; wait>=10ms; BLANK HIGH; shift/latch 64 zero bits; begin authorized scan',
                'off_input_rule':'Never drive a logic HIGH into an unpowered TLC; BLANK pullup is to SW_3V3 only'},
-      'release_gates':['Confirm current JLC assembly availability including adequate TLC and BQ stock','QFN pad-map and ordinary-via routing/thermal proof','USB inrush and suspend bench qualification including BQ and10k status pullup','BC1.2 SDP/CDP/DCP classification, data isolation and USB programming through U9','Scope gate/anode off within30us and no ghosting','Measure full-white current and enclosed-board temperatures','Check other20 LED modules against owner-verified full terminal map and orientation; complete full-size body/pin fit and powered245-pixel test']}
+      'release_gates':['Complete owner full case/stock-module/plug print trial; not yet confirmed',
+          'Confirm exact TLC59283/C485815 and 7.15k/C25980 BOM with current stock; never order historical driver cost drafts',
+          'Factory CAM for filled/capped vias, open LED holes and final outline; pin1/feeder/rotation review',
+          'QFN pad-map and ordinary-via routing/thermal proof',
+          'TLC59283 precharge during BLANK, power-up/down/reset/suspend: scope both switched rails, gate and cathode voltages; VCC=0 reverse leakage is unspecified',
+          'USB inrush and suspend bench qualification including BQ and10k status pullup',
+          'BC1.2 SDP/CDP/DCP classification, data isolation and USB programming through U9',
+          'Scope gate/anode off within30us and no ghosting','Measure full-white current, brightness uniformity and enclosed-board temperatures',
+          'Check other20 LED modules against owner-verified full terminal map and orientation; complete full-size body/pin fit and powered245-pixel test']}
     DEST.mkdir(parents=True,exist_ok=True)
     (DEST/'electrical-spec.json').write_text(json.dumps(result,indent=2)+'\n')
     print(f'B2: {len(parts)} parts, {sum(p["assembly"]=="factory" for p in parts)} factory SMT parts, package={result["driver_package"]}')

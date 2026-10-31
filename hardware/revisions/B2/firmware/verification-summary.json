@@ -1,6 +1,6 @@
 {
-  "status": "compiled and host verified B2 prototype; physical hardware untested",
-  "map_sha256": "39d47ccdf963ff9bad61d2c7c43dda75683a82660b242edb64cbccaee1a05536",
+  "status": "compiled and digitally verified TLC59283/7.15kohm B2 prototype; physical hardware untested",
+  "map_sha256": "44ae3f904b1c5384f0f18acc801adb2170792a3a48726c101f5e4837bc6a2aee",
   "default_uf2_sha256": "2c951f28177c22ed7ef98d574ed0b6bbcd22ec29dad2439c6175f94a6dc13cbe",
   "unknown_off_uf2_sha256": "80237ace7f9255cfa2750938c46991fca35b23683215ecd9f60fe5fcfb32cc08",
   "cpu_hz": 48000000,
@@ -19,13 +19,16 @@
     "Measure complete-device unconfigured current under USB traffic",
     "Measure USB suspend current and test reset/enumeration/suspend/resume before/after configuration",
     "Measure full-white current and enclosed temperatures",
-    "Verify BQ24392 SDP/CDP/DCP detection, USB data switch, UF2 and CDC programming through external socket"
+    "Verify BQ24392 SDP/CDP/DCP detection, USB data switch, UF2 and CDC programming through external socket",
+    "Measure TLC59283 precharge, reverse LED bias and both rail/gate/cathode transients during startup/shutdown/reset/suspend"
   ],
   "evidence": [
     "tests/verification.json",
     "compiled/binary-audit.json",
     "compiled-unknown-off/binary-audit.json",
-    "../simulation/verification.json"
+    "../simulation/verification.json",
+    "tests/driver-transactions-verification.json",
+    "tests/contract-verification.json"
   ],
   "bc12_policy": "BQ24392 GOOD_BAT high; full grant only DET high and AL_N low stable100ms; host suspend overrides every grant",
   "bc12_gpio": {
@@ -33,14 +36,17 @@
     "al_n": 0
   },
   "diagnostics": "p/w/a/c/r/d/b patterns/brightness; nonblocking i source-state report",
-  "hardware_iref_ohms": 6800,
-  "nominal_led_peak_ma": 7.424926470588235,
-  "nominal_full_white_led_average_ma": 341.99211323529414,
-  "confirmed_F_reverification": {
-    "date_utc": "2026-10-31T19:51:45.633389+00:00",
+  "hardware_iref_ohms": 7150,
+  "nominal_led_peak_ma": 7.400055944055946,
+  "nominal_full_white_led_average_ma": 340.8465767832169,
+  "driver_mpn": "TLC59283RGER",
+  "nominal_dim_led_average_ma": 18.13013706293707,
+  "TLC59283_reverification": {
+    "date_utc": "2026-10-31T23:31:19.713538+00:00",
     "result": "PASS",
-    "electrical_spec_sha256": "755a5b30c8b0919af8874b58b9979ca0133f9cbc2a0dc6002b77b13267fb6e28",
-    "source_and_existing_images_unchanged": true,
-    "report": "../reports/confirmed-F-2026-10-31/software-verification-summary.json"
+    "electrical_spec_sha256": "ba719eb506720a63d95acdcf24c94ecf49344484cd5644f3d4c2f8e9050c0981",
+    "report": "../reports/TLC59283-2026-10-31/software/software-verification-summary.json",
+    "rebuilt_UF2_payloads_unchanged": true,
+    "reason": "Same digital scan, wiring and timing; current-set resistors and precharge are physical behavior"
   }
 }

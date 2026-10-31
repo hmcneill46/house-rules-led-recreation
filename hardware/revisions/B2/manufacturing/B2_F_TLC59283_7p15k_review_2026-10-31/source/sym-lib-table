@@ -1,0 +1,2 @@
+(sym_lib_table (version 7)
+(lib (name "HouseRules_main")(type "KiCad")(uri "${KIPRJMOD}/HouseRules_main.kicad_sym")(options "")(descr "B2 explicit package symbols")))

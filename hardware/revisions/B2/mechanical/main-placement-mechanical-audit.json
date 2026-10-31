@@ -1,6 +1,6 @@
 {
   "board": "kicad/house-rules-main-B2.kicad_pcb",
-  "board_sha256": "b42e3d59b40a2e9cc877f8c5595d58339a2c7b0797970fa826ea84c19b8105f1",
+  "board_sha256": "765d4747e2cf559ff0f6a29024d232458d9b7a66ed96825eba6f3a657c313024",
   "contract_sha256": "7653904daacf65a17fb7dc5f0a91ad7bb080203d2dea5089ab3ed35382ad9311",
   "native_origin_mm": [
     50,

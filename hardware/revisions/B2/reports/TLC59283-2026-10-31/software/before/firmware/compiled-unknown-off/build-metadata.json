@@ -1,0 +1,51 @@
+{
+  "revision": "B2",
+  "arduino_cli": "1.5.1",
+  "arduino_pico_core": "6.3.1",
+  "fqbn": "rp2040:rp2040:seeed_xiao_rp2040:flash=2097152_0,usbstack=tinyusb",
+  "effective_cpu_hz": 48000000,
+  "flash_bytes": 2097152,
+  "usb_stack": "Adafruit TinyUSB",
+  "usb_bus_powered": true,
+  "usb_max_power_ma": 500,
+  "unknown_source_dim_enabled": false,
+  "status": "compiled prototype; no physical hardware executed; source/suspend current budgets unvalidated",
+  "command": [
+    "/Users/harrymcneill/.cache/house-rules-arduino/bin/arduino-cli",
+    "compile",
+    "--config-file",
+    "/Users/harrymcneill/.cache/house-rules-b2-arduino/arduino-cli.yaml",
+    "--fqbn",
+    "rp2040:rp2040:seeed_xiao_rp2040:flash=2097152_0,usbstack=tinyusb",
+    "--build-path",
+    "/Users/harrymcneill/.cache/house-rules-b2-arduino/objects-unknown-off",
+    "--output-dir",
+    "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/firmware/compiled-unknown-off",
+    "--build-property",
+    "build.f_cpu=48000000L",
+    "--build-property",
+    "compiler.cpp.extra_flags=-DUSB_CONFIG_POWER=500 -DHR_ALLOW_UNCONFIGURED_DIM=0",
+    "--build-property",
+    "compiler.c.extra_flags=-DUSB_CONFIG_POWER=500",
+    "--build-property",
+    "compiler.c.elf.extra_flags=-Wl,--wrap=TinyUSB_Device_Init",
+    "/Users/harrymcneill/.cache/house-rules-b2-arduino/build/HouseRulesB2"
+  ],
+  "sha256": {
+    "HouseRulesB2.ino.bin": "0363b49561ec573f0246faedb5707252b90cec7e667c4ae12cf0250612e66f34",
+    "HouseRulesB2.ino.uf2": "80237ace7f9255cfa2750938c46991fca35b23683215ecd9f60fe5fcfb32cc08",
+    "HouseRulesB2.ino.elf": "124deea75d5e45a579277745f27427915f341abe779f24f47beb9f71516f2126"
+  },
+  "source_sha256": {
+    "HouseRulesB2/HouseRulesB2.ino": "b77ade8bcc366afd92d08e0b8ce308d9a8d3286dc2c2b721e2b97242deb410c2",
+    "HouseRulesB2/application.cpp": "bceb3dc88eafd9a1328ec983b38ff55578066a773d28a783b3b6cd8133e61bca",
+    "HouseRulesB2/board_contract_generated.h": "2adf7bb63e222fb10138de0cede28428c808e5e9f100862cdb364a3f5c274cf0",
+    "HouseRulesB2/player.h": "bead21b3f649c53a891762bc8bcac4cefa4d60da6381339aa4f0c7cb8be0883c",
+    "HouseRulesB2/power_sequence.h": "033976cfbbe78904d7218b4e626060bc86cd6ccd4fda841c2992e7b49b29df93",
+    "HouseRulesB2/scan_engine.h": "dca42ab3dc53c6ccbc2d7b6472b87efe4eaf856525fc55f77a85a8d105c52e09",
+    "generated_sequence.h": "a7d1963f69ca10a11635c25d9b5d51e5e6a9152601122c8f659420badfecf320",
+    "scan-map.json": "39d47ccdf963ff9bad61d2c7c43dda75683a82660b242edb64cbccaee1a05536",
+    "sequence_columns.bin": "4006a8b654a8fb741fb169f3b9333f579d882659d78b5aceb9f8c447d1aebcef",
+    "sequence_manifest.json": "97b2aeb12e8256fe2ba37cbae8f627ed2a9d8ddf1d780419da8fde7236d90477"
+  }
+}

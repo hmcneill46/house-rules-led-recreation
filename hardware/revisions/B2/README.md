@@ -2,9 +2,11 @@
 
 This is the separate cost-reduction revision of the House Rules display. The original A1 design is preserved at the Git tag [`hardware-a1-2026-10-29`](https://github.com/hmcneill46/house-rules-led-recreation/tree/hardware-a1-2026-10-29). Do not mix A1 and B2 firmware, wiring, placement files or fabrication files.
 
-**31 October: the owner selected F — 12.875 mm pitch (+0.175 mm per join).** The canonical PCB and case now use this confirmed repeat, adding 1.050 mm across six joins. Each individual 12-pin pattern, electrical connection and LED orientation is preserved. See the [revision and check record](reports/confirmed-F-2026-10-31/README.md), [revised case print pack](printing/2026-10-31-confirmed-F/README.md) and [new manufacturing review package](manufacturing/B2_F_12p875_review_2026-10-31/README.md). Earlier 12.700 mm fabrication/print files are historical; do not order them.
+**31 October: the owner selected F — 12.875 mm pitch (+0.175 mm per join).** The canonical PCB and case now use this confirmed repeat, adding 1.050 mm across six joins. Each individual 12-pin pattern, electrical connection and LED orientation is preserved. See the [revision and check record](reports/confirmed-F-2026-10-31/README.md), [revised case print pack](printing/2026-10-31-confirmed-F/README.md) and [new manufacturing review package](manufacturing/B2_F_TLC59283_7p15k_review_2026-10-31/README.md). Earlier 12.700 mm fabrication/print files are historical; do not order them.
 
-The revised PCB passes fresh native KiCad DRC and schematic parity with zero reported violations or missing connections. The manufacturing package includes matching Gerbers, actual drill checks, the exact 55-component BOM and new placement coordinates. Print the revised case and check the purchased stock modules/plug before ordering; obtain a fresh quote and factory CAM/placement review. Powered first-board acceptance remains separate. No order or payment has been submitted.
+**The owner selected TLC59283RGER drivers and7.15 kΩ resistors on31 October.** The [current revision record](reports/TLC59283-2026-10-31/README.md) and [manufacturing review package](manufacturing/B2_F_TLC59283_7p15k_review_2026-10-31/README.md) supersede the previous TLC59282/6.8k package. This substitution preserves all routed geometry and case/print files. The full case/stock-module/USB-plug print trial is **still pending**, as are factory review and powered precharge/USB/optical/thermal acceptance. Nothing has been ordered.
+
+The revised PCB passes fresh native KiCad DRC and schematic parity with zero reported violations or missing connections. The manufacturing package includes matching Gerbers, actual drill checks, the exact 55-component BOM and matching placement file. Print the revised case and check the purchased stock modules/plug before ordering; obtain a fresh quote and factory CAM/placement review. Powered first-board acceptance remains separate. No order or payment has been submitted.
 
 ## Current design
 
@@ -22,7 +24,7 @@ The owner's [F-trial confirmation](reports/owner-pitch-confirmation-2026-10-31.j
 | Custom STM32 controller on the main board | Ready-assembled Seeed XIAO RP2040 Plus |
 | Second custom USB PCB and assembly job | Ready-assembled Adafruit 4090 USB-C breakout |
 | Fine 0.20 mm via drills | Ordinary 0.30 mm drills, mostly 0.60 mm copper pads with selected 0.45 mm escapes |
-| Four autonomous matrix drivers | Four regulated TLC59282 sinks and five scan switches, refreshed by the MCU |
+| Four autonomous matrix drivers | Four regulated TLC59283 sinks and five scan switches, refreshed by the MCU |
 | Two custom PCBA setups | One custom PCBA setup |
 
 The MCU and USB breakout sit behind the main board, retained by the printed case. Their components are already soldered. All **55 small components on the custom main board** are assigned to the factory. The owner fits seven LEDs and connects the modules with **20 wires**, which means 40 wire joints plus 84 LED joints per display. No bare QFN chip is assigned to hand soldering. Wire pads need strain relief and short exposed conductors.
@@ -35,11 +37,15 @@ These are native KiCad renders of the actual routed board. The first hides the L
 
 ![Rear component side of B2](render/main-bottom.png)
 
-## Current cost check — 31 October
+## Selected purchase plan — 31 October
 
-The later [driver/manufacturer investigation](quotes/alternatives-2026-10-31/README.md) quotes two in-stock, same-footprint alternatives. The balanced TLC59283RGER + 7.15 kΩ candidate gives complete purchasing budgets around **£142 for two finished displays**, **£168 for three plus two populated spare mains**, or **£222 for five**, including verified native delivery/VAT and depanel allowances. TLC59281 is slightly cheaper in goods cost but uses more internal current. These are unreleased substitution studies; canonical B2 still uses TLC59282 and precharge/rail-transient acceptance remains necessary. PCBWay/NextPCB calculator comparisons are higher. JLC support confirmed no original-driver restock schedule and accepted a quotation-only sourcing enquiry, now pending.
+The owner chose **three finished displays and two spare populated main PCBs, including extra screws and wire now**. The current budget is **£177.25**: £103.16 for five fabricated/assembled main PCBs, including shipping/VAT/depanel allowances, plus £74.09 for retail parts. Buy three headerless XIAO RP2040 Plus modules, three Adafruit4090 breakouts,1m red/1m black/**5m blue** thin28AWG PTFE wire,**10×M2×6mm and5×M2×8mm** specified button screws, one1.3mm key, electronics-safe silicone and ties. Use the21 owned LEDs and owned tools, filament, power supplies and data cables. No extra LEDs are bought now.
 
-The [confirmed-F purchasing comparison](quotes/updated-F-2026-10-31/README.md) budgets approximately **£165 for two complete displays**, **£200 for three complete displays plus two populated spare mains**, or **£255 for five complete displays**, with owned tools, power supplies, cables, solder and filament excluded. These are provisional budgets including delivery/tax allowances, not final payable quotes. Both correct QFN driver catalogue listings are currently out of JLC stock. An exact Mouser sourcing preview is recorded, but parts must reach JLC before a complete 55-SMT assembly quote is available. The live 51-SMT cost drafts omit U1–U4, are not functional and must not be ordered. No order or payment was submitted in this new quote session.
+Finishing the two spare mains later needs two controllers, two USB boards and14 additional LEDs, budgeted at **£52.16** delivered using recorded prices. The staged five-display budget is **£229.41**, versus £222.02 buying for all five together. Future prices/stock and usable stored supplies are not guaranteed. [Selected quantities and calculation](reports/TLC59283-2026-10-31/selected-purchase-plan.json), [retail price evidence](quotes/updated-F-2026-10-31/retail/README.md), [factory quote evidence](quotes/alternatives-2026-10-31/jlc-59283-7p15k-cost-only/complete55-quotes.json).
+
+These remain prototype budgets, not fixed payable invoices or an order release. The existing quoted cart was a cost-only manual part match; before any order, replace it with this coherent new package and obtain fresh stock/CAM/pin1/placement review. The full case print/fit remains pending. Extra discounts are not assumed. No order/payment has been submitted.
+
+The [driver/manufacturer investigation](quotes/alternatives-2026-10-31/README.md) retains historical comparisons with TLC59281, the original TLC59282, NextPCB and PCBWay. The original-driver sourcing enquiry remains quotation-only; that old driver is no longer the selected BOM.
 
 ## Historical cost evidence — earlier pitch
 
@@ -75,9 +81,9 @@ The RP2040 ROM bootloader accepts a UF2 file copied to its `RPI-RP2` drive. Prog
 
 ## Evidence and remaining physical checks
 
-The editable schematic has zero ERC violations, with all 327 connected pins matched against its connection source. The final native PCB DRC reports zero violations, zero unconnected items and zero schematic parity issues. The separate board audit passes all 82 references, the frozen A1 individual pin patterns plus exactly 175,000 nm translation per module index, open LED holes, all 276 filled/capped vias, 12 driver thermal vias and physical drill clearances. The actual exported Excellon independently contains exactly 276 × 0.30 mm vias and 84 × 0.90 mm open LED holes. No custom DRC exclusions are used; KiCad's five native default ignored checks are documented explicitly in the package.
+The updated editable schematic has zero ERC violations, with all 327 connected pins matched against its connection source. The final native PCB DRC reports zero violations, zero unconnected items and zero schematic parity issues. The separate board audit passes all 82 references, the frozen A1 individual pin patterns plus exactly 175,000 nm translation per module index, open LED holes, all 276 filled/capped vias, 12 driver thermal vias and physical drill clearances. The actual exported Excellon independently contains exactly 276 × 0.30 mm vias and 84 × 0.90 mm open LED holes. No custom DRC exclusions are used; KiCad's five native default ignored checks are documented explicitly in the package.
 
-Compiled firmware and an independent pin-level simulation reproduce all 245 walking pixels and 60,000 artwork frames. These results check represented geometry, digital mapping and timing logic, not actual powered-board operation or analog electronics.
+Compiled firmware and an independent pin-level simulation reproduce all 245 walking pixels and 60,000 artwork frames. These results check represented geometry, digital mapping and timing logic. New checks also reject stale6.8k/mixed-driver identities and exercise1,000 transactions through the actual HardwareIO backend. They do not simulate analogue precharge or actual powered operation.
 
 One owned module's polarity and complete pin map are now physically confirmed. The first PCB assembly still needs supply/current and real USB suspend measurements, enumeration/programming checks, scan-edge/ghosting checks and an all-on temperature test inside the case. The conservative prototype firmware has separate rail shutdown and an input soft start; those circuits and software do not establish measured USB compliance.
 
@@ -85,7 +91,7 @@ Relevant sources and results:
 
 - [Editable KiCad project](kicad/house-rules-main-B2.kicad_pro), [PCB](kicad/house-rules-main-B2.kicad_pcb), [schematic](kicad/house-rules-main-B2.kicad_sch)
 - [Final verification summary](reports/final-verification-summary.json), [native DRC](reports/final-drc.json), [separate PCB audit](reports/board-audit.json)
-- [Manufacturing review package](manufacturing/B2_F_12p875_review_2026-10-31/README.md), [Gerber/drill archive](manufacturing/B2_F_12p875_review_2026-10-31/house-rules-main-B2-fabrication-REVIEW.zip), [exact BOM](manufacturing/B2_F_12p875_review_2026-10-31/assembly/bom.csv), [placement review](manufacturing/B2_F_12p875_review_2026-10-31/assembly/placement-review.csv)
+- [Manufacturing review package](manufacturing/B2_F_TLC59283_7p15k_review_2026-10-31/README.md), [Gerber/drill archive](manufacturing/B2_F_TLC59283_7p15k_review_2026-10-31/house-rules-main-B2-fabrication-REVIEW.zip), [exact BOM](manufacturing/B2_F_TLC59283_7p15k_review_2026-10-31/assembly/bom.csv), [placement review](manufacturing/B2_F_TLC59283_7p15k_review_2026-10-31/assembly/placement-review.csv)
 - [Owner assembly and first-test guide](assembly-and-test.md)
 - [Electrical design and assumptions](electrical-review.md)
 - [Independent physical-connection simulation](simulation/README.md)

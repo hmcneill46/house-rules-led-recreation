@@ -1,0 +1,6202 @@
+{
+  "result": "PASS",
+  "date_utc": "2026-10-31T23:30:04.289381+00:00",
+  "board": "/private/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-b2-manufacturing-b3t17oce/package/source/house-rules-main-B2.kicad_pcb",
+  "board_sha256": "765d4747e2cf559ff0f6a29024d232458d9b7a66ed96825eba6f3a657c313024",
+  "spec_sha256": "ba719eb506720a63d95acdcf24c94ecf49344484cd5644f3d4c2f8e9050c0981",
+  "a1_led_reference": "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/kicad/house-rules-main.kicad_pcb",
+  "a1_led_reference_sha256": "8b9df50fe0897db76a186902024ef12a80ff8da990d0e1d2d342f8fa2f86a830",
+  "audit_script_sha256": "32ce37becd2e75074402b29660d506f7bcacd754f5f0a84e229e2245765df2ef",
+  "error_count": 0,
+  "errors": [],
+  "component_count": 82,
+  "factory_component_count": 55,
+  "connected_pin_count": 327,
+  "copper_layers_top_to_bottom": [
+    "F.Cu",
+    "In1.Cu",
+    "In2.Cu",
+    "In3.Cu",
+    "In4.Cu",
+    "B.Cu"
+  ],
+  "native_copper_layer_count": 6,
+  "thickness_mm": 1.6,
+  "outline": {
+    "width_mm": 89.45,
+    "height_mm": 17.3,
+    "holes": 0
+  },
+  "aux_origin_mm": [
+    50.0,
+    50.0
+  ],
+  "exact_A1_LED_geometry_matches": false,
+  "confirmed_F_LED_geometry_matches": true,
+  "LED_module_pitch_mm": 12.875,
+  "LED_reference_transformation": "Frozen A1 plus175000nm in X per zero-based DS module index; no intramodule scaling or rotation",
+  "LED_holes_open": true,
+  "LED_geometry": {
+    "DS3.1": {
+      "relative_position_nm": [
+        28040000,
+        2300000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 1,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS3.2": {
+      "relative_position_nm": [
+        28040000,
+        4840001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS3.3": {
+      "relative_position_nm": [
+        28040000,
+        7380001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS3.4": {
+      "relative_position_nm": [
+        28040000,
+        9920000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS3.5": {
+      "relative_position_nm": [
+        28040000,
+        12460000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS3.6": {
+      "relative_position_nm": [
+        28040000,
+        15000000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS3.7": {
+      "relative_position_nm": [
+        35660000,
+        15000000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS3.8": {
+      "relative_position_nm": [
+        35660000,
+        12460000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS3.9": {
+      "relative_position_nm": [
+        35660000,
+        9920000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS3.10": {
+      "relative_position_nm": [
+        35660000,
+        7380001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS3.11": {
+      "relative_position_nm": [
+        35660000,
+        4840001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS3.12": {
+      "relative_position_nm": [
+        35660000,
+        2300000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS6.1": {
+      "relative_position_nm": [
+        66665000,
+        2300000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 1,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS6.2": {
+      "relative_position_nm": [
+        66665000,
+        4840001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS6.3": {
+      "relative_position_nm": [
+        66665000,
+        7380001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS6.4": {
+      "relative_position_nm": [
+        66665000,
+        9920000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS6.5": {
+      "relative_position_nm": [
+        66665000,
+        12460000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS6.6": {
+      "relative_position_nm": [
+        66665000,
+        15000000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS6.7": {
+      "relative_position_nm": [
+        74285000,
+        15000000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS6.8": {
+      "relative_position_nm": [
+        74285000,
+        12460000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS6.9": {
+      "relative_position_nm": [
+        74285000,
+        9920000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS6.10": {
+      "relative_position_nm": [
+        74285000,
+        7380001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS6.11": {
+      "relative_position_nm": [
+        74285000,
+        4840001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS6.12": {
+      "relative_position_nm": [
+        74285000,
+        2300000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS7.1": {
+      "relative_position_nm": [
+        79540000,
+        2300000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 1,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS7.2": {
+      "relative_position_nm": [
+        79540000,
+        4840001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS7.3": {
+      "relative_position_nm": [
+        79540000,
+        7380001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS7.4": {
+      "relative_position_nm": [
+        79540000,
+        9920000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS7.5": {
+      "relative_position_nm": [
+        79540000,
+        12460000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS7.6": {
+      "relative_position_nm": [
+        79540000,
+        15000000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS7.7": {
+      "relative_position_nm": [
+        87160000,
+        15000000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS7.8": {
+      "relative_position_nm": [
+        87160000,
+        12460000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS7.9": {
+      "relative_position_nm": [
+        87160000,
+        9920000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS7.10": {
+      "relative_position_nm": [
+        87160000,
+        7380001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS7.11": {
+      "relative_position_nm": [
+        87160000,
+        4840001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS7.12": {
+      "relative_position_nm": [
+        87160000,
+        2300000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS2.1": {
+      "relative_position_nm": [
+        15165000,
+        2300000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 1,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS2.2": {
+      "relative_position_nm": [
+        15165000,
+        4840001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS2.3": {
+      "relative_position_nm": [
+        15165000,
+        7380001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS2.4": {
+      "relative_position_nm": [
+        15165000,
+        9920000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS2.5": {
+      "relative_position_nm": [
+        15165000,
+        12460000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS2.6": {
+      "relative_position_nm": [
+        15165000,
+        15000000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS2.7": {
+      "relative_position_nm": [
+        22785000,
+        15000000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS2.8": {
+      "relative_position_nm": [
+        22785000,
+        12460000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS2.9": {
+      "relative_position_nm": [
+        22785000,
+        9920000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS2.10": {
+      "relative_position_nm": [
+        22785000,
+        7380001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS2.11": {
+      "relative_position_nm": [
+        22785000,
+        4840001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS2.12": {
+      "relative_position_nm": [
+        22785000,
+        2300000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS5.1": {
+      "relative_position_nm": [
+        53790000,
+        2300000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 1,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS5.2": {
+      "relative_position_nm": [
+        53790000,
+        4840001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS5.3": {
+      "relative_position_nm": [
+        53790000,
+        7380001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS5.4": {
+      "relative_position_nm": [
+        53790000,
+        9920000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS5.5": {
+      "relative_position_nm": [
+        53790000,
+        12460000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS5.6": {
+      "relative_position_nm": [
+        53790000,
+        15000000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS5.7": {
+      "relative_position_nm": [
+        61410000,
+        15000000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS5.8": {
+      "relative_position_nm": [
+        61410000,
+        12460000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS5.9": {
+      "relative_position_nm": [
+        61410000,
+        9920000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS5.10": {
+      "relative_position_nm": [
+        61410000,
+        7380001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS5.11": {
+      "relative_position_nm": [
+        61410000,
+        4840001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS5.12": {
+      "relative_position_nm": [
+        61410000,
+        2300000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS4.1": {
+      "relative_position_nm": [
+        40915000,
+        2300000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 1,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS4.2": {
+      "relative_position_nm": [
+        40915000,
+        4840001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS4.3": {
+      "relative_position_nm": [
+        40915000,
+        7380001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS4.4": {
+      "relative_position_nm": [
+        40915000,
+        9920000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS4.5": {
+      "relative_position_nm": [
+        40915000,
+        12460000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS4.6": {
+      "relative_position_nm": [
+        40915000,
+        15000000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS4.7": {
+      "relative_position_nm": [
+        48535000,
+        15000000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS4.8": {
+      "relative_position_nm": [
+        48535000,
+        12460000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS4.9": {
+      "relative_position_nm": [
+        48535000,
+        9920000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS4.10": {
+      "relative_position_nm": [
+        48535000,
+        7380001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS4.11": {
+      "relative_position_nm": [
+        48535000,
+        4840001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS4.12": {
+      "relative_position_nm": [
+        48535000,
+        2300000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS1.1": {
+      "relative_position_nm": [
+        2290000,
+        2300000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 1,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS1.2": {
+      "relative_position_nm": [
+        2290000,
+        4840001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS1.3": {
+      "relative_position_nm": [
+        2290000,
+        7380001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS1.4": {
+      "relative_position_nm": [
+        2290000,
+        9920000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS1.5": {
+      "relative_position_nm": [
+        2290000,
+        12460000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS1.6": {
+      "relative_position_nm": [
+        2290000,
+        15000000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS1.7": {
+      "relative_position_nm": [
+        9910000,
+        15000000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS1.8": {
+      "relative_position_nm": [
+        9910000,
+        12460000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS1.9": {
+      "relative_position_nm": [
+        9910000,
+        9920000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS1.10": {
+      "relative_position_nm": [
+        9910000,
+        7380001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS1.11": {
+      "relative_position_nm": [
+        9910000,
+        4840001
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    },
+    "DS1.12": {
+      "relative_position_nm": [
+        9910000,
+        2300000
+      ],
+      "pad_size_nm": [
+        1400000,
+        1400000
+      ],
+      "drill_nm": [
+        900000,
+        900000
+      ],
+      "shape": 0,
+      "attribute": 0,
+      "orientation_deg": 0.0,
+      "filled": false,
+      "capped": false
+    }
+  },
+  "via_count": 276,
+  "via_geometry_counts": [
+    {
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "count": 109
+    },
+    {
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "count": 167
+    }
+  ],
+  "thermal_vias": {
+    "U1": [
+      {
+        "x_mm": 55.55,
+        "y_mm": 58.65
+      },
+      {
+        "x_mm": 56.1,
+        "y_mm": 59.2
+      },
+      {
+        "x_mm": 56.65,
+        "y_mm": 58.65
+      }
+    ],
+    "U2": [
+      {
+        "x_mm": 82.45,
+        "y_mm": 58.05
+      },
+      {
+        "x_mm": 81.85,
+        "y_mm": 58.05
+      },
+      {
+        "x_mm": 82.4,
+        "y_mm": 58.65
+      }
+    ],
+    "U3": [
+      {
+        "x_mm": 107.4,
+        "y_mm": 58.45
+      },
+      {
+        "x_mm": 107.0,
+        "y_mm": 58.05
+      },
+      {
+        "x_mm": 107.5,
+        "y_mm": 59.05
+      }
+    ],
+    "U4": [
+      {
+        "x_mm": 132.65,
+        "y_mm": 57.3
+      },
+      {
+        "x_mm": 133.25,
+        "y_mm": 57.3
+      },
+      {
+        "x_mm": 133.55,
+        "y_mm": 56.8
+      }
+    ]
+  },
+  "via_inventory": [
+    {
+      "x_mm": 79.95,
+      "y_mm": 58.4,
+      "net": "D2_ROW3_K",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 79.65,
+      "y_mm": 55.65,
+      "net": "COL2_A",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 62.3875,
+      "y_mm": 58.2,
+      "net": "COL2_A",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 79.9014,
+      "y_mm": 56.824,
+      "net": "D2_ROW5_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 76.894512,
+      "y_mm": 57.8,
+      "net": "D2_ROW6_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 80.1111,
+      "y_mm": 53.9375,
+      "net": "D2_ROW7_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 82.2017,
+      "y_mm": 53.356,
+      "net": "D2_ROW7_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 100.0789,
+      "y_mm": 54.5399,
+      "net": "COL4_A",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 79.35,
+      "y_mm": 57.9,
+      "net": "D2_ROW4_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 68.7117,
+      "y_mm": 63.2984,
+      "net": "COL3_A",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 75.5625,
+      "y_mm": 57.3,
+      "net": "D2_ROW2_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 76.3625,
+      "y_mm": 59.6,
+      "net": "D2_ROW2_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 75.5625,
+      "y_mm": 54.8,
+      "net": "D2_ROW2_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 78.9093,
+      "y_mm": 61.3988,
+      "net": "D2_ROW1_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 80.25,
+      "y_mm": 55.75,
+      "net": "D2_ROW1_K",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 109.15,
+      "y_mm": 57.9,
+      "net": "D3_ROW13_K",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 112.8375,
+      "y_mm": 62.45,
+      "net": "D3_ROW14_K",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 114.2375,
+      "y_mm": 51.15,
+      "net": "D3_ROW11_K",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 110.4,
+      "y_mm": 52.8,
+      "net": "D3_ROW11_K",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 109.2,
+      "y_mm": 56.7,
+      "net": "D3_ROW11_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 109.4301,
+      "y_mm": 54.9691,
+      "net": "D3_ROW8_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 118.7768,
+      "y_mm": 56.2088,
+      "net": "D3_ROW8_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 121.1706,
+      "y_mm": 56.187,
+      "net": "D3_ROW8_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 131.45,
+      "y_mm": 55.1687,
+      "net": "D4_ROW5_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 131.8,
+      "y_mm": 54.5,
+      "net": "D4_ROW6_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 135.85,
+      "y_mm": 59.8,
+      "net": "D4_ROW6_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 132.6,
+      "y_mm": 55.1,
+      "net": "D4_ROW7_K",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 130.8858,
+      "y_mm": 54.6551,
+      "net": "D4_ROW4_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 128.9573,
+      "y_mm": 56.3338,
+      "net": "D4_ROW2_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 130.6819,
+      "y_mm": 58.3029,
+      "net": "D4_ROW1_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 138.6834,
+      "y_mm": 58.385,
+      "net": "D4_ROW1_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 60.5,
+      "y_mm": 58.8,
+      "net": "D1_ROW13_K",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 58.8547,
+      "y_mm": 58.589,
+      "net": "D1_ROW14_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 57.9375,
+      "y_mm": 56.75,
+      "net": "D1_ROW11_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 56.6507,
+      "y_mm": 55.9927,
+      "net": "D1_ROW9_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 55.8989,
+      "y_mm": 55.9898,
+      "net": "D1_ROW8_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 105.05,
+      "y_mm": 57.449999,
+      "net": "D3_ROW5_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 103.214,
+      "y_mm": 55.893,
+      "net": "D3_ROW6_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 107.9,
+      "y_mm": 55.2,
+      "net": "D3_ROW7_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 106.85,
+      "y_mm": 56.15,
+      "net": "D3_ROW7_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 110.4,
+      "y_mm": 65.55,
+      "net": "D3_ROW7_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 115.576626,
+      "y_mm": 60.45,
+      "net": "D3_ROW7_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 105.3914,
+      "y_mm": 56.71,
+      "net": "D3_ROW4_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 105.7,
+      "y_mm": 57.9,
+      "net": "D3_ROW4_K",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 112.612602,
+      "y_mm": 59.7,
+      "net": "D3_ROW2_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 105.05,
+      "y_mm": 58.95,
+      "net": "D3_ROW2_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 101.3728,
+      "y_mm": 55.729,
+      "net": "D3_ROW1_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 109.6887,
+      "y_mm": 54.1916,
+      "net": "D3_ROW1_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 84.4565,
+      "y_mm": 56.7224,
+      "net": "D2_ROW12_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 84.5094,
+      "y_mm": 58.5546,
+      "net": "D2_ROW14_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 83.7047,
+      "y_mm": 56.4175,
+      "net": "D2_ROW11_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 82.3549,
+      "y_mm": 55.998,
+      "net": "D2_ROW9_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 81.875,
+      "y_mm": 55.4146,
+      "net": "D2_ROW8_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 54.1987,
+      "y_mm": 56.828,
+      "net": "D1_ROW5_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 54.1296,
+      "y_mm": 56.056,
+      "net": "D1_ROW6_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 53.9897,
+      "y_mm": 55.2849,
+      "net": "D1_ROW7_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 53.4437,
+      "y_mm": 54.7519,
+      "net": "D1_ROW4_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 53.6,
+      "y_mm": 59.449999,
+      "net": "D1_ROW1_K",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 126.5787,
+      "y_mm": 63.5322,
+      "net": "CC1",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 121.425,
+      "y_mm": 64.35,
+      "net": "CC1",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 125.636098,
+      "y_mm": 51.8816,
+      "net": "CC1",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 125.544715,
+      "y_mm": 64.7,
+      "net": "CC1",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 105.0,
+      "y_mm": 55.05,
+      "net": "CC1_ADC",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 104.7,
+      "y_mm": 66.05,
+      "net": "CC1_ADC",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 114.3375,
+      "y_mm": 56.9,
+      "net": "+5V",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 89.0195,
+      "y_mm": 55.3372,
+      "net": "+5V",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 122.025,
+      "y_mm": 60.85,
+      "net": "+5V",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 89.3382,
+      "y_mm": 56.9671,
+      "net": "+5V",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 122.3772,
+      "y_mm": 62.5234,
+      "net": "+5V",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 92.1664,
+      "y_mm": 64.7571,
+      "net": "+5V",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 122.7546,
+      "y_mm": 53.2774,
+      "net": "+5V",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 118.4308,
+      "y_mm": 59.5856,
+      "net": "+5V",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 86.447955,
+      "y_mm": 53.8615,
+      "net": "+5V",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 115.1875,
+      "y_mm": 62.3,
+      "net": "+5V",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 62.5625,
+      "y_mm": 63.3,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 82.45,
+      "y_mm": 58.05,
+      "net": "GND",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 107.4,
+      "y_mm": 58.45,
+      "net": "GND",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 102.787297,
+      "y_mm": 66.1,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 87.011098,
+      "y_mm": 51.95,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 81.85,
+      "y_mm": 58.05,
+      "net": "GND",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 134.175,
+      "y_mm": 61.85,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 118.274982,
+      "y_mm": 53.884701,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 55.55,
+      "y_mm": 58.65,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 64.243441,
+      "y_mm": 53.819996,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 107.0,
+      "y_mm": 58.05,
+      "net": "GND",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 101.214759,
+      "y_mm": 53.807055,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 107.35,
+      "y_mm": 61.4,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 123.015,
+      "y_mm": 51.95,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 82.4,
+      "y_mm": 58.65,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 83.425,
+      "y_mm": 54.3,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 96.321037,
+      "y_mm": 65.880004,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 119.65,
+      "y_mm": 60.7,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 81.6,
+      "y_mm": 61.4,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 55.85,
+      "y_mm": 61.4,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 108.375,
+      "y_mm": 52.7,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 88.6625,
+      "y_mm": 65.320577,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 114.8625,
+      "y_mm": 62.9,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 120.255004,
+      "y_mm": 61.493963,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 132.65,
+      "y_mm": 57.3,
+      "net": "GND",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 102.813273,
+      "y_mm": 58.857055,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 76.2375,
+      "y_mm": 61.0,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 56.1,
+      "y_mm": 59.2,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 89.0625,
+      "y_mm": 64.15,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 92.524982,
+      "y_mm": 63.015299,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 133.1,
+      "y_mm": 59.75,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 115.638792,
+      "y_mm": 58.95,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 128.431187,
+      "y_mm": 59.207107,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 115.045437,
+      "y_mm": 52.730667,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 128.513792,
+      "y_mm": 60.75,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 62.589759,
+      "y_mm": 58.857055,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 133.25,
+      "y_mm": 57.3,
+      "net": "GND",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 56.65,
+      "y_mm": 58.65,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 107.5,
+      "y_mm": 59.05,
+      "net": "GND",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 120.475,
+      "y_mm": 63.515,
+      "net": "GND",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 118.274982,
+      "y_mm": 58.284701,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 122.85,
+      "y_mm": 60.7,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 134.925,
+      "y_mm": 53.0,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 114.7125,
+      "y_mm": 60.55,
+      "net": "GND",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 57.107937,
+      "y_mm": 53.430667,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 83.411122,
+      "y_mm": 63.425,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 102.3875,
+      "y_mm": 62.520577,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 133.55,
+      "y_mm": 56.8,
+      "net": "GND",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 107.688878,
+      "y_mm": 63.425,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 134.975,
+      "y_mm": 65.7,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 115.556187,
+      "y_mm": 56.807107,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 125.946574,
+      "y_mm": 61.941181,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 57.725,
+      "y_mm": 63.0,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 109.175,
+      "y_mm": 66.0,
+      "net": "GND",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 99.56626,
+      "y_mm": 52.9,
+      "net": "DRIVER_EN",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 113.9875,
+      "y_mm": 55.3,
+      "net": "DRIVER_EN",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 87.4625,
+      "y_mm": 65.1672,
+      "net": "DRIVER_EN",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 94.717,
+      "y_mm": 62.0665,
+      "net": "DRIVER_EN",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 102.101,
+      "y_mm": 52.174,
+      "net": "DRIVER_EN",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 112.669715,
+      "y_mm": 58.5,
+      "net": "CT_5V",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 121.6125,
+      "y_mm": 57.05,
+      "net": "CT_5V",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 120.375,
+      "y_mm": 57.85,
+      "net": "VLED_5V",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 117.775,
+      "y_mm": 57.7,
+      "net": "VLED_5V",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 105.123,
+      "y_mm": 54.3034,
+      "net": "VLED_5V",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 78.1973,
+      "y_mm": 53.57,
+      "net": "VLED_5V",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 68.225,
+      "y_mm": 58.2,
+      "net": "VLED_5V",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 69.278,
+      "y_mm": 53.05,
+      "net": "VLED_5V",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 86.805488,
+      "y_mm": 52.75,
+      "net": "VLED_5V",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 53.6704,
+      "y_mm": 60.4296,
+      "net": "LAT",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 127.0295,
+      "y_mm": 57.7191,
+      "net": "LAT",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 105.9,
+      "y_mm": 60.1,
+      "net": "LAT",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 110.2015,
+      "y_mm": 61.9338,
+      "net": "LAT",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 100.976,
+      "y_mm": 57.7865,
+      "net": "LAT",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 94.8377,
+      "y_mm": 52.2943,
+      "net": "LAT",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 79.95,
+      "y_mm": 60.45,
+      "net": "LAT",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 97.265,
+      "y_mm": 51.8664,
+      "net": "LAT",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 61.9375,
+      "y_mm": 57.8,
+      "net": "BLANK",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 62.5543,
+      "y_mm": 61.552,
+      "net": "BLANK",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 100.8141,
+      "y_mm": 61.1794,
+      "net": "BLANK",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 108.75,
+      "y_mm": 61.9,
+      "net": "BLANK",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 135.4388,
+      "y_mm": 61.6305,
+      "net": "BLANK",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 109.6338,
+      "y_mm": 60.5076,
+      "net": "BLANK",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 97.625,
+      "y_mm": 59.2,
+      "net": "BLANK",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 99.886098,
+      "y_mm": 51.8634,
+      "net": "BLANK",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 97.475,
+      "y_mm": 55.15,
+      "net": "BLANK",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 84.0757,
+      "y_mm": 60.4856,
+      "net": "BLANK",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 113.2875,
+      "y_mm": 65.6,
+      "net": "BLANK",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 109.3499,
+      "y_mm": 61.5685,
+      "net": "SERIAL_3_4",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 120.525,
+      "y_mm": 64.85,
+      "net": "SERIAL_3_4",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 132.6,
+      "y_mm": 58.55,
+      "net": "SERIAL_3_4",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 128.315581,
+      "y_mm": 62.6914,
+      "net": "SERIAL_3_4",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 125.717,
+      "y_mm": 62.6914,
+      "net": "SERIAL_3_4",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 55.15,
+      "y_mm": 62.0,
+      "net": "SW_3V3",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 83.2307,
+      "y_mm": 55.1432,
+      "net": "SW_3V3",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 120.475,
+      "y_mm": 60.35,
+      "net": "SW_3V3",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 84.2252,
+      "y_mm": 63.1689,
+      "net": "SW_3V3",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 130.9802,
+      "y_mm": 53.8106,
+      "net": "SW_3V3",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 106.4034,
+      "y_mm": 52.3995,
+      "net": "SW_3V3",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 62.7375,
+      "y_mm": 56.45,
+      "net": "SW_3V3",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 126.7125,
+      "y_mm": 59.55,
+      "net": "SW_3V3",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 54.65,
+      "y_mm": 54.35,
+      "net": "SW_3V3",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 101.5579,
+      "y_mm": 62.0407,
+      "net": "SW_3V3",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 106.35,
+      "y_mm": 61.25,
+      "net": "SERIAL_2_3",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 105.0462,
+      "y_mm": 63.7067,
+      "net": "SERIAL_2_3",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 87.3375,
+      "y_mm": 62.3,
+      "net": "SERIAL_2_3",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 132.1,
+      "y_mm": 58.9,
+      "net": "SCLK",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 94.725,
+      "y_mm": 50.85,
+      "net": "SCLK",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 54.85,
+      "y_mm": 60.55,
+      "net": "SCLK",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 54.4,
+      "y_mm": 66.8,
+      "net": "SCLK",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 80.6,
+      "y_mm": 60.55,
+      "net": "SCLK",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 106.35,
+      "y_mm": 60.55,
+      "net": "SCLK",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 88.1705,
+      "y_mm": 54.3074,
+      "net": "COL4_GATE",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 135.5763,
+      "y_mm": 55.0465,
+      "net": "COL4_GATE",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 92.5924,
+      "y_mm": 54.95,
+      "net": "COL4_GATE",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 119.5003,
+      "y_mm": 55.848,
+      "net": "COL4_GATE",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 73.64766,
+      "y_mm": 58.65,
+      "net": "COL2_GATE",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 132.1,
+      "y_mm": 64.8,
+      "net": "COL2_GATE",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 73.81626,
+      "y_mm": 55.55,
+      "net": "COL2_GATE",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 83.8,
+      "y_mm": 51.9,
+      "net": "COL2_GATE",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 123.675,
+      "y_mm": 61.05,
+      "net": "COL2_GATE",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 67.2656,
+      "y_mm": 58.8281,
+      "net": "COL2_GATE",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 133.5296,
+      "y_mm": 54.216,
+      "net": "COL2_GATE",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 114.3875,
+      "y_mm": 57.5,
+      "net": "COL2_GATE",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 109.65,
+      "y_mm": 52.75,
+      "net": "COL2_GATE",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 131.2,
+      "y_mm": 65.8,
+      "net": "COL2_GATE",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 128.280285,
+      "y_mm": 65.15,
+      "net": "COL2_GATE",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 83.2687,
+      "y_mm": 61.7544,
+      "net": "IREF2",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 81.4,
+      "y_mm": 63.5,
+      "net": "IREF2",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 80.6,
+      "y_mm": 61.5,
+      "net": "SERIAL_1_2",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 57.8756,
+      "y_mm": 61.0756,
+      "net": "SERIAL_1_2",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 81.4,
+      "y_mm": 62.15,
+      "net": "+3V3",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 88.9058,
+      "y_mm": 52.0786,
+      "net": "+3V3",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 114.0375,
+      "y_mm": 59.65,
+      "net": "+3V3",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 66.975,
+      "y_mm": 62.75,
+      "net": "+3V3",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 95.3646,
+      "y_mm": 57.662,
+      "net": "+3V3",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 97.475,
+      "y_mm": 53.45,
+      "net": "+3V3",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 88.1875,
+      "y_mm": 63.25,
+      "net": "+3V3",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 96.2562,
+      "y_mm": 53.2189,
+      "net": "+3V3",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 79.7,
+      "y_mm": 61.7,
+      "net": "+3V3",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 93.1743,
+      "y_mm": 51.8365,
+      "net": "SIN",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 53.95,
+      "y_mm": 61.85,
+      "net": "SIN",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 50.962,
+      "y_mm": 56.6097,
+      "net": "SIN",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 79.6257,
+      "y_mm": 50.8911,
+      "net": "SIN",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 74.136098,
+      "y_mm": 50.85,
+      "net": "BC_DET",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 76.2375,
+      "y_mm": 56.1,
+      "net": "BC_DET",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 74.5875,
+      "y_mm": 61.0,
+      "net": "BC_DET",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 118.139,
+      "y_mm": 51.8383,
+      "net": "VBUS",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 127.7128,
+      "y_mm": 65.8003,
+      "net": "VBUS",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 127.896,
+      "y_mm": 55.3897,
+      "net": "VBUS",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 121.475,
+      "y_mm": 61.965,
+      "net": "USB_DM",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 114.4375,
+      "y_mm": 61.55,
+      "net": "USB_DM",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 130.809999,
+      "y_mm": 50.85,
+      "net": "USB_DM",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 121.475,
+      "y_mm": 63.515,
+      "net": "USB_DM",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 115.0875,
+      "y_mm": 61.05,
+      "net": "USB_DP",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 133.35,
+      "y_mm": 50.85,
+      "net": "USB_DP",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 120.975,
+      "y_mm": 63.915,
+      "net": "USB_DP",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 125.144919,
+      "y_mm": 61.3,
+      "net": "USB_DP",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 120.975,
+      "y_mm": 61.565,
+      "net": "USB_DP",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 118.375,
+      "y_mm": 62.05,
+      "net": "USB_DP",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 122.675,
+      "y_mm": 57.85,
+      "net": "CC2",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 126.4421,
+      "y_mm": 51.8676,
+      "net": "CC2",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 119.3777,
+      "y_mm": 63.8723,
+      "net": "CC2",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 130.95,
+      "y_mm": 65.25,
+      "net": "CC2",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 112.612602,
+      "y_mm": 65.4,
+      "net": "CC2",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 128.280285,
+      "y_mm": 57.25,
+      "net": "CC2",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 134.3512,
+      "y_mm": 51.8305,
+      "net": "COL1_GATE",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 74.8434,
+      "y_mm": 51.8542,
+      "net": "COL1_GATE",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 69.2454,
+      "y_mm": 54.966,
+      "net": "COL1_GATE",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 106.2649,
+      "y_mm": 55.1925,
+      "net": "CC2_ADC",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 110.4393,
+      "y_mm": 64.3408,
+      "net": "CC2_ADC",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 75.4569,
+      "y_mm": 65.5393,
+      "net": "COL3_GATE",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 134.8847,
+      "y_mm": 54.0099,
+      "net": "COL3_GATE",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 106.35,
+      "y_mm": 64.55,
+      "net": "COL5_GATE",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 136.25,
+      "y_mm": 58.65,
+      "net": "COL5_GATE",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 100.8125,
+      "y_mm": 60.5,
+      "net": "COL5_GATE",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 93.8927,
+      "y_mm": 60.3642,
+      "net": "COL5_GATE",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 88.0998,
+      "y_mm": 57.8643,
+      "net": "COL5_GATE",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 130.6,
+      "y_mm": 59.7,
+      "net": "COL5_GATE",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 105.15,
+      "y_mm": 65.65,
+      "net": "COL5_GATE",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 133.2313,
+      "y_mm": 61.7063,
+      "net": "IREF4",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 134.5163,
+      "y_mm": 59.6619,
+      "net": "IREF4",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 110.14,
+      "y_mm": 50.85,
+      "net": "USB_DM_HOST",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 112.9875,
+      "y_mm": 61.55,
+      "net": "USB_DM_HOST",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 113.7875,
+      "y_mm": 61.1,
+      "net": "USB_DP_HOST",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 112.761098,
+      "y_mm": 50.85,
+      "net": "USB_DP_HOST",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 100.5625,
+      "y_mm": 62.45,
+      "net": "BC_AL_N",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 106.95,
+      "y_mm": 64.5,
+      "net": "BC_AL_N",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 112.669715,
+      "y_mm": 60.55,
+      "net": "BC_AL_N",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 76.894512,
+      "y_mm": 51.5,
+      "net": "BC_AL_N",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 92.975,
+      "y_mm": 61.65,
+      "net": "BC_AL_N",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 64.076626,
+      "y_mm": 60.4,
+      "net": "BC_AL_N",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 69.325,
+      "y_mm": 56.95,
+      "net": "BC_AL_N",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 109.25,
+      "y_mm": 62.85,
+      "net": "BC_AL_N",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 102.530285,
+      "y_mm": 64.5,
+      "net": "BC_AL_N",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 115.1951,
+      "y_mm": 51.8015,
+      "net": "CT_INPUT",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 119.4528,
+      "y_mm": 51.8087,
+      "net": "CT_INPUT",
+      "pad_mm": 0.6,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 97.475,
+      "y_mm": 64.65,
+      "net": "BC_DET_5V",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 80.6,
+      "y_mm": 64.8,
+      "net": "BC_DET_5V",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 114.0375,
+      "y_mm": 62.55,
+      "net": "BC_DET_5V",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 95.975,
+      "y_mm": 65.3,
+      "net": "BC_DET_5V",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 109.05,
+      "y_mm": 52.85,
+      "net": "BC_DET_5V",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    },
+    {
+      "x_mm": 100.7625,
+      "y_mm": 54.45,
+      "net": "BC_DET_5V",
+      "pad_mm": 0.45,
+      "drill_mm": 0.3,
+      "filled": true,
+      "capped": true,
+      "filling_mode": 1,
+      "capping_mode": 1
+    }
+  ],
+  "drill_hole_edge_clearances": {
+    "via_to_LED_PTH": {
+      "required_edge_gap_mm": 0.45,
+      "minimum_edge_gap_mm": 0.4825894882179487,
+      "closest_pair": {
+        "a": {
+          "x": 130600000,
+          "y": 59700000,
+          "drill": 300000,
+          "net": "COL5_GATE"
+        },
+        "b": {
+          "x": 129540000,
+          "y": 59920000,
+          "drill": 900000,
+          "ref": "DS7",
+          "pad": "4",
+          "net": "D4_ROW5_K"
+        }
+      },
+      "coordinate_units_per_mm": 1000000,
+      "violation_count": 0,
+      "violations": [],
+      "all_nets_including_same_net": true
+    },
+    "via_to_via": {
+      "required_edge_gap_mm": 0.25,
+      "minimum_edge_gap_mm": 0.2656854249492381,
+      "closest_pair": {
+        "a": {
+          "x": 107400000,
+          "y": 58450000,
+          "drill": 300000,
+          "net": "GND"
+        },
+        "b": {
+          "x": 107000000,
+          "y": 58050000,
+          "drill": 300000,
+          "net": "GND"
+        }
+      },
+      "coordinate_units_per_mm": 1000000,
+      "violation_count": 0,
+      "violations": [],
+      "all_nets_including_same_net": true
+    }
+  },
+  "track_width_counts": {
+    "0.110000": 1814,
+    "0.112400": 131,
+    "0.150000": 1972,
+    "0.240000": 52,
+    "0.262400": 6,
+    "0.350000": 217,
+    "0.500000": 2
+  },
+  "power_anode_track_width_counts": {
+    "0.150000": 931,
+    "0.240000": 52,
+    "0.262400": 6,
+    "0.350000": 217,
+    "0.500000": 2
+  },
+  "ground_references": {
+    "In2.Cu": {
+      "ground_zones": 1,
+      "filled_area_mm2": 1159.658556,
+      "connected_fill_outlines": 1
+    },
+    "In4.Cu": {
+      "ground_zones": 1,
+      "filled_area_mm2": 1163.754624,
+      "connected_fill_outlines": 1
+    }
+  },
+  "project_exclusions": [],
+  "quiet_CT_In2_exception": {
+    "net": "CT_5V",
+    "layer": "In2.Cu",
+    "used": true,
+    "maximum_total_track_length_mm": 12.0,
+    "actual_total_track_length_mm": 9.856275177872403,
+    "track_count": 22,
+    "tracks": [
+      {
+        "length_mm": 0.025,
+        "start_mm": [
+          118.55,
+          58.725
+        ],
+        "end_mm": [
+          118.575,
+          58.725
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 0.11386184717015617,
+        "start_mm": [
+          112.669715,
+          58.5
+        ],
+        "end_mm": [
+          112.755386,
+          58.425
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 0.05,
+        "start_mm": [
+          118.075,
+          58.775
+        ],
+        "end_mm": [
+          118.125,
+          58.775
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 0.03535533905932738,
+        "start_mm": [
+          118.05,
+          58.75
+        ],
+        "end_mm": [
+          118.075,
+          58.775
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 1.71,
+        "start_mm": [
+          115.965,
+          58.425
+        ],
+        "end_mm": [
+          117.675,
+          58.425
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 0.025,
+        "start_mm": [
+          118.5,
+          58.75
+        ],
+        "end_mm": [
+          118.525,
+          58.75
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 0.05,
+        "start_mm": [
+          118.425,
+          58.775
+        ],
+        "end_mm": [
+          118.475,
+          58.775
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 0.025,
+        "start_mm": [
+          117.975,
+          58.725
+        ],
+        "end_mm": [
+          118.0,
+          58.725
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 0.7025,
+        "start_mm": [
+          115.2625,
+          58.425
+        ],
+        "end_mm": [
+          115.965,
+          58.425
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 0.03535533905932738,
+        "start_mm": [
+          118.4,
+          58.8
+        ],
+        "end_mm": [
+          118.425,
+          58.775
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 0.03535533905932738,
+        "start_mm": [
+          118.0,
+          58.725
+        ],
+        "end_mm": [
+          118.025,
+          58.75
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 0.03535533905932738,
+        "start_mm": [
+          118.125,
+          58.775
+        ],
+        "end_mm": [
+          118.15,
+          58.8
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 0.025,
+        "start_mm": [
+          118.025,
+          58.75
+        ],
+        "end_mm": [
+          118.05,
+          58.75
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 1.375,
+        "start_mm": [
+          120.225,
+          57.075
+        ],
+        "end_mm": [
+          121.6,
+          57.075
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 0.02795084971874737,
+        "start_mm": [
+          121.6,
+          57.075
+        ],
+        "end_mm": [
+          121.6125,
+          57.05
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 0.057114,
+        "start_mm": [
+          112.755386,
+          58.425
+        ],
+        "end_mm": [
+          112.8125,
+          58.425
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 2.45,
+        "start_mm": [
+          112.8125,
+          58.425
+        ],
+        "end_mm": [
+          115.2625,
+          58.425
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 0.03535533905932738,
+        "start_mm": [
+          118.475,
+          58.775
+        ],
+        "end_mm": [
+          118.5,
+          58.75
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 0.03535533905932738,
+        "start_mm": [
+          118.525,
+          58.75
+        ],
+        "end_mm": [
+          118.55,
+          58.725
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 0.42426406871192857,
+        "start_mm": [
+          117.675,
+          58.425
+        ],
+        "end_mm": [
+          117.975,
+          58.725
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 0.25,
+        "start_mm": [
+          118.15,
+          58.8
+        ],
+        "end_mm": [
+          118.4,
+          58.8
+        ],
+        "width_mm": 0.11
+      },
+      {
+        "length_mm": 2.3334523779156067,
+        "start_mm": [
+          118.575,
+          58.725
+        ],
+        "end_mm": [
+          120.225,
+          57.075
+        ],
+        "width_mm": 0.11
+      }
+    ],
+    "reason": "Quiet load-switch timing-capacitor connection only; four signal-layer escape was closed. No USB, clocks or other signal exception.",
+    "In4_remains_GND_only": true
+  },
+  "serialized_native_default_ignored_checks": [
+    {
+      "path": "/board/design_settings/rule_severities/footprint_filters_mismatch",
+      "value": "ignore"
+    },
+    {
+      "path": "/board/design_settings/rule_severities/footprint_type_mismatch",
+      "value": "ignore"
+    },
+    {
+      "path": "/board/design_settings/rule_severities/missing_courtyard",
+      "value": "ignore"
+    },
+    {
+      "path": "/board/design_settings/rule_severities/track_not_centered_on_via",
+      "value": "ignore"
+    },
+    {
+      "path": "/board/design_settings/rule_severities/tuning_profile_track_geometries",
+      "value": "ignore"
+    }
+  ],
+  "native_default_severity_evidence": {
+    "native_version": "10.0.7",
+    "verified_default_ignored_checks": [
+      "footprint_filters_mismatch",
+      "footprint_type_mismatch",
+      "missing_courtyard",
+      "track_not_centered_on_via",
+      "tuning_profile_track_geometries"
+    ],
+    "evidence_path": "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/reports/kicad-default-severity-audit.json",
+    "evidence_sha256": "bae6f9f4f0a182aadfb23875d6c66fd767ef235a0ab6957a907660e81411041e"
+  },
+  "inventory": {
+    "C1": {
+      "Value": "100n 50V X7R",
+      "MPN": "CC0603KRX7R9BB104",
+      "LCSC": "C14663",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 56.1,
+      "PCB_Y_mm": 54.3,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 5.325,
+      "Pad1_native_relative_Y_mm": 4.3
+    },
+    "C2": {
+      "Value": "100n 50V X7R",
+      "MPN": "CC0603KRX7R9BB104",
+      "LCSC": "C14663",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 81.85,
+      "PCB_Y_mm": 54.3,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 31.075,
+      "Pad1_native_relative_Y_mm": 4.3
+    },
+    "C3": {
+      "Value": "100n 50V X7R",
+      "MPN": "CC0603KRX7R9BB104",
+      "LCSC": "C14663",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 107.6,
+      "PCB_Y_mm": 54.3,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 56.825,
+      "Pad1_native_relative_Y_mm": 4.3
+    },
+    "C4": {
+      "Value": "100n 50V X7R",
+      "MPN": "CC0603KRX7R9BB104",
+      "LCSC": "C14663",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 133.35,
+      "PCB_Y_mm": 53.0,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 82.575,
+      "Pad1_native_relative_Y_mm": 3.0
+    },
+    "C5": {
+      "Value": "1u 50V X5R",
+      "MPN": "CL10A105KB8NNNC",
+      "LCSC": "C15849",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 88.2875,
+      "PCB_Y_mm": 63.3,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 37.5125,
+      "Pad1_native_relative_Y_mm": 13.3
+    },
+    "C6": {
+      "Value": "1u 50V X5R",
+      "MPN": "CL10A105KB8NNNC",
+      "LCSC": "C15849",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 114.0375,
+      "PCB_Y_mm": 56.1,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 63.2625,
+      "Pad1_native_relative_Y_mm": 6.1
+    },
+    "C7": {
+      "Value": "1u 50V X5R",
+      "MPN": "CL10A105KB8NNNC",
+      "LCSC": "C15849",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 101.1625,
+      "PCB_Y_mm": 63.3,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 50.3875,
+      "Pad1_native_relative_Y_mm": 13.3
+    },
+    "C8": {
+      "Value": "4u7 16V X5R",
+      "MPN": "CL10A475KO8NNNC",
+      "LCSC": "C19666",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 126.9125,
+      "PCB_Y_mm": 60.3,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 76.1375,
+      "Pad1_native_relative_Y_mm": 10.3
+    },
+    "C9": {
+      "Value": "1n 50V X7R",
+      "MPN": "CL10B102KB8NNNC",
+      "LCSC": "C1588",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 94.725,
+      "PCB_Y_mm": 66.1,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 43.95,
+      "Pad1_native_relative_Y_mm": 16.1
+    },
+    "C10": {
+      "Value": "1n 50V X7R",
+      "MPN": "CL10B102KB8NNNC",
+      "LCSC": "C1588",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 114.0375,
+      "PCB_Y_mm": 58.5,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 63.2625,
+      "Pad1_native_relative_Y_mm": 8.5
+    },
+    "C11": {
+      "Value": "10n 50V X7R",
+      "MPN": "0603B103K500NT",
+      "LCSC": "C57112",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 101.1625,
+      "PCB_Y_mm": 66.1,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 50.3875,
+      "Pad1_native_relative_Y_mm": 16.1
+    },
+    "C12": {
+      "Value": "10n 50V X7R",
+      "MPN": "0603B103K500NT",
+      "LCSC": "C57112",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 107.6,
+      "PCB_Y_mm": 66.0,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 56.825,
+      "Pad1_native_relative_Y_mm": 16.0
+    },
+    "C13": {
+      "Value": "1n 50V X7R",
+      "MPN": "CL10B102KB8NNNC",
+      "LCSC": "C1588",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 114.0375,
+      "PCB_Y_mm": 53.6,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 63.2625,
+      "Pad1_native_relative_Y_mm": 3.6
+    },
+    "C14": {
+      "Value": "1u 50V X5R",
+      "MPN": "CL10A105KB8NNNC",
+      "LCSC": "C15849",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 126.9125,
+      "PCB_Y_mm": 58.5,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 76.1375,
+      "Pad1_native_relative_Y_mm": 8.5
+    },
+    "C15": {
+      "Value": "100n 50V X7R",
+      "MPN": "CC0603KRX7R9BB104",
+      "LCSC": "C14663",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 118.875,
+      "PCB_Y_mm": 60.7,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 68.1,
+      "Pad1_native_relative_Y_mm": 10.7
+    },
+    "C16": {
+      "Value": "1u 50V X5R",
+      "MPN": "CL10A105KB8NNNC",
+      "LCSC": "C15849",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 122.075,
+      "PCB_Y_mm": 60.7,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 71.3,
+      "Pad1_native_relative_Y_mm": 10.7
+    },
+    "D1": {
+      "Value": "SMF5.0A",
+      "MPN": "SMF5.0A",
+      "LCSC": "C151296",
+      "Footprint": "Diode_SMD:D_SOD-123F",
+      "Side": "bottom",
+      "PCB_X_mm": 126.9125,
+      "PCB_Y_mm": 63.6,
+      "PCB_angle_deg": 90.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 76.9125,
+      "Pad1_native_relative_Y_mm": 15.0
+    },
+    "DS1": {
+      "Value": "LMD07057AUE-101B",
+      "MPN": "LMD07057AUE-101B",
+      "LCSC": "",
+      "Footprint": "HouseRules:LMD07057AUE-101B",
+      "Side": "top",
+      "PCB_X_mm": 56.1,
+      "PCB_Y_mm": 58.65,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 2.29,
+      "Pad1_native_relative_Y_mm": 2.3
+    },
+    "DS2": {
+      "Value": "LMD07057AUE-101B",
+      "MPN": "LMD07057AUE-101B",
+      "LCSC": "",
+      "Footprint": "HouseRules:LMD07057AUE-101B",
+      "Side": "top",
+      "PCB_X_mm": 68.975,
+      "PCB_Y_mm": 58.65,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 15.165,
+      "Pad1_native_relative_Y_mm": 2.3
+    },
+    "DS3": {
+      "Value": "LMD07057AUE-101B",
+      "MPN": "LMD07057AUE-101B",
+      "LCSC": "",
+      "Footprint": "HouseRules:LMD07057AUE-101B",
+      "Side": "top",
+      "PCB_X_mm": 81.85,
+      "PCB_Y_mm": 58.65,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 28.04,
+      "Pad1_native_relative_Y_mm": 2.3
+    },
+    "DS4": {
+      "Value": "LMD07057AUE-101B",
+      "MPN": "LMD07057AUE-101B",
+      "LCSC": "",
+      "Footprint": "HouseRules:LMD07057AUE-101B",
+      "Side": "top",
+      "PCB_X_mm": 94.725,
+      "PCB_Y_mm": 58.65,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 40.915,
+      "Pad1_native_relative_Y_mm": 2.3
+    },
+    "DS5": {
+      "Value": "LMD07057AUE-101B",
+      "MPN": "LMD07057AUE-101B",
+      "LCSC": "",
+      "Footprint": "HouseRules:LMD07057AUE-101B",
+      "Side": "top",
+      "PCB_X_mm": 107.6,
+      "PCB_Y_mm": 58.65,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 53.79,
+      "Pad1_native_relative_Y_mm": 2.3
+    },
+    "DS6": {
+      "Value": "LMD07057AUE-101B",
+      "MPN": "LMD07057AUE-101B",
+      "LCSC": "",
+      "Footprint": "HouseRules:LMD07057AUE-101B",
+      "Side": "top",
+      "PCB_X_mm": 120.475,
+      "PCB_Y_mm": 58.65,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 66.665,
+      "Pad1_native_relative_Y_mm": 2.3
+    },
+    "DS7": {
+      "Value": "LMD07057AUE-101B",
+      "MPN": "LMD07057AUE-101B",
+      "LCSC": "",
+      "Footprint": "HouseRules:LMD07057AUE-101B",
+      "Side": "top",
+      "PCB_X_mm": 133.35,
+      "PCB_Y_mm": 58.65,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 79.54,
+      "Pad1_native_relative_Y_mm": 2.3
+    },
+    "F1": {
+      "Value": "750mA PPTC",
+      "MPN": "SMD1206B075TF/16",
+      "LCSC": "C269118",
+      "Footprint": "Fuse:Fuse_1206_3216Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 126.9125,
+      "PCB_Y_mm": 55.0,
+      "PCB_angle_deg": 90.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 76.9125,
+      "Pad1_native_relative_Y_mm": 6.4
+    },
+    "J1": {
+      "Value": "+5V",
+      "MPN": "+5V",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 84.39,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 34.39,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J2": {
+      "Value": "GND",
+      "MPN": "GND",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 87.011098,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 37.011098,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J3": {
+      "Value": "+3V3",
+      "MPN": "+3V3",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 89.563902,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 39.563902,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J4": {
+      "Value": "SIN",
+      "MPN": "SIN",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 92.185,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 42.185,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J5": {
+      "Value": "SCLK",
+      "MPN": "SCLK",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 94.725,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 44.725,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J6": {
+      "Value": "LAT",
+      "MPN": "LAT",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 97.265,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 47.265,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J7": {
+      "Value": "BLANK",
+      "MPN": "BLANK",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 99.886098,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 49.886098,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J8": {
+      "Value": "DRIVER_EN",
+      "MPN": "DRIVER_EN",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 102.438902,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 52.438902,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J9": {
+      "Value": "CC1_ADC",
+      "MPN": "CC1_ADC",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 105.06,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 55.06,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J10": {
+      "Value": "CC2_ADC",
+      "MPN": "CC2_ADC",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 107.6,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 57.6,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J11": {
+      "Value": "USB_DM_HOST",
+      "MPN": "USB_DM_HOST",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 110.14,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 60.14,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J12": {
+      "Value": "USB_DP_HOST",
+      "MPN": "USB_DP_HOST",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 112.761098,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 62.761098,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J13": {
+      "Value": "VBUS",
+      "MPN": "VBUS",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 120.475,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 70.475,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J14": {
+      "Value": "GND",
+      "MPN": "GND",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 123.015,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 73.015,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J15": {
+      "Value": "CC1",
+      "MPN": "CC1",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 125.636098,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 75.636098,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J16": {
+      "Value": "CC2",
+      "MPN": "CC2",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 128.188902,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 78.188902,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J17": {
+      "Value": "USB_DM",
+      "MPN": "USB_DM",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 130.81,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 80.81,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J18": {
+      "Value": "USB_DP",
+      "MPN": "USB_DP",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 133.35,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 83.35,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J19": {
+      "Value": "BC_DET",
+      "MPN": "BC_DET",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 74.136098,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 24.136098,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "J20": {
+      "Value": "BC_AL_N",
+      "MPN": "BC_AL_N",
+      "LCSC": "",
+      "Footprint": "HouseRules:WirePad_B2",
+      "Side": "bottom",
+      "PCB_X_mm": 76.688902,
+      "PCB_Y_mm": 50.85,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "owner",
+      "Pad1_native_relative_X_mm": 26.688902,
+      "Pad1_native_relative_Y_mm": 0.85
+    },
+    "Q1": {
+      "Value": "AO3401A",
+      "MPN": "AO3401A",
+      "LCSC": "C15127",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Side": "bottom",
+      "PCB_X_mm": 68.975,
+      "PCB_Y_mm": 54.0,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 18.0375,
+      "Pad1_native_relative_Y_mm": 4.95
+    },
+    "Q2": {
+      "Value": "AO3401A",
+      "MPN": "AO3401A",
+      "LCSC": "C15127",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Side": "bottom",
+      "PCB_X_mm": 68.975,
+      "PCB_Y_mm": 58.65,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 18.0375,
+      "Pad1_native_relative_Y_mm": 9.6
+    },
+    "Q3": {
+      "Value": "AO3401A",
+      "MPN": "AO3401A",
+      "LCSC": "C15127",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Side": "bottom",
+      "PCB_X_mm": 68.975,
+      "PCB_Y_mm": 63.3,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 18.0375,
+      "Pad1_native_relative_Y_mm": 14.25
+    },
+    "Q4": {
+      "Value": "AO3401A",
+      "MPN": "AO3401A",
+      "LCSC": "C15127",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Side": "bottom",
+      "PCB_X_mm": 94.725,
+      "PCB_Y_mm": 54.0,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 43.7875,
+      "Pad1_native_relative_Y_mm": 4.95
+    },
+    "Q5": {
+      "Value": "AO3401A",
+      "MPN": "AO3401A",
+      "LCSC": "C15127",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Side": "bottom",
+      "PCB_X_mm": 94.725,
+      "PCB_Y_mm": 58.65,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 43.7875,
+      "Pad1_native_relative_Y_mm": 9.6
+    },
+    "R1": {
+      "Value": "7k15 1%",
+      "MPN": "0603WAF7151T5E",
+      "LCSC": "C25980",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 56.1,
+      "PCB_Y_mm": 63.0,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 5.275,
+      "Pad1_native_relative_Y_mm": 13.0
+    },
+    "R2": {
+      "Value": "7k15 1%",
+      "MPN": "0603WAF7151T5E",
+      "LCSC": "C25980",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 81.85,
+      "PCB_Y_mm": 63.0,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 31.025,
+      "Pad1_native_relative_Y_mm": 13.0
+    },
+    "R3": {
+      "Value": "7k15 1%",
+      "MPN": "0603WAF7151T5E",
+      "LCSC": "C25980",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 107.6,
+      "PCB_Y_mm": 63.0,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 56.775,
+      "Pad1_native_relative_Y_mm": 13.0
+    },
+    "R4": {
+      "Value": "7k15 1%",
+      "MPN": "0603WAF7151T5E",
+      "LCSC": "C25980",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 133.35,
+      "PCB_Y_mm": 61.0,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 82.525,
+      "Pad1_native_relative_Y_mm": 11.0
+    },
+    "R5": {
+      "Value": "4k7 1%",
+      "MPN": "0603WAF4701T5E",
+      "LCSC": "C23162",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 75.4125,
+      "PCB_Y_mm": 53.6,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 24.5875,
+      "Pad1_native_relative_Y_mm": 3.6
+    },
+    "R6": {
+      "Value": "4k7 1%",
+      "MPN": "0603WAF4701T5E",
+      "LCSC": "C23162",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 75.4125,
+      "PCB_Y_mm": 58.65,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 24.5875,
+      "Pad1_native_relative_Y_mm": 8.65
+    },
+    "R7": {
+      "Value": "4k7 1%",
+      "MPN": "0603WAF4701T5E",
+      "LCSC": "C23162",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 75.4125,
+      "PCB_Y_mm": 63.3,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 24.5875,
+      "Pad1_native_relative_Y_mm": 13.3
+    },
+    "R8": {
+      "Value": "4k7 1%",
+      "MPN": "0603WAF4701T5E",
+      "LCSC": "C23162",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 88.2875,
+      "PCB_Y_mm": 53.6,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 37.4625,
+      "Pad1_native_relative_Y_mm": 3.6
+    },
+    "R9": {
+      "Value": "4k7 1%",
+      "MPN": "0603WAF4701T5E",
+      "LCSC": "C23162",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 88.2875,
+      "PCB_Y_mm": 58.65,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 37.4625,
+      "Pad1_native_relative_Y_mm": 8.65
+    },
+    "R10": {
+      "Value": "10k 1%",
+      "MPN": "0603WAF1002T5E",
+      "LCSC": "C25804",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 62.5375,
+      "PCB_Y_mm": 53.6,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 11.7125,
+      "Pad1_native_relative_Y_mm": 3.6
+    },
+    "R11": {
+      "Value": "10k 1%",
+      "MPN": "0603WAF1002T5E",
+      "LCSC": "C25804",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 62.5375,
+      "PCB_Y_mm": 58.65,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 11.7125,
+      "Pad1_native_relative_Y_mm": 8.65
+    },
+    "R12": {
+      "Value": "10k 1%",
+      "MPN": "0603WAF1002T5E",
+      "LCSC": "C25804",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 62.5375,
+      "PCB_Y_mm": 63.3,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 11.7125,
+      "Pad1_native_relative_Y_mm": 13.3
+    },
+    "R13": {
+      "Value": "10k 1%",
+      "MPN": "0603WAF1002T5E",
+      "LCSC": "C25804",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 101.1625,
+      "PCB_Y_mm": 53.6,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 50.3375,
+      "Pad1_native_relative_Y_mm": 3.6
+    },
+    "R14": {
+      "Value": "10k 1%",
+      "MPN": "0603WAF1002T5E",
+      "LCSC": "C25804",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 101.1625,
+      "PCB_Y_mm": 58.65,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 50.3375,
+      "Pad1_native_relative_Y_mm": 8.65
+    },
+    "R15": {
+      "Value": "4k7 1%",
+      "MPN": "0603WAF4701T5E",
+      "LCSC": "C23162",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 62.5375,
+      "PCB_Y_mm": 56.1,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 11.7125,
+      "Pad1_native_relative_Y_mm": 6.1
+    },
+    "R16": {
+      "Value": "100k 1%",
+      "MPN": "0603WAF1003T5E",
+      "LCSC": "C25803",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 88.2875,
+      "PCB_Y_mm": 66.1,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 37.4625,
+      "Pad1_native_relative_Y_mm": 16.1
+    },
+    "R17": {
+      "Value": "47k 1%",
+      "MPN": "0603WAF4702T5E",
+      "LCSC": "C25819",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 133.35,
+      "PCB_Y_mm": 63.4,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 82.525,
+      "Pad1_native_relative_Y_mm": 13.4
+    },
+    "R18": {
+      "Value": "47k 1%",
+      "MPN": "0603WAF4702T5E",
+      "LCSC": "C25819",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 133.35,
+      "PCB_Y_mm": 65.7,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 82.525,
+      "Pad1_native_relative_Y_mm": 15.7
+    },
+    "R19": {
+      "Value": "47k 1%",
+      "MPN": "0603WAF4702T5E",
+      "LCSC": "C25819",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 120.475,
+      "PCB_Y_mm": 65.3,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 69.65,
+      "Pad1_native_relative_Y_mm": 15.3
+    },
+    "R20": {
+      "Value": "47k 1%",
+      "MPN": "0603WAF4702T5E",
+      "LCSC": "C25819",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 114.0375,
+      "PCB_Y_mm": 64.0,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 63.2125,
+      "Pad1_native_relative_Y_mm": 14.0
+    },
+    "R21": {
+      "Value": "10k 1%",
+      "MPN": "0603WAF1002T5E",
+      "LCSC": "C25804",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 75.4125,
+      "PCB_Y_mm": 56.1,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 24.5875,
+      "Pad1_native_relative_Y_mm": 6.1
+    },
+    "R22": {
+      "Value": "15k 1%",
+      "MPN": "0603WAF1502T5E",
+      "LCSC": "C22809",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 75.4125,
+      "PCB_Y_mm": 61.0,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 24.5875,
+      "Pad1_native_relative_Y_mm": 11.0
+    },
+    "R23": {
+      "Value": "10k 1%",
+      "MPN": "0603WAF1002T5E",
+      "LCSC": "C25804",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Side": "bottom",
+      "PCB_X_mm": 62.5375,
+      "PCB_Y_mm": 61.0,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 11.7125,
+      "Pad1_native_relative_Y_mm": 11.0
+    },
+    "U1": {
+      "Value": "TLC59283RGER",
+      "MPN": "TLC59283RGER",
+      "LCSC": "C485815",
+      "Footprint": "TI:RGE0024C",
+      "Side": "bottom",
+      "PCB_X_mm": 56.1,
+      "PCB_Y_mm": 58.65,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 4.2,
+      "Pad1_native_relative_Y_mm": 9.9
+    },
+    "U2": {
+      "Value": "TLC59283RGER",
+      "MPN": "TLC59283RGER",
+      "LCSC": "C485815",
+      "Footprint": "TI:RGE0024C",
+      "Side": "bottom",
+      "PCB_X_mm": 81.85,
+      "PCB_Y_mm": 58.65,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 29.95,
+      "Pad1_native_relative_Y_mm": 9.9
+    },
+    "U3": {
+      "Value": "TLC59283RGER",
+      "MPN": "TLC59283RGER",
+      "LCSC": "C485815",
+      "Footprint": "TI:RGE0024C",
+      "Side": "bottom",
+      "PCB_X_mm": 107.6,
+      "PCB_Y_mm": 58.65,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 55.7,
+      "Pad1_native_relative_Y_mm": 9.9
+    },
+    "U4": {
+      "Value": "TLC59283RGER",
+      "MPN": "TLC59283RGER",
+      "LCSC": "C485815",
+      "Footprint": "TI:RGE0024C",
+      "Side": "bottom",
+      "PCB_X_mm": 133.35,
+      "PCB_Y_mm": 57.0,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 81.45,
+      "Pad1_native_relative_Y_mm": 8.25
+    },
+    "U5": {
+      "Value": "TPS22918DBVR",
+      "MPN": "TPS22918DBVR",
+      "LCSC": "C131941",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "Side": "bottom",
+      "PCB_X_mm": 94.725,
+      "PCB_Y_mm": 63.3,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 43.5875,
+      "Pad1_native_relative_Y_mm": 14.25
+    },
+    "U6": {
+      "Value": "TPS22918DBVR",
+      "MPN": "TPS22918DBVR",
+      "LCSC": "C131941",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "Side": "bottom",
+      "PCB_X_mm": 120.475,
+      "PCB_Y_mm": 58.0,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 69.3375,
+      "Pad1_native_relative_Y_mm": 8.95
+    },
+    "U7": {
+      "Value": "TPD4E05U06DQAR",
+      "MPN": "TPD4E05U06DQAR",
+      "LCSC": "C138714",
+      "Footprint": "Package_SON:USON-10_2.5x1.0mm_P0.5mm",
+      "Side": "bottom",
+      "PCB_X_mm": 120.475,
+      "PCB_Y_mm": 62.7,
+      "PCB_angle_deg": 90.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 71.475,
+      "Pad1_native_relative_Y_mm": 13.085
+    },
+    "U8": {
+      "Value": "TPS22918DBVR",
+      "MPN": "TPS22918DBVR",
+      "LCSC": "C131941",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "Side": "bottom",
+      "PCB_X_mm": 120.475,
+      "PCB_Y_mm": 53.6,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 69.3375,
+      "Pad1_native_relative_Y_mm": 4.55
+    },
+    "U9": {
+      "Value": "BQ24392RSER",
+      "MPN": "BQ24392RSER",
+      "LCSC": "C128408",
+      "Footprint": "Package_DFN_QFN:Texas_UQFN-10_1.5x2mm_P0.5mm",
+      "Side": "bottom",
+      "PCB_X_mm": 114.0375,
+      "PCB_Y_mm": 61.3,
+      "PCB_angle_deg": 0.0,
+      "Assembly": "factory",
+      "Pad1_native_relative_X_mm": 63.3625,
+      "Pad1_native_relative_Y_mm": 12.05
+    }
+  },
+  "scope": "Native represented identity/pins/geometry/process flags only. Does not certify analog behavior, actual fabrication, USB compliance or assembly rotations. Fresh native DRC/parity is additionally required."
+}

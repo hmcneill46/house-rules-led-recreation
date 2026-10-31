@@ -1,6 +1,7 @@
 {
   "revision": "B2",
-  "status": "engineering prototype; not released for manufacture",
+  "hardware_variant": "F-12p875-TLC59283-7p15k",
+  "status": "engineering prototype; case trial, factory review and powered acceptance pending; no order",
   "boards": {
     "main": {
       "width": 89.45,
@@ -50,6 +51,7 @@
   "driver_package": "RGER",
   "driver_package_options": {
     "DBQR": {
+      "status": "Historical rejected TLC59282 package study, not a substitution",
       "mpn": "TLC59282DBQR",
       "lcsc": "C129352",
       "footprint": "Package_SO:SSOP-24_3.9x8.7mm_P0.635mm",
@@ -83,8 +85,8 @@
       ]
     },
     "RGER": {
-      "mpn": "TLC59282RGER",
-      "lcsc": "C702074",
+      "mpn": "TLC59283RGER",
+      "lcsc": "C485815",
       "footprint": "TI:RGE0024C",
       "signals": {
         "LAT": 1,
@@ -116,6 +118,18 @@
         17
       ]
     }
+  },
+  "driver_identity": {
+    "mpn": "TLC59283RGER",
+    "lcsc": "C485815",
+    "current_resistor_ohm": 7150,
+    "current_resistor_mpn": "0603WAF7151T5E",
+    "current_resistor_lcsc": "C25980",
+    "nominal_current_equation": "1.208 V * 43.8 / RIREF_ohm",
+    "output_precharge": true,
+    "current_reference_V": 1.208,
+    "current_gain": 43.8,
+    "qualification": "BLANK enables precharge; powered-off leakage/rail transients and actual optical/current/thermal behaviour require measurements"
   },
   "parts": [
     {
@@ -338,7 +352,7 @@
     {
       "board": "main",
       "ref": "U1",
-      "value": "TLC59282RGER",
+      "value": "TLC59283RGER",
       "footprint": "TI:RGE0024C",
       "pins": {
         "1": "LAT",
@@ -371,10 +385,10 @@
       "y": 0,
       "angle": 0,
       "side": "B",
-      "mpn": "TLC59282RGER",
-      "lcsc": "C702074",
-      "datasheet": "https://www.ti.com/lit/ds/symlink/tlc59282.pdf",
-      "role": "16-bit current sinks; U4 OUT7..11 also sink PMOS gate current",
+      "mpn": "TLC59283RGER",
+      "lcsc": "C485815",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tlc59283.pdf",
+      "role": "16-bit current sinks with precharge; U4 OUT7..11 also sink PMOS gate current",
       "pin_names": {
         "1": "LAT",
         "18": "BLANK",
@@ -434,7 +448,7 @@
     {
       "board": "main",
       "ref": "R1",
-      "value": "6k8 1%",
+      "value": "7k15 1%",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "pins": {
         "1": "IREF1",
@@ -444,10 +458,10 @@
       "y": 0,
       "angle": 0,
       "side": "B",
-      "mpn": "0603WAF6801T5E",
-      "lcsc": "C23212",
+      "mpn": "0603WAF7151T5E",
+      "lcsc": "C25980",
       "datasheet": "",
-      "role": "Sets 7.42493mA nominal peak; Basic resistor avoids Extended setup fee",
+      "role": "Sets 7.40006mA nominal peak for TLC59283; Extended resistor setup included in quote",
       "pin_names": {},
       "types": {},
       "assembly": "factory"
@@ -476,7 +490,7 @@
     {
       "board": "main",
       "ref": "U2",
-      "value": "TLC59282RGER",
+      "value": "TLC59283RGER",
       "footprint": "TI:RGE0024C",
       "pins": {
         "1": "LAT",
@@ -509,10 +523,10 @@
       "y": 0,
       "angle": 0,
       "side": "B",
-      "mpn": "TLC59282RGER",
-      "lcsc": "C702074",
-      "datasheet": "https://www.ti.com/lit/ds/symlink/tlc59282.pdf",
-      "role": "16-bit current sinks; U4 OUT7..11 also sink PMOS gate current",
+      "mpn": "TLC59283RGER",
+      "lcsc": "C485815",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tlc59283.pdf",
+      "role": "16-bit current sinks with precharge; U4 OUT7..11 also sink PMOS gate current",
       "pin_names": {
         "1": "LAT",
         "18": "BLANK",
@@ -572,7 +586,7 @@
     {
       "board": "main",
       "ref": "R2",
-      "value": "6k8 1%",
+      "value": "7k15 1%",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "pins": {
         "1": "IREF2",
@@ -582,10 +596,10 @@
       "y": 0,
       "angle": 0,
       "side": "B",
-      "mpn": "0603WAF6801T5E",
-      "lcsc": "C23212",
+      "mpn": "0603WAF7151T5E",
+      "lcsc": "C25980",
       "datasheet": "",
-      "role": "Sets 7.42493mA nominal peak; Basic resistor avoids Extended setup fee",
+      "role": "Sets 7.40006mA nominal peak for TLC59283; Extended resistor setup included in quote",
       "pin_names": {},
       "types": {},
       "assembly": "factory"
@@ -614,7 +628,7 @@
     {
       "board": "main",
       "ref": "U3",
-      "value": "TLC59282RGER",
+      "value": "TLC59283RGER",
       "footprint": "TI:RGE0024C",
       "pins": {
         "1": "LAT",
@@ -647,10 +661,10 @@
       "y": 0,
       "angle": 0,
       "side": "B",
-      "mpn": "TLC59282RGER",
-      "lcsc": "C702074",
-      "datasheet": "https://www.ti.com/lit/ds/symlink/tlc59282.pdf",
-      "role": "16-bit current sinks; U4 OUT7..11 also sink PMOS gate current",
+      "mpn": "TLC59283RGER",
+      "lcsc": "C485815",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tlc59283.pdf",
+      "role": "16-bit current sinks with precharge; U4 OUT7..11 also sink PMOS gate current",
       "pin_names": {
         "1": "LAT",
         "18": "BLANK",
@@ -710,7 +724,7 @@
     {
       "board": "main",
       "ref": "R3",
-      "value": "6k8 1%",
+      "value": "7k15 1%",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "pins": {
         "1": "IREF3",
@@ -720,10 +734,10 @@
       "y": 0,
       "angle": 0,
       "side": "B",
-      "mpn": "0603WAF6801T5E",
-      "lcsc": "C23212",
+      "mpn": "0603WAF7151T5E",
+      "lcsc": "C25980",
       "datasheet": "",
-      "role": "Sets 7.42493mA nominal peak; Basic resistor avoids Extended setup fee",
+      "role": "Sets 7.40006mA nominal peak for TLC59283; Extended resistor setup included in quote",
       "pin_names": {},
       "types": {},
       "assembly": "factory"
@@ -752,7 +766,7 @@
     {
       "board": "main",
       "ref": "U4",
-      "value": "TLC59282RGER",
+      "value": "TLC59283RGER",
       "footprint": "TI:RGE0024C",
       "pins": {
         "1": "LAT",
@@ -785,10 +799,10 @@
       "y": 0,
       "angle": 0,
       "side": "B",
-      "mpn": "TLC59282RGER",
-      "lcsc": "C702074",
-      "datasheet": "https://www.ti.com/lit/ds/symlink/tlc59282.pdf",
-      "role": "16-bit current sinks; U4 OUT7..11 also sink PMOS gate current",
+      "mpn": "TLC59283RGER",
+      "lcsc": "C485815",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tlc59283.pdf",
+      "role": "16-bit current sinks with precharge; U4 OUT7..11 also sink PMOS gate current",
       "pin_names": {
         "1": "LAT",
         "18": "BLANK",
@@ -848,7 +862,7 @@
     {
       "board": "main",
       "ref": "R4",
-      "value": "6k8 1%",
+      "value": "7k15 1%",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
       "pins": {
         "1": "IREF4",
@@ -858,10 +872,10 @@
       "y": 0,
       "angle": 0,
       "side": "B",
-      "mpn": "0603WAF6801T5E",
-      "lcsc": "C23212",
+      "mpn": "0603WAF7151T5E",
+      "lcsc": "C25980",
       "datasheet": "",
-      "role": "Sets 7.42493mA nominal peak; Basic resistor avoids Extended setup fee",
+      "role": "Sets 7.40006mA nominal peak for TLC59283; Extended resistor setup included in quote",
       "pin_names": {},
       "types": {},
       "assembly": "factory"
@@ -2655,7 +2669,7 @@
     ],
     "gate_bit_polarity": "1=sink enabled=PMOS gate LOW=column ON; exactly one gate bit in active phases",
     "row_bit_polarity": "1=cathode sink ON",
-    "blank_polarity": "HIGH=all outputs OFF",
+    "blank_polarity": "HIGH=all current sinks OFF; TLC59283 precharge enabled",
     "latch": "level-sensitive HIGH, LOW while shifting; pulse HIGH then LOW while BLANK is HIGH"
   },
   "scan": {
@@ -2664,7 +2678,7 @@
     "phase_us": 500,
     "blank_min_us": 30,
     "full_on_us": 470,
-    "peak_led_mA": 7.424926470588235,
+    "peak_led_mA": 7.400055944055943,
     "default": "Prototype unknown-source DIM at25us light per500us phase; measured<100mA budget not yet qualified; compile-time unknown-source OFF alternative available",
     "unknown_source_on_us": 25,
     "initial_rail_settle_ms": 10
@@ -2696,12 +2710,15 @@
     "off_input_rule": "Never drive a logic HIGH into an unpowered TLC; BLANK pullup is to SW_3V3 only"
   },
   "release_gates": [
-    "Confirm current JLC assembly availability including adequate TLC and BQ stock",
+    "Complete owner full case/stock-module/plug print trial; not yet confirmed",
+    "Confirm exact TLC59283/C485815 and 7.15k/C25980 BOM with current stock; never order historical driver cost drafts",
+    "Factory CAM for filled/capped vias, open LED holes and final outline; pin1/feeder/rotation review",
     "QFN pad-map and ordinary-via routing/thermal proof",
+    "TLC59283 precharge during BLANK, power-up/down/reset/suspend: scope both switched rails, gate and cathode voltages; VCC=0 reverse leakage is unspecified",
     "USB inrush and suspend bench qualification including BQ and10k status pullup",
     "BC1.2 SDP/CDP/DCP classification, data isolation and USB programming through U9",
     "Scope gate/anode off within30us and no ghosting",
-    "Measure full-white current and enclosed-board temperatures",
+    "Measure full-white current, brightness uniformity and enclosed-board temperatures",
     "Check other20 LED modules against owner-verified full terminal map and orientation; complete full-size body/pin fit and powered245-pixel test"
   ]
 }

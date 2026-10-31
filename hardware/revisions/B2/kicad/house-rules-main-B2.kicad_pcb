@@ -2664,8 +2664,8 @@
 		(layer "B.Cu")
 		(uuid "1441b434-8dab-491f-9d62-247b28dbda62")
 		(at 107.6 58.65)
-		(descr "TI TLC59282RGER RGE0024C: 4x4, 0.5 pitch, 2.1 EP; TI 4224376/C land/stencil, no thermal holes")
-		(tags "TLC59282RGER RGE0024C B2 no-via-in-pad")
+		(descr "TI TLC59283RGER RGE0024C: 4x4, 0.5 pitch, 2.1 EP; TI 4224376/C land/stencil, no thermal holes")
+		(tags "TLC59283RGER RGE0024C B2 no-via-in-pad")
 		(property "Reference" "U3"
 			(at 0 3 180)
 			(layer "B.SilkS")
@@ -2678,7 +2678,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "TLC59282RGER"
+		(property "Value" "TLC59283RGER"
 			(at 0 -3 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -2690,7 +2690,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlc59282.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlc59283.pdf"
 			(at 0 0 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -2702,7 +2702,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "16-bit current sinks; U4 OUT7..11 also sink PMOS gate current"
+		(property "Description" "16-bit current sinks with precharge; U4 OUT7..11 also sink PMOS gate current"
 			(at 0 0 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -2714,7 +2714,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "TLC59282RGER"
+		(property "MPN" "TLC59283RGER"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)
@@ -2727,7 +2727,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C702074"
+		(property "LCSC" "C485815"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)
@@ -4053,8 +4053,8 @@
 		(layer "B.Cu")
 		(uuid "2565fff6-d610-4dc7-8e1f-8ea48ac45b5e")
 		(at 81.85 58.65)
-		(descr "TI TLC59282RGER RGE0024C: 4x4, 0.5 pitch, 2.1 EP; TI 4224376/C land/stencil, no thermal holes")
-		(tags "TLC59282RGER RGE0024C B2 no-via-in-pad")
+		(descr "TI TLC59283RGER RGE0024C: 4x4, 0.5 pitch, 2.1 EP; TI 4224376/C land/stencil, no thermal holes")
+		(tags "TLC59283RGER RGE0024C B2 no-via-in-pad")
 		(property "Reference" "U2"
 			(at 0 3 180)
 			(layer "B.SilkS")
@@ -4067,7 +4067,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "TLC59282RGER"
+		(property "Value" "TLC59283RGER"
 			(at 0 -3 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -4079,7 +4079,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlc59282.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlc59283.pdf"
 			(at 0 0 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -4091,7 +4091,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "16-bit current sinks; U4 OUT7..11 also sink PMOS gate current"
+		(property "Description" "16-bit current sinks with precharge; U4 OUT7..11 also sink PMOS gate current"
 			(at 0 0 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -4103,7 +4103,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "TLC59282RGER"
+		(property "MPN" "TLC59283RGER"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)
@@ -4116,7 +4116,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C702074"
+		(property "LCSC" "C485815"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)
@@ -4929,7 +4929,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "6k8 1%"
+		(property "Value" "7k15 1%"
 			(at 0 -1.43 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -4954,7 +4954,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "Sets 7.42493mA nominal peak; Basic resistor avoids Extended setup fee"
+		(property "Description" "Sets 7.40006mA nominal peak for TLC59283; Extended resistor setup included in quote"
 			(at 0 0 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -4979,7 +4979,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "0603WAF6801T5E"
+		(property "MPN" "0603WAF7151T5E"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)
@@ -4992,7 +4992,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C23212"
+		(property "LCSC" "C25980"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)
@@ -5565,7 +5565,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "6k8 1%"
+		(property "Value" "7k15 1%"
 			(at 0 -1.43 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -5590,7 +5590,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "Sets 7.42493mA nominal peak; Basic resistor avoids Extended setup fee"
+		(property "Description" "Sets 7.40006mA nominal peak for TLC59283; Extended resistor setup included in quote"
 			(at 0 0 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -5615,7 +5615,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "0603WAF6801T5E"
+		(property "MPN" "0603WAF7151T5E"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)
@@ -5628,7 +5628,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C23212"
+		(property "LCSC" "C25980"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)
@@ -8700,8 +8700,8 @@
 		(layer "B.Cu")
 		(uuid "8fa46802-52e7-4294-bb66-d9ad7d6b8b01")
 		(at 133.35 57)
-		(descr "TI TLC59282RGER RGE0024C: 4x4, 0.5 pitch, 2.1 EP; TI 4224376/C land/stencil, no thermal holes")
-		(tags "TLC59282RGER RGE0024C B2 no-via-in-pad")
+		(descr "TI TLC59283RGER RGE0024C: 4x4, 0.5 pitch, 2.1 EP; TI 4224376/C land/stencil, no thermal holes")
+		(tags "TLC59283RGER RGE0024C B2 no-via-in-pad")
 		(property "Reference" "U4"
 			(at 0 3 180)
 			(layer "B.SilkS")
@@ -8714,7 +8714,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "TLC59282RGER"
+		(property "Value" "TLC59283RGER"
 			(at 0 -3 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -8726,7 +8726,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlc59282.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlc59283.pdf"
 			(at 0 0 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -8738,7 +8738,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "16-bit current sinks; U4 OUT7..11 also sink PMOS gate current"
+		(property "Description" "16-bit current sinks with precharge; U4 OUT7..11 also sink PMOS gate current"
 			(at 0 0 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -8750,7 +8750,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "TLC59282RGER"
+		(property "MPN" "TLC59283RGER"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)
@@ -8763,7 +8763,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C702074"
+		(property "LCSC" "C485815"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)
@@ -10873,8 +10873,8 @@
 		(layer "B.Cu")
 		(uuid "aff0d2cf-31e8-4130-8c34-9bcb5d01e46d")
 		(at 56.1 58.65)
-		(descr "TI TLC59282RGER RGE0024C: 4x4, 0.5 pitch, 2.1 EP; TI 4224376/C land/stencil, no thermal holes")
-		(tags "TLC59282RGER RGE0024C B2 no-via-in-pad")
+		(descr "TI TLC59283RGER RGE0024C: 4x4, 0.5 pitch, 2.1 EP; TI 4224376/C land/stencil, no thermal holes")
+		(tags "TLC59283RGER RGE0024C B2 no-via-in-pad")
 		(property "Reference" "U1"
 			(at 0 3 180)
 			(layer "B.SilkS")
@@ -10887,7 +10887,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "TLC59282RGER"
+		(property "Value" "TLC59283RGER"
 			(at 0 -3 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -10899,7 +10899,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlc59282.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlc59283.pdf"
 			(at 0 0 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -10911,7 +10911,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "16-bit current sinks; U4 OUT7..11 also sink PMOS gate current"
+		(property "Description" "16-bit current sinks with precharge; U4 OUT7..11 also sink PMOS gate current"
 			(at 0 0 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -10923,7 +10923,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "TLC59282RGER"
+		(property "MPN" "TLC59283RGER"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)
@@ -10936,7 +10936,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C702074"
+		(property "LCSC" "C485815"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)
@@ -12763,7 +12763,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "6k8 1%"
+		(property "Value" "7k15 1%"
 			(at 0 -1.43 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -12788,7 +12788,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "Sets 7.42493mA nominal peak; Basic resistor avoids Extended setup fee"
+		(property "Description" "Sets 7.40006mA nominal peak for TLC59283; Extended resistor setup included in quote"
 			(at 0 0 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -12813,7 +12813,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "0603WAF6801T5E"
+		(property "MPN" "0603WAF7151T5E"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)
@@ -12826,7 +12826,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C23212"
+		(property "LCSC" "C25980"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)
@@ -15158,7 +15158,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "6k8 1%"
+		(property "Value" "7k15 1%"
 			(at 0 -1.43 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -15183,7 +15183,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "Sets 7.42493mA nominal peak; Basic resistor avoids Extended setup fee"
+		(property "Description" "Sets 7.40006mA nominal peak for TLC59283; Extended resistor setup included in quote"
 			(at 0 0 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -15208,7 +15208,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "0603WAF6801T5E"
+		(property "MPN" "0603WAF7151T5E"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)
@@ -15221,7 +15221,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C23212"
+		(property "LCSC" "C25980"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)

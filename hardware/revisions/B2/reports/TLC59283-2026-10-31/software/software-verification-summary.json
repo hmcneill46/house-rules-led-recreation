@@ -1,0 +1,88 @@
+{
+  "result": "PASS",
+  "date_utc": "2026-10-31T23:31:19.713538+00:00",
+  "scope": "TLC59283/7.15kohm software, digital connectivity, actual backend transaction and compiled-image verification",
+  "driver_mpn": "TLC59283RGER",
+  "iref_ohms": 7150,
+  "electrical_spec_sha256": "ba719eb506720a63d95acdcf24c94ecf49344484cd5644f3d4c2f8e9050c0981",
+  "scan_map_sha256": "44ae3f904b1c5384f0f18acc801adb2170792a3a48726c101f5e4837bc6a2aee",
+  "generated_header_sha256": "8b022de08da9f87edf3cf226928cd1fc39135cd7c0496c5f79136eb4568aa26b",
+  "host_artwork_frames": 60000,
+  "host_walking_pixels": 245,
+  "host_random_frames": 1000,
+  "physical_model_artwork_frames": 60000,
+  "physical_model_walking_pixels": 245,
+  "physical_model_phase_reconstructions": 301235,
+  "fault_cases_detected": [
+    "Old6.8kohm resistor on TLC59283 would change peak current",
+    "Mixed original/replacement driver identity",
+    "LED anode/cathode polarity swap",
+    "Cathodes accidentally shared across modules",
+    "PMOS source/drain reversal",
+    "BQ USB upstream/downstream terminals swapped",
+    "BQ GOOD_BAT on switched rail would disconnect USB during suspend",
+    "BQ detector divider cannot meet RP2040 input-high threshold",
+    "Two column gates enabled simultaneously",
+    "Row bits set with no selected gate",
+    "Unconnected sink enabled",
+    "LED supply remains on while driver unpowered",
+    "Swapped TLC physical OUT pins change the independently reconstructed pixel",
+    "Reversed serial chip order is rejected or produces a different physical image"
+  ],
+  "actual_backend_transactions": 1000,
+  "contract_faults_detected": [
+    "Old6.8kohm IREF resistor",
+    "Original driver procurement code",
+    "Stale firmware current contract"
+  ],
+  "nominal_LED_peak_mA": 7.400055944055946,
+  "nominal_LED_full_average_mA": 340.8465767832169,
+  "nominal_LED_DIM_average_mA": 18.13013706293707,
+  "source_suspend_policy_combinations": 64,
+  "USB_rail_sequence_unchanged": true,
+  "SPI_Hz": 8000000,
+  "phase_us": 500,
+  "blank_us": 30,
+  "full_on_us": 470,
+  "DIM_on_us": 25,
+  "LAT_high_wait_us": 1,
+  "frame_hz": 400,
+  "compiled_images": {
+    "compiled": {
+      "driver_mpn": "TLC59283RGER",
+      "iref_ohms": 7150,
+      "build_source_hashes_match": true,
+      "UF2_sha256": "2c951f28177c22ed7ef98d574ed0b6bbcd22ec29dad2439c6175f94a6dc13cbe",
+      "UF2_payload_unchanged_from_prior_driver": true,
+      "binary_audit_result": "PASS",
+      "usb_descriptor_ma": 500,
+      "unknown_source_dim_enabled": true
+    },
+    "compiled-unknown-off": {
+      "driver_mpn": "TLC59283RGER",
+      "iref_ohms": 7150,
+      "build_source_hashes_match": true,
+      "UF2_sha256": "80237ace7f9255cfa2750938c46991fca35b23683215ecd9f60fe5fcfb32cc08",
+      "UF2_payload_unchanged_from_prior_driver": true,
+      "binary_audit_result": "PASS",
+      "usb_descriptor_ma": 500,
+      "unknown_source_dim_enabled": false
+    }
+  },
+  "commands_completed": [
+    "python3 hardware/revisions/B2/tools/firmware-build/generate_contract.py",
+    "python3 hardware/revisions/B2/firmware/tests/test_contract.py",
+    "python3 hardware/revisions/B2/firmware/tests/test_host.py",
+    "python3 hardware/revisions/B2/firmware/tests/test_driver_transactions.py",
+    "python3 hardware/revisions/B2/simulation/test_model.py",
+    "python3 hardware/revisions/B2/tools/firmware-build/build.py",
+    "python3 hardware/revisions/B2/tools/firmware-build/build.py --unknown-off"
+  ],
+  "limitations": [
+    "Digital/static software checks only; no powered board executed",
+    "TLC59283 precharge, gate/anode/cathode transients, reverse LED voltage and VCC=0 reverse current require measurements",
+    "No actual USB enumeration, flashing, input/inrush/suspend current, optical matching or temperature measurements",
+    "Nominal LED current equation is not a whole-product USB upper bound",
+    "Case print and receipt checks remain separate; no order or manufacturing release follows from this PASS"
+  ]
+}

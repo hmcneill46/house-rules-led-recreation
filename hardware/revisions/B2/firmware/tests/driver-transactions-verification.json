@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "driver": "TLC59283RGER",
+  "source": "https://www.ti.com/lit/ds/symlink/tlc59283.pdf",
+  "source_section": "Rev.C p4 LAT description; p8 digital timing limits (section5.7)",
+  "actual_backend_source": "HouseRulesB2/application.cpp class HardwareIO",
+  "backend_source_sha256": "86aeae8ad6cd324379811e66e4de03ea9d47ccb4f3086b43dae3d863db793c56",
+  "complete_transactions": 1000,
+  "bits_per_transaction": 64,
+  "SPI_Hz_requested": 8000000,
+  "LAT_high_wait_us_requested": 1,
+  "checks": [
+    "LAT low throughout each SPI write",
+    "Exactly64 clock bits then one latch pulse while BLANK high",
+    "All four output words match actual transmitted words",
+    "Level-sensitive latch preserves serial contents",
+    "Startup/shutdown all-zero write",
+    "Short SPI transfer never latches partial data",
+    "Unpowered, blank-low, HiZ and deinitialised SPI paths reject writes",
+    "Negative controls: LAT-high clocks propagate; 63-bit clear leaves stale data"
+  ],
+  "limitations": [
+    "Digital model plus actual C++ transaction backend only",
+    "No RP2040 peripheral or measured setup/hold/propagation timing",
+    "No precharge, PMOS, rail-transient, ghosting, current or thermal model"
+  ]
+}

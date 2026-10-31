@@ -13,5 +13,6 @@ static constexpr uint8_t PIN_CC2_ADC = 27;
 static constexpr uint8_t PIN_BC_DET = 7;
 static constexpr uint8_t PIN_BC_AL_N = 0;
 static constexpr uint32_t RAIL_SETTLE_US = 10000;
-static constexpr const char *CONTRACT_SHA256 = "39d47ccdf963ff9bad61d2c7c43dda75683a82660b242edb64cbccaee1a05536";
+static constexpr uint16_t DRIVER_IREF_OHMS = 7150;
+static constexpr const char *CONTRACT_SHA256 = "44ae3f904b1c5384f0f18acc801adb2170792a3a48726c101f5e4837bc6a2aee";
 }

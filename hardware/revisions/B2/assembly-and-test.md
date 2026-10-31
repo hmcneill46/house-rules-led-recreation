@@ -2,6 +2,8 @@
 
 **31 October: F / 12.875 mm is the confirmed module pitch.** Use the revised 89.45 × 17.30 mm PCB and [confirmed-F case/fit print pack](printing/2026-10-31-confirmed-F/README.md). Earlier 12.700 mm boards and case prints are historical. Check the new case with the actual stock modules and cable, then obtain a fresh quote and factory review before ordering. See the [revision checks](reports/confirmed-F-2026-10-31/README.md).
 
+**Current electrical revision: TLC59283RGER/C485815 at U1–U4 and7.15 kΩ0603WAF7151T5E/C25980 at R1–R4.** Use the [new manufacturing review package](manufacturing/B2_F_TLC59283_7p15k_review_2026-10-31/README.md). The owner has not yet completed the full case/stock-module/USB-plug print check; the earlier successful pitch coupon does not close that check. [Selected three-display plan, including spare wire and screws](reports/TLC59283-2026-10-31/selected-purchase-plan.json).
+
 The owner has identified an **ULTRICS UT0021YB** meter. Its diode-test mode can replace the two-AA/resistor tester: use the [specific meter and LED pin-test steps](led-diode-test.md). The owner has confirmed both complete probe sequences on one module: **all 12 pins match, with the part-number label on the left in front view**. Other modules still need consistent orientation and checks.
 
 Start with one set of inexpensive stock electronics and a trial print. Test their fit and programming **before spending money on the custom PCB**. B2 remains an engineering prototype: files marked `UNRELEASED`, `UNROUTED` or `DO-NOT-ORDER` are quotation studies, not order files.
@@ -61,10 +63,10 @@ Use `w` for walking dots, `a` for all-on, `c` for checkerboard and `p` for artwo
 | Whole-device current | Measure startup, unknown-source DIM and qualified full-white; include controller/driver overhead |
 | USB suspend/reset/resume | Dark display, reliable recovery; measure the complete device against the 2.5 mA suspend target |
 | Power/programming | Repeat external-port UF2 recovery; test known 5 V sources and both C-to-C plug orientations |
-| Scan edges/inrush | Have bench equipment check startup charge and the 30 µs gate/anode settling interval |
+| Scan edges/inrush/precharge | Scope both switched rails, gates and cathodes during startup/shutdown/reset/suspend; check startup charge, LED reverse voltage and 30 µs settling |
 | Enclosed temperature | Run qualified full-white in the case; check drivers, MCU regulator and nearby plastic |
 
-Nominal LED-only averages are **341.99mA full-white** and **18.19mA DIM**, plus electronics overhead and component variation. These do not certify whole-device 500 mA/full or 100 mA/unconfigured budgets. Darkness alone does not prove suspend compliance, and a basic USB meter may lack the resolution or bandwidth for suspend/inrush checks. Record measurements before relying on those modes.
+Nominal LED-only averages are **340.85mA full-white** and **18.13mA DIM**, plus electronics overhead and component variation. These do not certify whole-device 500 mA/full or 100 mA/unconfigured budgets. Darkness alone does not prove suspend compliance, and a basic USB meter may lack the resolution or bandwidth for suspend/inrush checks. Record measurements before relying on those modes. TLC59283 enables precharge while BLANK is HIGH; darkness does not mean its outputs are electrically inert. VCC=0 reverse-current behaviour and relative rail ramps remain unqualified. Retain both switched rails and the tested zero-latch/blank/low-controls shutdown sequence. Compare bank brightness uniformity and ghosting before assembling all units.
 
 The conservative 800 mV CC threshold can leave some valid 1.5 A sources dim unless another USB/BC grant applies. Qualify/calibrate the actual supplies and ADC path before claiming all Type-C sources work at full brightness; [threshold review](reports/type-c-adc-threshold-review.md). Firmware can change after measurement without changing the PCB.
 

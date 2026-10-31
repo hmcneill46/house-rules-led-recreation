@@ -1,0 +1,100 @@
+{
+  "result": "PASS",
+  "canonical_PCB_sha256": "765d4747e2cf559ff0f6a29024d232458d9b7a66ed96825eba6f3a657c313024",
+  "package": "manufacturing/B2_F_TLC59283_7p15k_review_2026-10-31",
+  "actual_output_inspection": {
+    "package": "manufacturing/B2_F_TLC59283_7p15k_review_2026-10-31",
+    "manifest_sha256": "b669f91e032be4701be95465279a3cab2e26ba14b474e46feec5ddae1eb52082",
+    "all_manifest_output_hashes_verified": true,
+    "actual_Excellon_LED_centres_match_at_1um_export_resolution": 84,
+    "staged_source_identical_to_canonical_PCB": true,
+    "actual_Gerber_copper_layers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "actual_Excellon_via_centres_match_at_1um_export_resolution": 276,
+    "Excellon_maximum_axis_coordinate_rounding_error_mm": {
+      "LED": 1e-06,
+      "via": 0.0005
+    },
+    "actual_Gerber_outline_mm": [
+      89.45,
+      17.3
+    ],
+    "BOM_CPL_exact_factory_references": 55,
+    "CPL_native_coordinates_angles_and_bottom_side_verified": true,
+    "manufacturer_feeder_and_pin1_review_still_required": true
+  },
+  "plotted_copper_mask_silk_outline_paste_and_drill_commands_unchanged_except_timestamps": [
+    {
+      "file": "fabrication/house-rules-main-B2-B_Cu.gbl",
+      "timestamp_independent_sha256": "a92aca3b28e0f3336c51915ddeb8ebde6655637a66fb4d17cda10cfe7523aeed"
+    },
+    {
+      "file": "fabrication/house-rules-main-B2-B_Mask.gbs",
+      "timestamp_independent_sha256": "54f3a5676a22cf1f818fd6a97a02b9a860a407f206f72a3a02ffe47a96191358"
+    },
+    {
+      "file": "fabrication/house-rules-main-B2-B_Silkscreen.gbo",
+      "timestamp_independent_sha256": "a6451163896200393e1511a6402a4e012d0e18eeb0636515f392acb262364799"
+    },
+    {
+      "file": "fabrication/house-rules-main-B2-Edge_Cuts.gm1",
+      "timestamp_independent_sha256": "05174114c7166d7bfb80bbb2d622e1740ece799f4862300c7c070c0f6d4898eb"
+    },
+    {
+      "file": "fabrication/house-rules-main-B2-F_Cu.gtl",
+      "timestamp_independent_sha256": "244b65d700c4c76de048d3bd53e135686059e158cf52b7cbdfed7fc1360dc33a"
+    },
+    {
+      "file": "fabrication/house-rules-main-B2-F_Mask.gts",
+      "timestamp_independent_sha256": "f5db902b2fd27a6e9e3dc2157a11aec0cf343685706980378ea6330f2ce1ee31"
+    },
+    {
+      "file": "fabrication/house-rules-main-B2-F_Silkscreen.gto",
+      "timestamp_independent_sha256": "f21aa78598a729232b354441099f9dc0c8b030895fbc09c9608a4ad7c3962dc7"
+    },
+    {
+      "file": "fabrication/house-rules-main-B2-In1_Cu.g1",
+      "timestamp_independent_sha256": "7a289efb7450b57ec16e22f5f6f64909806a9bbff529698ae7bff6f3522756e9"
+    },
+    {
+      "file": "fabrication/house-rules-main-B2-In2_Cu.g2",
+      "timestamp_independent_sha256": "0042a4c34e04f23b9d66856bbacce4cf635cbababb024177abef5804675a9729"
+    },
+    {
+      "file": "fabrication/house-rules-main-B2-In3_Cu.g3",
+      "timestamp_independent_sha256": "a952a7507d8a85b3f5ecea4af06d8d850fc0b9f2d8c93bb2c4a347bb64aa72fb"
+    },
+    {
+      "file": "fabrication/house-rules-main-B2-In4_Cu.g4",
+      "timestamp_independent_sha256": "e95ef900d8a9082face33fe23fbf21c584006c84f9135c984c06e88311d41c55"
+    },
+    {
+      "file": "fabrication/house-rules-main-B2-NPTH.drl",
+      "timestamp_independent_sha256": "262136c999e1cfc1dcd8b12866b17e2f5a52ba56b48e87594f0d5fa7d3b241bf"
+    },
+    {
+      "file": "fabrication/house-rules-main-B2-PTH.drl",
+      "timestamp_independent_sha256": "604ae7fed143688a4f3a005a965191df9ccc0def4182f0988dda9bbf44d07274"
+    },
+    {
+      "file": "assembly/house-rules-main-B2-B_Paste.gbp",
+      "timestamp_independent_sha256": "ab1a76729e18076187688a3232ad5a950519a5c52cc389f98288c6b714a5c6ea"
+    },
+    {
+      "file": "assembly/house-rules-main-B2-F_Paste.gtp",
+      "timestamp_independent_sha256": "d5212d10fa4a2a487ce49c2612c36ba0d165673c2ea4c67e41efcd8deeb86a04"
+    }
+  ],
+  "native_CPL_byte_identical_to_confirmed_F": true,
+  "shared_output_parser_sha256": "90be7de9d7b9d43ca5534e8ba25b2e59a13661e143791c23a36e1e342aa8b73d",
+  "verifier_sha256": "9d77b2537a17de7d20bdab477d89244cb4af49b10eb7102a5fb205c6cb7aea4f",
+  "scope": "Actual saved CAD/CSV/Gerber/Excellon and manifest inspection. Factory CAM/feeder/pin1 review and physical acceptance remain pending.",
+  "source_unchanged_during_read_only_check": true,
+  "order_or_payment_submitted": false
+}

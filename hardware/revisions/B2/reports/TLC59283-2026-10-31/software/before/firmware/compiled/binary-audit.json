@@ -1,0 +1,29 @@
+{
+  "result": "PASS",
+  "target": "RP2040; XIAO RP2040 Plus2MB",
+  "uf2_blocks": 486,
+  "uf2_family_id": "0xe48bff56",
+  "flash_range_hex": [
+    "0x10000000",
+    "0x1001e600"
+  ],
+  "elf_entry_hex": "0x100030d5",
+  "usb_descriptor_max_current_ma": 500,
+  "usb_descriptor_attributes_hex": "0x80",
+  "actual_binary_config_template_offset": 115930,
+  "usb_proof": "Linked main calls an empty wrapped early USB initializer; setup writes RAM descriptor attributes0x80 and maxPower0xFA between interrupt-disable/restore, after TinyUSB begin.",
+  "strong_usb_callbacks": [
+    "initVariant",
+    "setup",
+    "__wrap_TinyUSB_Device_Init",
+    "tud_mount_cb",
+    "tud_umount_cb",
+    "tud_suspend_cb",
+    "tud_resume_cb"
+  ],
+  "cpu48MHz_init_hook": true,
+  "usb_pre_enumeration_suspend_observer": true,
+  "unknown_source_dim_enabled": true,
+  "uf2_sha256": "2c951f28177c22ed7ef98d574ed0b6bbcd22ec29dad2439c6175f94a6dc13cbe",
+  "limitations": "Static binary audit only. No USB host capture, physical flashing, light output or electrical/suspend current measurement has been performed."
+}

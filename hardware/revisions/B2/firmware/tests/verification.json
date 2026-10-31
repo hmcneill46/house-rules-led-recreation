@@ -3,7 +3,7 @@
   "artwork_frames": 60000,
   "complete_traversals": 2,
   "frame_sha256": "5cfcc3e0fd3d33e3c8aa526264e63a5529cc3bc9fb5531126e173bb8fe42a1a6",
-  "scan_map_sha256": "39d47ccdf963ff9bad61d2c7c43dda75683a82660b242edb64cbccaee1a05536",
+  "scan_map_sha256": "44ae3f904b1c5384f0f18acc801adb2170792a3a48726c101f5e4837bc6a2aee",
   "all_245_single_pixels": true,
   "random_frames": 1000,
   "scan_full_and_dim_us": [

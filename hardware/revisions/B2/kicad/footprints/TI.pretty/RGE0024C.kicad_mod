@@ -3,8 +3,8 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "TI TLC59282RGER RGE0024C: 4x4, 0.5 pitch, 2.1 EP; TI 4224376/C land/stencil, no thermal holes")
-	(tags "TLC59282RGER RGE0024C B2 no-via-in-pad")
+	(descr "TI TLC59283RGER RGE0024C: 4x4, 0.5 pitch, 2.1 EP; TI 4224376/C land/stencil, no thermal holes")
+	(tags "TLC59283RGER RGE0024C B2 no-via-in-pad")
 	(property "Reference" "REF**"
 		(at 0 -3 0)
 		(layer "F.SilkS")
@@ -15,7 +15,7 @@
 			)
 		)
 	)
-	(property "Value" "TLC59282RGER"
+	(property "Value" "TLC59283RGER"
 		(at 0 3 0)
 		(layer "F.Fab")
 		(uuid "151f7c8e-2e7f-40ca-9c3a-c6789af970c8")

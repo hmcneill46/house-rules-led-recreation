@@ -1,5 +1,7 @@
 # Stocked drivers and alternative manufacturers — 31 October 2026
 
+**Historical investigation:** the owner subsequently authorised the TLC59283/7.15k engineering revision and selected three displays plus extra screws/wire. See the [current revision and check record](../../reports/TLC59283-2026-10-31/README.md). Statements below that canonical B2 still uses TLC59282 describe the state when these quotes were collected; the quoted cart itself remains a cost-only draft.
+
 **The best balanced candidate to qualify is JLCPCB with TLC59283RGER / C485815 and four 7.15 kΩ current-setting resistors / C25980.** It fits the existing driver/resistor pads and can keep the 12.875 mm LED pitch, board outline, case, wiring, resolution, artwork and intended brightness. It retains grouped output switching and has a lower internal-current planning allowance. All **55 SMT placements in 18 BOM groups** matched available JLC parts. The slightly cheaper TLC59281 was also investigated and quoted fully.
 
 This is a compatibility/quotation investigation, **not a replacement manufacturing release**. Canonical B2 CAD, firmware, BOM and manufacturing files still specify TLC59282RGER. No PCB order, component purchase or payment was submitted. Neither candidate matches every original electrical specification. In particular, TLC59283 adds precharge; rail-transient and powered acceptance remain necessary before promising identical physical performance.

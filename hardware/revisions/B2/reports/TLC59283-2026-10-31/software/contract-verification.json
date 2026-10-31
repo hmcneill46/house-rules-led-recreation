@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "baseline_generated_header_matches": true,
+  "stale_identity_faults_detected": [
+    "Old6.8kohm IREF resistor",
+    "Original driver procurement code",
+    "Stale firmware current contract"
+  ],
+  "limitations": "Source identity checks only; not circuit or powered-device validation"
+}

@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-31",
+  "status": "Owner-selected purchasing plan; no order/payment; engineering and physical acceptance remain pending",
+  "build_now": {
+    "finished_displays": 3,
+    "main_PCBS_fabricated": 5,
+    "main_PCBS_factory_SMT_assembled": 5,
+    "spare_populated_main_PCBS": 2,
+    "owner_existing_LED_modules_used": 21,
+    "new_LED_modules": 0
+  },
+  "new_purchases_now": [
+    {
+      "item": "Main PCB with all55smallSMTcomponents per board",
+      "quantity": 5,
+      "factory_landed_budget_GBP": 103.16,
+      "notes": "TLC59283RGER/C485815 and7.15kohm0603WAF7151T5E/C25980; depanel/VAT/FX allowance; not final payable quote"
+    },
+    {
+      "item": "Headerless Seeed XIAO RP2040 Plus",
+      "SKU": "100059977",
+      "quantity": 3,
+      "delivered_budget_GBP": 17.06
+    },
+    {
+      "item": "Headerless Adafruit4090 USB-C breakout",
+      "quantity": 3,
+      "delivered_budget_GBP": 12.5
+    },
+    {
+      "item": "28AWG stranded PTFE wire, maximum specified OD0.71mm",
+      "metres": {
+        "red": 1,
+        "black": 1,
+        "blue": 5
+      },
+      "delivered_budget_GBP": 16.8,
+      "notes": "Includes2extra blue metres for later two displays"
+    },
+    {
+      "item": "M2 ISO7380-1 button screws and1.3mmkey",
+      "quantity": {
+        "M2x6mm": 10,
+        "M2x8mm": 5,
+        "1p3mm_hex_key": 1
+      },
+      "delivered_budget_GBP": 17.9,
+      "notes": "Includes4extra6mm and2extra8mm screws for later two displays"
+    },
+    {
+      "item": "Electronics-safe silicone and2.5mmcableties",
+      "quantity": {
+        "20g_tube": 1,
+        "100_tie_pack": 1
+      },
+      "delivered_budget_GBP": 9.83
+    }
+  ],
+  "budget_now_GBP": 177.25,
+  "retail_budget_now_GBP": 74.09,
+  "saved_upfront_vs_all5_GBP": 44.77,
+  "later_optional_build": {
+    "finished_displays": 2,
+    "main_PCBS_already_owned": 2,
+    "new_purchases": [
+      {
+        "item": "Headerless XIAO RP2040 Plus",
+        "quantity": 2,
+        "delivered_budget_GBP": 12.57
+      },
+      {
+        "item": "Adafruit4090 USB-C breakout",
+        "quantity": 2,
+        "delivered_budget_GBP": 9.6
+      },
+      {
+        "item": "LMD07057AUE-101B-02 LED modules",
+        "quantity": 14,
+        "delivered_budget_GBP": 29.99
+      }
+    ],
+    "new_purchase_budget_GBP": 52.16,
+    "combined_spend_for5_GBP": 229.41,
+    "premium_vs5_all_at_once_GBP": 7.39,
+    "reuse": "Populated mainPCBs, wire/screws/key, cableties and usable remaining silicone from first batch; existing filament/tools/power supplies/data cables"
+  },
+  "owned_items_new_spend_GBP": 0,
+  "owned_items": [
+    "21LEDmodules",
+    "3Dprinter",
+    "greyHyperPLA",
+    "solderingironandstand",
+    "solder/flux",
+    "strippers/cutters",
+    "multimeter",
+    "suitableUSB5Vsupplies",
+    "USB-Cdata cables"
+  ],
+  "physical_status": {
+    "selected_12p875_pitch_coupon": "Owner confirmed best fit",
+    "complete_case_print_and_fit": "PENDING; owner explicitly has not completed this check",
+    "purchased_stock_modules_and_actual_USB_plug_fit": "Pending measurement/dryfit on receipt",
+    "powered_board_acceptance": "Pending first prototype"
+  },
+  "limitations": [
+    "Budget uses31Octoberrecordedprices/deliveryallowances; no stock reservation",
+    "Factory review/depanel and card FX can vary",
+    "Futureprices/stock/shippingcanchange",
+    "Opened silicone may need replacement after storage",
+    "No prototype remake/rework allowance",
+    "No order or paid procurement authorised"
+  ],
+  "sources": {
+    "retail_record": "../../quotes/updated-F-2026-10-31/retail/README.md",
+    "balanced_factory_record": "../../quotes/alternatives-2026-10-31/jlc-59283-7p15k-cost-only/complete55-quotes.json"
+  }
+}

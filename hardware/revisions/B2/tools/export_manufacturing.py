@@ -297,6 +297,18 @@ operation, actual soldered fit, USB current/compliance, brightness, thermal
 performance or print fit. The owner evidence is included in reports/.
 No upload, order or payment has been made by the exporter.
 
+CURRENT DRIVER: U1..U4 = TLC59283RGER / C485815; R1..R4 =7.15k1%,
+0603WAF7151T5E / C25980. Never use the historical TLC59282/6.8k BOM for
+this revision. Copper, LED pitch and case geometry are preserved. Nominal
+current is1.208*43.8/7.15=7.40006mA;400Hz/five phases/470us light remain.
+BLANK HIGH also enables TLC59283 output precharge. Powered-off leakage and
+rail transient behaviour are unspecified: both switched rails/QOD and the
+clear/blank/control-low shutdown sequence remain necessary. Scope startup,
+shutdown, reset/suspend and scanning; measure current, brightness uniformity,
+ghosting and enclosed temperature. Static ERC/DRC cannot qualify those effects.
+The owner has NOT yet completed the full case print/stock-module/plug trial.
+Case fit and factory CAM/pin1 review remain pending before any order decision.
+
 Board requirements: SIX copper layers,89.45 x17.3mm final outline,1.6mm FR4.
 Layer order is F.Cu/In1.Cu/In2.Cu/In3.Cu/In4.Cu/B.Cu. In4 is GND-only. In2 is
 primarily GND with one explicitly approved quiet CT_5V timing-capacitor bridge,
@@ -369,7 +381,7 @@ def main():
     parser.add_argument('--board', type=Path, default=DEFAULT_BOARD)
     parser.add_argument('--spec', type=Path, default=DEFAULT_SPEC)
     parser.add_argument('--a1-reference', type=Path, default=DEFAULT_A1)
-    parser.add_argument('--output', type=Path, default=B2 / 'manufacturing/B2_F_12p875_review_2026-10-31')
+    parser.add_argument('--output', type=Path, default=B2 / 'manufacturing/B2_F_TLC59283_7p15k_review_2026-10-31')
     parser.add_argument('--cli', type=Path, default=CLI)
     args = parser.parse_args()
     source, output = args.board.resolve(), args.output.resolve()
@@ -401,6 +413,7 @@ def main():
             for suffix in ('.kicad_pro', '.kicad_sch', '.kicad_dru'):
                 shutil.copy2(CAD / (STEM + suffix), snap / (STEM + suffix))
             shutil.copy2(source, snap / (STEM + '.kicad_pcb'))
+            shutil.copy2(args.spec, snap / 'electrical-spec.json')
             for name in ('fp-lib-table', 'sym-lib-table', 'HouseRules_main.kicad_sym'):
                 if (CAD / name).exists():
                     shutil.copy2(CAD / name, snap / name)
@@ -455,6 +468,9 @@ def main():
             if model_assets != sorted(p for p in (CAD / '3d').rglob('*') if p.is_file()):
                 raise RuntimeError('Canonical 3D asset inventory changed during export; no package will be released')
             manifest = {'status': 'REVIEW ONLY — NOT APPROVED FOR PRODUCTION',
+                        'hardware_variant': json.loads(args.spec.read_text())['hardware_variant'],
+                        'driver_identity': json.loads(args.spec.read_text())['driver_identity'],
+                        'owner_full_case_print_trial': 'PENDING; module-pitch coupon only is confirmed',
                         'date_utc': datetime.now(timezone.utc).isoformat(),
                         'kicad_version': kicad_version,
                         'source_pcb_sha256': original[str(source)],

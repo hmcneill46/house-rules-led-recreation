@@ -7,6 +7,16 @@ B2=Path(__file__).resolve().parents[2]
 
 def generate():
     path=B2/'firmware/scan-map.json'; data=path.read_bytes(); spec=json.loads(data)
+    circuit=json.loads((B2/'electrical-spec.json').read_text())
+    parts={p['ref']:p for p in circuit['parts']}
+    if (spec.get('driver_mpn'),spec.get('iref_ohms'),spec.get('iref_mpn')) != ('TLC59283RGER',7150,'0603WAF7151T5E'):
+        raise ValueError('This contract requires the reviewed TLC59283/7.15kohm hardware')
+    for index in range(1,5):
+        driver,resistor=parts['U'+str(index)],parts['R'+str(index)]
+        if driver['mpn']!=spec['driver_mpn'] or driver['lcsc']!='C485815':
+            raise ValueError('Firmware driver identity disagrees with electrical source')
+        if (resistor['value'],resistor['mpn'],resistor['lcsc'])!=('7k15 1%',spec['iref_mpn'],'C25980'):
+            raise ValueError('Firmware current-setting resistor disagrees with electrical source')
     rows=[pin for module in spec['module_row_outputs'] for pin in module]
     gates=spec['column_gate_outputs']
     if len(spec['module_row_outputs'])!=7 or any(len(m)!=7 for m in spec['module_row_outputs']):
@@ -25,6 +35,7 @@ def generate():
     text+='static constexpr Layout kBoardLayout = {{'+','.join(map(str,rows))+'},{'+','.join(map(str,gates))+'}};\n'
     for key,value in pins.items(): text+=f'static constexpr uint8_t PIN_{key.upper()} = {value};\n'
     text+=f'static constexpr uint32_t RAIL_SETTLE_US = {spec["rail_settle_us"]};\n'
+    text+=f'static constexpr uint16_t DRIVER_IREF_OHMS = {spec["iref_ohms"]};\n'
     text+='static constexpr const char *CONTRACT_SHA256 = "'+hashlib.sha256(data).hexdigest()+'";\n}\n'
     out=B2/'firmware/HouseRulesB2/board_contract_generated.h';out.write_text(text)
     return spec

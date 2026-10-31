@@ -1,0 +1,259 @@
+{
+  "date": "2026-10-31",
+  "scope": "Independent primary-source compatibility review and read-only canonical-source verification; no order, physical test or analogue-chip simulation",
+  "result": "PASS_STATIC_REVIEW_WITH_PHYSICAL_QUALIFICATION_PENDING",
+  "candidate": {
+    "driver_refs": [
+      "U1",
+      "U2",
+      "U3",
+      "U4"
+    ],
+    "MPN": "TLC59283RGER",
+    "JLC": "C485815",
+    "IREF_refs": [
+      "R1",
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "resistor_MPN": "0603WAF7151T5E",
+    "resistor_JLC": "C25980",
+    "resistance_ohm": 7150,
+    "tolerance_percent": 1
+  },
+  "frozen_reference_commit": "01789e4",
+  "verified_source_sha256": {
+    "electrical-spec.json": "ba719eb506720a63d95acdcf24c94ecf49344484cd5644f3d4c2f8e9050c0981",
+    "kicad/house-rules-main-B2.kicad_pcb": "765d4747e2cf559ff0f6a29024d232458d9b7a66ed96825eba6f3a657c313024"
+  },
+  "read_only_verification": {
+    "result": "PASS",
+    "part_count": 82,
+    "connected_pins": 327,
+    "exact_changed_refs": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "U1",
+      "U2",
+      "U3",
+      "U4"
+    ],
+    "all_part_pin_graphs_and_physical_assignments_unchanged": true,
+    "all_four_driver_pad_maps_independently_checked_from_TI_RGE_top_view": true,
+    "ground_pad25_and_ground_pin22_both_GND": true,
+    "current_resistor_nets_IREF_to_GND_unchanged": true,
+    "GPIO_USB_wire_map_and_scan_timing_unchanged": true,
+    "PCB_matches_frozen_reference_after_only_exact_expected_metadata_substitutions": true,
+    "method": "git show 01789e4 source comparison; assert only8partidentities change, allotherpartproperties/pins identical; independentlyassert TI RGE output2..17/signal1,18..25map; exact whole-PCB text equality after enumerated old/new part-identity/description substitutions, proving all copper/pad/outline/via data unchanged."
+  },
+  "independently_transcribed_RGE_map": {
+    "LAT": 1,
+    "OUT0_to_OUT15": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "BLANK": 18,
+    "SOUT": 19,
+    "IREF": 20,
+    "VCC": 21,
+    "GND": 22,
+    "SIN": 23,
+    "SCLK": 24,
+    "exposed_GND_pad": 25
+  },
+  "package": {
+    "drawing": "TI4224376/C RGE0024C",
+    "body_nominal_mm": [
+      4,
+      4
+    ],
+    "pitch_mm": 0.5,
+    "EP_nominal_mm": [
+      2.1,
+      2.1
+    ],
+    "signal_land_mm": [
+      0.6,
+      0.24
+    ],
+    "four_stencil_windows_mm": [
+      0.94,
+      0.94
+    ],
+    "stencil_window_offsets_mm": [
+      -0.57,
+      0.57
+    ],
+    "max_body_height_mm": 1.0
+  },
+  "nominal_current": {
+    "equation_mA": "1.208 *43.8 /7.15",
+    "peak_LED_mA": 7.400055944055944,
+    "original_peak_LED_mA": 7.424926470588235,
+    "change_percent": -0.33495990338502146,
+    "49_LED_instantaneous_mA": 362.6027412587413,
+    "IREF_resistor_dissipation_mW": 0.20409286713286715
+  },
+  "planning_models": {
+    "full": {
+      "on_fraction": 0.94,
+      "LED_average_mA": 340.8465767832168,
+      "four_driver_ICC_planning_mA": 34.8,
+      "gate_pullup_and_anode_bleed_mA": 1.47,
+      "BLANK_pullup_mA": 0.66,
+      "MCU_module_allowance_mA": 30.0,
+      "subtotal_before_other_loads_mA": 407.7765767832168,
+      "change_from_original_planning_mA": -24.185536452077333
+    },
+    "DIM": {
+      "on_fraction": 0.05,
+      "LED_average_mA": 18.130137062937063,
+      "four_driver_ICC_planning_mA": 17.0,
+      "gate_pullup_and_anode_bleed_mA": 0.07819148936170213,
+      "BLANK_pullup_mA": 0.035106382978723406,
+      "MCU_module_allowance_mA": 30.0,
+      "subtotal_before_other_loads_mA": 65.24343493527749,
+      "change_from_original_planning_mA": -8.860932790004114
+    }
+  },
+  "thermal_planning": {
+    "14row_driver_5V_2V_LED_full_W": 0.3208642086713287,
+    "14row_driver_short_load_5p5V_instantaneous_sink_W_before_logic": 0.5698043076923077,
+    "TI_RGE_standardized_board_thetaJA_C_per_W": 42.9,
+    "not_measured_case_thermal_resistance": true
+  },
+  "timing": {
+    "SPI_Hz": 8000000,
+    "shift_64_bits_us": 8,
+    "LAT_pulse_us": 1,
+    "blank_us": 30,
+    "phase_us": 500,
+    "light_us_full": 470,
+    "frame_Hz": 400,
+    "LAT_level_sensitive_HIGH": true,
+    "data_refresh_64_bits_before_each_latch": true,
+    "TI_max_clock_Hz": 35000000,
+    "TI_min_LAT_high_ns": 20,
+    "TI_min_SCLK_high_low_ns": 10,
+    "TI_min_BLANK_high_ns": 100,
+    "TI_min_BLANK_low_ns": 50,
+    "TI_min_LAT_falling_to_SCLK_rising_setup_hold_ns": 10,
+    "conclusion": "No new digital-timing conflict identified; physical signal integrity still needs waveform checks."
+  },
+  "electrical_findings": [
+    {
+      "area": "Powered gate OFF",
+      "status": "No hard incompatibility identified",
+      "reason": "OUT10V/BLANK=VCC low-leakage specification supports 5V gate pullup while powered; cannot model precharge as a bidirectional clamp to3.3V. 0.5uA times4.7kohm =2.35mV pullup loss."
+    },
+    {
+      "area": "Powered gate ON",
+      "status": "Plausible operating margin",
+      "reason": "At1Vgate the4.7k pullup supplies0.85mA, wellbelow7.4mA sink capability; AO3401A gate voltage should fall sufficiently. This is an engineering inference; current-sink output is not a guaranteed PMOS gate driver."
+    },
+    {
+      "area": "BLANK and row outputs",
+      "status": "New analogue behaviour; measure",
+      "reason": "BLANKHIGH disables regulated sinks and enables source precharge on alloutputs, including U4gate outputs; NOT alloutputs high-impedance. Typical precharge at3.3V is1.9V; stated range1.3..2.5V atspecifiedtestcurrent. Reverse-bias and ghosting depend on realLED/rail/tracecapacitance."
+    },
+    {
+      "area": "Power transitions",
+      "status": "Open bench or manufacturer-confirmation item",
+      "reason": "No VCC=0 output reverse-current guarantee found. Common-enable dualQOD rails and zero-latch/HiZ shutdown reduce exposure but do not prove relative ramp/discharge behaviour; changed sequencing/discharge circuitry could be needed if measurements fail."
+    },
+    {
+      "area": "Output accuracy",
+      "status": "Documented tradeoff",
+      "reason": "Maximumdevice/channelerrors \u00b14/\u00b13% vs original\u00b13/\u00b12% atdifferent statedtestconditions. Neither those limits nor ICC9/4mA at3kIREF establish wholeproductworstcase at7.4mA."
+    },
+    {
+      "area": "Headroom and stability",
+      "status": "Prototype qualification",
+      "reason": "Recommendedoutput10V vs original17V, stillabove normal5V. TI identifies output-loop ringing with largeparasiticinductance and gives RCmitigation; no concrete needforaddedRCidentifiedfor thissingleboard. Checkwaveforms instead of claiming guaranteed stability."
+    }
+  ],
+  "remaining_physical_acceptance": [
+    "Owner full current-case print/stock-module/plug fit check remains pending; confidence is not recorded as a completed check.",
+    "Current-limited first power-up and both USB-C orientations; measure real current in full, DIM, unknown-source OFF and host suspend.",
+    "Scope SW_3V3/VLED_5V, representative gate/anode/cathode on startup, reset, shutdown, unplug/replug, USB suspend/resume; check unintended currents/rail lift.",
+    "Walking245pixels, blank/all-on/checkerboard and artwork; inspect ghosting and bank brightness uniformity at intended ambient light.",
+    "Scope settling before30us and output-loop ringing, including all-on/alternating patterns; retain or revise blanking based on measurements.",
+    "All-on enclosed-board thermal soak including driver packages, XIAO LDO and case; factory CAM/pin1 confirmation remains separate."
+  ],
+  "limitations": [
+    "No trusted analogue macro-model or physical prototype was exercised; digital mapping tests cannot qualify precharge or power-off behaviour.",
+    "Current/thermal figures are illustrative planning estimates, not USB compliance, worst-case power, luminance or junction-temperature guarantees.",
+    "No new schematic or routing hard block was identified. Physical qualification may reveal changes and remake costs not included in procurement budgets."
+  ],
+  "sources": [
+    {
+      "title": "TI TLC59283 RevC SBVS199C",
+      "url": "https://www.ti.com/lit/ds/symlink/tlc59283.pdf",
+      "relevant_pages": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        13,
+        16,
+        17,
+        18,
+        19,
+        34,
+        35,
+        36
+      ],
+      "sha256": "e6384c07f712ba8ec53328b0f37e5fe64ab83039fd554db4016bb23c48bfa2ed"
+    },
+    {
+      "title": "TI TLC59282 RevC SBVS152C",
+      "url": "https://www.ti.com/lit/ds/symlink/tlc59282.pdf",
+      "sha256": "fbaa2ba9d405f998fde950995af83ce6745dd9fb546e0e059d30c111e41cc5ba"
+    },
+    {
+      "title": "TI SLVAFP4,2023-10",
+      "url": "https://www.ti.com/lit/an/slvafp4/slvafp4.pdf",
+      "relevant_pages": [
+        2,
+        3,
+        4
+      ],
+      "sha256": "be878af128fd8f698d6716e1d8ceb6f88411fbd9ceda6c60113c49ea5274adad"
+    },
+    {
+      "title": "TI TPS22918 RevC SLVSD76C",
+      "url": "https://www.ti.com/lit/ds/symlink/tps22918.pdf",
+      "relevant_pages": [
+        6,
+        13,
+        14
+      ]
+    },
+    {
+      "title": "AO3401A manufacturer datasheet",
+      "url": "https://www.aosmd.com/sites/default/files/res/datasheets/AO3401A.pdf"
+    },
+    {
+      "title": "OwnedLED reference",
+      "path": "hardware/reference/LMD07057AUE.pdf"
+    }
+  ]
+}

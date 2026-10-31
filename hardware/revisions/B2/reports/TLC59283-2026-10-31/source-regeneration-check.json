@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "date": "2026-10-31",
+  "scope": "Fresh generator execution in temporary directories; canonical files left unchanged",
+  "electrical_spec_regenerates_byte_identically": true,
+  "schematic_and_symbols_regenerate_byte_identically": true,
+  "driver_land_pattern_preserved": true,
+  "U9_correct_bundled_RSE_model_preserved_on_regeneration": true,
+  "source_sha256": {
+    "tools/build_electrical_spec.py": "4f35af9eb8de0bef79b2969bd2cd7c07d7e2bd5b5a1d74018608e6dda7416113",
+    "tools/build_schematics.py": "5c0771043c63268436000efd2c2663fe50a710b2536cded2caf9ddbc65278728",
+    "electrical-spec.json": "ba719eb506720a63d95acdcf24c94ecf49344484cd5644f3d4c2f8e9050c0981",
+    "kicad/house-rules-main-B2.kicad_sch": "ca673ab6b9ab25bd4f059419eadd9045efc53a4c864ee0e9c2659fd91c598d37",
+    "kicad/HouseRules_main.kicad_sym": "42ea829bb95f9b61863fe8cbc4788c0b8a2332d7e282df8262200bfa146a39a9",
+    "kicad/footprints/TI.pretty/RGE0024C.kicad_mod": "bc47fe9acbe0dab3085b8e5ceda388d545efb143c75ecc48383853ca461d458b",
+    "kicad/footprints/Package_DFN_QFN.pretty/Texas_UQFN-10_1.5x2mm_P0.5mm.kicad_mod": "2dc75e874b07973dc001459890305a35572f3f192da3241ff9ddc3a122e48e55"
+  },
+  "limitations": "Represented source reproduction only; no hardware/powered/printer/factory tests"
+}

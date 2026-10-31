@@ -1,0 +1,726 @@
+{
+  "date": "2026-10-31",
+  "result": "PASS for represented geometry, source meshes and executable print-file checks; physical case fit remains pending",
+  "new_PCB_sha256": "765d4747e2cf559ff0f6a29024d232458d9b7a66ed96825eba6f3a657c313024",
+  "native_geometry_comparison": {
+    "pass": true,
+    "old_PCB_sha256": "b42e3d59b40a2e9cc877f8c5595d58339a2c7b0797970fa826ea84c19b8105f1",
+    "new_PCB_sha256": "765d4747e2cf559ff0f6a29024d232458d9b7a66ed96825eba6f3a657c313024",
+    "native_geometry_sha256": "8e0cbbc0e9896aa211bf9ec5b306f3d7dbdfb2410f0c126802b870c306007123",
+    "footprint_count": 82,
+    "pad_count": 355,
+    "same_positions_orientations_footprints_pad_shapes_drills_layers_nets_outline_thickness": true,
+    "scope": "Native footprint/pad/outline geometry comparison; component identity/value fields intentionally excluded; does not establish analogue performance."
+  },
+  "stock_source_geometry": {
+    "pass": true,
+    "source_xiao_sha256": "26c0b048ea37c3f1eee3a5d2ded9bea9758459d612113934665ca122b87227b4",
+    "source_adafruit_sha256": "07970b0ad3243684bdf59c0ced537b8b9a8e8b67f7e9032b9464600da21b04e0",
+    "contact_conflicts": [],
+    "scope": "XY pad/body bounding-box check only;no source3D-model heights,actual parts or solder envelopes measured."
+  },
+  "new_PCB_main_contact_audit": {
+    "board": "kicad/house-rules-main-B2.kicad_pcb",
+    "board_sha256": "765d4747e2cf559ff0f6a29024d232458d9b7a66ed96825eba6f3a657c313024",
+    "contract_sha256": "7653904daacf65a17fb7dc5f0a91ad7bb080203d2dea5089ab3ed35382ad9311",
+    "native_origin_mm": [
+      50,
+      50
+    ],
+    "contact_conflicts": [],
+    "mcu_screw_head_local_overlaps": [
+      {
+        "ref": "R9",
+        "kind": "footprint-bound",
+        "footprint": "R_0603_1608Metric",
+        "box": [
+          36.7825,
+          7.895000000000003,
+          39.792500000000004,
+          9.405000000000001
+        ]
+      }
+    ],
+    "mcu_screw_head_height_conflicts": [],
+    "height_evidence": {
+      "part": "R9,0603WAF4701T5E",
+      "body_height_mm": [
+        0.35,
+        0.55
+      ],
+      "allowed_including_solder_mm": 1.0,
+      "head_lowest_z": 12.6,
+      "main_back_z": 10.9,
+      "minimum_clearance_if_contract_met_mm": 0.7,
+      "manufacturer_datasheet": "https://datasheet.lcsc.com/lcsc/2206010230_UNI-ROYAL-Uniroyal-Elec-0603WAF2201T5E_C4190.pdf"
+    },
+    "pass": true,
+    "scope": "Native pad and footprint XY bounds; a body-height contract at the cap screw; not a solder/wire/printed-fit or full 3D component audit."
+  },
+  "fresh_OpenSCAD_rebuild": {
+    "contract_sha256": "7653904daacf65a17fb7dc5f0a91ad7bb080203d2dea5089ab3ed35382ad9311",
+    "scad_sha256": "868632421c8d4873ab6bf9c009e77010d8cca044543b420da9ab1cdb21acbb2d",
+    "builds": {
+      "shell": {
+        "triangles": 1072,
+        "watertight_edge_counts": true,
+        "consistent_winding": true,
+        "positive_signed_volume": true,
+        "volume_mm3": 9380.408,
+        "bounds_mm": [
+          [
+            -2.6,
+            -3.15,
+            0.0
+          ],
+          [
+            92.05,
+            19.45,
+            22.8
+          ]
+        ],
+        "size_mm": [
+          94.65,
+          22.6,
+          22.8
+        ]
+      },
+      "lid": {
+        "triangles": 2104,
+        "watertight_edge_counts": true,
+        "consistent_winding": true,
+        "positive_signed_volume": true,
+        "volume_mm3": 3726.802,
+        "bounds_mm": [
+          [
+            -2.6,
+            -3.15,
+            0.0
+          ],
+          [
+            92.05,
+            19.45,
+            12.95
+          ]
+        ],
+        "size_mm": [
+          94.65,
+          22.6,
+          12.95
+        ]
+      },
+      "fit-coupon": {
+        "triangles": 216,
+        "watertight_edge_counts": true,
+        "consistent_winding": true,
+        "positive_signed_volume": true,
+        "volume_mm3": 336.377,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            20.0,
+            8.0,
+            9.2
+          ]
+        ],
+        "size_mm": [
+          20.0,
+          8.0,
+          9.2
+        ]
+      },
+      "mcu-cap": {
+        "triangles": 232,
+        "watertight_edge_counts": true,
+        "consistent_winding": true,
+        "positive_signed_volume": true,
+        "volume_mm3": 283.764,
+        "bounds_mm": [
+          [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          [
+            6.0,
+            16.4,
+            4.2
+          ]
+        ],
+        "size_mm": [
+          6.0,
+          16.4,
+          4.2
+        ]
+      },
+      "closure-coupon": {
+        "triangles": 200,
+        "watertight_edge_counts": true,
+        "consistent_winding": true,
+        "positive_signed_volume": true,
+        "volume_mm3": 754.742,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            24.0,
+            15.0,
+            10.8
+          ]
+        ],
+        "size_mm": [
+          24.0,
+          15.0,
+          10.8
+        ]
+      }
+    },
+    "collision_checks": {
+      "interference": {
+        "empty": true,
+        "returncode": 1,
+        "log_file": "render/interference.log"
+      },
+      "shell-lid-interference": {
+        "empty": true,
+        "returncode": 1,
+        "log_file": "render/shell-lid-interference.log"
+      },
+      "mcu-slide-interference": {
+        "empty": true,
+        "returncode": 1,
+        "log_file": "render/mcu-slide-interference.log"
+      }
+    },
+    "closure_transition": {
+      "intentional_positive_interference": true,
+      "lid_offset_z_mm": 0.8,
+      "intersection_mesh": {
+        "triangles": 256,
+        "watertight_edge_counts": true,
+        "consistent_winding": true,
+        "positive_signed_volume": true,
+        "volume_mm3": 1.201,
+        "bounds_mm": [
+          [
+            16.5,
+            -1.75,
+            21.7585
+          ],
+          [
+            88.5,
+            18.05,
+            22.4563
+          ]
+        ],
+        "size_mm": [
+          72.0,
+          19.8,
+          0.6978
+        ]
+      },
+      "physical_validation_required": true,
+      "scope": "Rigid intermediate overlap only;not an elastic/force/lifetime simulation."
+    },
+    "clearance_mm": {
+      "main_smd_to_mcu_wire_allowance": 0.8,
+      "main_smd_to_usb_wire_allowance": 0.5,
+      "mcu_upper_to_inside_back": 3.196,
+      "usb_upper_to_inside_back": 2.8,
+      "usb_port_closed_roof": 1.3,
+      "usb_socket_recess": 2.35
+    },
+    "rebuilt_mesh_equivalence": {
+      "enclosure-B2-PROTOTYPE-shell.stl": {
+        "source_mesh_geometry_retained": true,
+        "scale_percent": 100,
+        "rotation_identity": true,
+        "triangles": 1072,
+        "maximum_float32_vertex_roundtrip_error_mm": 0,
+        "actual_plate_bounds_mm": [
+          [
+            -2.6,
+            -3.15,
+            0.0
+          ],
+          [
+            92.05,
+            19.45,
+            22.8
+          ]
+        ]
+      },
+      "enclosure-B2-PROTOTYPE-back.stl": {
+        "source_mesh_geometry_retained": true,
+        "scale_percent": 100,
+        "rotation_identity": true,
+        "triangles": 2104,
+        "maximum_float32_vertex_roundtrip_error_mm": 0,
+        "actual_plate_bounds_mm": [
+          [
+            -2.6,
+            -3.15,
+            0.0
+          ],
+          [
+            92.05,
+            19.45,
+            12.95
+          ]
+        ]
+      },
+      "mcu-channel-fit-coupon.stl": {
+        "source_mesh_geometry_retained": true,
+        "scale_percent": 100,
+        "rotation_identity": true,
+        "triangles": 216,
+        "maximum_float32_vertex_roundtrip_error_mm": 0,
+        "actual_plate_bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            20.0,
+            8.0,
+            9.2
+          ]
+        ]
+      },
+      "mcu-retaining-cap.stl": {
+        "source_mesh_geometry_retained": true,
+        "scale_percent": 100,
+        "rotation_identity": true,
+        "triangles": 232,
+        "maximum_float32_vertex_roundtrip_error_mm": 0,
+        "actual_plate_bounds_mm": [
+          [
+            -1.90735e-07,
+            0.0,
+            -5.72205e-07
+          ],
+          [
+            6.0,
+            16.4,
+            4.2
+          ]
+        ]
+      },
+      "case-closure-fit-coupon.stl": {
+        "source_mesh_geometry_retained": true,
+        "scale_percent": 100,
+        "rotation_identity": true,
+        "triangles": 200,
+        "maximum_float32_vertex_roundtrip_error_mm": 0,
+        "actual_plate_bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            24.0,
+            15.0,
+            10.8
+          ]
+        ]
+      }
+    }
+  },
+  "current_PCB_three_job_print_pack": {
+    "result": "PASS",
+    "canonical_PCB_sha256": "765d4747e2cf559ff0f6a29024d232458d9b7a66ed96825eba6f3a657c313024",
+    "dummy": {
+      "closed_consistently_wound_single_body": true,
+      "actual_hole_count": 84,
+      "actual_hole_diameter_mm": 1.0,
+      "maximum_centre_error_from_native_PCB_mm": 8.83883476763741e-06,
+      "actual_bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          89.45,
+          17.3,
+          1.6
+        ]
+      ],
+      "nominal_module_pitch_mm": 12.875
+    },
+    "jobs": {
+      "01_B2_F_FitTests_KE04_HyperPLA": {
+        "Gcode_sha256": "e7be3f3e35d36bfae01900cc05eabbc3f44983040ad9b03af839a6f5567fed24",
+        "sliced_project_sha256": "76642b3b16907cec8ef3b62e2d02f6ab1d9b6f3e7d29e138316a0141afb685fb",
+        "embedded_Gcode_byte_identical": true,
+        "Gcode_checks": {
+          "actual_profile_and_heater_commands_verified": true,
+          "native_start_end_preserved": true,
+          "temperatures_C": {
+            "nozzle": [
+              220,
+              215
+            ],
+            "bed": [
+              60,
+              55
+            ]
+          },
+          "all_objects_extrude_from_first_layer": true,
+          "object_extrusion_segments": {
+            "pin-fit-scale-50mm_id_3_copy_0": 893,
+            "case-closure-fit-coupon_id_2_copy_0": 1379,
+            "mcu-channel-fit-coupon_id_1_copy_0": 2068,
+            "B2-main-board-fit-1p6mm_id_0_copy_0": 47232
+          },
+          "feature_extrusion_segments": {
+            "Inner wall": 25925,
+            "Outer wall": 11557,
+            "Bottom surface": 1350,
+            "Internal solid infill": 12048,
+            "Top surface": 680,
+            "Overhang wall": 12
+          },
+          "all_motion_bounds_mm": [
+            [
+              -2.0,
+              20.0,
+              0.2
+            ],
+            [
+              154.24,
+              218.0,
+              35.8
+            ]
+          ],
+          "extrusion_bounds_mm": [
+            [
+              65.21,
+              65.21,
+              0.2
+            ],
+            [
+              154.24,
+              149.79,
+              10.8
+            ]
+          ],
+          "actual_model_maximum_Z_mm": 10.8,
+          "stock_negative_X_purge_and_final_park_preserved": true,
+          "estimated_time": "38m 48s",
+          "estimated_filament_g": 4.85
+        }
+      },
+      "02_B2_F_Shell_KE04_HyperPLA": {
+        "Gcode_sha256": "7a4e6d41aa3abb94ed6c4d76f450c68c6db27684a686abf66f285b84f2c74b48",
+        "sliced_project_sha256": "9dfc8a04e1c0aae00bdc1506142a65b10cd9b56b34d85ddb3fb336febe201d92",
+        "embedded_Gcode_byte_identical": true,
+        "Gcode_checks": {
+          "actual_profile_and_heater_commands_verified": true,
+          "native_start_end_preserved": true,
+          "temperatures_C": {
+            "nozzle": [
+              220,
+              215
+            ],
+            "bed": [
+              60,
+              55
+            ]
+          },
+          "all_objects_extrude_from_first_layer": true,
+          "object_extrusion_segments": {
+            "enclosure-B2-PROTOTYPE-shell_id_0_copy_0": 15942
+          },
+          "feature_extrusion_segments": {
+            "Brim": 296,
+            "Support": 931,
+            "Inner wall": 8340,
+            "Outer wall": 4836,
+            "Overhang wall": 32,
+            "Internal solid infill": 107,
+            "Support interface": 1164,
+            "Top surface": 520,
+            "Bridge": 12
+          },
+          "all_motion_bounds_mm": [
+            [
+              -2.0,
+              20.0,
+              0.2
+            ],
+            [
+              160.514,
+              218.0,
+              47.8
+            ]
+          ],
+          "extrusion_bounds_mm": [
+            [
+              60.536,
+              96.037,
+              0.2
+            ],
+            [
+              160.514,
+              123.964,
+              22.8
+            ]
+          ],
+          "actual_model_maximum_Z_mm": 22.8,
+          "stock_negative_X_purge_and_final_park_preserved": true,
+          "estimated_time": "53m 8s",
+          "estimated_filament_g": 12.36
+        }
+      },
+      "03_B2_F_BackAndCap_KE04_HyperPLA": {
+        "Gcode_sha256": "5406b25e5eeac25ba1c6df3538c89808ec30a053e0c38a19392192e8e6150d9e",
+        "sliced_project_sha256": "47b8fc23809e79119e3ce3ea4aa7c32d68a9b54370a68f063f27c88b091f5e2e",
+        "embedded_Gcode_byte_identical": true,
+        "Gcode_checks": {
+          "actual_profile_and_heater_commands_verified": true,
+          "native_start_end_preserved": true,
+          "temperatures_C": {
+            "nozzle": [
+              220,
+              215
+            ],
+            "bed": [
+              60,
+              55
+            ]
+          },
+          "all_objects_extrude_from_first_layer": true,
+          "object_extrusion_segments": {
+            "mcu-retaining-cap_id_1_copy_0": 2309,
+            "enclosure-B2-PROTOTYPE-back_id_0_copy_0": 13414
+          },
+          "feature_extrusion_segments": {
+            "Inner wall": 5536,
+            "Outer wall": 7212,
+            "Bottom surface": 369,
+            "Internal solid infill": 2313,
+            "Top surface": 269,
+            "Overhang wall": 24
+          },
+          "all_motion_bounds_mm": [
+            [
+              -2.0,
+              20.0,
+              0.2
+            ],
+            [
+              157.64,
+              218.0,
+              38.0
+            ]
+          ],
+          "extrusion_bounds_mm": [
+            [
+              63.41,
+              85.21,
+              0.2
+            ],
+            [
+              157.64,
+              141.19,
+              13.0
+            ]
+          ],
+          "actual_model_maximum_Z_mm": 13.0,
+          "stock_negative_X_purge_and_final_park_preserved": true,
+          "estimated_time": "31m 12s",
+          "estimated_filament_g": 4.82
+        }
+      }
+    }
+  },
+  "frozen_combined_plate": {
+    "result": "PASS",
+    "source_PCB_sha256": "b42e3d59b40a2e9cc877f8c5595d58339a2c7b0797970fa826ea84c19b8105f1",
+    "object_count": 7,
+    "Gcode_sha256": "90f37e09226037a13de08d0505d5f33fb598724c9364dbfd469abcbb2d86bccb",
+    "sliced_project_sha256": "de01f6234ca1ad6b8b6e11985d2c7c7dc092dca3b4c9782be39c373a85d42c93",
+    "source_meshes_frozen_and_unscaled": true,
+    "dummy": {
+      "closed_consistently_wound_single_body": true,
+      "actual_hole_count": 84,
+      "actual_hole_diameter_mm": 1.0,
+      "maximum_centre_error_from_native_PCB_mm": 8.83883476763741e-06,
+      "actual_bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          89.45,
+          17.3,
+          1.6
+        ]
+      ],
+      "nominal_module_pitch_mm": 12.875
+    },
+    "Gcode_checks": {
+      "all_seven_objects_extrude_on_first_layer": true,
+      "print_sequence": "by layer; actual layer Z never resets",
+      "native_start_end_and_negative_X_purge_preserved": true,
+      "actual_heater_commands_and_Klipper_KE04_PLA_profile_verified": true,
+      "temperatures_C": {
+        "nozzle": [
+          220,
+          215
+        ],
+        "bed": [
+          60,
+          55
+        ]
+      },
+      "all_motion_bounds_mm": [
+        [
+          -2.0,
+          20.0,
+          0.2
+        ],
+        [
+          157.314,
+          218.0,
+          47.8
+        ]
+      ],
+      "extrusion_bounds_mm": [
+        [
+          57.336,
+          47.337,
+          0.2
+        ],
+        [
+          157.314,
+          190.19,
+          22.8
+        ]
+      ],
+      "support_interface_brim_only_in_shell_allocation": true,
+      "shell_allocation_including_3p15mm_brim_mm": [
+        [
+          56.849999200000006,
+          46.8499998
+        ],
+        [
+          157.8000008,
+          75.7500002
+        ]
+      ],
+      "special_feature_bounds_mm": [
+        [
+          57.336,
+          47.337,
+          0.2
+        ],
+        [
+          157.314,
+          75.264,
+          7.8
+        ]
+      ],
+      "special_feature_segments": {
+        "Brim": 299,
+        "Support": 931,
+        "Support interface": 1164
+      },
+      "special_feature_segments_by_active_object": {
+        "None": {
+          "Brim": 299
+        },
+        "enclosure-B2-PROTOTYPE-shell": {
+          "Support": 931,
+          "Support interface": 1164
+        }
+      },
+      "model_segments_by_object": {
+        "mcu-channel-fit-coupon": 2068,
+        "pin-fit-scale-50mm": 893,
+        "mcu-retaining-cap": 2309,
+        "case-closure-fit-coupon": 1379,
+        "B2-main-board-fit-1p6mm": 47232,
+        "enclosure-B2-PROTOTYPE-back": 13414,
+        "enclosure-B2-PROTOTYPE-shell": 13847
+      },
+      "all_feature_segments": {
+        "Inner wall": 39801,
+        "Outer wall": 23605,
+        "Bottom surface": 1719,
+        "Brim": 299,
+        "Support": 931,
+        "Internal solid infill": 14468,
+        "Top surface": 1469,
+        "Overhang wall": 68,
+        "Support interface": 1164,
+        "Bridge": 12
+      },
+      "actual_model_maximum_Z_by_object_mm": {
+        "mcu-channel-fit-coupon": 9.2,
+        "pin-fit-scale-50mm": 1.0,
+        "mcu-retaining-cap": 4.2,
+        "case-closure-fit-coupon": 10.8,
+        "B2-main-board-fit-1p6mm": 1.6,
+        "enclosure-B2-PROTOTYPE-back": 13.0,
+        "enclosure-B2-PROTOTYPE-shell": 22.8
+      },
+      "estimated_time": "1h 58m 37s",
+      "estimated_filament_g": 21.94
+    },
+    "binding_to_new_PCB": "The historical verifier retains its fixed old-board hash and passed against the archived confirmed-F board. Independent exact new/old native footprint/pad/outline/thickness equality above and unchanged source-mesh hashes establish applicability to the new identity-only board."
+  },
+  "unchanged_geometry_and_print_inputs_sha256": {
+    "hardware/revisions/B2/stock-module-contract.json": "7653904daacf65a17fb7dc5f0a91ad7bb080203d2dea5089ab3ed35382ad9311",
+    "hardware/revisions/B2/mechanical/enclosure.scad": "868632421c8d4873ab6bf9c009e77010d8cca044543b420da9ab1cdb21acbb2d",
+    "hardware/revisions/B2/mechanical/stock-module-values.scad": "85b836e06250fb4d80c39760332649b38edd85badecb61c6a95a6d8bfb47f6ad",
+    "hardware/revisions/B2/mechanical/mcu-channel-fit-coupon.stl": "7f7b609fb40f6c3aa99f3b5b3976fd423c8cd30a5c9071053362c5d020de4d3f",
+    "hardware/revisions/B2/mechanical/enclosure-B2-PROTOTYPE-back.stl": "fb5dcc29a8ca4c8559f471e5d2cde42042af05010f8449a3655fd8bac2574af9",
+    "hardware/revisions/B2/mechanical/enclosure-B2-PROTOTYPE-shell.stl": "568d92a04acd80bb85939bcf59cb91d3df77d251180da0e0bae272e63dd40bb3",
+    "hardware/revisions/B2/mechanical/mcu-retaining-cap.stl": "baa5db4801ea1992f102fffc7f4c64ede8f2175703322fae2d54381a8a7d307e",
+    "hardware/revisions/B2/mechanical/case-closure-fit-coupon.stl": "af8297bc7ef0153aae03c1c863ac9521cd3c536ebac961e16e313ba1dabd6d11",
+    "hardware/revisions/B2/printing/2026-10-31-confirmed-F/models/B2-main-board-fit-1p6mm.stl": "643ecddb8ad7384f3c721909019f144565dcae5642ff531b7a59f3a5442d8c9e",
+    "hardware/revisions/B2/printing/2026-10-31-confirmed-F/gcode/03_B2_F_BackAndCap_KE04_HyperPLA.gcode": "5406b25e5eeac25ba1c6df3538c89808ec30a053e0c38a19392192e8e6150d9e",
+    "hardware/revisions/B2/printing/2026-10-31-confirmed-F/gcode/02_B2_F_Shell_KE04_HyperPLA.gcode": "7a4e6d41aa3abb94ed6c4d76f450c68c6db27684a686abf66f285b84f2c74b48",
+    "hardware/revisions/B2/printing/2026-10-31-confirmed-F/gcode/01_B2_F_FitTests_KE04_HyperPLA.gcode": "e7be3f3e35d36bfae01900cc05eabbc3f44983040ad9b03af839a6f5567fed24",
+    "hardware/revisions/B2/printing/2026-10-31-confirmed-F/projects/02_B2_F_Shell_KE04_HyperPLA.3mf": "085141ec15044866ba68ad018da21d00b6ed38ba43a04280a4d8413d71e20f9c",
+    "hardware/revisions/B2/printing/2026-10-31-confirmed-F/projects/03_B2_F_BackAndCap_KE04_HyperPLA.3mf": "6aafe7da6247b06a3d144641c537ff33ec9903e2c186ce1ce9667cb73bf9aeb0",
+    "hardware/revisions/B2/printing/2026-10-31-confirmed-F/projects/01_B2_F_FitTests_KE04_HyperPLA.3mf": "4fe466e88271a8e34fb347fbed27b83813abadf74d923b30daaeabe45a18c532",
+    "hardware/revisions/B2/printing/2026-10-31-confirmed-F/sliced-projects/02_B2_F_Shell_KE04_HyperPLA.3mf": "9dfc8a04e1c0aae00bdc1506142a65b10cd9b56b34d85ddb3fb336febe201d92",
+    "hardware/revisions/B2/printing/2026-10-31-confirmed-F/sliced-projects/03_B2_F_BackAndCap_KE04_HyperPLA.3mf": "47b8fc23809e79119e3ce3ea4aa7c32d68a9b54370a68f063f27c88b091f5e2e",
+    "hardware/revisions/B2/printing/2026-10-31-confirmed-F/sliced-projects/01_B2_F_FitTests_KE04_HyperPLA.3mf": "76642b3b16907cec8ef3b62e2d02f6ab1d9b6f3e7d29e138316a0141afb685fb",
+    "hardware/revisions/B2/printing/2026-10-31-confirmed-F/single-plate/gcode/B2_F_AllParts_OnePlate_KE04_HyperPLA.gcode": "90f37e09226037a13de08d0505d5f33fb598724c9364dbfd469abcbb2d86bccb",
+    "hardware/revisions/B2/printing/2026-10-31-confirmed-F/single-plate/projects/B2_F_AllParts_OnePlate_KE04_HyperPLA.3mf": "f4acf791ea1c2ffba06b2d6d0523b2b0894bfe1d1d3b866fcf34770291ec0299",
+    "hardware/revisions/B2/printing/2026-10-31-confirmed-F/single-plate/sliced-projects/B2_F_AllParts_OnePlate_KE04_HyperPLA.3mf": "de01f6234ca1ad6b8b6e11985d2c7c7dc092dca3b4c9782be39c373a85d42c93"
+  },
+  "physical_checks": {
+    "LED_pitch_coupon": "Owner selected12.875mm as best fit",
+    "full_case_print_and_fit": "PENDING; owner has not completed it",
+    "actual_stock_module_revision_and_USB_plug_fit": "Pending purchased-part measurement and dry fit",
+    "powered_electrical_thermal_optical_acceptance": "Pending first prototype"
+  },
+  "no_printer_connection_or_execution": true,
+  "no_order_or_payment": true,
+  "method": {
+    "temporary_outputs": true,
+    "canonical_case_print_assets_edited": false,
+    "validators": "Existing stock-source/native-main-contact, OpenSCAD build/mesh/collision, print-pack and single-plate validators. Inputs and historical reports preserved; checks run in temporary snapshots. Native geometry comparison reads both boards with KiCad Python. No assertions were disabled."
+  },
+  "limitations": [
+    "Nominal CAD clearance and model checks do not establish actual print shrinkage, snap force, flexible wire routing, solder envelopes or real USB-plug fit.",
+    "Electrical/analogue behaviour is outside this mechanical report.",
+    "The confident expectation of a physical print fit is not recorded as a completed fit check."
+  ],
+  "selected_purchase_plan": "selected-purchase-plan.json"
+}

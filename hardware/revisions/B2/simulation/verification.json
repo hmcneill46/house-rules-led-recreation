@@ -1,15 +1,17 @@
 {
   "result": "PASS",
-  "date_utc": "2026-10-31T19:51:44.578621+00:00",
+  "date_utc": "2026-10-31T23:30:05.762616+00:00",
   "model": "Independent physical diode/TLC/PMOS connectivity model",
-  "electrical_spec_sha256": "755a5b30c8b0919af8874b58b9979ca0133f9cbc2a0dc6002b77b13267fb6e28",
+  "electrical_spec_sha256": "ba719eb506720a63d95acdcf24c94ecf49344484cd5644f3d4c2f8e9050c0981",
   "firmware_source_sha256": {
     "HouseRulesB2/scan_engine.h": "dca42ab3dc53c6ccbc2d7b6472b87efe4eaf856525fc55f77a85a8d105c52e09",
-    "HouseRulesB2/board_contract_generated.h": "2adf7bb63e222fb10138de0cede28428c808e5e9f100862cdb364a3f5c274cf0",
+    "HouseRulesB2/board_contract_generated.h": "8b022de08da9f87edf3cf226928cd1fc39135cd7c0496c5f79136eb4568aa26b",
     "HouseRulesB2/player.h": "bead21b3f649c53a891762bc8bcac4cefa4d60da6381339aa4f0c7cb8be0883c",
     "generated_sequence.h": "a7d1963f69ca10a11635c25d9b5d51e5e6a9152601122c8f659420badfecf320"
   },
-  "package": "TLC59282RGER RGE0024C; physical output pins2..17, EP25=GND",
+  "package": "TLC59283RGER RGE0024C; physical output pins2..17, EP25=GND",
+  "iref_ohms": 7150,
+  "nominal_current_formula": "1.208V *43.8 /7150ohm; TI Rev.C p7 footnote2",
   "module_count": 7,
   "physical_diode_paths": 245,
   "daisy_chain_from_actual_nets": [
@@ -25,11 +27,13 @@
   "complete_artwork_traversals": 2,
   "artwork_frame_sha256": "5cfcc3e0fd3d33e3c8aa526264e63a5529cc3bc9fb5531126e173bb8fe42a1a6",
   "per_phase_reconstructions": 301235,
-  "nominal_single_LED_peak_mA": 7.424926470588234,
-  "nominal_all_white_LED_peak_A": 0.3638213970588235,
-  "nominal_all_white_LED_average_A_at470of500us": 0.34199211323529405,
-  "nominal_all_white_LED_average_A_at25of500us": 0.018191069852941177,
+  "nominal_single_LED_peak_mA": 7.400055944055946,
+  "nominal_all_white_LED_peak_A": 0.36260274125874137,
+  "nominal_all_white_LED_average_A_at470of500us": 0.3408465767832169,
+  "nominal_all_white_LED_average_A_at25of500us": 0.01813013706293707,
   "fault_cases_detected": [
+    "Old6.8kohm resistor on TLC59283 would change peak current",
+    "Mixed original/replacement driver identity",
     "LED anode/cathode polarity swap",
     "Cathodes accidentally shared across modules",
     "PMOS source/drain reversal",
@@ -58,6 +62,7 @@
   },
   "limitations": [
     "Functional connectivity only; no MOSFET gate charge, ghosting, current compliance or thermal simulation",
+    "TLC59283 precharge, transient LED reverse bias and powered-off reverse current are not analog modeled",
     "No real USB enumeration, suspend current or startup inrush measurement",
     "One owned module full pin map/orientation is owner-verified; other20 modules and powered-board operation remain unverified",
     "Uses schematic electrical-spec connections, not routed-PCB extraction; final PCB net parity is a separate check"
