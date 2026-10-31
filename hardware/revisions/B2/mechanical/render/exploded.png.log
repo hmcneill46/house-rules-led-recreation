@@ -1,4 +1,4 @@
-ECHO: "B2 outer W/H/depth", 93.6, 22.6, 24
+ECHO: "B2 outer W/H/depth", 94.65, 22.6, 24
 ECHO: "MCU PCB under/top,maximum upper", 15.3, 16.104, 19.604
 ECHO: "USB PCB under/top,maximum upper", 15, 16.6, 20
 ECHO: "USB face x/y/port-centre-z", 78.16, 17.1, 18.25
@@ -11,4 +11,4 @@ Geometries in cache: 121
 Geometry cache size in bytes: 251768
 CGAL Polyhedrons in cache: 0
 CGAL cache size in bytes: 0
-Total rendering time: 0:00:00.186
+Total rendering time: 0:00:00.228

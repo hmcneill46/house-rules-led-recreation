@@ -1,6 +1,6 @@
 {
   "revision": "B2",
-  "date": "2026-10-29",
+  "date": "2026-10-31",
   "status": "prototype geometry and module-interface contract; actual purchased stock revisions require measurement",
   "coordinate_system": {
     "x": "right along display",
@@ -11,19 +11,19 @@
   },
   "case": {
     "outer": [
-      93.6,
+      94.65,
       22.6,
       24.0
     ],
     "front_opening": [
-      90.4,
+      91.45,
       18.4
     ],
     "inside_rear_z": 22.8,
     "main_pcb_front_z": 9.3,
     "main_pcb_back_z": 10.9,
     "main_pcb_xy": [
-      88.4,
+      89.45,
       17.3
     ],
     "main_max_smd_height": 2.0,
@@ -31,9 +31,28 @@
     "nominal_led_silhouette": [
       -0.25,
       -0.25,
-      88.9,
+      89.95,
       17.8
-    ]
+    ],
+    "led_module_pitch": 12.875,
+    "first_led_centre_xy": [
+      6.1,
+      8.65
+    ],
+    "conservative_led_body_allowance_xy": [
+      12.9,
+      18.0
+    ],
+    "conservative_led_body_allowance_status": "Approximate owner caliper body measurements; used for case clearance only, not proof of body spacing or absolute printed accuracy. Owner confirmed full seven-module fine trial F (12.875 mm nominal pitch) fits best.",
+    "pitch_confirmation": {
+      "date": "2026-10-31",
+      "owner_selected_trial": "F / P12.875 / +0.175",
+      "module_pitch_mm": 12.875,
+      "increase_per_join_from_original_mm": 0.175,
+      "increase_across_six_joins_mm": 1.05,
+      "stock_module_poses_unchanged": true
+    },
+    "main_upper_wire_pad_stop_x": 65.4
   },
   "mcu": {
     "manufacturer": "Seeed Studio",
@@ -400,8 +419,8 @@
     },
     {
       "x": [
-        63.2,
-        66.0
+        64.0,
+        66.8
       ],
       "y": [
         0.05,
@@ -463,37 +482,39 @@
     ],
     "y": 0.85,
     "mcu_x": [
-      34.04,
-      36.58,
-      39.12,
-      41.66,
-      44.2,
-      46.739999999999995,
-      49.28,
-      51.82,
-      54.36,
-      56.9,
-      59.44,
-      61.980000000000004
+      34.39,
+      37.011098,
+      39.563902,
+      42.185,
+      44.725,
+      47.265,
+      49.886098,
+      52.438902,
+      55.06,
+      57.6,
+      60.14,
+      62.761098
     ],
     "usb_x": [
-      69.6,
-      72.14,
-      74.67999999999999,
-      77.22,
-      79.75999999999999,
-      82.3
+      70.475,
+      73.015,
+      75.636098,
+      78.188902,
+      80.81,
+      83.35
     ],
     "fillet_height_max": 1.0,
     "note": "Pre-tin ends and pads;provide a gentle loop and mechanical/adhesive strain relief away from the surface pads.",
     "mcu_bc_x": [
-      23.88,
-      26.42
+      24.136098,
+      26.688902
     ],
     "bc_net_order": [
       "BC_DET",
       "BC_AL_N"
-    ]
+    ],
+    "native_coordinate_source": "kicad/house-rules-main-B2.kicad_pcb; pad1 centres relative auxiliary origin",
+    "native_coordinate_source_sha256": "b42e3d59b40a2e9cc877f8c5595d58339a2c7b0797970fa826ea84c19b8105f1"
   },
   "bc12": {
     "detector": "BQ24392RSER on custom mainPCB",

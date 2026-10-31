@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prepare separate Orca projects from the proven KE/Hyper PLA fit profile.
+"""Prepare the confirmed-F Orca projects from the proven KE/Hyper PLA profile.
 
 No printer connection, motion or firmware changes. Original meshes are only
 translated on the plate; all scale and rotation transforms remain identity.
@@ -55,24 +55,37 @@ def uid(value):
     return str(uuid.uuid5(uuid.NAMESPACE_URL, 'house-rules-b2-print:' + value))
 
 
-def make_dummy():
+def make_dummy(output_root=None):
     """Use the checked PCB's exact84 LED centres; FDM holes are1.0mm."""
+    destination = HERE if output_root is None else Path(output_root)
     audit = json.loads((B2 / 'reports/board-audit.json').read_text())
+    contract = json.loads((B2 / 'stock-module-contract.json').read_text())
+    width, height = contract['case']['main_pcb_xy']
+    assert audit['result'] == 'PASS'
+    assert abs(audit['outline']['width_mm'] - width) < 1e-6
+    assert abs(audit['outline']['height_mm'] - height) < 1e-6
+    for module in range(7):
+        group = [p['relative_position_nm'] for key, p in audit['LED_geometry'].items()
+                 if key.startswith('DS' + str(module + 1) + '.')]
+        assert len(group) == 12
+        centre = [sum(p[axis] for p in group) / 12e6 for axis in (0, 1)]
+        assert abs(centre[0] - (6.1 + 12.875 * module)) < 1e-6
+        assert abs(centre[1] - 8.65) < 1e-6
     points = [p['relative_position_nm'] for p in audit['LED_geometry'].values()]
     assert len(points) == 84
     holes = sorted([[round(x / 1e6, 6), round(y / 1e6, 6)] for x, y in points])
-    folder = HERE / 'models'
+    folder = destination / 'models'
     folder.mkdir(exist_ok=True)
     scad = folder / 'B2-main-board-fit-1p6mm.scad'
     scad.write_text('// PRINT-ONLY gauge: no copper/components; NOT fabrication data.\n'
         '//1.0mm FDM holes differ from the real0.90mm finished PCB holes.\n'
         '$fn=32;\nholes=' + json.dumps(holes) + ';\n'
-        'difference(){cube([88.4,17.3,1.6]);\n'
+        'difference(){cube([' + str(width) + ',' + str(height) + ',1.6]);\n'
         ' for(p=holes)translate([p[0],p[1],-.1])cylinder(h=1.8,d=1.0);}\n')
     output = folder / 'B2-main-board-fit-1p6mm.stl'
     p = subprocess.run(['/Applications/OpenSCAD.app/Contents/MacOS/OpenSCAD',
                         '-o', str(output), str(scad)], capture_output=True, text=True)
-    (HERE / 'logs/dummy-build.log').write_text(p.stdout + p.stderr)
+    (destination / 'logs/dummy-build.log').write_text(p.stdout + p.stderr)
     p.check_returncode()
     return output
 
@@ -170,15 +183,18 @@ def project(job, objects, config, output_root=None):
     return {'project': str(output.relative_to(destination)), 'project_sha256': sha(output), 'objects': record}
 
 
-def main():
-    for folder in ('logs', 'models', 'projects', 'profiles', 'gcode', 'previews'):
-        (HERE / folder).mkdir(exist_ok=True)
+def main(output_root=None):
+    # Preserve the original 12.700 mm sliced jobs as historical prints.
+    destination = HERE / '2026-10-31-confirmed-F' if output_root is None else Path(output_root)
+    destination.mkdir(exist_ok=True)
+    for folder in ('logs', 'models', 'projects', 'profiles', 'gcode', 'previews', 'sliced-projects'):
+        (destination / folder).mkdir(exist_ok=True)
     with zipfile.ZipFile(BASE) as archive:
         config = json.loads(archive.read('Metadata/project_settings.config'))
     assert config['printer_settings_id'] == 'Creality Ender-3 V3 KE 0.4 nozzle'
     assert config['nozzle_diameter'] == ['0.4'] and config['gcode_flavor'] == 'klipper'
     start_end = {k: config[k] for k in ('machine_start_gcode', 'machine_end_gcode')}
-    config.update({'print_settings_id': 'House Rules B2 0.20mm Hyper PLA @Ender3V3KE04',
+    config.update({'print_settings_id': 'House Rules B2 confirmed F 12.875 0.20mm Hyper PLA @Ender3V3KE04',
         'outer_wall_speed': '35', 'inner_wall_speed': '60',
         'internal_solid_infill_speed': '80', 'sparse_infill_speed': '80',
         'top_surface_speed': '35', 'bridge_speed': '25', 'internal_bridge_speed': '100%',
@@ -193,30 +209,34 @@ def main():
         'outer_wall_acceleration': '800', 'inner_wall_acceleration': '1500',
         'print_sequence': 'by layer', 'brim_width': '3', 'brim_object_gap': '0.15'})
     assert all(config[k] == v for k, v in start_end.items())
-    dummy = make_dummy()
+    dummy = make_dummy(destination)
     mech = B2 / 'mechanical'
     jobs = [
-        ('01_B2_FitTests_KE04_HyperPLA', [(dummy, [65, 65]),
+        ('01_B2_F_FitTests_KE04_HyperPLA', [(dummy, [65, 65]),
             (mech / 'mcu-channel-fit-coupon.stl', [80, 105]),
             (mech / 'case-closure-fit-coupon.stl', [115, 102]),
             (ROOT / 'hardware/mechanical/pin-fit-scale-50mm.stl', [85, 140])], False),
-        ('02_B2_Shell_KE04_HyperPLA', [(mech / 'enclosure-B2-PROTOTYPE-shell.stl', [63.2, 98.7])], True),
-        ('03_B2_BackAndCap_KE04_HyperPLA', [
+        ('02_B2_F_Shell_KE04_HyperPLA', [(mech / 'enclosure-B2-PROTOTYPE-shell.stl', [63.2, 98.7])], True),
+        ('03_B2_F_BackAndCap_KE04_HyperPLA', [
             (mech / 'enclosure-B2-PROTOTYPE-back.stl', [63.2, 85]),
             (mech / 'mcu-retaining-cap.stl', [100, 125])], False)]
     report = {'slicer': 'OrcaSlicer2.4.2', 'printer': config['printer_settings_id'],
         'filament': 'Creality Hyper PLA GREY1.75mm', 'base_project': str(BASE.relative_to(ROOT)),
         'base_project_sha256': sha(BASE), 'machine_start_end_preserved': True,
-        'jobs': {}, 'hardware_execution': 'No printer connection or print started'}
+        'main_PCB_sha256': sha(B2 / 'kicad/house-rules-main-B2.kicad_pcb'),
+        'main_PCB_audit_sha256': sha(B2 / 'reports/board-audit.json'),
+        'mechanical_contract_sha256': sha(B2 / 'stock-module-contract.json'),
+        'confirmed_module_pitch_mm': 12.875, 'main_PCB_xy_mm': [89.45,17.3],
+        'date': '2026-10-31', 'jobs': {}, 'hardware_execution': 'No printer connection or print started'}
     for name, objects, supports in jobs:
         job_config = dict(config, enable_support='1' if supports else '0',
                           brim_type='outer_only' if supports else 'no_brim')
-        (HERE / 'profiles' / (name + '.json')).write_text(json.dumps(job_config, indent=2) + '\n')
-        report['jobs'][name] = project(name, objects, job_config)
+        (destination / 'profiles' / (name + '.json')).write_text(json.dumps(job_config, indent=2) + '\n')
+        report['jobs'][name] = project(name, objects, job_config, output_root=destination)
         report['jobs'][name]['supports'] = supports
         report['jobs'][name]['outside_brim_mm'] = 3 if supports else 0
-    (HERE / 'preparation.json').write_text(json.dumps(report, indent=2) + '\n')
-    print(HERE)
+    (destination / 'preparation.json').write_text(json.dumps(report, indent=2) + '\n')
+    print(destination)
 
 
 if __name__ == '__main__':

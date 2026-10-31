@@ -1,0 +1,39 @@
+{
+  "status": "compiled and host verified B2 prototype; physical hardware untested",
+  "map_sha256": "39d47ccdf963ff9bad61d2c7c43dda75683a82660b242edb64cbccaee1a05536",
+  "default_uf2_sha256": "2c951f28177c22ed7ef98d574ed0b6bbcd22ec29dad2439c6175f94a6dc13cbe",
+  "unknown_off_uf2_sha256": "80237ace7f9255cfa2750938c46991fca35b23683215ecd9f60fe5fcfb32cc08",
+  "cpu_hz": 48000000,
+  "flash_bytes": 2097152,
+  "usb_descriptor_ma": 500,
+  "usb_descriptor_attributes": "0x80",
+  "phase_us": 500,
+  "blank_us": 30,
+  "full_on_us": 470,
+  "dim_on_us": 25,
+  "initial_rail_settle_us": 10000,
+  "physical_release_gates": [
+    "Compare final PCB nets with scan-map.json",
+    "Confirm module diode polarity/physical pixel orientation",
+    "Scope anode/gate blanking and SPI/latch timing",
+    "Measure complete-device unconfigured current under USB traffic",
+    "Measure USB suspend current and test reset/enumeration/suspend/resume before/after configuration",
+    "Measure full-white current and enclosed temperatures",
+    "Verify BQ24392 SDP/CDP/DCP detection, USB data switch, UF2 and CDC programming through external socket"
+  ],
+  "evidence": [
+    "tests/verification.json",
+    "compiled/binary-audit.json",
+    "compiled-unknown-off/binary-audit.json",
+    "../simulation/verification.json"
+  ],
+  "bc12_policy": "BQ24392 GOOD_BAT high; full grant only DET high and AL_N low stable100ms; host suspend overrides every grant",
+  "bc12_gpio": {
+    "det": 7,
+    "al_n": 0
+  },
+  "diagnostics": "p/w/a/c/r/d/b patterns/brightness; nonblocking i source-state report",
+  "hardware_iref_ohms": 6800,
+  "nominal_led_peak_ma": 7.424926470588235,
+  "nominal_full_white_led_average_ma": 341.99211323529414
+}

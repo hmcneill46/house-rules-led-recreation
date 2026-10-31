@@ -1,6 +1,6 @@
 # B2 assembly and first test
 
-**30 October: resolve the [new module-spacing trials](printing/pitch-tests-2026-10-30/README.md) before ordering the PCB.** The fitted strip bows at the current 12.70 mm repeat although each individual 12-hole group fits. The electrical pin map remains confirmed; the mechanical repeat and case fit need rechecking after a winning sample is selected.
+**31 October: F / 12.875 mm is the confirmed module pitch.** Use the revised 89.45 × 17.30 mm PCB and [confirmed-F case/fit print pack](printing/2026-10-31-confirmed-F/README.md). Earlier 12.700 mm boards and case prints are historical. Check the new case with the actual stock modules and cable, then obtain a fresh quote and factory review before ordering. See the [revision checks](reports/confirmed-F-2026-10-31/README.md).
 
 The owner has identified an **ULTRICS UT0021YB** meter. Its diode-test mode can replace the two-AA/resistor tester: use the [specific meter and LED pin-test steps](led-diode-test.md). The owner has confirmed both complete probe sequences on one module: **all 12 pins match, with the part-number label on the left in front view**. Other modules still need consistent orientation and checks.
 
@@ -34,6 +34,8 @@ When the finished PCB has passed release checks, order factory assembly of its *
 The owner work is **14 MCU wires plus 6 USB-breakout wires**: 40 wire-end solder joints, followed by 84 LED joints, **124 joints per display**. Follow the exact numbered tables in [Wiring and strain relief](mechanical/README.md#wiring-and-strain-relief); front and rear views reverse left/right. Use the specified flexible wire and pre-tin the small XIAO backside USB pads **before fitting it in the cradle**. The main board's rear surface pads need gentle handling and strain relief.
 
 Use the UT0021YB for continuity and DC-voltage checks before powered PCB tests. Also prepare solder, flux, a fine-tip temperature-controlled iron, flush cutters, the existing [alignment tray](../../mechanical/alignment-tray.stl), 3 mm spacers and the screws listed in the mechanical guide. Keep power disconnected during wiring or soldering.
+
+The tray has one uninterrupted 90.6 × 18.6 mm pocket, with no fixed module divisions. It accommodates the revised approximate 90.15 × 18.0 mm body envelope; the PCB establishes the individual centre positions. The existing 100 mm spacer bars also span the wider PCB. Check the real modules sit freely rather than pressing their bodies together.
 
 ## 4. Check the wired board before fitting LEDs
 

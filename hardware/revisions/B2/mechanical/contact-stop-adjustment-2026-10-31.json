@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-31",
+  "reason": "Native final-PCB audit found shifted J12 wire pad crossing the original upper retention stop; adjust only that internal stop, retaining the exterior and all stock-module poses.",
+  "before_stop_centre_x_mm": 64.6,
+  "after_stop_centre_x_mm": 65.4,
+  "before_contact_x_mm": [
+    63.2,
+    66.0
+  ],
+  "after_contact_x_mm": [
+    64.0,
+    66.8
+  ],
+  "final_PCB_sha256": "b42e3d59b40a2e9cc877f8c5595d58339a2c7b0797970fa826ea84c19b8105f1",
+  "failed_native_audit_before_adjustment": {
+    "board": "kicad/house-rules-main-B2.kicad_pcb",
+    "board_sha256": "b42e3d59b40a2e9cc877f8c5595d58339a2c7b0797970fa826ea84c19b8105f1",
+    "contract_sha256": "82acf742e7dc616f8e1dacb1ea2b297484f83ac4e4051d199b253833315941e0",
+    "native_origin_mm": [
+      50,
+      50
+    ],
+    "contact_conflicts": [
+      {
+        "contact": [
+          63.2,
+          0.05,
+          66.0,
+          1.25
+        ],
+        "object": {
+          "ref": "J12",
+          "kind": "pad",
+          "pad": "1",
+          "box": [
+            61.861098,
+            0.29999999999999716,
+            63.661097999999996,
+            1.3999999999999986
+          ]
+        }
+      },
+      {
+        "contact": [
+          63.2,
+          0.05,
+          66.0,
+          1.25
+        ],
+        "object": {
+          "ref": "J12",
+          "kind": "footprint-bound",
+          "footprint": "WirePad_B2",
+          "box": [
+            61.861098,
+            0.29999999999999716,
+            63.661097999999996,
+            1.3999999999999986
+          ]
+        }
+      }
+    ],
+    "mcu_screw_head_local_overlaps": [
+      {
+        "ref": "R9",
+        "kind": "footprint-bound",
+        "footprint": "R_0603_1608Metric",
+        "box": [
+          36.7825,
+          7.895000000000003,
+          39.792500000000004,
+          9.405000000000001
+        ]
+      }
+    ],
+    "mcu_screw_head_height_conflicts": [],
+    "height_evidence": {
+      "part": "R9,0603WAF4701T5E",
+      "body_height_mm": [
+        0.35,
+        0.55
+      ],
+      "allowed_including_solder_mm": 1.0,
+      "head_lowest_z": 12.6,
+      "main_back_z": 10.9,
+      "minimum_clearance_if_contract_met_mm": 0.7,
+      "manufacturer_datasheet": "https://datasheet.lcsc.com/lcsc/2206010230_UNI-ROYAL-Uniroyal-Elec-0603WAF2201T5E_C4190.pdf"
+    },
+    "pass": false,
+    "scope": "Native pad and footprint XY bounds; a body-height contract at the cap screw; not a solder/wire/printed-fit or full 3D component audit."
+  },
+  "before_audit_sha256": "1940a3cc7859fbeecbcb94127a01bdc8a2bb6162ae82a76373c02224f64a84b4",
+  "expected_J12_to_new_contact_X_gap_mm": 0.338902,
+  "after_adjustment_native_audit_sha256": "ee3fb8ecc8d0c5f395e1ce5ce794e646cc93e8b421a66138093a7c91707d0642",
+  "after_adjustment_native_audit_pass": true,
+  "final_contract_sha256": "7653904daacf65a17fb7dc5f0a91ad7bb080203d2dea5089ab3ed35382ad9311"
+}

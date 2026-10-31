@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-31",
+  "bundle": "B2_F_12p875_KE04_HyperPLA_PrintPack.zip",
+  "bundle_sha256": "0d560ccf829ff69634a695cac6d13ea99d7ca82ff4cc9636ad6358f46b96ae90",
+  "entry_sha256": {
+    "PRINT_FIRST.txt": "f99fd248af6caa6ac2aee24e3717caca76b92e7807d161ad16a6ff5598d13fee",
+    "verification.json": "ce4708a233474457a08e831a28d0629d547eabf50859e2872080297389709c21",
+    "01_B2_F_FitTests_KE04_HyperPLA.gcode": "e7be3f3e35d36bfae01900cc05eabbc3f44983040ad9b03af839a6f5567fed24",
+    "02_B2_F_Shell_KE04_HyperPLA.gcode": "7a4e6d41aa3abb94ed6c4d76f450c68c6db27684a686abf66f285b84f2c74b48",
+    "03_B2_F_BackAndCap_KE04_HyperPLA.gcode": "5406b25e5eeac25ba1c6df3538c89808ec30a053e0c38a19392192e8e6150d9e"
+  },
+  "zip_integrity_and_entry_bytes_verified": true
+}

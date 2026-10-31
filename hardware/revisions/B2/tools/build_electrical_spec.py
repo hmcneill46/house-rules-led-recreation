@@ -118,7 +118,9 @@ def build():
             'CC2_ADC':{'gpio':27,'label':'D1','module_pad':2},
             'BC_DET':{'gpio':7,'label':'D5','module_pad':6},'BC_AL_N':{'gpio':0,'label':'D6','module_pad':7}}
     result = {'revision':'B2','status':'engineering prototype; not released for manufacture',
-      'boards':{'main':{'width':88.4,'height':17.3,'layers':6,'thickness':1.6,
+      'boards':{'main':{'width':89.45,'height':17.3,'layers':6,'thickness':1.6,
+               'led_module_pitch_mm':12.875,
+               'mechanical_confirmation':'Owner selected fine trial F / P12.875 / +0.175 on2026-10-31; individual12-pin geometry unchanged',
                'placement_owner':'root PCB generator/finalizer; x/y here placeholders; do not regenerate routed PCB from placement seed',
                'via_process':{'drill_mm':0.30,'majority_pad_mm':0.60,'selected_escape_pad_mm':0.45,
                               'cover':'All0.30mm vias epoxy filled and capped; includes exposed-pad thermal vias',

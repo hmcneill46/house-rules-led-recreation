@@ -1,7 +1,7 @@
 {
   "board": "kicad/house-rules-main-B2.kicad_pcb",
-  "board_sha256": "30909bdf197070c1e14cfe1f8bfa3bea72dc9c2b98547b3fdbb10b8c2cceffd6",
-  "contract_sha256": "4ac1d14debe7dfb139318eeece5a6a68b0d120d6bbdeaedb92115fb53903866d",
+  "board_sha256": "b42e3d59b40a2e9cc877f8c5595d58339a2c7b0797970fa826ea84c19b8105f1",
+  "contract_sha256": "7653904daacf65a17fb7dc5f0a91ad7bb080203d2dea5089ab3ed35382ad9311",
   "native_origin_mm": [
     50,
     50
@@ -13,9 +13,9 @@
       "kind": "footprint-bound",
       "footprint": "R_0603_1608Metric",
       "box": [
-        36.345,
+        36.7825,
         7.895000000000003,
-        39.355000000000004,
+        39.792500000000004,
         9.405000000000001
       ]
     }

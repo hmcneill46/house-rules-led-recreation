@@ -1,0 +1,30 @@
+{
+  "result": "PASS",
+  "artwork_frames": 60000,
+  "complete_traversals": 2,
+  "frame_sha256": "5cfcc3e0fd3d33e3c8aa526264e63a5529cc3bc9fb5531126e173bb8fe42a1a6",
+  "scan_map_sha256": "39d47ccdf963ff9bad61d2c7c43dda75683a82660b242edb64cbccaee1a05536",
+  "all_245_single_pixels": true,
+  "random_frames": 1000,
+  "scan_full_and_dim_us": [
+    470,
+    25
+  ],
+  "phase_us": 500,
+  "frame_hz": 400,
+  "checks": [
+    "64-bit mapping and serial order",
+    "one gate selected and unused outputs off",
+    "30us blank before every phase",
+    "frame swap only at phase0",
+    "late IRQ skips or latches dark",
+    "SPI failure and invalid map fail dark",
+    "CC qualification and wraparound",
+    "BC1.2 DET/AL truth table, qualification, withdrawal and wraparound",
+    "all64 source/suspend policy combinations; host suspend overrides every grant",
+    "10ms switched-rail ramp and HiZ shutdown",
+    "245 walking dots and checkerboard",
+    "A1 artwork files byte-identical"
+  ],
+  "limitations": "Host simulation only; analog gate timing, source current, USB suspend current and physical pixels require first-board measurement."
+}

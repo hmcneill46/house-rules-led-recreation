@@ -14,6 +14,13 @@ d=json.loads(CONTRACT.read_text());m=d['mcu'];u=d['usb'];c=d['case_closure'];r=R
 audit=json.loads((ROOT/'stock-source-geometry-audit.json').read_text())
 assert audit['all_contact_rectangles_clear_of_copper_and_component_bounds']
 scad_values={
+ 'case_main_xy':d['case']['main_pcb_xy'],
+ 'case_outer_xyz':d['case']['outer'],
+ 'case_front_opening':d['case']['front_opening'],
+ 'case_led_module_pitch':d['case']['led_module_pitch'],
+ 'case_first_led_centre':d['case']['first_led_centre_xy'],
+ 'case_led_body_allowance':d['case']['conservative_led_body_allowance_xy'],
+ 'main_upper_wire_pad_stop_x':d['case']['main_upper_wire_pad_stop_x'],
  'mcu_x':m['origin_xy'][0],'mcu_y':m['origin_xy'][1],
  'mcu_w':m['manufacturer_nominal_xy'][0],'mcu_h':m['manufacturer_nominal_xy'][1],
  'mcu_t':m['native_pcb_thickness'],'mcu_under_z':m['pcb_under_z'],
@@ -74,6 +81,12 @@ report={'contract_sha256':hashlib.sha256(CONTRACT.read_bytes()).hexdigest(),
         'scad_sha256':hashlib.sha256((ROOT/'enclosure.scad').read_bytes()).hexdigest(),
         'scope':'Nominal CAD envelopes and mesh topology only;actual stock revisions,solder,wires,printed fit and cable require checks.',
         'builds':{},'collision_checks':{},'render_commands':[]}
+report['confirmed_pitch_mm']=d['case']['led_module_pitch']
+report['owner_selected_trial']=d['case']['pitch_confirmation']['owner_selected_trial']
+report['main_pcb_xy_mm']=d['case']['main_pcb_xy']
+report['case_outer_xyz_mm']=d['case']['outer']
+report['conservative_led_body_allowance_xy_mm']=d['case']['conservative_led_body_allowance_xy']
+report['body_allowance_scope']=d['case']['conservative_led_body_allowance_status']
 for view,name in [('shell','enclosure-B2-PROTOTYPE-shell.stl'),('lid','enclosure-B2-PROTOTYPE-back.stl'),('fit-coupon','mcu-channel-fit-coupon.stl'),('mcu-cap','mcu-retaining-cap.stl'),('closure-coupon','case-closure-fit-coupon.stl')]:
  out=ROOT/name;res=run(view,out);(r/(view+'-build.log')).write_text(res['log'])
  if res['returncode']:raise RuntimeError(res)
@@ -105,7 +118,7 @@ for view,name,camera in [
  options=['--imgsize=1600,900','--projection=o','--viewall','--autocenter','--camera='+camera,'--colorscheme=Tomorrow']
  # Evaluate the clipped detail before zoom-to-fit; preview bounds include the
  # full enclosure behind the intersection and make this small feature tiny.
- if view=='closure-detail':options.append('--render')
+ if view=='closure-detail':options.append('--render=true')
  out=r/name;res=run(view,out,options)
  (r/(name+'.log')).write_text(res['log'])
  if res['returncode']:raise RuntimeError(res)

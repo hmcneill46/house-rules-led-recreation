@@ -2,53 +2,53 @@
   "result": "PASS",
   "scope": "Native pad bounding boxes/courtyards and declared case stops for BC additions;RAM only;no route/via clearance or whole-board DRC claimed.",
   "source_board": "kicad/house-rules-main-B2.kicad_pcb",
-  "source_board_sha256": "30909bdf197070c1e14cfe1f8bfa3bea72dc9c2b98547b3fdbb10b8c2cceffd6",
-  "placement_sha256": "b5fd802ff248b89efc8243fc5b43c9459e78590c3352720cfcd5413e4bd1b5e7",
+  "source_board_sha256": "b42e3d59b40a2e9cc877f8c5595d58339a2c7b0797970fa826ea84c19b8105f1",
+  "placement_sha256": "c35d185c1ad91097c04cf05cb14742714c42e9bde3ef30095f3c27af8afe5aa0",
   "positions": {
     "C15": {
-      "x": 68,
+      "x": 68.875,
       "y": 10.7,
-      "angle": 0
+      "angle": 0.0
     },
     "C16": {
-      "x": 71.2,
+      "x": 72.075,
       "y": 10.7,
-      "angle": 0
+      "angle": 0.0
     },
     "J19": {
-      "x": 23.88,
+      "x": 24.136098,
       "y": 0.85,
-      "angle": 0
+      "angle": 0.0
     },
     "J20": {
-      "x": 26.42,
+      "x": 26.688902,
       "y": 0.85,
-      "angle": 0
+      "angle": 0.0
     },
     "R15": {
-      "x": 12.45,
+      "x": 12.5375,
       "y": 6.1,
-      "angle": 0
+      "angle": 0.0
     },
     "R21": {
-      "x": 25.15,
+      "x": 25.4125,
       "y": 6.1,
-      "angle": 0
+      "angle": 0.0
     },
     "R22": {
-      "x": 25.15,
-      "y": 11,
-      "angle": 0
+      "x": 25.4125,
+      "y": 11.0,
+      "angle": 0.0
     },
     "R23": {
-      "x": 12.45,
-      "y": 11,
-      "angle": 0
+      "x": 12.5375,
+      "y": 11.0,
+      "angle": 0.0
     },
     "U9": {
-      "x": 63.25,
+      "x": 64.0375,
       "y": 11.3,
-      "angle": 0
+      "angle": 0.0
     }
   },
   "minimum_changed_to_other_pad_box_gap_mm": 0.2,

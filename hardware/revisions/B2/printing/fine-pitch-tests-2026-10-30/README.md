@@ -1,5 +1,7 @@
 # Fine LED-spacing trials — D / E / F
 
+**31 October result: the owner selected F / 12.875 mm (+0.175).** The PCB and case have now been revised to match; use the [confirmed-F case print pack](../2026-10-31-confirmed-F/README.md) for the next fit checks. The files below remain the exact historical comparison prints.
+
 These follow the earlier A/B/C trials. The owner confirms that the required centre pitch is between **12.80 and 12.90 mm** and requests the following intermediate samples. Each sample fits **all seven modules** and has raised labels outside the LED area, retaining three decimal places.
 
 Download the [ready-to-print G-code](gcode/LED_Pitch_DEF_Fine_KE04_HyperPLA.gcode) or the [ZIP with instructions and verification](LED_Pitch_DEF_Fine_KE04_HyperPLA.zip). **One file prints all three strips and the 50 mm coupon.** OrcaSlicer estimates **1 hour 24 minutes and 11.24 g** of filament. The [sliced Orca project](sliced-projects/LED_Pitch_DEF_Fine_KE04_HyperPLA.3mf) is also included for inspection.
@@ -22,7 +24,7 @@ Let everything cool before removal. Confirm each empty strip lies flat, then reu
 
 The 0.025 mm differences are **nominal CAD settings, not a claim of 25 µm printer accuracy**. Over the full six joins, adjacent trials differ by 0.150 mm. Judge the complete assembly and scale coupon rather than a single tiny gap. If the empty prints bow or differences are inconclusive, report that instead of forcing a selection.
 
-The current 12.700 mm PCB and case remain on hold until the chosen fit is applied and rechecked. Their geometry and firmware have not been changed by these tests. The older A/B/C files are preserved separately.
+At the time of these comparison prints the 12.700 mm PCB and case remained on hold. These test files themselves did not change electronic CAD or firmware; the later confirmed-F revision is documented separately above. The older A/B/C files are also preserved.
 
 ## Files and checks
 

@@ -1,11 +1,15 @@
-30 October2026: PHYSICAL MODULE SPACING UNDER REVIEW — DO NOT ORDER
+31 October 2026: USE THE CONFIRMED-F REVIEW PACKAGE; NO ORDER RELEASE
 
-The owner reports the12-hole pattern fits each module, but photos show the
-seven-module plastic strip bowing when fitted. The current B2_review package
-still uses12.70mm module repeat. Its zero DRC/parity results establish only
-represented connectivity/geometry, not stress-free physical fit.
+The owner selected F / 12.875 mm (+0.175 mm per join). The canonical PCB now
+measures 89.45 x 17.30 mm. Fresh DRC, pin parity, physical drill checks and
+fabrication export pass. The case is widened to match and rechecked.
 
-Keep that hashed package as historical evidence. Do not order it. Complete the
-labelled12.80/12.90/13.00mm pitch trials, then revise/recheck PCB, case, routing,
-exports and quote as needed. Test-strip tabs/outlines are not final PCB sizes.
-No order/payment has been made. See ../README.md and the dated printing guide.
+CURRENT REVIEW: B2_F_12p875_review_2026-10-31/
+HISTORICAL: B2_review/ retains the old 88.40 mm / 12.700 mm-pitch board.
+Do not upload or order that historical package for the confirmed-F build.
+
+Before ordering, check a new case print with actual stock modules and USB plug,
+obtain a fresh quote/stock check, and review factory CAM/pin1/rotations, removable
+external rails, filled/capped 0.30 mm vias and all 84 open 0.90 mm LED holes.
+First-board powered current, programming, USB and temperature tests remain.
+No order or payment has been made. See ../README.md and the new printing guide.

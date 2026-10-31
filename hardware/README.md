@@ -1,5 +1,7 @@
 # Physical House Rules — prototype A1
 
+**Historical A1 design.** The current build is [revision B2](revisions/B2/README.md), updated on 31 October to the owner's confirmed 12.875 mm module pitch and 89.45 mm PCB width. The earlier 12.70 mm fit assumption and files below are superseded for new builds. They remain here as design history.
+
 A complete editable electronics design for seven owner-supplied Wenrun LMD07057AUE-101B displays, arranged as a **35 × 7, 245-dot** screen. Designed 29 October 2026. This is a **prototype awaiting physical validation**, with fabrication and assembly files for review. No boards have been ordered or tested. Start with [the illustrated summary](design-summary.html).
 
 ## What was designed

@@ -29,6 +29,7 @@ CAD = B2 / 'kicad'
 CLI = Path('/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli')
 STEM = 'house-rules-main-B2'
 OWNER_LED_EVIDENCE = B2 / 'reports/owner-led-diode-test-2026-10-29.json'
+OWNER_PITCH_EVIDENCE = B2 / 'reports/owner-pitch-confirmation-2026-10-31.json'
 
 
 def run(command):
@@ -286,7 +287,9 @@ The five ignored checks that KiCad10.0.7 uses by default are reported
 explicitly; their pristine native evidence is included in reports/. UUID
 exclusions, custom-rule ignores and other ignored-rule overrides are forbidden.
 Its native audit checks82 references,55 factory parts,327 connected pins and the
-unchanged84 LED holes against frozen A1. Separate owner-reported diode tests
+84 LED holes against frozen A1 plus the owner-confirmed rigid module shifts
+(175000nm per zero-based module index,12.875mm pitch). Individual pin patterns
+and open0.90mm drill diameters stay unchanged. Separate owner-reported diode tests
 verify the full12-terminal map and front orientation of ONE owned
 LMD07057AUE-101B-02: part-number label on the left in the correct front view.
 The other20 modules remain unverified. This does not establish powered-board
@@ -294,7 +297,7 @@ operation, actual soldered fit, USB current/compliance, brightness, thermal
 performance or print fit. The owner evidence is included in reports/.
 No upload, order or payment has been made by the exporter.
 
-Board requirements: SIX copper layers,88.4 x17.3mm final outline,1.6mm FR4.
+Board requirements: SIX copper layers,89.45 x17.3mm final outline,1.6mm FR4.
 Layer order is F.Cu/In1.Cu/In2.Cu/In3.Cu/In4.Cu/B.Cu. In4 is GND-only. In2 is
 primarily GND with one explicitly approved quiet CT_5V timing-capacitor bridge,
 maximum12mm total; no other signal is allowed there. Its GND fill must remain
@@ -319,7 +322,7 @@ at least0.45mm via-to-LED-PTH hole-edge clearance and0.25mm via-to-via clearance
 including same-net pairs. These physical checks do not depend on copper DRC.
 
 Narrow-board assembly may need REMOVABLE OUTSIDE RAILS and tooling chosen by the
-assembler. Tooling/fiducial holes must be OUTSIDE the finished88.4x17.3mm outline,
+assembler. Tooling/fiducial holes must be OUTSIDE the finished89.45x17.3mm outline,
 on removable rails only. Do not add holes inside the main board or move/close the
 84 LED holes. Rails must depanelise completely so the final PCB stays hidden
 behind the LEDs. CAM must confirm fill/cap selection, open LED holes and final
@@ -366,7 +369,7 @@ def main():
     parser.add_argument('--board', type=Path, default=DEFAULT_BOARD)
     parser.add_argument('--spec', type=Path, default=DEFAULT_SPEC)
     parser.add_argument('--a1-reference', type=Path, default=DEFAULT_A1)
-    parser.add_argument('--output', type=Path, default=B2 / 'manufacturing/B2_review')
+    parser.add_argument('--output', type=Path, default=B2 / 'manufacturing/B2_F_12p875_review_2026-10-31')
     parser.add_argument('--cli', type=Path, default=CLI)
     args = parser.parse_args()
     source, output = args.board.resolve(), args.output.resolve()
@@ -376,7 +379,7 @@ def main():
     app = wx.App(False)
     severity_evidence = verify_default_severity_evidence()
     required = [source, args.spec.resolve(), args.a1_reference.resolve()]
-    required += [DEFAULT_SEVERITY_EVIDENCE, OWNER_LED_EVIDENCE]
+    required += [DEFAULT_SEVERITY_EVIDENCE, OWNER_LED_EVIDENCE, OWNER_PITCH_EVIDENCE]
     required += [CAD / (STEM + suffix) for suffix in ('.kicad_pro', '.kicad_sch', '.kicad_dru')]
     for folder in ('footprints',):
         required += sorted(p for p in (CAD / folder).rglob('*') if p.is_file())
@@ -412,6 +415,7 @@ def main():
             reports, fabrication, assembly = (stage / n for n in ('reports', 'fabrication', 'assembly'))
             shutil.copy2(DEFAULT_SEVERITY_EVIDENCE, reports / DEFAULT_SEVERITY_EVIDENCE.name)
             shutil.copy2(OWNER_LED_EVIDENCE, reports / OWNER_LED_EVIDENCE.name)
+            shutil.copy2(OWNER_PITCH_EVIDENCE, reports / OWNER_PITCH_EVIDENCE.name)
             drc = check_drc(args.cli, pcb, reports / 'native-drc.json', reports / 'native-drc.log')
             audit = audit_board(pcb, args.spec, args.a1_reference)
             (reports / 'board-audit.json').write_text(json.dumps(audit, indent=2) + '\n')
@@ -458,7 +462,8 @@ def main():
                         'canonical_inputs_unchanged': True, 'input_sha256': original,
                         'drc': drc, 'audit': {n: audit[n] for n in ('result', 'component_count', 'factory_component_count',
                          'connected_pin_count', 'via_count', 'via_geometry_counts', 'thermal_vias', 'outline',
-                         'ground_references', 'quiet_CT_In2_exception', 'drill_hole_edge_clearances')},
+                         'ground_references', 'quiet_CT_In2_exception', 'drill_hole_edge_clearances',
+                         'confirmed_F_LED_geometry_matches', 'LED_module_pitch_mm', 'LED_reference_transformation')},
                         'native_default_severity_evidence': severity_evidence,
                         '3D_model_portability': model_portability,
                         'actual_gerber_file_functions': functions, 'actual_drill_statistics': drills,

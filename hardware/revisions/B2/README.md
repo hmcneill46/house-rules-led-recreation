@@ -2,18 +2,18 @@
 
 This is the separate cost-reduction revision of the House Rules display. The original A1 design is preserved at the Git tag [`hardware-a1-2026-10-29`](https://github.com/hmcneill46/house-rules-led-recreation/tree/hardware-a1-2026-10-29). Do not mix A1 and B2 firmware, wiring, placement files or fabrication files.
 
-**30 October update: do not order the current PCB; module spacing is under physical review.** New owner photos show the fitted strip bowing, although each module's individual 12-hole pattern fits. The earlier positive fit report did not establish a stress-free seven-module assembly. The owner has now narrowed the required pitch to 12.80–12.90 mm following the [earlier A/B/C trials](printing/pitch-tests-2026-10-30/README.md). The [new labelled D/E/F trials](printing/fine-pitch-tests-2026-10-30/README.md) test 12.825/12.850/12.875 mm. Confirm the winning pitch, then recheck PCB placement/routing, the enclosure and quotation before ordering. Existing fabrication files and case models retain the old 12.70 mm repeat as historical prototypes.
+**31 October: the owner selected F — 12.875 mm pitch (+0.175 mm per join).** The canonical PCB and case now use this confirmed repeat, adding 1.050 mm across six joins. Each individual 12-pin pattern, electrical connection and LED orientation is preserved. See the [revision and check record](reports/confirmed-F-2026-10-31/README.md), [revised case print pack](printing/2026-10-31-confirmed-F/README.md) and [new manufacturing review package](manufacturing/B2_F_12p875_review_2026-10-31/README.md). Earlier 12.700 mm fabrication/print files are historical; do not order them.
 
-The canonical PCB still passes native KiCad DRC and schematic parity with zero reported violations or missing connections. The [manufacturing review package](manufacturing/B2_review/README.md) records that unchanged design and its hashes. These software results do not resolve the new physical spacing issue. Factory CAM/placement review and first-board acceptance also remain requirements. No order or payment has been submitted.
+The revised PCB passes fresh native KiCad DRC and schematic parity with zero reported violations or missing connections. The manufacturing package includes matching Gerbers, actual drill checks, the exact 55-component BOM and new placement coordinates. Print the revised case and check the purchased stock modules/plug before ordering; obtain a fresh quote and factory CAM/placement review. Powered first-board acceptance remains separate. No order or payment has been submitted.
 
-## What stays the same
+## Current design
 
-- Seven owned Wenrun 5 × 7 LED modules, arranged side by side, make the same 35 × 7 display. The smallest stress-free module spacing is being tested.
-- The existing prototype main PCB is **88.4 × 17.3 × 1.6 mm**, with 84 LED holes at the old 12.70 mm repeat. Its final module spacing and combined mechanical fit are pending the new trials.
-- The case remains **93.6 × 22.6 × 24 mm**, with a bottom-right USB-C port. The stock socket moves its centre about 4.7 mm left within that face.
+- Seven owned Wenrun 5 × 7 LED modules, arranged side by side, make the same 35 × 7 display, now at the owner-selected **12.875 mm module pitch**.
+- The revised main PCB is **89.45 × 17.3 × 1.6 mm**, with all 84 LED holes open and the original individual pin patterns. Its original edge inset is retained, keeping it behind the nominal 89.95 × 17.8 mm LED silhouette.
+- The case is **94.65 × 22.6 × 24 mm**, with the same bottom-right USB-C port and stock module positions. One internal support was moved to clear a relocated wire pad.
 - The supplied program uses the original artwork, timing and orientation. It also includes walking-pixel, all-on and checkerboard diagnostics. Firmware can be replaced repeatedly with other text or animations.
 
-The owner reports that the individual 12-hole pattern fits, but the 30 October photos supersede the earlier assumption that seven modules fit without stress at 12.70 mm pitch. Module spacing and final enclosure fit remain unresolved. The owner separately verified all 12 terminal roles/order and electrical orientation on one real module using the UT0021YB diode test: **part-number label on the left in front view**. [Physical pin-map evidence](reports/owner-led-diode-test-2026-10-29.json). That electrical evidence remains valid; the other 20 modules still need consistent checks.
+The owner's [F-trial confirmation](reports/owner-pitch-confirmation-2026-10-31.json) supersedes the earlier 12.70 mm fit assumption. It confirms the preferred nominal plastic fitting pattern; actual PCB tolerances and the other two seven-module groups still need checks. The owner separately verified all 12 terminal roles/order and electrical orientation on one real module using the UT0021YB diode test: **part-number label on the left in front view**. [Physical pin-map evidence](reports/owner-led-diode-test-2026-10-29.json). That electrical evidence remains valid; the other 20 modules still need consistent checks.
 
 ## What changes and why it costs less
 
@@ -27,7 +27,7 @@ The owner reports that the individual 12-hole pattern fits, but the 30 October p
 
 The MCU and USB breakout sit behind the main board, retained by the printed case. Their components are already soldered. All **55 small components on the custom main board** are assigned to the factory. The owner fits seven LEDs and connects the modules with **20 wires**, which means 40 wire joints plus 84 LED joints per display. No bare QFN chip is assigned to hand soldering. Wire pads need strain relief and short exposed conductors.
 
-The finished layout uses six layers, ground reference planes and filled/capped thermal vias without the A1 small-drill surcharge. All 276 via drills are 0.30 mm; 167 copper capture pads are 0.60 mm and 109 tight escapes use 0.45 mm pads. JLCPCB lists the latter as a standard via combination. In4 stays ground-only; In2 has a single 9.754 mm quiet timing-capacitor connection while retaining one connected ground fill. Layer count alone does not determine the cheapest useful prototype.
+The finished layout uses six layers, ground reference planes and filled/capped thermal vias without the A1 small-drill surcharge. All 276 via drills are 0.30 mm; 167 copper capture pads are 0.60 mm and 109 tight escapes use 0.45 mm pads. JLCPCB lists the latter as a standard via combination. In4 stays ground-only; In2 has a single 9.856 mm quiet timing-capacitor connection while retaining one connected ground fill. Layer count alone does not determine the cheapest useful prototype.
 
 These are native KiCad renders of the actual routed board. The first hides the LED bodies to expose their holes; the second shows the factory component side. Models simplify package shapes and are not photographs.
 
@@ -35,9 +35,11 @@ These are native KiCad renders of the actual routed board. The first hides the L
 
 ![Rear component side of B2](render/main-bottom.png)
 
-## Cost evidence
+## Historical cost evidence — fresh quote required
 
-The [final routed-board JLCONE quotation](quotes/final-review-2026-10-29/README.md) uses the actual routed Gerbers, exact 55-component BOM and native placement file. All 18 BOM groups matched. It uses six-layer ENIG fabrication, ordinary 0.30 mm drills, filled/capped vias and bottom-side Economic assembly. It provides **five PCBs in total, two populated and three bare**:
+These prices were checked for the **earlier 88.40 mm / 12.700 mm-pitch board on 29 October**. They remain budget evidence, not a current quote for the revised 89.45 mm board. Re-quote the new manufacturing package and verify component stock, shipping, VAT and discounts before ordering.
+
+The [29 October routed-board JLCONE quotation](quotes/final-review-2026-10-29/README.md) used its actual routed Gerbers, exact 55-component BOM and native placement file. All 18 BOM groups matched. It used six-layer ENIG fabrication, ordinary 0.30 mm drills, filled/capped vias and bottom-side Economic assembly. It provided **five PCBs in total, two populated and three bare**:
 
 - Quotation screen: **$49.94 fabrication + $49.90 assembly = $99.84** before shipping/VAT.
 - Actual checkout: **$97.52 goods + $1.50 UK shipping + $19.81 VAT = $118.83**, before coupons, approximately **£89.08**. [Checkout proof](quotes/final-review-2026-10-29/checkout-summary-before-coupon.png).
@@ -67,7 +69,7 @@ The RP2040 ROM bootloader accepts a UF2 file copied to its `RPI-RP2` drive. Prog
 
 ## Evidence and remaining physical checks
 
-The editable schematic has zero ERC violations, with all 327 connected pins matched against its connection source. The final native PCB DRC reports zero violations, zero unconnected items and zero schematic parity issues. The separate board audit passes all 82 references, the exact A1 84-hole LED geometry, open LED holes, all 276 filled/capped vias, 12 driver thermal vias and physical drill clearances. The actual exported Excellon independently contains exactly 276 × 0.30 mm vias and 84 × 0.90 mm open LED holes. No custom DRC exclusions are used; KiCad's five native default ignored checks are documented explicitly in the package.
+The editable schematic has zero ERC violations, with all 327 connected pins matched against its connection source. The final native PCB DRC reports zero violations, zero unconnected items and zero schematic parity issues. The separate board audit passes all 82 references, the frozen A1 individual pin patterns plus exactly 175,000 nm translation per module index, open LED holes, all 276 filled/capped vias, 12 driver thermal vias and physical drill clearances. The actual exported Excellon independently contains exactly 276 × 0.30 mm vias and 84 × 0.90 mm open LED holes. No custom DRC exclusions are used; KiCad's five native default ignored checks are documented explicitly in the package.
 
 Compiled firmware and an independent pin-level simulation reproduce all 245 walking pixels and 60,000 artwork frames. These results check represented geometry, digital mapping and timing logic, not actual powered-board operation or analog electronics.
 
@@ -77,7 +79,7 @@ Relevant sources and results:
 
 - [Editable KiCad project](kicad/house-rules-main-B2.kicad_pro), [PCB](kicad/house-rules-main-B2.kicad_pcb), [schematic](kicad/house-rules-main-B2.kicad_sch)
 - [Final verification summary](reports/final-verification-summary.json), [native DRC](reports/final-drc.json), [separate PCB audit](reports/board-audit.json)
-- [Manufacturing review package](manufacturing/B2_review/README.md), [Gerber/drill archive](manufacturing/B2_review/house-rules-main-B2-fabrication-REVIEW.zip), [exact BOM](manufacturing/B2_review/assembly/bom.csv), [placement review](manufacturing/B2_review/assembly/placement-review.csv)
+- [Manufacturing review package](manufacturing/B2_F_12p875_review_2026-10-31/README.md), [Gerber/drill archive](manufacturing/B2_F_12p875_review_2026-10-31/house-rules-main-B2-fabrication-REVIEW.zip), [exact BOM](manufacturing/B2_F_12p875_review_2026-10-31/assembly/bom.csv), [placement review](manufacturing/B2_F_12p875_review_2026-10-31/assembly/placement-review.csv)
 - [Owner assembly and first-test guide](assembly-and-test.md)
 - [Electrical design and assumptions](electrical-review.md)
 - [Independent physical-connection simulation](simulation/README.md)

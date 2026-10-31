@@ -1,0 +1,166 @@
+{
+  "result": "PASS",
+  "date_utc": "2026-10-31T19:51:45.633389+00:00",
+  "reference_revision": "efad429",
+  "electrical_parts_and_pins_unchanged_from_reference": true,
+  "electrical_spec_sha256": "755a5b30c8b0919af8874b58b9979ca0133f9cbc2a0dc6002b77b13267fb6e28",
+  "schematic_sha256": "9400693084a50c1816794bcb87904174f2bf840ae9d9ac8fab05fe5089acb163",
+  "protected_sources_and_compiled_images_unchanged": true,
+  "protected_sha256": {
+    "electrical-spec.json": "755a5b30c8b0919af8874b58b9979ca0133f9cbc2a0dc6002b77b13267fb6e28",
+    "kicad/house-rules-main-B2.kicad_sch": "9400693084a50c1816794bcb87904174f2bf840ae9d9ac8fab05fe5089acb163",
+    "kicad/house-rules-main-B2.kicad_pro": "065ef101b616641a2dd150e279c53e60b0562cd0a40ddf2cb0d70b1e2fee2b4a",
+    "firmware/HouseRulesB2/HouseRulesB2.ino": "b77ade8bcc366afd92d08e0b8ce308d9a8d3286dc2c2b721e2b97242deb410c2",
+    "firmware/HouseRulesB2/application.cpp": "bceb3dc88eafd9a1328ec983b38ff55578066a773d28a783b3b6cd8133e61bca",
+    "firmware/HouseRulesB2/board_contract_generated.h": "2adf7bb63e222fb10138de0cede28428c808e5e9f100862cdb364a3f5c274cf0",
+    "firmware/HouseRulesB2/player.h": "bead21b3f649c53a891762bc8bcac4cefa4d60da6381339aa4f0c7cb8be0883c",
+    "firmware/HouseRulesB2/power_sequence.h": "033976cfbbe78904d7218b4e626060bc86cd6ccd4fda841c2992e7b49b29df93",
+    "firmware/HouseRulesB2/scan_engine.h": "dca42ab3dc53c6ccbc2d7b6472b87efe4eaf856525fc55f77a85a8d105c52e09",
+    "firmware/generated_sequence.h": "a7d1963f69ca10a11635c25d9b5d51e5e6a9152601122c8f659420badfecf320",
+    "firmware/scan-map.json": "39d47ccdf963ff9bad61d2c7c43dda75683a82660b242edb64cbccaee1a05536",
+    "firmware/sequence_columns.bin": "4006a8b654a8fb741fb169f3b9333f579d882659d78b5aceb9f8c447d1aebcef",
+    "firmware/sequence_manifest.json": "97b2aeb12e8256fe2ba37cbae8f627ed2a9d8ddf1d780419da8fde7236d90477",
+    "firmware/compiled/HouseRulesB2.ino.bin": "a9f58edb423a30572e62535d3b59d82963364363f8eea6e24e7002ed15cfd1a6",
+    "firmware/compiled/HouseRulesB2.ino.uf2": "2c951f28177c22ed7ef98d574ed0b6bbcd22ec29dad2439c6175f94a6dc13cbe",
+    "firmware/compiled/HouseRulesB2.ino.elf": "e3e247d3d81fe1e3d79b28a570a16ede314dca65a71edd1a08bf7d4d1c9c655a",
+    "firmware/compiled-unknown-off/HouseRulesB2.ino.bin": "0363b49561ec573f0246faedb5707252b90cec7e667c4ae12cf0250612e66f34",
+    "firmware/compiled-unknown-off/HouseRulesB2.ino.uf2": "80237ace7f9255cfa2750938c46991fca35b23683215ecd9f60fe5fcfb32cc08",
+    "firmware/compiled-unknown-off/HouseRulesB2.ino.elf": "124deea75d5e45a579277745f27427915f341abe779f24f47beb9f71516f2126"
+  },
+  "native_ERC_violations": 0,
+  "schematic_component_count": 82,
+  "schematic_connected_pin_count": 327,
+  "schematic_netlist_matches_spec": true,
+  "host_result": "PASS",
+  "host_artwork_frames": 60000,
+  "host_all_245_single_pixels": true,
+  "host_random_frames": 1000,
+  "physical_connection_model_result": "PASS",
+  "model_walking_pixels": 245,
+  "model_artwork_frames": 60000,
+  "model_per_phase_reconstructions": 301235,
+  "injected_fault_cases_detected": [
+    "LED anode/cathode polarity swap",
+    "Cathodes accidentally shared across modules",
+    "PMOS source/drain reversal",
+    "BQ USB upstream/downstream terminals swapped",
+    "BQ GOOD_BAT on switched rail would disconnect USB during suspend",
+    "BQ detector divider cannot meet RP2040 input-high threshold",
+    "Two column gates enabled simultaneously",
+    "Row bits set with no selected gate",
+    "Unconnected sink enabled",
+    "LED supply remains on while driver unpowered",
+    "Swapped TLC physical OUT pins change the independently reconstructed pixel",
+    "Reversed serial chip order is rejected or produces a different physical image"
+  ],
+  "compiled_image_audits": {
+    "compiled": {
+      "result": "PASS",
+      "target": "RP2040; XIAO RP2040 Plus2MB",
+      "uf2_blocks": 486,
+      "uf2_family_id": "0xe48bff56",
+      "flash_range_hex": [
+        "0x10000000",
+        "0x1001e600"
+      ],
+      "elf_entry_hex": "0x100030d5",
+      "usb_descriptor_max_current_ma": 500,
+      "usb_descriptor_attributes_hex": "0x80",
+      "actual_binary_config_template_offset": 115930,
+      "usb_proof": "Linked main calls an empty wrapped early USB initializer; setup writes RAM descriptor attributes0x80 and maxPower0xFA between interrupt-disable/restore, after TinyUSB begin.",
+      "strong_usb_callbacks": [
+        "initVariant",
+        "setup",
+        "__wrap_TinyUSB_Device_Init",
+        "tud_mount_cb",
+        "tud_umount_cb",
+        "tud_suspend_cb",
+        "tud_resume_cb"
+      ],
+      "cpu48MHz_init_hook": true,
+      "usb_pre_enumeration_suspend_observer": true,
+      "unknown_source_dim_enabled": true,
+      "uf2_sha256": "2c951f28177c22ed7ef98d574ed0b6bbcd22ec29dad2439c6175f94a6dc13cbe",
+      "limitations": "Static binary audit only. No USB host capture, physical flashing, light output or electrical/suspend current measurement has been performed."
+    },
+    "compiled-unknown-off": {
+      "result": "PASS",
+      "target": "RP2040; XIAO RP2040 Plus2MB",
+      "uf2_blocks": 486,
+      "uf2_family_id": "0xe48bff56",
+      "flash_range_hex": [
+        "0x10000000",
+        "0x1001e600"
+      ],
+      "elf_entry_hex": "0x100030d5",
+      "usb_descriptor_max_current_ma": 500,
+      "usb_descriptor_attributes_hex": "0x80",
+      "actual_binary_config_template_offset": 115954,
+      "usb_proof": "Linked main calls an empty wrapped early USB initializer; setup writes RAM descriptor attributes0x80 and maxPower0xFA between interrupt-disable/restore, after TinyUSB begin.",
+      "strong_usb_callbacks": [
+        "initVariant",
+        "setup",
+        "__wrap_TinyUSB_Device_Init",
+        "tud_mount_cb",
+        "tud_umount_cb",
+        "tud_suspend_cb",
+        "tud_resume_cb"
+      ],
+      "cpu48MHz_init_hook": true,
+      "usb_pre_enumeration_suspend_observer": true,
+      "unknown_source_dim_enabled": false,
+      "uf2_sha256": "80237ace7f9255cfa2750938c46991fca35b23683215ecd9f60fe5fcfb32cc08",
+      "limitations": "Static binary audit only. No USB host capture, physical flashing, light output or electrical/suspend current measurement has been performed."
+    }
+  },
+  "commands": [
+    [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "erc",
+      "--format",
+      "json",
+      "--severity-all",
+      "--output",
+      "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/reports/confirmed-F-2026-10-31/schematic.erc.json",
+      "--exit-code-violations",
+      "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-b2-F-software-2kpyq6x9/house-rules-main-B2.kicad_sch"
+    ],
+    [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "--output",
+      "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/reports/confirmed-F-2026-10-31/schematic.net.xml",
+      "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-b2-F-software-2kpyq6x9/house-rules-main-B2.kicad_sch"
+    ],
+    [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/firmware/tests/test_host.py"
+    ],
+    [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/simulation/test_model.py"
+    ],
+    [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/tools/firmware-build/audit_binary.py",
+      "--output",
+      "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-b2-F-software-2kpyq6x9/compiled"
+    ],
+    [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/tools/firmware-build/audit_binary.py",
+      "--output",
+      "/var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-b2-F-software-2kpyq6x9/compiled-unknown-off"
+    ]
+  ],
+  "limitations": [
+    "Software/static binary checks only; no powered board or printer executed",
+    "Routed PCB connectivity/geometry and case fit are separate fresh checks",
+    "No real USB enumeration, current, scan-edge, optical or temperature measurement"
+  ]
+}

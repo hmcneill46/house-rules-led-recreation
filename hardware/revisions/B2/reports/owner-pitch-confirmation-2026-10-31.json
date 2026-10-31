@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-31",
+  "source": "Owner message after printing the labelled fine fitting trials",
+  "owner_statement": "The best one is 12.875 (+0.175)",
+  "selected_trial": "F / P12.875 / +0.175",
+  "module_centre_pitch_nm": 12875000,
+  "increment_per_join_from_12p700_nm": 175000,
+  "increase_across_six_joins_nm": 1050000,
+  "pcb_outline_mm": [89.45, 17.3],
+  "preserved": ["Each original 12-pin pattern", "Pin numbers and electrical nets", "LED orientation and logical pixel map"],
+  "authorization": "Update PCB and case, rerun all checks before ordering anything",
+  "not_inferred": ["No powered-board validation", "No manufacturing tolerance guarantee", "No order or payment authorization"]
+}

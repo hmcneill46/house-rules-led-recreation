@@ -1,0 +1,80 @@
+{
+  "date_utc": "2026-10-31T20:00:15.523203+00:00",
+  "slicer": "Installed OrcaSlicer 2.4.2",
+  "jobs": {
+    "01_B2_F_FitTests_KE04_HyperPLA": {
+      "command": [
+        "/Applications/OrcaSlicer.app/Contents/MacOS/OrcaSlicer",
+        "--datadir",
+        "/tmp/house-rules-B2-confirmed-F-2026-10-31/01_B2_F_FitTests_KE04_HyperPLA/user",
+        "--slice",
+        "0",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--outputdir",
+        "/tmp/house-rules-B2-confirmed-F-2026-10-31/01_B2_F_FitTests_KE04_HyperPLA",
+        "--export-3mf",
+        "01_B2_F_FitTests_KE04_HyperPLA-sliced.3mf",
+        "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/printing/2026-10-31-confirmed-F/projects/01_B2_F_FitTests_KE04_HyperPLA.3mf"
+      ],
+      "exit_code": 0,
+      "prepared_project_sha256": "4fe466e88271a8e34fb347fbed27b83813abadf74d923b30daaeabe45a18c532",
+      "sliced_project_sha256": "76642b3b16907cec8ef3b62e2d02f6ab1d9b6f3e7d29e138316a0141afb685fb",
+      "Gcode_sha256": "e7be3f3e35d36bfae01900cc05eabbc3f44983040ad9b03af839a6f5567fed24",
+      "embedded_Gcode_byte_identical": true,
+      "log": "logs/01_B2_F_FitTests_KE04_HyperPLA-orca.log"
+    },
+    "02_B2_F_Shell_KE04_HyperPLA": {
+      "command": [
+        "/Applications/OrcaSlicer.app/Contents/MacOS/OrcaSlicer",
+        "--datadir",
+        "/tmp/house-rules-B2-confirmed-F-2026-10-31/02_B2_F_Shell_KE04_HyperPLA/user",
+        "--slice",
+        "0",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--outputdir",
+        "/tmp/house-rules-B2-confirmed-F-2026-10-31/02_B2_F_Shell_KE04_HyperPLA",
+        "--export-3mf",
+        "02_B2_F_Shell_KE04_HyperPLA-sliced.3mf",
+        "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/printing/2026-10-31-confirmed-F/projects/02_B2_F_Shell_KE04_HyperPLA.3mf"
+      ],
+      "exit_code": 0,
+      "prepared_project_sha256": "085141ec15044866ba68ad018da21d00b6ed38ba43a04280a4d8413d71e20f9c",
+      "sliced_project_sha256": "9dfc8a04e1c0aae00bdc1506142a65b10cd9b56b34d85ddb3fb336febe201d92",
+      "Gcode_sha256": "7a4e6d41aa3abb94ed6c4d76f450c68c6db27684a686abf66f285b84f2c74b48",
+      "embedded_Gcode_byte_identical": true,
+      "log": "logs/02_B2_F_Shell_KE04_HyperPLA-orca.log"
+    },
+    "03_B2_F_BackAndCap_KE04_HyperPLA": {
+      "command": [
+        "/Applications/OrcaSlicer.app/Contents/MacOS/OrcaSlicer",
+        "--datadir",
+        "/tmp/house-rules-B2-confirmed-F-2026-10-31/03_B2_F_BackAndCap_KE04_HyperPLA/user",
+        "--slice",
+        "0",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--outputdir",
+        "/tmp/house-rules-B2-confirmed-F-2026-10-31/03_B2_F_BackAndCap_KE04_HyperPLA",
+        "--export-3mf",
+        "03_B2_F_BackAndCap_KE04_HyperPLA-sliced.3mf",
+        "/Users/harrymcneill/Projects/house-rules-led-recreation/hardware/revisions/B2/printing/2026-10-31-confirmed-F/projects/03_B2_F_BackAndCap_KE04_HyperPLA.3mf"
+      ],
+      "exit_code": 0,
+      "prepared_project_sha256": "6aafe7da6247b06a3d144641c537ff33ec9903e2c186ce1ce9667cb73bf9aeb0",
+      "sliced_project_sha256": "47b8fc23809e79119e3ce3ea4aa7c32d68a9b54370a68f063f27c88b091f5e2e",
+      "Gcode_sha256": "5406b25e5eeac25ba1c6df3538c89808ec30a053e0c38a19392192e8e6150d9e",
+      "embedded_Gcode_byte_identical": true,
+      "log": "logs/03_B2_F_BackAndCap_KE04_HyperPLA-orca.log"
+    }
+  },
+  "owner_UI_state": "Existing unsaved Orca scene was not opened, replaced or saved.",
+  "printer_execution": "None; no printer connection or print start."
+}

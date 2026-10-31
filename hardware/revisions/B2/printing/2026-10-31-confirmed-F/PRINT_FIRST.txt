@@ -1,0 +1,55 @@
+HOUSE RULES B2 - CONFIRMED F / 12.875 MM PITCH
+31 October 2026
+
+Printer: stock Creality Ender-3 V3 KE, 0.4 mm nozzle.
+Material: Creality Hyper PLA grey, 1.75 mm. These are PLA files, not PETG.
+
+The owner selected F / P12.875 / +0.175 per join.
+Main PCB/dummy: 89.450 x 17.300 x 1.600 mm.
+Case outside: 94.650 x 22.600 x 24.000 mm.
+The old 12.700 mm case jobs remain historical; do not mix their parts with this pack.
+
+Copy a G-code file to your printer's USB drive and start it manually.
+Print one set, in this order. Let every job cool before removal.
+
+01_B2_F_FitTests_KE04_HyperPLA.gcode
+  Updated dummy PCB, MCU channel coupon, two-piece closure coupon, 50 mm scale.
+  Estimate: 38m 48s / 4.85 g. No supports or brim.
+02_B2_F_Shell_KE04_HyperPLA.gcode
+  Widened front shell. Estimate: 53m 8s / 12.36 g.
+  Removable supports under the main-board ledges; 3 mm outside brim.
+03_B2_F_BackAndCap_KE04_HyperPLA.gcode
+  Widened rear cover and unchanged MCU cap. Estimate: 31m 12s / 4.82 g.
+  No supports or brim in the narrow MCU channels.
+
+Total estimated time/material: 2h 3m 8s / 22.03 g.
+Case only (02+03): 1h 24m 20s / 17.18 g.
+Heating and levelling can add time.
+
+Settings: 0.20 mm layers; 100% scale; three walls; 25% gyroid where space remains.
+Nozzle: 220 C first layer then 215 C. Bed: 60 C then 55 C.
+First layer: 20 mm/s; outer walls: 35 mm/s; inner walls: 60 mm/s; bridges: 25 mm/s.
+Stock KE homing, 5x5 bed mesh, negative-X purge and final parking are preserved.
+
+Measure the 50 mm scale and dummy dimensions; confirm the dummy lies flat.
+Dummy hole centres match the checked new PCB. Its 1.0 mm FDM holes do not
+certify the real PCB's 0.90 mm finished holes or solder/component clearances.
+Try the same seven LEDs squarely, with a 3 mm body-to-board standoff.
+Do not bend or force pins to correct a mismatch.
+
+Remove the shell brim and temporary support strips carefully through the large
+front/rear openings. Clear the permanent PCB ledges and USB well without levering
+against the ledges. Dry-fit the empty shell/cover and dummy first.
+Check the cover seats positively, withstands cable insertion/removal and reopens
+at the top notch without cracking. Repeat several cycles; never force it shut.
+
+Check the headerless XIAO RP2040 Plus, exact Adafruit 4090, intended USB plug,
+two M2x6 USB screws and one M2x8 cap screw without power. Screw heads must be
+at most 4 mm wide and 1.5 mm high. Follow the current mechanical assembly guide.
+The stock modules/posts/port remain at their original coordinates. One internal
+main-PCB stop moved 0.8 mm to clear the newly shifted J12 wire solder pad.
+
+CAD/mesh/G-code checks are included in verification.json. The widened case still
+needs this physical trial fit; they do not establish actual snap force/lifetime,
+purchased module revision, solder, wiring, print accuracy or cable moulding fit.
+No printer connection, print start, PCB order or payment has been made.

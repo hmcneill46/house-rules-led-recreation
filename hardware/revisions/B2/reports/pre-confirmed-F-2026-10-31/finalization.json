@@ -1,0 +1,331 @@
+{
+  "status": "promoted for independent final verification, not a production approval",
+  "input": "routing-experiments/complete6.kicad_pcb",
+  "input_sha256": "61a5111ca49379492e970e5c06a6de9d353aa171afe7e5baf5be1192aac6c6f7",
+  "output": "kicad/house-rules-main-B2.kicad_pcb",
+  "output_sha256": "9e66de6f14e40369d3335bf6055c97f2d40d382c42300a1580a9d4f50f005d4e",
+  "electrical_spec_sha256": "8658ae95e37d72c0a062ad9cfd54ef3e18cb201437d9d5956834977edae0cc46",
+  "copper_objects_unchanged": 3782,
+  "intentional_no_connect_pads_named_from_native_schematic": 12,
+  "explicitly_filled_capped_through_vias": 276,
+  "wire_group_anchor_numbers": [
+    "1",
+    "12",
+    "13",
+    "18",
+    "19",
+    "20"
+  ],
+  "bundled_models": [
+    {
+      "reference": "DS1",
+      "file": "3d/LMD07057AUE-101B.wrl",
+      "sha256": "a3751a5b0ff43f5372418bfd3bf7d4c69de54b22a141eb3b4c806147fc0ca4fb"
+    },
+    {
+      "reference": "DS2",
+      "file": "3d/LMD07057AUE-101B.wrl",
+      "sha256": "a3751a5b0ff43f5372418bfd3bf7d4c69de54b22a141eb3b4c806147fc0ca4fb"
+    },
+    {
+      "reference": "DS3",
+      "file": "3d/LMD07057AUE-101B.wrl",
+      "sha256": "a3751a5b0ff43f5372418bfd3bf7d4c69de54b22a141eb3b4c806147fc0ca4fb"
+    },
+    {
+      "reference": "DS4",
+      "file": "3d/LMD07057AUE-101B.wrl",
+      "sha256": "a3751a5b0ff43f5372418bfd3bf7d4c69de54b22a141eb3b4c806147fc0ca4fb"
+    },
+    {
+      "reference": "DS5",
+      "file": "3d/LMD07057AUE-101B.wrl",
+      "sha256": "a3751a5b0ff43f5372418bfd3bf7d4c69de54b22a141eb3b4c806147fc0ca4fb"
+    },
+    {
+      "reference": "DS6",
+      "file": "3d/LMD07057AUE-101B.wrl",
+      "sha256": "a3751a5b0ff43f5372418bfd3bf7d4c69de54b22a141eb3b4c806147fc0ca4fb"
+    },
+    {
+      "reference": "DS7",
+      "file": "3d/LMD07057AUE-101B.wrl",
+      "sha256": "a3751a5b0ff43f5372418bfd3bf7d4c69de54b22a141eb3b4c806147fc0ca4fb"
+    },
+    {
+      "reference": "U1",
+      "file": "3d/TI__Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step",
+      "sha256": "22ab85ba4b0f0e5d408abadd3519cae724e08c09f9cdfbd31a4c6a8703ff0152"
+    },
+    {
+      "reference": "R1",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "C1",
+      "file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "U2",
+      "file": "3d/TI__Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step",
+      "sha256": "22ab85ba4b0f0e5d408abadd3519cae724e08c09f9cdfbd31a4c6a8703ff0152"
+    },
+    {
+      "reference": "R2",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "C2",
+      "file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "U3",
+      "file": "3d/TI__Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step",
+      "sha256": "22ab85ba4b0f0e5d408abadd3519cae724e08c09f9cdfbd31a4c6a8703ff0152"
+    },
+    {
+      "reference": "R3",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "C3",
+      "file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "U4",
+      "file": "3d/TI__Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step",
+      "sha256": "22ab85ba4b0f0e5d408abadd3519cae724e08c09f9cdfbd31a4c6a8703ff0152"
+    },
+    {
+      "reference": "R4",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "C4",
+      "file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "Q1",
+      "file": "3d/Package_TO_SOT_SMD__SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+    },
+    {
+      "reference": "R5",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "R10",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "Q2",
+      "file": "3d/Package_TO_SOT_SMD__SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+    },
+    {
+      "reference": "R6",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "R11",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "Q3",
+      "file": "3d/Package_TO_SOT_SMD__SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+    },
+    {
+      "reference": "R7",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "R12",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "Q4",
+      "file": "3d/Package_TO_SOT_SMD__SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+    },
+    {
+      "reference": "R8",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "R13",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "Q5",
+      "file": "3d/Package_TO_SOT_SMD__SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+    },
+    {
+      "reference": "R9",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "R14",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "R15",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "R16",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "U5",
+      "file": "3d/Package_TO_SOT_SMD__SOT-23-6.step",
+      "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635"
+    },
+    {
+      "reference": "U6",
+      "file": "3d/Package_TO_SOT_SMD__SOT-23-6.step",
+      "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635"
+    },
+    {
+      "reference": "C5",
+      "file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "C6",
+      "file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "C7",
+      "file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "C8",
+      "file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "C9",
+      "file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "C10",
+      "file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "R17",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "R18",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "R19",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "R20",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "C11",
+      "file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "C12",
+      "file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "F1",
+      "file": "3d/Fuse__Fuse_1206_3216Metric.step",
+      "sha256": "5e6dcbe286696143d35a8ea37d91eef4b54ff3d1bd7c2c2b4dedda83d3f8e203"
+    },
+    {
+      "reference": "D1",
+      "file": "3d/Diode_SMD__D_SOD-123F.step",
+      "sha256": "132323445e3d1f9231e81c083cd88a33cd204dd8b96063bb2ed1f3ab4470c7e7"
+    },
+    {
+      "reference": "U7",
+      "file": "3d/Package_SON__USON-10_2.5x1.0mm_P0.5mm.step",
+      "sha256": "d9d0628ead2ac2bab888344afbd0ef8b0f5a4ba37641ccc66dcbe300e3a74ac0"
+    },
+    {
+      "reference": "U8",
+      "file": "3d/Package_TO_SOT_SMD__SOT-23-6.step",
+      "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635"
+    },
+    {
+      "reference": "C13",
+      "file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "C14",
+      "file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "U9",
+      "file": "3d/TI_RSE0010A-envelope.wrl",
+      "sha256": "6a60adc32c6ae8d8bdb3368ae439240989ea5dc7045e698578988b4bd62bea4d"
+    },
+    {
+      "reference": "C15",
+      "file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "C16",
+      "file": "3d/Capacitor_SMD__C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "R21",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "R22",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "R23",
+      "file": "3d/Resistor_SMD__R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    }
+  ]
+}

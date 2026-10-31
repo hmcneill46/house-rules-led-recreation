@@ -19,7 +19,7 @@ def uid(s):return str(uuid.uuid5(uuid.NAMESPACE_URL,s))
 def place_spec():
  p={}
  def put(ref,x,y,a=0):p[ref]={'x':x,'y':y,'angle':a}
- for i in range(7):put('DS'+str(i+1),6.1+12.7*i,8.65)
+ for i in range(7):put('DS'+str(i+1),6.1+12.875*i,8.65)
  for i,x in enumerate((6.1,31.5,56.9,82.3),1):
   put('U'+str(i),x,8.65 if i<4 else 7.0)
   put('C'+str(i),x,4.3 if i<4 else 3.0)
@@ -39,6 +39,11 @@ def place_spec():
  for ref,x,y in [('U9',63.25,11.3),('C15',68.0,10.7),('C16',71.2,10.7),
                  ('R21',25.15,6.1),('R22',25.15,11.0),('R23',12.45,11.0),
                  ('J19',23.88,.85),('J20',26.42,.85)]:put(ref,x,y)
+ # Placement seed only: widen the rear component placement rigidly; routed
+ # canonical placement is exported independently after final DRC.
+ for ref,location in p.items():
+  if not ref.startswith('DS'):
+   location['x'] += (location['x']-6.1)*.175/12.7
  return p
 
 def project():
@@ -70,7 +75,7 @@ if netxml.exists():
 nets={}
 for n in sorted({n for p in spec['parts']for n in p['pins'].values()if n}|set(nc_nodes.values())):
  ni=k.NETINFO_ITEM(b,n);b.Add(ni);nets[n]=ni
-s=k.PCB_SHAPE(b);s.SetShape(k.SHAPE_T_RECT);s.SetStart(pos(0,0));s.SetEnd(pos(88.4,17.3));s.SetLayer(k.Edge_Cuts);s.SetWidth(mm(.05));b.Add(s)
+s=k.PCB_SHAPE(b);s.SetShape(k.SHAPE_T_RECT);s.SetStart(pos(0,0));s.SetEnd(pos(89.45,17.3));s.SetLayer(k.Edge_Cuts);s.SetWidth(mm(.05));b.Add(s)
 (OUT/'3d').mkdir(exist_ok=True)
 shutil.copy2(ROOT/'hardware/kicad/3d/LMD07057AUE-101B.wrl',OUT/'3d/LMD07057AUE-101B.wrl')
 for p in spec['parts']:
@@ -116,7 +121,7 @@ if layers==6:
 ground_layers=(k.In2_Cu,k.In4_Cu)if layers==6 else(k.In2_Cu,)
 for ground_layer in ground_layers:
  z=k.ZONE(b);z.SetLayer(ground_layer);z.SetNet(nets['GND']);z.SetLocalClearance(mm(.15));z.SetThermalReliefGap(mm(.25));z.SetThermalReliefSpokeWidth(mm(.25));poly=z.Outline();poly.NewOutline()
- for x,y in ((.3,.3),(88.1,.3),(88.1,17.0),(.3,17.0)):poly.Append(mm(x+50),mm(y+50))
+ for x,y in ((.3,.3),(89.15,.3),(89.15,17.0),(.3,17.0)):poly.Append(mm(x+50),mm(y+50))
  b.Add(z)
 t=k.PCB_TEXT(b);t.SetText('HOUSE RULES B2');t.SetPosition(pos(16.0,16.4));t.SetLayer(k.B_SilkS);t.SetMirrored(True);t.SetTextSize(xy(.6,.6));t.SetTextThickness(mm(.1));b.Add(t)
 b.BuildConnectivity();k.SaveBoard(str(file),b);project()

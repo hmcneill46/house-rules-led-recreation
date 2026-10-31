@@ -1,4 +1,4 @@
-// House Rules B2 / stock XIAO RP2040 Plus + Adafruit4090 / 29 Oct2026.
+// House Rules B2 / confirmed F pitch / XIAO RP2040 Plus + Adafruit4090 / 31 Oct2026.
 // mm; z=0 LED front. Prototype geometry: verify actual modules/wires/plug.
 // Generated stock-module-values.scad is checked against ../stock-module-contract.json.
 include <stock-module-values.scad>
@@ -12,12 +12,15 @@ pcb_clearance = 0.20;
 $fn = 40;
 eps = 0.02;
 
-main_w=88.4; main_h=17.3; main_t=1.6;
+main_w=case_main_xy[0]; main_h=case_main_xy[1]; main_t=1.6;
 led_w=12.7; led_h=17.8; led_t=6.3; led_standoff=3.0;
-module_pitch=12.7;
+module_pitch=case_led_module_pitch;
+first_led_x=case_first_led_centre[0];
+led_allowance_w=case_led_body_allowance[0];
+led_allowance_h=case_led_body_allowance[1];
 main_front_z=9.3; main_back_z=10.9; main_smd_h=2.0;
-front_window_w=90.4; front_window_h=18.4;
-window_w=90.4; window_h=19.4;
+front_window_w=case_front_opening[0]; front_window_h=case_front_opening[1];
+window_w=front_window_w; window_h=19.4;
 wall=1.6; total_depth=24.0; back_t=1.2; corner_radius=1.2;
 lip_t=1.2; lip_depth=2.4; stop_clearance=0.15;
 cx=main_w/2; cy=main_h/2;
@@ -40,11 +43,14 @@ port_recess=outer_y+outer_h-usb_face_y;
 main_stops_x=[3.0,30.0];
 mcu_cap_x=38.3; mcu_cap_y=8.65; mcu_cap_front=14.1; mcu_cap_post_face=18.3;
 
-assert(total_depth==24.0 && abs(outer_w-93.6)<.001);
-assert(abs(outer_h-22.6)<.001);
-assert(mcu_x>=-.25 && mcu_x+mcu_w<=88.65);
+assert(total_depth==case_outer_xyz[2] && abs(outer_w-case_outer_xyz[0])<.001);
+assert(abs(outer_h-case_outer_xyz[1])<.001);
+assert(abs(module_pitch-12.875)<.000001 && abs(main_w-89.45)<.000001);
+assert(first_led_x-led_w/2<=0 && first_led_x+6*module_pitch+led_w/2>=main_w);
+assert(main_h<=led_h && front_window_h>=led_allowance_h);
+assert(mcu_x>=-.25 && mcu_x+mcu_w<=main_w+.25);
 assert(mcu_y>=-.25 && mcu_y+mcu_h<=17.55+.001);
-assert(usb_x>=-.25 && usb_x+usb_w<=88.65);
+assert(usb_x>=-.25 && usb_x+usb_w<=main_w+.25);
 assert(usb_y>=-.25 && usb_y+usb_h<=17.55);
 assert(mcu_under_z-mcu_under_allow-(main_back_z+main_smd_h)>=.5);
 assert(usb_under_z-usb_under_allow-(main_back_z+main_smd_h)>=.49);
@@ -198,7 +204,7 @@ module lid() {
                 [window_w-2*(fit_clearance+lip_t),window_h-2*(fit_clearance+lip_t),lip_depth+3*eps],.2);
    }
    for(x=main_stops_x,y=[.65,16.65]) stop_post(x,y,main_back_z+stop_clearance);
-   stop_post(64.6,.65,main_back_z+stop_clearance);
+   stop_post(main_upper_wire_pad_stop_x,.65,main_back_z+stop_clearance);
    stop_post(64.0,16.65,main_back_z+stop_clearance);
    stop_post(87.0,.65,main_back_z+stop_clearance);
    mcu_cradle(); usb_posts(); loom_anchor(); closure_beads();
@@ -208,7 +214,7 @@ module lid() {
 }
 module led_preview() {
  for(m=[0:6]) {
-  x=6.1+module_pitch*m;
+  x=first_led_x+module_pitch*m;
   color([.75,.73,.67]) translate([x-led_w/2,cy-led_h/2,0]) cube([led_w,led_h,led_t]);
   color([.015,.015,.018]) translate([x-led_w/2,cy-led_h/2,-.03]) cube([led_w,led_h,.04]);
   for(c=[0:4],r=[0:6]) color([.8,.8,.76])
@@ -279,8 +285,10 @@ module electronics_preview() {
   translate([8,2,14]) cube([28,13,6]);
 }
 module clearance_envelopes() {
- for(m=[0:6]) translate([6.1+module_pitch*m-led_w/2+eps,cy-led_h/2+eps,eps])
-  cube([led_w-2*eps,led_h-2*eps,led_t-2*eps]);
+ // Approximate owner caliper housing size is a conservative case-clearance
+ // allowance. Actual seven-module spacing is established by the F fit trial.
+ for(m=[0:6]) translate([first_led_x+module_pitch*m-led_allowance_w/2+eps,cy-led_allowance_h/2+eps,eps])
+  cube([led_allowance_w-2*eps,led_allowance_h-2*eps,led_t-2*eps]);
  translate([eps,eps,main_front_z+eps]) cube([main_w-2*eps,main_h-2*eps,main_t-2*eps]);
  // Main rear component envelope excludes declared bare edge contact/pad bands.
  difference() {
@@ -291,7 +299,7 @@ module clearance_envelopes() {
  translate([mcu_cap_x,mcu_cap_y,mcu_cap_front-1.5+eps]) cylinder(h=1.5-2*eps,r=2-eps);
  usb_board(eps);usb_upper(eps);usb_lower_wires(eps);
  for(m=[0:6],px=[-3.81,3.81],row=[0:5])
-  translate([6.1+module_pitch*m+px,cy-6.35+2.54*row,led_t+eps])
+  translate([first_led_x+module_pitch*m+px,cy-6.35+2.54*row,led_t+eps])
    cylinder(h=main_back_z+1-led_t-2*eps,r=.25-eps,$fn=12);
 }
 module assembled() {

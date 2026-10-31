@@ -1,0 +1,91 @@
+{
+  "status": "PASS for represented connectivity, geometry, export and software; factory/physical approval pending",
+  "date_utc": "2026-10-29T19:32:03.534991+00:00",
+  "revision": "B2",
+  "canonical_pcb_sha256": "90018f786599e140bdc7ed6a75be65f574c2691c98f3b2d91a7383906dbe0b04",
+  "native_ERC_violations": 0,
+  "native_DRC_violations": 0,
+  "native_unconnected_items": 0,
+  "native_schematic_parity_issues": 0,
+  "custom_DRC_ERC_exclusions": 0,
+  "native_default_ignored_checks_documented": [
+    {
+      "path": "/board/design_settings/rule_severities/footprint_filters_mismatch",
+      "value": "ignore"
+    },
+    {
+      "path": "/board/design_settings/rule_severities/footprint_type_mismatch",
+      "value": "ignore"
+    },
+    {
+      "path": "/board/design_settings/rule_severities/missing_courtyard",
+      "value": "ignore"
+    },
+    {
+      "path": "/board/design_settings/rule_severities/track_not_centered_on_via",
+      "value": "ignore"
+    },
+    {
+      "path": "/board/design_settings/rule_severities/tuning_profile_track_geometries",
+      "value": "ignore"
+    }
+  ],
+  "physical_references": 82,
+  "factory_SMT_components": 55,
+  "connected_pins": 327,
+  "LED_hole_count": 84,
+  "LED_geometry_exactly_matches_A1": true,
+  "LED_holes_open": true,
+  "ordinary_filled_capped_vias": 276,
+  "driver_thermal_vias": 12,
+  "quiet_CT_In2_length_mm": 9.753865347880229,
+  "In4_GND_only": true,
+  "exported_actual_drill_counts": {
+    "0.300000": 276,
+    "0.900000": 84
+  },
+  "exported_source_and_render_match_canonical": true,
+  "portable_3D_models_verified": true,
+  "host_test_result": "PASS",
+  "independent_physical_model_result": "PASS",
+  "walking_pixels": 245,
+  "artwork_frames": 60000,
+  "independent_phase_reconstructions": 301235,
+  "injected_fault_cases_detected": [
+    "LED anode/cathode polarity swap",
+    "Cathodes accidentally shared across modules",
+    "PMOS source/drain reversal",
+    "BQ USB upstream/downstream terminals swapped",
+    "BQ GOOD_BAT on switched rail would disconnect USB during suspend",
+    "BQ detector divider cannot meet RP2040 input-high threshold",
+    "Two column gates enabled simultaneously",
+    "Row bits set with no selected gate",
+    "Unconnected sink enabled",
+    "LED supply remains on while driver unpowered",
+    "Swapped TLC physical OUT pins change the independently reconstructed pixel",
+    "Reversed serial chip order is rejected or produces a different physical image"
+  ],
+  "owner_physical_evidence": "Full12-terminal map and upright orientation verified on one owned module; other20 unverified",
+  "remaining_acceptance": [
+    "Factory CAM: finaloutline, externalremovabletoolingrails, filled/capped.30vias and84open.90LEDholes",
+    "Factory placement preview: pin1/rotation/polarity and exactparts; no silent substitutions",
+    "Actualstockmodules, cableplug, wirestrainrelief and case/cap/closurefit",
+    "Firstassembly: actual245pixels, externalUSB UF2/serial and reset/suspend/resume",
+    "Measured input/inrush/suspend/fullwhite currents, scanedges/ghosting and enclosedtemperatures"
+  ],
+  "no_order_or_payment_submitted": true,
+  "evidence_sha256": {
+    "kicad/house-rules-main-B2.kicad_pcb": "90018f786599e140bdc7ed6a75be65f574c2691c98f3b2d91a7383906dbe0b04",
+    "electrical-spec.json": "8658ae95e37d72c0a062ad9cfd54ef3e18cb201437d9d5956834977edae0cc46",
+    "reports/final-drc.json": "9c53fa5f514612ac182864aee9869470e1fc7aa2aba83819114a34f492a19f23",
+    "reports/board-audit.json": "dcff4cee7e936d55cf4f6ec9cb2f9738aff947b8211fd825b1446313e96c455b",
+    "reports/schematic-verification-summary.json": "6045f27c38c7516164930f9085c97dff541ff501f202995c258364ddbdd0834d",
+    "reports/render-source.json": "99e7ae6d61ab81923b730d51bfa24798a9610d75d1fdbf44c677c3e15ab90ffd",
+    "reports/owner-led-diode-test-2026-10-29.json": "14d7ae456b7c0cea732de646c97c06a8b65ccc012fa47aa740394b4bf4127691",
+    "manufacturing/B2_review/manifest.json": "2efee22fc0d9c5a91abd6390703233227e75dd969f995888309bc9094a598345",
+    "firmware/verification-summary.json": "442115180f4772533b702a0b24f6208329980dfd9288054fe2e3b633e26b1c32",
+    "firmware/tests/verification.json": "34aaab9758684c55a0318de6050f93ee34933ebc75a9d5a8e73034ad61ab4c46",
+    "simulation/verification.json": "bf53afd619c126feb81d7b55537f4dd04bbfa240cc6348a5fd4060fab5e86a5b",
+    "mechanical/geometry-verification.json": "d59083154b3798323a46fa8980618ef2cfe88d8370f0f4229e3f1d43c60dcb0d"
+  }
+}

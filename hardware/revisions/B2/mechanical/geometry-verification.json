@@ -1,6 +1,6 @@
 {
-  "contract_sha256": "4ac1d14debe7dfb139318eeece5a6a68b0d120d6bbdeaedb92115fb53903866d",
-  "scad_sha256": "e17a1b4014b1698b8a0be32c27a42229cf066e8b32ddde1dd09ce347b3abe066",
+  "contract_sha256": "7653904daacf65a17fb7dc5f0a91ad7bb080203d2dea5089ab3ed35382ad9311",
+  "scad_sha256": "868632421c8d4873ab6bf9c009e77010d8cca044543b420da9ab1cdb21acbb2d",
   "scope": "Nominal CAD envelopes and mesh topology only;actual stock revisions,solder,wires,printed fit and cable require checks.",
   "builds": {
     "shell": {
@@ -8,7 +8,7 @@
       "watertight_edge_counts": true,
       "consistent_winding": true,
       "positive_signed_volume": true,
-      "volume_mm3": 9289.499,
+      "volume_mm3": 9380.408,
       "bounds_mm": [
         [
           -2.6,
@@ -16,23 +16,23 @@
           0.0
         ],
         [
-          91.0,
+          92.05,
           19.45,
           22.8
         ]
       ],
       "size_mm": [
-        93.6,
+        94.65,
         22.6,
         22.8
       ]
     },
     "lid": {
-      "triangles": 2112,
+      "triangles": 2104,
       "watertight_edge_counts": true,
       "consistent_winding": true,
       "positive_signed_volume": true,
-      "volume_mm3": 3689.111,
+      "volume_mm3": 3726.802,
       "bounds_mm": [
         [
           -2.6,
@@ -40,13 +40,13 @@
           0.0
         ],
         [
-          91.0,
+          92.05,
           19.45,
           12.95
         ]
       ],
       "size_mm": [
-        93.6,
+        94.65,
         22.6,
         12.95
       ]
@@ -167,6 +167,22 @@
       "file": "render/closure-detail.png"
     }
   ],
+  "confirmed_pitch_mm": 12.875,
+  "owner_selected_trial": "F / P12.875 / +0.175",
+  "main_pcb_xy_mm": [
+    89.45,
+    17.3
+  ],
+  "case_outer_xyz_mm": [
+    94.65,
+    22.6,
+    24.0
+  ],
+  "conservative_led_body_allowance_xy_mm": [
+    12.9,
+    18.0
+  ],
+  "body_allowance_scope": "Approximate owner caliper body measurements; used for case clearance only, not proof of body spacing or absolute printed accuracy. Owner confirmed full seven-module fine trial F (12.875 mm nominal pitch) fits best.",
   "closure_transition": {
     "intentional_positive_interference": true,
     "lid_offset_z_mm": 0.8,

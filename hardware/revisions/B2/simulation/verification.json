@@ -1,8 +1,8 @@
 {
   "result": "PASS",
-  "date_utc": "2026-10-29T19:17:30.539689+00:00",
+  "date_utc": "2026-10-31T19:51:44.578621+00:00",
   "model": "Independent physical diode/TLC/PMOS connectivity model",
-  "electrical_spec_sha256": "8658ae95e37d72c0a062ad9cfd54ef3e18cb201437d9d5956834977edae0cc46",
+  "electrical_spec_sha256": "755a5b30c8b0919af8874b58b9979ca0133f9cbc2a0dc6002b77b13267fb6e28",
   "firmware_source_sha256": {
     "HouseRulesB2/scan_engine.h": "dca42ab3dc53c6ccbc2d7b6472b87efe4eaf856525fc55f77a85a8d105c52e09",
     "HouseRulesB2/board_contract_generated.h": "2adf7bb63e222fb10138de0cede28428c808e5e9f100862cdb364a3f5c274cf0",

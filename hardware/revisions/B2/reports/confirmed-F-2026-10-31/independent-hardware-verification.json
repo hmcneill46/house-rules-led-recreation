@@ -1,0 +1,664 @@
+{
+  "result": "PASS",
+  "date_utc": "2026-10-31T20:02:43.169725+00:00",
+  "canonical_PCB_sha256": "b42e3d59b40a2e9cc877f8c5595d58339a2c7b0797970fa826ea84c19b8105f1",
+  "frozen_Git_revision": "efad429",
+  "frozen_PCB_sha256": "90018f786599e140bdc7ed6a75be65f574c2691c98f3b2d91a7383906dbe0b04",
+  "scope": "Independent actual PCB/mesh/export inspection; does not certify fabricated hardware, USB electrical behavior, soldering or actual stock revisions.",
+  "PCB": {
+    "outline_mm": [
+      89.45,
+      17.3
+    ],
+    "LED_holes_nm": {
+      "DS3.1": [
+        28040000,
+        2300000
+      ],
+      "DS3.2": [
+        28040000,
+        4840001
+      ],
+      "DS3.3": [
+        28040000,
+        7380001
+      ],
+      "DS3.4": [
+        28040000,
+        9920000
+      ],
+      "DS3.5": [
+        28040000,
+        12460000
+      ],
+      "DS3.6": [
+        28040000,
+        15000000
+      ],
+      "DS3.7": [
+        35660000,
+        15000000
+      ],
+      "DS3.8": [
+        35660000,
+        12460000
+      ],
+      "DS3.9": [
+        35660000,
+        9920000
+      ],
+      "DS3.10": [
+        35660000,
+        7380001
+      ],
+      "DS3.11": [
+        35660000,
+        4840001
+      ],
+      "DS3.12": [
+        35660000,
+        2300000
+      ],
+      "DS6.1": [
+        66665000,
+        2300000
+      ],
+      "DS6.2": [
+        66665000,
+        4840001
+      ],
+      "DS6.3": [
+        66665000,
+        7380001
+      ],
+      "DS6.4": [
+        66665000,
+        9920000
+      ],
+      "DS6.5": [
+        66665000,
+        12460000
+      ],
+      "DS6.6": [
+        66665000,
+        15000000
+      ],
+      "DS6.7": [
+        74285000,
+        15000000
+      ],
+      "DS6.8": [
+        74285000,
+        12460000
+      ],
+      "DS6.9": [
+        74285000,
+        9920000
+      ],
+      "DS6.10": [
+        74285000,
+        7380001
+      ],
+      "DS6.11": [
+        74285000,
+        4840001
+      ],
+      "DS6.12": [
+        74285000,
+        2300000
+      ],
+      "DS7.1": [
+        79540000,
+        2300000
+      ],
+      "DS7.2": [
+        79540000,
+        4840001
+      ],
+      "DS7.3": [
+        79540000,
+        7380001
+      ],
+      "DS7.4": [
+        79540000,
+        9920000
+      ],
+      "DS7.5": [
+        79540000,
+        12460000
+      ],
+      "DS7.6": [
+        79540000,
+        15000000
+      ],
+      "DS7.7": [
+        87160000,
+        15000000
+      ],
+      "DS7.8": [
+        87160000,
+        12460000
+      ],
+      "DS7.9": [
+        87160000,
+        9920000
+      ],
+      "DS7.10": [
+        87160000,
+        7380001
+      ],
+      "DS7.11": [
+        87160000,
+        4840001
+      ],
+      "DS7.12": [
+        87160000,
+        2300000
+      ],
+      "DS2.1": [
+        15165000,
+        2300000
+      ],
+      "DS2.2": [
+        15165000,
+        4840001
+      ],
+      "DS2.3": [
+        15165000,
+        7380001
+      ],
+      "DS2.4": [
+        15165000,
+        9920000
+      ],
+      "DS2.5": [
+        15165000,
+        12460000
+      ],
+      "DS2.6": [
+        15165000,
+        15000000
+      ],
+      "DS2.7": [
+        22785000,
+        15000000
+      ],
+      "DS2.8": [
+        22785000,
+        12460000
+      ],
+      "DS2.9": [
+        22785000,
+        9920000
+      ],
+      "DS2.10": [
+        22785000,
+        7380001
+      ],
+      "DS2.11": [
+        22785000,
+        4840001
+      ],
+      "DS2.12": [
+        22785000,
+        2300000
+      ],
+      "DS5.1": [
+        53790000,
+        2300000
+      ],
+      "DS5.2": [
+        53790000,
+        4840001
+      ],
+      "DS5.3": [
+        53790000,
+        7380001
+      ],
+      "DS5.4": [
+        53790000,
+        9920000
+      ],
+      "DS5.5": [
+        53790000,
+        12460000
+      ],
+      "DS5.6": [
+        53790000,
+        15000000
+      ],
+      "DS5.7": [
+        61410000,
+        15000000
+      ],
+      "DS5.8": [
+        61410000,
+        12460000
+      ],
+      "DS5.9": [
+        61410000,
+        9920000
+      ],
+      "DS5.10": [
+        61410000,
+        7380001
+      ],
+      "DS5.11": [
+        61410000,
+        4840001
+      ],
+      "DS5.12": [
+        61410000,
+        2300000
+      ],
+      "DS4.1": [
+        40915000,
+        2300000
+      ],
+      "DS4.2": [
+        40915000,
+        4840001
+      ],
+      "DS4.3": [
+        40915000,
+        7380001
+      ],
+      "DS4.4": [
+        40915000,
+        9920000
+      ],
+      "DS4.5": [
+        40915000,
+        12460000
+      ],
+      "DS4.6": [
+        40915000,
+        15000000
+      ],
+      "DS4.7": [
+        48535000,
+        15000000
+      ],
+      "DS4.8": [
+        48535000,
+        12460000
+      ],
+      "DS4.9": [
+        48535000,
+        9920000
+      ],
+      "DS4.10": [
+        48535000,
+        7380001
+      ],
+      "DS4.11": [
+        48535000,
+        4840001
+      ],
+      "DS4.12": [
+        48535000,
+        2300000
+      ],
+      "DS1.1": [
+        2290000,
+        2300000
+      ],
+      "DS1.2": [
+        2290000,
+        4840001
+      ],
+      "DS1.3": [
+        2290000,
+        7380001
+      ],
+      "DS1.4": [
+        2290000,
+        9920000
+      ],
+      "DS1.5": [
+        2290000,
+        12460000
+      ],
+      "DS1.6": [
+        2290000,
+        15000000
+      ],
+      "DS1.7": [
+        9910000,
+        15000000
+      ],
+      "DS1.8": [
+        9910000,
+        12460000
+      ],
+      "DS1.9": [
+        9910000,
+        9920000
+      ],
+      "DS1.10": [
+        9910000,
+        7380001
+      ],
+      "DS1.11": [
+        9910000,
+        4840001
+      ],
+      "DS1.12": [
+        9910000,
+        2300000
+      ]
+    },
+    "module_centres_mm": [
+      [
+        6.1,
+        8.65
+      ],
+      [
+        18.975,
+        8.65
+      ],
+      [
+        31.85,
+        8.65
+      ],
+      [
+        44.725,
+        8.65
+      ],
+      [
+        57.6,
+        8.65
+      ],
+      [
+        70.475,
+        8.65
+      ],
+      [
+        83.35,
+        8.65
+      ]
+    ],
+    "all_84_holes_exact_frozen_pattern_plus_175000nm_per_index": true,
+    "footprints_rigid_not_scaled": true,
+    "project_custom_rules_and_schematic_identical_to_frozen_Git": true,
+    "footprint_X_shift_nm": {
+      "DS3": 350000,
+      "DS6": 875000,
+      "DS7": 1050000,
+      "DS2": 175000,
+      "DS5": 700000,
+      "DS4": 525000,
+      "DS1": 0,
+      "R17": 1050000,
+      "U6": 875000,
+      "U3": 700000,
+      "Q4": 525000,
+      "C1": 0,
+      "Q2": 175000,
+      "U2": 350000,
+      "J9": 700000,
+      "R10": 87500,
+      "R16": 437500,
+      "R1": 0,
+      "J3": 443902,
+      "C3": 700000,
+      "R8": 437500,
+      "R3": 700000,
+      "J4": 525000,
+      "J14": 875000,
+      "J7": 606098,
+      "J19": 256098,
+      "J13": 875000,
+      "U7": 875000,
+      "C14": 962500,
+      "U5": 525000,
+      "R11": 87500,
+      "J8": 618902,
+      "R12": 87500,
+      "R5": 262500,
+      "C11": 612500,
+      "R20": 787500,
+      "C12": 700000,
+      "C8": 962500,
+      "J6": 525000,
+      "R7": 262500,
+      "U4": 1050000,
+      "J17": 1050000,
+      "Q3": 175000,
+      "J11": 700000,
+      "R14": 612500,
+      "J12": 781098,
+      "J18": 1050000,
+      "C4": 1050000,
+      "R9": 437500,
+      "J20": 268902,
+      "R15": 87500,
+      "R22": 262500,
+      "U1": 0,
+      "R23": 87500,
+      "J5": 525000,
+      "J2": 431098,
+      "C2": 350000,
+      "J16": 968902,
+      "U8": 875000,
+      "C13": 787500,
+      "F1": 962500,
+      "J15": 956098,
+      "R4": 1050000,
+      "C5": 437500,
+      "J1": 350000,
+      "C9": 525000,
+      "R13": 612500,
+      "C16": 875000,
+      "R19": 875000,
+      "Q5": 525000,
+      "R6": 262500,
+      "R18": 1050000,
+      "C10": 787500,
+      "C7": 612500,
+      "J10": 700000,
+      "R2": 350000,
+      "U9": 787500,
+      "C15": 875000,
+      "R21": 262500,
+      "C6": 787500,
+      "Q1": 175000,
+      "D1": 962500
+    },
+    "references": 82,
+    "factory_parts": 55,
+    "vias": 276,
+    "thermal_vias": {
+      "U1": 3,
+      "U2": 3,
+      "U3": 3,
+      "U4": 3
+    },
+    "hole_edge_clearance_mm": {
+      "via_to_LED": 0.4825894882179487,
+      "via_to_via": 0.2656854249492381
+    },
+    "CT_In2_length_mm": 9.856275177872403,
+    "ground_planes": {
+      "In2.Cu": {
+        "area_mm2": 1159.658555509083,
+        "connected_outlines": 1
+      },
+      "In4.Cu": {
+        "area_mm2": 1163.7546242130966,
+        "connected_outlines": 1
+      }
+    },
+    "nominal_LED_outer_rectangle_mm": [
+      -0.25,
+      -0.25,
+      89.95,
+      17.8
+    ],
+    "PCB_inside_nominal_LED_outer_rectangle_with_0p25mm_margins": true
+  },
+  "independent_native_DRC": {
+    "independent_read_only_staged_run": true,
+    "counts": {
+      "violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": 0
+    },
+    "version": "10.0.7",
+    "report_sha256": "6a57a1739f30484aedcbf1d8c7b7cdbf74dde4941e085049599876f33ccd0a4b",
+    "stdout": "Found 0 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to /var/folders/r2/mg1mgdnd20dd_94fjlhhrkyw0000gn/T/house-rules-independent-F-etiib8cx/drc.json\n",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n",
+    "source_SHA256": "b42e3d59b40a2e9cc877f8c5595d58339a2c7b0797970fa826ea84c19b8105f1",
+    "saved_board_or_refill_requested": false
+  },
+  "case": {
+    "meshes": {
+      "enclosure-B2-PROTOTYPE-shell.stl": {
+        "sha256": "568d92a04acd80bb85939bcf59cb91d3df77d251180da0e0bae272e63dd40bb3",
+        "bounds_mm": [
+          [
+            -2.6,
+            -3.15,
+            0.0
+          ],
+          [
+            92.05,
+            19.45,
+            22.8
+          ]
+        ],
+        "size_mm": [
+          94.65,
+          22.6,
+          22.8
+        ],
+        "watertight_consistently_oriented": true,
+        "volume_mm3": 9380.408277807865
+      },
+      "enclosure-B2-PROTOTYPE-back.stl": {
+        "sha256": "fb5dcc29a8ca4c8559f471e5d2cde42042af05010f8449a3655fd8bac2574af9",
+        "bounds_mm": [
+          [
+            -2.6,
+            -3.15,
+            0.0
+          ],
+          [
+            92.05,
+            19.45,
+            12.95
+          ]
+        ],
+        "size_mm": [
+          94.65,
+          22.6,
+          12.95
+        ],
+        "watertight_consistently_oriented": true,
+        "volume_mm3": 3726.802250424621
+      },
+      "mcu-channel-fit-coupon.stl": {
+        "sha256": "7f7b609fb40f6c3aa99f3b5b3976fd423c8cd30a5c9071053362c5d020de4d3f",
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            20.0,
+            8.0,
+            9.2
+          ]
+        ],
+        "size_mm": [
+          20.0,
+          8.0,
+          9.2
+        ],
+        "watertight_consistently_oriented": true,
+        "volume_mm3": 336.37721889620025
+      },
+      "mcu-retaining-cap.stl": {
+        "sha256": "baa5db4801ea1992f102fffc7f4c64ede8f2175703322fae2d54381a8a7d307e",
+        "bounds_mm": [
+          [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          [
+            6.0,
+            16.4,
+            4.2
+          ]
+        ],
+        "size_mm": [
+          6.0,
+          16.4,
+          4.2
+        ],
+        "watertight_consistently_oriented": true,
+        "volume_mm3": 283.7640260077463
+      },
+      "case-closure-fit-coupon.stl": {
+        "sha256": "af8297bc7ef0153aae03c1c863ac9521cd3c536ebac961e16e313ba1dabd6d11",
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            24.0,
+            15.0,
+            10.8
+          ]
+        ],
+        "size_mm": [
+          24.0,
+          15.0,
+          10.8
+        ],
+        "watertight_consistently_oriented": true,
+        "volume_mm3": 754.7423160737208
+      }
+    },
+    "case_contract_sha256": "7653904daacf65a17fb7dc5f0a91ad7bb080203d2dea5089ab3ed35382ad9311",
+    "geometry_report_sha256": "b210a688eef208fbac14b88599df4ba6b30dbf54a43650bb52799cf9c54f9fb9",
+    "main_placement_audit_sha256": "ee3fb8ecc8d0c5f395e1ce5ce794e646cc93e8b421a66138093a7c91707d0642",
+    "owner_selected_F_is_spacing_evidence_not_FDM_accuracy_claim": true,
+    "stock_poses_unchanged": true,
+    "case_intersection_and_transition_checks_current": true
+  },
+  "manufacturing": {
+    "package": "manufacturing/B2_F_12p875_review_2026-10-31",
+    "manifest_sha256": "d67330e85941358707b75a971349cad94bdd267372b6c8f40efc4be043210e01",
+    "all_manifest_output_hashes_verified": true,
+    "actual_Excellon_LED_centres_match_at_1um_export_resolution": 84,
+    "staged_source_identical_to_canonical_PCB": true,
+    "actual_Gerber_copper_layers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "actual_Excellon_via_centres_match_at_1um_export_resolution": 276,
+    "Excellon_maximum_axis_coordinate_rounding_error_mm": {
+      "LED": 1e-06,
+      "via": 0.0005
+    },
+    "actual_Gerber_outline_mm": [
+      89.45,
+      17.3
+    ],
+    "BOM_CPL_exact_factory_references": 55,
+    "CPL_native_coordinates_angles_and_bottom_side_verified": true,
+    "manufacturer_feeder_and_pin1_review_still_required": true
+  },
+  "no_order_payment_or_printer_execution": true,
+  "verifier_sha256": "90be7de9d7b9d43ca5534e8ba25b2e59a13661e143791c23a36e1e342aa8b73d",
+  "canonical_PCB_unchanged_during_verification": true
+}

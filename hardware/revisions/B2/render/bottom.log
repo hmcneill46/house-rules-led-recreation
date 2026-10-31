@@ -69,21 +69,20 @@ Build BVH for holes and vias
 Load Raytracing: board
 Load Raytracing: layers
 Loading 3D models...
-Reload time 0.581 s
-Rendering: 9 %
-Rendering: 15 %
-Rendering: 20 %
-Rendering: 27 %
-Rendering: 33 %
-Rendering: 38 %
-Rendering: 43 %
+Reload time 0.834 s
+Rendering: 10 %
+Rendering: 16 %
+Rendering: 21 %
+Rendering: 28 %
+Rendering: 35 %
+Rendering: 39 %
+Rendering: 44 %
 Rendering: 48 %
-Rendering: 58 %
-Rendering: 68 %
-Rendering: 77 %
+Rendering: 61 %
+Rendering: 70 %
+Rendering: 78 %
 Rendering: 87 %
-Rendering: 99 %
 Rendering: 100 %
 Rendering: Post processing shader
-Rendering time 5.724 s
+Rendering time 5.751 s
 Successfully created 3D render image

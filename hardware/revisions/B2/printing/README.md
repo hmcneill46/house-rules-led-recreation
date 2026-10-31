@@ -1,6 +1,6 @@
 # B2 case and fit-test prints — Ender-3 V3 KE / Hyper PLA grey
 
-**30 October: use the [new labelled LED spacing trials](pitch-tests-2026-10-30/README.md) first.** The owner now reports a bowed seven-module fit at the original 12.70 mm repeat. The case and dummy files below preserve that earlier geometry and may need revision after a pitch is chosen; they are not confirmation of the final combined fit.
+**31 October: use the [new confirmed-F print pack](2026-10-31-confirmed-F/README.md).** The owner selected 12.875 mm module pitch. The case and dummy files on this page preserve the earlier 12.700 mm geometry for historical reference; they do not fit the widened 89.450 mm PCB. The current case is 94.650 × 22.600 × 24.000 mm.
 
 Ready-to-copy G-code for a **stock Creality Ender-3 V3 KE with a 0.4 mm nozzle**, using **Creality Hyper PLA grey, 1.75 mm**. These are PLA files. Copy the selected `.gcode` to the printer's USB drive and start it at the printer. No printer was connected to or started remotely.
 
@@ -66,6 +66,6 @@ Parts subtotal **£7.39 per display**, before shop postage. The earlier one-set 
 - `profiles/`: full settings snapshots; `preparation.json`: unchanged source-mesh hashes, dimensions, placement and identity scale/rotation.
 - `independent-gcode-audit.json`: independent review of actual G-code, settings, temperatures, geometry placement, motion bounds and embedded-file equality.
 - `previews/`: actual Orca preview screenshots, including a cut through the shell's support strips.
-- `models/`: print-only dummy PCB SCAD/STL. The five original B2 case/coupon STLs are unchanged in `../mechanical/`.
+- `models/`: historical print-only dummy PCB SCAD/STL. The original case/coupon source snapshots are preserved in [`../mechanical/archive-12p700-2026-10-29/`](../mechanical/archive-12p700-2026-10-29/README.md); the canonical `../mechanical/` now contains the confirmed-F geometry.
 
-`prepare_prints.py` generates the prepared projects from the existing owner KE/Hyper PLA profile and unchanged source STLs. Slicing uses installed OrcaSlicer **2.4.2**, `--slice 0 --arrange 0 --orient 0`, with a separate temporary data directory. The exact commands and exported hashes are recorded in `slice-provenance.json`. Sliced projects and copied standalone files are checked for byte-identical G-code. No PCB, schematic or firmware change is part of this print preparation.
+These historical projects were generated from the existing owner KE/Hyper PLA profile and the archived source STLs. The current `prepare_prints.py` defaults to the new confirmed-F subfolder and validates the updated board audit before making a dummy; it does not overwrite these historical jobs. Slicing uses installed OrcaSlicer **2.4.2**, `--slice 0 --arrange 0 --orient 0`, with a separate temporary data directory. The original commands and exported hashes are recorded in `slice-provenance.json`. Sliced projects and copied standalone files are checked for byte-identical G-code.

@@ -3,10 +3,12 @@
   "status": "engineering prototype; not released for manufacture",
   "boards": {
     "main": {
-      "width": 88.4,
+      "width": 89.45,
       "height": 17.3,
       "layers": 6,
       "thickness": 1.6,
+      "led_module_pitch_mm": 12.875,
+      "mechanical_confirmation": "Owner selected fine trial F / P12.875 / +0.175 on2026-10-31; individual12-pin geometry unchanged",
       "placement_owner": "root PCB generator/finalizer; x/y here placeholders; do not regenerate routed PCB from placement seed",
       "via_process": {
         "drill_mm": 0.3,

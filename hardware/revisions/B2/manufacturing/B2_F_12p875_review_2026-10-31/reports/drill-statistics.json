@@ -1,0 +1,85 @@
+{
+  "files": {
+    "house-rules-main-B2-NPTH.drl": {
+      "sha256": "bec5311abb89992eb437da2ae291d436529356d350310851df1f6f182a5c8c0a",
+      "tools": [],
+      "total_hits": 0
+    },
+    "house-rules-main-B2-PTH.drl": {
+      "sha256": "1a1f9ebceb57ac1f243258b9fc2c6bead8727f1ad893dbafbff9ae170f7d59e5",
+      "tools": [
+        {
+          "tool": "T1",
+          "diameter_mm": 0.3,
+          "hits": 276
+        },
+        {
+          "tool": "T2",
+          "diameter_mm": 0.9,
+          "hits": 84
+        }
+      ],
+      "total_hits": 360
+    }
+  },
+  "diameter_hit_counts": {
+    "0.300000": 276,
+    "0.900000": 84
+  },
+  "actual_plotted_drill_hole_edge_clearances": {
+    "via_to_LED_PTH": {
+      "required_edge_gap_mm": 0.45,
+      "minimum_edge_gap_mm": 0.48258948821793723,
+      "closest_pair": {
+        "a": {
+          "x": 80.6,
+          "y": -9.7,
+          "drill": 0.3,
+          "file": "house-rules-main-B2-PTH.drl",
+          "tool": "T1",
+          "hit": 246
+        },
+        "b": {
+          "x": 79.54,
+          "y": -9.92,
+          "drill": 0.9,
+          "file": "house-rules-main-B2-PTH.drl",
+          "tool": "T2",
+          "hit": 76
+        }
+      },
+      "coordinate_units_per_mm": 1,
+      "violation_count": 0,
+      "violations": [],
+      "all_nets_including_same_net": true
+    },
+    "via_to_via": {
+      "required_edge_gap_mm": 0.25,
+      "minimum_edge_gap_mm": 0.265685424949236,
+      "closest_pair": {
+        "a": {
+          "x": 57.0,
+          "y": -8.05,
+          "drill": 0.3,
+          "file": "house-rules-main-B2-PTH.drl",
+          "tool": "T1",
+          "hit": 151
+        },
+        "b": {
+          "x": 57.4,
+          "y": -8.45,
+          "drill": 0.3,
+          "file": "house-rules-main-B2-PTH.drl",
+          "tool": "T1",
+          "hit": 153
+        }
+      },
+      "coordinate_units_per_mm": 1,
+      "violation_count": 0,
+      "violations": [],
+      "all_nets_including_same_net": true
+    }
+  },
+  "T1_process": "All0.30mm via holes resin filled and copper capped",
+  "T2_process": "All84 0.90mm LED PTH holes OPEN; never filled/capped"
+}

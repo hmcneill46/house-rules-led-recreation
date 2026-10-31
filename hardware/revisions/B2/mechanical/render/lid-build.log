@@ -1,4 +1,4 @@
-ECHO: "B2 outer W/H/depth", 93.6, 22.6, 24
+ECHO: "B2 outer W/H/depth", 94.65, 22.6, 24
 ECHO: "MCU PCB under/top,maximum upper", 15.3, 16.104, 19.604
 ECHO: "USB PCB under/top,maximum upper", 15, 16.6, 20
 ECHO: "USB face x/y/port-centre-z", 78.16, 17.1, 18.25
@@ -8,13 +8,13 @@ ECHO: "Closure bead radius / nominal deflection / pocket residual wall", 0.42, 0
 Geometries in cache: 80
 Geometry cache size in bytes: 220120
 CGAL Polyhedrons in cache: 15
-CGAL cache size in bytes: 7663712
-Total rendering time: 0:00:07.612
+CGAL cache size in bytes: 7644256
+Total rendering time: 0:00:07.632
    Top level object is a 3D object:
    Simple:        yes
-   Vertices:     1066
-   Halfedges:    3198
-   Edges:        1599
+   Vertices:     1062
+   Halfedges:    3186
+   Edges:        1593
    Halffacets:   1098
    Facets:        549
    Volumes:         2

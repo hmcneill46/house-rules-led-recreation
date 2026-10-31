@@ -1,0 +1,542 @@
+{
+  "revision": "B2",
+  "date": "2026-10-29",
+  "status": "prototype geometry and module-interface contract; actual purchased stock revisions require measurement",
+  "coordinate_system": {
+    "x": "right along display",
+    "y": "toward bottom USB edge",
+    "z": "toward rear cover",
+    "z0": "LED front face",
+    "units": "mm"
+  },
+  "case": {
+    "outer": [
+      93.6,
+      22.6,
+      24.0
+    ],
+    "front_opening": [
+      90.4,
+      18.4
+    ],
+    "inside_rear_z": 22.8,
+    "main_pcb_front_z": 9.3,
+    "main_pcb_back_z": 10.9,
+    "main_pcb_xy": [
+      88.4,
+      17.3
+    ],
+    "main_max_smd_height": 2.0,
+    "led_trimmed_lead_projection": 1.0,
+    "nominal_led_silhouette": [
+      -0.25,
+      -0.25,
+      88.9,
+      17.8
+    ]
+  },
+  "mcu": {
+    "manufacturer": "Seeed Studio",
+    "mpn": "XIAO RP2040 Plus",
+    "sku": "100059977",
+    "manufacturer_nominal_xy": [
+      21.0,
+      17.8
+    ],
+    "native_edge_centerline_xy": [
+      20.955,
+      17.78
+    ],
+    "native_pcb_thickness": 0.804,
+    "source_xy_origin": [
+      97.87274,
+      63.946
+    ],
+    "origin_xy": [
+      41.1,
+      -0.25
+    ],
+    "pcb_under_z": 15.3,
+    "pcb_top_z": 16.104,
+    "top_body_allowance": 3.5,
+    "under_wire_allowance": 1.6,
+    "source_facts": [
+      "Actual SMD footprints on F.Cu;B.Cu contains test pads/logo only.",
+      "USB footprint describes3.25 mm height;3.5 mm top allowance is conservative.",
+      "TP4 and TP12 are1.143 mm round backside USB solder pads.",
+      "GPIO24/BAT_EN has100k pulldown R20;unused in B2;D3/GP29 unused."
+    ],
+    "main_wires": {
+      "5V": {
+        "pad": "14",
+        "gpio": null,
+        "module_net": "VBUS",
+        "x": 59.195,
+        "y": 16.36,
+        "coordinate_status": "native source solder-pad centre, rounded0.001 mm"
+      },
+      "GND": {
+        "pad": "13",
+        "gpio": null,
+        "module_net": "GND",
+        "x": 56.655,
+        "y": 16.26,
+        "coordinate_status": "native source solder-pad centre, rounded0.001 mm"
+      },
+      "3V3": {
+        "pad": "12",
+        "gpio": null,
+        "module_net": "VSYS_3V3",
+        "x": 54.115,
+        "y": 16.26,
+        "coordinate_status": "native source solder-pad centre, rounded0.001 mm"
+      },
+      "SIN": {
+        "pad": "11",
+        "gpio": 3,
+        "label": "D10",
+        "x": 51.575,
+        "y": 16.26,
+        "coordinate_status": "native source solder-pad centre, rounded0.001 mm"
+      },
+      "CLK": {
+        "pad": "9",
+        "gpio": 2,
+        "label": "D8",
+        "x": 46.495,
+        "y": 16.26,
+        "coordinate_status": "native source solder-pad centre, rounded0.001 mm"
+      },
+      "LAT": {
+        "pad": "10",
+        "gpio": 4,
+        "label": "D9",
+        "x": 49.035,
+        "y": 16.26,
+        "coordinate_status": "native source solder-pad centre, rounded0.001 mm"
+      },
+      "BLANK": {
+        "pad": "3",
+        "gpio": 28,
+        "label": "D2/A2",
+        "x": 54.115,
+        "y": 1.02,
+        "coordinate_status": "native source solder-pad centre, rounded0.001 mm"
+      },
+      "DRIVER_EN": {
+        "pad": "5",
+        "gpio": 6,
+        "label": "D4/SDA",
+        "x": 49.035,
+        "y": 1.02,
+        "coordinate_status": "native source solder-pad centre,rounded0.001 mm"
+      },
+      "CC1_ADC": {
+        "pad": "1",
+        "gpio": 26,
+        "label": "D0/A0",
+        "x": 59.195,
+        "y": 0.92,
+        "coordinate_status": "native source solder-pad centre, rounded0.001 mm"
+      },
+      "CC2_ADC": {
+        "pad": "2",
+        "gpio": 27,
+        "label": "D1/A1",
+        "x": 56.655,
+        "y": 1.02,
+        "coordinate_status": "native source solder-pad centre, rounded0.001 mm"
+      },
+      "USB_DM": {
+        "pad": "TP12",
+        "gpio": null,
+        "module_net": "USB_D-",
+        "x": 55.197,
+        "y": 7.404,
+        "coordinate_status": "native source solder-pad centre, rounded0.001 mm"
+      },
+      "USB_DP": {
+        "pad": "TP4",
+        "gpio": null,
+        "module_net": "USB_D+",
+        "x": 55.197,
+        "y": 9.934,
+        "coordinate_status": "native source solder-pad centre, rounded0.001 mm"
+      },
+      "BC_DET": {
+        "pad": "6",
+        "gpio": 7,
+        "label": "D5",
+        "module_net": "GPIO7/SCL0/D5",
+        "x": 46.495,
+        "y": 1.02,
+        "coordinate_status": "Native source backside solder-pad centre, rounded0.001mm"
+      },
+      "BC_AL_N": {
+        "pad": "7",
+        "gpio": 0,
+        "label": "D6",
+        "module_net": "GPIO0/TX/D6",
+        "x": 43.955,
+        "y": 0.92,
+        "coordinate_status": "Native source backside solder-pad centre, rounded0.001mm"
+      }
+    },
+    "main_wire_count": 14,
+    "unused_usb_socket": "must remain unused once the external USB port is connected",
+    "mount": "Two fixed right corner channels plus removable left C-cap/M2x8 screw;slide module5 mm from left before fitting cap;no adhesive required for MCU retention.",
+    "source_urls": [
+      "https://wiki.seeedstudio.com/XIAO-RP2040/",
+      "https://files.seeedstudio.com/wiki/XIAO-RP2040/res/XIAO_RP2040-Plus_V1.0_SCH%26PCB.zip",
+      "https://files.seeedstudio.com/wiki/XIAO-RP2040/res/XIAO_RP2040-Plus_SCH.pdf"
+    ],
+    "usb_body_box_xy": [
+      57.14726,
+      4.214,
+      64.51726,
+      13.164
+    ],
+    "other_component_height_allowance": 2.0,
+    "left_cap": {
+      "screw_centre_xy": [
+        38.3,
+        8.65
+      ],
+      "screw": "M2x8,head\u22644.0 mm diameter and\u22641.5 mm high",
+      "printed_pilot_diameter": 1.75,
+      "pilot_end_z": 22.7,
+      "post_face_z": 18.3,
+      "cap_front_z": 14.1,
+      "screw_head_lowest_z": 12.6,
+      "pcb_slot_z": [
+        15.3,
+        16.404
+      ],
+      "main_keepout_radius": 2.2,
+      "main_component_height_limit": 1.0,
+      "bare_contact_note": "Cap spine stays outside PCB;two fingers contact audited left corners,leaving RGB/BOOT/RESET completely clear."
+    },
+    "bare_edge_contacts": [
+      {
+        "name": "left-top",
+        "xy": [
+          41.1,
+          0.5,
+          42.2,
+          1.7
+        ]
+      },
+      {
+        "name": "left-bottom",
+        "xy": [
+          41.1,
+          15.7,
+          42.2,
+          16.9
+        ]
+      },
+      {
+        "name": "right-top",
+        "xy": [
+          61,
+          0.5,
+          62.1,
+          1.7
+        ]
+      },
+      {
+        "name": "right-bottom",
+        "xy": [
+          61,
+          15.7,
+          62.1,
+          16.9
+        ]
+      }
+    ]
+  },
+  "usb": {
+    "manufacturer": "Adafruit",
+    "mpn": "4090",
+    "sku": "ADA4090",
+    "pcb_xy": [
+      20.32,
+      13.97
+    ],
+    "product_overall_xyz": [
+      20.4,
+      14.2,
+      5.0
+    ],
+    "pcb_thickness_allowance": 1.6,
+    "origin_xy": [
+      68.0,
+      3.13
+    ],
+    "pcb_under_z": 15.0,
+    "pcb_top_z": 16.6,
+    "top_body_allowance": 3.4,
+    "under_wire_and_head_allowance": 1.6,
+    "socket_face_xy": [
+      78.16,
+      17.1
+    ],
+    "socket_center_z_allowance": 18.25,
+    "port_well_wh": [
+      14.0,
+      6.5
+    ],
+    "mounting_holes_xy": [
+      [
+        70.54,
+        14.56
+      ],
+      [
+        85.78,
+        14.56
+      ]
+    ],
+    "mounting_hole_diameter": 2.5,
+    "screws": {
+      "quantity": 2,
+      "thread": "M2",
+      "length_under_head": 6.0,
+      "head_diameter_max": 4.0,
+      "head_height_max": 1.5,
+      "printed_pilot_diameter": 1.75,
+      "pilot_end_z": 21.6,
+      "note": "M2x6 gives4.4 mm nominal plastic thread engagement and0.6 mm blind-tip clearance;gentle machine-screw self-tapping,do not overtighten."
+    },
+    "main_wires": {
+      "VBUS": {
+        "header_pin": 2
+      },
+      "GND": {
+        "header_pin": 1
+      },
+      "CC1": {
+        "header_pin": 4,
+        "Rd": "R2,5.1k to GND"
+      },
+      "CC2": {
+        "header_pin": 8,
+        "Rd": "R1,5.1k to GND"
+      },
+      "USB_DM": {
+        "header_pin": 3
+      },
+      "USB_DP": {
+        "header_pin": 5
+      }
+    },
+    "main_wire_count": 6,
+    "source_urls": [
+      "https://www.adafruit.com/product/4090",
+      "https://github.com/adafruit/Adafruit-USB-C-Downstream-Breakout"
+    ],
+    "dimensions_status": "PCB outline/face/mounting holes from native manufacturer Eagle;PCB thickness and socket centre height are fit allowances to check on purchased part."
+  },
+  "wire_contract": {
+    "total_wires_per_display": 20,
+    "owner_wire_solder_joints": 40,
+    "wire_od_max": 1.0,
+    "signal_wire": "flexible stranded28\u201330AWG with thin insulation",
+    "power_wire": "28AWG preferred;verify insulation outside diameter",
+    "mcu_main_start_length": 70.0,
+    "usb_main_start_length": 45.0,
+    "minimum_bend_radius_allowance": 4.0,
+    "usb_pair": "Keep D+/D\u2212 adjacent as short twisted pairs:breakout\u2192main upstream ESD\u2192BQ24392 pins7/8; separate downstream nets pins3/2\u2192MCU TP4/TP12; never bypass or bridge the USB isolation switch.",
+    "loop_reservation_xyz": [
+      8.0,
+      2.0,
+      14.0,
+      28.0,
+      13.0,
+      6.0
+    ],
+    "routing_note": "Fan wires in a flat layer below stock PCBs;gather slack only in left reservation,not between support ledges and bare PCB edges.",
+    "strain_relief": "Tie small loom to printed lid anchor;after tests,tack wires to main soldermask away from pads/components with a small removable electronics-safe adhesive bead so lid movement cannot peel surface pads."
+  },
+  "main_rear_contact_keepouts": [
+    {
+      "x": [
+        1.6,
+        4.4
+      ],
+      "y": [
+        0.05,
+        1.25
+      ]
+    },
+    {
+      "x": [
+        1.6,
+        4.4
+      ],
+      "y": [
+        16.05,
+        17.25
+      ]
+    },
+    {
+      "x": [
+        28.6,
+        31.4
+      ],
+      "y": [
+        0.05,
+        1.25
+      ]
+    },
+    {
+      "x": [
+        28.6,
+        31.4
+      ],
+      "y": [
+        16.05,
+        17.25
+      ]
+    },
+    {
+      "x": [
+        63.2,
+        66.0
+      ],
+      "y": [
+        0.05,
+        1.25
+      ]
+    },
+    {
+      "x": [
+        62.6,
+        65.4
+      ],
+      "y": [
+        16.05,
+        17.25
+      ]
+    },
+    {
+      "x": [
+        85.6,
+        88.4
+      ],
+      "y": [
+        0.05,
+        1.25
+      ]
+    }
+  ],
+  "main_usb_head_local_height_limits": [
+    {
+      "centre_xy": [
+        70.54,
+        14.56
+      ],
+      "radius": 2.2,
+      "max_component_height": 1.2
+    },
+    {
+      "centre_xy": [
+        85.78,
+        14.56
+      ],
+      "radius": 2.2,
+      "max_component_height": 1.2
+    }
+  ],
+  "physical_validation_required": [
+    "Check purchased MCU/USB board outlines and thickness with calipers.",
+    "Check complete seven-module fit without forcing leads.",
+    "Check soldered-wire and screw-head heights within allowances.",
+    "Trial-print empty case,slide channels and actual USB plug fit.",
+    "Inspect all internal wires and USB insertion load transfer before power.",
+    "Print closure coupon and empty case; verify all four detents seat positively, resist cable insertion/removal loads and reopen at the notch without cracking. Repeat several cycles before fitting electronics."
+  ],
+  "main_solder_pads": {
+    "type": "B.Cu SMT surface pads",
+    "size": [
+      1.8,
+      1.1
+    ],
+    "y": 0.85,
+    "mcu_x": [
+      34.04,
+      36.58,
+      39.12,
+      41.66,
+      44.2,
+      46.739999999999995,
+      49.28,
+      51.82,
+      54.36,
+      56.9,
+      59.44,
+      61.980000000000004
+    ],
+    "usb_x": [
+      69.6,
+      72.14,
+      74.67999999999999,
+      77.22,
+      79.75999999999999,
+      82.3
+    ],
+    "fillet_height_max": 1.0,
+    "note": "Pre-tin ends and pads;provide a gentle loop and mechanical/adhesive strain relief away from the surface pads.",
+    "mcu_bc_x": [
+      23.88,
+      26.42
+    ],
+    "bc_net_order": [
+      "BC_DET",
+      "BC_AL_N"
+    ]
+  },
+  "bc12": {
+    "detector": "BQ24392RSER on custom mainPCB",
+    "status_wires": 2,
+    "good_bat": "Hard-tied always-on +3V3, not switched driver supply",
+    "mcu_status": {
+      "BC_DET": "J19\u2192D5/GP7/pad6",
+      "BC_AL_N": "J20\u2192D6/GP0/pad7"
+    },
+    "full_current_rule": "BC_DET HIGH and BC_AL_N LOW stable100ms; USB host suspend still overrides",
+    "usb_nets": {
+      "upstream": [
+        "USB_DM",
+        "USB_DP"
+      ],
+      "downstream": [
+        "USB_DM_HOST",
+        "USB_DP_HOST"
+      ]
+    }
+  },
+  "case_closure": {
+    "type": "Four rounded bead-and-pocket snap detents on long edges; removable using existing top pry notch",
+    "z": 21.3,
+    "top_x": [
+      18.0,
+      74.0
+    ],
+    "bottom_x": [
+      18.0,
+      87.0
+    ],
+    "bead_radius": 0.42,
+    "bead_length": 3.0,
+    "pocket_radial_clearance": 0.1,
+    "pocket_end_clearance": 0.1,
+    "lip_to_wall_nominal_gap": 0.22,
+    "nominal_closing_deflection": 0.2,
+    "minimum_pocket_outer_wall": 1.3,
+    "closure_transition_check_offset_z": 0.8,
+    "intentional_interference": "At intermediate closing/opening positions, the beads overlap the undeflected shell by at most0.20mm; the shell must flex. Fully seated beads occupy matching pockets without nominal solid overlap.",
+    "placement_note": "Bottom right detent is atx87 rather thanx74 to avoid the USB plug well; every bead is above the USB/MCU upper envelopes.",
+    "coupon": "case-closure-fit-coupon.stl:two separate pieces printed together; representative bead/pocket clearances only, not a full-case retention-force prediction.",
+    "validation": "Unprinted prototype. Check seating, retention under cable insertion/removal, hand opening at notch and repeated cycles with chosen material; PLA/PETG stiffness and shrinkage differ. Do not claim measured force or elastic lifetime."
+  }
+}

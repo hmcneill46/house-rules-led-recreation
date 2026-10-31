@@ -218,17 +218,27 @@ def audit_board(board_path=DEFAULT_BOARD, spec_path=DEFAULT_SPEC, a1_path=DEFAUL
     outline_report = {}
     if outlines_ok and outline.OutlineCount() == 1:
         bounds = outline.BBox()
-        require(bounds.GetWidth() == k.FromMM(88.4) and bounds.GetHeight() == k.FromMM(17.3),
-                'Exact88.4x17.3mm outline centreline required')
+        require(bounds.GetWidth() == k.FromMM(89.45) and bounds.GetHeight() == k.FromMM(17.3),
+                'Exact89.45x17.3mm confirmed-F outline centreline required')
         require(outline.HoleCount(0) == 0, 'No internal milled/tooling holes allowed')
         outline_report = {'width_mm': k.ToMM(bounds.GetWidth()), 'height_mm': k.ToMM(bounds.GetHeight()),
                           'holes': outline.HoleCount(0)}
     a1 = k.LoadBoard(str(a1_path))
     leds, reference_leds = led_geometry(board), led_geometry(a1)
     require(len(leds) == len(reference_leds) == 84, 'Exactly84 LED PTH terminals required')
-    led_diffs = {r: {'a1': reference_leds.get(r), 'b2': leds.get(r)}
-                 for r in sorted(set(leds) | set(reference_leds)) if leds.get(r) != reference_leds.get(r)}
-    require(not led_diffs, 'LED coordinates/drills/pad size/orientation exactly match frozen A1 relative to auxiliary origin', led_diffs)
+    # Frozen A1 remains the independent source of each individual12-pin pattern.
+    # Only the rigid module translation changes after owner fit trial F.
+    reference_f = json.loads(json.dumps(reference_leds))
+    for key, geometry in reference_f.items():
+        module_index = int(key.split('.')[0][2:]) - 1
+        geometry['relative_position_nm'][0] += module_index * 175000
+    led_diffs = {r: {'confirmed_F_expected': reference_f.get(r), 'b2': leds.get(r)}
+                 for r in sorted(set(leds) | set(reference_f)) if leds.get(r) != reference_f.get(r)}
+    require(not led_diffs, 'LED geometry matches frozen A1 plus exact175000nm per module index; intramodule pattern unchanged', led_diffs)
+    require(spec['boards']['main']['width'] == 89.45
+            and spec['boards']['main']['height'] == 17.3
+            and spec['boards']['main']['led_module_pitch_mm'] == 12.875,
+            'Electrical source mechanical dimensions match owner-confirmed F')
     require(all(v['drill_nm'] == [900000, 900000] and v['pad_size_nm'] == [1400000, 1400000]
                 and not v['filled'] and not v['capped'] for v in leds.values()),
             'All84 LED0.9mm holes/1.4mm pads remain open and uncapped')
@@ -320,7 +330,7 @@ def audit_board(board_path=DEFAULT_BOARD, spec_path=DEFAULT_SPEC, a1_path=DEFAUL
         require(bool(grounds) and len(grounds) == len(zones), k.LayerName(layer) + ': GND reference zones only')
         area = sum(z.GetFilledPolysList(layer).Area() / 1e12 for z in grounds)
         outlines = sum(z.GetFilledPolysList(layer).OutlineCount() for z in grounds)
-        require(area > 88.4 * 17.3 * .5, k.LayerName(layer) + ': saved GND fill must cover at least half the board area', area)
+        require(area > 89.45 * 17.3 * .5, k.LayerName(layer) + ': saved GND fill must cover at least half the board area', area)
         if layer == k.In2_Cu and quiet_ct_tracks:
             require(outlines == 1, 'In2 GND fill must remain one connected filled outline around CT bridge', outlines)
         plane_report[k.LayerName(layer)] = {'ground_zones': len(grounds), 'filled_area_mm2': round(area, 6),
@@ -345,7 +355,11 @@ def audit_board(board_path=DEFAULT_BOARD, spec_path=DEFAULT_SPEC, a1_path=DEFAUL
         'copper_layers_top_to_bottom': COPPER, 'native_copper_layer_count': board.GetCopperLayerCount(),
         'thickness_mm': k.ToMM(ds.GetBoardThickness()), 'outline': outline_report,
         'aux_origin_mm': [k.ToMM(ds.GetAuxOrigin().x), k.ToMM(ds.GetAuxOrigin().y)],
-        'exact_A1_LED_geometry_matches': not led_diffs, 'LED_holes_open': len(leds) == 84 and all(not d['filled'] and not d['capped'] for d in leds.values()),
+        'exact_A1_LED_geometry_matches': leds == reference_leds,
+        'confirmed_F_LED_geometry_matches': not led_diffs,
+        'LED_module_pitch_mm': 12.875,
+        'LED_reference_transformation': 'Frozen A1 plus175000nm in X per zero-based DS module index; no intramodule scaling or rotation',
+        'LED_holes_open': len(leds) == 84 and all(not d['filled'] and not d['capped'] for d in leds.values()),
         'LED_geometry': leds, 'via_count': len(vias),
         'via_geometry_counts': [{'pad_mm': k.ToMM(w), 'drill_mm': k.ToMM(d), 'count': n}
                                 for (w, d), n in sorted(via_sizes.items())],
